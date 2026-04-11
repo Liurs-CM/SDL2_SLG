@@ -90,15 +90,21 @@ int CreateCharSheet(GameLib &game)
 int main()
 {
     GameLib game;
-    game.Open(640, 480, "09 - Sprite Animation", true);
+    const int window_w = 640, window_h = 480;
+    const int tile_size = 32;
+    game.Open(window_w, window_h, "09 - Sprite Animation", true);
 
     int charSheet = CreateCharSheet(game);
     int fw = 12, fh = 16;  // frame size
-    int scale = 3;          // display scale
+    int scale = 2;          // display scale
 
-    float px = 300, py = 220;
+    int gridX = 10, gridY = 7;
+    float px = gridX * tile_size, py = gridY * tile_size;
+    int targetX = 10, targetY = 7;
     float speed = 100.0f;   // pixels per second
+    float dt_cnt = 0;
     int dir = 0;            // 0=down 1=left 2=right 3=up
+    int rnd_dir = 0;            // 0=down 1=left 2=right 3=up
     int frame = 0;
     float animTimer = 0;
     bool moving = false;
@@ -114,6 +120,14 @@ int main()
         if (game.IsKeyDown(KEY_LEFT)  || game.IsKeyDown(KEY_A)) { px -= speed * dt; dir = 1; moving = true; }
         if (game.IsKeyDown(KEY_RIGHT) || game.IsKeyDown(KEY_D)) { px += speed * dt; dir = 2; moving = true; }
         if (game.IsKeyDown(KEY_UP)    || game.IsKeyDown(KEY_W)) { py -= speed * dt; dir = 3; moving = true; }
+        if (moving == false) { 
+            dir = rnd_dir; 
+            //moving = true; 
+            //px += (dir == 1) * speed * dt;
+            //px -= (dir == 2) * speed * dt;
+            //py += (dir == 3) * speed * dt;
+            //py -= (dir == 4) * speed * dt;
+        }
 
         // Boundary check
         if (px < 0) px = 0;
@@ -132,14 +146,22 @@ int main()
             frame = 0;  // standing frame
             animTimer = 0;
         }
+        dt_cnt += dt;
+        if(dt_cnt > 2){
+            dt_cnt = 0;
+            rnd_dir = game.Random(1,4);
+        }
 
         // --- Drawing ---
         game.Clear(COLOR_DARK_GREEN);
 
+        //Draw grid
+        game.DrawGrid(0, 0, window_h / tile_size, window_w / tile_size, tile_size, COLOR_SKY_BLUE);
+
         // Ground decoration
         for (int i = 0; i < 30; i++) {
-            int gx = (i * 97 + 13) % game.GetWidth();
-            int gy = (i * 173 + 47) % game.GetHeight();
+            int gx = (i * 97 * rnd_dir + 13) % game.GetWidth();
+            int gy = (i * 173 * rnd_dir + 47) % game.GetHeight();
             game.FillRect(gx, gy, 3, 3, COLOR_GREEN);
         }
 
@@ -179,6 +201,8 @@ int main()
         game.DrawText(10, 10, "WASD / Arrow keys to move", COLOR_WHITE);
         game.DrawPrintf(10, 25, COLOR_GRAY, "Dir: %s  Frame: %d", dirNames[dir], frame);
         game.DrawPrintf(10, 35, COLOR_GRAY, "X: %2.0f  Y: %2.0f", px, py);
+
+        game.DrawPrintf(10, 45, COLOR_DARK_GRAY, "Random dir: %d; dt_cnt: %.2f", rnd_dir, dt_cnt);
 
         game.Update();
         game.WaitFrame(60);
