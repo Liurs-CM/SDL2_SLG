@@ -12,6 +12,7 @@ class TextureManager
     public:
         bool load(std::string fileName,std::string id);
         void draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip = SDL_FLIP_NONE);
+        void drawRotat(std::string id, int x, int y, int width, int height, double angle, SDL_RendererFlip flip = SDL_FLIP_NONE);
         void drawFrame(std::string id, int x, int y, int width, int height, int currentRow, int currentFrame, SDL_RendererFlip flip = SDL_FLIP_NONE);
         void drawText(int x, int y, const char *text, uint32_t color = COLOR_BLACK);
         void drawTextScale(int x, int y, const char *text, uint32_t color = COLOR_BLACK, int scale = 1);

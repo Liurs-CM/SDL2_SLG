@@ -1,18 +1,21 @@
 #include "GameLib.h"
 #include "Bullet.h"
 #include "InputHandler.h"
+#include "TextureManager.h"
 
 Bullet::Bullet() : SDLGameObject() {}
 
 void Bullet::draw()
 {
-    SDLGameObject::draw();
+    //SDLGameObject::draw();
+    TextureManager::Instance()->drawRotat(m_textureID, (Uint32)m_position.getX(), (Uint32)m_position.getY(), m_width, m_height, m_angle);
 }
 
 void Bullet::update()
 {
 	handleInput();
     m_acceleration = Vector2D(0.001 * m_velocity.getY(),  -0.001 * m_velocity.getX());
+    m_angle = std::atan2(m_velocity.getY(), m_velocity.getX()) * 180.0 / M_PI;
     SDLGameObject::update();
 }
 

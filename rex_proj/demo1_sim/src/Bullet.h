@@ -18,6 +18,7 @@ class Bullet : public SDLGameObject
         bool collision_state = false;
     private:
         void handleInput();
+        double m_angle;
 };
 
 class BulletCreator : public BaseCreator
