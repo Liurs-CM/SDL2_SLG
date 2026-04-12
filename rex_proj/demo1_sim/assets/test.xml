@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<STATES>
+    <PLAY>
+        <TEXTURES>
+            <texture filename="assets/pilot.png" ID="pilot"/>
+            <texture filename="assets/enemy.png" ID="enemy"/>
+            <texture filename="assets/animate.png" ID="animate"/>
+            <texture filename="assets/bullet_B.png" ID="bullet_B"/>
+        </TEXTURES>
+        <OBJECTS>
+            <object type="Player" x="100" y="100" width="64" height="64" textureID="pilot" numFrames="0"/>
+            <object type="Enemy" x="100" y="100" width="64" height="64" textureID="enemy" numFrames="0"/>
+            <object type="Animate" x="100" y="100" width="128" height="82" textureID="animate" numFrames="6" animSpeed="0.8"/>
+            <object type="Bullet" x="100" y="100" width="32" height="16" textureID="bullet_B" numFrames="0"/>
+        </OBJECTS>
+    </PLAY>
+    <TMP>
+        <TEXTURES>
+            <texture filename="assets/bullet.png" ID="bullet"/>
+        </TEXTURES>
+        <OBJECTS>
+            <object type="Bullet" x="100" y="100" width="16" height="16" textureID="bullet" numFrames="0"/>
+        </OBJECTS>
+    </TMP>
+</STATES>

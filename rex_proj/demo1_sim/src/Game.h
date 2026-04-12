@@ -2,20 +2,25 @@
 #define __Game__
 #include "SDL.h"
 #include "GameLib.h"
+#include "Vector2D.h"
 #include "TextureManager.h"
 #include "Shape.h"
+#include "GameStateMachine.h"
+#include "PlayState.h"
 
 class Game
 {
     public:
         ~Game() {}
-        bool init(const char* title, int x_pos, int y_pos, int width, int height, int flags);
+        bool init(const char* title, int x_pos, int y_pos, int width, int height, bool fullscreen);
         void render();
         void update();
         void handleEvents();
         void clean(); 
+	    void quit() { m_bRunning = false; }
+        GameStateMachine* getStateMachine() { return m_pGameStateMachine; }
         //function to access the private running variable
-        bool running() { return m_bRunning; }
+        bool running() { frameStart = SDL_GetTicks(); return m_bRunning; }
         void syncFPS();
         static Game* Instance()
         {
@@ -35,10 +40,10 @@ class Game
         int m_gameHeight;
         Uint32 frameStart;
         Uint32 frameTime;
-        int m_currentFrame;
         bool m_bRunning;
         SDL_Window* m_pWindow;
         SDL_Renderer* m_pRenderer;
+        GameStateMachine* m_pGameStateMachine;
         static Game* s_pInstance;
 };
 

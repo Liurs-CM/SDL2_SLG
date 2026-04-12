@@ -3,18 +3,19 @@
 #include "SDL_image.h"
 #include "SDL_ttf.h"
 #include <vector>
+#include <iostream>
 
 TextureManager* TextureManager::s_pInstance = 0;
 
 bool TextureManager::load(std::string fileName,std::string id)
 { 
-    SDL_Renderer* pRenderer = RenderContext::get();
     SDL_Surface* pTempSurface = IMG_Load(fileName.c_str()); 
-    if( pTempSurface == 0 )
+    if(pTempSurface == 0)
     {
+        std::cout << "Error can't load img: " << fileName;
         return false;
     } 
-    SDL_Texture* pTexture = SDL_CreateTextureFromSurface(pRenderer, pTempSurface);
+    SDL_Texture* pTexture = SDL_CreateTextureFromSurface(RenderContext::get(), pTempSurface);
     SDL_FreeSurface(pTempSurface);
     if( pTexture != 0 )
     {
@@ -26,30 +27,37 @@ bool TextureManager::load(std::string fileName,std::string id)
 
 void TextureManager::draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip)
 {
-    SDL_Renderer* pRenderer = RenderContext::get();
     SDL_Rect srcRect;
     SDL_Rect dstRect;
-    srcRect.x = 0;
-    srcRect.y = 0;
-    srcRect.w = dstRect.w = width;
-    srcRect.h = dstRect.h = height;
-    dstRect.x = x;
-    dstRect.y = y;
-    SDL_RenderCopyEx(pRenderer, m_textureMap[id], &srcRect, &dstRect, 0, 0, flip);
+    srcRect = {0, 0, width, height};
+    dstRect = {x, y, width, height};
+    SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, 0, 0, flip);
 }
 
 void TextureManager::drawFrame(std::string id, int x, int y, int width, int height, int currentRow, int currentFrame, SDL_RendererFlip flip)
 {
-    SDL_Renderer* pRenderer = RenderContext::get();
     SDL_Rect srcRect;
     SDL_Rect dstRect;
-    srcRect.x = width * currentFrame;
-    srcRect.y = height * (currentRow - 1);
-    srcRect.w = dstRect.w = width;
-    srcRect.h = dstRect.h = height;
-    dstRect.x = x;
-    dstRect.y = y;
-    SDL_RenderCopyEx(pRenderer, m_textureMap[id], &srcRect, &dstRect, 0, 0, flip);
+    srcRect = {width * currentFrame, height * (currentRow - 1), width, height};
+    dstRect = {x, y, width, height};
+    SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, 0, 0, flip);
+}
+
+void TextureManager::clearFromTextureMap(std::string id)
+{
+    m_textureMap.erase(id);
+}
+
+void TextureManager::drawTile(std::string id, int margin, int spacing, int x, int y, int width, int height, int currentRow, int currentFrame)
+{
+    SDL_Rect srcRect;
+    SDL_Rect dstRect;
+    srcRect = {
+        margin + (spacing + width) * currentFrame, 
+        margin + (spacing + height) * currentRow, 
+        width, height};
+    dstRect = {x, y, width, height};
+    SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, 0, 0, SDL_FLIP_NONE);
 }
 
 //=====================================================================
