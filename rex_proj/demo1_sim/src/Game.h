@@ -1,30 +1,47 @@
-#include "SDL.h"
-#include "TextureManager.h"
-#include "Shape.h"
 #ifndef __Game__
 #define __Game__
+#include "SDL.h"
+#include "GameLib.h"
+#include "TextureManager.h"
+#include "Shape.h"
+
 class Game
 {
     public:
-        Game() {}
         ~Game() {}
-
         bool init(const char* title, int x_pos, int y_pos, int width, int height, int flags);
         void render();
         void update();
         void handleEvents();
         void clean(); 
-
         //function to access the private running variable
         bool running() { return m_bRunning; }
+        void syncFPS();
+        static Game* Instance()
+        {
+            if(s_pInstance == 0)
+            {
+                s_pInstance = new Game();
+                return s_pInstance;
+            }
+            return s_pInstance;
+        }
+        int getGameWidth() const { return m_gameWidth; }
+        int getGameHeight() const { return m_gameHeight; }
 
     private:
-
+        Game() {}
+        int m_gameWidth;
+        int m_gameHeight;
+        Uint32 frameStart;
+        Uint32 frameTime;
+        int m_currentFrame;
+        bool m_bRunning;
         SDL_Window* m_pWindow;
         SDL_Renderer* m_pRenderer;
-
-        int m_currentFrame;
-
-        bool m_bRunning;
+        static Game* s_pInstance;
 };
+
+typedef Game TheGame;
+
 #endif /* defined(__Game__) */

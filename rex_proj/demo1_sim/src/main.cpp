@@ -1,16 +1,23 @@
 #include "Game.h"
-// our Game object
-Game* g_game = 0;
+#include "GameLib.h"
+#include <iostream>
+
 int main(int argc, char* argv[])
 {
-    g_game = new Game();
-    g_game->init("windows -> sdl2 hello world", 1000, 500, 640, 480, 0);
-    while(g_game->running())
-    {
-        g_game->handleEvents();
-        g_game->update();
-        g_game->render();
+    std::cout << "game initing...\n";
+    if(TheGame::Instance()->init("windows -> sdl2 hello world", SCR_X, SCR_Y, SCR_W, SCR_H, false)) {
+        while(TheGame::Instance()->running()) {
+            TheGame::Instance()->handleEvents();
+            TheGame::Instance()->update();
+            TheGame::Instance()->render();
+            TheGame::Instance()->syncFPS();
+        }
     }
-    g_game->clean();
+    else {
+        std::cout << "game init failure - " << SDL_GetError();
+        return -1;
+    }
+    std::cout << "game closing...\n";
+    TheGame::Instance()->clean();
     return 0;
 }

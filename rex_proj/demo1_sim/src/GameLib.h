@@ -1,4 +1,14 @@
+#ifndef __GameLib__
+#define __GameLib__
+
 #include <stdlib.h>
+
+#define FPS   165
+#define DELAY_TIME  (FPS / 1000)
+#define SCR_W   640
+#define SCR_H   480
+#define SCR_X   1000
+#define SCR_Y   500
 
 // Color helper macros
 #define COLOR_RGB(r, g, b)     ((uint32_t)(0xFF000000 | (((r) & 0xFF) << 16) | (((g) & 0xFF) << 8) | ((b) & 0xFF)))
@@ -9,7 +19,6 @@
 #define COLOR_GET_R(c)    (((c) >> 16) & 0xFF)
 #define COLOR_GET_G(c)    (((c) >> 8) & 0xFF)
 #define COLOR_GET_B(c)    ((c) & 0xFF)
-
 
 class GameLib
 {
@@ -26,10 +35,4 @@ class GameLib
 };
 
 
-int GameLib::Random(int minVal, int maxVal)
-{
-    if (minVal > maxVal) { int t = minVal; minVal = maxVal; maxVal = t; }
-    if (minVal == maxVal) return minVal;
-    return minVal + rand() % (maxVal - minVal + 1);
-}
-
+#endif /* defind(__GameLib__) */

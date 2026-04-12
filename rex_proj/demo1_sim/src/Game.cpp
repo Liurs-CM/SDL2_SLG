@@ -4,6 +4,8 @@
 #include <SDL2_gfxPrimitives.h>
 #include <iostream>
 
+Game* Game::s_pInstance = 0;
+
 bool Game::init(const char* title, int x_pos, int y_pos, int width,
         int height, int flags)
 {
@@ -43,7 +45,7 @@ bool Game::init(const char* title, int x_pos, int y_pos, int width,
         return false;
     }
 
-    std::cout << "init success\n";
+    std::cout << "game initing success!\n";
     m_bRunning = true;
 
     if(!TheTextureManager::Instance()->load("assets/animate.png", "animate"))
@@ -101,3 +103,12 @@ void Game::clean()
     SDL_Quit();
 }
 
+void Game::syncFPS()
+{
+    frameTime = SDL_GetTicks() - frameStart;
+    if(frameTime < DELAY_TIME)
+    {
+        SDL_Delay((int)(DELAY_TIME - frameTime));
+    }
+    frameStart = SDL_GetTicks();
+}
