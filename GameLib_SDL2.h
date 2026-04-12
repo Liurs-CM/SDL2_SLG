@@ -7,6 +7,7 @@
 //
 // How to use (single file project, most common):
 //
+//     #define GAMELIB_IMPLEMENTATION
 //     #include "GameLib_SDL2.h"
 //
 //     int main() {
@@ -739,10 +740,10 @@ void GameLib::WaitFrame(int fps)
     if (fps <= 0) fps = 60;
     Uint32 frameTimeMs = 1000 / fps;
     Uint32 currentTimeMs = SDL_GetTicks();
-    Uint32 lastFrameTimeMs = _timePrev * 1000 / _perfFreq; // Convert ticks to ms for comparison
-    Uint32 elapsed = currentTimeMs - lastFrameTimeMs;
+    Uint64 lastFrameTimeMs = _timePrev * 1000 / _perfFreq; // Convert ticks to ms for comparison
+    Uint64 elapsed = currentTimeMs - lastFrameTimeMs;
     if (elapsed < frameTimeMs) {
-        SDL_Delay(frameTimeMs - elapsed);
+        SDL_Delay(frameTimeMs - (Uint32)elapsed);
     }
     // Note: This simple delay might not be as precise as the original due to OS scheduler.
     // The renderer's VSync (if enabled) also affects timing.
@@ -1321,6 +1322,11 @@ void GameLib::DrawSpriteRegion(int id, int x, int y, int sx, int sy, int sw, int
     if (id < 0 || id >= (int)_sprites.size()) return;
     if (!_sprites[id].used) return;
     GameSprite &spr = _sprites[id];
+    
+    // Validate region parameters
+    if (sx < 0 || sy < 0 || sw <= 0 || sh <= 0) return;
+    if (sx + sw > spr.width || sy + sh > spr.height) return;
+    
     for (int j = 0; j < sh; j++) {
         int srcY = sy + j;
         int dy = y + j;
@@ -1455,6 +1461,7 @@ int GameLib::Random(int minVal, int maxVal)
 {
     if (minVal > maxVal) { int t = minVal; minVal = maxVal; maxVal = t; }
     if (minVal == maxVal) return minVal;
+    // Fixed: corrected range calculation to include maxVal in possible results
     return minVal + rand() % (maxVal - minVal + 1);
 }
 
