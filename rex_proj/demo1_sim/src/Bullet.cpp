@@ -12,6 +12,7 @@ void Bullet::draw()
 void Bullet::update()
 {
 	handleInput();
+    m_acceleration = Vector2D(0.001 * m_velocity.getY(),  -0.001 * m_velocity.getX());
     SDLGameObject::update();
 }
 
@@ -22,8 +23,9 @@ void Bullet::handleInput() { }
 void Bullet::load(const LoaderParams *pParams)
 {
     SDLGameObject::load(pParams);
-    m_position = Vector2D(0.1,0);
-    m_acceleration = Vector2D(0.0002, 0);
+    m_velocity = Vector2D(0.1,0);
+    //m_position = Vector2D(0.1,0);
+    //m_acceleration = Vector2D(0.0002, 0);
 }
 
 void Bullet::SetPosition(Vector2D pos) 
