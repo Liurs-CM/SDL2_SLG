@@ -1,6 +1,3 @@
-#include <string>
-#include <algorithm>
-#include <iostream>
 #include "PlayState.h"
 #include "TextureManager.h"
 #include "Game.h"
@@ -8,6 +5,9 @@
 #include "InputHandler.h"
 #include "LoaderParams.h"
 #include "StateParser.h"
+#include <string>
+#include <algorithm>
+#include <iostream>
 //#include "LevelParser.h"
 //#include "Level.h"
 

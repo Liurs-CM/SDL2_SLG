@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #define FPS   165
-#define DELAY_TIME  (FPS / 1000)
+#define DELAY_TIME  (1000 / FPS)
 #define SCR_W   640
 #define SCR_H   480
 #define SCR_X   1000

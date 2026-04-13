@@ -11,8 +11,14 @@ class Player : public SDLGameObject
         void update();
         void clean();
         void load(const LoaderParams* pParams);
+        enum class Direction { NORMAL = 0, UP = 1, DOWN = 2, LEFT = 3, RIGHT = 4 };
     private:
         void handleInput();
+        Direction m_currentDirection = Direction::RIGHT;
+        static const char* dirNames[4];
+        float speed = 0.2;
+        bool moving = false;
+        float animTimer = 0;
 };
 
 class PlayerCreator : public BaseCreator

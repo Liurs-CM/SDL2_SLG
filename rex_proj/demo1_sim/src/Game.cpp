@@ -49,6 +49,7 @@ bool Game::init(const char* title, int x_pos, int y_pos, int width, int height, 
     TheInputHandler::Instance()->initialiseJoysticks();
     std::cout << "game initing success!\n";
     m_bRunning = true;
+	//TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
 	TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
 	TheGameObjectFactory::Instance()->registerType("Enemy", new EnemyCreator());
 	TheGameObjectFactory::Instance()->registerType("Animate", new EnemyCreator());
@@ -65,6 +66,7 @@ void Game::render()
     //move texture to render
     TheShape::Instance()->Shape_genrate();
 	m_pGameStateMachine->render();
+    SDL_SetRenderDrawColor(m_pRenderer, 128,128,128,255);
     //draw to the screen
     SDL_RenderPresent(m_pRenderer);
 }
