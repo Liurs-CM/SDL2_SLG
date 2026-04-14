@@ -16,9 +16,11 @@ class Player : public SDLGameObject
         void handleInput();
         Direction m_currentDirection = Direction::RIGHT;
         static const char* dirNames[4];
-        float speed = 0.2;
+        float speed = 0.5;
         bool moving = false;
         float animTimer = 0;
+        Vector2D to_position;
+        Vector2D at_position;
 };
 
 class PlayerCreator : public BaseCreator

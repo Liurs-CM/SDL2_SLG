@@ -22,6 +22,7 @@ class Game
         //function to access the private running variable
         bool running() { frameStart = SDL_GetTicks(); return m_bRunning; }
         void syncFPS();
+        Uint32 getframeTime() { return frameTime; }
         static Game* Instance()
         {
             if(s_pInstance == 0)

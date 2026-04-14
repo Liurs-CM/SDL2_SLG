@@ -12,8 +12,7 @@ void Shape::Shape_genrate()
     // Grid
     //int gridW = GRID_COLS * CELL_SIZE;
     //int gridH = GRID_ROWS * CELL_SIZE;
-    int gridX = 10, gridY = 30;
-    TheTextureManager::Instance()->drawGrid(gridX, gridY, GRID_ROWS, GRID_COLS, CELL_SIZE, COLOR_DARK_GRAY);
+    TheTextureManager::Instance()->drawGrid(GRID_X, GRID_Y, GRID_ROWS, GRID_COLS, CELL_SIZE, COLOR_DARK_GRAY);
     // --- Row 1: Pixels and Lines ---
     TheTextureManager::Instance()->drawText(20, 15, "Pixels", COLOR_WHITE);
     SDL_SetRenderDrawColor(pRenderer, 

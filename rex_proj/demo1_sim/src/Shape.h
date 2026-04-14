@@ -1,11 +1,6 @@
 #ifndef __Shape__
 #define __Shape__
 
-#define GRID_ROWS 20
-#define GRID_COLS 25
-#define CELL_SIZE 22
-#define MAX_SNAKE 400
-
 class Shape
 {
     public:
