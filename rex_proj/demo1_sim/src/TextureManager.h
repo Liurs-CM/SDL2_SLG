@@ -14,11 +14,13 @@ class TextureManager
         void draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip = SDL_FLIP_NONE);
         void drawRotat(std::string id, int x, int y, int width, int height, double angle, SDL_RendererFlip flip = SDL_FLIP_NONE);
         void drawFrame(std::string id, int x, int y, int width, int height, int currentRow, int currentFrame, SDL_RendererFlip flip = SDL_FLIP_NONE);
+        void drawLine(int x1, int y1, int x2, int y2, uint32_t color = COLOR_BLACK);
         void drawText(int x, int y, const char *text, uint32_t color = COLOR_BLACK);
         void drawTextScale(int x, int y, const char *text, uint32_t color = COLOR_BLACK, int scale = 1);
         void drawPrintf(int x, int y, uint32_t color, const char *fmt, ...);
         void drawCircle(int cx, int cy, int radius, bool Fill = false, uint32_t color = COLOR_BLACK);
         void drawTile(std::string id, int margin, int spacing, int x, int y, int width, int height, int currentRow, int currentFrame);
+        void drawGrid(int x, int y, int rows, int cols, int cellSize, uint32_t color);
         void clearFromTextureMap(std::string id);
         static TextureManager* Instance()
         {

@@ -2,6 +2,7 @@
 #include "RenderContext.h"
 #include "SDL_image.h"
 #include "SDL_ttf.h"
+#include <SDL2_gfxPrimitives.h>
 #include <vector>
 #include <iostream>
 
@@ -71,6 +72,11 @@ void TextureManager::drawTile(std::string id, int margin, int spacing, int x, in
         width, height};
     dstRect = {x, y, width, height};
     SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, 0, 0, SDL_FLIP_NONE);
+}
+
+void TextureManager::drawLine(int x1, int y1, int x2, int y2, uint32_t color)
+{
+    lineColor(RenderContext::get(), x1, y1, x2, y2, color);
 }
 
 //=====================================================================
@@ -217,3 +223,14 @@ void TextureManager::drawCircle(int cx, int cy, int radius, bool Fill, uint32_t 
         SDL_RenderDrawLines(pRenderer, points.data(), numPoints);
     }
 }
+
+void TextureManager::drawGrid(int x, int y, int rows, int cols, int cellSize, uint32_t color)
+{
+    for (int r = 0; r <= rows; r++) {
+        drawLine(x, y + r * cellSize, x + cols * cellSize, y + r * cellSize, color);
+    }
+    for (int c = 0; c <= cols; c++) {
+        drawLine(x + c * cellSize, y, x + c * cellSize, y + rows * cellSize, color);
+    }
+}
+
