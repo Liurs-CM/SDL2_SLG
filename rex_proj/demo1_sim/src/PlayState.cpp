@@ -135,7 +135,7 @@ bool PlayState::onExit()
     }
     m_bullets.clear();
     m_enemies.clear();
-    TheInputHandler::Instance()->reset();
+    TheInputHandler::Instance()->reset_mouseButtonState();
     std::cout << "exiting PlayState" << std::endl;
     return true;
 }

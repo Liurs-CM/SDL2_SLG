@@ -7,10 +7,7 @@ InputHandler* InputHandler::s_pInstance = 0;
 
 InputHandler::InputHandler() : m_mousePosition(new Vector2D(0, 0))
 {
-	for(int i = 0; i < 3; i++)
-	{
-		m_mouseButtonStates.push_back(false);
-	}
+    m_mouseButtonStates.fill(false);
 }
 
 void InputHandler::initialiseJoysticks()
@@ -156,6 +153,7 @@ void InputHandler::onMouseButtonUp(SDL_Event& event)
 		m_mouseButtonStates[RIGHT] = false;
 	}	
 }	
+
 
 void InputHandler::onMouseMove(SDL_Event& event)
 {
@@ -307,9 +305,7 @@ int InputHandler::yvalue(int joy, int stick)
 	return 0;
 }
 
-void InputHandler::reset()
+void InputHandler::reset_mouseButtonState()
 {
-    m_mouseButtonStates[LEFT] = false;
-    m_mouseButtonStates[RIGHT] = false;
-    m_mouseButtonStates[MIDDLE] = false;
+    m_mouseButtonStates.fill(false);
 }

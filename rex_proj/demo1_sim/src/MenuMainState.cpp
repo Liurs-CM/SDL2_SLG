@@ -24,7 +24,10 @@ void MenuMainState::s_exitFromMenu()
 
 void MenuMainState::update()
 {
-    if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_SPACE)) {
+    if(TheInputHandler::Instance()->isKeyPressed(SDL_SCANCODE_ESCAPE)) {
+        s_exitFromMenu();
+    }
+    else if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_SPACE)) {
         s_menuToPlay();
     }
     for(auto& obj : m_gameObjects) {
@@ -64,7 +67,7 @@ bool MenuMainState::onExit()
     {
         TheTextureManager::Instance()->clearFromTextureMap(obj);
     }
-    TheInputHandler::Instance()->reset();
+    TheInputHandler::Instance()->reset_mouseButtonState();
     std::cout << "exiting MenuMainState\n";
     return true;
 }

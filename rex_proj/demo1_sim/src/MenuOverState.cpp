@@ -58,7 +58,7 @@ bool MenuOverState::onExit()
     {
         TheTextureManager::Instance()->clearFromTextureMap(obj);
     }
-    TheInputHandler::Instance()->reset();
+    TheInputHandler::Instance()->reset_mouseButtonState();
     std::cout << "exiting MenuOverState\n";
     return true;
 }

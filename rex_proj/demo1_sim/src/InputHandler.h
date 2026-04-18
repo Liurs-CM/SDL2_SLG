@@ -1,5 +1,6 @@
 #ifndef __InputHandler__
 #define __InputHandler__
+#include <array>
 #include <vector>
 #include <utility>
 #include <unordered_set>
@@ -26,7 +27,7 @@ class InputHandler
         }
         void update();
         void clean();
-        void reset();
+        void reset_mouseButtonState();
         void initialiseJoysticks();
         bool joysticksInitialised() { return m_bJoysticksInitialised; }
         bool getMouseButtonState(int buttonNumber)
@@ -53,7 +54,7 @@ class InputHandler
         bool m_bJoysticksInitialised;
         std::vector<std::pair<Vector2D*, Vector2D*>> m_joystickValues;
         std::vector<std::vector<bool>> m_buttonStates;
-        std::vector<bool> m_mouseButtonStates;
+        std::array<bool, 3> m_mouseButtonStates{};
         Vector2D* m_mousePosition;
         const Uint8* m_keystates;
         std::unordered_set<SDL_Scancode> m_keysPressedThisFrame; // 本帧新按下的键（非 repeat）
