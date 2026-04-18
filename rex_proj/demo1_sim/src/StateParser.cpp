@@ -4,57 +4,46 @@
 #include "GameObjectFactory.h"
 #include "Game.h"
 
-bool StateParser::parseState(const char* stateFile, std::string stateID, std::vector<GameObject *> *pObjects, std::vector<std::string> *pTextureIDs)
+bool StateParser::parseState(const char* stateFile, std::string stateID, std::vector<std::unique_ptr<GameObject>> *pObjects, std::vector<std::string> *pTextureIDs)
 {
     // create the XML document
     XMLDocument xmlDoc;
     // load the state file
-    if(xmlDoc.LoadFile(stateFile) != XML_SUCCESS)
-    {
-        std::cerr << xmlDoc.ErrorStr() << std::endl;
+    if(xmlDoc.LoadFile(stateFile) != XML_SUCCESS) {
+        std::cerr << xmlDoc.ErrorStr() << "\n";
         return false;
     }
-
     // get the root element
     XMLElement* pRoot = xmlDoc.RootElement(); // <STATES>
+
     // pre declare the states root node
     XMLElement* pStateRoot = 0;
     // get this states root node and assign it to pStateRoot
-    for(XMLElement* e = pRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
-    {
-        if(e->Value() == stateID)
-        {
+    for(XMLElement* e = pRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement()) {
+        if(e->Value() == stateID) {
             pStateRoot = e;
         }
     }
 
     // pre declare the texture root
     XMLElement* pTextureRoot = 0;
-
     // get the root of the texture elements
-    for(XMLElement* e = pStateRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
-    {
-        if(e->Value() == std::string("TEXTURES"))
-        {
+    for(XMLElement* e = pStateRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement()) {
+        if(e->Value() == std::string("TEXTURES")) {
             pTextureRoot = e;
         }
     }
-
     // now parse the textures
     parseTextures(pTextureRoot, pTextureIDs);
 
     // pre declare the object root node
     XMLElement* pObjectRoot = 0;
-
     // get the root node and assign it to pObjectRoot
-    for(XMLElement* e = pStateRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
-    {
-        if(e->Value() == std::string("OBJECTS"))
-        {
+    for(XMLElement* e = pStateRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement()) {
+        if(e->Value() == std::string("OBJECTS")) {
             pObjectRoot = e;
         }
     }
-
     // now parse the objects
     parseObjects(pObjectRoot, pObjects);
 
@@ -72,7 +61,7 @@ void StateParser::parseTextures(XMLElement* pStateRoot, std::vector<std::string>
     }
 }
 
-void StateParser::parseObjects(XMLElement *pStateRoot, std::vector<GameObject *> *pObjects)
+void StateParser::parseObjects(XMLElement *pStateRoot, std::vector<std::unique_ptr<GameObject>> *pObjects)
 {
     for(XMLElement* e = pStateRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
     {
@@ -91,6 +80,6 @@ void StateParser::parseObjects(XMLElement *pStateRoot, std::vector<GameObject *>
 
         GameObject* pGameObject = TheGameObjectFactory::Instance()->create(e->Attribute("type"));
         pGameObject->load(new LoaderParams(x, y, width, height, textureID, numFrames, callbackID, animSpeed));
-        pObjects->push_back(pGameObject);
+        pObjects->push_back(std::unique_ptr<GameObject>(pGameObject));
     }
 }

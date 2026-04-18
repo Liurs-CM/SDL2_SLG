@@ -3,6 +3,10 @@
 #include "InputHandler.h"
 #include "GameStateMachine.h"
 #include "GameObjectFactory.h"
+#include "MenuMainState.h"
+#include "MenuOverState.h"
+#include "MenuButton.h"
+#include "AnimatedGraphic.h"
 #include <iostream>
 
 Game* Game::s_pInstance = 0;
@@ -49,7 +53,7 @@ bool Game::init(const char* title, int x_pos, int y_pos, int width, int height, 
     TheInputHandler::Instance()->initialiseJoysticks();
     std::cout << "game initing success!\n";
     m_bRunning = true;
-	//TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
+    TheGameObjectFactory::Instance()->registerType("MenuButton", new MenuButtonCreator());
 	TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
 	TheGameObjectFactory::Instance()->registerType("Enemy", new EnemyCreator());
 	TheGameObjectFactory::Instance()->registerType("Animate", new EnemyCreator());

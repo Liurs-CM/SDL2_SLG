@@ -2,7 +2,7 @@
 
 void ObjectLayer::update()
 {
-    for(auto* obj : m_gameObjects)
+    for(auto& obj : m_gameObjects)
     {
         obj->update();
     }
@@ -10,7 +10,7 @@ void ObjectLayer::update()
 
 void ObjectLayer::render()
 {
-    for(auto* obj : m_gameObjects)
+    for(auto& obj : m_gameObjects)
     {
         obj->draw();
     }

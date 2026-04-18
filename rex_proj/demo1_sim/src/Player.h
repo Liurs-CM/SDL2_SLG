@@ -7,10 +7,10 @@ class Player : public SDLGameObject
 {
     public:
         Player();
+        void load(const LoaderParams* pParams);
         void draw();
         void update();
         void clean();
-        void load(const LoaderParams* pParams);
         enum class Direction { NORMAL = 0, UP = 1, DOWN = 2, LEFT = 3, RIGHT = 4 };
     private:
         void handleInput();

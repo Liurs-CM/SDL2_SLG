@@ -14,8 +14,7 @@ class LoaderParams
             m_numFrames(numFrames),
             m_callbackID(callbackID),
             m_animSpeed(animSpeed) 
-    { 
-    }
+    { }
         int getX() const { return m_x; }
         int getY() const { return m_y; }
         int getWidth() const { return m_width; }

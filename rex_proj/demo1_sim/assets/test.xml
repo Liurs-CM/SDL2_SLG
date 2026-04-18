@@ -1,5 +1,27 @@
 <?xml version="1.0" ?>
 <STATES>
+    <MENU>
+        <TEXTURES>
+            <texture filename="assets/button.png" ID="playbutton"/>
+            <texture filename="assets/exit.png" ID="exitbutton"/>
+        </TEXTURES>
+        <OBJECTS>
+            <object type="MenuButton" x="100" y="100" width="400" height="100" textureID="playbutton" numFrames="0" callbackID="1"/>
+            <object type="MenuButton" x="100" y="300" width="400" height="100" textureID="exitbutton" numFrames="0" callbackID="2"/>
+        </OBJECTS>
+    </MENU>
+
+    <PAUSE>
+        <TEXTURES>
+            <texture filename="assets/main.png" ID="mainbutton"/>
+            <texture filename="assets/resume.png" ID="resumebutton"/>
+        </TEXTURES>
+        <OBJECTS>
+            <object type="MenuButton" x="200" y="100" width="200" height="80" textureID="mainbutton" numFrames="0" callbackID="1"/>
+            <object type="MenuButton" x="200" y="300" width="200" height="80" textureID="resumebutton" numFrames="0" callbackID="2"/>
+        </OBJECTS>
+    </PAUSE>
+
     <PLAY>
         <TEXTURES>
             <texture filename="assets/warrior.png" ID="warrior"/>
@@ -14,6 +36,20 @@
             <object type="Bullet" x="100" y="100" width="32" height="16" textureID="bullet_B" numFrames="0"/>
         </OBJECTS>
     </PLAY>
+
+    <GAMEOVER>
+        <TEXTURES>
+            <texture filename="assets/gameover.png" ID="gameovertext"/>
+            <texture filename="assets/main.png" ID="mainbutton"/>
+            <texture filename="assets/restart.png" ID="restartbutton"/>
+        </TEXTURES>
+        <OBJECTS>
+            <object type="AnimatedGraphic" x="200" y="100" width="190" height="30" textureID="gameovertext" numFrames="2" animSpeed="2"/>
+            <object type="MenuButton" x="200" y="200" width="200" height="80" textureID="mainbutton" numFrames="0" callbackID="1"/>
+            <object type="MenuButton" x="200" y="300" width="200" height="80" textureID="restartbutton" numFrames="0" callbackID="2"/>
+        </OBJECTS>
+    </GAMEOVER>
+
     <TMP>
         <TEXTURES>
             <texture filename="assets/pilot.png" ID="pilot"/>

@@ -4,6 +4,7 @@
 #include "Bullet.h"
 #include "Enemy.h"
 #include "Player.h"
+#include <memory>
 #include <vector>
 //#include "Level.h"
 
@@ -25,7 +26,7 @@ class PlayState : public GameState
         int score = 0;
     private:
         static const std::string s_playID;
-        std::vector<GameObject*> m_gameObjects;
+        std::vector<std::unique_ptr<GameObject>> m_gameObjects;
         Player* player = nullptr;
         std::vector<std::unique_ptr<Bullet>> m_bullets;
         std::vector<std::unique_ptr<Enemy>> m_enemies;

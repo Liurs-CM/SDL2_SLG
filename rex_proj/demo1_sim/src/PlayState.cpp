@@ -26,9 +26,9 @@ void PlayState::update()
         createBullet();
         //std::cout << "bullet num " << m_bullets.size() << std::endl;
     }
-    for(auto* obj : m_gameObjects)
+    for(auto& obj : m_gameObjects)
     {
-        if(dynamic_cast<Player*>(obj) != nullptr)
+        if(dynamic_cast<Player*>(obj.get()) != nullptr)
         {
             obj->update();
         }
@@ -85,9 +85,9 @@ void PlayState::update()
 
 void PlayState::render()
 {
-    for(auto* obj : m_gameObjects)
+    for(auto& obj : m_gameObjects)
     {
-        if(dynamic_cast<Player*>(obj) != nullptr)
+        if(dynamic_cast<Player*>(obj.get()) != nullptr)
         {
             obj->draw();
         }
@@ -107,11 +107,11 @@ bool PlayState::onEnter()
 {
 	StateParser stateParser;
 	stateParser.parseState("assets/test.xml", s_playID, &m_gameObjects, &m_textureIDList);
-    for(auto* obj : m_gameObjects)
+    for(auto& obj : m_gameObjects)
     {
-        if(dynamic_cast<Player*>(obj) != nullptr)
+        if(dynamic_cast<Player*>(obj.get()) != nullptr)
         {
-            player = static_cast<Player*>(obj);
+            player = static_cast<Player*>(obj.get());
         }
     }
     std::cout << "entering PlayState" << std::endl;
@@ -122,18 +122,18 @@ bool PlayState::onEnter()
 
 bool PlayState::onExit()
 {
-    for(auto* obj :  m_gameObjects)
+    for(auto& obj :  m_gameObjects)
     {
         obj->clean();
     }
     m_gameObjects.clear();
+    for(const auto& obj : m_textureIDList)
+    {
+        TheTextureManager::Instance()->clearFromTextureMap(obj);
+    }
+    std::cout << "exiting PlayState" << std::endl;
     m_bullets.clear();
     m_enemies.clear();
-    TheTextureManager::Instance()->clearFromTextureMap("pilot");
-    TheTextureManager::Instance()->clearFromTextureMap("bullet");
-    TheTextureManager::Instance()->clearFromTextureMap("bullet_B");
-    TheTextureManager::Instance()->clearFromTextureMap("enemy");
-    std::cout << "exiting PlayState" << std::endl;
     return true;
 }
 
@@ -163,11 +163,11 @@ bool PlayState::checkCollision(SDLGameObject* p1, SDLGameObject* p2)
 void PlayState::createBullet()
 {
     Bullet* templateBullet = nullptr;
-    for(auto* obj : m_gameObjects)
+    for(auto& obj : m_gameObjects)
     {
-        if(dynamic_cast<Bullet*>(obj) != nullptr)
+        if(dynamic_cast<Bullet*>(obj.get()) != nullptr)
         {
-            templateBullet = static_cast<Bullet*>(obj);
+            templateBullet = static_cast<Bullet*>(obj.get());
         }
     }
     if(templateBullet == nullptr)
@@ -191,11 +191,11 @@ void PlayState::spawnEnemies()
     {
         enemySpawnTimer = 1000 + (rand() % 60);
         Enemy* templateEnemy = nullptr;
-        for(auto* obj : m_gameObjects)
+        for(auto& obj : m_gameObjects)
         {
-            if(dynamic_cast<Enemy*>(obj) != nullptr)
+            if(dynamic_cast<Enemy*>(obj.get()) != nullptr)
             {
-                templateEnemy = static_cast<Enemy*>(obj);
+                templateEnemy = static_cast<Enemy*>(obj.get());
             }
         }
         if(templateEnemy == nullptr)

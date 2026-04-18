@@ -7,6 +7,13 @@
 Player::Player() : SDLGameObject() {}
 const char* Player::dirNames[4] = {"Up", "Down", "Left", "Right"};
 
+void Player::load(const LoaderParams *pParams)
+{
+    SDLGameObject::load(pParams);
+    m_position = Vector2D(GRID_X + CELL_SIZE * 5, GRID_Y + CELL_SIZE * 5);
+    at_position = m_position;
+}
+
 void Player::draw()
 {
     //SDLGameObject::draw();
@@ -82,9 +89,3 @@ void Player::handleInput()
     }
 }
 
-void Player::load(const LoaderParams *pParams)
-{
-    SDLGameObject::load(pParams);
-    m_position = Vector2D(GRID_X + CELL_SIZE * 5, GRID_Y + CELL_SIZE * 5);
-    at_position = m_position;
-}

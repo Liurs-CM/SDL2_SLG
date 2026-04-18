@@ -3,8 +3,7 @@
 #include "SDLGameObject.h"
 #include "TextureManager.h"
 
-SDLGameObject::SDLGameObject() : GameObject(), m_position(0,0), m_velocity(0,0), m_acceleration(0,0)
-{}
+SDLGameObject::SDLGameObject() : GameObject(), m_position(0,0), m_velocity(0,0), m_acceleration(0,0) {}
 
 void SDLGameObject::load(const LoaderParams *pParams)
 {
