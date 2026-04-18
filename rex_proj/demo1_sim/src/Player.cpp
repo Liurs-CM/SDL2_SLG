@@ -11,7 +11,7 @@ void Player::draw()
 {
     //SDLGameObject::draw();
     //TextureManager::Instance()->drawFrame(m_textureID, (Uint32)m_position.getX(), (Uint32)m_position.getY(), m_width, m_height, m_currentRow, m_currentFrame);
-    TextureManager::Instance()->drawFrame(m_textureID, (Uint32)at_position.getX(), (Uint32)at_position.getY(), m_width, m_height, m_currentRow, m_currentFrame);
+    TextureManager::Instance()->drawFrame(m_textureID, (Uint32)at_position.getX() - 5, (Uint32)at_position.getY() - 5, m_width, m_height, m_currentRow, m_currentFrame);
     TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi, test printf move[%d], Direction: %s, Frame[%d]", moving, dirNames[m_currentRow-1], m_currentFrame);
 }
 

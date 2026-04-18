@@ -14,7 +14,7 @@
 #define GRID_Y 30
 #define GRID_ROWS 12
 #define GRID_COLS 15
-#define CELL_SIZE 36
+#define CELL_SIZE 24
 #define MAX_SNAKE 400
 
 //---------------------------------------------------------------------
