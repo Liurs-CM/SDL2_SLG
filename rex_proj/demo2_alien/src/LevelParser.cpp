@@ -13,7 +13,7 @@
 #include "ObjectLayer.h"
 #include "TileLayer.h"
 #include "GameObjectFactory.h"
-#include "base64.h"
+#include "lib/base64.h"
 #include "zlib.h"
 #include "Level.h"
 

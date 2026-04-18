@@ -32,9 +32,9 @@ void GameOverState::update()
 {
     if(m_loadingComplete && !m_gameObjects.empty())
     {
-        for(int i = 0; i < m_gameObjects.size(); i++)
+        for(auto* obj : m_gameObjects)
         {
-            m_gameObjects[i]->update();
+            obj->update();
         }
     }
 }
@@ -43,9 +43,9 @@ void GameOverState::render()
 {
     if(m_loadingComplete && !m_gameObjects.empty())
     {
-        for(int i = 0; i < m_gameObjects.size(); i++)
+        for(auto* obj : m_gameObjects)
         {
-            m_gameObjects[i]->draw();
+            obj->draw();
         }
     }
 }
@@ -73,10 +73,10 @@ bool GameOverState::onExit()
 {
     if(m_loadingComplete && !m_gameObjects.empty())
     {
-        for(int i = 0; i < m_gameObjects.size(); i++)
+        for(auto* obj : m_gameObjects)
         {
-            m_gameObjects[i]->clean();
-            delete m_gameObjects[i];
+            obj->clean();
+            delete obj;
         }
         
         m_gameObjects.clear();
@@ -85,9 +85,9 @@ bool GameOverState::onExit()
     std::cout << m_gameObjects.size();
     
     // clear the texture manager
-    for(int i = 0; i < m_textureIDList.size(); i++)
+    for(const auto& obj : m_textureIDList)
     {
-        TheTextureManager::Instance()->clearFromTextureMap(m_textureIDList[i]);
+        TheTextureManager::Instance()->clearFromTextureMap(obj);
     }
     
     TheInputHandler::Instance()->reset();
@@ -99,12 +99,12 @@ bool GameOverState::onExit()
 void GameOverState::setCallbacks(const std::vector<Callback>& callbacks)
 {
     // go through the game objects
-    for(int i = 0; i < m_gameObjects.size(); i++)
+    for(auto* obj : m_gameObjects)
     {
         // if they are of type MenuButton then assign a callback based on the id passed in from the file
-        if(dynamic_cast<MenuButton*>(m_gameObjects[i]))
+        if(dynamic_cast<MenuButton*>(obj))
         {
-            MenuButton* pButton = dynamic_cast<MenuButton*>(m_gameObjects[i]);
+            MenuButton* pButton = dynamic_cast<MenuButton*>(obj);
             pButton->setCallback(callbacks[pButton->getCallbackID()]);
         }
     }

@@ -21,22 +21,20 @@ void CollisionManager::checkPlayerEnemyBulletCollision(Player* pPlayer)
     pRect1->w = pPlayer->getWidth();
     pRect1->h = pPlayer->getHeight();
     
-    for(int i = 0; i < TheBulletHandler::Instance()->getEnemyBullets().size(); i++)
+    for (auto* bullet : TheBulletHandler::Instance()->getEnemyBullets()) 
     {
-        EnemyBullet* pEnemyBullet = TheBulletHandler::Instance()->getEnemyBullets()[i];
-        
         SDL_Rect* pRect2 = new SDL_Rect();
-        pRect2->x = pEnemyBullet->getPosition().getX();
-        pRect2->y = pEnemyBullet->getPosition().getY();
+        pRect2->x = bullet->getPosition().getX();
+        pRect2->y = bullet->getPosition().getY();
         
-        pRect2->w = pEnemyBullet->getWidth();
-        pRect2->h = pEnemyBullet->getHeight();
+        pRect2->w = bullet->getWidth();
+        pRect2->h = bullet->getHeight();
         
         if(RectRect(pRect1, pRect2))
         {
-            if(!pPlayer->dying() && !pEnemyBullet->dying())
+            if(!pPlayer->dying() && !bullet->dying())
             {
-                pEnemyBullet->collision();
+                bullet->collision();
                 pPlayer->collision();
             }
         }
@@ -49,37 +47,33 @@ void CollisionManager::checkPlayerEnemyBulletCollision(Player* pPlayer)
 
 void CollisionManager::checkEnemyPlayerBulletCollision(const std::vector<GameObject *> &objects)
 {
-    for(int i = 0; i < objects.size(); i++)
+    for(auto* pobj : objects)
     {
-        GameObject* pObject = objects[i];
-        
-        for(int j = 0; j < TheBulletHandler::Instance()->getPlayerBullets().size(); j++)
+        for (auto* obj : TheBulletHandler::Instance()->getPlayerBullets()) 
         {
-            if(pObject->type() != std::string("Enemy") || !pObject->updating())
+            if(obj->type() != std::string("Enemy") || !obj->updating())
             {
                 continue;
             }
             
             SDL_Rect* pRect1 = new SDL_Rect();
-            pRect1->x = pObject->getPosition().getX();
-            pRect1->y = pObject->getPosition().getY();
-            pRect1->w = pObject->getWidth();
-            pRect1->h = pObject->getHeight();
-            
-            PlayerBullet* pPlayerBullet = TheBulletHandler::Instance()->getPlayerBullets()[j];
+            pRect1->x = pobj->getPosition().getX();
+            pRect1->y = pobj->getPosition().getY();
+            pRect1->w = pobj->getWidth();
+            pRect1->h = pobj->getHeight();
             
             SDL_Rect* pRect2 = new SDL_Rect();
-            pRect2->x = pPlayerBullet->getPosition().getX();
-            pRect2->y = pPlayerBullet->getPosition().getY();
-            pRect2->w = pPlayerBullet->getWidth();
-            pRect2->h = pPlayerBullet->getHeight();
+            pRect2->x = obj->getPosition().getX();
+            pRect2->y = obj->getPosition().getY();
+            pRect2->w = obj->getWidth();
+            pRect2->h = obj->getHeight();
             
             if(RectRect(pRect1, pRect2))
             {
-                if(!pObject->dying() && !pPlayerBullet->dying())
+                if(!pobj->dying() && !obj->dying())
                 {
-                    pPlayerBullet->collision();
-                    pObject->collision();
+                    obj->collision();
+                    pobj->collision();
                 }
                 
             }
@@ -98,22 +92,22 @@ void CollisionManager::checkPlayerEnemyCollision(Player* pPlayer, const std::vec
     pRect1->w = pPlayer->getWidth();
     pRect1->h = pPlayer->getHeight();
     
-    for(int i = 0; i < objects.size(); i++)
+    for(auto* obj : objects)
     {
-        if(objects[i]->type() != std::string("Enemy") || !objects[i]->updating())
+        if(obj->type() != std::string("Enemy") || !obj->updating())
         {
             continue;
         }
         
         SDL_Rect* pRect2 = new SDL_Rect();
-        pRect2->x = objects[i]->getPosition().getX();
-        pRect2->y = objects[i]->getPosition().getY();
-        pRect2->w = objects[i]->getWidth();
-        pRect2->h = objects[i]->getHeight();
+        pRect2->x = obj->getPosition().getX();
+        pRect2->y = obj->getPosition().getY();
+        pRect2->w = obj->getWidth();
+        pRect2->h = obj->getHeight();
         
         if(RectRect(pRect1, pRect2))
         {
-            if(!objects[i]->dead() && !objects[i]->dying())
+            if(!obj->dead() && !obj->dying())
             {
                 pPlayer->collision();
             }

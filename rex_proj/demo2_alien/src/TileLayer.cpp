@@ -62,7 +62,7 @@ void TileLayer::render()
 
 Tileset TileLayer::getTilesetByID(int tileID)
 {
-    for(int i = 0; i < m_tilesets.size(); i++)
+    for(size_t i = 0; i < m_tilesets.size(); i++)
     {
         if( i + 1 <= m_tilesets.size() - 1)
         {

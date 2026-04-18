@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <vector>
-#include "tinyxml.h"
+#include "lib/tinyxml.h"
 
 class Level;
 struct Tileset;

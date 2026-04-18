@@ -20,9 +20,9 @@ Level::Level()
 
 Level::~Level()
 {
-    for(int i = 0; i < m_layers.size(); i++)
+    for(auto* obj : m_layers)
     {
-        delete m_layers[i];
+        delete obj;
     }
     
     m_layers.clear();
@@ -30,17 +30,17 @@ Level::~Level()
 
 void Level::render()
 {
-    for(int i = 0; i < m_layers.size(); i++)
+    for(auto* obj : m_layers)
     {
-        m_layers[i]->render();
+        obj->render();
     }
 }
 
 void Level::update()
 {
     
-    for(int i = 0; i < m_layers.size(); i++)
+    for(auto* obj : m_layers)
     {
-        m_layers[i]->update(this);
+        obj->update(this);
     }
 }

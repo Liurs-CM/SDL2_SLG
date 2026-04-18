@@ -11,7 +11,7 @@
 
 #include <iostream>
 //#include "Map.h"
-#include "tinyxml.h"
+#include "lib/tinyxml.h"
 
 class MapLoader
 {
