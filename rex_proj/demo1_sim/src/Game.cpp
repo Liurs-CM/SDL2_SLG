@@ -52,14 +52,16 @@ bool Game::init(const char* title, int x_pos, int y_pos, int width, int height, 
 
     TheInputHandler::Instance()->initialiseJoysticks();
     std::cout << "game initing success!\n";
-    m_bRunning = true;
     TheGameObjectFactory::Instance()->registerType("MenuButton", new MenuButtonCreator());
 	TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
 	TheGameObjectFactory::Instance()->registerType("Enemy", new EnemyCreator());
 	TheGameObjectFactory::Instance()->registerType("Animate", new EnemyCreator());
+    TheGameObjectFactory::Instance()->registerType("AnimatedGraphic", new AnimatedGraphicCreator());
     TheGameObjectFactory::Instance()->registerType("Bullet", new BulletCreator());
 	m_pGameStateMachine = new GameStateMachine();
-	m_pGameStateMachine->changeState(new PlayState());
+	//m_pGameStateMachine->changeState(new PlayState());
+    m_pGameStateMachine->changeState(new MenuMainState());
+    m_bRunning = true;
     return true;
 }
 
@@ -91,10 +93,14 @@ void Game::handleEvents()
 
 void Game::clean()
 {
-    std::cout << "cleaning game\n";
+    TheInputHandler::Instance()->clean();
+    m_pGameStateMachine->clean();
+    m_pGameStateMachine = 0;
+    delete m_pGameStateMachine;
+    TheTextureManager::Instance()->clearTextureMap();
     SDL_DestroyWindow(m_pWindow);
     SDL_DestroyRenderer(m_pRenderer);
-    TheInputHandler::Instance()->clean();
+    std::cout << "cleaning game\n";
     SDL_Quit();
 }
 

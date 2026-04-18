@@ -166,9 +166,9 @@ void InputHandler::onMouseMove(SDL_Event& event)
 void InputHandler::onKeyDown()
 {
 	m_keystates = SDL_GetKeyboardState(0);
-    if(isKeyDown(SDL_SCANCODE_ESCAPE)){
-        TheGame::Instance()->quit();
-    }
+    //if(isKeyDown(SDL_SCANCODE_ESCAPE)){
+    //    TheGame::Instance()->quit();
+    //}
 }
 
 void InputHandler::onKeyUp()
@@ -305,4 +305,11 @@ int InputHandler::yvalue(int joy, int stick)
 		}
 	}
 	return 0;
+}
+
+void InputHandler::reset()
+{
+    m_mouseButtonStates[LEFT] = false;
+    m_mouseButtonStates[RIGHT] = false;
+    m_mouseButtonStates[MIDDLE] = false;
 }

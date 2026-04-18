@@ -12,6 +12,7 @@ class GameStateMachine
         void popState();
         void update();
         void render();
+        void clean();
     private:
         std::vector<GameState*> m_gameStates;
         void popStatePrivate();

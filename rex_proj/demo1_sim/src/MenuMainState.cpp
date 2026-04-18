@@ -64,6 +64,7 @@ bool MenuMainState::onExit()
     {
         TheTextureManager::Instance()->clearFromTextureMap(obj);
     }
+    TheInputHandler::Instance()->reset();
     std::cout << "exiting MenuMainState\n";
     return true;
 }

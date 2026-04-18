@@ -21,6 +21,7 @@ class TextureManager
         void drawCircle(int cx, int cy, int radius, bool Fill = false, uint32_t color = COLOR_BLACK);
         void drawTile(std::string id, int margin, int spacing, int x, int y, int width, int height, int currentRow, int currentFrame);
         void drawGrid(int x, int y, int rows, int cols, int cellSize, uint32_t color);
+        void clearTextureMap();
         void clearFromTextureMap(std::string id);
         static TextureManager* Instance()
         {

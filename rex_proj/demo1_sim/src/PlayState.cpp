@@ -1,4 +1,5 @@
 #include "PlayState.h"
+#include "MenuPauseState.h"
 #include "TextureManager.h"
 #include "Game.h"
 #include "GameObject.h"
@@ -17,7 +18,7 @@ void PlayState::update()
 {
     if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_ESCAPE))
     {
-        //TheGame::Instance()->getStateMachine()->pushState(new PauseState());
+        TheGame::Instance()->getStateMachine()->pushState(new MenuPauseState());
         std::cout << "exit PlayState" << std::endl;
     }
     //else if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_SPACE))
@@ -131,9 +132,10 @@ bool PlayState::onExit()
     {
         TheTextureManager::Instance()->clearFromTextureMap(obj);
     }
-    std::cout << "exiting PlayState" << std::endl;
     m_bullets.clear();
     m_enemies.clear();
+    TheInputHandler::Instance()->reset();
+    std::cout << "exiting PlayState" << std::endl;
     return true;
 }
 

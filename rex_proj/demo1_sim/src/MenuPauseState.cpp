@@ -57,6 +57,7 @@ bool MenuPauseState::onExit()
     {
         TheTextureManager::Instance()->clearFromTextureMap(obj);
     }
+    TheInputHandler::Instance()->reset();
     std::cout << "exiting MenuPauseState\n";
     return true;
 }

@@ -22,12 +22,11 @@ class InputHandler
             {
                 s_pInstance = new InputHandler();
             }
-
             return s_pInstance;
         }
-
         void update();
         void clean();
+        void reset();
         void initialiseJoysticks();
         bool joysticksInitialised() { return m_bJoysticksInitialised; }
         bool getMouseButtonState(int buttonNumber)
