@@ -16,7 +16,8 @@ const std::string PlayState::s_playID = "PLAY";
 
 void PlayState::update()
 {
-    if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_ESCAPE))
+    if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_ESCAPE) || 
+            TheInputHandler::Instance()->getMouseButtonState(RIGHT) )
     {
         TheGame::Instance()->getStateMachine()->pushState(new MenuPauseState());
         std::cout << "exit PlayState" << std::endl;
