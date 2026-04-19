@@ -48,12 +48,13 @@ void TextureManager::drawRotat(std::string id, int x, int y, int width, int heig
     SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, angle, &center, flip);
 }
 
-void TextureManager::drawFrame(std::string id, int x, int y, int width, int height, int currentRow, int currentFrame, SDL_RendererFlip flip)
+void TextureManager::drawFrame(std::string id, int x, int y, int width, int height, int currentRow, int currentFrame, int alpha, SDL_RendererFlip flip)
 {
     SDL_Rect srcRect;
     SDL_Rect dstRect;
     srcRect = {width * currentFrame, height * (currentRow - 1), width, height};
     dstRect = {x, y, width, height};
+    SDL_SetTextureAlphaMod(m_textureMap[id], alpha);
     SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, 0, 0, flip);
 }
 
@@ -74,7 +75,7 @@ void TextureManager::drawTile(std::string id, int margin, int spacing, int x, in
     srcRect = {
         margin + (spacing + width) * currentFrame, 
         margin + (spacing + height) * currentRow, 
-        width, height};
+        width, height };
     dstRect = {x, y, width, height};
     SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, 0, 0, SDL_FLIP_NONE);
 }

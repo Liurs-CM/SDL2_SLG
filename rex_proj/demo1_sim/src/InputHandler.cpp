@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
 #include "InputHandler.h"
 #include "Game.h"
+#include <iostream>
+#include <vector>
 
 InputHandler* InputHandler::s_pInstance = 0;
 

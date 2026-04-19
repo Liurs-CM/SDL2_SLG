@@ -1,6 +1,6 @@
 #ifndef __StateParser__
 #define __StateParser__
-#include "tinyxml2.h"
+#include "lib/tinyxml2.h"
 #include <iostream>
 #include <memory>
 #include <vector>

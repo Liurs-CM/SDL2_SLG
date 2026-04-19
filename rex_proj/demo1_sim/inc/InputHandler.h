@@ -1,11 +1,11 @@
 #ifndef __InputHandler__
 #define __InputHandler__
+#include "SDL.h"
+#include "Vector2D.h"
 #include <array>
 #include <vector>
 #include <utility>
 #include <unordered_set>
-#include "SDL.h"
-#include "Vector2D.h"
 
 enum mouse_buttons
 {

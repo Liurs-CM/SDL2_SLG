@@ -13,7 +13,7 @@ class AnimatedGraphic : public SDLGameObject
         virtual void clean();
 		virtual void load(const LoaderParams* pParams);
     private:
-        int m_animSpeed;
+        float m_animSpeed;
         int m_frameCount;
 };
 

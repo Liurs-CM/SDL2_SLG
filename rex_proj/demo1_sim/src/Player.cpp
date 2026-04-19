@@ -20,22 +20,17 @@ void Player::draw()
     //TextureManager::Instance()->drawFrame(m_textureID, (Uint32)m_position.getX(), (Uint32)m_position.getY(), m_width, m_height, m_currentRow, m_currentFrame);
     TextureManager::Instance()->drawFrame(m_textureID, (Uint32)at_position.getX() - 5, (Uint32)at_position.getY() - 5, m_width, m_height, m_currentRow, m_currentFrame);
     TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi, test printf move[%d], Direction: %s, Frame[%d]", moving, dirNames[m_currentRow-1], m_currentFrame);
+    // m_position delay frame
+    if(moving){
+        TextureManager::Instance()->drawFrame(m_textureID, (Uint32)m_position.getX() - 5, (Uint32)m_position.getY() - 5, m_width, m_height, m_currentRow, m_currentFrame, 0);
+    }
 }
 
 void Player::update()
 {
 	handleInput();
     //SDLGameObject::update();
-    animTimer = (animTimer >= 250.0f) ? 0 : (animTimer + DELAY_TIME);
-    if(animTimer == 0){
-        if (moving) {
-            m_currentFrame = (m_currentFrame >= 2) ? -1 : m_currentFrame;
-            m_currentFrame += 1;
-            m_currentFrame = (m_currentFrame == -1) ? 2 : m_currentFrame;
-        } else {
-            m_currentFrame = (m_currentFrame == 0) ? 3 : 0; // standing frame
-        }
-    }
+    handleAnimation();
 }
 
 void Player::clean() { }
@@ -45,6 +40,16 @@ void Player::handleInput()
     //Vector2D* target = TheInputHandler::Instance()->getMousePosition();
     //m_velocity = *target - m_m_positionition;
     //m_velocity /= 50;
+    if (TheInputHandler::Instance()->m_mouseButtonStates[LEFT])
+    {
+        Vector2D delt_pos = TheInputHandler::Instance()->getMousePosition() - m_position;
+        int x = int(delt_pos.getX() / CELL_SIZE);
+        int y = int(delt_pos.getY() / CELL_SIZE);
+        to_position = m_position + Vector2D(x, y) * CELL_SIZE;
+        //to_position = m_position + Vector2D(0,-1) * CELL_SIZE;
+        m_currentDirection = Direction::DOWN;
+        moving = true;
+    }
     if (TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_W))
     {
         to_position = m_position + Vector2D(0,-1) * CELL_SIZE;
@@ -88,4 +93,21 @@ void Player::handleInput()
         }
     }
 }
+
+void Player::handleAnimation()
+{
+    animTimer = (animTimer >= 250.0f) ? 0 : (animTimer + DELAY_TIME);
+    if(animTimer == 0){
+        if (moving) {
+            m_currentFrame = (m_currentFrame >= 2) ? -1 : m_currentFrame;
+            m_currentFrame += 1;
+            m_currentFrame = (m_currentFrame == -1) ? 2 : m_currentFrame;
+        } else {
+            m_currentFrame = (m_currentFrame == 0) ? 3 : 0; // standing frame
+        }
+    }
+    if(!m_bDead) {
+    }
+}
+
 

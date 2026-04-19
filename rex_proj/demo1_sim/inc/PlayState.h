@@ -4,6 +4,7 @@
 #include "Bullet.h"
 #include "Enemy.h"
 #include "Player.h"
+#include "Level.h"
 #include <memory>
 #include <vector>
 //#include "Level.h"
@@ -14,6 +15,7 @@ class SDLGameObject;
 class PlayState : public GameState
 {
     public:
+        virtual ~PlayState() { delete pLevel; }
         virtual void update();
         virtual void render();
         virtual bool onEnter();
@@ -30,7 +32,7 @@ class PlayState : public GameState
         Player* player = nullptr;
         std::vector<std::unique_ptr<Bullet>> m_bullets;
         std::vector<std::unique_ptr<Enemy>> m_enemies;
-        //Level* pLevel;
+        Level* pLevel;
         bool checkCollision(SDLGameObject* p1, SDLGameObject* p2);
 };
 

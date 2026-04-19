@@ -50,4 +50,4 @@ class Game
 
 typedef Game TheGame;
 
-#endif /* defined(__Game__) */
+#endif // __Game__

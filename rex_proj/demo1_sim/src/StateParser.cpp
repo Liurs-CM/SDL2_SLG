@@ -1,8 +1,8 @@
-#include <string>
-#include <iostream>
 #include "StateParser.h"
 #include "GameObjectFactory.h"
 #include "Game.h"
+#include <string>
+#include <iostream>
 
 bool StateParser::parseState(const char* stateFile, std::string stateID, std::vector<std::unique_ptr<GameObject>> *pObjects, std::vector<std::string> *pTextureIDs)
 {

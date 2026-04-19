@@ -1,7 +1,7 @@
 #ifndef __GameLib__
 #define __GameLib__
-
 #include <stdlib.h>
+#include <functional>
 
 #define FPS   165
 #define DELAY_TIME  (1000 / FPS)
@@ -152,20 +152,40 @@ static const unsigned char _gamelib_font8x8[95][8] = {
 };
 
 
-
 class GameLib
 {
     public:
         GameLib();
         ~GameLib();
         // -------- Helper Functions --------
-        static int Random(int minVal, int maxVal);
-
+        static int Random(int minVal, int maxVal) {
+            if (minVal > maxVal) { int t = minVal; minVal = maxVal; maxVal = t; }
+            if (minVal == maxVal) return minVal;
+            return minVal + rand() % (maxVal - minVal + 1);
+        }
+        template<typename Container, typename Callable>
+            static void forEachCall(Container&& container, Callable&& func) {
+                for (auto& element : container) {
+                    std::invoke(func, element);
+                }
+            }
+        static bool RectRectCollision(SDL_Rect* A, SDL_Rect* B)
+        {
+            int aHBuf = A->h / s_buffer;
+            int aWBuf = A->w / s_buffer;
+            int bHBuf = B->h / s_buffer;
+            int bWBuf = B->w / s_buffer;
+            if((A->y + A->h) - aHBuf <= B->y + bHBuf)  { return false; }
+            if(A->y + aHBuf >= (B->y + B->h) - bHBuf)  { return false; }
+            if((A->x + A->w) - aWBuf <= B->x +  bWBuf) { return false; }
+            if(A->x + aWBuf >= (B->x + B->w) - bWBuf)  { return false; }
+            return true;
+        }
     private:
         // disable copy
         GameLib(const GameLib &);
         GameLib &operator=(const GameLib &);
+        const static int s_buffer = 4;
 };
 
-
-#endif /* defind(__GameLib__) */
+#endif // __GameLib__

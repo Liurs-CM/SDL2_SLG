@@ -1,11 +1,11 @@
 #include "PlayState.h"
-#include "MenuPauseState.h"
+//#include "MenuPauseState.h"
 #include "TextureManager.h"
-#include "Game.h"
 #include "GameObject.h"
 #include "InputHandler.h"
-#include "LoaderParams.h"
-#include "StateParser.h"
+//#include "LoaderParams.h"
+//#include "StateParser.h"
+#include "Game.h"
 #include <string>
 #include <algorithm>
 #include <iostream>
@@ -16,109 +16,109 @@ const std::string PlayState::s_playID = "PLAY";
 
 void PlayState::update()
 {
-    if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_ESCAPE) || 
-            TheInputHandler::Instance()->getMouseButtonState(RIGHT) )
-    {
-        TheGame::Instance()->getStateMachine()->pushState(new MenuPauseState());
-        std::cout << "exit PlayState" << std::endl;
-    }
-    //else if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_SPACE))
-    else if(TheInputHandler::Instance()->isKeyPressed(SDL_SCANCODE_SPACE))
-    {
-        createBullet();
-        //std::cout << "bullet num " << m_bullets.size() << std::endl;
-    }
-    for(auto& obj : m_gameObjects)
-    {
-        if(dynamic_cast<Player*>(obj.get()) != nullptr)
-        {
-            obj->update();
-        }
-    }
-    for(const auto& enemy_ptr : m_enemies)
-    {
-        if(!enemy_ptr) continue;
-        SDLGameObject& obj_e = *enemy_ptr;
-        for(const auto& bullet_ptr : m_bullets)
-        {
-            if(!bullet_ptr) continue;
-            SDLGameObject& obj_b = *bullet_ptr;
-            if( checkCollision(&obj_e, &obj_b))
-            {
-                enemy_ptr->collision_state = true;
-                bullet_ptr->collision_state = true;
-                score++;
-                //std::cout << "shot the enemy nums:" << score << std::endl;
-            }
-        }
-    }
-    if(!m_bullets.empty())
-    {
-        for(auto& obj : m_bullets)
-        {
-            obj->update();
-            //std::cout << "bullet move " << dbg_num++ << std::endl;
-        }
-        m_bullets.erase(
-                std::remove_if(m_bullets.begin(), m_bullets.end(),
-                    [](const std::unique_ptr<Bullet>& b) {
-                    return b->isDead();  // 返回 true 表示要删除
-                    }),
-                m_bullets.end()
-                );
-    }
-    if(!m_enemies.empty())
-    {
-        for(auto& obj : m_enemies)
-        {
-            obj->update();
-        }
-        m_enemies.erase(
-                std::remove_if(m_enemies.begin(), m_enemies.end(),
-                    [](const std::unique_ptr<Enemy>& b) {
-                    return b->isDead();  // 返回 true 表示要删除
-                    }),
-                m_enemies.end()
-                );
-    }
-    spawnEnemies();
-    //pLevel->update();
+    pLevel->update();
+    //if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_ESCAPE) || 
+    //        TheInputHandler::Instance()->getMouseButtonState(RIGHT) )
+    //{
+    //    TheGame::Instance()->getStateMachine()->pushState(new MenuPauseState());
+    //    std::cout << "exit PlayState" << std::endl;
+    //}
+    ////else if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_SPACE))
+    //else if(TheInputHandler::Instance()->isKeyPressed(SDL_SCANCODE_SPACE))
+    //{
+    //    createBullet();
+    //    //std::cout << "bullet num " << m_bullets.size() << std::endl;
+    //}
+    //for(auto& obj : m_gameObjects)
+    //{
+    //    if(dynamic_cast<Player*>(obj.get()) != nullptr)
+    //    {
+    //        obj->update();
+    //    }
+    //}
+    //for(const auto& enemy_ptr : m_enemies)
+    //{
+    //    if(!enemy_ptr) continue;
+    //    SDLGameObject& obj_e = *enemy_ptr;
+    //    for(const auto& bullet_ptr : m_bullets)
+    //    {
+    //        if(!bullet_ptr) continue;
+    //        SDLGameObject& obj_b = *bullet_ptr;
+    //        if( checkCollision(&obj_e, &obj_b))
+    //        {
+    //            enemy_ptr->collision_state = true;
+    //            bullet_ptr->collision_state = true;
+    //            score++;
+    //            //std::cout << "shot the enemy nums:" << score << std::endl;
+    //        }
+    //    }
+    //}
+    //if(!m_bullets.empty())
+    //{
+    //    for(auto& obj : m_bullets)
+    //    {
+    //        obj->update();
+    //        //std::cout << "bullet move " << dbg_num++ << std::endl;
+    //    }
+    //    m_bullets.erase(
+    //            std::remove_if(m_bullets.begin(), m_bullets.end(),
+    //                [](const std::unique_ptr<Bullet>& b) {
+    //                return b->isDead();  // 返回 true 表示要删除
+    //                }),
+    //            m_bullets.end()
+    //            );
+    //}
+    //if(!m_enemies.empty())
+    //{
+    //    for(auto& obj : m_enemies)
+    //    {
+    //        obj->update();
+    //    }
+    //    m_enemies.erase(
+    //            std::remove_if(m_enemies.begin(), m_enemies.end(),
+    //                [](const std::unique_ptr<Enemy>& b) {
+    //                return b->isDead();  // 返回 true 表示要删除
+    //                }),
+    //            m_enemies.end()
+    //            );
+    //}
+    //spawnEnemies();
 }
 
 void PlayState::render()
 {
-    for(auto& obj : m_gameObjects)
-    {
-        if(dynamic_cast<Player*>(obj.get()) != nullptr)
-        {
-            obj->draw();
-        }
-    }
-    for(auto& obj : m_bullets)
-    {
-        obj->draw();
-    }
-    for(auto& obj : m_enemies)
-    {
-        obj->draw();
-    }
-    //pLevel->render();
+    pLevel->render();
+    //for(auto& obj : m_gameObjects)
+    //{
+    //    if(dynamic_cast<Player*>(obj.get()) != nullptr)
+    //    {
+    //        obj->draw();
+    //    }
+    //}
+    //for(auto& obj : m_bullets)
+    //{
+    //    obj->draw();
+    //}
+    //for(auto& obj : m_enemies)
+    //{
+    //    obj->draw();
+    //}
 }
 
 bool PlayState::onEnter()
 {
-	StateParser stateParser;
-	stateParser.parseState("assets/test.xml", s_playID, &m_gameObjects, &m_textureIDList);
-    for(auto& obj : m_gameObjects)
-    {
-        if(dynamic_cast<Player*>(obj.get()) != nullptr)
-        {
-            player = static_cast<Player*>(obj.get());
-        }
-    }
+    LevelParser levelParser;
+    pLevel = levelParser.parseLevel("assets/map1.tmx");
+	//StateParser stateParser;
+	//stateParser.parseState("assets/test.xml", s_playID, &m_gameObjects, &m_textureIDList);
+    //for(auto& obj : m_gameObjects)
+    //{
+    //    if(dynamic_cast<Player*>(obj.get()) != nullptr)
+    //    {
+    //        player = static_cast<Player*>(obj.get());
+    //    }
+    //}
     std::cout << "entering PlayState" << std::endl;
-    //LevelParser levelParser;
-    //pLevel = levelParser.parseLevel("assets/map1.tmx");
     return true;
 }
 
