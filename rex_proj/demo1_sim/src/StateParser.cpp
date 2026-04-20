@@ -79,7 +79,7 @@ void StateParser::parseObjects(XMLElement *pStateRoot, std::vector<std::unique_p
         textureID = e->Attribute("textureID");
 
         GameObject* pGameObject = TheGameObjectFactory::Instance()->create(e->Attribute("type"));
-        pGameObject->load(new LoaderParams(x, y, width, height, textureID, numFrames, callbackID, animSpeed));
+        pGameObject->load(std::unique_ptr<LoaderParams>(new LoaderParams(x, y, width, height, textureID, numFrames, callbackID, animSpeed)));
         pObjects->push_back(std::unique_ptr<GameObject>(pGameObject));
     }
 }

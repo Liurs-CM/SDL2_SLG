@@ -137,7 +137,7 @@ void LevelParser::parseObjectLayer(XMLElement* pObjectElement, std::vector<Layer
                 }
             }
             //int x, int y, int width, int height, std::string textureID, int numFrames, void()
-            pGameObject->load(new LoaderParams(x, y, width, height, textureID, numFrames,callbackID, animSpeed));
+            pGameObject->load(std::make_unique<LoaderParams>(x, y, width, height, textureID, numFrames,callbackID, animSpeed));
             if(type == "Player") {
                 pLevel->setPlayer(dynamic_cast<Player*>(pGameObject));
             }

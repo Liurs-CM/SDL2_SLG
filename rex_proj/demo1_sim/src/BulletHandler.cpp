@@ -7,16 +7,16 @@ BulletHandler::BulletHandler() { }
 
 void BulletHandler::addPlayerBullet(int x, int y, int width, int height, std::string textureID, int numFrames, Vector2D heading)
 {
-    PlayerBullet* pPlayerBullet = new PlayerBullet();
-    pPlayerBullet->load(std::unique_ptr<LoaderParams>(new LoaderParams(x, y, width, height, textureID, numFrames)), heading);
-    m_playerBullets.push_back(pPlayerBullet);
+    auto pPlayerBullet = std::make_unique<PlayerBullet>();
+    pPlayerBullet->load(std::make_unique<LoaderParams>(x, y, width, height, textureID, numFrames), heading);
+    m_playerBullets.push_back(std::move(pPlayerBullet));
 }
 
 void BulletHandler::addEnemyBullet(int x, int y, int width, int height, std::string textureID, int numFrames, Vector2D heading)
 {
-    EnemyBullet* pEnemyBullet = new EnemyBullet();
-    pEnemyBullet->load(std::unique_ptr<LoaderParams>(new LoaderParams(x, y, width, height, textureID, numFrames)), heading);
-    m_enemyBullets.push_back(pEnemyBullet);
+    auto pEnemyBullet  = std::make_unique<EnemyBullet>();
+    pEnemyBullet->load(std::make_unique<LoaderParams>(x, y, width, height, textureID, numFrames), heading);
+    m_enemyBullets.push_back(std::move(pEnemyBullet));
 }
 
 void BulletHandler::clearBullets()
@@ -56,10 +56,10 @@ void BulletHandler::updateBullets()
 
 void BulletHandler::drawBullets()
 {
-    for (auto* obj : m_playerBullets) {
+    for (auto& obj : m_playerBullets) {
         obj->draw();
     }
-    for (auto* obj : m_enemyBullets) {
+    for (auto& obj : m_enemyBullets) {
         obj->draw();
     }
 }

@@ -22,8 +22,12 @@ class BulletHandler
         void updateBullets();
         void drawBullets();
         void clearBullets();
-        const std::vector<PlayerBullet*> getPlayerBullets() { return m_playerBullets; }
-        const std::vector<EnemyBullet*> getEnemyBullets() { return m_enemyBullets; }
+        const std::vector<std::unique_ptr<PlayerBullet>>& getPlayerBullets() const { 
+            return m_playerBullets; 
+        }
+        const std::vector<std::unique_ptr<EnemyBullet>>& getEnemyBullets() const { 
+            return m_enemyBullets; 
+        }
     private:
         BulletHandler();
         ~BulletHandler();

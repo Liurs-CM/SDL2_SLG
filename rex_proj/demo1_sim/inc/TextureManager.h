@@ -23,6 +23,7 @@ class TextureManager
         void drawGrid(int x, int y, int rows, int cols, int cellSize, uint32_t color);
         void clearTextureMap();
         void clearFromTextureMap(std::string id);
+        std::map<std::string, SDL_Texture*> getTextureMap() { return m_textureMap; }
         static TextureManager* Instance()
         {
             if(s_pInstance == 0)

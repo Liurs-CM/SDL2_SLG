@@ -11,7 +11,7 @@ SDLGameObject::SDLGameObject() : GameObject(),
     m_dyingCounter(0),
     m_bPlayedDeathSound(false) {}
 
-void ShooterObject::load(std::unique_ptr<LoaderParams> const &pParams)
+void SDLGameObject::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     m_position = Vector2D(pParams->getX(), pParams->getY());
     m_width = pParams->getWidth();

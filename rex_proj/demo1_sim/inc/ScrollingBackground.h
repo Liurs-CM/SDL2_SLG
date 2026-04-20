@@ -2,6 +2,7 @@
 #define __ScrollingBackground__
 #include "GameObjectFactory.h"
 #include "SDLGameObject.h"
+#include "SDL.h"
 #include <iostream>
 
 class ScrollingBackground : public SDLGameObject

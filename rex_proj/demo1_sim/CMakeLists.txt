@@ -7,6 +7,7 @@ pkg_search_module(SDL2_MIXER REQUIRED SDL2_mixer)
 pkg_search_module(SDL2_IMAGE REQUIRED SDL2_image)
 pkg_search_module(SDL2_TTF REQUIRED SDL2_ttf)
 pkg_check_modules(SDL2GFX REQUIRED SDL2_gfx)
+pkg_search_module(ZLIB REQUIRED zlib)
 
 add_compile_options(-Wall -Wempty-body -Werror -Werror=maybe-uninitialized -Warray-bounds -g)
 
@@ -17,6 +18,7 @@ Include_Directories(
  	${SDL2_IMAGE_INCLUDE_DIRS}
  	${SDL2_TTF_INCLUDE_DIRS}
     ${SDL2GFX_INCLUDE_DIRS}
+    ${ZLIB_INCLUDE_DIRS}
 )
 
 #file(GLOB SOURCES   src/defs.h src/structs.h src/*.c src/*.h src/*/*.c src/*/*.h)
@@ -45,6 +47,7 @@ Target_Link_Libraries (
  	${SDL2_IMAGE_LIBRARIES}
  	${SDL2_TTF_LIBRARIES}
     ${SDL2GFX_LIBRARIES}
+    ${ZLIB_LIBRARIES}
 )
 
 

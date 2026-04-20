@@ -48,7 +48,6 @@ class InputHandler
     private:
         InputHandler();
         ~InputHandler() { delete m_mousePosition; }
-
         static InputHandler* s_pInstance;
         std::vector<SDL_Joystick*> m_joysticks;
         bool m_bJoysticksInitialised;

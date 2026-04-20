@@ -11,7 +11,7 @@ class AnimatedGraphic : public SDLGameObject
         virtual void draw();
         virtual void update();
         virtual void clean();
-		virtual void load(const LoaderParams* pParams);
+        virtual void load(std::unique_ptr<LoaderParams> const &pParams);
     private:
         float m_animSpeed;
         int m_frameCount;

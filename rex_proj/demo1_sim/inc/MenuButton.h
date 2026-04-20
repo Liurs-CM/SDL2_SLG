@@ -8,7 +8,7 @@ class MenuButton : public SDLGameObject
     public:
         MenuButton();
         virtual ~MenuButton() {}
-        virtual void load(const LoaderParams* pParams);
+        virtual void load(std::unique_ptr<LoaderParams> const &pParams);
         virtual void draw();
         virtual void update();
         virtual void clean();

@@ -12,7 +12,7 @@ void CollisionManager::checkPlayerEnemyBulletCollision(Player* pPlayer)
     pRect1->y = pPlayer->getPosition().getY();
     pRect1->w = pPlayer->getWidth();
     pRect1->h = pPlayer->getHeight();
-    for (auto* bullet : TheBulletHandler::Instance()->getEnemyBullets()) 
+    for (const auto& bullet : TheBulletHandler::Instance()->getEnemyBullets()) 
     {
         SDL_Rect* pRect2 = new SDL_Rect();
         pRect2->x = bullet->getPosition().getX();
@@ -36,7 +36,7 @@ void CollisionManager::checkEnemyPlayerBulletCollision(const std::vector<GameObj
 {
     for(auto* pobj : objects)
     {
-        for (auto* obj : TheBulletHandler::Instance()->getPlayerBullets()) 
+        for (const auto& obj : TheBulletHandler::Instance()->getPlayerBullets()) 
         {
             if(obj->type() != std::string("Enemy") || !obj->updating())
             {
@@ -84,7 +84,7 @@ void CollisionManager::checkPlayerEnemyCollision(Player* pPlayer, const std::vec
         pRect2->y = obj->getPosition().getY();
         pRect2->w = obj->getWidth();
         pRect2->h = obj->getHeight();
-        if(RectRect(pRect1, pRect2))
+        if(RectRectCollision(pRect1, pRect2))
         {
             if(!obj->dead() && !obj->dying())
             {

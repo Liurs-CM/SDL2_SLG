@@ -4,7 +4,7 @@ using namespace std;
 
 AnimatedGraphic::AnimatedGraphic() : SDLGameObject() { }
 
-void AnimatedGraphic::load(const LoaderParams* pParams)
+void AnimatedGraphic::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     SDLGameObject::load(pParams);
     m_animSpeed = pParams->getAnimSpeed();
