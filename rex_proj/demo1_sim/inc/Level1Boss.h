@@ -2,7 +2,6 @@
 #define __Level1Boss__
 #include "Enemy.h"
 #include "GameObjectFactory.h"
-#include "Game.h"
 
 class Level1Boss : public Enemy
 {

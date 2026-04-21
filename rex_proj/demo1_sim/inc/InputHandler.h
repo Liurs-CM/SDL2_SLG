@@ -30,16 +30,16 @@ class InputHandler
         void reset_mouseButtonState();
         void initialiseJoysticks();
         bool joysticksInitialised() { return m_bJoysticksInitialised; }
-        bool getMouseButtonState(int buttonNumber)
-        {
-            return m_mouseButtonStates[buttonNumber];
-        }	
         Vector2D* getMousePosition()
         {
             return m_mousePosition;
         }
         bool isKeyDown(SDL_Scancode key) const;
         bool isKeyPressed(SDL_Scancode key) const;
+        bool getMouseButtonState(int buttonNumber)
+        {
+            return m_mouseButtonStates[buttonNumber];
+        }	
         bool getButtonState(int joy, int buttonNumber)
         {
             return m_buttonStates[joy][buttonNumber];

@@ -13,7 +13,7 @@ Level* LevelParser::parseLevel(const char *levelFile)
     // create a tinyXML document and load the map xml
     XMLDocument levelDocument;
     if(levelDocument.LoadFile(levelFile) != XML_SUCCESS) {
-        std::cerr << levelDocument.ErrorStr() << "\n";
+        std::cerr << "Failed to load level file: " << levelDocument.ErrorStr() << "\n";
     }
 
     // get the root node and display some values
