@@ -134,12 +134,12 @@ void Player::handleInput()
         moving = true;
         //std::cout << m_position << "move right\n";
     }
-    if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_SPACE))
+    if(TheInputHandler::Instance()->isKeyPressed(SDL_SCANCODE_SPACE))
     {
         if(m_bulletCounter == m_bulletFiringSpeed)
         {
             TheSoundManager::Instance()->playSound("shoot", 0);
-            TheBulletHandler::Instance()->addPlayerBullet(m_position.getX() + 90, m_position.getY() + 12, 11, 11, "bullet1", 1, Vector2D(10,0));
+            TheBulletHandler::Instance()->addPlayerBullet(m_position.getX() + 24, m_position.getY() + 24, 32, 16, "bullet1", 1, Vector2D(1,0));
             m_bulletCounter = 0;
         }
         m_bulletCounter++;

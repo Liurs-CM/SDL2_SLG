@@ -30,16 +30,17 @@ void Level1Boss::update()
     if(!m_entered)
     {
         scroll(TheGame::Instance()->getScrollSpeed());
-        if(m_position.getX() < (TheGame::Instance()->getGameWidth() - (m_width + 20)))
+        if(m_position.getX() < (SCR_W - (m_width + 20)))
         {
             m_entered = true;
+            std::cout << "boss enter pos: " << m_position << "\n";
         }
     }
     else
     {
         if(!m_bDying)
         {
-            if(m_position.getY() + m_height >= TheGame::Instance()->getGameHeight())
+            if(m_position.getY() + m_height >= SCR_H)
             {
                 m_velocity.setY(-m_moveSpeed);
             }
@@ -61,7 +62,7 @@ void Level1Boss::update()
         else
         {
             scroll(TheGame::Instance()->getScrollSpeed());
-            m_currentFrame = int(((SDL_GetTicks() / (1000 / 3)) % m_numFrames));
+            m_currentFrame = int((SDL_GetTicks() / 100) % m_numFrames);
             if(m_dyingCounter == m_dyingTime)
             {
                 m_bDead = true;

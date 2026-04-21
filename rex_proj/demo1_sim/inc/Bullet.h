@@ -21,7 +21,7 @@ class PlayerBullet : public SDLGameObject
         }
         virtual void draw()
         {
-            SDLGameObject::draw();
+            //SDLGameObject::draw();
             TextureManager::Instance()->drawRotat(m_textureID, (Uint32)m_position.getX(), (Uint32)m_position.getY(), m_width, m_height, m_angle);
         }
         virtual void collision()

@@ -13,7 +13,7 @@ void ScrollingBackground::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     SDLGameObject::load(std::move(pParams));
     m_scrollSpeed = pParams->getAnimSpeed();
-    //m_scrollSpeed = 1;
+    m_scrollSpeed = 1;
     m_srcRect1 = {0, 0, m_width, m_height};
     m_dstRect1 = {int(m_position.getX()), int(m_position.getY()), m_width, m_height};
     m_srcRect2 = {0, 0, 0, m_height};
@@ -24,6 +24,7 @@ void ScrollingBackground::load(std::unique_ptr<LoaderParams> const &pParams)
 
 void ScrollingBackground::draw()
 {
+    SDL_SetTextureAlphaMod(TheTextureManager::Instance()->getTextureMap()[m_textureID], 128);
     // draw first rect
     SDL_RenderCopyEx(RenderContext::get(), TheTextureManager::Instance()->getTextureMap()[m_textureID], &m_srcRect1, &m_dstRect1, 0, 0, SDL_FLIP_NONE);
     // draw second rect

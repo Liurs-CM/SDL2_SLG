@@ -13,7 +13,7 @@
 
     <PAUSE>
         <TEXTURES>
-            <texture filename="assets/main.png" ID="mainbutton"/>
+            <texture filename="assets/buttonmain.png" ID="mainbutton"/>
             <texture filename="assets/resume.png" ID="resumebutton"/>
         </TEXTURES>
         <OBJECTS>
