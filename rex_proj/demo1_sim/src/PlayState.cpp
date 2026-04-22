@@ -42,7 +42,7 @@ void PlayState::render()
         }
         for(int i = 0; i < TheGame::Instance()->getPlayerLives(); i++)
         {
-            TheTextureManager::Instance()->drawFrame("lives", i * 30, 0, 32, 30, 0, 0, 0.0);
+            TheTextureManager::Instance()->drawFrame("lives", i * 30, 0, 32, 30, 1, 0, 32);
         }
         TheBulletHandler::Instance()->drawBullets();
     }
@@ -50,7 +50,7 @@ void PlayState::render()
 
 bool PlayState::onEnter()
 {
-    TheGame::Instance()->setPlayerLives(8);
+    TheGame::Instance()->setPlayerLives(3);
     LevelParser levelParser;
     pLevel = levelParser.parseLevel(TheGame::Instance()->getLevelFiles()[TheGame::Instance()->getCurrentLevel() - 1].c_str());
     TheTextureManager::Instance()->load("assets/bullet_B.png", "bullet1");
