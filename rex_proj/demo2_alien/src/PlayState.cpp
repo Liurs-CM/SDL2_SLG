@@ -66,7 +66,7 @@ void PlayState::render()
 
 bool PlayState::onEnter()
 {
-    TheGame::Instance()->setPlayerLives(3);
+    TheGame::Instance()->setPlayerLives(20);
     
     LevelParser levelParser;
     pLevel = levelParser.parseLevel(TheGame::Instance()->getLevelFiles()[TheGame::Instance()->getCurrentLevel() - 1].c_str());
