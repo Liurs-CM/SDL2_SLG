@@ -1,15 +1,46 @@
 #include "Game.h"
+#include "Shape.h"
 #include "RenderContext.h"
 #include "InputHandler.h"
-#include "GameStateMachine.h"
 #include "GameObjectFactory.h"
+#include "PlayState.h"
 #include "MenuMainState.h"
 #include "MenuOverState.h"
 #include "MenuButton.h"
-#include "AnimatedGraphic.h"
+//#include "AnimatedGraphic.h"
+#include "ScrollingBackground.h"
+#include "SoundManager.h"
+#include "Cat.h"
+#include "Level1Boss.h"
+//#include "ShotGlider.h"
+//#include "RoofTurret.h"
+//#include "Eskeletor.h"
 #include <iostream>
 
 Game* Game::s_pInstance = 0;
+
+Game::Game():
+    m_pWindow(0),
+    m_pRenderer(0),
+    m_bRunning(false),
+    m_pGameStateMachine(0),
+    m_scrollSpeed(1),
+    m_bLevelComplete(false),
+    m_bChangingState(false)
+{
+    // add some level files to an array
+    m_levelFiles.push_back("assets/map1.tmx");
+    //m_levelFiles.push_back("assets/map2.tmx");
+    // start at this level
+    m_currentLevel = 1;
+}
+
+Game::~Game()
+{
+    // we must clean up after ourselves to prevent memory leaks
+    m_pRenderer= 0;
+    m_pWindow = 0;
+}
 
 bool Game::init(const char* title, int x_pos, int y_pos, int width, int height, bool fullscreen)
 {
@@ -24,7 +55,7 @@ bool Game::init(const char* title, int x_pos, int y_pos, int width, int height, 
         if( m_pWindow != 0)
         {
             std::cout << "window creation success\n";
-            m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
+            m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, SDL_RENDERER_ACCELERATED);
             if( m_pRenderer != 0)
             {
                 RenderContext::set(m_pRenderer);
@@ -52,18 +83,34 @@ bool Game::init(const char* title, int x_pos, int y_pos, int width, int height, 
 
     TheInputHandler::Instance()->initialiseJoysticks();
     std::cout << "game initing success!\n";
+    TheSoundManager::Instance()->load("assets/DST_ElecRock.ogg", "music1", SOUND_MUSIC);
+    TheSoundManager::Instance()->load("assets/boom.wav", "explode", SOUND_SFX);
+    TheSoundManager::Instance()->load("assets/phaser.wav", "shoot", SOUND_SFX);
+    TheSoundManager::Instance()->playMusic("music1", -1);
     TheGameObjectFactory::Instance()->registerType("MenuButton", new MenuButtonCreator());
 	TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
-	TheGameObjectFactory::Instance()->registerType("Enemy", new EnemyCreator());
-	TheGameObjectFactory::Instance()->registerType("Animate", new EnemyCreator());
-    TheGameObjectFactory::Instance()->registerType("AnimatedGraphic", new AnimatedGraphicCreator());
-    TheGameObjectFactory::Instance()->registerType("Bullet", new BulletCreator());
+    TheGameObjectFactory::Instance()->registerType("ScrollingBackground", new ScrollingBackgroundCreator());
+	TheGameObjectFactory::Instance()->registerType("Cat", new CatCreator());
+    TheGameObjectFactory::Instance()->registerType("Level1Boss", new Level1BossCreator());
+    //TheGameObjectFactory::Instance()->registerType("AnimatedGraphic", new AnimatedGraphicCreator());
+    //TheGameObjectFactory::Instance()->registerType("Turret", new TurretCreator());
+    //TheGameObjectFactory::Instance()->registerType("Glider", new GliderCreator());
+    //TheGameObjectFactory::Instance()->registerType("ShotGlider", new ShotGliderCreator());
+    //TheGameObjectFactory::Instance()->registerType("RoofTurret", new RoofTurretCreator());
+    //TheGameObjectFactory::Instance()->registerType("Eskeletor", new EskeletorCreator());
 	m_pGameStateMachine = new GameStateMachine();
-	//m_pGameStateMachine->changeState(new PlayState());
     m_pGameStateMachine->changeState(new MenuMainState());
     m_bRunning = true;
     return true;
 }
+
+void Game::setCurrentLevel(int currentLevel)
+{
+    m_currentLevel = currentLevel;
+    m_pGameStateMachine->changeState(new MenuOverState());
+    m_bLevelComplete = false;
+}
+
 
 void Game::render()
 {
@@ -107,9 +154,9 @@ void Game::clean()
 void Game::syncFPS()
 {
     frameTime = SDL_GetTicks() - frameStart;
-    if(frameTime < DELAY_TIME)
+    if(frameTime < DELAY_TIME_MS)
     {
-        SDL_Delay((int)(DELAY_TIME - frameTime));
+        SDL_Delay((int)(DELAY_TIME_MS - frameTime));
     }
     frameStart = SDL_GetTicks();
 }

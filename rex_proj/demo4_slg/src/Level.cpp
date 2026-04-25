@@ -1,0 +1,32 @@
+#include "Level.h"
+#include "TextureManager.h"
+#include "Layer.h"
+#include "TileLayer.h"
+#include "Game.h"
+#include "GameLib.h"
+#include <math.h>
+#include <iostream>
+
+Level::Level() { }
+
+Level::~Level()
+{
+    for(auto* obj : m_layers)
+    {
+        delete obj;
+    }
+    m_layers.clear();
+}
+
+void Level::render()
+{
+    GameLib::forEachCall(m_layers, &Layer::render);
+}
+
+void Level::update()
+{
+    for(auto* obj : m_layers)
+    {
+        obj->update(this);
+    }
+}

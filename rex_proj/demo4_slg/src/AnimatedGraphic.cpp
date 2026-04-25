@@ -1,27 +1,23 @@
 #include "AnimatedGraphic.h"
-#include <iostream>
-using namespace std;
+#include <stdexcept>
 
-AnimatedGraphic::AnimatedGraphic() : SDLGameObject() { }
-
-void AnimatedGraphic::load(const LoaderParams* pParams)
-{
-    SDLGameObject::load(pParams);
-    m_animSpeed = pParams->getAnimSpeed();
-}
-
-void AnimatedGraphic::draw()
-{
-    SDLGameObject::draw();
-}
+AnimatedGraphic::AnimatedGraphic(uint8_t numFrames, uint8_t animSpeed) : 
+    m_numFrames(numFrames), 
+    m_animSpeed(animSpeed), 
+    m_timeFrame(1000 / m_animSpeed), 
+    m_currentFrame(0) {
+        if(m_animSpeed <= 0) {
+            throw std::invalid_argument("Animation speed must be positive.");
+        }
+    }
 
 void AnimatedGraphic::update()
 {
-    //m_currentFrame = int(((SDL_GetTicks() / (1000 / m_animSpeed)) % m_numFrames));
-    SDLGameObject::update();
+    m_animTimer += DELAY_TIME_MS;
+    if(m_animTimer >= m_timeFrame)
+    { 
+        m_animTimer -= m_timeFrame;
+        m_currentFrame = (m_currentFrame + 1) % m_numFrames;
+    }
 }
 
-void AnimatedGraphic::clean()
-{
-    SDLGameObject::clean();
-}

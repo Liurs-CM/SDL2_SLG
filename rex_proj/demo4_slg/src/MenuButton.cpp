@@ -3,7 +3,7 @@
 
 MenuButton::MenuButton() : SDLGameObject(), m_callback(0), m_bReleased(true) { }
 
-void MenuButton::load(const LoaderParams* pParams)
+void MenuButton::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     SDLGameObject::load(std::move(pParams));
     m_callbackID = pParams->getCallbackID();

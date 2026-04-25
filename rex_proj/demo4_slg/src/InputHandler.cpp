@@ -1,11 +1,12 @@
-#include <iostream>
-#include <vector>
 #include "InputHandler.h"
 #include "Game.h"
+#include <iostream>
+#include <vector>
 
 InputHandler* InputHandler::s_pInstance = 0;
 
-InputHandler::InputHandler() : m_mousePosition(new Vector2D(0, 0))
+InputHandler::InputHandler() : m_bJoysticksInitialised(false),
+m_mousePosition(new Vector2D(0, 0)), m_keystates(0)
 {
     m_mouseButtonStates.fill(false);
 }

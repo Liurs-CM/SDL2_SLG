@@ -1,17 +1,17 @@
 #include "ObjectLayer.h"
+#include "GameLib.h"
 
-void ObjectLayer::update()
+ObjectLayer::~ObjectLayer()
 {
-    for(auto& obj : m_gameObjects)
-    {
-        obj->update();
-    }
+    m_gameObjects.clear();
+}
+
+void ObjectLayer::update(Level* pLevel)
+{
+    GameLib::forEachCall(m_gameObjects, &GameObject::update);
 }
 
 void ObjectLayer::render()
 {
-    for(auto& obj : m_gameObjects)
-    {
-        obj->draw();
-    }
+    GameLib::forEachCall(m_gameObjects, &GameObject::draw);
 }

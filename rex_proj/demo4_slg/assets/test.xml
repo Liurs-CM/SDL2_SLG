@@ -29,9 +29,9 @@
             <texture filename="assets/bullet.png" ID="bullet"/>
         </TEXTURES>
         <OBJECTS>
-            <object type="Player" x="100" y="100" width="36" height="36" textureID="warrior" numFrames="4" animSpeed="1"/>
-            <object type="Enemy" x="100" y="100" width="36" height="36" textureID="cat" numFrames="6" animSpeed="0.8"/>
-            <object type="Bullet" x="100" y="100" width="32" height="16" textureID="bullet" numFrames="2" animSpeed="1"/>
+            <object type="Player" x="100" y="100" width="36" height="36" textureID="warrior" numFrames="4" animSpeed="4"/>
+            <object type="Enemy" x="100" y="100" width="36" height="36" textureID="cat" numFrames="6" animSpeed="4"/>
+            <object type="Bullet" x="100" y="100" width="32" height="16" textureID="bullet" numFrames="2" animSpeed="4"/>
         </OBJECTS>
     </PLAY>
 
@@ -42,7 +42,7 @@
             <texture filename="assets/button_restart.png" ID="restartbutton"/>
         </TEXTURES>
         <OBJECTS>
-            <object type="AnimatedGraphic" x="200" y="100" width="190" height="30" textureID="gameovertext" numFrames="2" animSpeed="2"/>
+            <object type="MenuButton" x="200" y="100" width="190" height="30" textureID="gameovertext" numFrames="2" animSpeed="4"/>
             <object type="MenuButton" x="200" y="200" width="200" height="80" textureID="mainbutton" numFrames="0" callbackID="1"/>
             <object type="MenuButton" x="200" y="300" width="200" height="80" textureID="restartbutton" numFrames="0" callbackID="2"/>
         </OBJECTS>
