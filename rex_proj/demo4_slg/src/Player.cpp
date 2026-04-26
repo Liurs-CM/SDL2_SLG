@@ -15,18 +15,17 @@ void Player::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     SDLGameObject::load(std::move(pParams));
     m_position = Vector2D(GRID_X + CELL_SIZE * 5, GRID_Y + CELL_SIZE * 5);
-    at_position = m_position;
 }
 
 void Player::draw()
 {
     //SDLGameObject::draw();
-    //TextureManager::Instance()->drawFrame(m_textureID, (Uint32)m_position.getX(), (Uint32)m_position.getY(), m_width, m_height, m_currentRow, m_currentFrame);
-    TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dire[%s],Frame[%d/%d],FPS %d,period %d", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames, m_animSpeed, m_currentAnim.getFrameTime());
+    //TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dire[%s],Frame[%d/%d]%d,dlyFrame[%d/%d]%d", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames, m_animSpeed, m_animTimer, m_delayFrame, m_currentAnim.globalFrame_);
+    TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dire[%s],Frame[%d/%d]", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames);
     TextureManager::Instance()->drawFrame(m_textureID, (Uint32)at_position.getX() - 5, (Uint32)at_position.getY() - 5, m_width, m_height, m_currentRow, m_currentFrame);
     // m_position delay frame
     if(moving){
-        TextureManager::Instance()->drawFrame(m_textureID, (Uint32)m_position.getX() - 5, (Uint32)m_position.getY() - 5, m_width, m_height, m_currentRow, m_currentFrame, 128);
+        TextureManager::Instance()->drawFrame(m_textureID, (Uint32)m_position.getX() - 5, (Uint32)m_position.getY() - 5, m_width, m_height, m_currentRow, 0, 32);
     }
 }
 
@@ -34,7 +33,6 @@ void Player::update()
 {
     handleInput();
     //SDLGameObject::update();
-    m_currentAnim.update();
     handleAnimation();
     TheCamera::Instance()->follow(m_position);
 }
@@ -84,7 +82,7 @@ void Player::handleInput()
     if(TheInputHandler::Instance()->isKeyPressed(SDL_SCANCODE_SPACE))
     {
         TheSoundManager::Instance()->playSound("shoot", 0);
-        TheBulletHandler::Instance()->addBullet(m_position.getX() + 24, m_position.getY() + 24, 32, 16, "bullet", 1, Vector2D(1,0));
+        TheBulletHandler::Instance()->addBullet(m_position.getX() + 18, m_position.getY() + 18, 32, 16, "bullet", 2, Vector2D(1,0));
     }
     m_currentRow = static_cast<int>(m_currentDirection);
     if(moving) {
@@ -102,12 +100,17 @@ void Player::handleInput()
 
 void Player::handleAnimation()
 {
-    if (moving) {
-        m_currentFrame = (m_currentFrame >= 2) ? -1 : m_currentFrame;
-        m_currentFrame += 1;
-        m_currentFrame = (m_currentFrame == -1) ? 2 : m_currentFrame;
-    } else {
-        m_currentFrame = (m_currentFrame == 0) ? 3 : 0; // standing frame
+    m_animTimer++;
+    if(m_animTimer >= m_delayFrame)
+    {
+        m_animTimer -= m_delayFrame;
+        if (moving) {
+            m_currentFrame = (m_currentFrame >= 2) ? -1 : m_currentFrame;
+            m_currentFrame += 1;
+            m_currentFrame = (m_currentFrame == -1) ? 2 : m_currentFrame;
+        } else {
+            m_currentFrame = (m_currentFrame == 0) ? 3 : 0; // standing frame
+        }
     }
 }
 

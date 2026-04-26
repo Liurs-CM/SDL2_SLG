@@ -5,18 +5,14 @@
 
 class AnimatedGraphic
 {
-    const uint8_t& m_numFrames;
-    const uint8_t& m_animSpeed;
     public:
-        AnimatedGraphic(const uint8_t& numFrames, const uint8_t& animSpeed);
+        AnimatedGraphic() {}
         ~AnimatedGraphic() {}
-        void update();
-        uint8_t getCurrentFrame() const { return m_currentFrame; }
-        uint16_t getFrameTime() const { return m_timeFrame; }
-    private:
-        uint16_t m_timeFrame;
-        uint16_t m_animTimer;
-        uint8_t m_currentFrame;
+        static inline uint8_t globalFrame_ = 0;
+        static void updateGlobalFrame() { globalFrame_ = (globalFrame_ + 1) % FPS; }
+        uint8_t getCurrentFrame(uint8_t m_delayFrame, uint8_t m_numFrames) {
+            return  ( globalFrame_ / m_delayFrame) % m_numFrames;
+        }
 };
 
 #endif // __AnimatedGraphic__

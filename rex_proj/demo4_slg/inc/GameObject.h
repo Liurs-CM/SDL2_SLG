@@ -55,6 +55,7 @@ class GameObject
         uint8_t m_currentFrame;
         uint8_t m_numFrames;
         uint8_t m_animSpeed;
+        uint8_t m_delayFrame;
         std::string m_textureID;
         bool m_bUpdating;
         bool m_bDead;

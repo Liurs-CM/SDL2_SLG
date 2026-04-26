@@ -7,7 +7,7 @@
 #include "MenuMainState.h"
 #include "MenuOverState.h"
 #include "MenuButton.h"
-//#include "AnimatedGraphic.h"
+#include "AnimatedGraphic.h"
 #include "ScrollingBackground.h"
 #include "SoundManager.h"
 #include "Cat.h"
@@ -153,6 +153,7 @@ void Game::clean()
 
 void Game::syncFPS()
 {
+    AnimatedGraphic::updateGlobalFrame();
     frameTime = SDL_GetTicks() - frameStart;
     if(frameTime < DELAY_TIME_MS)
     {

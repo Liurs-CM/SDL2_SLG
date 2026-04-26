@@ -4,13 +4,13 @@
 #include <cstdlib>
 #include <functional>
 
-constexpr uint16_t FPS = 165;
+constexpr uint8_t FPS = 165;
 constexpr uint16_t DELAY_TIME_MS = 1000 / FPS;
 
-#define SCR_X       1000
-#define SCR_Y       500
 constexpr uint16_t SCR_W = 640;
 constexpr uint16_t SCR_H = 480;
+#define SCR_X       1000
+#define SCR_Y       500
 #define MAP_W       3200
 #define MAP_H       2400
 

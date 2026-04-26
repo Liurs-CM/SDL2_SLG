@@ -20,6 +20,7 @@ class Player : public SDLGameObject
         static const char* dirNames[4];
         float shift_speed = 0.5;
         bool moving = false;
+        int8_t m_animTimer = 0;
         Vector2D to_position;
         Vector2D at_position;
         void handleInput();
