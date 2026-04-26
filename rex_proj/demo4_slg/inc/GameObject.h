@@ -49,6 +49,7 @@ class GameObject
         Vector2D m_position;
         Vector2D m_velocity;
         Vector2D m_acceleration;
+        Vector2D m_positionScreen;
         uint16_t m_width;
         uint16_t m_height;
         uint8_t m_currentRow;

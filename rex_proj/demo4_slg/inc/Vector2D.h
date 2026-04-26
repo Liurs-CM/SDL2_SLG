@@ -67,6 +67,14 @@ class Vector2D
             return *this;
         }
 
+        bool operator==(const Vector2D& v2) const {
+            return (m_x == v2.m_x && m_y == v2.m_y);
+        }
+
+        bool operator!=(const Vector2D& v2) const {
+            return !(*this == v2);
+        }
+
         Vector2D get_normalize()
         {
             float l = length();

@@ -47,6 +47,6 @@ void Shape::Shape_genrate()
     filledCircleColor(pRenderer, 100, 300, 10, COLOR_BLACK);
     arcColor(pRenderer, 75, 300, 40, 50, 110, COLOR_BLACK);
 
-    TheTextureManager::Instance()->draw("animate", 0,0, 128, 82);
+    TheTextureManager::Instance()->draw("cat", Vector2D(0,0), 36, 36);
     SDL_SetRenderDrawColor(pRenderer, 255,0,255,255);
 }

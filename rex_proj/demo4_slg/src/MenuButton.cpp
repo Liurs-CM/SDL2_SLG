@@ -1,5 +1,6 @@
 #include "MenuButton.h"
 #include "InputHandler.h"
+#include "TextureManager.h"
 
 MenuButton::MenuButton() : SDLGameObject(), m_callback(0), m_bReleased(true) { }
 
@@ -12,7 +13,8 @@ void MenuButton::load(std::unique_ptr<LoaderParams> const &pParams)
 
 void MenuButton::draw()
 {
-    SDLGameObject::draw();
+    //SDLGameObject::draw();
+    TextureManager::Instance()->drawFrame(m_textureID, m_position, m_width, m_height, m_currentRow, m_currentFrame);
 }
 
 void MenuButton::update()

@@ -1,7 +1,8 @@
 #ifndef __TextureManager__
 #define __TextureManager__
-#include "SDL.h"
+#include "Vector2D.h"
 #include "GameLib.h"
+#include "SDL.h"
 #include <map>
 #include <string>
 #include <cmath>
@@ -11,9 +12,9 @@ class TextureManager
 {
     public:
         bool load(std::string fileName,std::string id);
-        void draw(std::string id, int x, int y, uint16_t width, uint16_t height, SDL_RendererFlip flip = SDL_FLIP_NONE);
-        void drawRotat(std::string id, int x, int y, int width, int height, int currentRow, int currentFrame, double angle, SDL_RendererFlip flip = SDL_FLIP_NONE);
-        void drawFrame(std::string id, int x, int y, uint16_t width, uint16_t height, uint8_t currentRow, uint8_t currentFrame, int alpha = 255, SDL_RendererFlip flip = SDL_FLIP_NONE);
+        void draw(std::string id, Vector2D pos, uint16_t width, uint16_t height, SDL_RendererFlip flip = SDL_FLIP_NONE);
+        void drawRotat(std::string id, Vector2D pos, int width, int height, int currentRow, int currentFrame, double angle, SDL_RendererFlip flip = SDL_FLIP_NONE);
+        void drawFrame(std::string id, Vector2D pos, uint16_t width, uint16_t height, uint8_t currentRow, uint8_t currentFrame, int alpha = 255, SDL_RendererFlip flip = SDL_FLIP_NONE);
         void drawLine(int x1, int y1, int x2, int y2, uint32_t color = COLOR_BLACK);
         void drawText(int x, int y, const char *text, uint32_t color = COLOR_BLACK);
         void drawTextScale(int x, int y, const char *text, uint32_t color = COLOR_BLACK, int scale = 1);
