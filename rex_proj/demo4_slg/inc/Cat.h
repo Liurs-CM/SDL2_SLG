@@ -37,7 +37,12 @@ class Cat : public Enemy
         {
             if(!m_bDying)
             {
-                m_position -= Vector2D(0.2,0);
+                if(m_position.getX() > (SCR_W - m_width - 10)) {
+                    m_velocity.setX(-0.2);
+                }
+                else if(m_position.getX() < 20) {
+                    m_velocity.setX(0.2);
+                }
             }
             else
             {

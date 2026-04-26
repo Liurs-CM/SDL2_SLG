@@ -5,15 +5,15 @@
 
 class AnimatedGraphic
 {
+    const uint8_t& m_numFrames;
+    const uint8_t& m_animSpeed;
     public:
-        AnimatedGraphic(uint8_t numFrames = 1, uint8_t animSpeed = 4);
+        AnimatedGraphic(const uint8_t& numFrames, const uint8_t& animSpeed);
         ~AnimatedGraphic() {}
         void update();
         uint8_t getCurrentFrame() const { return m_currentFrame; }
         uint16_t getFrameTime() const { return m_timeFrame; }
     private:
-        uint8_t m_numFrames;
-        uint8_t m_animSpeed;
         uint16_t m_timeFrame;
         uint16_t m_animTimer;
         uint8_t m_currentFrame;

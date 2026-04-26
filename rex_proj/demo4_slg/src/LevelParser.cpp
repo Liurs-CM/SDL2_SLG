@@ -99,7 +99,7 @@ void LevelParser::parseObjectLayer(XMLElement* pObjectElement, std::vector<Layer
     {
         if(e->Value() == std::string("object"))
         {
-            int x, y, width, height, numFrames, callbackID = 0, animSpeed = 0;
+            int x, y, width, height, numFrames, callbackID = 0, animSpeed = 4;
             std::string textureID;
             std::string type;
 

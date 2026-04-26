@@ -159,4 +159,5 @@ void Game::syncFPS()
         SDL_Delay((int)(DELAY_TIME_MS - frameTime));
     }
     frameStart = SDL_GetTicks();
+    //std::cout << DELAY_TIME_MS << " " << frameTime << "\n";
 }

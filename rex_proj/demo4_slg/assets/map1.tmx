@@ -36,15 +36,15 @@
         </data>
     </layer>
     <objectgroup color="#00ff00" name="Object Layer 1" width="150" height="15">
-        <object name="Player1" type="Player" x="32" y="192" width="32" height="32">
+        <object name="Player1" type="Player" x="32" y="192" width="36" height="36">
             <properties>
-                <property name="numFrames" value="5"/>
+                <property name="numFrames" value="4"/>
                 <property name="textureHeight" value="36"/>
                 <property name="textureID" value="player"/>
                 <property name="textureWidth" value="36"/>
             </properties>
         </object>
-        <object name="Cat" type="Cat" x="600" y="288" width="32" height="32">
+        <object name="Cat" type="Cat" x="600" y="288" width="36" height="36">
             <properties>
                 <property name="numFrames" value="6"/>
                 <property name="textureHeight" value="36"/>
@@ -60,7 +60,7 @@
                 <property name="textureWidth" value="183"/>
             </properties>
         </object>
-        <object name="Cat" type="Cat" x="400" y="96" width="32" height="32">
+        <object name="Cat" type="Cat" x="400" y="96" width="36" height="36">
             <properties>
                 <property name="numFrames" value="6"/>
                 <property name="textureHeight" value="36"/>

@@ -39,6 +39,8 @@ class GameObject
             m_height(0),
             m_currentRow(1),
             m_currentFrame(0),
+            m_numFrames(1),
+            m_animSpeed(4),
             m_bUpdating(false),
             m_bDead(false),
             m_bDying(false),

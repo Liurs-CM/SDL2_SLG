@@ -1,7 +1,7 @@
 #include "AnimatedGraphic.h"
 #include <stdexcept>
 
-AnimatedGraphic::AnimatedGraphic(uint8_t numFrames, uint8_t animSpeed) : 
+AnimatedGraphic::AnimatedGraphic(const uint8_t& numFrames, const uint8_t& animSpeed) : 
     m_numFrames(numFrames), 
     m_animSpeed(animSpeed), 
     m_timeFrame(1000 / m_animSpeed), 

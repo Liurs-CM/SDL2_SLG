@@ -22,9 +22,9 @@ class SDLGameObject : public GameObject
         uint16_t getWidth() { return m_width; }
         uint16_t getHeight() { return m_height; }
     protected:
-        AnimatedGraphic m_currentAnim;
         bool m_bPlayedDeathSound;
         SDLGameObject();
+        AnimatedGraphic m_currentAnim;
 };
 
 #endif /* defined(__SDLGameObject__) */

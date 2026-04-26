@@ -4,7 +4,9 @@
 #include "GameLib.h"
 
 SDLGameObject::SDLGameObject() : GameObject(), 
-    m_bPlayedDeathSound(false) {}
+    m_bPlayedDeathSound(false),
+    m_currentAnim(m_numFrames, m_animSpeed) 
+{}
 
 void SDLGameObject::load(std::unique_ptr<LoaderParams> const &pParams)
 {
@@ -12,7 +14,7 @@ void SDLGameObject::load(std::unique_ptr<LoaderParams> const &pParams)
     m_width = pParams->getWidth();
     m_height = pParams->getHeight();
     m_textureID = pParams->getTextureID();
-    m_numFrames = std::max(1, pParams->getNumFrames());
+    m_numFrames = std::max<uint8_t>(1, pParams->getNumFrames());
     m_animSpeed = pParams->getAnimSpeed();
 }
 
@@ -29,6 +31,6 @@ void SDLGameObject::update()
 {
     m_velocity += m_acceleration;
     m_position += m_velocity;
-    m_currentFrame = m_currentAnim.getCurrentFrame();
+    m_currentAnim.update();
 }
 
