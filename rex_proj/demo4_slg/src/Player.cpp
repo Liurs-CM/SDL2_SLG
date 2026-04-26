@@ -21,8 +21,8 @@ void Player::draw()
 {
     //SDLGameObject::draw();
     //TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dire[%s],Frame[%d/%d]%d,dlyFrame[%d/%d]%d", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames, m_animSpeed, m_animTimer, m_delayFrame, m_currentAnim.globalFrame_);
-    TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dir[%s],Frame[%d/%d],(%d,%d)", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames, m_position.getX(), m_position.getY());
-    TextureManager::Instance()->drawFrame(m_textureID,  m_positionScreen - Vector2D(5,5), m_width, m_height, m_currentRow, m_currentFrame);
+    TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dir[%s],Frame[%d/%d],(%.0f,%.0f)", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames, m_position.getX(), m_position.getY());
+    TextureManager::Instance()->drawFrame(m_textureID,  at_positionScreen - Vector2D(5,5), m_width, m_height, m_currentRow, m_currentFrame);
     // m_position delay frame
     if(moving){
         TextureManager::Instance()->drawFrame(m_textureID, m_positionScreen - Vector2D(5,5), m_width, m_height, m_currentRow, 0, 32);
@@ -33,8 +33,10 @@ void Player::update()
 {
     handleInput();
     //SDLGameObject::update();
-    m_positionScreen = at_position - TheCamera::Instance()->getPosition();
     handleAnimation();
+    TheCamera::Instance()->follow(at_position);
+    m_positionScreen = m_position - TheCamera::Instance()->getPosition();
+    at_positionScreen = at_position - TheCamera::Instance()->getPosition();
 }
 
 void Player::clean() { }
@@ -110,7 +112,6 @@ void Player::handleAnimation()
             m_currentFrame = (m_currentFrame == -1) ? 2 : m_currentFrame;
         } else {
             m_currentFrame = (m_currentFrame == 0) ? 3 : 0; // standing frame
-            TheCamera::Instance()->follow(at_position);
         }
     }
 }

@@ -126,7 +126,7 @@ void Game::render()
 
 void Game::update()
 {
-   m_pGameStateMachine->update();
+    m_pGameStateMachine->update();
 } 
 
 void Game::handleEvents()

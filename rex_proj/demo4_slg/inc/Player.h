@@ -23,6 +23,7 @@ class Player : public SDLGameObject
         int8_t m_animTimer = 0;
         Vector2D to_position;
         Vector2D at_position;
+        Vector2D at_positionScreen;
         void handleInput();
         void handleAnimation();
 };
