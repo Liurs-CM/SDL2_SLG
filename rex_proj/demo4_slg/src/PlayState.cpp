@@ -4,7 +4,6 @@
 #include "MenuOverState.h"
 #include "LevelParser.h"
 #include "Level.h"
-#include "BulletHandler.h"
 #include "Game.h"
 #include <string>
 #include <algorithm>
@@ -20,7 +19,6 @@ void PlayState::update()
         {
             TheGame::Instance()->getStateMachine()->pushState(new MenuPauseState());
         }
-        TheBulletHandler::Instance()->updateBullets();
         if(TheGame::Instance()->getPlayerLives() == 0)
         {
             TheGame::Instance()->getStateMachine()->changeState(new MenuOverState());
@@ -40,7 +38,6 @@ void PlayState::render()
         {
             pLevel->render();
         }
-        TheBulletHandler::Instance()->drawBullets();
     }
 }
 
@@ -49,7 +46,6 @@ bool PlayState::onEnter()
     TheGame::Instance()->setPlayerLives(3);
     LevelParser levelParser;
     pLevel = levelParser.parseLevel(TheGame::Instance()->getLevelFiles()[TheGame::Instance()->getCurrentLevel() - 1].c_str());
-    TheTextureManager::Instance()->load("assets/bullet.png", "bullet");
     if(pLevel != 0) {
         m_loadingComplete = true;
     } else {
@@ -62,7 +58,6 @@ bool PlayState::onEnter()
 bool PlayState::onExit()
 {
     m_exiting = true;
-    TheBulletHandler::Instance()->clearBullets();
     TheInputHandler::Instance()->reset_mouseButtonState();
     std::cout << "exiting PlayState" << std::endl;
     return true;

@@ -1,9 +1,9 @@
 #ifndef __ObjectLayer__
 #define __ObjectLayer__
+#include "Layer.h"
+#include "GameObject.h"
 #include <memory>
 #include <vector>
-#include "GameObject.h"
-#include "Layer.h"
 
 class ObjectLayer : public Layer
 {
@@ -11,8 +11,7 @@ class ObjectLayer : public Layer
         virtual ~ObjectLayer();
         virtual void update(Level* pLevel);
         virtual void render();
-        std::vector<std::unique_ptr<GameObject>>* getGameObjects() { 
-            return &m_gameObjects; }
+        std::vector<std::unique_ptr<GameObject>>* getGameObjects() { return &m_gameObjects; }
     private:
         std::vector<std::unique_ptr<GameObject>> m_gameObjects;
 };

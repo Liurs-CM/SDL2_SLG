@@ -16,7 +16,6 @@ class Level1Boss : public Enemy
             SDLGameObject::load(std::move(pParams));
             m_velocity.setY(-1);
         }
-        void collision();
         void update();
     private:
         bool m_entered;

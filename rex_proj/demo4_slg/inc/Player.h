@@ -12,7 +12,6 @@ class Player : public SDLGameObject
         void draw();
         void update();
         void clean();
-        virtual void collision();
         virtual std::string type() { return "Player"; }
     private:
         enum class Direction { NORMAL = 0, UP = 1, DOWN = 2, LEFT = 3, RIGHT = 4 };
@@ -21,6 +20,7 @@ class Player : public SDLGameObject
         float shift_speed = 0.5;
         bool moving = false;
         int8_t m_animTimer = 0;
+        uint8_t m_delayFrame;
         Vector2D to_position;
         Vector2D at_position;
         Vector2D at_positionScreen;

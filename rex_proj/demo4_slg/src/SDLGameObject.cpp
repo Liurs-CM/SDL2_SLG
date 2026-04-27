@@ -4,7 +4,16 @@
 #include "Game.h"
 #include "GameLib.h"
 
-SDLGameObject::SDLGameObject() : GameObject(), m_bPlayedDeathSound(false) {}
+SDLGameObject::SDLGameObject() :  GameObject(), 
+    m_position(0,0),
+    m_velocity(0,0),
+    m_acceleration(0,0),
+    m_currentRow(1),
+    m_currentFrame(0),
+    m_angle(0),
+    m_alpha(255),
+    m_bPlayedDeathSound(false) 
+{ }
 
 void SDLGameObject::load(std::unique_ptr<LoaderParams> const &pParams)
 {
@@ -14,7 +23,6 @@ void SDLGameObject::load(std::unique_ptr<LoaderParams> const &pParams)
     m_textureID = pParams->getTextureID();
     m_numFrames = std::max<uint8_t>(1, pParams->getNumFrames());
     m_animSpeed = std::max<uint8_t>(1, pParams->getAnimSpeed());
-    m_delayFrame = FPS / m_animSpeed;
 }
 
 void SDLGameObject::draw()
@@ -31,6 +39,6 @@ void SDLGameObject::update()
     m_velocity += m_acceleration;
     m_position += m_velocity;
     m_positionScreen = m_position - TheCamera::Instance()->getPosition();
-    m_currentFrame = m_currentAnim.getCurrentFrame(m_delayFrame, m_numFrames);
+    m_currentFrame = m_currentAnim.getCurrentFrame(m_animSpeed, m_numFrames);
 }
 

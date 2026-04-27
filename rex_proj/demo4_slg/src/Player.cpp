@@ -2,7 +2,6 @@
 #include "Camera.h"
 #include "InputHandler.h"
 #include "TextureManager.h"
-#include "BulletHandler.h"
 #include "SoundManager.h"
 #include "GameLib.h"
 #include "Game.h"
@@ -15,6 +14,7 @@ void Player::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     SDLGameObject::load(std::move(pParams));
     m_position = Vector2D(GRID_X + CELL_SIZE * 5, GRID_Y + CELL_SIZE * 5);
+    m_delayFrame = FPS / m_animSpeed;
 }
 
 void Player::draw()
@@ -84,7 +84,6 @@ void Player::handleInput()
     if(TheInputHandler::Instance()->isKeyPressed(SDL_SCANCODE_SPACE))
     {
         TheSoundManager::Instance()->playSound("shoot", 0);
-        TheBulletHandler::Instance()->addBullet(m_position.getX() + 18, m_position.getY() + 18, 32, 16, "bullet", 2, Vector2D(1,0));
     }
     m_currentRow = static_cast<int>(m_currentDirection);
     if(moving) {
@@ -115,19 +114,4 @@ void Player::handleAnimation()
         }
     }
 }
-
-// if the player is not invulnerable then set to dying and change values for death animation tile sheet
-void Player::collision()
-{
-    if(!TheGame::Instance()->getLevelComplete())
-    {
-        m_textureID = "largeexplosion";
-        m_currentFrame = 0;
-        m_numFrames = 9;
-        m_width = 60;
-        m_height = 60;
-        m_bDying = true;
-    }
-}
-
 

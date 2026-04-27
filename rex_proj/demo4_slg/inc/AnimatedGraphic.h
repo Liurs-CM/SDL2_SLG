@@ -10,8 +10,8 @@ class AnimatedGraphic
         ~AnimatedGraphic() {}
         static inline uint8_t globalFrame_ = 0;
         static void updateGlobalFrame() { globalFrame_ = (globalFrame_ + 1) % FPS; }
-        uint8_t getCurrentFrame(uint8_t m_delayFrame, uint8_t m_numFrames) {
-            return  ( globalFrame_ / m_delayFrame) % m_numFrames;
+        uint8_t getCurrentFrame(uint8_t m_animSpeed, uint8_t m_numFrames) {
+            return  ( m_animSpeed * globalFrame_ / FPS) % m_numFrames;
         }
 };
 

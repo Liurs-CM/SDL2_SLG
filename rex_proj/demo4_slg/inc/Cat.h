@@ -8,54 +8,24 @@ class Cat : public Enemy
         virtual ~Cat() {}
         Cat() : Enemy() {
             m_health = 1;
-            m_gap = 60;
         }
         virtual void load(std::unique_ptr<LoaderParams> const &pParams)
         {
             SDLGameObject::load(std::move(pParams));
-            m_maxHeight = m_position.getY() + m_gap;
-            m_minHeight = m_position.getY() - m_gap;
-        }
-        virtual void collision()
-        {
-            m_health -= 1;
-            if(m_health == 0)
-            {
-                if(!m_bPlayedDeathSound)
-                {
-                    TheSoundManager::Instance()->playSound("explode", 0);
-                    m_textureID = "explosion";
-                    m_currentFrame = 0;
-                    m_numFrames = 9;
-                    m_width = 40;
-                    m_height = 40;
-                    m_bDying = true;
-                }
-            }
         }
         virtual void update()
         {
-            if(!m_bDying)
-            {
-                if(m_position.getX() > (SCR_W - m_width - 10)) {
-                    m_velocity.setX(-0.2);
-                }
-                else if(m_position.getX() < 20) {
-                    m_velocity.setX(0.2);
-                }
+            if(m_position.getX() > (SCR_W - m_width - 10)) {
+                m_velocity.setX(-0.2);
             }
-            else
-            {
-                m_velocity.setX(0);
-                m_velocity.setY(0);
-                //doDyingAnimation();
+            else if(m_position.getX() < 20) {
+                m_velocity.setX(0.2);
+            }
+            else {
+                m_velocity.setX(0.2);
             }
             SDLGameObject::update();
         }
-    private:
-        int m_maxHeight;
-        int m_minHeight;
-        int m_gap;
 };
 
 class CatCreator : public BaseCreator

@@ -1,7 +1,6 @@
 #ifndef __PlayState__
 #define __PlayState__
 #include "GameState.h"
-#include "CollisionManager.h"
 #include "Level.h"
 #include <memory>
 #include <vector>
@@ -21,7 +20,6 @@ class PlayState : public GameState
         virtual std::string getStateID() const { return s_playID; }
     private:
         static const std::string s_playID;
-        CollisionManager m_collisionManager;
         std::vector<GameObject*> m_gameObjects;
         Level* pLevel;
 };
