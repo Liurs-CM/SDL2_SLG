@@ -8,6 +8,24 @@
 #include "lib/zlib.h"
 #include <string>
 
+// 辅助函数：检查元素名称是否匹配
+inline bool isElementNamed(const tinyxml2::XMLElement* element, const char* name) {
+    return element && element->Value() && std::strcmp(element->Value(), name) == 0;
+}
+
+// 辅助函数：安全获取整数属性
+inline int getAttributeInt(const tinyxml2::XMLElement* element, const char* name, int defaultValue = 0) {
+    int value = defaultValue;
+    element->QueryIntAttribute(name, &value);
+    return value;
+}
+
+// 辅助函数：安全获取字符串属性
+inline std::string getAttributeString(const tinyxml2::XMLElement* element, const char* name, const char* defaultValue = "") {
+    const char* value = element->Attribute(name);
+    return value ? std::string(value) : std::string(defaultValue);
+}
+
 Level* LevelParser::parseLevel(const char *levelFile)
 {
     // create a tinyXML document and load the map xml
@@ -90,60 +108,69 @@ void LevelParser::parseTilesets(XMLElement* pTilesetRoot, std::vector<Tileset>* 
     pTilesets->push_back(tileset);
 }
 
-void LevelParser::parseObjectLayer(XMLElement* pObjectElement, std::vector<Layer*> *pLayers, Level* pLevel)
+void LevelParser::parseObjectLayer(tinyxml2::XMLElement* pObjectElement, std::vector<Layer*>* pLayers, Level* pLevel) 
 {
-    // create an object layer
     ObjectLayer* pObjectLayer = new ObjectLayer();
-
-    for(XMLElement* e = pObjectElement->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
+    // 提前定义默认值
+    int x = 0, y = 0, width = 0, height = 0, numFrames = 1, callbackID = 0, animSpeed = 4;
+    std::string type, textureID;
+    // 遍历所有对象元素
+    for (auto e = pObjectElement->FirstChildElement(); e; e = e->NextSiblingElement()) 
     {
-        if(e->Value() == std::string("object"))
-        {
-            int x, y, width, height, numFrames, callbackID = 0, animSpeed = 4;
-            std::string textureID;
-            std::string type;
-
-            // get the initial node values type, x and y
-            e->QueryIntAttribute("x", &x);
-            e->QueryIntAttribute("y", &y);
-            type = e->Attribute("type");
-            GameObject* pGameObject = TheGameObjectFactory::Instance()->create(type);
-
-            // get the property values
-            for(XMLElement* properties = e->FirstChildElement(); properties != NULL; properties = properties->NextSiblingElement())
-            {
-                if(properties->Value() == std::string("properties"))
-                {
-                    for(XMLElement* property = properties->FirstChildElement(); property != NULL; property = property->NextSiblingElement())
-                    {
-                        if(property->Value() == std::string("property"))
-                        {
-                            if(property->Attribute("name") == std::string("numFrames")) {
-                                property->QueryIntAttribute("value", &numFrames);
-                            } else if(property->Attribute("name") == std::string("textureHeight")) {
-                                property->QueryIntAttribute("value", &height);
-                            } else if(property->Attribute("name") == std::string("textureID")) {
-                                textureID = property->Attribute("value");
-                            } else if(property->Attribute("name") == std::string("textureWidth")) {
-                                property->QueryIntAttribute("value", &width);
-                            } else if(property->Attribute("name") == std::string("callbackID")) {
-                                property->QueryIntAttribute("value", &callbackID);
-                            } else if(e->Attribute("name") == std::string("animSpeed")) {
-                                property->QueryIntAttribute("value", &animSpeed);
-                            }
-                        }
-                    }
-                }
-            }
-            //int x, int y, int width, int height, std::string textureID, int numFrames, void()
-            pGameObject->load(std::make_unique<LoaderParams>(x, y, width, height, textureID, numFrames,callbackID, animSpeed));
-            if(type == "Player") {
-                pLevel->setPlayer(dynamic_cast<Player*>(pGameObject));
-            }
-            pObjectLayer->getGameObjects()->push_back(std::unique_ptr<GameObject>(pGameObject));
+        if (!isElementNamed(e, "object")) continue;
+        // 重置默认值
+        x = getAttributeInt(e, "x");
+        y = getAttributeInt(e, "y");
+        type = getAttributeString(e, "type");
+        width = height = 0;
+        numFrames = 1;
+        callbackID = 0;
+        animSpeed = 4;
+        textureID.clear();
+        // 创建游戏对象
+        GameObject* pGameObject = TheGameObjectFactory::Instance()->create(type);
+        if (!pGameObject) {
+            std::cerr << "Failed to create game object of type: " << type << "\n";
+            continue;
         }
+        // 解析属性 - 提取为单独函数以减少嵌套
+        parseObjectProperties(e, width, height, numFrames, textureID, callbackID, animSpeed);
+        // 加载游戏对象
+        pGameObject->load(std::make_unique<LoaderParams>(x, y, width, height, textureID, numFrames, callbackID, animSpeed));
+        // 设置玩家引用（如果适用）
+        if (type == "Player") {
+            pLevel->setPlayer(dynamic_cast<Player*>(pGameObject));
+        }
+        pObjectLayer->getGameObjects()->push_back(std::unique_ptr<GameObject>(pGameObject));
     }
     pLayers->push_back(pObjectLayer);
+}
+
+void LevelParser::parseObjectProperties(tinyxml2::XMLElement* objectElement, int& width, int& height, int& numFrames, std::string& textureID, int& callbackID, int& animSpeed) 
+{
+    // 属性名到变量的映射（仅适用于整型）
+    std::unordered_map<std::string, int*> intProps = {
+        {"numFrames", &numFrames},
+        {"textureHeight", &height},
+        {"textureWidth", &width},
+        {"callbackID", &callbackID},
+        {"animSpeed", &animSpeed}
+    };
+    for (auto properties = objectElement->FirstChildElement(); properties; properties = properties->NextSiblingElement()) 
+    {
+        if (!isElementNamed(properties, "properties")) continue;
+        for (auto property = properties->FirstChildElement(); property; property = property->NextSiblingElement()) 
+        {
+            if (!isElementNamed(property, "property")) continue;
+
+            std::string propName = getAttributeString(property, "name");
+            if (propName == "textureID") {
+                textureID = getAttributeString(property, "value");
+            } else if (auto it = intProps.find(propName); it != intProps.end()) {
+                *(it->second) = getAttributeInt(property, "value");
+            }
+        }
+    }
 }
 
 void LevelParser::parseTileLayer(XMLElement* pTileElement, std::vector<Layer*> *pLayers, 

@@ -3,7 +3,7 @@
 
 void GameStateMachine::pushState(GameState *pState)
 {
-    std::cout << "push PlayState" << std::endl;
+    //std::cout << "enter "<< pState->getStateID() << std::endl;
     m_gameStates.push_back(pState);
     m_gameStates.back()->onEnter();
 }
@@ -14,6 +14,7 @@ void GameStateMachine::popStatePrivate()
     {
         if(m_gameStates.back()->onExit())
         {
+            //std::cout << "exit "<< m_gameStates.back()->getStateID() << std::endl;
             m_gameStates.pop_back();
         }
     }
