@@ -15,14 +15,14 @@ class Cat : public Enemy
         }
         virtual void update()
         {
-            if(m_position.getX() > (SCR_W - m_width - 10)) {
+            if(m_position.getX() > (SCR_W - m_width)) {
                 m_velocity.setX(-0.2);
             }
-            else if(m_position.getX() < 20) {
+            else if(m_position.getX() < 0) {
                 m_velocity.setX(0.2);
             }
             else {
-                m_velocity.setX(0.2);
+                m_velocity.setX(0.1);
             }
             SDLGameObject::update();
         }

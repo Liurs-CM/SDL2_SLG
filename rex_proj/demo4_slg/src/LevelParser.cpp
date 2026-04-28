@@ -32,54 +32,50 @@ Level* LevelParser::parseLevel(const char *levelFile)
     XMLDocument levelDocument;
     if(levelDocument.LoadFile(levelFile) != XML_SUCCESS) {
         std::cerr << "Failed to load level file: " << levelDocument.ErrorStr() << "\n";
+        return nullptr;
     }
 
     // get the root node and display some values
     XMLElement* pRoot = levelDocument.RootElement();
-    std::cout << "Loading level:\n" << "Version: " << pRoot->Attribute("version") << "\n";
-    std::cout << "Width:" << pRoot->Attribute("width") << " - Height:" << pRoot->Attribute("height") << "\n";
-    std::cout << "Tile Width:" << pRoot->Attribute("tilewidth") << " - Tile Height:" << pRoot->Attribute("tileheight") << "\n";
-    pRoot->QueryIntAttribute("tilewidth", &m_tileSize);
-    pRoot->QueryIntAttribute("width", &m_width);
-    pRoot->QueryIntAttribute("height", &m_height);
-
-    //we know that properties is the first child of the root
-    XMLElement* pProperties = pRoot->FirstChildElement();
-    // we must parse the textures needed for this level, which have been added to properties
-    for(XMLElement* e = pProperties->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
-    {
-        if(e->Value() == std::string("property")) {
-            parseTextures(e);
-        }
-    }
+    std::cout << "Loading level:\n"
+        << "Version: " << getAttributeString(pRoot, "version") << "\n"
+        << "Width:" << getAttributeString(pRoot, "width") 
+        << " - Height:" << getAttributeString(pRoot, "height") << "\n"
+        << "Tile Width:" << getAttributeString(pRoot, "tilewidth") 
+        << " - Tile Height:" << getAttributeString(pRoot, "tileheight") << "\n";
+    m_tileSize = getAttributeInt(pRoot, "tilewidth");
+    m_width = getAttributeInt(pRoot, "width");
+    m_height = getAttributeInt(pRoot, "height");
 
     // create the level object
     Level* pLevel = new Level();
-    // we must now parse the tilesets
-    for(XMLElement* e = pRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement()) {
-        if(e->Value() == std::string("tileset")) {
+    // we must parse the textures needed for this level, which have been added to properties
+    for(XMLElement* e = pRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
+    {
+        //we know that properties is the first child of the root
+        if(isElementNamed(e, "properties")) {
+            for(auto prop = e->FirstChildElement(); prop; prop = prop->NextSiblingElement()) {
+                if(isElementNamed(prop, "property")) { parseTextures(prop); }
+            }
+        }
+        // we must now parse the tilesets
+        else if(isElementNamed(e, "tileset")) {
             parseTilesets(e, pLevel->getTilesets());
         }
-    }
-
-    // parse any object layers
-    for(XMLElement* e = pRoot->FirstChildElement(); e != NULL; e = e->NextSiblingElement()) {
-        if(e->Value() == std::string("objectgroup") || e->Value() == std::string("layer")) {
-            if(e->FirstChildElement()->Value() == std::string("object")) {
+        // parse any object layers
+        else if(isElementNamed(e, "objectgroup") || isElementNamed(e, "layer")) {
+            if(isElementNamed(e->FirstChildElement(), "object")) {
                 parseObjectLayer(e, pLevel->getLayers(), pLevel);
             }
-            else if(e->FirstChildElement()->Value() == std::string("data") ||
+            else if(isElementNamed(e->FirstChildElement(), "data") ||
                     (e->FirstChildElement()->NextSiblingElement() != 0 && 
-                     e->FirstChildElement()->NextSiblingElement()->Value() == std::string("data")))
-            {
+                     e->FirstChildElement()->NextSiblingElement()->Value() == std::string("data"))) {
                 parseTileLayer(e, pLevel->getLayers(), pLevel->getTilesets(), pLevel->getCollisionLayers());
             }
         }
     }
-
     return pLevel;
 }
-
 
 void LevelParser::parseTextures(XMLElement* pTextureRoot)
 {
