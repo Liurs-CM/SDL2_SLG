@@ -45,7 +45,7 @@
                 <property name="textureWidth" value="36"/>
             </properties>
         </object>
-        <object name="Cat" type="Cat" x="600" y="288" width="36" height="36">
+        <object name="Cat" type="Cat" x="500" y="288" width="36" height="36">
             <properties>
                 <property name="numFrames" value="6"/>
                 <property name="textureHeight" value="36"/>

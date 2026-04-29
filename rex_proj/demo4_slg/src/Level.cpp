@@ -20,7 +20,11 @@ Level::~Level()
 
 void Level::render()
 {
-    GameLib::forEachCall(m_layers, &Layer::render);
+    //GameLib::forEachCall(m_layers, &Layer::render);
+    for(auto* obj : m_layers)
+    {
+        obj->render();
+    }
 }
 
 void Level::update()

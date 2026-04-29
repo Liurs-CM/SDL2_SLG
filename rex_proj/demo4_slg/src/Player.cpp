@@ -45,7 +45,7 @@ void Player::handleInput()
 {
     if (TheInputHandler::Instance()->getMouseButtonState(LEFT))
     {
-        Vector2D delt_pos = *(TheInputHandler::Instance()->getMousePosition()) - m_position;
+        Vector2D delt_pos = *(TheInputHandler::Instance()->getMousePosition()) - m_position + TheCamera::Instance()->getPosition();
         int x = int(delt_pos.getX() / CELL_SIZE);
         int y = int(delt_pos.getY() / CELL_SIZE);
         to_position = m_position + Vector2D(x, y) * CELL_SIZE;

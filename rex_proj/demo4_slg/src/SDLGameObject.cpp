@@ -30,7 +30,7 @@ void SDLGameObject::draw()
     if(m_velocity.getX() >= 0) {
         TextureManager::Instance()->drawFrame(m_textureID, m_positionScreen, m_width, m_height, m_currentRow, m_currentFrame);
     } else {
-        TextureManager::Instance()->drawFrame(m_textureID, m_positionScreen, m_width, m_height, m_currentRow, m_currentFrame, SDL_FLIP_HORIZONTAL);
+        TextureManager::Instance()->drawFrame(m_textureID, m_positionScreen, m_width, m_height, m_currentRow, m_currentFrame, 255, SDL_FLIP_HORIZONTAL);
     }
 }
 

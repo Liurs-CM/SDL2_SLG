@@ -5,13 +5,16 @@
 
 TileLayer::TileLayer(int tileSize, const std::vector<Tileset>& tilesets) : m_tileSize(tileSize), m_tilesets(tilesets), m_position(0,0), m_velocity(0,0)
 {
-    m_numColumns = (TheGame::Instance()->getGameWidth() / m_tileSize) + 1;
-    m_numRows = (TheGame::Instance()->getGameHeight() / m_tileSize);
+    m_numColumns = (SCR_W / m_tileSize) + 1;
+    m_numRows = (SCR_H / m_tileSize);
 }
 
 void TileLayer::update(Level* pLevel)
 {
-    setPosition(TheCamera::Instance()->getPosition());
+    //setPosition(TheCamera::Instance()->getPosition());
+    m_position = TheCamera::Instance()->getPosition();
+    //std::cout << "TileLayer pos: " << m_position << "\n";
+    //std::cout << "Camera pos: " << TheCamera::Instance()->getPosition() << "\n";
 }
 
 void TileLayer::render()
@@ -25,10 +28,11 @@ void TileLayer::render()
     {
         for(int j = 0; j < m_numColumns; j++)
         {
+            if( (i + y) < 0 || (i + y) >= m_mapHeight || 
+                    (j + x) < 0 || (j + x) >= m_mapWidth ) 
+            { continue; }
             int id = m_tileIDs[i + y][j + x];
-            if(id == 0) {
-                continue;
-            }
+            if(id == 0) { continue; }
             Tileset tileset = getTilesetByID(id);
             id--;
             TheTextureManager::Instance()->drawTile(tileset.name, tileset.margin, tileset.spacing, (j * m_tileSize) - x2, (i * m_tileSize) - y2, m_tileSize, m_tileSize, (id - (tileset.firstGridID - 1)) / tileset.numColumns, (id - (tileset.firstGridID - 1)) % tileset.numColumns);

@@ -88,8 +88,8 @@ bool Game::init(const char* title, int x_pos, int y_pos, int width, int height, 
     TheSoundManager::Instance()->load("assets/phaser.wav", "shoot", SOUND_SFX);
     TheSoundManager::Instance()->playMusic("music1", -1);
     TheGameObjectFactory::Instance()->registerType("MenuButton", new MenuButtonCreator());
-	TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
     TheGameObjectFactory::Instance()->registerType("ScrollingBackground", new ScrollingBackgroundCreator());
+	TheGameObjectFactory::Instance()->registerType("Player", new PlayerCreator());
 	TheGameObjectFactory::Instance()->registerType("Cat", new CatCreator());
     TheGameObjectFactory::Instance()->registerType("Level1Boss", new Level1BossCreator());
     //TheGameObjectFactory::Instance()->registerType("AnimatedGraphic", new AnimatedGraphicCreator());

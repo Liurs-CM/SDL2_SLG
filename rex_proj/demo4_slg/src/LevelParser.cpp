@@ -200,13 +200,25 @@ void LevelParser::parseTileLayer(XMLElement* pTileElement, std::vector<Layer*> *
     {
         XMLText* text = e->ToText();
         std::string t = text->Value();
-        decodedIDs = base64_decode(t);
+        t.erase(std::remove_if(t.begin(), t.end(), ::isspace), t.end());
+        decodedIDs += base64_decode(t);
     }
 
     // uncompress zlib compression
-    uLongf sizeofids = m_width * m_height * sizeof(int);
-    std::vector<int> ids(m_width * m_height);
-    uncompress((Bytef*)&ids[0], &sizeofids,(const Bytef*)decodedIDs.c_str(), decodedIDs.size());
+    std::vector<uint32_t> ids(m_width * m_height);
+    uLongf sizeofids = ids.size() * sizeof(uint32_t);
+    int uncompress_result = uncompress(
+            (Bytef*)ids.data(), 
+            &sizeofids,
+            (const Bytef*)decodedIDs.data(), 
+            decodedIDs.size());
+    if(uncompress_result != Z_OK) {
+        std::cerr << "zlib uncompress failed! Error code: " << uncompress_result << "\n";
+        // 可能原因：数据不是 zlib 压缩、损坏、buffer 太小等
+    }
+    if (sizeofids != ids.size() * sizeof(uint32_t)) {
+        std::cerr << "Decompressed size mismatch!\n";
+    }
 
     std::vector<int> layerRow(m_width);
     for(int j = 0; j < m_height; j++) {
@@ -220,7 +232,9 @@ void LevelParser::parseTileLayer(XMLElement* pTileElement, std::vector<Layer*> *
     }
 
     pTileLayer->setTileIDs(data);
+    pTileLayer->setMapHeight(m_height);
     pTileLayer->setMapWidth(m_width);
+    //std::cout << "Map hight-width:" << m_width << "," << m_height << "!\n";
 
     if(collidable) {
         pCollisionLayers->push_back(pTileLayer);
