@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" orientation="orthogonal" width="150" height="15" tilewidth="32" tileheight="32">
+    <properties>
+        <property name="boss" value="assets/boss1.png"/>
+        <property name="bossexplosion" value="assets/bossexplosion.png"/>
+        <property name="cat" value="assets/cat.png"/>
+        <property name="clouds" value="assets/clouds.png"/>
+        <property name="explosion" value="assets/explosion.png"/>
+        <property name="largeexplosion" value="assets/largeexplosion.png"/>
+        <property name="player" value="assets/warrior.png"/>
+        <property name="smallexplosion" value="assets/smallexplosion.png"/>
+    </properties>
+    <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198" columns="18">
+        <image source="blocks1.png" width="614" height="376"/>
+    </tileset>
+    <tileset firstgid="199" name="blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198" columns="18">
+        <image source="blocks2.png" width="614" height="376"/>
+    </tileset>
+    <objectgroup name="Object Layer 2" width="150" height="15">
+        <object name="Background" type="ScrollingBackground" x="0" y="0" width="32" height="32">
+            <properties>
+                <property name="animSpeed" value="4"/>
+                <property name="numFrames" value="1"/>
+                <property name="textureHeight" value="480"/>
+                <property name="textureID" value="clouds"/>
+                <property name="textureWidth" value="640"/>
+            </properties>
+        </object>
+    </objectgroup>
+    <layer name="Collision" width="150" height="15">
+        <properties>
+            <property name="collidable" value="true"/>
+        </properties>
+        <data encoding="base64" compression="zlib">
+                eJzt2NEJgzAQgOFzjMbuU1doV7ArtEu0dYFi5/QKfQiCNUJicuH/4IhnkMR4hKBIXfpG5NrkG3/U+Pzavbw0Bo3HQv/3/vNPP9blrivUiboCAAAAynfSM3vHuR2RnbWmLtQVIuM/A1K4aU3dqSszrOwDOeZpZW1KZGUfyDFPK2tTolhr9/ZCvHbrc0tif+OQcVPWVeh7l+ag4TTa2fVxlruVfnJyP58AWs0rUg==
+        </data>
+    </layer>
+    <objectgroup color="#00ff00" name="Object Layer 1" width="150" height="15">
+        <object name="Player1" type="Player" x="32" y="192" width="36" height="36">
+            <properties>
+                <property name="animSpeed" value="4"/>
+                <property name="numFrames" value="4"/>
+                <property name="textureHeight" value="36"/>
+                <property name="textureID" value="player"/>
+                <property name="textureWidth" value="36"/>
+            </properties>
+        </object>
+        <object name="Cat" type="Cat" x="500" y="288" width="36" height="36">
+            <properties>
+                <property name="numFrames" value="6"/>
+                <property name="textureHeight" value="36"/>
+                <property name="textureID" value="cat"/>
+                <property name="textureWidth" value="36"/>
+            </properties>
+        </object>
+        <object name="Boss" type="Level1Boss" x="2000" y="186" width="32" height="32">
+            <properties>
+                <property name="numFrames" value="1"/>
+                <property name="textureHeight" value="230"/>
+                <property name="textureID" value="boss"/>
+                <property name="textureWidth" value="183"/>
+            </properties>
+        </object>
+        <object name="Cat" type="Cat" x="400" y="96" width="36" height="36">
+            <properties>
+                <property name="numFrames" value="6"/>
+                <property name="textureHeight" value="36"/>
+                <property name="textureID" value="cat"/>
+                <property name="textureWidth" value="36"/>
+            </properties>
+        </object>
+    </objectgroup>
+    <layer name="Tile Layer 2" width="150" height="15">
+        <data encoding="base64" compression="zlib">
+            eJztzTEKgDAMQNHcf9WeoOg5m6FDZ5XawnvwyRBCIvjSld19znJmJTse7gEAAAAAAAB2Uodm3L31199V/sNKGqJHDQ0=
+        </data>
+    </layer>
+</map>
