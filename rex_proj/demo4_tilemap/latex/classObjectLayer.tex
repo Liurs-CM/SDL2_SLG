@@ -1,0 +1,175 @@
+\doxysection{Object\+Layer类 参考}
+\hypertarget{classObjectLayer}{}\label{classObjectLayer}\index{ObjectLayer@{ObjectLayer}}
+
+
+{\ttfamily \#include $<$Object\+Layer.\+h$>$}
+
+
+
+类 Object\+Layer 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classObjectLayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Object\+Layer 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classObjectLayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classObjectLayer_a028f6d6641d3f955b0bd9de7d26b16b0}{\texorpdfstring{$\sim$}{\string~}\+Object\+Layer}} ()
+\item 
+virtual void \mbox{\hyperlink{classObjectLayer_a99f31f7c25d742c6355952436700d714}{update}} (\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}p\+Level)
+\item 
+virtual void \mbox{\hyperlink{classObjectLayer_a5b277887c71673397535d924a7027ea6}{render}} ()
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classObjectLayer_a14bf695f73acd9a9651f6af9c8945aae}{get\+Game\+Objects}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classLayer}{Layer}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classLayer_a2bac093f2a650095a5551fc455d10dc5}{\texorpdfstring{$\sim$}{\string~}\+Layer}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \mbox{\hyperlink{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}{m\+\_\+game\+Objects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{ObjectLayer_8h_source}{Object\+Layer.\+h}} 第 \mbox{\hyperlink{ObjectLayer_8h_source_l00008}{8}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classObjectLayer_a028f6d6641d3f955b0bd9de7d26b16b0}\label{classObjectLayer_a028f6d6641d3f955b0bd9de7d26b16b0} 
+\index{ObjectLayer@{ObjectLayer}!````~ObjectLayer@{\texorpdfstring{$\sim$}{\string~}ObjectLayer}}
+\index{````~ObjectLayer@{\texorpdfstring{$\sim$}{\string~}ObjectLayer}!ObjectLayer@{ObjectLayer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ObjectLayer()}{\string~ObjectLayer()}}
+{\footnotesize\ttfamily Object\+Layer\+::\texorpdfstring{$\sim$}{\string~}\+Object\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{ObjectLayer_8cpp_source}{Object\+Layer.\+cpp}} 第 \mbox{\hyperlink{ObjectLayer_8cpp_source_l00005}{5}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{ObjectLayer_8h_source_l00016}{m\+\_\+game\+Objects}}.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classObjectLayer_a14bf695f73acd9a9651f6af9c8945aae}\label{classObjectLayer_a14bf695f73acd9a9651f6af9c8945aae} 
+\index{ObjectLayer@{ObjectLayer}!getGameObjects@{getGameObjects}}
+\index{getGameObjects@{getGameObjects}!ObjectLayer@{ObjectLayer}}
+\doxysubsubsection{\texorpdfstring{getGameObjects()}{getGameObjects()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \texorpdfstring{$\ast$}{*} Object\+Layer\+::get\+Game\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{ObjectLayer_8h_source}{Object\+Layer.\+h}} 第 \mbox{\hyperlink{ObjectLayer_8h_source_l00014}{14}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{ObjectLayer_8h_source_l00016}{m\+\_\+game\+Objects}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{Level\+Parser\+::parse\+Object\+Layer()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectLayer_a14bf695f73acd9a9651f6af9c8945aae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classObjectLayer_a5b277887c71673397535d924a7027ea6}\label{classObjectLayer_a5b277887c71673397535d924a7027ea6} 
+\index{ObjectLayer@{ObjectLayer}!render@{render}}
+\index{render@{render}!ObjectLayer@{ObjectLayer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Object\+Layer\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classLayer_adf702910e0e14fb48cb54690dab1b5ff}{Layer}}.
+
+
+
+在文件 \mbox{\hyperlink{ObjectLayer_8cpp_source}{Object\+Layer.\+cpp}} 第 \mbox{\hyperlink{ObjectLayer_8cpp_source_l00015}{15}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{classGameObject_a59f11cba9071a39ba2f486a8364ed536}{Game\+Object\+::draw()}}, \mbox{\hyperlink{GameLib_8h_source_l00171}{Game\+Lib\+::for\+Each\+Call()}} , 以及 \mbox{\hyperlink{ObjectLayer_8h_source_l00016}{m\+\_\+game\+Objects}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectLayer_a5b277887c71673397535d924a7027ea6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classObjectLayer_a99f31f7c25d742c6355952436700d714}\label{classObjectLayer_a99f31f7c25d742c6355952436700d714} 
+\index{ObjectLayer@{ObjectLayer}!update@{update}}
+\index{update@{update}!ObjectLayer@{ObjectLayer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Object\+Layer\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}}]{p\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classLayer_afbf017a1ed9a4adfe66b86bf8d4fa63e}{Layer}}.
+
+
+
+在文件 \mbox{\hyperlink{ObjectLayer_8cpp_source}{Object\+Layer.\+cpp}} 第 \mbox{\hyperlink{ObjectLayer_8cpp_source_l00010}{10}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameLib_8h_source_l00171}{Game\+Lib\+::for\+Each\+Call()}}, \mbox{\hyperlink{ObjectLayer_8h_source_l00016}{m\+\_\+game\+Objects}} , 以及 \mbox{\hyperlink{classGameObject_ae83128d0e0efef691417779605ee037c}{Game\+Object\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectLayer_a99f31f7c25d742c6355952436700d714_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}\label{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445} 
+\index{ObjectLayer@{ObjectLayer}!m\_gameObjects@{m\_gameObjects}}
+\index{m\_gameObjects@{m\_gameObjects}!ObjectLayer@{ObjectLayer}}
+\doxysubsubsection{\texorpdfstring{m\_gameObjects}{m\_gameObjects}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGameObject}{Game\+Object}}$>$ $>$ Object\+Layer\+::m\+\_\+game\+Objects\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ObjectLayer_8h_source}{Object\+Layer.\+h}} 第 \mbox{\hyperlink{ObjectLayer_8h_source_l00016}{16}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ObjectLayer_8h_source_l00014}{get\+Game\+Objects()}}, \mbox{\hyperlink{ObjectLayer_8cpp_source_l00015}{render()}}, \mbox{\hyperlink{ObjectLayer_8cpp_source_l00010}{update()}} , 以及 \mbox{\hyperlink{ObjectLayer_8cpp_source_l00005}{\texorpdfstring{$\sim$}{\string~}\+Object\+Layer()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{ObjectLayer_8h}{Object\+Layer.\+h}}\item 
+src/\mbox{\hyperlink{ObjectLayer_8cpp}{Object\+Layer.\+cpp}}\end{DoxyCompactItemize}

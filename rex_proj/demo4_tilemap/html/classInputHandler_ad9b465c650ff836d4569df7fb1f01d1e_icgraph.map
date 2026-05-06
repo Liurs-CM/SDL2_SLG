@@ -1,0 +1,9 @@
+<map id="InputHandler::onJoystickButtonDown" name="InputHandler::onJoystickButtonDown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="520,5,701,45"/>
+<area shape="rect" id="Node000002" href="$classInputHandler.html#a72ec3b0da1f1747064bf00fc9d180d48" title=" " alt="" coords="313,13,472,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="506,28,472,28,472,23,506,23"/>
+<area shape="rect" id="Node000003" href="$classGame.html#adb5563f62c0c82e3e42ec36501aa5698" title=" " alt="" coords="108,13,265,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,28,265,28,265,23,300,23"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>

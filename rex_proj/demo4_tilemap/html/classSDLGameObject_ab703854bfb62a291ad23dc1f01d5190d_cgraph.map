@@ -1,0 +1,16 @@
+<map id="SDLGameObject::draw" name="SDLGameObject::draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,173,129"/>
+<area shape="rect" id="Node000002" href="$classTextureManager.html#a8152a12de458e940d09f2850d8f71b85" title=" " alt="" coords="221,53,429,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,101,252,79,253,84,150,106"/>
+<area shape="rect" id="Node000004" href="$classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="538,104,657,129"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="174,114,524,114,524,119,174,119"/>
+<area shape="rect" id="Node000006" href="$classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6" title=" " alt="" coords="230,155,421,180"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="150,127,253,149,252,154,149,132"/>
+<area shape="rect" id="Node000003" href="$classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="523,5,671,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,51,511,30,512,36,398,56"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="395,76,525,101,524,106,394,81"/>
+<area shape="rect" id="Node000005" href="$classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="538,55,657,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="430,64,525,64,525,70,430,69"/>
+<area shape="rect" id="Node000007" href="$classTextureManager.html#ad76abb178b37cedf4514eb0154349935" title=" " alt="" coords="477,155,717,180"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="421,165,463,165,463,170,421,170"/>
+</map>

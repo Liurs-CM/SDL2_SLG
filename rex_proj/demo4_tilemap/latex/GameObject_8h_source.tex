@@ -1,0 +1,28 @@
+\doxysection{Game\+Object.\+h}
+\hypertarget{GameObject_8h_source}{}\label{GameObject_8h_source}\index{inc/GameObject.h@{inc/GameObject.h}}
+\mbox{\hyperlink{GameObject_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_GameObject\_\_}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_GameObject\_\_}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{LoaderParams_8h}{LoaderParams.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vector2D_8h}{Vector2D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00008}\mbox{\hyperlink{classGameObject}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameObject}{GameObject}}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00011}\mbox{\hyperlink{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}{\string~GameObject}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00012}\mbox{\hyperlink{classGameObject_a729edce3955766d5c8dfcda6f310392d}{00012}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_a729edce3955766d5c8dfcda6f310392d}{load}}(std::unique\_ptr<LoaderParams>\ \textcolor{keyword}{const}\ \&pParams)=0;}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00013}\mbox{\hyperlink{classGameObject_a59f11cba9071a39ba2f486a8364ed536}{00013}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_a59f11cba9071a39ba2f486a8364ed536}{draw}}()=0;}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00014}\mbox{\hyperlink{classGameObject_ae83128d0e0efef691417779605ee037c}{00014}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_ae83128d0e0efef691417779605ee037c}{update}}()=0;}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00015}\mbox{\hyperlink{classGameObject_a8e8c897a0be1966cfb6488ce97206d60}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_a8e8c897a0be1966cfb6488ce97206d60}{clean}}()=0;}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00016}\mbox{\hyperlink{classGameObject_ab0f7dd9a72a3f0ae4b7a406b04a3c71f}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classGameObject_ab0f7dd9a72a3f0ae4b7a406b04a3c71f}{type}}()\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00018}\mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{00018}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{GameObject}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00019}\mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{00019}}\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\_textureID}};}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00020}00020\ \};}
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{GameObject_8h_source_l00022}00022\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_GameObject\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,40 @@
+\doxysection{Camera.\+h}
+\hypertarget{Camera_8h_source}{}\label{Camera_8h_source}\index{inc/Camera.h@{inc/Camera.h}}
+\mbox{\hyperlink{Camera_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_Camera\_\_}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_Camera\_\_}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vector2D_8h}{Vector2D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00006}\mbox{\hyperlink{classCamera}{00006}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCamera}{Camera}}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00008}00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00009}\mbox{\hyperlink{classCamera_a42cda7239981a5618660d04bd5893556}{00009}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_a42cda7239981a5618660d04bd5893556}{update}}();\ \textcolor{comment}{//\ 更新相机逻辑}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00010}\mbox{\hyperlink{classCamera_aec9074b278b84e784cd493ded9e46910}{00010}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classVector2D}{Vector2D}}\ \mbox{\hyperlink{classCamera_aec9074b278b84e784cd493ded9e46910}{getPosition}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\_position}};\ \}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28}{follow}}(\mbox{\hyperlink{classVector2D}{Vector2D}}\ target);\ \textcolor{comment}{//\ 跟随某个目标点}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ...\ 其他方法，如设置边界、震动效果等\ ...}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00013}\mbox{\hyperlink{classCamera_a38bcf7d4fe8373d726b8824ab30efd89}{00013}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classCamera}{Camera}}*\ \mbox{\hyperlink{classCamera_a38bcf7d4fe8373d726b8824ab30efd89}{Instance}}()}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{s\_pInstance}}\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{s\_pInstance}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}}();}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00022}00022\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}}();}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00024}\mbox{\hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{00024}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{\string~Camera}}();}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00025}\mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{00025}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classVector2D}{Vector2D}}\ \mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\_position}};\ \textcolor{comment}{//\ 相机的世界坐标（即视口左上角）}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00026}\mbox{\hyperlink{classCamera_ad7f4eb8ea720c2921b1a938d7848b732}{00026}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classVector2D}{Vector2D}}\ \mbox{\hyperlink{classCamera_ad7f4eb8ea720c2921b1a938d7848b732}{to\_position}};}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00027}\mbox{\hyperlink{classCamera_ab41a0d0786c0fbd1dc27723ab8e3462c}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCamera_ab41a0d0786c0fbd1dc27723ab8e3462c}{shift\_speed}}\ =\ 0.5;}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00028}\mbox{\hyperlink{classCamera_a829a0f6f02a0f4286824e30a1923f7a5}{00028}}\ \ \ \ \ \ \ \ \ uint16\_t\ \mbox{\hyperlink{classCamera_a4b8e18df05238a00133366679a320871}{m\_width}},\ \mbox{\hyperlink{classCamera_a829a0f6f02a0f4286824e30a1923f7a5}{m\_height}};\ \textcolor{comment}{//\ 相机的视口尺寸}}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00029}\mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{00029}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classCamera}{Camera}}*\ \mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00030}00030\ \};}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00032}\mbox{\hyperlink{Camera_8h_abc6476a2e46e76fe79ab09d2fce972de}{00032}}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{classCamera}{Camera}}\ \mbox{\hyperlink{Camera_8h_abc6476a2e46e76fe79ab09d2fce972de}{TheCamera}};}
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{Camera_8h_source_l00034}00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_Camera\_\_}}
+
+\end{DoxyCode}

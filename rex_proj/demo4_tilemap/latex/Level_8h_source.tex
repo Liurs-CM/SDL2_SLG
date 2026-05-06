@@ -1,0 +1,51 @@
+\doxysection{Level.\+h}
+\hypertarget{Level_8h_source}{}\label{Level_8h_source}\index{inc/Level.h@{inc/Level.h}}
+\mbox{\hyperlink{Level_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_Level\_\_}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_Level\_\_}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Layer_8h}{Layer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{LevelParser_8h}{LevelParser.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00009}00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTileLayer}{TileLayer}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00011}\mbox{\hyperlink{structTileset}{00011}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTileset}{Tileset}}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00013}\mbox{\hyperlink{structTileset_a15347962a9cd3daea9d953cf76e4b77d}{00013}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_a15347962a9cd3daea9d953cf76e4b77d}{firstGridID}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00014}\mbox{\hyperlink{structTileset_a477770a6cc81a9a53bf5928ebd5c88a9}{00014}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_a477770a6cc81a9a53bf5928ebd5c88a9}{tileWidth}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00015}\mbox{\hyperlink{structTileset_a62c8b00674890f60189f1ace74aeee88}{00015}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_a62c8b00674890f60189f1ace74aeee88}{tileHeight}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00016}\mbox{\hyperlink{structTileset_aebaac85c2e99d31883440cc2495c2f16}{00016}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_aebaac85c2e99d31883440cc2495c2f16}{spacing}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00017}\mbox{\hyperlink{structTileset_a964f53e69b260f2e2dce178e557bf324}{00017}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_a964f53e69b260f2e2dce178e557bf324}{margin}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00018}\mbox{\hyperlink{structTileset_a2308e20e094ef2ba3abde3296bf5a732}{00018}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_a2308e20e094ef2ba3abde3296bf5a732}{width}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00019}\mbox{\hyperlink{structTileset_a89cacbd7eef862a8409e7ca89d8f1d6f}{00019}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_a89cacbd7eef862a8409e7ca89d8f1d6f}{height}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00020}\mbox{\hyperlink{structTileset_a666d036f94655943bc9091cc4ecb56c1}{00020}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTileset_a666d036f94655943bc9091cc4ecb56c1}{numColumns}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00021}\mbox{\hyperlink{structTileset_a18d4be506284b7ab3cf2e2b7e688042a}{00021}}\ \ \ \ \ std::string\ \mbox{\hyperlink{structTileset_a18d4be506284b7ab3cf2e2b7e688042a}{name}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00022}00022\ \};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00024}\mbox{\hyperlink{classLevel}{00024}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLevel}{Level}}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00026}00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{\string~Level}}();}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevel_a62e412eaad753d2baa2f94239cb80e41}{update}}();}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevel_a4ce1e8089977edfb4a02a7d5b94225c2}{render}}();}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00030}\mbox{\hyperlink{classLevel_a562c4c550399622bcd7898330b28885e}{00030}}\ \ \ \ \ \ \ \ \ std::vector<Tileset>*\ \mbox{\hyperlink{classLevel_a562c4c550399622bcd7898330b28885e}{getTilesets}}()\ \{\ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{classLevel_a37d7c848b940eb7fb8fef706b31dfbf5}{m\_tilesets}};\ \}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00031}\mbox{\hyperlink{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0}{00031}}\ \ \ \ \ \ \ \ \ std::vector<Layer*>*\ \mbox{\hyperlink{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0}{getLayers}}()\ \{\ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{classLevel_a7c6c5e6e5574530b6f6d4bb57a626164}{m\_layers}};\ \}\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00032}\mbox{\hyperlink{classLevel_aaf4b6bb1835c91d169953cc873359c49}{00032}}\ \ \ \ \ \ \ \ \ std::vector<TileLayer*>*\ \mbox{\hyperlink{classLevel_aaf4b6bb1835c91d169953cc873359c49}{getCollisionLayers}}()\ \{\ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{classLevel_a316539bbf28012f2b134a9416f236e81}{m\_collisionLayers}};\ \}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00033}\mbox{\hyperlink{classLevel_a6b225dd0782ac112cffb3e9a160212fb}{00033}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<TileLayer*>\&\ \mbox{\hyperlink{classLevel_a6b225dd0782ac112cffb3e9a160212fb}{getCollidableLayers}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classLevel_a316539bbf28012f2b134a9416f236e81}{m\_collisionLayers}};\ \}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00034}\mbox{\hyperlink{classLevel_a98b9579253fbf55f7d631853c4cd7e9c}{00034}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player}}*\ \mbox{\hyperlink{classLevel_a98b9579253fbf55f7d631853c4cd7e9c}{getPlayer}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classLevel_ad25d96764062d594bd8ee0b5a86ccd06}{m\_pPlayer}};\ \}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00035}\mbox{\hyperlink{classLevel_aa7fd5d84b67987bd08c8b97d57ed068b}{00035}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevel_aa7fd5d84b67987bd08c8b97d57ed068b}{setPlayer}}(\mbox{\hyperlink{classPlayer}{Player}}*\ pPlayer)\ \{\ \mbox{\hyperlink{classLevel_ad25d96764062d594bd8ee0b5a86ccd06}{m\_pPlayer}}\ =\ pPlayer;\ \}}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00037}\mbox{\hyperlink{classLevel_ac3aabe83d429e91cdac9f1760f253220}{00037}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLevelParser}{LevelParser}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevel_a7a696c928ca5d5354db6e50e46d0f67d}{Level}}();}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00039}\mbox{\hyperlink{classLevel_a37d7c848b940eb7fb8fef706b31dfbf5}{00039}}\ \ \ \ \ \ \ \ \ std::vector<Tileset>\ \mbox{\hyperlink{classLevel_a37d7c848b940eb7fb8fef706b31dfbf5}{m\_tilesets}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00040}\mbox{\hyperlink{classLevel_a7c6c5e6e5574530b6f6d4bb57a626164}{00040}}\ \ \ \ \ \ \ \ \ std::vector<Layer*>\ \mbox{\hyperlink{classLevel_a7c6c5e6e5574530b6f6d4bb57a626164}{m\_layers}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00041}\mbox{\hyperlink{classLevel_a316539bbf28012f2b134a9416f236e81}{00041}}\ \ \ \ \ \ \ \ \ std::vector<TileLayer*>\ \mbox{\hyperlink{classLevel_a316539bbf28012f2b134a9416f236e81}{m\_collisionLayers}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00042}\mbox{\hyperlink{classLevel_ad25d96764062d594bd8ee0b5a86ccd06}{00042}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player}}*\ \mbox{\hyperlink{classLevel_ad25d96764062d594bd8ee0b5a86ccd06}{m\_pPlayer}};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00043}00043\ \};}
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{Level_8h_source_l00045}00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_Level\_\_}}
+
+\end{DoxyCode}

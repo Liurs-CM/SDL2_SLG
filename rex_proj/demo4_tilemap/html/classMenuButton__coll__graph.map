@@ -1,0 +1,11 @@
+<map id="MenuButton" name="MenuButton">
+<area shape="rect" id="Node000001" title=" " alt="" coords="122,212,223,237"/>
+<area shape="rect" id="Node000002" href="$classSDLGameObject.html" title=" " alt="" coords="109,137,237,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,177,175,212,170,212,170,177"/>
+<area shape="rect" id="Node000003" href="$classGameObject.html" title=" " alt="" coords="5,5,108,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,39,164,135,160,139,74,43"/>
+<area shape="rect" id="Node000004" href="$classVector2D.html" title=" " alt="" coords="132,5,213,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="175,44,175,137,170,137,170,44"/>
+<area shape="rect" id="Node000005" href="$classAnimatedGraphic.html" title=" " alt="" coords="253,5,388,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="322,45,314,81,305,99,293,115,267,133,238,144,236,139,265,128,289,111,301,97,309,79,317,44"/>
+</map>

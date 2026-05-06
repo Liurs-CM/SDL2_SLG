@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: inc/Level.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Level.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Level_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __Level__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __Level__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">Layer.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="LevelParser_8h.html">LevelParser.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="Player_8h.html">Player.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="classTileLayer.html">TileLayer</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structTileset.html">   11</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structTileset.html">Tileset</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structTileset.html#a15347962a9cd3daea9d953cf76e4b77d">   13</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#a15347962a9cd3daea9d953cf76e4b77d">firstGridID</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structTileset.html#a477770a6cc81a9a53bf5928ebd5c88a9">   14</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#a477770a6cc81a9a53bf5928ebd5c88a9">tileWidth</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structTileset.html#a62c8b00674890f60189f1ace74aeee88">   15</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#a62c8b00674890f60189f1ace74aeee88">tileHeight</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structTileset.html#aebaac85c2e99d31883440cc2495c2f16">   16</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#aebaac85c2e99d31883440cc2495c2f16">spacing</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structTileset.html#a964f53e69b260f2e2dce178e557bf324">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#a964f53e69b260f2e2dce178e557bf324">margin</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structTileset.html#a2308e20e094ef2ba3abde3296bf5a732">   18</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#a2308e20e094ef2ba3abde3296bf5a732">width</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structTileset.html#a89cacbd7eef862a8409e7ca89d8f1d6f">   19</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#a89cacbd7eef862a8409e7ca89d8f1d6f">height</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structTileset.html#a666d036f94655943bc9091cc4ecb56c1">   20</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structTileset.html#a666d036f94655943bc9091cc4ecb56c1">numColumns</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structTileset.html#a18d4be506284b7ab3cf2e2b7e688042a">   21</a></span>    std::string <a class="code hl_variable" href="structTileset.html#a18d4be506284b7ab3cf2e2b7e688042a">name</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classLevel.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classLevel.html">Level</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_function" href="classLevel.html#a249eac1e8f19ff44134efa5e986feaca">~Level</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classLevel.html#a62e412eaad753d2baa2f94239cb80e41">update</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classLevel.html#a4ce1e8089977edfb4a02a7d5b94225c2">render</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classLevel.html#a562c4c550399622bcd7898330b28885e">   30</a></span>        std::vector&lt;Tileset&gt;* <a class="code hl_function" href="classLevel.html#a562c4c550399622bcd7898330b28885e">getTilesets</a>() { <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="classLevel.html#a37d7c848b940eb7fb8fef706b31dfbf5">m_tilesets</a>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classLevel.html#a5b5fc8f813383b03c6b9f8e7bac56fb0">   31</a></span>        std::vector&lt;Layer*&gt;* <a class="code hl_function" href="classLevel.html#a5b5fc8f813383b03c6b9f8e7bac56fb0">getLayers</a>() { <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="classLevel.html#a7c6c5e6e5574530b6f6d4bb57a626164">m_layers</a>; }    </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classLevel.html#aaf4b6bb1835c91d169953cc873359c49">   32</a></span>        std::vector&lt;TileLayer*&gt;* <a class="code hl_function" href="classLevel.html#aaf4b6bb1835c91d169953cc873359c49">getCollisionLayers</a>() { <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="classLevel.html#a316539bbf28012f2b134a9416f236e81">m_collisionLayers</a>; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classLevel.html#a6b225dd0782ac112cffb3e9a160212fb">   33</a></span>        <span class="keyword">const</span> std::vector&lt;TileLayer*&gt;&amp; <a class="code hl_function" href="classLevel.html#a6b225dd0782ac112cffb3e9a160212fb">getCollidableLayers</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classLevel.html#a316539bbf28012f2b134a9416f236e81">m_collisionLayers</a>; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classLevel.html#a98b9579253fbf55f7d631853c4cd7e9c">   34</a></span>        <a class="code hl_class" href="classPlayer.html">Player</a>* <a class="code hl_function" href="classLevel.html#a98b9579253fbf55f7d631853c4cd7e9c">getPlayer</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classLevel.html#ad25d96764062d594bd8ee0b5a86ccd06">m_pPlayer</a>; }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classLevel.html#aa7fd5d84b67987bd08c8b97d57ed068b">   35</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classLevel.html#aa7fd5d84b67987bd08c8b97d57ed068b">setPlayer</a>(<a class="code hl_class" href="classPlayer.html">Player</a>* pPlayer) { <a class="code hl_variable" href="classLevel.html#ad25d96764062d594bd8ee0b5a86ccd06">m_pPlayer</a> = pPlayer; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classLevel.html#ac3aabe83d429e91cdac9f1760f253220">   37</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classLevelParser.html">LevelParser</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_function" href="classLevel.html#a7a696c928ca5d5354db6e50e46d0f67d">Level</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classLevel.html#a37d7c848b940eb7fb8fef706b31dfbf5">   39</a></span>        std::vector&lt;Tileset&gt; <a class="code hl_variable" href="classLevel.html#a37d7c848b940eb7fb8fef706b31dfbf5">m_tilesets</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classLevel.html#a7c6c5e6e5574530b6f6d4bb57a626164">   40</a></span>        std::vector&lt;Layer*&gt; <a class="code hl_variable" href="classLevel.html#a7c6c5e6e5574530b6f6d4bb57a626164">m_layers</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classLevel.html#a316539bbf28012f2b134a9416f236e81">   41</a></span>        std::vector&lt;TileLayer*&gt; <a class="code hl_variable" href="classLevel.html#a316539bbf28012f2b134a9416f236e81">m_collisionLayers</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classLevel.html#ad25d96764062d594bd8ee0b5a86ccd06">   42</a></span>        <a class="code hl_class" href="classPlayer.html">Player</a>* <a class="code hl_variable" href="classLevel.html#ad25d96764062d594bd8ee0b5a86ccd06">m_pPlayer</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">// __Level__</span></div>
+<div class="ttc" id="aLayer_8h_html"><div class="ttname"><a href="Layer_8h.html">Layer.h</a></div></div>
+<div class="ttc" id="aLevelParser_8h_html"><div class="ttname"><a href="LevelParser_8h.html">LevelParser.h</a></div></div>
+<div class="ttc" id="aPlayer_8h_html"><div class="ttname"><a href="Player_8h.html">Player.h</a></div></div>
+<div class="ttc" id="aclassLevelParser_html"><div class="ttname"><a href="classLevelParser.html">LevelParser</a></div><div class="ttdef"><b>Definition</b> <a href="LevelParser_8h_source.html#l00013">LevelParser.h:14</a></div></div>
+<div class="ttc" id="aclassLevel_html"><div class="ttname"><a href="classLevel.html">Level</a></div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00024">Level.h:25</a></div></div>
+<div class="ttc" id="aclassLevel_html_a249eac1e8f19ff44134efa5e986feaca"><div class="ttname"><a href="classLevel.html#a249eac1e8f19ff44134efa5e986feaca">Level::~Level</a></div><div class="ttdeci">~Level()</div><div class="ttdef"><b>Definition</b> <a href="Level_8cpp_source.html#l00012">Level.cpp:12</a></div></div>
+<div class="ttc" id="aclassLevel_html_a316539bbf28012f2b134a9416f236e81"><div class="ttname"><a href="classLevel.html#a316539bbf28012f2b134a9416f236e81">Level::m_collisionLayers</a></div><div class="ttdeci">std::vector&lt; TileLayer * &gt; m_collisionLayers</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00041">Level.h:41</a></div></div>
+<div class="ttc" id="aclassLevel_html_a37d7c848b940eb7fb8fef706b31dfbf5"><div class="ttname"><a href="classLevel.html#a37d7c848b940eb7fb8fef706b31dfbf5">Level::m_tilesets</a></div><div class="ttdeci">std::vector&lt; Tileset &gt; m_tilesets</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00039">Level.h:39</a></div></div>
+<div class="ttc" id="aclassLevel_html_a4ce1e8089977edfb4a02a7d5b94225c2"><div class="ttname"><a href="classLevel.html#a4ce1e8089977edfb4a02a7d5b94225c2">Level::render</a></div><div class="ttdeci">void render()</div><div class="ttdef"><b>Definition</b> <a href="Level_8cpp_source.html#l00021">Level.cpp:21</a></div></div>
+<div class="ttc" id="aclassLevel_html_a562c4c550399622bcd7898330b28885e"><div class="ttname"><a href="classLevel.html#a562c4c550399622bcd7898330b28885e">Level::getTilesets</a></div><div class="ttdeci">std::vector&lt; Tileset &gt; * getTilesets()</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00030">Level.h:30</a></div></div>
+<div class="ttc" id="aclassLevel_html_a5b5fc8f813383b03c6b9f8e7bac56fb0"><div class="ttname"><a href="classLevel.html#a5b5fc8f813383b03c6b9f8e7bac56fb0">Level::getLayers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; * getLayers()</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00031">Level.h:31</a></div></div>
+<div class="ttc" id="aclassLevel_html_a62e412eaad753d2baa2f94239cb80e41"><div class="ttname"><a href="classLevel.html#a62e412eaad753d2baa2f94239cb80e41">Level::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition</b> <a href="Level_8cpp_source.html#l00030">Level.cpp:30</a></div></div>
+<div class="ttc" id="aclassLevel_html_a6b225dd0782ac112cffb3e9a160212fb"><div class="ttname"><a href="classLevel.html#a6b225dd0782ac112cffb3e9a160212fb">Level::getCollidableLayers</a></div><div class="ttdeci">const std::vector&lt; TileLayer * &gt; &amp; getCollidableLayers()</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00033">Level.h:33</a></div></div>
+<div class="ttc" id="aclassLevel_html_a7a696c928ca5d5354db6e50e46d0f67d"><div class="ttname"><a href="classLevel.html#a7a696c928ca5d5354db6e50e46d0f67d">Level::Level</a></div><div class="ttdeci">Level()</div><div class="ttdef"><b>Definition</b> <a href="Level_8cpp_source.html#l00010">Level.cpp:10</a></div></div>
+<div class="ttc" id="aclassLevel_html_a7c6c5e6e5574530b6f6d4bb57a626164"><div class="ttname"><a href="classLevel.html#a7c6c5e6e5574530b6f6d4bb57a626164">Level::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00040">Level.h:40</a></div></div>
+<div class="ttc" id="aclassLevel_html_a98b9579253fbf55f7d631853c4cd7e9c"><div class="ttname"><a href="classLevel.html#a98b9579253fbf55f7d631853c4cd7e9c">Level::getPlayer</a></div><div class="ttdeci">Player * getPlayer()</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00034">Level.h:34</a></div></div>
+<div class="ttc" id="aclassLevel_html_aa7fd5d84b67987bd08c8b97d57ed068b"><div class="ttname"><a href="classLevel.html#aa7fd5d84b67987bd08c8b97d57ed068b">Level::setPlayer</a></div><div class="ttdeci">void setPlayer(Player *pPlayer)</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00035">Level.h:35</a></div></div>
+<div class="ttc" id="aclassLevel_html_aaf4b6bb1835c91d169953cc873359c49"><div class="ttname"><a href="classLevel.html#aaf4b6bb1835c91d169953cc873359c49">Level::getCollisionLayers</a></div><div class="ttdeci">std::vector&lt; TileLayer * &gt; * getCollisionLayers()</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00032">Level.h:32</a></div></div>
+<div class="ttc" id="aclassLevel_html_ad25d96764062d594bd8ee0b5a86ccd06"><div class="ttname"><a href="classLevel.html#ad25d96764062d594bd8ee0b5a86ccd06">Level::m_pPlayer</a></div><div class="ttdeci">Player * m_pPlayer</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00042">Level.h:42</a></div></div>
+<div class="ttc" id="aclassPlayer_html"><div class="ttname"><a href="classPlayer.html">Player</a></div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00006">Player.h:7</a></div></div>
+<div class="ttc" id="aclassTileLayer_html"><div class="ttname"><a href="classTileLayer.html">TileLayer</a></div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00009">TileLayer.h:10</a></div></div>
+<div class="ttc" id="astructTileset_html"><div class="ttname"><a href="structTileset.html">Tileset</a></div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00011">Level.h:12</a></div></div>
+<div class="ttc" id="astructTileset_html_a15347962a9cd3daea9d953cf76e4b77d"><div class="ttname"><a href="structTileset.html#a15347962a9cd3daea9d953cf76e4b77d">Tileset::firstGridID</a></div><div class="ttdeci">int firstGridID</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00013">Level.h:13</a></div></div>
+<div class="ttc" id="astructTileset_html_a18d4be506284b7ab3cf2e2b7e688042a"><div class="ttname"><a href="structTileset.html#a18d4be506284b7ab3cf2e2b7e688042a">Tileset::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00021">Level.h:21</a></div></div>
+<div class="ttc" id="astructTileset_html_a2308e20e094ef2ba3abde3296bf5a732"><div class="ttname"><a href="structTileset.html#a2308e20e094ef2ba3abde3296bf5a732">Tileset::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00018">Level.h:18</a></div></div>
+<div class="ttc" id="astructTileset_html_a477770a6cc81a9a53bf5928ebd5c88a9"><div class="ttname"><a href="structTileset.html#a477770a6cc81a9a53bf5928ebd5c88a9">Tileset::tileWidth</a></div><div class="ttdeci">int tileWidth</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00014">Level.h:14</a></div></div>
+<div class="ttc" id="astructTileset_html_a62c8b00674890f60189f1ace74aeee88"><div class="ttname"><a href="structTileset.html#a62c8b00674890f60189f1ace74aeee88">Tileset::tileHeight</a></div><div class="ttdeci">int tileHeight</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00015">Level.h:15</a></div></div>
+<div class="ttc" id="astructTileset_html_a666d036f94655943bc9091cc4ecb56c1"><div class="ttname"><a href="structTileset.html#a666d036f94655943bc9091cc4ecb56c1">Tileset::numColumns</a></div><div class="ttdeci">int numColumns</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00020">Level.h:20</a></div></div>
+<div class="ttc" id="astructTileset_html_a89cacbd7eef862a8409e7ca89d8f1d6f"><div class="ttname"><a href="structTileset.html#a89cacbd7eef862a8409e7ca89d8f1d6f">Tileset::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00019">Level.h:19</a></div></div>
+<div class="ttc" id="astructTileset_html_a964f53e69b260f2e2dce178e557bf324"><div class="ttname"><a href="structTileset.html#a964f53e69b260f2e2dce178e557bf324">Tileset::margin</a></div><div class="ttdeci">int margin</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00017">Level.h:17</a></div></div>
+<div class="ttc" id="astructTileset_html_aebaac85c2e99d31883440cc2495c2f16"><div class="ttname"><a href="structTileset.html#aebaac85c2e99d31883440cc2495c2f16">Tileset::spacing</a></div><div class="ttdeci">int spacing</div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00016">Level.h:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

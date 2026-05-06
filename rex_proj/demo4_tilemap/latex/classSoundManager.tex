@@ -1,0 +1,273 @@
+\doxysection{Sound\+Manager类 参考}
+\hypertarget{classSoundManager}{}\label{classSoundManager}\index{SoundManager@{SoundManager}}
+
+
+{\ttfamily \#include $<$Sound\+Manager.\+h$>$}
+
+
+
+Sound\+Manager 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classSoundManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSoundManager_acf34a5ccff062eb30f4930b2426d23de}{load}} (std\+::string file\+Name, std\+::string id, \mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1e}{sound\+\_\+type}} type)
+\item 
+void \mbox{\hyperlink{classSoundManager_a44a5bc613545fc32b876f0a8c48ba542}{play\+Sound}} (std\+::string id, int loop)
+\item 
+void \mbox{\hyperlink{classSoundManager_a6d17613cbba68c4ee1897aaad890d80e}{play\+Music}} (std\+::string id, int loop)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSoundManager_afb88058c46a2036b74f2775fc0cc2731}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSoundManager_abcc1fbf3488be5788a42c9a4fe56df35}{Sound\+Manager}} ()
+\item 
+\mbox{\hyperlink{classSoundManager_ad5dbf8eab22db48ff8f3db51b02f8938}{\texorpdfstring{$\sim$}{\string~}\+Sound\+Manager}} ()
+\item 
+\mbox{\hyperlink{classSoundManager_a3505269eb71fc0796284149507c2845b}{Sound\+Manager}} (const \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \&)
+\item 
+\mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \& \mbox{\hyperlink{classSoundManager_ae6ac98927c411fc2811fd71caa9f3c01}{operator=}} (const \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, Mix\+\_\+\+Chunk \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classSoundManager_a002bacf2ea6c35ff9ae240bc28c642aa}{m\+\_\+sfxs}}
+\item 
+std\+::map$<$ std\+::string, Mix\+\_\+\+Music \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classSoundManager_ab57fd7c604471e90e78af9ef99b7171d}{m\+\_\+music}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}{s\+\_\+p\+Instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{SoundManager_8h_source}{Sound\+Manager.\+h}} 第 \mbox{\hyperlink{SoundManager_8h_source_l00014}{14}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classSoundManager_abcc1fbf3488be5788a42c9a4fe56df35}\label{classSoundManager_abcc1fbf3488be5788a42c9a4fe56df35} 
+\index{SoundManager@{SoundManager}!SoundManager@{SoundManager}}
+\index{SoundManager@{SoundManager}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{SoundManager()}{SoundManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sound\+Manager\+::\+Sound\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8cpp_source}{Sound\+Manager.\+cpp}} 第 \mbox{\hyperlink{SoundManager_8cpp_source_l00005}{5}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{SoundManager_8h_source_l00017}{Instance()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSoundManager_abcc1fbf3488be5788a42c9a4fe56df35_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSoundManager_ad5dbf8eab22db48ff8f3db51b02f8938}\label{classSoundManager_ad5dbf8eab22db48ff8f3db51b02f8938} 
+\index{SoundManager@{SoundManager}!````~SoundManager@{\texorpdfstring{$\sim$}{\string~}SoundManager}}
+\index{````~SoundManager@{\texorpdfstring{$\sim$}{\string~}SoundManager}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SoundManager()}{\string~SoundManager()}}
+{\footnotesize\ttfamily Sound\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Sound\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8cpp_source}{Sound\+Manager.\+cpp}} 第 \mbox{\hyperlink{SoundManager_8cpp_source_l00010}{10}} 行定义.
+
+\Hypertarget{classSoundManager_a3505269eb71fc0796284149507c2845b}\label{classSoundManager_a3505269eb71fc0796284149507c2845b} 
+\index{SoundManager@{SoundManager}!SoundManager@{SoundManager}}
+\index{SoundManager@{SoundManager}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{SoundManager()}{SoundManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sound\+Manager\+::\+Sound\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classSoundManager_afb88058c46a2036b74f2775fc0cc2731}\label{classSoundManager_afb88058c46a2036b74f2775fc0cc2731} 
+\index{SoundManager@{SoundManager}!Instance@{Instance}}
+\index{Instance@{Instance}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \texorpdfstring{$\ast$}{*} Sound\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8h_source}{Sound\+Manager.\+h}} 第 \mbox{\hyperlink{SoundManager_8h_source_l00017}{17}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SoundManager_8h_source_l00030}{s\+\_\+p\+Instance}} , 以及 \mbox{\hyperlink{SoundManager_8cpp_source_l00005}{Sound\+Manager()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}} , 以及 \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSoundManager_afb88058c46a2036b74f2775fc0cc2731_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSoundManager_afb88058c46a2036b74f2775fc0cc2731_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSoundManager_acf34a5ccff062eb30f4930b2426d23de}\label{classSoundManager_acf34a5ccff062eb30f4930b2426d23de} 
+\index{SoundManager@{SoundManager}!load@{load}}
+\index{load@{load}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool Sound\+Manager\+::load (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name,  }\item[{std\+::string}]{id,  }\item[{\mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1e}{sound\+\_\+type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8cpp_source}{Sound\+Manager.\+cpp}} 第 \mbox{\hyperlink{SoundManager_8cpp_source_l00015}{15}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SoundManager_8h_source_l00032}{m\+\_\+music}}, \mbox{\hyperlink{SoundManager_8h_source_l00031}{m\+\_\+sfxs}}, \mbox{\hyperlink{SoundManager_8h_source_l00010}{SOUND\+\_\+\+MUSIC}} , 以及 \mbox{\hyperlink{SoundManager_8h_source_l00011}{SOUND\+\_\+\+SFX}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classSoundManager_acf34a5ccff062eb30f4930b2426d23de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSoundManager_ae6ac98927c411fc2811fd71caa9f3c01}\label{classSoundManager_ae6ac98927c411fc2811fd71caa9f3c01} 
+\index{SoundManager@{SoundManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \& Sound\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSoundManager_a6d17613cbba68c4ee1897aaad890d80e}\label{classSoundManager_a6d17613cbba68c4ee1897aaad890d80e} 
+\index{SoundManager@{SoundManager}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}}
+{\footnotesize\ttfamily void Sound\+Manager\+::play\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{int}]{loop }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8cpp_source}{Sound\+Manager.\+cpp}} 第 \mbox{\hyperlink{SoundManager_8cpp_source_l00044}{44}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SoundManager_8h_source_l00032}{m\+\_\+music}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classSoundManager_a6d17613cbba68c4ee1897aaad890d80e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSoundManager_a44a5bc613545fc32b876f0a8c48ba542}\label{classSoundManager_a44a5bc613545fc32b876f0a8c48ba542} 
+\index{SoundManager@{SoundManager}!playSound@{playSound}}
+\index{playSound@{playSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void Sound\+Manager\+::play\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{int}]{loop }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8cpp_source}{Sound\+Manager.\+cpp}} 第 \mbox{\hyperlink{SoundManager_8cpp_source_l00049}{49}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SoundManager_8h_source_l00031}{m\+\_\+sfxs}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSoundManager_a44a5bc613545fc32b876f0a8c48ba542_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classSoundManager_ab57fd7c604471e90e78af9ef99b7171d}\label{classSoundManager_ab57fd7c604471e90e78af9ef99b7171d} 
+\index{SoundManager@{SoundManager}!m\_music@{m\_music}}
+\index{m\_music@{m\_music}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{m\_music}{m\_music}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Mix\+\_\+\+Music\texorpdfstring{$\ast$}{*}$>$ Sound\+Manager\+::m\+\_\+music\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8h_source}{Sound\+Manager.\+h}} 第 \mbox{\hyperlink{SoundManager_8h_source_l00032}{32}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{SoundManager_8cpp_source_l00015}{load()}} , 以及 \mbox{\hyperlink{SoundManager_8cpp_source_l00044}{play\+Music()}}.
+
+\Hypertarget{classSoundManager_a002bacf2ea6c35ff9ae240bc28c642aa}\label{classSoundManager_a002bacf2ea6c35ff9ae240bc28c642aa} 
+\index{SoundManager@{SoundManager}!m\_sfxs@{m\_sfxs}}
+\index{m\_sfxs@{m\_sfxs}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{m\_sfxs}{m\_sfxs}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Mix\+\_\+\+Chunk\texorpdfstring{$\ast$}{*}$>$ Sound\+Manager\+::m\+\_\+sfxs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8h_source}{Sound\+Manager.\+h}} 第 \mbox{\hyperlink{SoundManager_8h_source_l00031}{31}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{SoundManager_8cpp_source_l00015}{load()}} , 以及 \mbox{\hyperlink{SoundManager_8cpp_source_l00049}{play\+Sound()}}.
+
+\Hypertarget{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}\label{classSoundManager_aad8c40bed5309488aaad5ccad8c83029} 
+\index{SoundManager@{SoundManager}!s\_pInstance@{s\_pInstance}}
+\index{s\_pInstance@{s\_pInstance}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{s\_pInstance}{s\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoundManager}{Sound\+Manager}} \texorpdfstring{$\ast$}{*} Sound\+Manager\+::s\+\_\+p\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{SoundManager_8h_source}{Sound\+Manager.\+h}} 第 \mbox{\hyperlink{SoundManager_8h_source_l00030}{30}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{SoundManager_8h_source_l00017}{Instance()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{SoundManager_8h}{Sound\+Manager.\+h}}\item 
+src/\mbox{\hyperlink{SoundManager_8cpp}{Sound\+Manager.\+cpp}}\end{DoxyCompactItemize}

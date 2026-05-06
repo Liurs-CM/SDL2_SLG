@@ -1,0 +1,11 @@
+<map id="SoundManager::SoundManager" name="SoundManager::SoundManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="596,31,820,56"/>
+<area shape="rect" id="Node000002" href="$classSoundManager.html#afb88058c46a2036b74f2775fc0cc2731" title=" " alt="" coords="365,31,548,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="582,46,548,46,548,41,582,41"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#a3c2e7e40fe2018229d44168bd484c182" title=" " alt="" coords="169,5,317,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,33,317,29,318,24,352,28"/>
+<area shape="rect" id="Node000005" href="$classGame.html#a04464aa1c667b81f2c0fb2d4f7b0ac83" title=" " alt="" coords="198,55,289,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="351,58,289,65,288,60,351,53"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title=" " alt="" coords="5,5,121,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,21,121,21,121,15,155,15"/>
+</map>

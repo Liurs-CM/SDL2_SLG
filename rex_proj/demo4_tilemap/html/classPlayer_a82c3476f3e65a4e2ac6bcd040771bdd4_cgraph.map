@@ -1,0 +1,46 @@
+<map id="Player::update" name="Player::update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,304,121,329"/>
+<area shape="rect" id="Node000002" href="$classCamera.html#ac40d7b1afe12d127a7b33424e7ebfc28" title=" " alt="" coords="200,104,321,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,302,236,137,239,141,79,305"/>
+<area shape="rect" id="Node000007" href="$classCamera.html#aec9074b278b84e784cd493ded9e46910" title=" " alt="" coords="438,203,593,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="116,301,169,289,441,228,442,234,170,294,117,307"/>
+<area shape="rect" id="Node000008" href="$classPlayer.html#a96e7e759de6b3ab58f97813f135a9036" title=" " alt="" coords="169,405,352,431"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="83,327,122,355,171,384,205,398,203,403,168,388,119,359,80,332"/>
+<area shape="rect" id="Node000009" href="$classPlayer.html#a3c2e7e40fe2018229d44168bd484c182" title=" " alt="" coords="187,304,335,329"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="121,314,173,314,173,319,121,319"/>
+<area shape="rect" id="Node000014" href="$classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89" title=" " alt="" coords="447,551,583,576"/>
+<area shape="poly" id="edge24_Node000001_Node000014" title=" " alt="" coords="119,327,263,363,353,390,369,409,376,428,378,466,381,503,388,520,402,537,417,548,435,555,433,560,415,553,398,541,383,523,375,504,373,467,371,430,364,412,351,395,261,368,117,332"/>
+<area shape="rect" id="Node000003" href="$classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="456,104,575,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="322,114,442,114,442,119,322,119"/>
+<area shape="rect" id="Node000004" href="$classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="456,153,575,179"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="322,126,443,149,442,155,321,131"/>
+<area shape="rect" id="Node000005" href="$classVector2D.html#ac458bd997d2f0c6c7234cf1e8a7b73b8" title=" " alt="" coords="456,5,575,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="280,102,332,71,399,40,442,27,443,32,401,44,335,75,283,106"/>
+<area shape="rect" id="Node000006" href="$classVector2D.html#a9b47adcbdf2c10f3ba893285b5c34709" title=" " alt="" coords="457,55,574,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="321,102,443,79,444,84,322,108"/>
+<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="266,303,284,269,312,224,351,178,399,138,442,121,443,126,401,143,355,181,317,227,288,272,270,305"/>
+<area shape="poly" id="edge15_Node000009_Node000004" title=" " alt="" coords="270,302,321,246,357,214,399,188,442,172,443,177,401,192,361,219,324,250,274,306"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="283,301,335,274,399,245,447,229,448,234,401,250,338,278,286,306"/>
+<area shape="rect" id="Node000010" href="$classVector2D.html#a50fdb50a78c8ada9c59869dccd0b469d" title=" " alt="" coords="424,304,607,329"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="335,314,410,314,410,319,335,319"/>
+<area shape="rect" id="Node000011" href="$classVector2D.html#ae9c6666151cd09a233f35c13cdfd9049" title=" " alt="" coords="725,255,856,280"/>
+<area shape="poly" id="edge22_Node000009_Node000011" title=" " alt="" coords="322,301,400,289,566,274,711,267,712,272,567,279,400,294,323,307"/>
+<area shape="rect" id="Node000013" href="$classInputHandler.html#a3afea5f90871baebcbf0303a3a9949c9" title=" " alt="" coords="400,353,631,379"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="327,327,436,348,435,353,326,332"/>
+<area shape="poly" id="edge16_Node000009_Node000014" title=" " alt="" coords="325,327,340,335,354,347,371,372,378,397,379,421,377,446,375,469,377,493,385,515,402,537,417,548,435,556,433,561,414,553,398,541,380,518,372,494,370,469,372,445,374,421,373,398,366,374,350,350,337,340,322,332"/>
+<area shape="rect" id="Node000016" href="$classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55" title=" " alt="" coords="431,403,600,428"/>
+<area shape="poly" id="edge18_Node000009_Node000016" title=" " alt="" coords="309,327,353,346,368,357,378,368,387,378,401,388,421,396,419,401,399,392,384,382,374,372,364,361,351,351,307,332"/>
+<area shape="rect" id="Node000018" href="$classSoundManager.html#afb88058c46a2036b74f2775fc0cc2731" title=" " alt="" coords="424,452,607,477"/>
+<area shape="poly" id="edge20_Node000009_Node000018" title=" " alt="" coords="320,327,354,347,371,371,378,395,384,418,402,439,413,446,410,450,398,443,380,420,373,396,367,373,350,351,317,332"/>
+<area shape="rect" id="Node000020" href="$classSoundManager.html#a44a5bc613545fc32b876f0a8c48ba542" title=" " alt="" coords="418,501,613,527"/>
+<area shape="poly" id="edge23_Node000009_Node000020" title=" " alt="" coords="324,327,354,347,368,365,375,384,378,420,381,455,388,472,402,488,407,492,404,497,398,492,383,475,376,457,372,421,370,385,363,368,350,351,321,332"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="586,301,711,279,712,284,587,307"/>
+<area shape="rect" id="Node000012" href="$classVector2D.html#a98e9997ebb7a629f4db52397d4e0d653" title=" " alt="" coords="717,304,865,329"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="607,314,703,314,703,319,607,319"/>
+<area shape="rect" id="Node000015" href="$classCamera.html#a01f94c3543f56ede7af49dc778f19331" title=" " alt="" coords="725,551,857,576"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="583,561,711,561,711,566,583,566"/>
+<area shape="rect" id="Node000017" href="$classInputHandler.html#a698aa4af4f326a9881835fda251ca996" title=" " alt="" coords="691,403,890,428"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="600,413,678,413,678,418,600,418"/>
+<area shape="rect" id="Node000019" href="$classSoundManager.html#abcc1fbf3488be5788a42c9a4fe56df35" title=" " alt="" coords="679,452,903,477"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="607,462,665,462,665,467,607,467"/>
+</map>

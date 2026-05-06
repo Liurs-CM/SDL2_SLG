@@ -1,0 +1,386 @@
+\doxysection{Menu\+Button类 参考}
+\hypertarget{classMenuButton}{}\label{classMenuButton}\index{MenuButton@{MenuButton}}
+
+
+{\ttfamily \#include $<$Menu\+Button.\+h$>$}
+
+
+
+类 Menu\+Button 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classMenuButton__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Menu\+Button 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuButton__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMenuButton_a322b34a062c93f8604b12bfb35b40073}{Menu\+Button}} ()
+\item 
+virtual \mbox{\hyperlink{classMenuButton_abf3157d5518972c9f9aa87f74bf4f15f}{\texorpdfstring{$\sim$}{\string~}\+Menu\+Button}} ()
+\item 
+virtual void \mbox{\hyperlink{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5}{load}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLoaderParams}{Loader\+Params}} $>$ const \&p\+Params)
+\item 
+virtual void \mbox{\hyperlink{classMenuButton_a3e854949b52808f9d6092e149a116f5c}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classMenuButton_a86b038172871555da45606e20fa6bad7}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classMenuButton_a970fc154ec16a7c0c9ad7f3626199bba}{clean}} ()
+\item 
+void \mbox{\hyperlink{classMenuButton_a919648d93c3b9bb742830c560c424e78}{set\+Callback}} (void(\texorpdfstring{$\ast$}{*}callback)())
+\item 
+int \mbox{\hyperlink{classMenuButton_a191c5ecd63f2fc598470c6398d169321}{get\+Callback\+ID}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classSDLGameObject_a0211a693afa22b3fe93981f99abbe4fa}{\texorpdfstring{$\sim$}{\string~}\+SDLGame\+Object}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classSDLGameObject_a5bc827ddc71df9a0302430a209dca80c}{type}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a337c731857f6923fdfd824e55683aa7c}{get\+Position}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a2b461de1c3b8c28374e0fa16e17e924f}{get\+Velocity}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_a053e11805c9c1194dc269a695bcb168a}{get\+Width}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aac76406d11a56335f275d9d8efff82cd}{get\+Height}} ()
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}} $>$ \mbox{\hyperlink{classSDLGameObject_addb0c9209a10e396b7f6a8114755d23e}{clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215}{button\+\_\+state}} \{ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215a8d402266ab388c1e800195d451dbba65}{MOUSE\+\_\+\+OUT}} = 0
+, \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ab67862558b00554582f4b9dc6aee42b8}{MOUSE\+\_\+\+OVER}} = 1
+, \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ad21446b1f91ce5de0d43aa6478dd52e7}{CLICKED}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMenuButton_a1969e41c95042c83201035681d01d663}{m\+\_\+callback\+ID}}
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac}{m\+\_\+callback}} )()
+\item 
+bool \mbox{\hyperlink{classMenuButton_a7edc93b34531d1debe656331b7b5269e}{m\+\_\+b\+Released}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSDLGameObject_a19f3c6074f181947371b58880528b770}{SDLGame\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\+\_\+position}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\+\_\+velocity}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a62c0967676d9bc80367eefee417d47f4}{m\+\_\+acceleration}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}{m\+\_\+current\+Row}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\+\_\+current\+Frame}}
+\item 
+double \mbox{\hyperlink{classSDLGameObject_a86d1f9c1db3958e1e5e0185bd30ffc3c}{m\+\_\+angle}}
+\item 
+int \mbox{\hyperlink{classSDLGameObject_a2208f9ebf1e5bcae92c06e910cef62b7}{m\+\_\+alpha}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}{m\+\_\+position\+Screen}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\+\_\+width}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\+\_\+height}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c}{m\+\_\+num\+Frames}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f}{m\+\_\+anim\+Speed}}
+\item 
+bool \mbox{\hyperlink{classSDLGameObject_a97ede378f4edc6c5a4f000d6dbd11fba}{m\+\_\+b\+Played\+Death\+Sound}}
+\item 
+\mbox{\hyperlink{classAnimatedGraphic}{Animated\+Graphic}} \mbox{\hyperlink{classSDLGameObject_a36e37cf3359295267db04c901664c1e1}{m\+\_\+current\+Anim}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\+\_\+texture\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00006}{6}} 行定义.
+
+
+
+\doxysubsection{成员枚举类型说明}
+\Hypertarget{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215}\label{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215} 
+\index{MenuButton@{MenuButton}!button\_state@{button\_state}}
+\index{button\_state@{button\_state}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{button\_state}{button\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215}{Menu\+Button\+::button\+\_\+state}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOUSE\_OUT@{MOUSE\_OUT}!MenuButton@{MenuButton}}\index{MenuButton@{MenuButton}!MOUSE\_OUT@{MOUSE\_OUT}}}\Hypertarget{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215a8d402266ab388c1e800195d451dbba65}\label{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215a8d402266ab388c1e800195d451dbba65} 
+MOUSE\+\_\+\+OUT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOUSE\_OVER@{MOUSE\_OVER}!MenuButton@{MenuButton}}\index{MenuButton@{MenuButton}!MOUSE\_OVER@{MOUSE\_OVER}}}\Hypertarget{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ab67862558b00554582f4b9dc6aee42b8}\label{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ab67862558b00554582f4b9dc6aee42b8} 
+MOUSE\+\_\+\+OVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLICKED@{CLICKED}!MenuButton@{MenuButton}}\index{MenuButton@{MenuButton}!CLICKED@{CLICKED}}}\Hypertarget{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ad21446b1f91ce5de0d43aa6478dd52e7}\label{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ad21446b1f91ce5de0d43aa6478dd52e7} 
+CLICKED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00018}{18}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classMenuButton_a322b34a062c93f8604b12bfb35b40073}\label{classMenuButton_a322b34a062c93f8604b12bfb35b40073} 
+\index{MenuButton@{MenuButton}!MenuButton@{MenuButton}}
+\index{MenuButton@{MenuButton}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{MenuButton()}{MenuButton()}}
+{\footnotesize\ttfamily Menu\+Button\+::\+Menu\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8cpp_source}{Menu\+Button.\+cpp}} 第 \mbox{\hyperlink{MenuButton_8cpp_source_l00005}{5}} 行定义.
+
+\Hypertarget{classMenuButton_abf3157d5518972c9f9aa87f74bf4f15f}\label{classMenuButton_abf3157d5518972c9f9aa87f74bf4f15f} 
+\index{MenuButton@{MenuButton}!````~MenuButton@{\texorpdfstring{$\sim$}{\string~}MenuButton}}
+\index{````~MenuButton@{\texorpdfstring{$\sim$}{\string~}MenuButton}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MenuButton()}{\string~MenuButton()}}
+{\footnotesize\ttfamily virtual Menu\+Button\+::\texorpdfstring{$\sim$}{\string~}\+Menu\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00010}{10}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classMenuButton_a970fc154ec16a7c0c9ad7f3626199bba}\label{classMenuButton_a970fc154ec16a7c0c9ad7f3626199bba} 
+\index{MenuButton@{MenuButton}!clean@{clean}}
+\index{clean@{clean}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void Menu\+Button\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8cpp_source}{Menu\+Button.\+cpp}} 第 \mbox{\hyperlink{MenuButton_8cpp_source_l00048}{48}} 行定义.
+
+\Hypertarget{classMenuButton_a3e854949b52808f9d6092e149a116f5c}\label{classMenuButton_a3e854949b52808f9d6092e149a116f5c} 
+\index{MenuButton@{MenuButton}!draw@{draw}}
+\index{draw@{draw}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Menu\+Button\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8cpp_source}{Menu\+Button.\+cpp}} 第 \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{14}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8cpp_source_l00055}{Texture\+Manager\+::draw\+Frame()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00030}{SDLGame\+Object\+::m\+\_\+current\+Frame}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00029}{SDLGame\+Object\+::m\+\_\+current\+Row}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{SDLGame\+Object\+::m\+\_\+height}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{SDLGame\+Object\+::m\+\_\+position}}, \mbox{\hyperlink{GameObject_8h_source_l00019}{Game\+Object\+::m\+\_\+texture\+ID}} , 以及 \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{SDLGame\+Object\+::m\+\_\+width}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuButton_a3e854949b52808f9d6092e149a116f5c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuButton_a191c5ecd63f2fc598470c6398d169321}\label{classMenuButton_a191c5ecd63f2fc598470c6398d169321} 
+\index{MenuButton@{MenuButton}!getCallbackID@{getCallbackID}}
+\index{getCallbackID@{getCallbackID}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{getCallbackID()}{getCallbackID()}}
+{\footnotesize\ttfamily int Menu\+Button\+::get\+Callback\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00016}{16}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuButton_8h_source_l00024}{m\+\_\+callback\+ID}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00075}{Menu\+Main\+State\+::set\+Callbacks()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00066}{Menu\+Over\+State\+::set\+Callbacks()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00071}{Menu\+Pause\+State\+::set\+Callbacks()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuButton_a191c5ecd63f2fc598470c6398d169321_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5}\label{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5} 
+\index{MenuButton@{MenuButton}!load@{load}}
+\index{load@{load}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Menu\+Button\+::load (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLoaderParams}{Loader\+Params}} $>$ const \&}]{p\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8cpp_source}{Menu\+Button.\+cpp}} 第 \mbox{\hyperlink{MenuButton_8cpp_source_l00007}{7}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{SDLGame\+Object\+::load()}}, \mbox{\hyperlink{MenuButton_8h_source_l00024}{m\+\_\+callback\+ID}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00030}{SDLGame\+Object\+::m\+\_\+current\+Frame}} , 以及 \mbox{\hyperlink{MenuButton_8h_source_l00020}{MOUSE\+\_\+\+OUT}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuButton_a919648d93c3b9bb742830c560c424e78}\label{classMenuButton_a919648d93c3b9bb742830c560c424e78} 
+\index{MenuButton@{MenuButton}!setCallback@{setCallback}}
+\index{setCallback@{setCallback}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{setCallback()}{setCallback()}}
+{\footnotesize\ttfamily void Menu\+Button\+::set\+Callback (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*})()}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00015}{15}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuButton_8h_source_l00025}{m\+\_\+callback}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00075}{Menu\+Main\+State\+::set\+Callbacks()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00066}{Menu\+Over\+State\+::set\+Callbacks()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00071}{Menu\+Pause\+State\+::set\+Callbacks()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuButton_a919648d93c3b9bb742830c560c424e78_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuButton_a86b038172871555da45606e20fa6bad7}\label{classMenuButton_a86b038172871555da45606e20fa6bad7} 
+\index{MenuButton@{MenuButton}!update@{update}}
+\index{update@{update}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Menu\+Button\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8cpp_source}{Menu\+Button.\+cpp}} 第 \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{20}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuButton_8h_source_l00022}{CLICKED}}, \mbox{\hyperlink{InputHandler_8h_source_l00033}{Input\+Handler\+::get\+Mouse\+Position()}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}}, \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{InputHandler_8h_source_l00012}{LEFT}}, \mbox{\hyperlink{MenuButton_8h_source_l00026}{m\+\_\+b\+Released}}, \mbox{\hyperlink{MenuButton_8h_source_l00025}{m\+\_\+callback}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00030}{SDLGame\+Object\+::m\+\_\+current\+Frame}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{SDLGame\+Object\+::m\+\_\+height}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{SDLGame\+Object\+::m\+\_\+position}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{SDLGame\+Object\+::m\+\_\+width}}, \mbox{\hyperlink{MenuButton_8h_source_l00020}{MOUSE\+\_\+\+OUT}} , 以及 \mbox{\hyperlink{MenuButton_8h_source_l00021}{MOUSE\+\_\+\+OVER}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuButton_a86b038172871555da45606e20fa6bad7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classMenuButton_a7edc93b34531d1debe656331b7b5269e}\label{classMenuButton_a7edc93b34531d1debe656331b7b5269e} 
+\index{MenuButton@{MenuButton}!m\_bReleased@{m\_bReleased}}
+\index{m\_bReleased@{m\_bReleased}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{m\_bReleased}{m\_bReleased}}
+{\footnotesize\ttfamily bool Menu\+Button\+::m\+\_\+b\+Released\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00026}{26}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{update()}}.
+
+\Hypertarget{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac}\label{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac} 
+\index{MenuButton@{MenuButton}!m\_callback@{m\_callback}}
+\index{m\_callback@{m\_callback}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{m\_callback}{m\_callback}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} Menu\+Button\+::m\+\_\+callback) ()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00025}{25}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8h_source_l00015}{set\+Callback()}} , 以及 \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{update()}}.
+
+\Hypertarget{classMenuButton_a1969e41c95042c83201035681d01d663}\label{classMenuButton_a1969e41c95042c83201035681d01d663} 
+\index{MenuButton@{MenuButton}!m\_callbackID@{m\_callbackID}}
+\index{m\_callbackID@{m\_callbackID}!MenuButton@{MenuButton}}
+\doxysubsubsection{\texorpdfstring{m\_callbackID}{m\_callbackID}}
+{\footnotesize\ttfamily int Menu\+Button\+::m\+\_\+callback\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuButton_8h_source}{Menu\+Button.\+h}} 第 \mbox{\hyperlink{MenuButton_8h_source_l00024}{24}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8h_source_l00016}{get\+Callback\+ID()}} , 以及 \mbox{\hyperlink{MenuButton_8cpp_source_l00007}{load()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{MenuButton_8h}{Menu\+Button.\+h}}\item 
+src/\mbox{\hyperlink{MenuButton_8cpp}{Menu\+Button.\+cpp}}\end{DoxyCompactItemize}

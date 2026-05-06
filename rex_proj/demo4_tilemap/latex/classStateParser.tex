@@ -1,0 +1,136 @@
+\doxysection{State\+Parser类 参考}
+\hypertarget{classStateParser}{}\label{classStateParser}\index{StateParser@{StateParser}}
+
+
+{\ttfamily \#include $<$State\+Parser.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02}{parse\+State}} (const char \texorpdfstring{$\ast$}{*}state\+File, std\+::string state\+ID, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \texorpdfstring{$\ast$}{*}p\+Objects, std\+::vector$<$ std\+::string $>$ \texorpdfstring{$\ast$}{*}p\+Texture\+IDs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classStateParser_acf8695d64d8d3b9f2900b8a707729b08}{parse\+Objects}} (XMLElement \texorpdfstring{$\ast$}{*}p\+State\+Root, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \texorpdfstring{$\ast$}{*}p\+Objects)
+\item 
+void \mbox{\hyperlink{classStateParser_a4d1b50831424304b41b0900d1a746180}{parse\+Textures}} (XMLElement \texorpdfstring{$\ast$}{*}ps\+State\+Root, std\+::vector$<$ std\+::string $>$ \texorpdfstring{$\ast$}{*}p\+Texture\+IDs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{StateParser_8h_source}{State\+Parser.\+h}} 第 \mbox{\hyperlink{StateParser_8h_source_l00011}{11}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classStateParser_acf8695d64d8d3b9f2900b8a707729b08}\label{classStateParser_acf8695d64d8d3b9f2900b8a707729b08} 
+\index{StateParser@{StateParser}!parseObjects@{parseObjects}}
+\index{parseObjects@{parseObjects}!StateParser@{StateParser}}
+\doxysubsubsection{\texorpdfstring{parseObjects()}{parseObjects()}}
+{\footnotesize\ttfamily void State\+Parser\+::parse\+Objects (\begin{DoxyParamCaption}\item[{XMLElement \texorpdfstring{$\ast$}{*}}]{p\+State\+Root,  }\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \texorpdfstring{$\ast$}{*}}]{p\+Objects }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{StateParser_8cpp_source}{State\+Parser.\+cpp}} 第 \mbox{\hyperlink{StateParser_8cpp_source_l00064}{64}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameObjectFactory_8h_source_l00041}{Game\+Object\+Factory\+::create()}}, \mbox{\hyperlink{GameObjectFactory_8h_source_l00018}{Game\+Object\+Factory\+::\+Instance()}} , 以及 \mbox{\hyperlink{classGameObject_a729edce3955766d5c8dfcda6f310392d}{Game\+Object\+::load()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{StateParser_8cpp_source_l00007}{parse\+State()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStateParser_acf8695d64d8d3b9f2900b8a707729b08_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStateParser_acf8695d64d8d3b9f2900b8a707729b08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02}\label{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02} 
+\index{StateParser@{StateParser}!parseState@{parseState}}
+\index{parseState@{parseState}!StateParser@{StateParser}}
+\doxysubsubsection{\texorpdfstring{parseState()}{parseState()}}
+{\footnotesize\ttfamily bool State\+Parser\+::parse\+State (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{state\+File,  }\item[{std\+::string}]{state\+ID,  }\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \texorpdfstring{$\ast$}{*}}]{p\+Objects,  }\item[{std\+::vector$<$ std\+::string $>$ \texorpdfstring{$\ast$}{*}}]{p\+Texture\+IDs }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{StateParser_8cpp_source}{State\+Parser.\+cpp}} 第 \mbox{\hyperlink{StateParser_8cpp_source_l00007}{7}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{StateParser_8cpp_source_l00064}{parse\+Objects()}} , 以及 \mbox{\hyperlink{StateParser_8cpp_source_l00053}{parse\+Textures()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00045}{Menu\+Main\+State\+::on\+Enter()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{Menu\+Over\+State\+::on\+Enter()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{Menu\+Pause\+State\+::on\+Enter()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classStateParser_a4d1b50831424304b41b0900d1a746180}\label{classStateParser_a4d1b50831424304b41b0900d1a746180} 
+\index{StateParser@{StateParser}!parseTextures@{parseTextures}}
+\index{parseTextures@{parseTextures}!StateParser@{StateParser}}
+\doxysubsubsection{\texorpdfstring{parseTextures()}{parseTextures()}}
+{\footnotesize\ttfamily void State\+Parser\+::parse\+Textures (\begin{DoxyParamCaption}\item[{XMLElement \texorpdfstring{$\ast$}{*}}]{ps\+State\+Root,  }\item[{std\+::vector$<$ std\+::string $>$ \texorpdfstring{$\ast$}{*}}]{p\+Texture\+IDs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{StateParser_8cpp_source}{State\+Parser.\+cpp}} 第 \mbox{\hyperlink{StateParser_8cpp_source_l00053}{53}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}} , 以及 \mbox{\hyperlink{TextureManager_8cpp_source_l00011}{Texture\+Manager\+::load()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{StateParser_8cpp_source_l00007}{parse\+State()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStateParser_a4d1b50831424304b41b0900d1a746180_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStateParser_a4d1b50831424304b41b0900d1a746180_icgraph}
+\end{center}
+\end{figure}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{StateParser_8h}{State\+Parser.\+h}}\item 
+src/\mbox{\hyperlink{StateParser_8cpp}{State\+Parser.\+cpp}}\end{DoxyCompactItemize}

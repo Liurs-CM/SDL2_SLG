@@ -1,0 +1,83 @@
+\doxysection{Menu\+Over\+State.\+cpp}
+\hypertarget{MenuOverState_8cpp_source}{}\label{MenuOverState_8cpp_source}\index{src/MenuOverState.cpp@{src/MenuOverState.cpp}}
+\mbox{\hyperlink{MenuOverState_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MenuOverState_8h}{MenuOverState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MenuMainState_8h}{MenuMainState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MenuButton_8h}{MenuButton.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{StateParser_8h}{StateParser.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{InputHandler_8h}{InputHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{PlayState_8h}{PlayState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00011}00011\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classMenuOverState_a77b29fd93c56105df444d19a2cb7937d}{MenuOverState::s\_gameOverID}}\ =\ \textcolor{stringliteral}{"{}GAMEOVER"{}};}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00013}\mbox{\hyperlink{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f}{00013}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f}{MenuOverState::s\_gameOverToMain}}()}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_a9f5ae2306d2feffd806a19040d8d43de}{getStateMachine}}()-\/>\mbox{\hyperlink{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}{changeState}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{classMenuMainState}{MenuMainState}}());}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00016}00016\ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00018}\mbox{\hyperlink{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139}{00018}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139}{MenuOverState::s\_restartPlay}}()}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_a9f5ae2306d2feffd806a19040d8d43de}{getStateMachine}}()-\/>\mbox{\hyperlink{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}{changeState}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayState}{PlayState}}());}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00023}\mbox{\hyperlink{classMenuOverState_a370affe64ef1e4e87bc8fb3be7119c21}{00023}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuOverState_a370affe64ef1e4e87bc8fb3be7119c21}{MenuOverState::update}}()}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}{m\_gameObjects}})}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00026}00026\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ obj-\/>update();}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00028}00028\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00029}00029\ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00031}\mbox{\hyperlink{classMenuOverState_aa1549d986dfcee43a658c24f060652b7}{00031}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuOverState_aa1549d986dfcee43a658c24f060652b7}{MenuOverState::render}}()}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00032}00032\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}{m\_gameObjects}})\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ obj-\/>draw();}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00038}\mbox{\hyperlink{classMenuOverState_a50b20e765ea93c1ede3ce92c33c730bd}{00038}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMenuOverState_a50b20e765ea93c1ede3ce92c33c730bd}{MenuOverState::onEnter}}()}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00039}00039\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{comment}{//\ parse\ the\ state}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{classStateParser}{StateParser}}\ stateParser;}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00042}00042\ \ \ \ \ stateParser.\mbox{\hyperlink{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02}{parseState}}(\textcolor{stringliteral}{"{}assets/test.xml"{}},\ \mbox{\hyperlink{classMenuOverState_a77b29fd93c56105df444d19a2cb7937d}{s\_gameOverID}},\ \&\mbox{\hyperlink{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}{m\_gameObjects}},\ \&\mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\_textureIDList}});}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}}.push\_back(0);}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}}.push\_back(\mbox{\hyperlink{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f}{s\_gameOverToMain}});}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}}.push\_back(\mbox{\hyperlink{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139}{s\_restartPlay}});}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9}{setCallbacks}}(\mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}});}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00047}00047\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}entering\ MenuOverState\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00049}00049\ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00051}\mbox{\hyperlink{classMenuOverState_ab0740eb89914ed4317ac8b35c5244eec}{00051}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMenuOverState_ab0740eb89914ed4317ac8b35c5244eec}{MenuOverState::onExit}}()}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00052}00052\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}{m\_gameObjects}})\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ obj-\/>clean();}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00055}00055\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00056}00056\ \ \ \ \ \mbox{\hyperlink{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}{m\_gameObjects}}.clear();}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\_textureIDList}})}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00058}00058\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6}{clearFromTextureMap}}(obj);}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00061}00061\ \ \ \ \ \mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{TheInputHandler::Instance}}()-\/>\mbox{\hyperlink{classInputHandler_ab12b2b63605d7661317ba290ee6b89a3}{reset\_mouseButtonState}}();}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00062}00062\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}exiting\ MenuOverState\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00064}00064\ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00066}\mbox{\hyperlink{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9}{00066}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9}{MenuOverState::setCallbacks}}(\textcolor{keyword}{const}\ std::vector<Callback>\&\ callbacks)}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00067}00067\ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}{m\_gameObjects}})}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00069}00069\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classMenuButton}{MenuButton}}*\textcolor{keyword}{>}(obj.get())\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton}{MenuButton}}*\ pButton\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classMenuButton}{MenuButton}}*\textcolor{keyword}{>}(obj.get());}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ pButton-\/>\mbox{\hyperlink{classMenuButton_a919648d93c3b9bb742830c560c424e78}{setCallback}}(callbacks[pButton-\/>\mbox{\hyperlink{classMenuButton_a191c5ecd63f2fc598470c6398d169321}{getCallbackID}}()]);}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00075}00075\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00076}00076\ \}}
+\DoxyCodeLine{\Hypertarget{MenuOverState_8cpp_source_l00077}00077\ }
+
+\end{DoxyCode}

@@ -1,0 +1,25 @@
+\doxysection{Object\+Layer.\+h}
+\hypertarget{ObjectLayer_8h_source}{}\label{ObjectLayer_8h_source}\index{inc/ObjectLayer.h@{inc/ObjectLayer.h}}
+\mbox{\hyperlink{ObjectLayer_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_ObjectLayer\_\_}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_ObjectLayer\_\_}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Layer_8h}{Layer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObject_8h}{GameObject.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00008}\mbox{\hyperlink{classObjectLayer}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classObjectLayer}{ObjectLayer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classLayer}{Layer}}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classObjectLayer_a028f6d6641d3f955b0bd9de7d26b16b0}{\string~ObjectLayer}}();}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObjectLayer_a99f31f7c25d742c6355952436700d714}{update}}(\mbox{\hyperlink{classLevel}{Level}}*\ pLevel);}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObjectLayer_a5b277887c71673397535d924a7027ea6}{render}}();}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00014}\mbox{\hyperlink{classObjectLayer_a14bf695f73acd9a9651f6af9c8945aae}{00014}}\ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<GameObject>>*\ \mbox{\hyperlink{classObjectLayer_a14bf695f73acd9a9651f6af9c8945aae}{getGameObjects}}()\ \{\ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}{m\_gameObjects}};\ \}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00015}00015\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00016}\mbox{\hyperlink{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}{00016}}\ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<GameObject>>\ \mbox{\hyperlink{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}{m\_gameObjects}};}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00017}00017\ \};}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8h_source_l00019}00019\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_ObjectLayer\_\_}}
+
+\end{DoxyCode}

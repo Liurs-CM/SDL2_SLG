@@ -1,0 +1,281 @@
+\doxysection{Camera类 参考}
+\hypertarget{classCamera}{}\label{classCamera}\index{Camera@{Camera}}
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+
+
+Camera 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classCamera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCamera_a42cda7239981a5618660d04bd5893556}{update}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classCamera_aec9074b278b84e784cd493ded9e46910}{get\+Position}} () const
+\item 
+void \mbox{\hyperlink{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28}{follow}} (\mbox{\hyperlink{classVector2D}{Vector2D}} target)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCamera_a38bcf7d4fe8373d726b8824ab30efd89}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}} ()
+\item 
+\mbox{\hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{\texorpdfstring{$\sim$}{\string~}\+Camera}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\+\_\+position}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classCamera_ad7f4eb8ea720c2921b1a938d7848b732}{to\+\_\+position}}
+\item 
+float \mbox{\hyperlink{classCamera_ab41a0d0786c0fbd1dc27723ab8e3462c}{shift\+\_\+speed}} = 0.\+5
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classCamera_a4b8e18df05238a00133366679a320871}{m\+\_\+width}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classCamera_a829a0f6f02a0f4286824e30a1923f7a5}{m\+\_\+height}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{s\+\_\+p\+Instance}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00006}{6}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\label{classCamera_a01f94c3543f56ede7af49dc778f19331} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}} 第 \mbox{\hyperlink{Camera_8cpp_source_l00007}{7}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Camera_8h_source_l00013}{Instance()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCamera_a01f94c3543f56ede7af49dc778f19331_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCamera_ad1897942d0ccf91052386388a497349f}\label{classCamera_ad1897942d0ccf91052386388a497349f} 
+\index{Camera@{Camera}!````~Camera@{\texorpdfstring{$\sim$}{\string~}Camera}}
+\index{````~Camera@{\texorpdfstring{$\sim$}{\string~}Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Camera()}{\string~Camera()}}
+{\footnotesize\ttfamily Camera\+::\texorpdfstring{$\sim$}{\string~}\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28}\label{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28} 
+\index{Camera@{Camera}!follow@{follow}}
+\index{follow@{follow}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{follow()}{follow()}}
+{\footnotesize\ttfamily void Camera\+::follow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2D}{Vector2D}}}]{target }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}} 第 \mbox{\hyperlink{Camera_8cpp_source_l00013}{13}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}}, \mbox{\hyperlink{Camera_8h_source_l00028}{m\+\_\+height}}, \mbox{\hyperlink{Camera_8h_source_l00025}{m\+\_\+position}}, \mbox{\hyperlink{Camera_8h_source_l00028}{m\+\_\+width}}, \mbox{\hyperlink{GameLib_8h_source_l00015}{MAP\+\_\+H}}, \mbox{\hyperlink{GameLib_8h_source_l00014}{MAP\+\_\+W}}, \mbox{\hyperlink{Vector2D_8h_source_l00013}{Vector2\+D\+::set\+X()}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00014}{Vector2\+D\+::set\+Y()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00032}{Player\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCamera_aec9074b278b84e784cd493ded9e46910}\label{classCamera_aec9074b278b84e784cd493ded9e46910} 
+\index{Camera@{Camera}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00010}{10}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Camera_8h_source_l00025}{m\+\_\+position}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}, \mbox{\hyperlink{Player_8cpp_source_l00032}{Player\+::update()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{SDLGame\+Object\+::update()}} , 以及 \mbox{\hyperlink{TileLayer_8cpp_source_l00012}{Tile\+Layer\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCamera_aec9074b278b84e784cd493ded9e46910_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCamera_a38bcf7d4fe8373d726b8824ab30efd89}\label{classCamera_a38bcf7d4fe8373d726b8824ab30efd89} 
+\index{Camera@{Camera}!Instance@{Instance}}
+\index{Instance@{Instance}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*} Camera\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00013}{13}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Camera_8cpp_source_l00007}{Camera()}} , 以及 \mbox{\hyperlink{Camera_8h_source_l00029}{s\+\_\+p\+Instance}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}, \mbox{\hyperlink{Player_8cpp_source_l00032}{Player\+::update()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{SDLGame\+Object\+::update()}} , 以及 \mbox{\hyperlink{TileLayer_8cpp_source_l00012}{Tile\+Layer\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classCamera_a38bcf7d4fe8373d726b8824ab30efd89_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCamera_a38bcf7d4fe8373d726b8824ab30efd89_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classCamera_a42cda7239981a5618660d04bd5893556}\label{classCamera_a42cda7239981a5618660d04bd5893556} 
+\index{Camera@{Camera}!update@{update}}
+\index{update@{update}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Camera\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classCamera_a829a0f6f02a0f4286824e30a1923f7a5}\label{classCamera_a829a0f6f02a0f4286824e30a1923f7a5} 
+\index{Camera@{Camera}!m\_height@{m\_height}}
+\index{m\_height@{m\_height}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{m\_height}{m\_height}}
+{\footnotesize\ttfamily uint16\+\_\+t Camera\+::m\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00028}{28}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Camera_8cpp_source_l00013}{follow()}}.
+
+\Hypertarget{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}\label{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6} 
+\index{Camera@{Camera}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Camera\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00025}{25}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Camera_8cpp_source_l00013}{follow()}} , 以及 \mbox{\hyperlink{Camera_8h_source_l00010}{get\+Position()}}.
+
+\Hypertarget{classCamera_a4b8e18df05238a00133366679a320871}\label{classCamera_a4b8e18df05238a00133366679a320871} 
+\index{Camera@{Camera}!m\_width@{m\_width}}
+\index{m\_width@{m\_width}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{m\_width}{m\_width}}
+{\footnotesize\ttfamily uint16\+\_\+t Camera\+::m\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00028}{28}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Camera_8cpp_source_l00013}{follow()}}.
+
+\Hypertarget{classCamera_afc05dfe93be5dae81525c39c19ee0b36}\label{classCamera_afc05dfe93be5dae81525c39c19ee0b36} 
+\index{Camera@{Camera}!s\_pInstance@{s\_pInstance}}
+\index{s\_pInstance@{s\_pInstance}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{s\_pInstance}{s\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*} Camera\+::s\+\_\+p\+Instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00029}{29}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Camera_8h_source_l00013}{Instance()}}.
+
+\Hypertarget{classCamera_ab41a0d0786c0fbd1dc27723ab8e3462c}\label{classCamera_ab41a0d0786c0fbd1dc27723ab8e3462c} 
+\index{Camera@{Camera}!shift\_speed@{shift\_speed}}
+\index{shift\_speed@{shift\_speed}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{shift\_speed}{shift\_speed}}
+{\footnotesize\ttfamily float Camera\+::shift\+\_\+speed = 0.\+5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00027}{27}} 行定义.
+
+\Hypertarget{classCamera_ad7f4eb8ea720c2921b1a938d7848b732}\label{classCamera_ad7f4eb8ea720c2921b1a938d7848b732} 
+\index{Camera@{Camera}!to\_position@{to\_position}}
+\index{to\_position@{to\_position}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{to\_position}{to\_position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Camera\+::to\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}} 第 \mbox{\hyperlink{Camera_8h_source_l00026}{26}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{Camera_8h}{Camera.\+h}}\item 
+src/\mbox{\hyperlink{Camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}

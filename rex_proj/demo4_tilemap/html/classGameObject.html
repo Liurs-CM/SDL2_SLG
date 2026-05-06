@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: GameObject类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classGameObject-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GameObject类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="GameObject_8h_source.html">GameObject.h</a>&gt;</code></p>
+<div class="dynheader">
+类 GameObject 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameObject__inherit__graph.png" border="0" usemap="#aGameObject_inherit__map" alt="Inheritance graph"/></div>
+<map name="aGameObject_inherit__map" id="aGameObject_inherit__map">
+<area shape="rect" title=" " alt="" coords="184,5,287,31"/>
+<area shape="rect" href="classSDLGameObject.html" title=" " alt="" coords="171,79,299,104"/>
+<area shape="poly" title=" " alt="" coords="238,44,238,79,233,79,233,44"/>
+<area shape="rect" href="classEnemy.html" title=" " alt="" coords="41,152,107,177"/>
+<area shape="poly" title=" " alt="" coords="198,112,101,154,99,149,196,107"/>
+<area shape="rect" href="classMenuButton.html" title=" " alt="" coords="131,152,233,177"/>
+<area shape="poly" title=" " alt="" coords="221,117,193,153,189,150,216,113"/>
+<area shape="rect" href="classPlayer.html" title=" " alt="" coords="257,152,320,177"/>
+<area shape="poly" title=" " alt="" coords="254,113,282,150,278,153,250,117"/>
+<area shape="rect" href="classScrollingBackground.html" title=" " alt="" coords="345,152,499,177"/>
+<area shape="poly" title=" " alt="" coords="279,106,392,149,391,154,277,111"/>
+<area shape="rect" href="classCat.html" title=" " alt="" coords="5,225,49,251"/>
+<area shape="poly" title=" " alt="" coords="61,190,37,227,33,224,57,187"/>
+<area shape="rect" href="classLevel1Boss.html" title=" " alt="" coords="74,225,170,251"/>
+<area shape="poly" title=" " alt="" coords="92,187,116,224,112,227,87,190"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a67ae2fa6e7916c799700cd659975d8ea" id="r_a67ae2fa6e7916c799700cd659975d8ea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a67ae2fa6e7916c799700cd659975d8ea">~GameObject</a> ()=default</td></tr>
+<tr class="separator:a67ae2fa6e7916c799700cd659975d8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729edce3955766d5c8dfcda6f310392d" id="r_a729edce3955766d5c8dfcda6f310392d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a729edce3955766d5c8dfcda6f310392d">load</a> (std::unique_ptr&lt; <a class="el" href="classLoaderParams.html">LoaderParams</a> &gt; const &amp;pParams)=0</td></tr>
+<tr class="separator:a729edce3955766d5c8dfcda6f310392d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f11cba9071a39ba2f486a8364ed536" id="r_a59f11cba9071a39ba2f486a8364ed536"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a59f11cba9071a39ba2f486a8364ed536">draw</a> ()=0</td></tr>
+<tr class="separator:a59f11cba9071a39ba2f486a8364ed536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83128d0e0efef691417779605ee037c" id="r_ae83128d0e0efef691417779605ee037c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#ae83128d0e0efef691417779605ee037c">update</a> ()=0</td></tr>
+<tr class="separator:ae83128d0e0efef691417779605ee037c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8c897a0be1966cfb6488ce97206d60" id="r_a8e8c897a0be1966cfb6488ce97206d60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a8e8c897a0be1966cfb6488ce97206d60">clean</a> ()=0</td></tr>
+<tr class="separator:a8e8c897a0be1966cfb6488ce97206d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f7dd9a72a3f0ae4b7a406b04a3c71f" id="r_ab0f7dd9a72a3f0ae4b7a406b04a3c71f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#ab0f7dd9a72a3f0ae4b7a406b04a3c71f">type</a> ()=0</td></tr>
+<tr class="separator:ab0f7dd9a72a3f0ae4b7a406b04a3c71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a0348e3ee2e83d56eafca7a3547f432c4" id="r_a0348e3ee2e83d56eafca7a3547f432c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a0348e3ee2e83d56eafca7a3547f432c4">GameObject</a> ()</td></tr>
+<tr class="separator:a0348e3ee2e83d56eafca7a3547f432c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:aa076bd4409a384038567f2d0c8548477" id="r_aa076bd4409a384038567f2d0c8548477"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a></td></tr>
+<tr class="separator:aa076bd4409a384038567f2d0c8548477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="GameObject_8h_source.html">GameObject.h</a> 第 <a class="el" href="GameObject_8h_source.html#l00008">8</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a67ae2fa6e7916c799700cd659975d8ea" name="a67ae2fa6e7916c799700cd659975d8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ae2fa6e7916c799700cd659975d8ea">&#9670;&#160;</a></span>~GameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual GameObject::~GameObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0348e3ee2e83d56eafca7a3547f432c4" name="a0348e3ee2e83d56eafca7a3547f432c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0348e3ee2e83d56eafca7a3547f432c4">&#9670;&#160;</a></span>GameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject::GameObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameObject_8h_source.html">GameObject.h</a> 第 <a class="el" href="GameObject_8h_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8e8c897a0be1966cfb6488ce97206d60" name="a8e8c897a0be1966cfb6488ce97206d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8c897a0be1966cfb6488ce97206d60">&#9670;&#160;</a></span>clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameObject::clean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classMenuButton.html#a970fc154ec16a7c0c9ad7f3626199bba">MenuButton</a>, <a class="el" href="classPlayer.html#a883c81df5be3b931ecfa6c8de08acfbd">Player</a>, <a class="el" href="classScrollingBackground.html#af02af0dc1c7fb6cb9714cdfa07584960">ScrollingBackground</a> , 以及 <a class="el" href="classSDLGameObject.html#aea2fbd4a073536f2ec2b27521e69e8c4">SDLGameObject</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a59f11cba9071a39ba2f486a8364ed536" name="a59f11cba9071a39ba2f486a8364ed536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f11cba9071a39ba2f486a8364ed536">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameObject::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classMenuButton.html#a3e854949b52808f9d6092e149a116f5c">MenuButton</a>, <a class="el" href="classPlayer.html#ac18c9d30d2997765321c62030a4b20b7">Player</a>, <a class="el" href="classScrollingBackground.html#a676bef16122c81feced1c0b0eaff58e0">ScrollingBackground</a> , 以及 <a class="el" href="classSDLGameObject.html#ab703854bfb62a291ad23dc1f01d5190d">SDLGameObject</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="ObjectLayer_8cpp_source.html#l00015">ObjectLayer::render()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameObject_a59f11cba9071a39ba2f486a8364ed536_icgraph.png" border="0" usemap="#aclassGameObject_a59f11cba9071a39ba2f486a8364ed536_icgraph" alt=""/></div>
+<map name="aclassGameObject_a59f11cba9071a39ba2f486a8364ed536_icgraph" id="aclassGameObject_a59f11cba9071a39ba2f486a8364ed536_icgraph">
+<area shape="rect" title=" " alt="" coords="204,5,347,31"/>
+<area shape="rect" href="classObjectLayer.html#a5b277887c71673397535d924a7027ea6" title=" " alt="" coords="5,5,156,31"/>
+<area shape="poly" title=" " alt="" coords="190,21,156,21,156,15,190,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a729edce3955766d5c8dfcda6f310392d" name="a729edce3955766d5c8dfcda6f310392d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729edce3955766d5c8dfcda6f310392d">&#9670;&#160;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameObject::load </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classLoaderParams.html">LoaderParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>pParams</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classCat.html#a525022b88bf7f9e37b710f645f9df966">Cat</a>, <a class="el" href="classLevel1Boss.html#a38b2a5f8a29b44ba1643e4b8f42ced86">Level1Boss</a>, <a class="el" href="classMenuButton.html#a250e6a4e6e9c4063b741cbfcb3c5f7b5">MenuButton</a>, <a class="el" href="classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff">Player</a>, <a class="el" href="classScrollingBackground.html#ac0752b405276cf590ce3a6af63507988">ScrollingBackground</a> , 以及 <a class="el" href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">SDLGameObject</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="LevelParser_8cpp_source.html#l00107">LevelParser::parseObjectLayer()</a> , 以及 <a class="el" href="StateParser_8cpp_source.html#l00064">StateParser::parseObjects()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameObject_a729edce3955766d5c8dfcda6f310392d_icgraph.png" border="0" usemap="#aclassGameObject_a729edce3955766d5c8dfcda6f310392d_icgraph" alt=""/></div>
+<map name="aclassGameObject_a729edce3955766d5c8dfcda6f310392d_icgraph" id="aclassGameObject_a729edce3955766d5c8dfcda6f310392d_icgraph">
+<area shape="rect" title=" " alt="" coords="703,53,841,78"/>
+<area shape="rect" href="classLevelParser.html#a45e78b13e41a2cb2afaf97d60639b417" title=" " alt="" coords="469,5,651,45"/>
+<area shape="poly" title=" " alt="" coords="690,53,651,45,652,40,691,47"/>
+<area shape="rect" href="classStateParser.html#acf8695d64d8d3b9f2900b8a707729b08" title=" " alt="" coords="465,81,655,106"/>
+<area shape="poly" title=" " alt="" coords="689,79,655,83,654,78,688,74"/>
+<area shape="rect" href="classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="241,10,417,35"/>
+<area shape="poly" title=" " alt="" coords="455,27,417,26,418,21,455,21"/>
+<area shape="rect" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="28,7,171,33"/>
+<area shape="poly" title=" " alt="" coords="227,24,171,23,171,18,227,19"/>
+<area shape="rect" href="classStateParser.html#ae4b0e2e1350675193e1114c13f3e5e02" title=" " alt="" coords="242,101,417,126"/>
+<area shape="poly" title=" " alt="" coords="452,105,417,108,417,103,451,100"/>
+<area shape="rect" href="classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,57,191,82"/>
+<area shape="poly" title=" " alt="" coords="248,101,166,85,167,79,249,95"/>
+<area shape="rect" href="classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,106,190,131"/>
+<area shape="poly" title=" " alt="" coords="228,118,190,119,190,114,228,113"/>
+<area shape="rect" href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,155,193,181"/>
+<area shape="poly" title=" " alt="" coords="263,132,154,158,153,153,261,127"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab0f7dd9a72a3f0ae4b7a406b04a3c71f" name="ab0f7dd9a72a3f0ae4b7a406b04a3c71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f7dd9a72a3f0ae4b7a406b04a3c71f">&#9670;&#160;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string GameObject::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classEnemy.html#a2be19e5e08e20bc14e3ed7a0c68e7dd2">Enemy</a>, <a class="el" href="classPlayer.html#a7479192fb44f2e8ec18021a4cad92bd6">Player</a> , 以及 <a class="el" href="classSDLGameObject.html#a5bc827ddc71df9a0302430a209dca80c">SDLGameObject</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ae83128d0e0efef691417779605ee037c" name="ae83128d0e0efef691417779605ee037c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83128d0e0efef691417779605ee037c">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameObject::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classCat.html#aaf85e2d49f4d1ed3c967c96df79f6ab2">Cat</a>, <a class="el" href="classLevel1Boss.html#a303ee6c7dbcbef479d0bd334a5a193b0">Level1Boss</a>, <a class="el" href="classMenuButton.html#a86b038172871555da45606e20fa6bad7">MenuButton</a>, <a class="el" href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4">Player</a>, <a class="el" href="classScrollingBackground.html#a8ebbb33e58cc5aef089a430188b18959">ScrollingBackground</a> , 以及 <a class="el" href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">SDLGameObject</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="ObjectLayer_8cpp_source.html#l00010">ObjectLayer::update()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameObject_ae83128d0e0efef691417779605ee037c_icgraph.png" border="0" usemap="#aclassGameObject_ae83128d0e0efef691417779605ee037c_icgraph" alt=""/></div>
+<map name="aclassGameObject_ae83128d0e0efef691417779605ee037c_icgraph" id="aclassGameObject_ae83128d0e0efef691417779605ee037c_icgraph">
+<area shape="rect" title=" " alt="" coords="207,5,363,31"/>
+<area shape="rect" href="classObjectLayer.html#a99f31f7c25d742c6355952436700d714" title=" " alt="" coords="5,5,159,31"/>
+<area shape="poly" title=" " alt="" coords="193,21,159,21,159,15,193,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aa076bd4409a384038567f2d0c8548477" name="aa076bd4409a384038567f2d0c8548477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa076bd4409a384038567f2d0c8548477">&#9670;&#160;</a></span>m_textureID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GameObject::m_textureID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameObject_8h_source.html">GameObject.h</a> 第 <a class="el" href="GameObject_8h_source.html#l00019">19</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuButton_8cpp_source.html#l00014">MenuButton::draw()</a>, <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="ScrollingBackground_8cpp_source.html#l00025">ScrollingBackground::draw()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00028">SDLGameObject::draw()</a> , 以及 <a class="el" href="SDLGameObject_8cpp_source.html#l00018">SDLGameObject::load()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>inc/<a class="el" href="GameObject_8h_source.html">GameObject.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

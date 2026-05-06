@@ -1,0 +1,9 @@
+<map id="ScrollingBackground::draw" name="ScrollingBackground::draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,160,63"/>
+<area shape="rect" id="Node000002" href="$classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="229,5,377,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,32,215,25,216,31,161,37"/>
+<area shape="rect" id="Node000003" href="$classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6" title=" " alt="" coords="208,55,399,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,49,195,53,194,58,160,54"/>
+<area shape="rect" id="Node000004" href="$classTextureManager.html#ad76abb178b37cedf4514eb0154349935" title=" " alt="" coords="447,55,687,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="399,65,433,65,433,70,399,70"/>
+</map>

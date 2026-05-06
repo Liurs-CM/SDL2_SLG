@@ -1,0 +1,919 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Player类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classPlayer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Player类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Player_8h_source.html">Player.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Player 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer__inherit__graph.png" border="0" usemap="#aPlayer_inherit__map" alt="Inheritance graph"/></div>
+<map name="aPlayer_inherit__map" id="aPlayer_inherit__map">
+<area shape="rect" title=" " alt="" coords="38,152,101,177"/>
+<area shape="rect" href="classSDLGameObject.html" title=" " alt="" coords="5,79,133,104"/>
+<area shape="poly" title=" " alt="" coords="72,118,72,152,67,152,67,118"/>
+<area shape="rect" href="classGameObject.html" title=" " alt="" coords="18,5,121,31"/>
+<area shape="poly" title=" " alt="" coords="72,44,72,79,67,79,67,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Player 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer__coll__graph.png" border="0" usemap="#aPlayer_coll__map" alt="Collaboration graph"/></div>
+<map name="aPlayer_coll__map" id="aPlayer_coll__map">
+<area shape="rect" title=" " alt="" coords="372,231,435,256"/>
+<area shape="rect" href="classSDLGameObject.html" title=" " alt="" coords="203,147,331,172"/>
+<area shape="poly" title=" " alt="" coords="300,177,386,228,383,233,297,182"/>
+<area shape="rect" href="classGameObject.html" title=" " alt="" coords="5,5,108,31"/>
+<area shape="poly" title=" " alt="" coords="84,37,187,111,246,144,243,149,185,116,80,41"/>
+<area shape="rect" href="classVector2D.html" title=" " alt="" coords="363,5,444,31"/>
+<area shape="poly" title=" " alt="" coords="442,37,456,53,462,69,463,83,457,114,448,148,435,182,412,232,407,229,430,180,443,147,451,113,458,83,457,71,452,56,438,40"/>
+<area shape="poly" title=" " alt="" coords="362,39,339,57,328,71,322,84,308,115,281,148,277,145,304,112,317,82,323,68,335,53,359,35"/>
+<area shape="rect" href="classAnimatedGraphic.html" title=" " alt="" coords="132,5,267,31"/>
+<area shape="poly" title=" " alt="" coords="196,45,194,78,197,96,203,112,219,131,240,144,237,149,216,135,198,115,192,97,189,79,191,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:affe0cc3cb714f6deb4e62f0c0d3f1fd8" id="r_affe0cc3cb714f6deb4e62f0c0d3f1fd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</a> ()</td></tr>
+<tr class="separator:affe0cc3cb714f6deb4e62f0c0d3f1fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8981c201ffb2270c0b6dbd467b627376" id="r_a8981c201ffb2270c0b6dbd467b627376"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a8981c201ffb2270c0b6dbd467b627376">~Player</a> ()</td></tr>
+<tr class="separator:a8981c201ffb2270c0b6dbd467b627376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8a0ec1781b64472230e0d4c1d267ff" id="r_aea8a0ec1781b64472230e0d4c1d267ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff">load</a> (std::unique_ptr&lt; <a class="el" href="classLoaderParams.html">LoaderParams</a> &gt; const &amp;pParams)</td></tr>
+<tr class="separator:aea8a0ec1781b64472230e0d4c1d267ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18c9d30d2997765321c62030a4b20b7" id="r_ac18c9d30d2997765321c62030a4b20b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ac18c9d30d2997765321c62030a4b20b7">draw</a> ()</td></tr>
+<tr class="separator:ac18c9d30d2997765321c62030a4b20b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c3476f3e65a4e2ac6bcd040771bdd4" id="r_a82c3476f3e65a4e2ac6bcd040771bdd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4">update</a> ()</td></tr>
+<tr class="separator:a82c3476f3e65a4e2ac6bcd040771bdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883c81df5be3b931ecfa6c8de08acfbd" id="r_a883c81df5be3b931ecfa6c8de08acfbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a883c81df5be3b931ecfa6c8de08acfbd">clean</a> ()</td></tr>
+<tr class="separator:a883c81df5be3b931ecfa6c8de08acfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7479192fb44f2e8ec18021a4cad92bd6" id="r_a7479192fb44f2e8ec18021a4cad92bd6"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a7479192fb44f2e8ec18021a4cad92bd6">type</a> ()</td></tr>
+<tr class="separator:a7479192fb44f2e8ec18021a4cad92bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classSDLGameObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSDLGameObject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classSDLGameObject.html">SDLGameObject</a></td></tr>
+<tr class="memitem:a0211a693afa22b3fe93981f99abbe4fa inherit pub_methods_classSDLGameObject" id="r_a0211a693afa22b3fe93981f99abbe4fa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a0211a693afa22b3fe93981f99abbe4fa">~SDLGameObject</a> ()</td></tr>
+<tr class="separator:a0211a693afa22b3fe93981f99abbe4fa inherit pub_methods_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337c731857f6923fdfd824e55683aa7c inherit pub_methods_classSDLGameObject" id="r_a337c731857f6923fdfd824e55683aa7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a337c731857f6923fdfd824e55683aa7c">getPosition</a> ()</td></tr>
+<tr class="separator:a337c731857f6923fdfd824e55683aa7c inherit pub_methods_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b461de1c3b8c28374e0fa16e17e924f inherit pub_methods_classSDLGameObject" id="r_a2b461de1c3b8c28374e0fa16e17e924f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a2b461de1c3b8c28374e0fa16e17e924f">getVelocity</a> ()</td></tr>
+<tr class="separator:a2b461de1c3b8c28374e0fa16e17e924f inherit pub_methods_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053e11805c9c1194dc269a695bcb168a inherit pub_methods_classSDLGameObject" id="r_a053e11805c9c1194dc269a695bcb168a"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a053e11805c9c1194dc269a695bcb168a">getWidth</a> ()</td></tr>
+<tr class="separator:a053e11805c9c1194dc269a695bcb168a inherit pub_methods_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac76406d11a56335f275d9d8efff82cd inherit pub_methods_classSDLGameObject" id="r_aac76406d11a56335f275d9d8efff82cd"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#aac76406d11a56335f275d9d8efff82cd">getHeight</a> ()</td></tr>
+<tr class="separator:aac76406d11a56335f275d9d8efff82cd inherit pub_methods_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb0c9209a10e396b7f6a8114755d23e inherit pub_methods_classSDLGameObject" id="r_addb0c9209a10e396b7f6a8114755d23e"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classSDLGameObject.html">SDLGameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#addb0c9209a10e396b7f6a8114755d23e">clone</a> ()</td></tr>
+<tr class="separator:addb0c9209a10e396b7f6a8114755d23e inherit pub_methods_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classGameObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGameObject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classGameObject.html">GameObject</a></td></tr>
+<tr class="memitem:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_classGameObject" id="r_a67ae2fa6e7916c799700cd659975d8ea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a67ae2fa6e7916c799700cd659975d8ea">~GameObject</a> ()=default</td></tr>
+<tr class="separator:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_classGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:ad1b5932229b5d87c3dbca5bfcacb6936" id="r_ad1b5932229b5d87c3dbca5bfcacb6936"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936">Direction</a> { <br />
+&#160;&#160;<a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a1e23852820b9154316c7c06e2b7ba051">NORMAL</a> = 0
+, <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936afbaedde498cdead4f2780217646e9ba1">UP</a> = 1
+, <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f">DOWN</a> = 2
+, <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758">LEFT</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403">RIGHT</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:ad1b5932229b5d87c3dbca5bfcacb6936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a3c2e7e40fe2018229d44168bd484c182" id="r_a3c2e7e40fe2018229d44168bd484c182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3c2e7e40fe2018229d44168bd484c182">handleInput</a> ()</td></tr>
+<tr class="separator:a3c2e7e40fe2018229d44168bd484c182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e7e759de6b3ab58f97813f135a9036" id="r_a96e7e759de6b3ab58f97813f135a9036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a96e7e759de6b3ab58f97813f135a9036">handleAnimation</a> ()</td></tr>
+<tr class="separator:a96e7e759de6b3ab58f97813f135a9036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ae73ec6359361202085396ed9f5152ccd" id="r_ae73ec6359361202085396ed9f5152ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">m_currentDirection</a> = <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403">Direction::RIGHT</a></td></tr>
+<tr class="separator:ae73ec6359361202085396ed9f5152ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a31cec571e14e317c22cc115a644544" id="r_a0a31cec571e14e317c22cc115a644544"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a0a31cec571e14e317c22cc115a644544">shift_speed</a> = 0.5</td></tr>
+<tr class="separator:a0a31cec571e14e317c22cc115a644544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf48c4184bee665e1f7f625dedc25adf" id="r_aaf48c4184bee665e1f7f625dedc25adf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a> = false</td></tr>
+<tr class="separator:aaf48c4184bee665e1f7f625dedc25adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b112a79073678c53bd19019befc7f6" id="r_a05b112a79073678c53bd19019befc7f6"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a05b112a79073678c53bd19019befc7f6">m_animTimer</a> = 0</td></tr>
+<tr class="separator:a05b112a79073678c53bd19019befc7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ae01872ffae5f242790a5a24090f58" id="r_ac4ae01872ffae5f242790a5a24090f58"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ac4ae01872ffae5f242790a5a24090f58">m_delayFrame</a></td></tr>
+<tr class="separator:ac4ae01872ffae5f242790a5a24090f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898bb49094948ad36c0020be8c304b33" id="r_a898bb49094948ad36c0020be8c304b33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a></td></tr>
+<tr class="separator:a898bb49094948ad36c0020be8c304b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a59564329781b136945f041bbc922e0" id="r_a3a59564329781b136945f041bbc922e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a3a59564329781b136945f041bbc922e0">at_position</a></td></tr>
+<tr class="separator:a3a59564329781b136945f041bbc922e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f65056f6368af21e495bf6a837767ac" id="r_a0f65056f6368af21e495bf6a837767ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a0f65056f6368af21e495bf6a837767ac">at_positionScreen</a></td></tr>
+<tr class="separator:a0f65056f6368af21e495bf6a837767ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:a36eb4265e72f7b8c3c8f8a523f5a054b" id="r_a36eb4265e72f7b8c3c8f8a523f5a054b"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a36eb4265e72f7b8c3c8f8a523f5a054b">dirNames</a> [4] = {&quot;Up&quot;, &quot;Down&quot;, &quot;Left&quot;, &quot;Right&quot;}</td></tr>
+<tr class="separator:a36eb4265e72f7b8c3c8f8a523f5a054b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classSDLGameObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classSDLGameObject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classSDLGameObject.html">SDLGameObject</a></td></tr>
+<tr class="memitem:a19f3c6074f181947371b58880528b770 inherit pro_methods_classSDLGameObject" id="r_a19f3c6074f181947371b58880528b770"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a19f3c6074f181947371b58880528b770">SDLGameObject</a> ()</td></tr>
+<tr class="separator:a19f3c6074f181947371b58880528b770 inherit pro_methods_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classGameObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGameObject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classGameObject.html">GameObject</a></td></tr>
+<tr class="memitem:a0348e3ee2e83d56eafca7a3547f432c4 inherit pro_methods_classGameObject" id="r_a0348e3ee2e83d56eafca7a3547f432c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a0348e3ee2e83d56eafca7a3547f432c4">GameObject</a> ()</td></tr>
+<tr class="separator:a0348e3ee2e83d56eafca7a3547f432c4 inherit pro_methods_classGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classSDLGameObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSDLGameObject')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classSDLGameObject.html">SDLGameObject</a></td></tr>
+<tr class="memitem:a92bb16fe7c646857fdc02093d58a232a inherit pro_attribs_classSDLGameObject" id="r_a92bb16fe7c646857fdc02093d58a232a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a></td></tr>
+<tr class="separator:a92bb16fe7c646857fdc02093d58a232a inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7983783a01d56ee12985e1a0d708f0e0 inherit pro_attribs_classSDLGameObject" id="r_a7983783a01d56ee12985e1a0d708f0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">m_velocity</a></td></tr>
+<tr class="separator:a7983783a01d56ee12985e1a0d708f0e0 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c0967676d9bc80367eefee417d47f4 inherit pro_attribs_classSDLGameObject" id="r_a62c0967676d9bc80367eefee417d47f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a62c0967676d9bc80367eefee417d47f4">m_acceleration</a></td></tr>
+<tr class="separator:a62c0967676d9bc80367eefee417d47f4 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24370c74982f8b6bfa756d0054130a84 inherit pro_attribs_classSDLGameObject" id="r_a24370c74982f8b6bfa756d0054130a84"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a></td></tr>
+<tr class="separator:a24370c74982f8b6bfa756d0054130a84 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504c3090fb1a15dcfbe5f57cea6b0143 inherit pro_attribs_classSDLGameObject" id="r_a504c3090fb1a15dcfbe5f57cea6b0143"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a></td></tr>
+<tr class="separator:a504c3090fb1a15dcfbe5f57cea6b0143 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d1f9c1db3958e1e5e0185bd30ffc3c inherit pro_attribs_classSDLGameObject" id="r_a86d1f9c1db3958e1e5e0185bd30ffc3c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a86d1f9c1db3958e1e5e0185bd30ffc3c">m_angle</a></td></tr>
+<tr class="separator:a86d1f9c1db3958e1e5e0185bd30ffc3c inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2208f9ebf1e5bcae92c06e910cef62b7 inherit pro_attribs_classSDLGameObject" id="r_a2208f9ebf1e5bcae92c06e910cef62b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a2208f9ebf1e5bcae92c06e910cef62b7">m_alpha</a></td></tr>
+<tr class="separator:a2208f9ebf1e5bcae92c06e910cef62b7 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5400fc2ad61046e18b416387e5552cda inherit pro_attribs_classSDLGameObject" id="r_a5400fc2ad61046e18b416387e5552cda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">m_positionScreen</a></td></tr>
+<tr class="separator:a5400fc2ad61046e18b416387e5552cda inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a901cd008cb8903fb72f27087c3070 inherit pro_attribs_classSDLGameObject" id="r_af1a901cd008cb8903fb72f27087c3070"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a></td></tr>
+<tr class="separator:af1a901cd008cb8903fb72f27087c3070 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d3c6b48ee55cd7293ac09a7adffbf0 inherit pro_attribs_classSDLGameObject" id="r_aa5d3c6b48ee55cd7293ac09a7adffbf0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a></td></tr>
+<tr class="separator:aa5d3c6b48ee55cd7293ac09a7adffbf0 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e2fd74464fc97d6bbb82af4567820c inherit pro_attribs_classSDLGameObject" id="r_aa5e2fd74464fc97d6bbb82af4567820c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#aa5e2fd74464fc97d6bbb82af4567820c">m_numFrames</a></td></tr>
+<tr class="separator:aa5e2fd74464fc97d6bbb82af4567820c inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c90350fa4231d0b1345f82ff50a23f inherit pro_attribs_classSDLGameObject" id="r_a64c90350fa4231d0b1345f82ff50a23f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a64c90350fa4231d0b1345f82ff50a23f">m_animSpeed</a></td></tr>
+<tr class="separator:a64c90350fa4231d0b1345f82ff50a23f inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ede378f4edc6c5a4f000d6dbd11fba inherit pro_attribs_classSDLGameObject" id="r_a97ede378f4edc6c5a4f000d6dbd11fba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a97ede378f4edc6c5a4f000d6dbd11fba">m_bPlayedDeathSound</a></td></tr>
+<tr class="separator:a97ede378f4edc6c5a4f000d6dbd11fba inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e37cf3359295267db04c901664c1e1 inherit pro_attribs_classSDLGameObject" id="r_a36e37cf3359295267db04c901664c1e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnimatedGraphic.html">AnimatedGraphic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a36e37cf3359295267db04c901664c1e1">m_currentAnim</a></td></tr>
+<tr class="separator:a36e37cf3359295267db04c901664c1e1 inherit pro_attribs_classSDLGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classGameObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classGameObject')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classGameObject.html">GameObject</a></td></tr>
+<tr class="memitem:aa076bd4409a384038567f2d0c8548477 inherit pro_attribs_classGameObject" id="r_aa076bd4409a384038567f2d0c8548477"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a></td></tr>
+<tr class="separator:aa076bd4409a384038567f2d0c8548477 inherit pro_attribs_classGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00006">6</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="ad1b5932229b5d87c3dbca5bfcacb6936" name="ad1b5932229b5d87c3dbca5bfcacb6936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b5932229b5d87c3dbca5bfcacb6936">&#9670;&#160;</a></span>Direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936">Player::Direction</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad1b5932229b5d87c3dbca5bfcacb6936a1e23852820b9154316c7c06e2b7ba051" name="ad1b5932229b5d87c3dbca5bfcacb6936a1e23852820b9154316c7c06e2b7ba051"></a>NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad1b5932229b5d87c3dbca5bfcacb6936afbaedde498cdead4f2780217646e9ba1" name="ad1b5932229b5d87c3dbca5bfcacb6936afbaedde498cdead4f2780217646e9ba1"></a>UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f" name="ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f"></a>DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758" name="ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758"></a>LEFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403" name="ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403"></a>RIGHT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="affe0cc3cb714f6deb4e62f0c0d3f1fd8" name="affe0cc3cb714f6deb4e62f0c0d3f1fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affe0cc3cb714f6deb4e62f0c0d3f1fd8">&#9670;&#160;</a></span>Player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Player::Player </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8cpp_source.html">Player.cpp</a> 第 <a class="el" href="Player_8cpp_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8981c201ffb2270c0b6dbd467b627376" name="a8981c201ffb2270c0b6dbd467b627376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8981c201ffb2270c0b6dbd467b627376">&#9670;&#160;</a></span>~Player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Player::~Player </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a883c81df5be3b931ecfa6c8de08acfbd" name="a883c81df5be3b931ecfa6c8de08acfbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a883c81df5be3b931ecfa6c8de08acfbd">&#9670;&#160;</a></span>clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::clean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classSDLGameObject.html#aea2fbd4a073536f2ec2b27521e69e8c4">SDLGameObject</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="Player_8cpp_source.html">Player.cpp</a> 第 <a class="el" href="Player_8cpp_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac18c9d30d2997765321c62030a4b20b7" name="ac18c9d30d2997765321c62030a4b20b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18c9d30d2997765321c62030a4b20b7">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classSDLGameObject.html#ab703854bfb62a291ad23dc1f01d5190d">SDLGameObject</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="Player_8cpp_source.html">Player.cpp</a> 第 <a class="el" href="Player_8cpp_source.html#l00020">20</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="Player_8h_source.html#l00026">at_positionScreen</a>, <a class="el" href="GameLib_8h_source.html#l00030">COLOR_GREEN</a>, <a class="el" href="Player_8h_source.html#l00011">dirNames</a>, <a class="el" href="TextureManager_8cpp_source.html#l00055">TextureManager::drawFrame()</a>, <a class="el" href="TextureManager_8cpp_source.html#l00168">TextureManager::drawPrintf()</a>, <a class="el" href="Vector2D_8h_source.html#l00011">Vector2D::getX()</a>, <a class="el" href="Vector2D_8h_source.html#l00012">Vector2D::getY()</a>, <a class="el" href="TextureManager_8h_source.html#l00028">TextureManager::Instance()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00030">SDLGameObject::m_currentFrame</a>, <a class="el" href="SDLGameObject_8h_source.html#l00029">SDLGameObject::m_currentRow</a>, <a class="el" href="SDLGameObject_8h_source.html#l00035">SDLGameObject::m_height</a>, <a class="el" href="SDLGameObject_8h_source.html#l00036">SDLGameObject::m_numFrames</a>, <a class="el" href="SDLGameObject_8h_source.html#l00026">SDLGameObject::m_position</a>, <a class="el" href="SDLGameObject_8h_source.html#l00033">SDLGameObject::m_positionScreen</a>, <a class="el" href="GameObject_8h_source.html#l00019">GameObject::m_textureID</a>, <a class="el" href="SDLGameObject_8h_source.html#l00034">SDLGameObject::m_width</a> , 以及 <a class="el" href="Player_8h_source.html#l00021">moving</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer_ac18c9d30d2997765321c62030a4b20b7_cgraph.png" border="0" usemap="#aclassPlayer_ac18c9d30d2997765321c62030a4b20b7_cgraph" alt=""/></div>
+<map name="aclassPlayer_ac18c9d30d2997765321c62030a4b20b7_cgraph" id="aclassPlayer_ac18c9d30d2997765321c62030a4b20b7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,108,132"/>
+<area shape="rect" href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85" title=" " alt="" coords="156,107,364,132"/>
+<area shape="poly" title=" " alt="" coords="108,117,142,117,142,122,108,122"/>
+<area shape="rect" href="classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="473,56,591,81"/>
+<area shape="poly" title=" " alt="" coords="99,104,156,91,236,81,318,73,459,67,459,72,318,79,237,86,156,97,101,109"/>
+<area shape="rect" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="473,157,591,183"/>
+<area shape="poly" title=" " alt="" coords="104,129,156,141,319,159,459,166,459,171,318,164,156,146,102,135"/>
+<area shape="rect" href="classTextureManager.html#a3a2051122a31204406b04457c4e3fee4" title=" " alt="" coords="159,5,361,31"/>
+<area shape="poly" title=" " alt="" coords="71,104,108,76,155,48,193,32,195,37,157,52,111,81,75,109"/>
+<area shape="rect" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6" title=" " alt="" coords="165,208,355,233"/>
+<area shape="poly" title=" " alt="" coords="75,130,111,158,157,186,195,201,193,206,155,191,108,163,71,134"/>
+<area shape="rect" href="classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="700,57,848,83"/>
+<area shape="poly" title=" " alt="" coords="364,113,501,105,652,90,699,83,700,88,652,95,501,110,364,118"/>
+<area shape="poly" title=" " alt="" coords="328,104,459,79,460,85,329,109"/>
+<area shape="poly" title=" " alt="" coords="329,129,460,154,459,159,328,135"/>
+<area shape="rect" href="classTextureManager.html#a25c66880a004153371df2dd0e7a6041b" title=" " alt="" coords="435,7,629,32"/>
+<area shape="poly" title=" " alt="" coords="362,16,421,16,421,21,362,21"/>
+<area shape="poly" title=" " alt="" coords="598,29,653,41,704,52,703,57,651,46,597,35"/>
+<area shape="rect" href="classTextureManager.html#ad76abb178b37cedf4514eb0154349935" title=" " alt="" coords="412,208,652,233"/>
+<area shape="poly" title=" " alt="" coords="356,218,398,218,398,223,356,223"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a96e7e759de6b3ab58f97813f135a9036" name="a96e7e759de6b3ab58f97813f135a9036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e7e759de6b3ab58f97813f135a9036">&#9670;&#160;</a></span>handleAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleAnimation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8cpp_source.html">Player.cpp</a> 第 <a class="el" href="Player_8cpp_source.html#l00102">102</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="Player_8h_source.html#l00022">m_animTimer</a>, <a class="el" href="SDLGameObject_8h_source.html#l00030">SDLGameObject::m_currentFrame</a>, <a class="el" href="Player_8h_source.html#l00023">m_delayFrame</a> , 以及 <a class="el" href="Player_8h_source.html#l00021">moving</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00032">update()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer_a96e7e759de6b3ab58f97813f135a9036_icgraph.png" border="0" usemap="#aclassPlayer_a96e7e759de6b3ab58f97813f135a9036_icgraph" alt=""/></div>
+<map name="aclassPlayer_a96e7e759de6b3ab58f97813f135a9036_icgraph" id="aclassPlayer_a96e7e759de6b3ab58f97813f135a9036_icgraph">
+<area shape="rect" title=" " alt="" coords="169,5,352,31"/>
+<area shape="rect" href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title=" " alt="" coords="5,5,121,31"/>
+<area shape="poly" title=" " alt="" coords="155,21,122,21,122,15,155,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c2e7e40fe2018229d44168bd484c182" name="a3c2e7e40fe2018229d44168bd484c182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c2e7e40fe2018229d44168bd484c182">&#9670;&#160;</a></span>handleInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::handleInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8cpp_source.html">Player.cpp</a> 第 <a class="el" href="Player_8cpp_source.html#l00044">44</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="Player_8h_source.html#l00025">at_position</a>, <a class="el" href="GameLib_8h_source.html#l00021">CELL_SIZE</a>, <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f">DOWN</a>, <a class="el" href="Vector2D_8h_source.html#l00078">Vector2D::get_normalize()</a>, <a class="el" href="InputHandler_8h_source.html#l00033">InputHandler::getMousePosition()</a>, <a class="el" href="Camera_8h_source.html#l00010">Camera::getPosition()</a>, <a class="el" href="Vector2D_8h_source.html#l00011">Vector2D::getX()</a>, <a class="el" href="Vector2D_8h_source.html#l00012">Vector2D::getY()</a>, <a class="el" href="Camera_8h_source.html#l00013">Camera::Instance()</a>, <a class="el" href="InputHandler_8h_source.html#l00020">InputHandler::Instance()</a>, <a class="el" href="SoundManager_8h_source.html#l00017">SoundManager::Instance()</a>, <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758">LEFT</a>, <a class="el" href="Vector2D_8h_source.html#l00015">Vector2D::length()</a>, <a class="el" href="Player_8h_source.html#l00018">m_currentDirection</a>, <a class="el" href="SDLGameObject_8h_source.html#l00029">SDLGameObject::m_currentRow</a>, <a class="el" href="SDLGameObject_8h_source.html#l00026">SDLGameObject::m_position</a>, <a class="el" href="Player_8h_source.html#l00021">moving</a>, <a class="el" href="SoundManager_8cpp_source.html#l00049">SoundManager::playSound()</a>, <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403">RIGHT</a>, <a class="el" href="Player_8h_source.html#l00020">shift_speed</a>, <a class="el" href="Player_8h_source.html#l00024">to_position</a> , 以及 <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936afbaedde498cdead4f2780217646e9ba1">UP</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00032">update()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer_a3c2e7e40fe2018229d44168bd484c182_cgraph.png" border="0" usemap="#aclassPlayer_a3c2e7e40fe2018229d44168bd484c182_cgraph" alt=""/></div>
+<map name="aclassPlayer_a3c2e7e40fe2018229d44168bd484c182_cgraph" id="aclassPlayer_a3c2e7e40fe2018229d44168bd484c182_cgraph">
+<area shape="rect" title=" " alt="" coords="5,239,153,264"/>
+<area shape="rect" href="classVector2D.html#a50fdb50a78c8ada9c59869dccd0b469d" title=" " alt="" coords="225,66,408,91"/>
+<area shape="poly" title=" " alt="" coords="85,238,101,209,126,171,160,132,200,100,212,94,214,99,203,105,163,136,131,174,106,211,89,240"/>
+<area shape="rect" href="classVector2D.html#ae9c6666151cd09a233f35c13cdfd9049" title=" " alt="" coords="527,16,657,42"/>
+<area shape="poly" title=" " alt="" coords="81,238,94,200,117,147,152,94,174,70,200,51,238,32,279,18,321,9,363,5,445,4,516,12,515,17,445,10,363,10,321,15,280,23,240,37,203,55,178,74,156,97,122,150,99,202,86,240"/>
+<area shape="rect" href="classInputHandler.html#a3afea5f90871baebcbf0303a3a9949c9" title=" " alt="" coords="201,115,432,140"/>
+<area shape="poly" title=" " alt="" coords="90,237,135,194,166,169,200,149,217,142,219,147,203,154,169,174,139,198,94,241"/>
+<area shape="rect" href="classCamera.html#aec9074b278b84e784cd493ded9e46910" title=" " alt="" coords="239,164,394,190"/>
+<area shape="poly" title=" " alt="" coords="106,237,150,217,201,199,230,190,232,195,202,204,152,222,108,241"/>
+<area shape="rect" href="classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="257,214,376,239"/>
+<area shape="poly" title=" " alt="" coords="153,241,243,231,244,237,154,246"/>
+<area shape="rect" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="257,263,376,288"/>
+<area shape="poly" title=" " alt="" coords="154,257,244,266,243,271,153,262"/>
+<area shape="rect" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89" title=" " alt="" coords="249,312,385,338"/>
+<area shape="poly" title=" " alt="" coords="110,262,202,297,237,307,236,312,201,302,108,267"/>
+<area shape="rect" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55" title=" " alt="" coords="232,362,401,387"/>
+<area shape="poly" title=" " alt="" coords="94,263,139,305,170,327,203,347,224,355,222,360,200,351,167,332,136,309,91,267"/>
+<area shape="rect" href="classSoundManager.html#afb88058c46a2036b74f2775fc0cc2731" title=" " alt="" coords="225,411,408,436"/>
+<area shape="poly" title=" " alt="" coords="89,263,131,328,163,366,203,397,214,404,212,408,200,402,160,370,127,332,85,266"/>
+<area shape="rect" href="classSoundManager.html#a44a5bc613545fc32b876f0a8c48ba542" title=" " alt="" coords="219,460,414,486"/>
+<area shape="poly" title=" " alt="" coords="87,264,101,301,124,351,158,403,179,427,203,447,212,452,209,457,200,451,175,431,154,407,119,354,96,303,82,266"/>
+<area shape="poly" title=" " alt="" coords="388,63,512,41,513,46,389,68"/>
+<area shape="rect" href="classVector2D.html#a98e9997ebb7a629f4db52397d4e0d653" title=" " alt="" coords="518,66,666,91"/>
+<area shape="poly" title=" " alt="" coords="408,76,505,76,505,81,408,81"/>
+<area shape="rect" href="classCamera.html#a01f94c3543f56ede7af49dc778f19331" title=" " alt="" coords="526,312,658,338"/>
+<area shape="poly" title=" " alt="" coords="385,322,512,322,512,328,385,328"/>
+<area shape="rect" href="classInputHandler.html#a698aa4af4f326a9881835fda251ca996" title=" " alt="" coords="493,362,691,387"/>
+<area shape="poly" title=" " alt="" coords="402,372,479,372,479,377,402,377"/>
+<area shape="rect" href="classSoundManager.html#abcc1fbf3488be5788a42c9a4fe56df35" title=" " alt="" coords="480,411,704,436"/>
+<area shape="poly" title=" " alt="" coords="408,421,466,421,466,426,408,426"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer_a3c2e7e40fe2018229d44168bd484c182_icgraph.png" border="0" usemap="#aclassPlayer_a3c2e7e40fe2018229d44168bd484c182_icgraph" alt=""/></div>
+<map name="aclassPlayer_a3c2e7e40fe2018229d44168bd484c182_icgraph" id="aclassPlayer_a3c2e7e40fe2018229d44168bd484c182_icgraph">
+<area shape="rect" title=" " alt="" coords="169,5,317,31"/>
+<area shape="rect" href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title=" " alt="" coords="5,5,121,31"/>
+<area shape="poly" title=" " alt="" coords="155,21,121,21,121,15,155,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea8a0ec1781b64472230e0d4c1d267ff" name="aea8a0ec1781b64472230e0d4c1d267ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8a0ec1781b64472230e0d4c1d267ff">&#9670;&#160;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::load </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classLoaderParams.html">LoaderParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>pParams</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">SDLGameObject</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="Player_8cpp_source.html">Player.cpp</a> 第 <a class="el" href="Player_8cpp_source.html#l00013">13</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameLib_8h_source.html#l00021">CELL_SIZE</a>, <a class="el" href="GameLib_8h_source.html#l00007">FPS</a>, <a class="el" href="GameLib_8h_source.html#l00017">GRID_X</a>, <a class="el" href="GameLib_8h_source.html#l00018">GRID_Y</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00018">SDLGameObject::load()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00037">SDLGameObject::m_animSpeed</a>, <a class="el" href="Player_8h_source.html#l00023">m_delayFrame</a> , 以及 <a class="el" href="SDLGameObject_8h_source.html#l00026">SDLGameObject::m_position</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer_aea8a0ec1781b64472230e0d4c1d267ff_cgraph.png" border="0" usemap="#aclassPlayer_aea8a0ec1781b64472230e0d4c1d267ff_cgraph" alt=""/></div>
+<map name="aclassPlayer_aea8a0ec1781b64472230e0d4c1d267ff_cgraph" id="aclassPlayer_aea8a0ec1781b64472230e0d4c1d267ff_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,104,31"/>
+<area shape="rect" href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f" title=" " alt="" coords="152,5,316,31"/>
+<area shape="poly" title=" " alt="" coords="104,15,138,15,138,21,104,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7479192fb44f2e8ec18021a4cad92bd6" name="a7479192fb44f2e8ec18021a4cad92bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7479192fb44f2e8ec18021a4cad92bd6">&#9670;&#160;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Player::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classSDLGameObject.html#a5bc827ddc71df9a0302430a209dca80c">SDLGameObject</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a82c3476f3e65a4e2ac6bcd040771bdd4" name="a82c3476f3e65a4e2ac6bcd040771bdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c3476f3e65a4e2ac6bcd040771bdd4">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">SDLGameObject</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="Player_8cpp_source.html">Player.cpp</a> 第 <a class="el" href="Player_8cpp_source.html#l00032">32</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="Player_8h_source.html#l00025">at_position</a>, <a class="el" href="Player_8h_source.html#l00026">at_positionScreen</a>, <a class="el" href="Camera_8cpp_source.html#l00013">Camera::follow()</a>, <a class="el" href="Camera_8h_source.html#l00010">Camera::getPosition()</a>, <a class="el" href="Player_8cpp_source.html#l00102">handleAnimation()</a>, <a class="el" href="Player_8cpp_source.html#l00044">handleInput()</a>, <a class="el" href="Camera_8h_source.html#l00013">Camera::Instance()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00026">SDLGameObject::m_position</a> , 以及 <a class="el" href="SDLGameObject_8h_source.html#l00033">SDLGameObject::m_positionScreen</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4_cgraph.png" border="0" usemap="#aclassPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4_cgraph" alt=""/></div>
+<map name="aclassPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4_cgraph" id="aclassPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,304,121,329"/>
+<area shape="rect" href="classCamera.html#ac40d7b1afe12d127a7b33424e7ebfc28" title=" " alt="" coords="200,104,321,129"/>
+<area shape="poly" title=" " alt="" coords="76,302,236,137,239,141,79,305"/>
+<area shape="rect" href="classCamera.html#aec9074b278b84e784cd493ded9e46910" title=" " alt="" coords="438,203,593,228"/>
+<area shape="poly" title=" " alt="" coords="116,301,169,289,441,228,442,234,170,294,117,307"/>
+<area shape="rect" href="classPlayer.html#a96e7e759de6b3ab58f97813f135a9036" title=" " alt="" coords="169,405,352,431"/>
+<area shape="poly" title=" " alt="" coords="83,327,122,355,171,384,205,398,203,403,168,388,119,359,80,332"/>
+<area shape="rect" href="classPlayer.html#a3c2e7e40fe2018229d44168bd484c182" title=" " alt="" coords="187,304,335,329"/>
+<area shape="poly" title=" " alt="" coords="121,314,173,314,173,319,121,319"/>
+<area shape="rect" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89" title=" " alt="" coords="447,551,583,576"/>
+<area shape="poly" title=" " alt="" coords="119,327,263,363,353,390,369,409,376,428,378,466,381,503,388,520,402,537,417,548,435,555,433,560,415,553,398,541,383,523,375,504,373,467,371,430,364,412,351,395,261,368,117,332"/>
+<area shape="rect" href="classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="456,104,575,129"/>
+<area shape="poly" title=" " alt="" coords="322,114,442,114,442,119,322,119"/>
+<area shape="rect" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="456,153,575,179"/>
+<area shape="poly" title=" " alt="" coords="322,126,443,149,442,155,321,131"/>
+<area shape="rect" href="classVector2D.html#ac458bd997d2f0c6c7234cf1e8a7b73b8" title=" " alt="" coords="456,5,575,31"/>
+<area shape="poly" title=" " alt="" coords="280,102,332,71,399,40,442,27,443,32,401,44,335,75,283,106"/>
+<area shape="rect" href="classVector2D.html#a9b47adcbdf2c10f3ba893285b5c34709" title=" " alt="" coords="457,55,574,80"/>
+<area shape="poly" title=" " alt="" coords="321,102,443,79,444,84,322,108"/>
+<area shape="poly" title=" " alt="" coords="266,303,284,269,312,224,351,178,399,138,442,121,443,126,401,143,355,181,317,227,288,272,270,305"/>
+<area shape="poly" title=" " alt="" coords="270,302,321,246,357,214,399,188,442,172,443,177,401,192,361,219,324,250,274,306"/>
+<area shape="poly" title=" " alt="" coords="283,301,335,274,399,245,447,229,448,234,401,250,338,278,286,306"/>
+<area shape="rect" href="classVector2D.html#a50fdb50a78c8ada9c59869dccd0b469d" title=" " alt="" coords="424,304,607,329"/>
+<area shape="poly" title=" " alt="" coords="335,314,410,314,410,319,335,319"/>
+<area shape="rect" href="classVector2D.html#ae9c6666151cd09a233f35c13cdfd9049" title=" " alt="" coords="725,255,856,280"/>
+<area shape="poly" title=" " alt="" coords="322,301,400,289,566,274,711,267,712,272,567,279,400,294,323,307"/>
+<area shape="rect" href="classInputHandler.html#a3afea5f90871baebcbf0303a3a9949c9" title=" " alt="" coords="400,353,631,379"/>
+<area shape="poly" title=" " alt="" coords="327,327,436,348,435,353,326,332"/>
+<area shape="poly" title=" " alt="" coords="325,327,340,335,354,347,371,372,378,397,379,421,377,446,375,469,377,493,385,515,402,537,417,548,435,556,433,561,414,553,398,541,380,518,372,494,370,469,372,445,374,421,373,398,366,374,350,350,337,340,322,332"/>
+<area shape="rect" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55" title=" " alt="" coords="431,403,600,428"/>
+<area shape="poly" title=" " alt="" coords="309,327,353,346,368,357,378,368,387,378,401,388,421,396,419,401,399,392,384,382,374,372,364,361,351,351,307,332"/>
+<area shape="rect" href="classSoundManager.html#afb88058c46a2036b74f2775fc0cc2731" title=" " alt="" coords="424,452,607,477"/>
+<area shape="poly" title=" " alt="" coords="320,327,354,347,371,371,378,395,384,418,402,439,413,446,410,450,398,443,380,420,373,396,367,373,350,351,317,332"/>
+<area shape="rect" href="classSoundManager.html#a44a5bc613545fc32b876f0a8c48ba542" title=" " alt="" coords="418,501,613,527"/>
+<area shape="poly" title=" " alt="" coords="324,327,354,347,368,365,375,384,378,420,381,455,388,472,402,488,407,492,404,497,398,492,383,475,376,457,372,421,370,385,363,368,350,351,321,332"/>
+<area shape="poly" title=" " alt="" coords="586,301,711,279,712,284,587,307"/>
+<area shape="rect" href="classVector2D.html#a98e9997ebb7a629f4db52397d4e0d653" title=" " alt="" coords="717,304,865,329"/>
+<area shape="poly" title=" " alt="" coords="607,314,703,314,703,319,607,319"/>
+<area shape="rect" href="classCamera.html#a01f94c3543f56ede7af49dc778f19331" title=" " alt="" coords="725,551,857,576"/>
+<area shape="poly" title=" " alt="" coords="583,561,711,561,711,566,583,566"/>
+<area shape="rect" href="classInputHandler.html#a698aa4af4f326a9881835fda251ca996" title=" " alt="" coords="691,403,890,428"/>
+<area shape="poly" title=" " alt="" coords="600,413,678,413,678,418,600,418"/>
+<area shape="rect" href="classSoundManager.html#abcc1fbf3488be5788a42c9a4fe56df35" title=" " alt="" coords="679,452,903,477"/>
+<area shape="poly" title=" " alt="" coords="607,462,665,462,665,467,607,467"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a3a59564329781b136945f041bbc922e0" name="a3a59564329781b136945f041bbc922e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a59564329781b136945f041bbc922e0">&#9670;&#160;</a></span>at_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> Player::at_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00025">25</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00044">handleInput()</a> , 以及 <a class="el" href="Player_8cpp_source.html#l00032">update()</a>.</p>
+
+</div>
+</div>
+<a id="a0f65056f6368af21e495bf6a837767ac" name="a0f65056f6368af21e495bf6a837767ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f65056f6368af21e495bf6a837767ac">&#9670;&#160;</a></span>at_positionScreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> Player::at_positionScreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00026">26</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00020">draw()</a> , 以及 <a class="el" href="Player_8cpp_source.html#l00032">update()</a>.</p>
+
+</div>
+</div>
+<a id="a36eb4265e72f7b8c3c8f8a523f5a054b" name="a36eb4265e72f7b8c3c8f8a523f5a054b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36eb4265e72f7b8c3c8f8a523f5a054b">&#9670;&#160;</a></span>dirNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Player::dirNames = {&quot;Up&quot;, &quot;Down&quot;, &quot;Left&quot;, &quot;Right&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00011">11</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00020">draw()</a>.</p>
+
+</div>
+</div>
+<a id="a05b112a79073678c53bd19019befc7f6" name="a05b112a79073678c53bd19019befc7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b112a79073678c53bd19019befc7f6">&#9670;&#160;</a></span>m_animTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t Player::m_animTimer = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00022">22</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00102">handleAnimation()</a>.</p>
+
+</div>
+</div>
+<a id="ae73ec6359361202085396ed9f5152ccd" name="ae73ec6359361202085396ed9f5152ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73ec6359361202085396ed9f5152ccd">&#9670;&#160;</a></span>m_currentDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936">Direction</a> Player::m_currentDirection = <a class="el" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403">Direction::RIGHT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00018">18</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00044">handleInput()</a>.</p>
+
+</div>
+</div>
+<a id="ac4ae01872ffae5f242790a5a24090f58" name="ac4ae01872ffae5f242790a5a24090f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ae01872ffae5f242790a5a24090f58">&#9670;&#160;</a></span>m_delayFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Player::m_delayFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00023">23</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00102">handleAnimation()</a> , 以及 <a class="el" href="Player_8cpp_source.html#l00013">load()</a>.</p>
+
+</div>
+</div>
+<a id="aaf48c4184bee665e1f7f625dedc25adf" name="aaf48c4184bee665e1f7f625dedc25adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf48c4184bee665e1f7f625dedc25adf">&#9670;&#160;</a></span>moving</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player::moving = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00021">21</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00020">draw()</a>, <a class="el" href="Player_8cpp_source.html#l00102">handleAnimation()</a> , 以及 <a class="el" href="Player_8cpp_source.html#l00044">handleInput()</a>.</p>
+
+</div>
+</div>
+<a id="a0a31cec571e14e317c22cc115a644544" name="a0a31cec571e14e317c22cc115a644544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a31cec571e14e317c22cc115a644544">&#9670;&#160;</a></span>shift_speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Player::shift_speed = 0.5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00020">20</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00044">handleInput()</a>.</p>
+
+</div>
+</div>
+<a id="a898bb49094948ad36c0020be8c304b33" name="a898bb49094948ad36c0020be8c304b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898bb49094948ad36c0020be8c304b33">&#9670;&#160;</a></span>to_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> Player::to_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="Player_8h_source.html">Player.h</a> 第 <a class="el" href="Player_8h_source.html#l00024">24</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00044">handleInput()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>inc/<a class="el" href="Player_8h_source.html">Player.h</a></li>
+<li>src/<a class="el" href="Player_8cpp_source.html">Player.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

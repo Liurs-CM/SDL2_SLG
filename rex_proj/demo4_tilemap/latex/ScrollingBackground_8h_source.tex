@@ -1,0 +1,46 @@
+\doxysection{Scrolling\+Background.\+h}
+\hypertarget{ScrollingBackground_8h_source}{}\label{ScrollingBackground_8h_source}\index{inc/ScrollingBackground.h@{inc/ScrollingBackground.h}}
+\mbox{\hyperlink{ScrollingBackground_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_ScrollingBackground\_\_}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_ScrollingBackground\_\_}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObjectFactory_8h}{GameObjectFactory.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SDLGameObject_8h}{SDLGameObject.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00008}\mbox{\hyperlink{classScrollingBackground}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classScrollingBackground}{ScrollingBackground}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classSDLGameObject}{SDLGameObject}}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00011}\mbox{\hyperlink{classScrollingBackground_aaef44359e3c3c62b04c8b06528cbd371}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classScrollingBackground_aaef44359e3c3c62b04c8b06528cbd371}{\string~ScrollingBackground}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classScrollingBackground_aa9c00bac814d9afae71135a35151e37e}{ScrollingBackground}}();}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScrollingBackground_a676bef16122c81feced1c0b0eaff58e0}{draw}}();}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScrollingBackground_a8ebbb33e58cc5aef089a430188b18959}{update}}();}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScrollingBackground_af02af0dc1c7fb6cb9714cdfa07584960}{clean}}();}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScrollingBackground_ac0752b405276cf590ce3a6af63507988}{load}}(std::unique\_ptr<LoaderParams>\ \textcolor{keyword}{const}\ \&pParams);}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00018}\mbox{\hyperlink{classScrollingBackground_ae0144a264a4b9ed1d724911b31e9ff6d}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classScrollingBackground_ae0144a264a4b9ed1d724911b31e9ff6d}{m\_scrollSpeed}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00019}\mbox{\hyperlink{classScrollingBackground_aa244948909efb3b27f80afacfe08c695}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classScrollingBackground_aa244948909efb3b27f80afacfe08c695}{count}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00020}\mbox{\hyperlink{classScrollingBackground_a4c61bd45e545449f07b0e80880d9a3b3}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classScrollingBackground_a4c61bd45e545449f07b0e80880d9a3b3}{maxcount}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00021}\mbox{\hyperlink{classScrollingBackground_a37303c8aa5bb737c793ef001ef6928f9}{00021}}\ \ \ \ \ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{classScrollingBackground_a37303c8aa5bb737c793ef001ef6928f9}{m\_srcRect1}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00022}\mbox{\hyperlink{classScrollingBackground_aad2b91ca3286735d6590351e488d31d8}{00022}}\ \ \ \ \ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{classScrollingBackground_aad2b91ca3286735d6590351e488d31d8}{m\_srcRect2}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00023}\mbox{\hyperlink{classScrollingBackground_a7a2790a77b282c5ce39a93574602c9a2}{00023}}\ \ \ \ \ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{classScrollingBackground_a7a2790a77b282c5ce39a93574602c9a2}{m\_dstRect1}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00024}\mbox{\hyperlink{classScrollingBackground_ad36fb8b3bfd5c72dadf83c1f06c09e1a}{00024}}\ \ \ \ \ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{classScrollingBackground_ad36fb8b3bfd5c72dadf83c1f06c09e1a}{m\_dstRect2}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00025}\mbox{\hyperlink{classScrollingBackground_a444fad3a2438b31879f21be9567cf971}{00025}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classScrollingBackground_a444fad3a2438b31879f21be9567cf971}{m\_srcRect1Width}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00026}\mbox{\hyperlink{classScrollingBackground_afed4f450f3d6a4da977801b7e9d95bd0}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classScrollingBackground_afed4f450f3d6a4da977801b7e9d95bd0}{m\_srcRect2Width}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00027}\mbox{\hyperlink{classScrollingBackground_a3c1029b1fb9860c23c32051d80f573df}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classScrollingBackground_a3c1029b1fb9860c23c32051d80f573df}{m\_dstRect1Width}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00028}\mbox{\hyperlink{classScrollingBackground_af7438c2cd915aca22dd0bc99e0e5783a}{00028}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classScrollingBackground_af7438c2cd915aca22dd0bc99e0e5783a}{m\_dstRect2Width}};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00029}00029\ \};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00031}\mbox{\hyperlink{classScrollingBackgroundCreator}{00031}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classScrollingBackgroundCreator}{ScrollingBackgroundCreator}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBaseCreator}{BaseCreator}}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00032}00032\ \{}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00033}00033\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00034}\mbox{\hyperlink{classScrollingBackgroundCreator_a6f0ee72ee4b0c909546adbfdc6522cfe}{00034}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classGameObject}{GameObject}}*\ \mbox{\hyperlink{classScrollingBackgroundCreator_a6f0ee72ee4b0c909546adbfdc6522cfe}{createGameObject}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00035}00035\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classScrollingBackground}{ScrollingBackground}}();}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00038}00038\ \};}
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{ScrollingBackground_8h_source_l00040}00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_ScrollingBackground\_\_}}
+
+\end{DoxyCode}

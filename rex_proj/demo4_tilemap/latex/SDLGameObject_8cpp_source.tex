@@ -1,0 +1,50 @@
+\doxysection{SDLGame\+Object.\+cpp}
+\hypertarget{SDLGameObject_8cpp_source}{}\label{SDLGameObject_8cpp_source}\index{src/SDLGameObject.cpp@{src/SDLGameObject.cpp}}
+\mbox{\hyperlink{SDLGameObject_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SDLGameObject_8h}{SDLGameObject.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Camera_8h}{Camera.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameLib_8h}{GameLib.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00007}\mbox{\hyperlink{classSDLGameObject_a19f3c6074f181947371b58880528b770}{00007}}\ \mbox{\hyperlink{classSDLGameObject_a19f3c6074f181947371b58880528b770}{SDLGameObject::SDLGameObject}}()\ :\ \ \mbox{\hyperlink{classGameObject}{GameObject}}(),\ }
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00008}00008\ \ \ \ \ m\_position(0,0),}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00009}00009\ \ \ \ \ m\_velocity(0,0),}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00010}00010\ \ \ \ \ m\_acceleration(0,0),}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00011}00011\ \ \ \ \ m\_currentRow(1),}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00012}00012\ \ \ \ \ m\_currentFrame(0),}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00013}00013\ \ \ \ \ m\_angle(0),}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00014}00014\ \ \ \ \ m\_alpha(255),}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00015}00015\ \ \ \ \ m\_bPlayedDeathSound(false)\ }
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00016}00016\ \{\ \}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00018}\mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{00018}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{SDLGameObject::load}}(std::unique\_ptr<LoaderParams>\ \textcolor{keyword}{const}\ \&pParams)}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}\ =\ \mbox{\hyperlink{classVector2D}{Vector2D}}(pParams-\/>getX(),\ pParams-\/>getY());}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\_width}}\ =\ pParams-\/>getWidth();}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\_height}}\ =\ pParams-\/>getHeight();}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\_textureID}}\ =\ pParams-\/>getTextureID();}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c}{m\_numFrames}}\ =\ std::max<uint8\_t>(1,\ pParams-\/>getNumFrames());}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f}{m\_animSpeed}}\ =\ std::max<uint8\_t>(1,\ pParams-\/>getAnimSpeed());}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00028}\mbox{\hyperlink{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d}{00028}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d}{SDLGameObject::draw}}()}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00029}00029\ \{}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\_velocity}}.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ >=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a8152a12de458e940d09f2850d8f71b85}{drawFrame}}(\mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\_textureID}},\ \mbox{\hyperlink{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}{m\_positionScreen}},\ \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\_width}},\ \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\_height}},\ \mbox{\hyperlink{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}{m\_currentRow}},\ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}});}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00032}00032\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a8152a12de458e940d09f2850d8f71b85}{drawFrame}}(\mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\_textureID}},\ \mbox{\hyperlink{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}{m\_positionScreen}},\ \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\_width}},\ \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\_height}},\ \mbox{\hyperlink{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}{m\_currentRow}},\ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}},\ 255,\ SDL\_FLIP\_HORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00037}\mbox{\hyperlink{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}{00037}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}{SDLGameObject::update}}()}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00038}00038\ \{}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\_velocity}}\ +=\ \mbox{\hyperlink{classSDLGameObject_a62c0967676d9bc80367eefee417d47f4}{m\_acceleration}};}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}\ +=\ \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\_velocity}};}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}{m\_positionScreen}}\ =\ \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}\ -\/\ \mbox{\hyperlink{classCamera_a38bcf7d4fe8373d726b8824ab30efd89}{TheCamera::Instance}}()-\/>\mbox{\hyperlink{classCamera_aec9074b278b84e784cd493ded9e46910}{getPosition}}();}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}}\ =\ \mbox{\hyperlink{classSDLGameObject_a36e37cf3359295267db04c901664c1e1}{m\_currentAnim}}.\mbox{\hyperlink{classAnimatedGraphic_ad1bf1e18c6656a75668d833c178ea3c8}{getCurrentFrame}}(\mbox{\hyperlink{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f}{m\_animSpeed}},\ \mbox{\hyperlink{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c}{m\_numFrames}});}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00043}00043\ \}}
+\DoxyCodeLine{\Hypertarget{SDLGameObject_8cpp_source_l00044}00044\ }
+
+\end{DoxyCode}

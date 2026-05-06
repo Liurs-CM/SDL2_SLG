@@ -1,0 +1,35 @@
+<map id="inc/SDLGameObject.h" name="inc/SDLGameObject.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="371,5,534,31"/>
+<area shape="rect" id="Node000002" href="$GameObject_8h.html" title=" " alt="" coords="443,79,558,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,30,488,66,483,69,458,33"/>
+<area shape="rect" id="Node000003" href="$LoaderParams_8h.html" title=" " alt="" coords="241,152,368,177"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="441,33,389,81,327,144,323,140,385,77,438,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="377,225,435,251"/>
+<area shape="poly" id="edge18_Node000001_Node000005" title=" " alt="" coords="450,32,434,79,419,151,411,212,406,211,414,150,429,78,445,30"/>
+<area shape="rect" id="Node000006" href="$Vector2D_8h.html" title=" " alt="" coords="494,152,587,177"/>
+<area shape="poly" id="edge17_Node000001_Node000006" title=" " alt="" coords="502,28,541,46,558,60,572,77,578,94,576,111,561,142,556,140,571,110,572,94,568,80,555,64,538,51,500,33"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="611,152,689,177"/>
+<area shape="poly" id="edge19_Node000001_Node000009" title=" " alt="" coords="496,28,545,47,593,77,621,107,641,138,636,141,617,110,590,81,543,52,494,33"/>
+<area shape="rect" id="Node000010" href="$AnimatedGraphic_8h.html" title=" " alt="" coords="114,79,261,104"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="411,33,244,78,243,72,409,28"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="470,107,350,150,349,145,468,102"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="495,106,423,215,419,212,491,103"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="510,103,530,139,525,141,505,106"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="526,102,614,144,612,148,524,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="239,225,306,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="302,179,286,214,281,212,297,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="322,175,380,215,377,219,319,180"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="484,225,547,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="539,179,526,213,521,212,534,177"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="571,225,651,251"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="554,176,592,214,588,218,550,180"/>
+<area shape="rect" id="Node000011" href="$GameLib_8h.html" title=" " alt="" coords="41,152,133,177"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="173,106,116,146,113,142,170,102"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="158,152,217,177"/>
+<area shape="poly" id="edge16_Node000010_Node000014" title=" " alt="" coords="190,104,190,138,185,138,185,104"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="118,175,231,218,229,223,116,180"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="5,225,71,251"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="81,179,56,216,52,213,77,176"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="95,225,181,251"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="98,176,124,213,120,216,94,179"/>
+</map>

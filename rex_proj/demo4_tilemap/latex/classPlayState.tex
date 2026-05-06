@@ -1,0 +1,269 @@
+\doxysection{Play\+State类 参考}
+\hypertarget{classPlayState}{}\label{classPlayState}\index{PlayState@{PlayState}}
+
+
+{\ttfamily \#include $<$Play\+State.\+h$>$}
+
+
+
+类 Play\+State 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPlayState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Play\+State 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classPlayState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPlayState_a063aa1bc206d83773bc6a770e9e5d1bc}{\texorpdfstring{$\sim$}{\string~}\+Play\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{classPlayState_a3beac23cba7b9541714ebd33ea77a913}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classPlayState_ad0b2654d0d822b853c6d06ee5c4a95c2}{render}} ()
+\item 
+virtual bool \mbox{\hyperlink{classPlayState_a412edf86cef5eaffdfd63d69af42c39b}{on\+Enter}} ()
+\item 
+virtual bool \mbox{\hyperlink{classPlayState_aed7fef037f6e9c9fc4a02924e2fe7154}{on\+Exit}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classPlayState_a8a9e49f36d2ec9660037ff7010458e5a}{get\+State\+ID}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameState_adc1bfdf7ee7c1f48e4841995db4e16c3}{\texorpdfstring{$\sim$}{\string~}\+Game\+State}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classPlayState_abd5582cb45db972c24fb907b0c85aa01}{m\+\_\+game\+Objects}}
+\item 
+\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPlayState_a72f574abe80fe9ea31e83aa4694b4337}{p\+Level}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{classPlayState_aa342bc3254ffe622f8abe78001293389}{s\+\_\+play\+ID}} = "{}PLAY"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameState_a4fa0a2bf50315c4a35a3890a0adcee5c}{Game\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGameState_a5738bb77af0103b4419c0669a61dc23b}{m\+\_\+loading\+Complete}}
+\item 
+bool \mbox{\hyperlink{classGameState_abd2cc9eda4f7ec4cca4fb86d76a02830}{m\+\_\+exiting}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\+\_\+texture\+IDList}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{PlayState_8h_source}{Play\+State.\+h}} 第 \mbox{\hyperlink{PlayState_8h_source_l00012}{12}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classPlayState_a063aa1bc206d83773bc6a770e9e5d1bc}\label{classPlayState_a063aa1bc206d83773bc6a770e9e5d1bc} 
+\index{PlayState@{PlayState}!````~PlayState@{\texorpdfstring{$\sim$}{\string~}PlayState}}
+\index{````~PlayState@{\texorpdfstring{$\sim$}{\string~}PlayState}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PlayState()}{\string~PlayState()}}
+{\footnotesize\ttfamily virtual Play\+State\+::\texorpdfstring{$\sim$}{\string~}\+Play\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8h_source}{Play\+State.\+h}} 第 \mbox{\hyperlink{PlayState_8h_source_l00015}{15}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{PlayState_8h_source_l00024}{p\+Level}}.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classPlayState_a8a9e49f36d2ec9660037ff7010458e5a}\label{classPlayState_a8a9e49f36d2ec9660037ff7010458e5a} 
+\index{PlayState@{PlayState}!getStateID@{getStateID}}
+\index{getStateID@{getStateID}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{getStateID()}{getStateID()}}
+{\footnotesize\ttfamily virtual std\+::string Play\+State\+::get\+State\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8h_source}{Play\+State.\+h}} 第 \mbox{\hyperlink{PlayState_8h_source_l00020}{20}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{PlayState_8h_source_l00022}{s\+\_\+play\+ID}}.
+
+\Hypertarget{classPlayState_a412edf86cef5eaffdfd63d69af42c39b}\label{classPlayState_a412edf86cef5eaffdfd63d69af42c39b} 
+\index{PlayState@{PlayState}!onEnter@{onEnter}}
+\index{onEnter@{onEnter}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{onEnter()}{onEnter()}}
+{\footnotesize\ttfamily bool Play\+State\+::on\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_ad17154015d2de5e669067c34d2cfe5b3}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8cpp_source}{Play\+State.\+cpp}} 第 \mbox{\hyperlink{PlayState_8cpp_source_l00044}{44}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00025}{Game\+::get\+Current\+Level()}}, \mbox{\hyperlink{Game_8h_source_l00033}{Game\+::\+Instance()}}, \mbox{\hyperlink{GameState_8h_source_l00017}{Game\+State\+::m\+\_\+loading\+Complete}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{Level\+Parser\+::parse\+Level()}}, \mbox{\hyperlink{PlayState_8h_source_l00024}{p\+Level}} , 以及 \mbox{\hyperlink{Game_8h_source_l00020}{Game\+::set\+Player\+Lives()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlayState_a412edf86cef5eaffdfd63d69af42c39b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlayState_aed7fef037f6e9c9fc4a02924e2fe7154}\label{classPlayState_aed7fef037f6e9c9fc4a02924e2fe7154} 
+\index{PlayState@{PlayState}!onExit@{onExit}}
+\index{onExit@{onExit}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily bool Play\+State\+::on\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_aed6186fd65fefb5460f89ceed82829a1}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8cpp_source}{Play\+State.\+cpp}} 第 \mbox{\hyperlink{PlayState_8cpp_source_l00058}{58}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{GameState_8h_source_l00018}{Game\+State\+::m\+\_\+exiting}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00309}{Input\+Handler\+::reset\+\_\+mouse\+Button\+State()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlayState_aed7fef037f6e9c9fc4a02924e2fe7154_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlayState_ad0b2654d0d822b853c6d06ee5c4a95c2}\label{classPlayState_ad0b2654d0d822b853c6d06ee5c4a95c2} 
+\index{PlayState@{PlayState}!render@{render}}
+\index{render@{render}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Play\+State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_abb892a3560e8fbedb3e4526af5deed7b}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8cpp_source}{Play\+State.\+cpp}} 第 \mbox{\hyperlink{PlayState_8cpp_source_l00033}{33}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameState_8h_source_l00017}{Game\+State\+::m\+\_\+loading\+Complete}}, \mbox{\hyperlink{PlayState_8h_source_l00024}{p\+Level}} , 以及 \mbox{\hyperlink{Level_8cpp_source_l00021}{Level\+::render()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classPlayState_ad0b2654d0d822b853c6d06ee5c4a95c2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPlayState_a3beac23cba7b9541714ebd33ea77a913}\label{classPlayState_a3beac23cba7b9541714ebd33ea77a913} 
+\index{PlayState@{PlayState}!update@{update}}
+\index{update@{update}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Play\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_ab2864bfa04f92f6966861a1f2883bda0}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8cpp_source}{Play\+State.\+cpp}} 第 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{14}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{Game\+State\+Machine\+::change\+State()}}, \mbox{\hyperlink{Game_8h_source_l00019}{Game\+::get\+State\+Machine()}}, \mbox{\hyperlink{Game_8h_source_l00033}{Game\+::\+Instance()}}, \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{GameState_8h_source_l00018}{Game\+State\+::m\+\_\+exiting}}, \mbox{\hyperlink{GameState_8h_source_l00017}{Game\+State\+::m\+\_\+loading\+Complete}}, \mbox{\hyperlink{PlayState_8h_source_l00024}{p\+Level}}, \mbox{\hyperlink{GameStateMachine_8cpp_source_l00004}{Game\+State\+Machine\+::push\+State()}} , 以及 \mbox{\hyperlink{Level_8cpp_source_l00030}{Level\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlayState_a3beac23cba7b9541714ebd33ea77a913_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classPlayState_abd5582cb45db972c24fb907b0c85aa01}\label{classPlayState_abd5582cb45db972c24fb907b0c85aa01} 
+\index{PlayState@{PlayState}!m\_gameObjects@{m\_gameObjects}}
+\index{m\_gameObjects@{m\_gameObjects}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{m\_gameObjects}{m\_gameObjects}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classGameObject}{Game\+Object}}\texorpdfstring{$\ast$}{*}$>$ Play\+State\+::m\+\_\+game\+Objects\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8h_source}{Play\+State.\+h}} 第 \mbox{\hyperlink{PlayState_8h_source_l00023}{23}} 行定义.
+
+\Hypertarget{classPlayState_a72f574abe80fe9ea31e83aa4694b4337}\label{classPlayState_a72f574abe80fe9ea31e83aa4694b4337} 
+\index{PlayState@{PlayState}!pLevel@{pLevel}}
+\index{pLevel@{pLevel}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{pLevel}{pLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLevel}{Level}}\texorpdfstring{$\ast$}{*} Play\+State\+::p\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8h_source}{Play\+State.\+h}} 第 \mbox{\hyperlink{PlayState_8h_source_l00024}{24}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00044}{on\+Enter()}}, \mbox{\hyperlink{PlayState_8cpp_source_l00033}{render()}}, \mbox{\hyperlink{PlayState_8cpp_source_l00014}{update()}} , 以及 \mbox{\hyperlink{PlayState_8h_source_l00015}{\texorpdfstring{$\sim$}{\string~}\+Play\+State()}}.
+
+\Hypertarget{classPlayState_aa342bc3254ffe622f8abe78001293389}\label{classPlayState_aa342bc3254ffe622f8abe78001293389} 
+\index{PlayState@{PlayState}!s\_playID@{s\_playID}}
+\index{s\_playID@{s\_playID}!PlayState@{PlayState}}
+\doxysubsubsection{\texorpdfstring{s\_playID}{s\_playID}}
+{\footnotesize\ttfamily const std\+::string Play\+State\+::s\+\_\+play\+ID = "{}PLAY"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{PlayState_8h_source}{Play\+State.\+h}} 第 \mbox{\hyperlink{PlayState_8h_source_l00022}{22}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8h_source_l00020}{get\+State\+ID()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{PlayState_8h}{Play\+State.\+h}}\item 
+src/\mbox{\hyperlink{PlayState_8cpp}{Play\+State.\+cpp}}\end{DoxyCompactItemize}

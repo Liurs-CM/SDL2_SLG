@@ -1,0 +1,475 @@
+\doxysection{Tile\+Layer类 参考}
+\hypertarget{classTileLayer}{}\label{classTileLayer}\index{TileLayer@{TileLayer}}
+
+
+{\ttfamily \#include $<$Tile\+Layer.\+h$>$}
+
+
+
+类 Tile\+Layer 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classTileLayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Tile\+Layer 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classTileLayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTileLayer_a7fbd33d6c7dd8be6aacaa87b282c252e}{Tile\+Layer}} (int tile\+Size, const std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \&tilesets)
+\item 
+virtual \mbox{\hyperlink{classTileLayer_adb96031096770029f830606b493742f7}{\texorpdfstring{$\sim$}{\string~}\+Tile\+Layer}} ()
+\item 
+virtual void \mbox{\hyperlink{classTileLayer_afc5c61c51ad8e14078036c347df718fe}{update}} (\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}p\+Level)
+\item 
+virtual void \mbox{\hyperlink{classTileLayer_af32fb583946d920c19b76e1381283ebf}{render}} ()
+\item 
+void \mbox{\hyperlink{classTileLayer_a2d0ef9789523c9a1f11bc6d472985757}{set\+Tile\+IDs}} (const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&data)
+\item 
+void \mbox{\hyperlink{classTileLayer_a58f18ccbd90291d6ef67c475b81c0b4f}{set\+Tile\+Size}} (int tile\+Size)
+\item 
+void \mbox{\hyperlink{classTileLayer_a840abb35a28b7b401535d9dd0c84ffde}{set\+Map\+Width}} (int map\+Width)
+\item 
+void \mbox{\hyperlink{classTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e}{set\+Map\+Height}} (int map\+Height)
+\item 
+void \mbox{\hyperlink{classTileLayer_a35752649bbc441a2a571577aeeb36a68}{set\+Position}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&position)
+\item 
+int \mbox{\hyperlink{classTileLayer_a74ff0f33671097b9e605f7b47412ee73}{get\+Tile\+Size}} ()
+\item 
+const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \& \mbox{\hyperlink{classTileLayer_a4eb4a70880fd750b09e7a2cce2770dec}{get\+Tile\+IDs}} ()
+\item 
+\mbox{\hyperlink{structTileset}{Tileset}} \mbox{\hyperlink{classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2}{get\+Tileset\+By\+ID}} (int tile\+ID)
+\item 
+const \mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classTileLayer_a7d6409032419ab74a03715de4189e432}{get\+Position}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classLayer}{Layer}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classLayer_a2bac093f2a650095a5551fc455d10dc5}{\texorpdfstring{$\sim$}{\string~}\+Layer}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTileLayer_a22fc2345220696dcffa7a6785824f5e8}{m\+\_\+num\+Columns}}
+\item 
+int \mbox{\hyperlink{classTileLayer_ab52da1d995ebda1729861e1b41eee029}{m\+\_\+num\+Rows}}
+\item 
+int \mbox{\hyperlink{classTileLayer_a1afe6488faa3e2bf3a772617035ab030}{m\+\_\+map\+Height}}
+\item 
+int \mbox{\hyperlink{classTileLayer_ad538dc72294ebe5b4fd0a25109d1b119}{m\+\_\+map\+Width}}
+\item 
+int \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\+\_\+tile\+Size}}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \& \mbox{\hyperlink{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}{m\+\_\+tilesets}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classTileLayer_ae8e4975a29ad513501923854ce2b33a2}{m\+\_\+position}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classTileLayer_a2e1dbc38cb2773c01979eeb9c1af1d52}{m\+\_\+velocity}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classTileLayer_a6cadf5d32536c725dc6e4d6e4191ed89}{m\+\_\+tile\+IDs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00009}{9}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classTileLayer_a7fbd33d6c7dd8be6aacaa87b282c252e}\label{classTileLayer_a7fbd33d6c7dd8be6aacaa87b282c252e} 
+\index{TileLayer@{TileLayer}!TileLayer@{TileLayer}}
+\index{TileLayer@{TileLayer}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{TileLayer()}{TileLayer()}}
+{\footnotesize\ttfamily Tile\+Layer\+::\+Tile\+Layer (\begin{DoxyParamCaption}\item[{int}]{tile\+Size,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \&}]{tilesets }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8cpp_source}{Tile\+Layer.\+cpp}} 第 \mbox{\hyperlink{TileLayer_8cpp_source_l00006}{6}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00026}{m\+\_\+num\+Columns}}, \mbox{\hyperlink{TileLayer_8h_source_l00027}{m\+\_\+num\+Rows}}, \mbox{\hyperlink{TileLayer_8h_source_l00030}{m\+\_\+tile\+Size}}, \mbox{\hyperlink{GameLib_8h_source_l00011}{SCR\+\_\+H}} , 以及 \mbox{\hyperlink{GameLib_8h_source_l00010}{SCR\+\_\+W}}.
+
+\Hypertarget{classTileLayer_adb96031096770029f830606b493742f7}\label{classTileLayer_adb96031096770029f830606b493742f7} 
+\index{TileLayer@{TileLayer}!````~TileLayer@{\texorpdfstring{$\sim$}{\string~}TileLayer}}
+\index{````~TileLayer@{\texorpdfstring{$\sim$}{\string~}TileLayer}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TileLayer()}{\string~TileLayer()}}
+{\footnotesize\ttfamily virtual Tile\+Layer\+::\texorpdfstring{$\sim$}{\string~}\+Tile\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00013}{13}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classTileLayer_a7d6409032419ab74a03715de4189e432}\label{classTileLayer_a7d6409032419ab74a03715de4189e432} 
+\index{TileLayer@{TileLayer}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector2D}{Vector2D}} Tile\+Layer\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00024}{24}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00032}{m\+\_\+position}}.
+
+\Hypertarget{classTileLayer_a4eb4a70880fd750b09e7a2cce2770dec}\label{classTileLayer_a4eb4a70880fd750b09e7a2cce2770dec} 
+\index{TileLayer@{TileLayer}!getTileIDs@{getTileIDs}}
+\index{getTileIDs@{getTileIDs}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{getTileIDs()}{getTileIDs()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \& Tile\+Layer\+::get\+Tile\+IDs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00022}{22}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00034}{m\+\_\+tile\+IDs}}.
+
+\Hypertarget{classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2}\label{classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2} 
+\index{TileLayer@{TileLayer}!getTilesetByID@{getTilesetByID}}
+\index{getTilesetByID@{getTilesetByID}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{getTilesetByID()}{getTilesetByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTileset}{Tileset}} Tile\+Layer\+::get\+Tileset\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{tile\+ID }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8cpp_source}{Tile\+Layer.\+cpp}} 第 \mbox{\hyperlink{TileLayer_8cpp_source_l00043}{43}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00031}{m\+\_\+tilesets}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTileLayer_a74ff0f33671097b9e605f7b47412ee73}\label{classTileLayer_a74ff0f33671097b9e605f7b47412ee73} 
+\index{TileLayer@{TileLayer}!getTileSize@{getTileSize}}
+\index{getTileSize@{getTileSize}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{getTileSize()}{getTileSize()}}
+{\footnotesize\ttfamily int Tile\+Layer\+::get\+Tile\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00021}{21}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00030}{m\+\_\+tile\+Size}}.
+
+\Hypertarget{classTileLayer_af32fb583946d920c19b76e1381283ebf}\label{classTileLayer_af32fb583946d920c19b76e1381283ebf} 
+\index{TileLayer@{TileLayer}!render@{render}}
+\index{render@{render}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Tile\+Layer\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classLayer_adf702910e0e14fb48cb54690dab1b5ff}{Layer}}.
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8cpp_source}{Tile\+Layer.\+cpp}} 第 \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{20}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8cpp_source_l00077}{Texture\+Manager\+::draw\+Tile()}}, \mbox{\hyperlink{Level_8h_source_l00013}{Tileset\+::first\+Grid\+ID}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00043}{get\+Tileset\+By\+ID()}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{TileLayer_8h_source_l00028}{m\+\_\+map\+Height}}, \mbox{\hyperlink{TileLayer_8h_source_l00029}{m\+\_\+map\+Width}}, \mbox{\hyperlink{TileLayer_8h_source_l00026}{m\+\_\+num\+Columns}}, \mbox{\hyperlink{TileLayer_8h_source_l00027}{m\+\_\+num\+Rows}}, \mbox{\hyperlink{TileLayer_8h_source_l00032}{m\+\_\+position}}, \mbox{\hyperlink{TileLayer_8h_source_l00034}{m\+\_\+tile\+IDs}}, \mbox{\hyperlink{TileLayer_8h_source_l00030}{m\+\_\+tile\+Size}}, \mbox{\hyperlink{Level_8h_source_l00017}{Tileset\+::margin}}, \mbox{\hyperlink{Level_8h_source_l00021}{Tileset\+::name}}, \mbox{\hyperlink{Level_8h_source_l00020}{Tileset\+::num\+Columns}} , 以及 \mbox{\hyperlink{Level_8h_source_l00016}{Tileset\+::spacing}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTileLayer_af32fb583946d920c19b76e1381283ebf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e}\label{classTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e} 
+\index{TileLayer@{TileLayer}!setMapHeight@{setMapHeight}}
+\index{setMapHeight@{setMapHeight}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{setMapHeight()}{setMapHeight()}}
+{\footnotesize\ttfamily void Tile\+Layer\+::set\+Map\+Height (\begin{DoxyParamCaption}\item[{int}]{map\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00019}{19}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00028}{m\+\_\+map\+Height}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{Level\+Parser\+::parse\+Tile\+Layer()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTileLayer_a840abb35a28b7b401535d9dd0c84ffde}\label{classTileLayer_a840abb35a28b7b401535d9dd0c84ffde} 
+\index{TileLayer@{TileLayer}!setMapWidth@{setMapWidth}}
+\index{setMapWidth@{setMapWidth}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{setMapWidth()}{setMapWidth()}}
+{\footnotesize\ttfamily void Tile\+Layer\+::set\+Map\+Width (\begin{DoxyParamCaption}\item[{int}]{map\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00018}{18}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00029}{m\+\_\+map\+Width}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{Level\+Parser\+::parse\+Tile\+Layer()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTileLayer_a840abb35a28b7b401535d9dd0c84ffde_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTileLayer_a35752649bbc441a2a571577aeeb36a68}\label{classTileLayer_a35752649bbc441a2a571577aeeb36a68} 
+\index{TileLayer@{TileLayer}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Tile\+Layer\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00020}{20}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00032}{m\+\_\+position}}.
+
+\Hypertarget{classTileLayer_a2d0ef9789523c9a1f11bc6d472985757}\label{classTileLayer_a2d0ef9789523c9a1f11bc6d472985757} 
+\index{TileLayer@{TileLayer}!setTileIDs@{setTileIDs}}
+\index{setTileIDs@{setTileIDs}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{setTileIDs()}{setTileIDs()}}
+{\footnotesize\ttfamily void Tile\+Layer\+::set\+Tile\+IDs (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00016}{16}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00034}{m\+\_\+tile\+IDs}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{Level\+Parser\+::parse\+Tile\+Layer()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTileLayer_a2d0ef9789523c9a1f11bc6d472985757_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTileLayer_a58f18ccbd90291d6ef67c475b81c0b4f}\label{classTileLayer_a58f18ccbd90291d6ef67c475b81c0b4f} 
+\index{TileLayer@{TileLayer}!setTileSize@{setTileSize}}
+\index{setTileSize@{setTileSize}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{setTileSize()}{setTileSize()}}
+{\footnotesize\ttfamily void Tile\+Layer\+::set\+Tile\+Size (\begin{DoxyParamCaption}\item[{int}]{tile\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00017}{17}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TileLayer_8h_source_l00030}{m\+\_\+tile\+Size}}.
+
+\Hypertarget{classTileLayer_afc5c61c51ad8e14078036c347df718fe}\label{classTileLayer_afc5c61c51ad8e14078036c347df718fe} 
+\index{TileLayer@{TileLayer}!update@{update}}
+\index{update@{update}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Tile\+Layer\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}}]{p\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classLayer_afbf017a1ed9a4adfe66b86bf8d4fa63e}{Layer}}.
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8cpp_source}{Tile\+Layer.\+cpp}} 第 \mbox{\hyperlink{TileLayer_8cpp_source_l00012}{12}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Camera_8h_source_l00010}{Camera\+::get\+Position()}}, \mbox{\hyperlink{Camera_8h_source_l00013}{Camera\+::\+Instance()}} , 以及 \mbox{\hyperlink{TileLayer_8h_source_l00032}{m\+\_\+position}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTileLayer_afc5c61c51ad8e14078036c347df718fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classTileLayer_a1afe6488faa3e2bf3a772617035ab030}\label{classTileLayer_a1afe6488faa3e2bf3a772617035ab030} 
+\index{TileLayer@{TileLayer}!m\_mapHeight@{m\_mapHeight}}
+\index{m\_mapHeight@{m\_mapHeight}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_mapHeight}{m\_mapHeight}}
+{\footnotesize\ttfamily int Tile\+Layer\+::m\+\_\+map\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00028}{28}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}} , 以及 \mbox{\hyperlink{TileLayer_8h_source_l00019}{set\+Map\+Height()}}.
+
+\Hypertarget{classTileLayer_ad538dc72294ebe5b4fd0a25109d1b119}\label{classTileLayer_ad538dc72294ebe5b4fd0a25109d1b119} 
+\index{TileLayer@{TileLayer}!m\_mapWidth@{m\_mapWidth}}
+\index{m\_mapWidth@{m\_mapWidth}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_mapWidth}{m\_mapWidth}}
+{\footnotesize\ttfamily int Tile\+Layer\+::m\+\_\+map\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00029}{29}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}} , 以及 \mbox{\hyperlink{TileLayer_8h_source_l00018}{set\+Map\+Width()}}.
+
+\Hypertarget{classTileLayer_a22fc2345220696dcffa7a6785824f5e8}\label{classTileLayer_a22fc2345220696dcffa7a6785824f5e8} 
+\index{TileLayer@{TileLayer}!m\_numColumns@{m\_numColumns}}
+\index{m\_numColumns@{m\_numColumns}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_numColumns}{m\_numColumns}}
+{\footnotesize\ttfamily int Tile\+Layer\+::m\+\_\+num\+Columns\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00026}{26}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}} , 以及 \mbox{\hyperlink{TileLayer_8cpp_source_l00006}{Tile\+Layer()}}.
+
+\Hypertarget{classTileLayer_ab52da1d995ebda1729861e1b41eee029}\label{classTileLayer_ab52da1d995ebda1729861e1b41eee029} 
+\index{TileLayer@{TileLayer}!m\_numRows@{m\_numRows}}
+\index{m\_numRows@{m\_numRows}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_numRows}{m\_numRows}}
+{\footnotesize\ttfamily int Tile\+Layer\+::m\+\_\+num\+Rows\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00027}{27}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}} , 以及 \mbox{\hyperlink{TileLayer_8cpp_source_l00006}{Tile\+Layer()}}.
+
+\Hypertarget{classTileLayer_ae8e4975a29ad513501923854ce2b33a2}\label{classTileLayer_ae8e4975a29ad513501923854ce2b33a2} 
+\index{TileLayer@{TileLayer}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Tile\+Layer\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00032}{32}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8h_source_l00024}{get\+Position()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}}, \mbox{\hyperlink{TileLayer_8h_source_l00020}{set\+Position()}} , 以及 \mbox{\hyperlink{TileLayer_8cpp_source_l00012}{update()}}.
+
+\Hypertarget{classTileLayer_a6cadf5d32536c725dc6e4d6e4191ed89}\label{classTileLayer_a6cadf5d32536c725dc6e4d6e4191ed89} 
+\index{TileLayer@{TileLayer}!m\_tileIDs@{m\_tileIDs}}
+\index{m\_tileIDs@{m\_tileIDs}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_tileIDs}{m\_tileIDs}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ Tile\+Layer\+::m\+\_\+tile\+IDs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00034}{34}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8h_source_l00022}{get\+Tile\+IDs()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}} , 以及 \mbox{\hyperlink{TileLayer_8h_source_l00016}{set\+Tile\+IDs()}}.
+
+\Hypertarget{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}\label{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f} 
+\index{TileLayer@{TileLayer}!m\_tilesets@{m\_tilesets}}
+\index{m\_tilesets@{m\_tilesets}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_tilesets}{m\_tilesets}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{structTileset}{Tileset}}$>$\& Tile\+Layer\+::m\+\_\+tilesets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00031}{31}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8cpp_source_l00043}{get\+Tileset\+By\+ID()}}.
+
+\Hypertarget{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}\label{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2} 
+\index{TileLayer@{TileLayer}!m\_tileSize@{m\_tileSize}}
+\index{m\_tileSize@{m\_tileSize}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_tileSize}{m\_tileSize}}
+{\footnotesize\ttfamily int Tile\+Layer\+::m\+\_\+tile\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00030}{30}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8h_source_l00021}{get\+Tile\+Size()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{render()}}, \mbox{\hyperlink{TileLayer_8h_source_l00017}{set\+Tile\+Size()}} , 以及 \mbox{\hyperlink{TileLayer_8cpp_source_l00006}{Tile\+Layer()}}.
+
+\Hypertarget{classTileLayer_a2e1dbc38cb2773c01979eeb9c1af1d52}\label{classTileLayer_a2e1dbc38cb2773c01979eeb9c1af1d52} 
+\index{TileLayer@{TileLayer}!m\_velocity@{m\_velocity}}
+\index{m\_velocity@{m\_velocity}!TileLayer@{TileLayer}}
+\doxysubsubsection{\texorpdfstring{m\_velocity}{m\_velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Tile\+Layer\+::m\+\_\+velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TileLayer_8h_source}{Tile\+Layer.\+h}} 第 \mbox{\hyperlink{TileLayer_8h_source_l00033}{33}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{TileLayer_8h}{Tile\+Layer.\+h}}\item 
+src/\mbox{\hyperlink{TileLayer_8cpp}{Tile\+Layer.\+cpp}}\end{DoxyCompactItemize}

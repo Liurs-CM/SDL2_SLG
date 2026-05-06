@@ -1,0 +1,439 @@
+\doxysection{Scrolling\+Background类 参考}
+\hypertarget{classScrollingBackground}{}\label{classScrollingBackground}\index{ScrollingBackground@{ScrollingBackground}}
+
+
+{\ttfamily \#include $<$Scrolling\+Background.\+h$>$}
+
+
+
+类 Scrolling\+Background 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classScrollingBackground__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Scrolling\+Background 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classScrollingBackground__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classScrollingBackground_aaef44359e3c3c62b04c8b06528cbd371}{\texorpdfstring{$\sim$}{\string~}\+Scrolling\+Background}} ()
+\item 
+\mbox{\hyperlink{classScrollingBackground_aa9c00bac814d9afae71135a35151e37e}{Scrolling\+Background}} ()
+\item 
+virtual void \mbox{\hyperlink{classScrollingBackground_a676bef16122c81feced1c0b0eaff58e0}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classScrollingBackground_a8ebbb33e58cc5aef089a430188b18959}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classScrollingBackground_af02af0dc1c7fb6cb9714cdfa07584960}{clean}} ()
+\item 
+virtual void \mbox{\hyperlink{classScrollingBackground_ac0752b405276cf590ce3a6af63507988}{load}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLoaderParams}{Loader\+Params}} $>$ const \&p\+Params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classSDLGameObject_a0211a693afa22b3fe93981f99abbe4fa}{\texorpdfstring{$\sim$}{\string~}\+SDLGame\+Object}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classSDLGameObject_a5bc827ddc71df9a0302430a209dca80c}{type}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a337c731857f6923fdfd824e55683aa7c}{get\+Position}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a2b461de1c3b8c28374e0fa16e17e924f}{get\+Velocity}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_a053e11805c9c1194dc269a695bcb168a}{get\+Width}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aac76406d11a56335f275d9d8efff82cd}{get\+Height}} ()
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}} $>$ \mbox{\hyperlink{classSDLGameObject_addb0c9209a10e396b7f6a8114755d23e}{clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classScrollingBackground_ae0144a264a4b9ed1d724911b31e9ff6d}{m\+\_\+scroll\+Speed}}
+\item 
+int \mbox{\hyperlink{classScrollingBackground_aa244948909efb3b27f80afacfe08c695}{count}}
+\item 
+int \mbox{\hyperlink{classScrollingBackground_a4c61bd45e545449f07b0e80880d9a3b3}{maxcount}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classScrollingBackground_a37303c8aa5bb737c793ef001ef6928f9}{m\+\_\+src\+Rect1}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classScrollingBackground_aad2b91ca3286735d6590351e488d31d8}{m\+\_\+src\+Rect2}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classScrollingBackground_a7a2790a77b282c5ce39a93574602c9a2}{m\+\_\+dst\+Rect1}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classScrollingBackground_ad36fb8b3bfd5c72dadf83c1f06c09e1a}{m\+\_\+dst\+Rect2}}
+\item 
+int \mbox{\hyperlink{classScrollingBackground_a444fad3a2438b31879f21be9567cf971}{m\+\_\+src\+Rect1\+Width}}
+\item 
+int \mbox{\hyperlink{classScrollingBackground_afed4f450f3d6a4da977801b7e9d95bd0}{m\+\_\+src\+Rect2\+Width}}
+\item 
+int \mbox{\hyperlink{classScrollingBackground_a3c1029b1fb9860c23c32051d80f573df}{m\+\_\+dst\+Rect1\+Width}}
+\item 
+int \mbox{\hyperlink{classScrollingBackground_af7438c2cd915aca22dd0bc99e0e5783a}{m\+\_\+dst\+Rect2\+Width}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSDLGameObject_a19f3c6074f181947371b58880528b770}{SDLGame\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\+\_\+position}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\+\_\+velocity}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a62c0967676d9bc80367eefee417d47f4}{m\+\_\+acceleration}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}{m\+\_\+current\+Row}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\+\_\+current\+Frame}}
+\item 
+double \mbox{\hyperlink{classSDLGameObject_a86d1f9c1db3958e1e5e0185bd30ffc3c}{m\+\_\+angle}}
+\item 
+int \mbox{\hyperlink{classSDLGameObject_a2208f9ebf1e5bcae92c06e910cef62b7}{m\+\_\+alpha}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}{m\+\_\+position\+Screen}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\+\_\+width}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\+\_\+height}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c}{m\+\_\+num\+Frames}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f}{m\+\_\+anim\+Speed}}
+\item 
+bool \mbox{\hyperlink{classSDLGameObject_a97ede378f4edc6c5a4f000d6dbd11fba}{m\+\_\+b\+Played\+Death\+Sound}}
+\item 
+\mbox{\hyperlink{classAnimatedGraphic}{Animated\+Graphic}} \mbox{\hyperlink{classSDLGameObject_a36e37cf3359295267db04c901664c1e1}{m\+\_\+current\+Anim}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\+\_\+texture\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00008}{8}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classScrollingBackground_aaef44359e3c3c62b04c8b06528cbd371}\label{classScrollingBackground_aaef44359e3c3c62b04c8b06528cbd371} 
+\index{ScrollingBackground@{ScrollingBackground}!````~ScrollingBackground@{\texorpdfstring{$\sim$}{\string~}ScrollingBackground}}
+\index{````~ScrollingBackground@{\texorpdfstring{$\sim$}{\string~}ScrollingBackground}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ScrollingBackground()}{\string~ScrollingBackground()}}
+{\footnotesize\ttfamily virtual Scrolling\+Background\+::\texorpdfstring{$\sim$}{\string~}\+Scrolling\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00011}{11}} 行定义.
+
+\Hypertarget{classScrollingBackground_aa9c00bac814d9afae71135a35151e37e}\label{classScrollingBackground_aa9c00bac814d9afae71135a35151e37e} 
+\index{ScrollingBackground@{ScrollingBackground}!ScrollingBackground@{ScrollingBackground}}
+\index{ScrollingBackground@{ScrollingBackground}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{ScrollingBackground()}{ScrollingBackground()}}
+{\footnotesize\ttfamily Scrolling\+Background\+::\+Scrolling\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8cpp_source}{Scrolling\+Background.\+cpp}} 第 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00006}{6}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{ScrollingBackground_8h_source_l00019}{count}} , 以及 \mbox{\hyperlink{ScrollingBackground_8h_source_l00020}{maxcount}}.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classScrollingBackground_af02af0dc1c7fb6cb9714cdfa07584960}\label{classScrollingBackground_af02af0dc1c7fb6cb9714cdfa07584960} 
+\index{ScrollingBackground@{ScrollingBackground}!clean@{clean}}
+\index{clean@{clean}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void Scrolling\+Background\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8cpp_source}{Scrolling\+Background.\+cpp}} 第 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00063}{63}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SDLGameObject_8h_source_l00017}{SDLGame\+Object\+::clean()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classScrollingBackground_af02af0dc1c7fb6cb9714cdfa07584960_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classScrollingBackground_a676bef16122c81feced1c0b0eaff58e0}\label{classScrollingBackground_a676bef16122c81feced1c0b0eaff58e0} 
+\index{ScrollingBackground@{ScrollingBackground}!draw@{draw}}
+\index{draw@{draw}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Scrolling\+Background\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8cpp_source}{Scrolling\+Background.\+cpp}} 第 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00025}{25}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00023}{m\+\_\+dst\+Rect1}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00024}{m\+\_\+dst\+Rect2}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00021}{m\+\_\+src\+Rect1}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00022}{m\+\_\+src\+Rect2}} , 以及 \mbox{\hyperlink{GameObject_8h_source_l00019}{Game\+Object\+::m\+\_\+texture\+ID}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classScrollingBackground_a676bef16122c81feced1c0b0eaff58e0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classScrollingBackground_ac0752b405276cf590ce3a6af63507988}\label{classScrollingBackground_ac0752b405276cf590ce3a6af63507988} 
+\index{ScrollingBackground@{ScrollingBackground}!load@{load}}
+\index{load@{load}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Scrolling\+Background\+::load (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLoaderParams}{Loader\+Params}} $>$ const \&}]{p\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8cpp_source}{Scrolling\+Background.\+cpp}} 第 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{12}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{SDLGame\+Object\+::load()}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00023}{m\+\_\+dst\+Rect1}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00027}{m\+\_\+dst\+Rect1\+Width}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00024}{m\+\_\+dst\+Rect2}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00028}{m\+\_\+dst\+Rect2\+Width}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{SDLGame\+Object\+::m\+\_\+height}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{SDLGame\+Object\+::m\+\_\+position}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00018}{m\+\_\+scroll\+Speed}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00021}{m\+\_\+src\+Rect1}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00025}{m\+\_\+src\+Rect1\+Width}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00022}{m\+\_\+src\+Rect2}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00026}{m\+\_\+src\+Rect2\+Width}} , 以及 \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{SDLGame\+Object\+::m\+\_\+width}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classScrollingBackground_ac0752b405276cf590ce3a6af63507988_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classScrollingBackground_a8ebbb33e58cc5aef089a430188b18959}\label{classScrollingBackground_a8ebbb33e58cc5aef089a430188b18959} 
+\index{ScrollingBackground@{ScrollingBackground}!update@{update}}
+\index{update@{update}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Scrolling\+Background\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8cpp_source}{Scrolling\+Background.\+cpp}} 第 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{34}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{ScrollingBackground_8h_source_l00019}{count}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00023}{m\+\_\+dst\+Rect1}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00027}{m\+\_\+dst\+Rect1\+Width}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00024}{m\+\_\+dst\+Rect2}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00028}{m\+\_\+dst\+Rect2\+Width}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{SDLGame\+Object\+::m\+\_\+height}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{SDLGame\+Object\+::m\+\_\+position}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00018}{m\+\_\+scroll\+Speed}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00021}{m\+\_\+src\+Rect1}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00025}{m\+\_\+src\+Rect1\+Width}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00022}{m\+\_\+src\+Rect2}}, \mbox{\hyperlink{ScrollingBackground_8h_source_l00026}{m\+\_\+src\+Rect2\+Width}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{SDLGame\+Object\+::m\+\_\+width}} , 以及 \mbox{\hyperlink{ScrollingBackground_8h_source_l00020}{maxcount}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classScrollingBackground_a8ebbb33e58cc5aef089a430188b18959_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classScrollingBackground_aa244948909efb3b27f80afacfe08c695}\label{classScrollingBackground_aa244948909efb3b27f80afacfe08c695} 
+\index{ScrollingBackground@{ScrollingBackground}!count@{count}}
+\index{count@{count}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Scrolling\+Background\+::count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00019}{19}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00006}{Scrolling\+Background()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_a7a2790a77b282c5ce39a93574602c9a2}\label{classScrollingBackground_a7a2790a77b282c5ce39a93574602c9a2} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_dstRect1@{m\_dstRect1}}
+\index{m\_dstRect1@{m\_dstRect1}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_dstRect1}{m\_dstRect1}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Scrolling\+Background\+::m\+\_\+dst\+Rect1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00023}{23}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00025}{draw()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_a3c1029b1fb9860c23c32051d80f573df}\label{classScrollingBackground_a3c1029b1fb9860c23c32051d80f573df} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_dstRect1Width@{m\_dstRect1Width}}
+\index{m\_dstRect1Width@{m\_dstRect1Width}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_dstRect1Width}{m\_dstRect1Width}}
+{\footnotesize\ttfamily int Scrolling\+Background\+::m\+\_\+dst\+Rect1\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00027}{27}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_ad36fb8b3bfd5c72dadf83c1f06c09e1a}\label{classScrollingBackground_ad36fb8b3bfd5c72dadf83c1f06c09e1a} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_dstRect2@{m\_dstRect2}}
+\index{m\_dstRect2@{m\_dstRect2}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_dstRect2}{m\_dstRect2}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Scrolling\+Background\+::m\+\_\+dst\+Rect2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00024}{24}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00025}{draw()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_af7438c2cd915aca22dd0bc99e0e5783a}\label{classScrollingBackground_af7438c2cd915aca22dd0bc99e0e5783a} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_dstRect2Width@{m\_dstRect2Width}}
+\index{m\_dstRect2Width@{m\_dstRect2Width}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_dstRect2Width}{m\_dstRect2Width}}
+{\footnotesize\ttfamily int Scrolling\+Background\+::m\+\_\+dst\+Rect2\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00028}{28}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_ae0144a264a4b9ed1d724911b31e9ff6d}\label{classScrollingBackground_ae0144a264a4b9ed1d724911b31e9ff6d} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_scrollSpeed@{m\_scrollSpeed}}
+\index{m\_scrollSpeed@{m\_scrollSpeed}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_scrollSpeed}{m\_scrollSpeed}}
+{\footnotesize\ttfamily int Scrolling\+Background\+::m\+\_\+scroll\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00018}{18}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_a37303c8aa5bb737c793ef001ef6928f9}\label{classScrollingBackground_a37303c8aa5bb737c793ef001ef6928f9} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_srcRect1@{m\_srcRect1}}
+\index{m\_srcRect1@{m\_srcRect1}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_srcRect1}{m\_srcRect1}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Scrolling\+Background\+::m\+\_\+src\+Rect1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00021}{21}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00025}{draw()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_a444fad3a2438b31879f21be9567cf971}\label{classScrollingBackground_a444fad3a2438b31879f21be9567cf971} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_srcRect1Width@{m\_srcRect1Width}}
+\index{m\_srcRect1Width@{m\_srcRect1Width}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_srcRect1Width}{m\_srcRect1Width}}
+{\footnotesize\ttfamily int Scrolling\+Background\+::m\+\_\+src\+Rect1\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00025}{25}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_aad2b91ca3286735d6590351e488d31d8}\label{classScrollingBackground_aad2b91ca3286735d6590351e488d31d8} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_srcRect2@{m\_srcRect2}}
+\index{m\_srcRect2@{m\_srcRect2}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_srcRect2}{m\_srcRect2}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Scrolling\+Background\+::m\+\_\+src\+Rect2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00022}{22}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00025}{draw()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_afed4f450f3d6a4da977801b7e9d95bd0}\label{classScrollingBackground_afed4f450f3d6a4da977801b7e9d95bd0} 
+\index{ScrollingBackground@{ScrollingBackground}!m\_srcRect2Width@{m\_srcRect2Width}}
+\index{m\_srcRect2Width@{m\_srcRect2Width}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{m\_srcRect2Width}{m\_srcRect2Width}}
+{\footnotesize\ttfamily int Scrolling\+Background\+::m\+\_\+src\+Rect2\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00026}{26}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+\Hypertarget{classScrollingBackground_a4c61bd45e545449f07b0e80880d9a3b3}\label{classScrollingBackground_a4c61bd45e545449f07b0e80880d9a3b3} 
+\index{ScrollingBackground@{ScrollingBackground}!maxcount@{maxcount}}
+\index{maxcount@{maxcount}!ScrollingBackground@{ScrollingBackground}}
+\doxysubsubsection{\texorpdfstring{maxcount}{maxcount}}
+{\footnotesize\ttfamily int Scrolling\+Background\+::maxcount\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ScrollingBackground_8h_source}{Scrolling\+Background.\+h}} 第 \mbox{\hyperlink{ScrollingBackground_8h_source_l00020}{20}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00006}{Scrolling\+Background()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{update()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{ScrollingBackground_8h}{Scrolling\+Background.\+h}}\item 
+src/\mbox{\hyperlink{ScrollingBackground_8cpp}{Scrolling\+Background.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="Camera" name="Camera">
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,108,83,133"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="97,110,106,114,109,121,101,130,83,133,82,128,98,126,104,120,102,118,95,115"/>
+<area shape="rect" id="Node000002" href="$classVector2D.html" title=" " alt="" coords="5,5,87,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,45,49,108,43,108,43,45"/>
+</map>

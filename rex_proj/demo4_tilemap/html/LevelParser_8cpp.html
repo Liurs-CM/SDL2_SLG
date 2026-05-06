@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/LevelParser.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">LevelParser.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="LevelParser_8h_source.html">LevelParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="TextureManager_8h_source.html">TextureManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ObjectLayer_8h_source.html">ObjectLayer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="TileLayer_8h_source.html">TileLayer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GameObjectFactory_8h_source.html">GameObjectFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Level_8h_source.html">Level.h</a>&quot;</code><br />
+<code>#include &quot;lib/base64.h&quot;</code><br />
+<code>#include &quot;lib/zlib.h&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+LevelParser.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="LevelParser_8cpp__incl.png" border="0" usemap="#asrc_2LevelParser_8cpp" alt=""/></div>
+<map name="asrc_2LevelParser_8cpp" id="asrc_2LevelParser_8cpp">
+<area shape="rect" title=" " alt="" coords="940,5,1087,31"/>
+<area shape="rect" href="LevelParser_8h.html" title=" " alt="" coords="1170,225,1278,251"/>
+<area shape="poly" title=" " alt="" coords="1062,28,1109,47,1132,60,1153,77,1178,109,1198,145,1221,211,1216,213,1193,148,1174,112,1149,81,1129,65,1107,52,1061,33"/>
+<area shape="rect" href="TextureManager_8h.html" title=" " alt="" coords="272,372,411,397"/>
+<area shape="poly" title=" " alt="" coords="940,24,790,34,703,44,617,58,538,76,474,99,450,113,431,129,420,145,416,164,416,240,411,275,397,309,363,363,358,360,392,307,405,274,411,239,411,163,415,143,427,125,447,109,472,95,537,71,616,52,702,39,790,29,940,19"/>
+<area shape="rect" title=" " alt="" coords="744,519,803,544"/>
+<area shape="poly" title=" " alt="" coords="1023,29,1038,55,1053,92,1064,134,1063,178,1043,270,1021,341,1005,374,985,405,957,438,922,473,897,491,870,505,817,524,816,519,868,500,895,486,918,469,953,434,980,402,1001,371,1016,339,1038,268,1057,177,1058,135,1048,94,1033,58,1018,32"/>
+<area shape="rect" href="ObjectLayer_8h.html" title=" " alt="" coords="682,152,793,177"/>
+<area shape="poly" title=" " alt="" coords="965,33,904,52,840,81,795,112,759,144,756,140,792,108,837,76,902,47,964,28"/>
+<area shape="rect" href="TileLayer_8h.html" title=" " alt="" coords="851,79,944,104"/>
+<area shape="poly" title=" " alt="" coords="996,33,929,74,927,69,993,28"/>
+<area shape="rect" href="Level_8h.html" title=" " alt="" coords="979,152,1048,177"/>
+<area shape="poly" title=" " alt="" coords="1016,31,1016,138,1011,138,1011,31"/>
+<area shape="rect" href="GameObjectFactory_8h.html" title=" " alt="" coords="673,299,833,324"/>
+<area shape="poly" title=" " alt="" coords="940,25,871,36,795,58,759,75,725,96,696,122,673,153,666,171,666,189,670,208,679,226,704,260,731,288,727,291,700,264,674,229,665,210,661,190,661,170,668,151,692,118,722,91,756,70,793,53,869,31,939,20"/>
+<area shape="rect" title=" " alt="" coords="1271,79,1372,104"/>
+<area shape="poly" title=" " alt="" coords="1063,28,1259,73,1258,78,1062,33"/>
+<area shape="rect" title=" " alt="" coords="1396,79,1473,104"/>
+<area shape="poly" title=" " alt="" coords="1087,27,1221,48,1383,76,1382,81,1220,53,1086,32"/>
+<area shape="rect" title=" " alt="" coords="1119,299,1231,324"/>
+<area shape="poly" title=" " alt="" coords="1218,253,1193,289,1188,286,1214,249"/>
+<area shape="rect" title=" " alt="" coords="1041,519,1121,544"/>
+<area shape="poly" title=" " alt="" coords="1233,250,1246,284,1248,304,1245,325,1217,383,1180,435,1141,479,1107,511,1104,508,1137,475,1176,432,1213,380,1240,323,1243,304,1240,285,1228,252"/>
+<area shape="rect" title=" " alt="" coords="919,299,982,324"/>
+<area shape="poly" title=" " alt="" coords="1181,253,996,301,995,296,1179,248"/>
+<area shape="rect" href="Vector2D_8h.html" title=" " alt="" coords="643,445,736,471"/>
+<area shape="poly" title=" " alt="" coords="398,395,630,442,629,447,397,400"/>
+<area shape="rect" title=" " alt="" coords="635,519,698,544"/>
+<area shape="poly" title=" " alt="" coords="343,398,345,433,351,453,362,469,380,481,406,491,476,508,554,518,622,525,621,530,553,524,475,513,405,496,377,485,358,473,346,455,340,434,338,398"/>
+<area shape="rect" href="GameLib_8h.html" title=" " alt="" coords="115,445,207,471"/>
+<area shape="poly" title=" " alt="" coords="313,400,204,443,202,438,311,395"/>
+<area shape="rect" title=" " alt="" coords="232,445,291,471"/>
+<area shape="poly" title=" " alt="" coords="330,399,286,438,283,434,327,395"/>
+<area shape="rect" title=" " alt="" coords="416,445,467,471"/>
+<area shape="poly" title=" " alt="" coords="359,395,415,435,412,439,356,400"/>
+<area shape="poly" title=" " alt="" coords="349,396,370,433,386,453,405,468,447,490,483,503,517,509,551,510,622,509,663,510,711,516,731,519,730,525,710,521,663,516,622,514,551,516,517,514,482,508,444,495,403,473,382,456,365,436,344,399"/>
+<area shape="rect" title=" " alt="" coords="5,445,91,471"/>
+<area shape="poly" title=" " alt="" coords="295,400,104,446,103,441,294,395"/>
+<area shape="poly" title=" " alt="" coords="737,465,1028,518,1027,523,736,470"/>
+<area shape="poly" title=" " alt="" coords="688,472,677,506,672,505,683,470"/>
+<area shape="rect" title=" " alt="" coords="371,519,437,544"/>
+<area shape="poly" title=" " alt="" coords="201,468,358,514,356,519,200,473"/>
+<area shape="rect" title=" " alt="" coords="178,519,243,544"/>
+<area shape="poly" title=" " alt="" coords="172,469,197,506,193,509,167,473"/>
+<area shape="rect" title=" " alt="" coords="67,519,154,544"/>
+<area shape="poly" title=" " alt="" coords="155,473,129,509,125,506,151,469"/>
+<area shape="poly" title=" " alt="" coords="740,177,746,213,753,232,765,249,788,263,824,277,907,298,906,304,823,282,786,268,761,253,748,235,740,214,735,178"/>
+<area shape="rect" href="Layer_8h.html" title=" " alt="" coords="775,225,844,251"/>
+<area shape="poly" title=" " alt="" coords="751,176,790,214,786,218,747,180"/>
+<area shape="rect" href="GameObject_8h.html" title=" " alt="" coords="651,372,765,397"/>
+<area shape="poly" title=" " alt="" coords="718,180,692,199,670,227,659,252,654,274,656,296,664,323,674,343,688,360,683,364,669,346,659,325,651,297,649,274,654,251,666,224,688,196,715,176"/>
+<area shape="rect" title=" " alt="" coords="811,445,888,471"/>
+<area shape="poly" title=" " alt="" coords="737,178,734,212,736,232,744,249,754,261,767,267,794,272,822,277,836,284,848,297,862,331,866,368,864,403,859,432,854,431,859,402,861,368,857,333,843,300,832,288,820,282,793,277,765,273,751,265,739,252,731,233,728,212,732,177"/>
+<area shape="poly" title=" " alt="" coords="707,398,698,433,693,432,702,397"/>
+<area shape="poly" title=" " alt="" coords="720,396,750,444,771,504,766,506,746,446,715,399"/>
+<area shape="rect" href="LoaderParams_8h.html" title=" " alt="" coords="491,445,618,471"/>
+<area shape="poly" title=" " alt="" coords="684,400,593,442,591,437,682,395"/>
+<area shape="poly" title=" " alt="" coords="732,395,815,437,813,441,730,400"/>
+<area shape="poly" title=" " alt="" coords="532,473,442,515,440,510,529,468"/>
+<area shape="poly" title=" " alt="" coords="591,468,732,514,730,519,589,473"/>
+<area shape="poly" title=" " alt="" coords="945,90,1024,96,1071,103,1120,115,1169,132,1216,155,1258,186,1293,224,1312,260,1317,293,1311,325,1295,356,1272,385,1243,414,1178,473,1148,496,1118,514,1116,510,1145,491,1174,469,1239,410,1268,381,1291,353,1306,324,1312,293,1307,261,1288,227,1254,190,1213,160,1167,137,1119,120,1070,108,1023,101,944,95"/>
+<area shape="poly" title=" " alt="" coords="898,104,896,168,899,209,909,250,919,269,932,287,928,290,915,272,904,252,894,210,890,168,893,104"/>
+<area shape="poly" title=" " alt="" coords="851,95,808,98,760,107,713,125,692,138,673,154,647,182,630,210,619,237,614,265,614,295,619,326,641,396,652,417,667,434,663,438,648,420,636,398,614,327,609,295,608,265,614,236,625,207,643,179,669,150,688,134,711,120,759,102,807,93,850,89"/>
+<area shape="poly" title=" " alt="" coords="892,106,826,215,821,212,888,103"/>
+<area shape="poly" title=" " alt="" coords="917,102,984,142,981,147,915,106"/>
+<area shape="poly" title=" " alt="" coords="1048,175,1178,218,1176,223,1046,180"/>
+<area shape="poly" title=" " alt="" coords="1025,176,1042,199,1062,231,1077,269,1084,310,1084,386,1084,505,1079,505,1079,386,1079,310,1072,271,1057,233,1038,202,1021,179"/>
+<area shape="poly" title=" " alt="" coords="1017,178,1017,212,1008,252,994,273,978,291,974,288,990,270,1003,250,1012,211,1012,178"/>
+<area shape="poly" title=" " alt="" coords="981,180,856,223,854,218,980,175"/>
+<area shape="rect" href="Player_8h.html" title=" " alt="" coords="919,225,993,251"/>
+<area shape="poly" title=" " alt="" coords="1006,179,976,216,972,213,1002,176"/>
+<area shape="poly" title=" " alt="" coords="924,253,800,297,798,292,923,248"/>
+<area shape="poly" title=" " alt="" coords="781,322,826,343,875,370,979,443,1059,507,1056,512,976,447,872,374,823,347,779,326"/>
+<area shape="poly" title=" " alt="" coords="729,327,479,442,477,437,727,322"/>
+<area shape="poly" title=" " alt="" coords="776,322,807,341,842,368,876,403,902,444,906,460,903,473,895,485,883,496,851,512,817,523,815,518,849,507,880,491,891,482,898,471,901,460,898,446,872,406,839,372,804,345,774,326"/>
+<area shape="poly" title=" " alt="" coords="748,326,725,362,720,359,744,323"/>
+</map>
+</div>
+</div>
+<p><a href="LevelParser_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:add60c460962bf36409cb2266cdb7bd80" id="r_add60c460962bf36409cb2266cdb7bd80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LevelParser_8cpp.html#add60c460962bf36409cb2266cdb7bd80">isElementNamed</a> (const tinyxml2::XMLElement *element, const char *name)</td></tr>
+<tr class="separator:add60c460962bf36409cb2266cdb7bd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991ce8f866ee913ac8c9b788fc738e10" id="r_a991ce8f866ee913ac8c9b788fc738e10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LevelParser_8cpp.html#a991ce8f866ee913ac8c9b788fc738e10">getAttributeInt</a> (const tinyxml2::XMLElement *element, const char *name, int defaultValue=0)</td></tr>
+<tr class="separator:a991ce8f866ee913ac8c9b788fc738e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26628cf7c2effe2f2267b73ffe0f4690" id="r_a26628cf7c2effe2f2267b73ffe0f4690"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LevelParser_8cpp.html#a26628cf7c2effe2f2267b73ffe0f4690">getAttributeString</a> (const tinyxml2::XMLElement *element, const char *name, const char *defaultValue=&quot;&quot;)</td></tr>
+<tr class="separator:a26628cf7c2effe2f2267b73ffe0f4690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a991ce8f866ee913ac8c9b788fc738e10" name="a991ce8f866ee913ac8c9b788fc738e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a991ce8f866ee913ac8c9b788fc738e10">&#9670;&#160;</a></span>getAttributeInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getAttributeInt </td>
+          <td>(</td>
+          <td class="paramtype">const tinyxml2::XMLElement *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="LevelParser_8cpp_source.html">LevelParser.cpp</a> 第 <a class="el" href="LevelParser_8cpp_source.html#l00017">17</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="LevelParser_8cpp_source.html#l00029">LevelParser::parseLevel()</a>, <a class="el" href="LevelParser_8cpp_source.html#l00107">LevelParser::parseObjectLayer()</a> , 以及 <a class="el" href="LevelParser_8cpp_source.html#l00145">LevelParser::parseObjectProperties()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10_icgraph.png" border="0" usemap="#aLevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10_icgraph" alt=""/></div>
+<map name="aLevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10_icgraph" id="aLevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10_icgraph">
+<area shape="rect" title=" " alt="" coords="881,27,999,52"/>
+<area shape="rect" href="classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="196,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="867,31,833,27,717,18,627,15,420,17,372,18,372,12,420,11,627,9,718,13,834,22,868,26"/>
+<area shape="rect" href="classLevelParser.html#a45e78b13e41a2cb2afaf97d60639b417" title=" " alt="" coords="420,26,603,66"/>
+<area shape="poly" title=" " alt="" coords="868,43,603,47,603,42,868,38"/>
+<area shape="rect" href="classLevelParser.html#ac1dee9c778d7f19667d31f9b22798357" title=" " alt="" coords="651,77,833,117"/>
+<area shape="poly" title=" " alt="" coords="883,59,812,79,811,74,881,53"/>
+<area shape="rect" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+<area shape="poly" title=" " alt="" coords="406,36,372,31,372,26,407,30"/>
+<area shape="poly" title=" " alt="" coords="637,76,602,69,603,63,638,71"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a26628cf7c2effe2f2267b73ffe0f4690" name="a26628cf7c2effe2f2267b73ffe0f4690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26628cf7c2effe2f2267b73ffe0f4690">&#9670;&#160;</a></span>getAttributeString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getAttributeString </td>
+          <td>(</td>
+          <td class="paramtype">const tinyxml2::XMLElement *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="LevelParser_8cpp_source.html">LevelParser.cpp</a> 第 <a class="el" href="LevelParser_8cpp_source.html#l00024">24</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="LevelParser_8cpp_source.html#l00029">LevelParser::parseLevel()</a>, <a class="el" href="LevelParser_8cpp_source.html#l00107">LevelParser::parseObjectLayer()</a> , 以及 <a class="el" href="LevelParser_8cpp_source.html#l00145">LevelParser::parseObjectProperties()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690_icgraph.png" border="0" usemap="#aLevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690_icgraph" alt=""/></div>
+<map name="aLevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690_icgraph" id="aLevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690_icgraph">
+<area shape="rect" title=" " alt="" coords="881,27,1020,52"/>
+<area shape="rect" href="classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="196,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="867,31,833,27,627,15,420,17,372,18,372,12,420,11,627,10,834,22,868,25"/>
+<area shape="rect" href="classLevelParser.html#a45e78b13e41a2cb2afaf97d60639b417" title=" " alt="" coords="420,26,603,66"/>
+<area shape="poly" title=" " alt="" coords="868,43,603,47,603,42,867,38"/>
+<area shape="rect" href="classLevelParser.html#ac1dee9c778d7f19667d31f9b22798357" title=" " alt="" coords="651,77,833,117"/>
+<area shape="poly" title=" " alt="" coords="891,58,816,79,815,74,890,53"/>
+<area shape="rect" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+<area shape="poly" title=" " alt="" coords="406,36,372,31,372,26,407,30"/>
+<area shape="poly" title=" " alt="" coords="637,76,602,69,603,63,638,71"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add60c460962bf36409cb2266cdb7bd80" name="add60c460962bf36409cb2266cdb7bd80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add60c460962bf36409cb2266cdb7bd80">&#9670;&#160;</a></span>isElementNamed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isElementNamed </td>
+          <td>(</td>
+          <td class="paramtype">const tinyxml2::XMLElement *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="LevelParser_8cpp_source.html">LevelParser.cpp</a> 第 <a class="el" href="LevelParser_8cpp_source.html#l00012">12</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="LevelParser_8cpp_source.html#l00029">LevelParser::parseLevel()</a>, <a class="el" href="LevelParser_8cpp_source.html#l00107">LevelParser::parseObjectLayer()</a> , 以及 <a class="el" href="LevelParser_8cpp_source.html#l00145">LevelParser::parseObjectProperties()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80_icgraph.png" border="0" usemap="#aLevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80_icgraph" alt=""/></div>
+<map name="aLevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80_icgraph" id="aLevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80_icgraph">
+<area shape="rect" title=" " alt="" coords="881,27,1016,52"/>
+<area shape="rect" href="classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="196,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="867,31,833,27,627,15,420,17,372,18,372,12,420,11,627,10,834,22,868,26"/>
+<area shape="rect" href="classLevelParser.html#a45e78b13e41a2cb2afaf97d60639b417" title=" " alt="" coords="420,26,603,66"/>
+<area shape="poly" title=" " alt="" coords="868,43,603,47,603,42,868,38"/>
+<area shape="rect" href="classLevelParser.html#ac1dee9c778d7f19667d31f9b22798357" title=" " alt="" coords="651,77,833,117"/>
+<area shape="poly" title=" " alt="" coords="890,58,815,79,814,74,888,53"/>
+<area shape="rect" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+<area shape="poly" title=" " alt="" coords="406,36,372,31,372,26,407,30"/>
+<area shape="poly" title=" " alt="" coords="637,76,602,69,603,63,638,71"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

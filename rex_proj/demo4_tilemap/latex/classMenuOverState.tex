@@ -1,0 +1,367 @@
+\doxysection{Menu\+Over\+State类 参考}
+\hypertarget{classMenuOverState}{}\label{classMenuOverState}\index{MenuOverState@{MenuOverState}}
+
+
+{\ttfamily \#include $<$Menu\+Over\+State.\+h$>$}
+
+
+
+类 Menu\+Over\+State 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classMenuOverState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Menu\+Over\+State 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classMenuOverState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classMenuOverState_a1e4db65860a13df21feb675be7b4d411}{\texorpdfstring{$\sim$}{\string~}\+Menu\+Over\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{classMenuOverState_a370affe64ef1e4e87bc8fb3be7119c21}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classMenuOverState_aa1549d986dfcee43a658c24f060652b7}{render}} ()
+\item 
+virtual bool \mbox{\hyperlink{classMenuOverState_a50b20e765ea93c1ede3ce92c33c730bd}{on\+Enter}} ()
+\item 
+virtual bool \mbox{\hyperlink{classMenuOverState_ab0740eb89914ed4317ac8b35c5244eec}{on\+Exit}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classMenuOverState_a36a8861b6390c1eaf639d3e035d84a73}{get\+State\+ID}} () const
+\item 
+virtual void \mbox{\hyperlink{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9}{set\+Callbacks}} (const std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \&callbacks)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classMenuState}{Menu\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classMenuState_abbd5869601cb7673c38e9deb44b4342a}{\texorpdfstring{$\sim$}{\string~}\+Menu\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameState_adc1bfdf7ee7c1f48e4841995db4e16c3}{\texorpdfstring{$\sim$}{\string~}\+Game\+State}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f}{s\+\_\+game\+Over\+To\+Main}} ()
+\item 
+static void \mbox{\hyperlink{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139}{s\+\_\+restart\+Play}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \mbox{\hyperlink{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}{m\+\_\+game\+Objects}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{classMenuOverState_a77b29fd93c56105df444d19a2cb7937d}{s\+\_\+game\+Over\+ID}} = "{}GAMEOVER"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Protected 类型 继承自 \mbox{\hyperlink{classMenuState}{Menu\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}}) ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameState_a4fa0a2bf50315c4a35a3890a0adcee5c}{Game\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classMenuState}{Menu\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\+\_\+callbacks}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGameState_a5738bb77af0103b4419c0669a61dc23b}{m\+\_\+loading\+Complete}}
+\item 
+bool \mbox{\hyperlink{classGameState_abd2cc9eda4f7ec4cca4fb86d76a02830}{m\+\_\+exiting}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\+\_\+texture\+IDList}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8h_source}{Menu\+Over\+State.\+h}} 第 \mbox{\hyperlink{MenuOverState_8h_source_l00008}{8}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classMenuOverState_a1e4db65860a13df21feb675be7b4d411}\label{classMenuOverState_a1e4db65860a13df21feb675be7b4d411} 
+\index{MenuOverState@{MenuOverState}!````~MenuOverState@{\texorpdfstring{$\sim$}{\string~}MenuOverState}}
+\index{````~MenuOverState@{\texorpdfstring{$\sim$}{\string~}MenuOverState}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MenuOverState()}{\string~MenuOverState()}}
+{\footnotesize\ttfamily virtual Menu\+Over\+State\+::\texorpdfstring{$\sim$}{\string~}\+Menu\+Over\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8h_source}{Menu\+Over\+State.\+h}} 第 \mbox{\hyperlink{MenuOverState_8h_source_l00011}{11}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classMenuOverState_a36a8861b6390c1eaf639d3e035d84a73}\label{classMenuOverState_a36a8861b6390c1eaf639d3e035d84a73} 
+\index{MenuOverState@{MenuOverState}!getStateID@{getStateID}}
+\index{getStateID@{getStateID}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{getStateID()}{getStateID()}}
+{\footnotesize\ttfamily virtual std\+::string Menu\+Over\+State\+::get\+State\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8h_source}{Menu\+Over\+State.\+h}} 第 \mbox{\hyperlink{MenuOverState_8h_source_l00016}{16}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuOverState_8h_source_l00019}{s\+\_\+game\+Over\+ID}}.
+
+\Hypertarget{classMenuOverState_a50b20e765ea93c1ede3ce92c33c730bd}\label{classMenuOverState_a50b20e765ea93c1ede3ce92c33c730bd} 
+\index{MenuOverState@{MenuOverState}!onEnter@{onEnter}}
+\index{onEnter@{onEnter}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{onEnter()}{onEnter()}}
+{\footnotesize\ttfamily bool Menu\+Over\+State\+::on\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_ad17154015d2de5e669067c34d2cfe5b3}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8cpp_source}{Menu\+Over\+State.\+cpp}} 第 \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{38}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuState_8h_source_l00012}{Menu\+State\+::m\+\_\+callbacks}}, \mbox{\hyperlink{MenuOverState_8h_source_l00022}{m\+\_\+game\+Objects}}, \mbox{\hyperlink{GameState_8h_source_l00019}{Game\+State\+::m\+\_\+texture\+IDList}}, \mbox{\hyperlink{StateParser_8cpp_source_l00007}{State\+Parser\+::parse\+State()}}, \mbox{\hyperlink{MenuOverState_8h_source_l00019}{s\+\_\+game\+Over\+ID}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00013}{s\+\_\+game\+Over\+To\+Main()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00018}{s\+\_\+restart\+Play()}} , 以及 \mbox{\hyperlink{MenuOverState_8cpp_source_l00066}{set\+Callbacks()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_a50b20e765ea93c1ede3ce92c33c730bd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuOverState_ab0740eb89914ed4317ac8b35c5244eec}\label{classMenuOverState_ab0740eb89914ed4317ac8b35c5244eec} 
+\index{MenuOverState@{MenuOverState}!onExit@{onExit}}
+\index{onExit@{onExit}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily bool Menu\+Over\+State\+::on\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_aed6186fd65fefb5460f89ceed82829a1}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8cpp_source}{Menu\+Over\+State.\+cpp}} 第 \mbox{\hyperlink{MenuOverState_8cpp_source_l00051}{51}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8cpp_source_l00072}{Texture\+Manager\+::clear\+From\+Texture\+Map()}}, \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{MenuOverState_8h_source_l00022}{m\+\_\+game\+Objects}}, \mbox{\hyperlink{GameState_8h_source_l00019}{Game\+State\+::m\+\_\+texture\+IDList}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00309}{Input\+Handler\+::reset\+\_\+mouse\+Button\+State()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_ab0740eb89914ed4317ac8b35c5244eec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuOverState_aa1549d986dfcee43a658c24f060652b7}\label{classMenuOverState_aa1549d986dfcee43a658c24f060652b7} 
+\index{MenuOverState@{MenuOverState}!render@{render}}
+\index{render@{render}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Menu\+Over\+State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_abb892a3560e8fbedb3e4526af5deed7b}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8cpp_source}{Menu\+Over\+State.\+cpp}} 第 \mbox{\hyperlink{MenuOverState_8cpp_source_l00031}{31}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuOverState_8h_source_l00022}{m\+\_\+game\+Objects}}.
+
+\Hypertarget{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f}\label{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f} 
+\index{MenuOverState@{MenuOverState}!s\_gameOverToMain@{s\_gameOverToMain}}
+\index{s\_gameOverToMain@{s\_gameOverToMain}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{s\_gameOverToMain()}{s\_gameOverToMain()}}
+{\footnotesize\ttfamily void Menu\+Over\+State\+::s\+\_\+game\+Over\+To\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8cpp_source}{Menu\+Over\+State.\+cpp}} 第 \mbox{\hyperlink{MenuOverState_8cpp_source_l00013}{13}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{Game\+State\+Machine\+::change\+State()}}, \mbox{\hyperlink{Game_8h_source_l00019}{Game\+::get\+State\+Machine()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00033}{Game\+::\+Instance()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{on\+Enter()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_ac17514b38c2a72ffb152ce07fda0c76f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139}\label{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139} 
+\index{MenuOverState@{MenuOverState}!s\_restartPlay@{s\_restartPlay}}
+\index{s\_restartPlay@{s\_restartPlay}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{s\_restartPlay()}{s\_restartPlay()}}
+{\footnotesize\ttfamily void Menu\+Over\+State\+::s\+\_\+restart\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8cpp_source}{Menu\+Over\+State.\+cpp}} 第 \mbox{\hyperlink{MenuOverState_8cpp_source_l00018}{18}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{Game\+State\+Machine\+::change\+State()}}, \mbox{\hyperlink{Game_8h_source_l00019}{Game\+::get\+State\+Machine()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00033}{Game\+::\+Instance()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{on\+Enter()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_a0c1f130bd4488d2fcf54bdb375179139_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9}\label{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9} 
+\index{MenuOverState@{MenuOverState}!setCallbacks@{setCallbacks}}
+\index{setCallbacks@{setCallbacks}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{setCallbacks()}{setCallbacks()}}
+{\footnotesize\ttfamily void Menu\+Over\+State\+::set\+Callbacks (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \&}]{callbacks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classMenuState_a52b9dc2da4b74bcf878e09d697e1d53e}{Menu\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8cpp_source}{Menu\+Over\+State.\+cpp}} 第 \mbox{\hyperlink{MenuOverState_8cpp_source_l00066}{66}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuButton_8h_source_l00016}{Menu\+Button\+::get\+Callback\+ID()}}, \mbox{\hyperlink{MenuOverState_8h_source_l00022}{m\+\_\+game\+Objects}} , 以及 \mbox{\hyperlink{MenuButton_8h_source_l00015}{Menu\+Button\+::set\+Callback()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{on\+Enter()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuOverState_a370affe64ef1e4e87bc8fb3be7119c21}\label{classMenuOverState_a370affe64ef1e4e87bc8fb3be7119c21} 
+\index{MenuOverState@{MenuOverState}!update@{update}}
+\index{update@{update}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Menu\+Over\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_ab2864bfa04f92f6966861a1f2883bda0}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8cpp_source}{Menu\+Over\+State.\+cpp}} 第 \mbox{\hyperlink{MenuOverState_8cpp_source_l00023}{23}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuOverState_8h_source_l00022}{m\+\_\+game\+Objects}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classMenuOverState_a2e833ce4797f0f638b64369e3009705c}\label{classMenuOverState_a2e833ce4797f0f638b64369e3009705c} 
+\index{MenuOverState@{MenuOverState}!m\_gameObjects@{m\_gameObjects}}
+\index{m\_gameObjects@{m\_gameObjects}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{m\_gameObjects}{m\_gameObjects}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGameObject}{Game\+Object}}$>$ $>$ Menu\+Over\+State\+::m\+\_\+game\+Objects\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8h_source}{Menu\+Over\+State.\+h}} 第 \mbox{\hyperlink{MenuOverState_8h_source_l00022}{22}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{on\+Enter()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00051}{on\+Exit()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00031}{render()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00066}{set\+Callbacks()}} , 以及 \mbox{\hyperlink{MenuOverState_8cpp_source_l00023}{update()}}.
+
+\Hypertarget{classMenuOverState_a77b29fd93c56105df444d19a2cb7937d}\label{classMenuOverState_a77b29fd93c56105df444d19a2cb7937d} 
+\index{MenuOverState@{MenuOverState}!s\_gameOverID@{s\_gameOverID}}
+\index{s\_gameOverID@{s\_gameOverID}!MenuOverState@{MenuOverState}}
+\doxysubsubsection{\texorpdfstring{s\_gameOverID}{s\_gameOverID}}
+{\footnotesize\ttfamily const std\+::string Menu\+Over\+State\+::s\+\_\+game\+Over\+ID = "{}GAMEOVER"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuOverState_8h_source}{Menu\+Over\+State.\+h}} 第 \mbox{\hyperlink{MenuOverState_8h_source_l00019}{19}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuOverState_8h_source_l00016}{get\+State\+ID()}} , 以及 \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{on\+Enter()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{MenuOverState_8h}{Menu\+Over\+State.\+h}}\item 
+src/\mbox{\hyperlink{MenuOverState_8cpp}{Menu\+Over\+State.\+cpp}}\end{DoxyCompactItemize}

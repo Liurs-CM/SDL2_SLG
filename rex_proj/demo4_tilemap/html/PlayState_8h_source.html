@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: inc/PlayState.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">PlayState.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="PlayState_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PlayState__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PlayState__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="GameState_8h.html">GameState.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="Level_8h.html">Level.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span><a class="code hl_class" href="classGameObject.html">GameObject</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="classSDLGameObject.html">SDLGameObject</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="classLevel.html">Level</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classPlayState.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classPlayState.html">PlayState</a> : <span class="keyword">public</span> <a class="code hl_class" href="classGameState.html">GameState</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classPlayState.html#a063aa1bc206d83773bc6a770e9e5d1bc">   15</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classPlayState.html#a063aa1bc206d83773bc6a770e9e5d1bc">~PlayState</a>() { <span class="keyword">delete</span> <a class="code hl_variable" href="classPlayState.html#a72f574abe80fe9ea31e83aa4694b4337">pLevel</a>; }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPlayState.html#a3beac23cba7b9541714ebd33ea77a913">update</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPlayState.html#ad0b2654d0d822b853c6d06ee5c4a95c2">render</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b">onEnter</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classPlayState.html#aed7fef037f6e9c9fc4a02924e2fe7154">onExit</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classPlayState.html#a8a9e49f36d2ec9660037ff7010458e5a">   20</a></span>        <span class="keyword">virtual</span> std::string <a class="code hl_function" href="classPlayState.html#a8a9e49f36d2ec9660037ff7010458e5a">getStateID</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classPlayState.html#aa342bc3254ffe622f8abe78001293389">s_playID</a>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classPlayState.html#aa342bc3254ffe622f8abe78001293389">   22</a></span>        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_variable" href="classPlayState.html#aa342bc3254ffe622f8abe78001293389">s_playID</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classPlayState.html#abd5582cb45db972c24fb907b0c85aa01">   23</a></span>        std::vector&lt;GameObject*&gt; <a class="code hl_variable" href="classPlayState.html#abd5582cb45db972c24fb907b0c85aa01">m_gameObjects</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classPlayState.html#a72f574abe80fe9ea31e83aa4694b4337">   24</a></span>        <a class="code hl_class" href="classLevel.html">Level</a>* <a class="code hl_variable" href="classPlayState.html#a72f574abe80fe9ea31e83aa4694b4337">pLevel</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// __PlayState__</span></div>
+<div class="ttc" id="aGameState_8h_html"><div class="ttname"><a href="GameState_8h.html">GameState.h</a></div></div>
+<div class="ttc" id="aLevel_8h_html"><div class="ttname"><a href="Level_8h.html">Level.h</a></div></div>
+<div class="ttc" id="aclassGameObject_html"><div class="ttname"><a href="classGameObject.html">GameObject</a></div><div class="ttdef"><b>Definition</b> <a href="GameObject_8h_source.html#l00008">GameObject.h:9</a></div></div>
+<div class="ttc" id="aclassGameState_html"><div class="ttname"><a href="classGameState.html">GameState</a></div><div class="ttdef"><b>Definition</b> <a href="GameState_8h_source.html#l00006">GameState.h:7</a></div></div>
+<div class="ttc" id="aclassLevel_html"><div class="ttname"><a href="classLevel.html">Level</a></div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00024">Level.h:25</a></div></div>
+<div class="ttc" id="aclassPlayState_html"><div class="ttname"><a href="classPlayState.html">PlayState</a></div><div class="ttdef"><b>Definition</b> <a href="PlayState_8h_source.html#l00012">PlayState.h:13</a></div></div>
+<div class="ttc" id="aclassPlayState_html_a063aa1bc206d83773bc6a770e9e5d1bc"><div class="ttname"><a href="classPlayState.html#a063aa1bc206d83773bc6a770e9e5d1bc">PlayState::~PlayState</a></div><div class="ttdeci">virtual ~PlayState()</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8h_source.html#l00015">PlayState.h:15</a></div></div>
+<div class="ttc" id="aclassPlayState_html_a3beac23cba7b9541714ebd33ea77a913"><div class="ttname"><a href="classPlayState.html#a3beac23cba7b9541714ebd33ea77a913">PlayState::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8cpp_source.html#l00014">PlayState.cpp:14</a></div></div>
+<div class="ttc" id="aclassPlayState_html_a412edf86cef5eaffdfd63d69af42c39b"><div class="ttname"><a href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b">PlayState::onEnter</a></div><div class="ttdeci">virtual bool onEnter()</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8cpp_source.html#l00044">PlayState.cpp:44</a></div></div>
+<div class="ttc" id="aclassPlayState_html_a72f574abe80fe9ea31e83aa4694b4337"><div class="ttname"><a href="classPlayState.html#a72f574abe80fe9ea31e83aa4694b4337">PlayState::pLevel</a></div><div class="ttdeci">Level * pLevel</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8h_source.html#l00024">PlayState.h:24</a></div></div>
+<div class="ttc" id="aclassPlayState_html_a8a9e49f36d2ec9660037ff7010458e5a"><div class="ttname"><a href="classPlayState.html#a8a9e49f36d2ec9660037ff7010458e5a">PlayState::getStateID</a></div><div class="ttdeci">virtual std::string getStateID() const</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8h_source.html#l00020">PlayState.h:20</a></div></div>
+<div class="ttc" id="aclassPlayState_html_aa342bc3254ffe622f8abe78001293389"><div class="ttname"><a href="classPlayState.html#aa342bc3254ffe622f8abe78001293389">PlayState::s_playID</a></div><div class="ttdeci">static const std::string s_playID</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8h_source.html#l00022">PlayState.h:22</a></div></div>
+<div class="ttc" id="aclassPlayState_html_abd5582cb45db972c24fb907b0c85aa01"><div class="ttname"><a href="classPlayState.html#abd5582cb45db972c24fb907b0c85aa01">PlayState::m_gameObjects</a></div><div class="ttdeci">std::vector&lt; GameObject * &gt; m_gameObjects</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8h_source.html#l00023">PlayState.h:23</a></div></div>
+<div class="ttc" id="aclassPlayState_html_ad0b2654d0d822b853c6d06ee5c4a95c2"><div class="ttname"><a href="classPlayState.html#ad0b2654d0d822b853c6d06ee5c4a95c2">PlayState::render</a></div><div class="ttdeci">virtual void render()</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8cpp_source.html#l00033">PlayState.cpp:33</a></div></div>
+<div class="ttc" id="aclassPlayState_html_aed7fef037f6e9c9fc4a02924e2fe7154"><div class="ttname"><a href="classPlayState.html#aed7fef037f6e9c9fc4a02924e2fe7154">PlayState::onExit</a></div><div class="ttdeci">virtual bool onExit()</div><div class="ttdef"><b>Definition</b> <a href="PlayState_8cpp_source.html#l00058">PlayState.cpp:58</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html"><div class="ttname"><a href="classSDLGameObject.html">SDLGameObject</a></div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00010">SDLGameObject.h:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

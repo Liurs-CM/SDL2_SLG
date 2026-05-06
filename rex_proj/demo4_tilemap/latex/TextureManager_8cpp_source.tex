@@ -1,0 +1,254 @@
+\doxysection{Texture\+Manager.\+cpp}
+\hypertarget{TextureManager_8cpp_source}{}\label{TextureManager_8cpp_source}\index{src/TextureManager.cpp@{src/TextureManager.cpp}}
+\mbox{\hyperlink{TextureManager_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderContext_8h}{RenderContext.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}SDL\_image.h"{}}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}SDL\_ttf.h"{}}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <SDL2\_gfxPrimitives.h>}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00009}00009\ \mbox{\hyperlink{classTextureManager}{TextureManager}}*\ \mbox{\hyperlink{classTextureManager_a958f69ecfcfb08130efc5f50685c7c67}{TextureManager::s\_pInstance}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00011}\mbox{\hyperlink{classTextureManager_a1921cb89735d57489e49984c7572611c}{00011}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTextureManager_a1921cb89735d57489e49984c7572611c}{TextureManager::load}}(std::string\ fileName,std::string\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00012}00012\ \{\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00013}00013\ \ \ \ \ SDL\_Surface*\ pTempSurface\ =\ IMG\_Load(fileName.c\_str());\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{keywordflow}{if}(pTempSurface\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error\ can't\ load\ img:\ "{}}\ <<\ fileName;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00018}00018\ \ \ \ \ \}\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00019}00019\ \ \ \ \ SDL\_Texture*\ pTexture\ =\ SDL\_CreateTextureFromSurface(\mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}(),\ pTempSurface);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00020}00020\ \ \ \ \ SDL\_FreeSurface(pTempSurface);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{if}(\ pTexture\ !=\ 0\ )}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}[id]\ =\ pTexture;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00025}00025\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00029}\mbox{\hyperlink{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61}{00029}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61}{TextureManager::draw}}(std::string\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{classVector2D}{Vector2D}}\ pos,\ uint16\_t\ width,\ uint16\_t\ height,\ SDL\_RendererFlip\ flip)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00030}00030\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00031}00031\ \ \ \ \ SDL\_Rect\ srcRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00032}00032\ \ \ \ \ SDL\_Rect\ dstRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ (Uint32)pos.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ (Uint32)pos.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00035}00035\ \ \ \ \ srcRect\ =\ \{0,\ 0,\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00036}00036\ \ \ \ \ dstRect\ =\ \{x,\ y,\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00037}00037\ \ \ \ \ SDL\_RenderCopyEx(\mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}(),\ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}[\textcolor{keywordtype}{id}],\ \&srcRect,\ \&dstRect,\ 0,\ 0,\ flip);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00038}00038\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00040}\mbox{\hyperlink{classTextureManager_a36331e211cbd13a7cfc15af1540a5f89}{00040}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_a36331e211cbd13a7cfc15af1540a5f89}{TextureManager::drawRotat}}(std::string\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{classVector2D}{Vector2D}}\ pos,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{int}\ currentRow,\ \textcolor{keywordtype}{int}\ currentFrame,\ \textcolor{keywordtype}{double}\ angle,\ SDL\_RendererFlip\ flip)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00041}00041\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00042}00042\ \ \ \ \ SDL\_Rect\ srcRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00043}00043\ \ \ \ \ SDL\_Rect\ dstRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00044}00044\ \ \ \ \ SDL\_Point\ center;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ (Uint32)pos.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ (Uint32)pos.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00047}00047\ \ \ \ \ srcRect\ =\ \{width\ *\ currentFrame,\ height\ *\ (currentRow\ -\/\ 1),\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00048}00048\ \ \ \ \ dstRect\ =\ \{x,\ y,\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{comment}{//center\ =\ \{x,\ y\};}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{comment}{//center\ =\ \{x\ +\ width\ /\ 2,\ y\ +\ height\ /\ 2\};}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00051}00051\ \ \ \ \ center\ =\ \{width\ /\ 2,\ height\ /\ 2\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00052}00052\ \ \ \ \ SDL\_RenderCopyEx(\mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}(),\ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}[\textcolor{keywordtype}{id}],\ \&srcRect,\ \&dstRect,\ angle,\ \&center,\ flip);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00053}00053\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00055}\mbox{\hyperlink{classTextureManager_a8152a12de458e940d09f2850d8f71b85}{00055}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_a8152a12de458e940d09f2850d8f71b85}{TextureManager::drawFrame}}(std::string\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{classVector2D}{Vector2D}}\ pos,\ uint16\_t\ width,\ uint16\_t\ height,\ uint8\_t\ currentRow,\ uint8\_t\ currentFrame,\ \textcolor{keywordtype}{int}\ alpha,\ SDL\_RendererFlip\ flip)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00056}00056\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00057}00057\ \ \ \ \ SDL\_Rect\ srcRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00058}00058\ \ \ \ \ SDL\_Rect\ dstRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ (Uint32)pos.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ (Uint32)pos.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00061}00061\ \ \ \ \ srcRect\ =\ \{width\ *\ currentFrame,\ height\ *\ (currentRow\ -\/\ 1),\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00062}00062\ \ \ \ \ dstRect\ =\ \{x,\ y,\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00063}00063\ \ \ \ \ SDL\_SetTextureAlphaMod(\mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}[\textcolor{keywordtype}{id}],\ alpha);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00064}00064\ \ \ \ \ SDL\_RenderCopyEx(\mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}(),\ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}[\textcolor{keywordtype}{id}],\ \&srcRect,\ \&dstRect,\ 0,\ 0,\ flip);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00067}\mbox{\hyperlink{classTextureManager_af083b78d46ed8e1ad20b22db1a8c5497}{00067}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_af083b78d46ed8e1ad20b22db1a8c5497}{TextureManager::clearTextureMap}}()}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00068}00068\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00069}00069\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}.clear();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00072}\mbox{\hyperlink{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6}{00072}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6}{TextureManager::clearFromTextureMap}}(std::string\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00073}00073\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00074}00074\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}.erase(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00077}\mbox{\hyperlink{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19}{00077}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19}{TextureManager::drawTile}}(std::string\ \textcolor{keywordtype}{id},\ uint8\_t\ margin,\ uint8\_t\ spacing,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ uint16\_t\ width,\ uint16\_t\ height,\ uint8\_t\ currentRow,\ uint8\_t\ currentFrame)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00078}00078\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00079}00079\ \ \ \ \ SDL\_Rect\ srcRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00080}00080\ \ \ \ \ SDL\_Rect\ dstRect;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00081}00081\ \ \ \ \ srcRect\ =\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ margin\ +\ (spacing\ +\ width)\ *\ currentFrame,\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ margin\ +\ (spacing\ +\ height)\ *\ currentRow,\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ width,\ height\ \};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00085}00085\ \ \ \ \ dstRect\ =\ \{x,\ y,\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00086}00086\ \ \ \ \ SDL\_RenderCopyEx(\mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}(),\ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\_textureMap}}[\textcolor{keywordtype}{id}],\ \&srcRect,\ \&dstRect,\ 0,\ 0,\ SDL\_FLIP\_NONE);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00087}00087\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00089}\mbox{\hyperlink{classTextureManager_af9f207db2e64e465e8588a1733708de3}{00089}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_af9f207db2e64e465e8588a1733708de3}{TextureManager::drawLine}}(\textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y1,\ \textcolor{keywordtype}{int}\ x2,\ \textcolor{keywordtype}{int}\ y2,\ uint32\_t\ color)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00090}00090\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00091}00091\ \ \ \ \ lineColor(\mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}(),\ x1,\ y1,\ x2,\ y2,\ color);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00092}00092\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00094}00094\ \textcolor{comment}{//=====================================================================}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00095}00095\ \textcolor{comment}{//\ Text\ Rendering}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00096}00096\ \textcolor{comment}{//=====================================================================}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00098}\mbox{\hyperlink{classTextureManager_a25c66880a004153371df2dd0e7a6041b}{00098}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_a25c66880a004153371df2dd0e7a6041b}{TextureManager::drawText}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *text,\ uint32\_t\ color)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00099}00099\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{keywordflow}{if}\ (!text)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keywordtype}{int}\ ox\ =\ x;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00102}00102\ \ \ \ \ std::vector<SDL\_Point>\ points;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00103}00103\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *p\ =\ text;\ *p;\ p++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ ch\ =\ (\textcolor{keywordtype}{unsigned}\ char)*p;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ch\ ==\ \textcolor{charliteral}{'\(\backslash\)n'})\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ x\ =\ ox;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ y\ +=\ 10;\ \ \textcolor{comment}{//\ 8\ pixels\ high\ +\ 2\ pixels\ line\ spacing}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ch\ <\ 32\ ||\ ch\ >\ 126)\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00111}00111\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *glyph\ =\ \mbox{\hyperlink{GameLib_8h_a6d60f02bdc8f1fd2318d136eb1954852}{\_gamelib\_font8x8}}[ch\ -\/\ 32];}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00112}00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ row\ =\ 0;\ row\ <\ 8;\ row++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ bits\ =\ glyph[row];}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ col\ =\ 0;\ col\ <\ 8;\ col++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bits\ \&\ (0x80\ >>\ col))\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ points.push\_back(\{\ x\ +\ col,\ y\ +\ row\});}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00119}00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ pt\_count\ =\ points.size();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ pt\_count\ >\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ Uint8\ r\ =\ (color\ >>\ 16)\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ Uint8\ g\ =\ (color\ >>\ 8)\ \ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ Uint8\ b\ =\ color\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_Renderer*\ pRenderer\ =\ \mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_SetRenderDrawColor(pRenderer,\ r,\ g,\ b,\ 255);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_RenderDrawPoints(pRenderer,\ points.data(),\ pt\_count);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00128}00128\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00129}00129\ \ \ \ \ \ \ \ \ x\ +=\ 8;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00130}00130\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00131}00131\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00133}\mbox{\hyperlink{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93}{00133}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93}{TextureManager::drawTextScale}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *text,\ uint32\_t\ color,\ \textcolor{keywordtype}{int}\ scale)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00134}00134\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{keywordflow}{if}\ (!text\ ||\ scale\ <=\ 0)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00136}00136\ \ \ \ \ std::vector<SDL\_Rect>\ rects;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00137}00137\ \ \ \ \ \textcolor{keywordtype}{int}\ ox\ =\ x;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00138}00138\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *p\ =\ text;\ *p;\ p++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00139}00139\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ ch\ =\ (\textcolor{keywordtype}{unsigned}\ char)*p;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00140}00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ch\ ==\ \textcolor{charliteral}{'\(\backslash\)n'})\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ x\ =\ ox;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ y\ +=\ (8\ +\ 2)\ *\ scale;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00143}00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00144}00144\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00145}00145\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ch\ <\ 32\ ||\ ch\ >\ 126)\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00146}00146\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *glyph\ =\ \mbox{\hyperlink{GameLib_8h_a6d60f02bdc8f1fd2318d136eb1954852}{\_gamelib\_font8x8}}[ch\ -\/\ 32];}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00147}00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ row\ =\ 0;\ row\ <\ 8;\ row++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ bits\ =\ glyph[row];}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ col\ =\ 0;\ col\ <\ 8;\ col++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bits\ \&\ (0x80\ >>\ col))\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rects.push\_back(\{\ x\ +\ col\ *\ scale,\ y\ +\ row\ *\ scale,\ scale,\ scale\ \});}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00154}00154\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00155}00155\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ rect\_count\ =\ rects.size();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00156}00156\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rect\_count\ >\ 0)\ \{\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ Uint8\ r\ =\ (color\ >>\ 16)\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ Uint8\ g\ =\ (color\ >>\ 8)\ \ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ Uint8\ b\ =\ color\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_Renderer*\ pRenderer\ =\ \mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_SetRenderDrawColor(pRenderer,\ r,\ g,\ b,\ 255);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_RenderFillRects(pRenderer,\ rects.data(),\ rect\_count);\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00163}00163\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00164}00164\ \ \ \ \ \ \ \ \ x\ +=\ 8\ *\ scale;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00165}00165\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00166}00166\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00168}\mbox{\hyperlink{classTextureManager_a3a2051122a31204406b04457c4e3fee4}{00168}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_a3a2051122a31204406b04457c4e3fee4}{TextureManager::drawPrintf}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ uint32\_t\ color,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *fmt,\ ...)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00169}00169\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00170}00170\ \ \ \ \ \textcolor{keywordtype}{char}\ buf[1024];}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00171}00171\ \ \ \ \ va\_list\ args;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00172}00172\ \ \ \ \ va\_start(args,\ fmt);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00173}00173\ \ \ \ \ vsnprintf(buf,\ \textcolor{keyword}{sizeof}(buf),\ fmt,\ args);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00174}00174\ \ \ \ \ va\_end(args);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00175}00175\ \ \ \ \ buf[\textcolor{keyword}{sizeof}(buf)\ -\/\ 1]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00176}00176\ \ \ \ \ \mbox{\hyperlink{classTextureManager_a25c66880a004153371df2dd0e7a6041b}{TextureManager::drawText}}(x,\ y,\ buf,\ color);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00177}00177\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00179}00179\ \textcolor{comment}{//千问推荐Triangle\ Fan}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00180}\mbox{\hyperlink{classTextureManager_a17440efbdb49e196fdf01fdd475127e5}{00180}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_a17440efbdb49e196fdf01fdd475127e5}{TextureManager::drawCircle}}(\textcolor{keywordtype}{int}\ cx,\ \textcolor{keywordtype}{int}\ cy,\ \textcolor{keywordtype}{int}\ radius,\ \textcolor{keywordtype}{bool}\ Fill,\ uint32\_t\ color)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00181}00181\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00182}00182\ \ \ \ \ \textcolor{keywordflow}{if}(radius\ <=\ 0)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00183}00183\ \ \ \ \ \textcolor{keywordflow}{if}(Fill)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00184}00184\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 动态计算分段数：保证每段弧长约\ ≤\ 2\ 像素}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00185}00185\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ segments\ =\ std::max(8,\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(M\_PI\ *\ radius\ /\ 2.0f));}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00186}00186\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 分配顶点（中心\ +\ 圆周）}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00187}00187\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ numVertices\ =\ segments\ +\ 2;\ \textcolor{comment}{//\ 中心\ +\ segments+1\ 个圆周点}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00188}00188\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ numIndices\ =\ segments\ *\ 3;\ \ \textcolor{comment}{//\ 每个三角形3个索引}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00189}00189\ \ \ \ \ \ \ \ \ std::vector<SDL\_Vertex>\ vertices(numVertices);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00190}00190\ \ \ \ \ \ \ \ \ std::vector<int>\ indices(numIndices);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00191}00191\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 中心点}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00192}00192\ \ \ \ \ \ \ \ \ vertices[0].position\ =\ \{\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(cx),\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(cy)\ \};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00193}00193\ \ \ \ \ \ \ \ \ Uint8\ r\ =\ (color\ >>\ 16)\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00194}00194\ \ \ \ \ \ \ \ \ Uint8\ g\ =\ (color\ >>\ 8)\ \ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00195}00195\ \ \ \ \ \ \ \ \ Uint8\ b\ =\ color\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00196}00196\ \ \ \ \ \ \ \ \ vertices[0].color\ =\ \{\ r,\ g,\ b,\ 255\ \};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00197}00197\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 圆周点（闭合扇形）}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00198}00198\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ step\ =\ 2.0f\ *\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(M\_PI)\ /\ segments;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00199}00199\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <=\ segments;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00200}00200\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ angle\ =\ i\ *\ step;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00201}00201\ \ \ \ \ \ \ \ \ \ \ \ \ vertices[i\ +\ 1].position\ =\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00202}00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(cx\ +\ radius\ *\ std::cos(angle)),}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00203}00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(cy\ +\ radius\ *\ std::sin(angle))}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00204}00204\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00205}00205\ \ \ \ \ \ \ \ \ \ \ \ \ vertices[i\ +\ 1].color\ =\ \{\ r,\ g,\ b,\ 255\ \};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00206}00206\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00207}00207\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 构建索引：每个三角形由\ (0,\ i+1,\ i+2)\ 构成，共\ segments\ 个三角形}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00208}00208\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 总索引数\ =\ segments\ *\ 3}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00209}00209\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ segments;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00210}00210\ \ \ \ \ \ \ \ \ \ \ \ \ indices[i\ *\ 3\ +\ 0]\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 中心}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00211}00211\ \ \ \ \ \ \ \ \ \ \ \ \ indices[i\ *\ 3\ +\ 1]\ =\ i\ +\ 1;\ \ \ \ \ \ \ \textcolor{comment}{//\ 当前圆周点}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00212}00212\ \ \ \ \ \ \ \ \ \ \ \ \ indices[i\ *\ 3\ +\ 2]\ =\ i\ +\ 2;\ \ \ \ \ \ \ \textcolor{comment}{//\ 下一个圆周点（自动闭合）}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00213}00213\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00214}00214\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 单次\ GPU\ 调用绘制整个圆}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00215}00215\ \ \ \ \ \ \ \ \ SDL\_RenderGeometry(\mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}(),\ \textcolor{keyword}{nullptr},\ vertices.data(),\ numVertices,\ indices.data(),\ numIndices);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00216}00216\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00218}00218\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00219}00219\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ segments\ =\ std::max(16,\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(M\_PI\ *\ radius\ /\ 1.5f));}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00220}00220\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ numPoints\ =\ segments\ +\ 1;\ \textcolor{comment}{//\ 中心\ +\ segments+1\ 个圆周点}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00221}00221\ \ \ \ \ \ \ \ \ std::vector<SDL\_Point>\ points(numPoints);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00222}00222\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ step\ =\ 2.0f\ *\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(M\_PI)\ /\ segments;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00223}00223\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <=\ segments;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00224}00224\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ angle\ =\ i\ *\ step;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00225}00225\ \ \ \ \ \ \ \ \ \ \ \ \ points[i]\ =\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00226}00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(cx\ +\ radius\ *\ std::cos(angle)),}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00227}00227\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(cy\ +\ radius\ *\ std::sin(angle))}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00228}00228\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00229}00229\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00230}00230\ \ \ \ \ \ \ \ \ Uint8\ r\ =\ (color\ >>\ 16)\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00231}00231\ \ \ \ \ \ \ \ \ Uint8\ g\ =\ (color\ >>\ 8)\ \ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00232}00232\ \ \ \ \ \ \ \ \ Uint8\ b\ =\ color\ \&\ 0xFF;}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00233}00233\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ pRenderer\ =\ \mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}();}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00234}00234\ \ \ \ \ \ \ \ \ SDL\_SetRenderDrawColor(pRenderer,\ r,\ g,\ b,\ 255);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00235}00235\ \ \ \ \ \ \ \ \ SDL\_RenderDrawLines(pRenderer,\ points.data(),\ numPoints);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00236}00236\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00237}00237\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00238}00238\ }
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00239}\mbox{\hyperlink{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf}{00239}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf}{TextureManager::drawGrid}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ rows,\ \textcolor{keywordtype}{int}\ cols,\ \textcolor{keywordtype}{int}\ cellSize,\ uint32\_t\ color)}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00240}00240\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00241}00241\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ r\ =\ 0;\ r\ <=\ rows;\ r++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00242}00242\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_af9f207db2e64e465e8588a1733708de3}{drawLine}}(x,\ y\ +\ r\ *\ cellSize,\ x\ +\ cols\ *\ cellSize,\ y\ +\ r\ *\ cellSize,\ color);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00243}00243\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00244}00244\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ c\ =\ 0;\ c\ <=\ cols;\ c++)\ \{}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00245}00245\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_af9f207db2e64e465e8588a1733708de3}{drawLine}}(x\ +\ c\ *\ cellSize,\ y,\ x\ +\ c\ *\ cellSize,\ y\ +\ rows\ *\ cellSize,\ color);}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00246}00246\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00247}00247\ \}}
+\DoxyCodeLine{\Hypertarget{TextureManager_8cpp_source_l00248}00248\ }
+
+\end{DoxyCode}

@@ -1,0 +1,24 @@
+\doxysection{Object\+Layer.\+cpp}
+\hypertarget{ObjectLayer_8cpp_source}{}\label{ObjectLayer_8cpp_source}\index{src/ObjectLayer.cpp@{src/ObjectLayer.cpp}}
+\mbox{\hyperlink{ObjectLayer_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ObjectLayer_8h}{ObjectLayer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Level_8h}{Level.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameLib_8h}{GameLib.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00005}\mbox{\hyperlink{classObjectLayer_a028f6d6641d3f955b0bd9de7d26b16b0}{00005}}\ \mbox{\hyperlink{classObjectLayer_a028f6d6641d3f955b0bd9de7d26b16b0}{ObjectLayer::\string~ObjectLayer}}()}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00007}00007\ \ \ \ \ \mbox{\hyperlink{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}{m\_gameObjects}}.clear();}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00008}00008\ \}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00010}\mbox{\hyperlink{classObjectLayer_a99f31f7c25d742c6355952436700d714}{00010}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObjectLayer_a99f31f7c25d742c6355952436700d714}{ObjectLayer::update}}(\mbox{\hyperlink{classLevel}{Level}}*\ pLevel)}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00012}00012\ \ \ \ \ \mbox{\hyperlink{classGameLib_a1b2469409879eaa8b7ebd80f99632d89}{GameLib::forEachCall}}(\mbox{\hyperlink{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}{m\_gameObjects}},\ \&\mbox{\hyperlink{classGameObject_ae83128d0e0efef691417779605ee037c}{GameObject::update}});}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00013}00013\ \}}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00015}\mbox{\hyperlink{classObjectLayer_a5b277887c71673397535d924a7027ea6}{00015}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObjectLayer_a5b277887c71673397535d924a7027ea6}{ObjectLayer::render}}()}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{classGameLib_a1b2469409879eaa8b7ebd80f99632d89}{GameLib::forEachCall}}(\mbox{\hyperlink{classObjectLayer_aecdd42a3b14ac4ec801300279b6f5445}{m\_gameObjects}},\ \&\mbox{\hyperlink{classGameObject_a59f11cba9071a39ba2f486a8364ed536}{GameObject::draw}});}
+\DoxyCodeLine{\Hypertarget{ObjectLayer_8cpp_source_l00018}00018\ \}}
+
+\end{DoxyCode}

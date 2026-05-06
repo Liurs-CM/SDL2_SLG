@@ -1,0 +1,277 @@
+\doxysection{Shape类 参考}
+\hypertarget{classShape}{}\label{classShape}\index{Shape@{Shape}}
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+
+
+Shape 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classShape__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classShape_a576fa65faf5c01bd4880b12fcf3bb1a3}{init\+Health\+Bar\+System}} ()
+\item 
+void \mbox{\hyperlink{classShape_a408cd4bcfb83d325a0b3660bdf81e760}{draw\+Health\+Bar}} (int x, int y, int width, int height, int current\+HP, int max\+HP)
+\item 
+void \mbox{\hyperlink{classShape_af3490b86dd15bc7889a627960adf7340}{Shape\+\_\+genrate}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classShape}{Shape}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classShape_a5e97dd7e48345e9a7601424d46669074}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classShape_aaa8d87171e65e0d8ba3c5459978992a7}{Shape}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{p\+Renderer}} = \mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{Render\+Context\+::get}}()
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classShape_a8da27d8765b3c67c058da77b9ea0da1f}{g\+Health\+Gradient}} = nullptr
+\item 
+\mbox{\hyperlink{classAnimatedGraphic}{Animated\+Graphic}} \mbox{\hyperlink{classShape_af9f12d78ce6961bef6c729c9662e12db}{m\+\_\+current\+Anim}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classShape}{Shape}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classShape_a8f4bb17b2679e5b67f5453913107f731}{s\+\_\+p\+Instance}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{Shape_8h_source}{Shape.\+h}} 第 \mbox{\hyperlink{Shape_8h_source_l00006}{6}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classShape_aaa8d87171e65e0d8ba3c5459978992a7}\label{classShape_aaa8d87171e65e0d8ba3c5459978992a7} 
+\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}}
+{\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8h_source}{Shape.\+h}} 第 \mbox{\hyperlink{Shape_8h_source_l00026}{26}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8h_source_l00015}{Instance()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classShape_aaa8d87171e65e0d8ba3c5459978992a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classShape_a408cd4bcfb83d325a0b3660bdf81e760}\label{classShape_a408cd4bcfb83d325a0b3660bdf81e760} 
+\index{Shape@{Shape}!drawHealthBar@{drawHealthBar}}
+\index{drawHealthBar@{drawHealthBar}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{drawHealthBar()}{drawHealthBar()}}
+{\footnotesize\ttfamily void Shape\+::draw\+Health\+Bar (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{current\+HP,  }\item[{int}]{max\+HP }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8cpp_source}{Shape.\+cpp}} 第 \mbox{\hyperlink{Shape_8cpp_source_l00073}{73}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}, \mbox{\hyperlink{Shape_8h_source_l00029}{g\+Health\+Gradient}} , 以及 \mbox{\hyperlink{Shape_8h_source_l00028}{p\+Renderer}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classShape_a408cd4bcfb83d325a0b3660bdf81e760_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classShape_a408cd4bcfb83d325a0b3660bdf81e760_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classShape_a576fa65faf5c01bd4880b12fcf3bb1a3}\label{classShape_a576fa65faf5c01bd4880b12fcf3bb1a3} 
+\index{Shape@{Shape}!initHealthBarSystem@{initHealthBarSystem}}
+\index{initHealthBarSystem@{initHealthBarSystem}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{initHealthBarSystem()}{initHealthBarSystem()}}
+{\footnotesize\ttfamily void Shape\+::init\+Health\+Bar\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8cpp_source}{Shape.\+cpp}} 第 \mbox{\hyperlink{Shape_8cpp_source_l00057}{57}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Shape_8h_source_l00029}{g\+Health\+Gradient}} , 以及 \mbox{\hyperlink{Shape_8h_source_l00028}{p\+Renderer}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+\_\+genrate()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classShape_a576fa65faf5c01bd4880b12fcf3bb1a3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classShape_a5e97dd7e48345e9a7601424d46669074}\label{classShape_a5e97dd7e48345e9a7601424d46669074} 
+\index{Shape@{Shape}!Instance@{Instance}}
+\index{Instance@{Instance}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classShape}{Shape}} \texorpdfstring{$\ast$}{*} Shape\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8h_source}{Shape.\+h}} 第 \mbox{\hyperlink{Shape_8h_source_l00015}{15}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Shape_8h_source_l00027}{s\+\_\+p\+Instance}} , 以及 \mbox{\hyperlink{Shape_8h_source_l00026}{Shape()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00115}{Game\+::render()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classShape_a5e97dd7e48345e9a7601424d46669074_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classShape_a5e97dd7e48345e9a7601424d46669074_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classShape_af3490b86dd15bc7889a627960adf7340}\label{classShape_af3490b86dd15bc7889a627960adf7340} 
+\index{Shape@{Shape}!Shape\_genrate@{Shape\_genrate}}
+\index{Shape\_genrate@{Shape\_genrate}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Shape\_genrate()}{Shape\_genrate()}}
+{\footnotesize\ttfamily void Shape\+::\+Shape\+\_\+genrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8cpp_source}{Shape.\+cpp}} 第 \mbox{\hyperlink{Shape_8cpp_source_l00008}{8}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameLib_8h_source_l00021}{CELL\+\_\+\+SIZE}}, \mbox{\hyperlink{GameLib_8h_source_l00027}{COLOR\+\_\+\+BLACK}}, \mbox{\hyperlink{GameLib_8h_source_l00031}{COLOR\+\_\+\+BLUE}}, \mbox{\hyperlink{GameLib_8h_source_l00039}{COLOR\+\_\+\+DARK\+\_\+\+GRAY}}, \mbox{\hyperlink{GameLib_8h_source_l00054}{COLOR\+\_\+\+GET\+\_\+A}}, \mbox{\hyperlink{GameLib_8h_source_l00057}{COLOR\+\_\+\+GET\+\_\+B}}, \mbox{\hyperlink{GameLib_8h_source_l00056}{COLOR\+\_\+\+GET\+\_\+G}}, \mbox{\hyperlink{GameLib_8h_source_l00055}{COLOR\+\_\+\+GET\+\_\+R}}, \mbox{\hyperlink{GameLib_8h_source_l00030}{COLOR\+\_\+\+GREEN}}, \mbox{\hyperlink{GameLib_8h_source_l00029}{COLOR\+\_\+\+RED}}, \mbox{\hyperlink{GameLib_8h_source_l00028}{COLOR\+\_\+\+WHITE}}, \mbox{\hyperlink{GameLib_8h_source_l00032}{COLOR\+\_\+\+YELLOW}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00029}{Texture\+Manager\+::draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00180}{Texture\+Manager\+::draw\+Circle()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00239}{Texture\+Manager\+::draw\+Grid()}}, \mbox{\hyperlink{Shape_8cpp_source_l00073}{draw\+Health\+Bar()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00168}{Texture\+Manager\+::draw\+Printf()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00098}{Texture\+Manager\+::draw\+Text()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00133}{Texture\+Manager\+::draw\+Text\+Scale()}}, \mbox{\hyperlink{AnimatedGraphic_8h_source_l00011}{Animated\+Graphic\+::global\+Frame\+\_\+}}, \mbox{\hyperlink{GameLib_8h_source_l00020}{GRID\+\_\+\+COLS}}, \mbox{\hyperlink{GameLib_8h_source_l00019}{GRID\+\_\+\+ROWS}}, \mbox{\hyperlink{GameLib_8h_source_l00017}{GRID\+\_\+X}}, \mbox{\hyperlink{GameLib_8h_source_l00018}{GRID\+\_\+Y}}, \mbox{\hyperlink{Shape_8cpp_source_l00057}{init\+Health\+Bar\+System()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{Shape_8h_source_l00030}{m\+\_\+current\+Anim}}, \mbox{\hyperlink{Shape_8h_source_l00028}{p\+Renderer}} , 以及 \mbox{\hyperlink{GameLib_8h_source_l00165}{Game\+Lib\+::\+Random()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00115}{Game\+::render()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classShape_af3490b86dd15bc7889a627960adf7340_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classShape_af3490b86dd15bc7889a627960adf7340_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classShape_a8da27d8765b3c67c058da77b9ea0da1f}\label{classShape_a8da27d8765b3c67c058da77b9ea0da1f} 
+\index{Shape@{Shape}!gHealthGradient@{gHealthGradient}}
+\index{gHealthGradient@{gHealthGradient}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{gHealthGradient}{gHealthGradient}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Shape\+::g\+Health\+Gradient = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8h_source}{Shape.\+h}} 第 \mbox{\hyperlink{Shape_8h_source_l00029}{29}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00073}{draw\+Health\+Bar()}} , 以及 \mbox{\hyperlink{Shape_8cpp_source_l00057}{init\+Health\+Bar\+System()}}.
+
+\Hypertarget{classShape_af9f12d78ce6961bef6c729c9662e12db}\label{classShape_af9f12d78ce6961bef6c729c9662e12db} 
+\index{Shape@{Shape}!m\_currentAnim@{m\_currentAnim}}
+\index{m\_currentAnim@{m\_currentAnim}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{m\_currentAnim}{m\_currentAnim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimatedGraphic}{Animated\+Graphic}} Shape\+::m\+\_\+current\+Anim\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8h_source}{Shape.\+h}} 第 \mbox{\hyperlink{Shape_8h_source_l00030}{30}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+\_\+genrate()}}.
+
+\Hypertarget{classShape_ae47773e0b9c57484b254b1f2799438df}\label{classShape_ae47773e0b9c57484b254b1f2799438df} 
+\index{Shape@{Shape}!pRenderer@{pRenderer}}
+\index{pRenderer@{pRenderer}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{pRenderer}{pRenderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} Shape\+::p\+Renderer = \mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{Render\+Context\+::get}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8h_source}{Shape.\+h}} 第 \mbox{\hyperlink{Shape_8h_source_l00028}{28}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00073}{draw\+Health\+Bar()}}, \mbox{\hyperlink{Shape_8cpp_source_l00057}{init\+Health\+Bar\+System()}} , 以及 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+\_\+genrate()}}.
+
+\Hypertarget{classShape_a8f4bb17b2679e5b67f5453913107f731}\label{classShape_a8f4bb17b2679e5b67f5453913107f731} 
+\index{Shape@{Shape}!s\_pInstance@{s\_pInstance}}
+\index{s\_pInstance@{s\_pInstance}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{s\_pInstance}{s\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classShape}{Shape}} \texorpdfstring{$\ast$}{*} Shape\+::s\+\_\+p\+Instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Shape_8h_source}{Shape.\+h}} 第 \mbox{\hyperlink{Shape_8h_source_l00027}{27}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8h_source_l00015}{Instance()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{Shape_8h}{Shape.\+h}}\item 
+src/\mbox{\hyperlink{Shape_8cpp}{Shape.\+cpp}}\end{DoxyCompactItemize}

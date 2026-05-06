@@ -1,0 +1,785 @@
+\doxysection{Input\+Handler类 参考}
+\hypertarget{classInputHandler}{}\label{classInputHandler}\index{InputHandler@{InputHandler}}
+
+
+{\ttfamily \#include $<$Input\+Handler.\+h$>$}
+
+
+
+Input\+Handler 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classInputHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classInputHandler_a72ec3b0da1f1747064bf00fc9d180d48}{update}} ()
+\item 
+void \mbox{\hyperlink{classInputHandler_a23b2e1fac565e5bcd5ea393795b7ac67}{clean}} ()
+\item 
+void \mbox{\hyperlink{classInputHandler_ab12b2b63605d7661317ba290ee6b89a3}{reset\+\_\+mouse\+Button\+State}} ()
+\item 
+void \mbox{\hyperlink{classInputHandler_a26679af399a96975ed6e56145cc1c891}{initialise\+Joysticks}} ()
+\item 
+bool \mbox{\hyperlink{classInputHandler_acc459d8a54215929133a9c3f68c3e5ad}{joysticks\+Initialised}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInputHandler_a3afea5f90871baebcbf0303a3a9949c9}{get\+Mouse\+Position}} ()
+\item 
+bool \mbox{\hyperlink{classInputHandler_ab60a988015ec0b4d983dc305062d5b95}{is\+Key\+Down}} (SDL\+\_\+\+Scancode key) const
+\item 
+bool \mbox{\hyperlink{classInputHandler_ae1a0b20e221ed371eb0d6cab3326c91c}{is\+Key\+Pressed}} (SDL\+\_\+\+Scancode key) const
+\item 
+bool \mbox{\hyperlink{classInputHandler_a903957ecb9ff6b3c6534b3c55c54576d}{get\+Mouse\+Button\+State}} (int button\+Number)
+\item 
+bool \mbox{\hyperlink{classInputHandler_a796ce1fa945fbdd008544e9e96dddd62}{get\+Button\+State}} (int joy, int button\+Number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classInputHandler}{Input\+Handler}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInputHandler_a698aa4af4f326a9881835fda251ca996}{Input\+Handler}} ()
+\item 
+\mbox{\hyperlink{classInputHandler_ac1f7efb54b34d433d6ffba62627452b6}{\texorpdfstring{$\sim$}{\string~}\+Input\+Handler}} ()
+\item 
+int \mbox{\hyperlink{classInputHandler_a4acfed351fe6975aa8a7f067839b3b0c}{xvalue}} (int joy, int stick)
+\item 
+int \mbox{\hyperlink{classInputHandler_a5204b72c62b7433595204a121261cce4}{yvalue}} (int joy, int stick)
+\item 
+void \mbox{\hyperlink{classInputHandler_a8544854ae1b484d8d63a692c2a2894d8}{on\+Key\+Down}} ()
+\item 
+void \mbox{\hyperlink{classInputHandler_a504095b5fb4d09684c5559d9a9942347}{on\+Key\+Up}} ()
+\item 
+void \mbox{\hyperlink{classInputHandler_ae0e79260cb14258c2b1b0376dfa57526}{on\+Mouse\+Move}} (SDL\+\_\+\+Event \&event)
+\item 
+void \mbox{\hyperlink{classInputHandler_a54b8f5083c31b5be33c624c3ea011e12}{on\+Mouse\+Button\+Down}} (SDL\+\_\+\+Event \&event)
+\item 
+void \mbox{\hyperlink{classInputHandler_ad884a2ee40b0660147ebb9a804c43ed3}{on\+Mouse\+Button\+Up}} (SDL\+\_\+\+Event \&event)
+\item 
+void \mbox{\hyperlink{classInputHandler_aff057dc49aa3a7ffa32ba243ce88e1c4}{on\+Joystick\+Axis\+Move}} (SDL\+\_\+\+Event \&event)
+\item 
+void \mbox{\hyperlink{classInputHandler_ad9b465c650ff836d4569df7fb1f01d1e}{on\+Joystick\+Button\+Down}} (SDL\+\_\+\+Event \&event)
+\item 
+void \mbox{\hyperlink{classInputHandler_a563cde40533eb752b6c25db074f392f1}{on\+Joystick\+Button\+Up}} (SDL\+\_\+\+Event \&event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ SDL\+\_\+\+Joystick \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classInputHandler_a7273a85187c054c74125b73bbe065242}{m\+\_\+joysticks}}
+\item 
+bool \mbox{\hyperlink{classInputHandler_a4bb562d04d9e29adf095c8296052c6bc}{m\+\_\+b\+Joysticks\+Initialised}}
+\item 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{classVector2D}{Vector2D}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classVector2D}{Vector2D}} \texorpdfstring{$\ast$}{*} $>$ $>$ \mbox{\hyperlink{classInputHandler_a3c032bd032d300bde4edf28e8c951dac}{m\+\_\+joystick\+Values}}
+\item 
+std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ \mbox{\hyperlink{classInputHandler_a0e786bf871ee1867e9baf9aa9abf3977}{m\+\_\+button\+States}}
+\item 
+std\+::array$<$ bool, 3 $>$ \mbox{\hyperlink{classInputHandler_ab10a1551229d199ec59559abe1428628}{m\+\_\+mouse\+Button\+States}} \{\}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInputHandler_aba8e448adf3a9858a1ab3917fe1555a2}{m\+\_\+mouse\+Position}}
+\item 
+const Uint8 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInputHandler_ac7961836b9af15aba904abfb39fd87a7}{m\+\_\+keystates}}
+\item 
+std\+::unordered\+\_\+set$<$ SDL\+\_\+\+Scancode $>$ \mbox{\hyperlink{classInputHandler_ac560fdbbaffae6b6f8cb8ab5847946be}{m\+\_\+keys\+Pressed\+This\+Frame}}
+\item 
+const int \mbox{\hyperlink{classInputHandler_a8543844dac8b086878a849990389cc39}{m\+\_\+joystick\+Dead\+Zone}} = 10000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classInputHandler}{Input\+Handler}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4}{s\+\_\+p\+Instance}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00017}{17}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classInputHandler_a698aa4af4f326a9881835fda251ca996}\label{classInputHandler_a698aa4af4f326a9881835fda251ca996} 
+\index{InputHandler@{InputHandler}!InputHandler@{InputHandler}}
+\index{InputHandler@{InputHandler}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{InputHandler()}{InputHandler()}}
+{\footnotesize\ttfamily Input\+Handler\+::\+Input\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00008}{8}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00056}{m\+\_\+mouse\+Button\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8h_source_l00020}{Instance()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a698aa4af4f326a9881835fda251ca996_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_ac1f7efb54b34d433d6ffba62627452b6}\label{classInputHandler_ac1f7efb54b34d433d6ffba62627452b6} 
+\index{InputHandler@{InputHandler}!````~InputHandler@{\texorpdfstring{$\sim$}{\string~}InputHandler}}
+\index{````~InputHandler@{\texorpdfstring{$\sim$}{\string~}InputHandler}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}InputHandler()}{\string~InputHandler()}}
+{\footnotesize\ttfamily Input\+Handler\+::\texorpdfstring{$\sim$}{\string~}\+Input\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00050}{50}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00057}{m\+\_\+mouse\+Position}}.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classInputHandler_a23b2e1fac565e5bcd5ea393795b7ac67}\label{classInputHandler_a23b2e1fac565e5bcd5ea393795b7ac67} 
+\index{InputHandler@{InputHandler}!clean@{clean}}
+\index{clean@{clean}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void Input\+Handler\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00056}{56}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00053}{m\+\_\+b\+Joysticks\+Initialised}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00052}{m\+\_\+joysticks}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{Game\+::clean()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a23b2e1fac565e5bcd5ea393795b7ac67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a796ce1fa945fbdd008544e9e96dddd62}\label{classInputHandler_a796ce1fa945fbdd008544e9e96dddd62} 
+\index{InputHandler@{InputHandler}!getButtonState@{getButtonState}}
+\index{getButtonState@{getButtonState}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{getButtonState()}{getButtonState()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::get\+Button\+State (\begin{DoxyParamCaption}\item[{int}]{joy,  }\item[{int}]{button\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00043}{43}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00055}{m\+\_\+button\+States}}.
+
+\Hypertarget{classInputHandler_a903957ecb9ff6b3c6534b3c55c54576d}\label{classInputHandler_a903957ecb9ff6b3c6534b3c55c54576d} 
+\index{InputHandler@{InputHandler}!getMouseButtonState@{getMouseButtonState}}
+\index{getMouseButtonState@{getMouseButtonState}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{getMouseButtonState()}{getMouseButtonState()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::get\+Mouse\+Button\+State (\begin{DoxyParamCaption}\item[{int}]{button\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00039}{39}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00056}{m\+\_\+mouse\+Button\+States}}.
+
+\Hypertarget{classInputHandler_a3afea5f90871baebcbf0303a3a9949c9}\label{classInputHandler_a3afea5f90871baebcbf0303a3a9949c9} 
+\index{InputHandler@{InputHandler}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \texorpdfstring{$\ast$}{*} Input\+Handler\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00033}{33}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00057}{m\+\_\+mouse\+Position}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}} , 以及 \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a3afea5f90871baebcbf0303a3a9949c9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a26679af399a96975ed6e56145cc1c891}\label{classInputHandler_a26679af399a96975ed6e56145cc1c891} 
+\index{InputHandler@{InputHandler}!initialiseJoysticks@{initialiseJoysticks}}
+\index{initialiseJoysticks@{initialiseJoysticks}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{initialiseJoysticks()}{initialiseJoysticks()}}
+{\footnotesize\ttfamily void Input\+Handler\+::initialise\+Joysticks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00014}{14}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00053}{m\+\_\+b\+Joysticks\+Initialised}}, \mbox{\hyperlink{InputHandler_8h_source_l00055}{m\+\_\+button\+States}}, \mbox{\hyperlink{InputHandler_8h_source_l00052}{m\+\_\+joysticks}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00054}{m\+\_\+joystick\+Values}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classInputHandler_a26679af399a96975ed6e56145cc1c891_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}\label{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55} 
+\index{InputHandler@{InputHandler}!Instance@{Instance}}
+\index{Instance@{Instance}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classInputHandler}{Input\+Handler}} \texorpdfstring{$\ast$}{*} Input\+Handler\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00020}{20}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8cpp_source_l00008}{Input\+Handler()}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00051}{s\+\_\+p\+Instance}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{Game\+::clean()}}, \mbox{\hyperlink{Game_8cpp_source_l00132}{Game\+::handle\+Events()}}, \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}, \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00058}{Menu\+Main\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00051}{Menu\+Over\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00055}{Menu\+Pause\+State\+::on\+Exit()}}, \mbox{\hyperlink{PlayState_8cpp_source_l00058}{Play\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00025}{Menu\+Main\+State\+::update()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00023}{Menu\+Pause\+State\+::update()}} , 以及 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_ab60a988015ec0b4d983dc305062d5b95}\label{classInputHandler_ab60a988015ec0b4d983dc305062d5b95} 
+\index{InputHandler@{InputHandler}!isKeyDown@{isKeyDown}}
+\index{isKeyDown@{isKeyDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyDown()}{isKeyDown()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::is\+Key\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{key }\end{DoxyParamCaption}) const}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00178}{178}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00058}{m\+\_\+keystates}}.
+
+\Hypertarget{classInputHandler_ae1a0b20e221ed371eb0d6cab3326c91c}\label{classInputHandler_ae1a0b20e221ed371eb0d6cab3326c91c} 
+\index{InputHandler@{InputHandler}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{key }\end{DoxyParamCaption}) const}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00187}{187}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00059}{m\+\_\+keys\+Pressed\+This\+Frame}}.
+
+\Hypertarget{classInputHandler_acc459d8a54215929133a9c3f68c3e5ad}\label{classInputHandler_acc459d8a54215929133a9c3f68c3e5ad} 
+\index{InputHandler@{InputHandler}!joysticksInitialised@{joysticksInitialised}}
+\index{joysticksInitialised@{joysticksInitialised}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{joysticksInitialised()}{joysticksInitialised()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::joysticks\+Initialised (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00032}{32}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00053}{m\+\_\+b\+Joysticks\+Initialised}}.
+
+\Hypertarget{classInputHandler_aff057dc49aa3a7ffa32ba243ce88e1c4}\label{classInputHandler_aff057dc49aa3a7ffa32ba243ce88e1c4} 
+\index{InputHandler@{InputHandler}!onJoystickAxisMove@{onJoystickAxisMove}}
+\index{onJoystickAxisMove@{onJoystickAxisMove}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onJoystickAxisMove()}{onJoystickAxisMove()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Joystick\+Axis\+Move (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00192}{192}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00063}{m\+\_\+joystick\+Dead\+Zone}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00054}{m\+\_\+joystick\+Values}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_aff057dc49aa3a7ffa32ba243ce88e1c4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_ad9b465c650ff836d4569df7fb1f01d1e}\label{classInputHandler_ad9b465c650ff836d4569df7fb1f01d1e} 
+\index{InputHandler@{InputHandler}!onJoystickButtonDown@{onJoystickButtonDown}}
+\index{onJoystickButtonDown@{onJoystickButtonDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onJoystickButtonDown()}{onJoystickButtonDown()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Joystick\+Button\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00265}{265}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00055}{m\+\_\+button\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_ad9b465c650ff836d4569df7fb1f01d1e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a563cde40533eb752b6c25db074f392f1}\label{classInputHandler_a563cde40533eb752b6c25db074f392f1} 
+\index{InputHandler@{InputHandler}!onJoystickButtonUp@{onJoystickButtonUp}}
+\index{onJoystickButtonUp@{onJoystickButtonUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onJoystickButtonUp()}{onJoystickButtonUp()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Joystick\+Button\+Up (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00271}{271}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00055}{m\+\_\+button\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a563cde40533eb752b6c25db074f392f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a8544854ae1b484d8d63a692c2a2894d8}\label{classInputHandler_a8544854ae1b484d8d63a692c2a2894d8} 
+\index{InputHandler@{InputHandler}!onKeyDown@{onKeyDown}}
+\index{onKeyDown@{onKeyDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onKeyDown()}{onKeyDown()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Key\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00165}{165}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00058}{m\+\_\+keystates}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a8544854ae1b484d8d63a692c2a2894d8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a504095b5fb4d09684c5559d9a9942347}\label{classInputHandler_a504095b5fb4d09684c5559d9a9942347} 
+\index{InputHandler@{InputHandler}!onKeyUp@{onKeyUp}}
+\index{onKeyUp@{onKeyUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onKeyUp()}{onKeyUp()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Key\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00173}{173}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00058}{m\+\_\+keystates}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a504095b5fb4d09684c5559d9a9942347_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a54b8f5083c31b5be33c624c3ea011e12}\label{classInputHandler_a54b8f5083c31b5be33c624c3ea011e12} 
+\index{InputHandler@{InputHandler}!onMouseButtonDown@{onMouseButtonDown}}
+\index{onMouseButtonDown@{onMouseButtonDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onMouseButtonDown()}{onMouseButtonDown()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Mouse\+Button\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00122}{122}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00012}{LEFT}}, \mbox{\hyperlink{InputHandler_8h_source_l00056}{m\+\_\+mouse\+Button\+States}}, \mbox{\hyperlink{InputHandler_8h_source_l00013}{MIDDLE}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00014}{RIGHT}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a54b8f5083c31b5be33c624c3ea011e12_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_ad884a2ee40b0660147ebb9a804c43ed3}\label{classInputHandler_ad884a2ee40b0660147ebb9a804c43ed3} 
+\index{InputHandler@{InputHandler}!onMouseButtonUp@{onMouseButtonUp}}
+\index{onMouseButtonUp@{onMouseButtonUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onMouseButtonUp()}{onMouseButtonUp()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Mouse\+Button\+Up (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00140}{140}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00012}{LEFT}}, \mbox{\hyperlink{InputHandler_8h_source_l00056}{m\+\_\+mouse\+Button\+States}}, \mbox{\hyperlink{InputHandler_8h_source_l00013}{MIDDLE}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00014}{RIGHT}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_ad884a2ee40b0660147ebb9a804c43ed3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_ae0e79260cb14258c2b1b0376dfa57526}\label{classInputHandler_ae0e79260cb14258c2b1b0376dfa57526} 
+\index{InputHandler@{InputHandler}!onMouseMove@{onMouseMove}}
+\index{onMouseMove@{onMouseMove}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{onMouseMove()}{onMouseMove()}}
+{\footnotesize\ttfamily void Input\+Handler\+::on\+Mouse\+Move (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00159}{159}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00057}{m\+\_\+mouse\+Position}}, \mbox{\hyperlink{Vector2D_8h_source_l00013}{Vector2\+D\+::set\+X()}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00014}{Vector2\+D\+::set\+Y()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_ae0e79260cb14258c2b1b0376dfa57526_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_ae0e79260cb14258c2b1b0376dfa57526_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_ab12b2b63605d7661317ba290ee6b89a3}\label{classInputHandler_ab12b2b63605d7661317ba290ee6b89a3} 
+\index{InputHandler@{InputHandler}!reset\_mouseButtonState@{reset\_mouseButtonState}}
+\index{reset\_mouseButtonState@{reset\_mouseButtonState}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{reset\_mouseButtonState()}{reset\_mouseButtonState()}}
+{\footnotesize\ttfamily void Input\+Handler\+::reset\+\_\+mouse\+Button\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00309}{309}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00056}{m\+\_\+mouse\+Button\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00058}{Menu\+Main\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00051}{Menu\+Over\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00055}{Menu\+Pause\+State\+::on\+Exit()}} , 以及 \mbox{\hyperlink{PlayState_8cpp_source_l00058}{Play\+State\+::on\+Exit()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_ab12b2b63605d7661317ba290ee6b89a3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a72ec3b0da1f1747064bf00fc9d180d48}\label{classInputHandler_a72ec3b0da1f1747064bf00fc9d180d48} 
+\index{InputHandler@{InputHandler}!update@{update}}
+\index{update@{update}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Input\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{67}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00033}{Game\+::\+Instance()}}, \mbox{\hyperlink{InputHandler_8h_source_l00059}{m\+\_\+keys\+Pressed\+This\+Frame}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00192}{on\+Joystick\+Axis\+Move()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00265}{on\+Joystick\+Button\+Down()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00271}{on\+Joystick\+Button\+Up()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00165}{on\+Key\+Down()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00173}{on\+Key\+Up()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00122}{on\+Mouse\+Button\+Down()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00140}{on\+Mouse\+Button\+Up()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00159}{on\+Mouse\+Move()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00018}{Game\+::quit()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00132}{Game\+::handle\+Events()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a72ec3b0da1f1747064bf00fc9d180d48_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputHandler_a72ec3b0da1f1747064bf00fc9d180d48_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classInputHandler_a4acfed351fe6975aa8a7f067839b3b0c}\label{classInputHandler_a4acfed351fe6975aa8a7f067839b3b0c} 
+\index{InputHandler@{InputHandler}!xvalue@{xvalue}}
+\index{xvalue@{xvalue}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{xvalue()}{xvalue()}}
+{\footnotesize\ttfamily int Input\+Handler\+::xvalue (\begin{DoxyParamCaption}\item[{int}]{joy,  }\item[{int}]{stick }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00277}{277}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00054}{m\+\_\+joystick\+Values}}.
+
+\Hypertarget{classInputHandler_a5204b72c62b7433595204a121261cce4}\label{classInputHandler_a5204b72c62b7433595204a121261cce4} 
+\index{InputHandler@{InputHandler}!yvalue@{yvalue}}
+\index{yvalue@{yvalue}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{yvalue()}{yvalue()}}
+{\footnotesize\ttfamily int Input\+Handler\+::yvalue (\begin{DoxyParamCaption}\item[{int}]{joy,  }\item[{int}]{stick }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8cpp_source}{Input\+Handler.\+cpp}} 第 \mbox{\hyperlink{InputHandler_8cpp_source_l00293}{293}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00054}{m\+\_\+joystick\+Values}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classInputHandler_a4bb562d04d9e29adf095c8296052c6bc}\label{classInputHandler_a4bb562d04d9e29adf095c8296052c6bc} 
+\index{InputHandler@{InputHandler}!m\_bJoysticksInitialised@{m\_bJoysticksInitialised}}
+\index{m\_bJoysticksInitialised@{m\_bJoysticksInitialised}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_bJoysticksInitialised}{m\_bJoysticksInitialised}}
+{\footnotesize\ttfamily bool Input\+Handler\+::m\+\_\+b\+Joysticks\+Initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00053}{53}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00056}{clean()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00014}{initialise\+Joysticks()}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00032}{joysticks\+Initialised()}}.
+
+\Hypertarget{classInputHandler_a0e786bf871ee1867e9baf9aa9abf3977}\label{classInputHandler_a0e786bf871ee1867e9baf9aa9abf3977} 
+\index{InputHandler@{InputHandler}!m\_buttonStates@{m\_buttonStates}}
+\index{m\_buttonStates@{m\_buttonStates}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_buttonStates}{m\_buttonStates}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$bool$>$ $>$ Input\+Handler\+::m\+\_\+button\+States\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00055}{55}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8h_source_l00043}{get\+Button\+State()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00014}{initialise\+Joysticks()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00265}{on\+Joystick\+Button\+Down()}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00271}{on\+Joystick\+Button\+Up()}}.
+
+\Hypertarget{classInputHandler_a8543844dac8b086878a849990389cc39}\label{classInputHandler_a8543844dac8b086878a849990389cc39} 
+\index{InputHandler@{InputHandler}!m\_joystickDeadZone@{m\_joystickDeadZone}}
+\index{m\_joystickDeadZone@{m\_joystickDeadZone}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_joystickDeadZone}{m\_joystickDeadZone}}
+{\footnotesize\ttfamily const int Input\+Handler\+::m\+\_\+joystick\+Dead\+Zone = 10000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00063}{63}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00192}{on\+Joystick\+Axis\+Move()}}.
+
+\Hypertarget{classInputHandler_a7273a85187c054c74125b73bbe065242}\label{classInputHandler_a7273a85187c054c74125b73bbe065242} 
+\index{InputHandler@{InputHandler}!m\_joysticks@{m\_joysticks}}
+\index{m\_joysticks@{m\_joysticks}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_joysticks}{m\_joysticks}}
+{\footnotesize\ttfamily std\+::vector$<$SDL\+\_\+\+Joystick\texorpdfstring{$\ast$}{*}$>$ Input\+Handler\+::m\+\_\+joysticks\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00052}{52}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00056}{clean()}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00014}{initialise\+Joysticks()}}.
+
+\Hypertarget{classInputHandler_a3c032bd032d300bde4edf28e8c951dac}\label{classInputHandler_a3c032bd032d300bde4edf28e8c951dac} 
+\index{InputHandler@{InputHandler}!m\_joystickValues@{m\_joystickValues}}
+\index{m\_joystickValues@{m\_joystickValues}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_joystickValues}{m\_joystickValues}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$\mbox{\hyperlink{classVector2D}{Vector2D}}\texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classVector2D}{Vector2D}}\texorpdfstring{$\ast$}{*}$>$ $>$ Input\+Handler\+::m\+\_\+joystick\+Values\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00054}{54}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00014}{initialise\+Joysticks()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00192}{on\+Joystick\+Axis\+Move()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00277}{xvalue()}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00293}{yvalue()}}.
+
+\Hypertarget{classInputHandler_ac560fdbbaffae6b6f8cb8ab5847946be}\label{classInputHandler_ac560fdbbaffae6b6f8cb8ab5847946be} 
+\index{InputHandler@{InputHandler}!m\_keysPressedThisFrame@{m\_keysPressedThisFrame}}
+\index{m\_keysPressedThisFrame@{m\_keysPressedThisFrame}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_keysPressedThisFrame}{m\_keysPressedThisFrame}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$SDL\+\_\+\+Scancode$>$ Input\+Handler\+::m\+\_\+keys\+Pressed\+This\+Frame\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00059}{59}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00187}{is\+Key\+Pressed()}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{update()}}.
+
+\Hypertarget{classInputHandler_ac7961836b9af15aba904abfb39fd87a7}\label{classInputHandler_ac7961836b9af15aba904abfb39fd87a7} 
+\index{InputHandler@{InputHandler}!m\_keystates@{m\_keystates}}
+\index{m\_keystates@{m\_keystates}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_keystates}{m\_keystates}}
+{\footnotesize\ttfamily const Uint8\texorpdfstring{$\ast$}{*} Input\+Handler\+::m\+\_\+keystates\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00058}{58}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8cpp_source_l00178}{is\+Key\+Down()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00165}{on\+Key\+Down()}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00173}{on\+Key\+Up()}}.
+
+\Hypertarget{classInputHandler_ab10a1551229d199ec59559abe1428628}\label{classInputHandler_ab10a1551229d199ec59559abe1428628} 
+\index{InputHandler@{InputHandler}!m\_mouseButtonStates@{m\_mouseButtonStates}}
+\index{m\_mouseButtonStates@{m\_mouseButtonStates}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_mouseButtonStates}{m\_mouseButtonStates}}
+{\footnotesize\ttfamily std\+::array$<$bool, 3$>$ Input\+Handler\+::m\+\_\+mouse\+Button\+States \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00056}{56}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8h_source_l00039}{get\+Mouse\+Button\+State()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00008}{Input\+Handler()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00122}{on\+Mouse\+Button\+Down()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00140}{on\+Mouse\+Button\+Up()}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00309}{reset\+\_\+mouse\+Button\+State()}}.
+
+\Hypertarget{classInputHandler_aba8e448adf3a9858a1ab3917fe1555a2}\label{classInputHandler_aba8e448adf3a9858a1ab3917fe1555a2} 
+\index{InputHandler@{InputHandler}!m\_mousePosition@{m\_mousePosition}}
+\index{m\_mousePosition@{m\_mousePosition}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{m\_mousePosition}{m\_mousePosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}}\texorpdfstring{$\ast$}{*} Input\+Handler\+::m\+\_\+mouse\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00057}{57}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8h_source_l00033}{get\+Mouse\+Position()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00159}{on\+Mouse\+Move()}} , 以及 \mbox{\hyperlink{InputHandler_8h_source_l00050}{\texorpdfstring{$\sim$}{\string~}\+Input\+Handler()}}.
+
+\Hypertarget{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4}\label{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4} 
+\index{InputHandler@{InputHandler}!s\_pInstance@{s\_pInstance}}
+\index{s\_pInstance@{s\_pInstance}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{s\_pInstance}{s\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInputHandler}{Input\+Handler}} \texorpdfstring{$\ast$}{*} Input\+Handler\+::s\+\_\+p\+Instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{InputHandler_8h_source}{Input\+Handler.\+h}} 第 \mbox{\hyperlink{InputHandler_8h_source_l00051}{51}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{InputHandler_8h_source_l00020}{Instance()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{InputHandler_8h}{Input\+Handler.\+h}}\item 
+src/\mbox{\hyperlink{InputHandler_8cpp}{Input\+Handler.\+cpp}}\end{DoxyCompactItemize}

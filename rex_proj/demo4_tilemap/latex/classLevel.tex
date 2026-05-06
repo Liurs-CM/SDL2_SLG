@@ -1,0 +1,357 @@
+\doxysection{Level类 参考}
+\hypertarget{classLevel}{}\label{classLevel}\index{Level@{Level}}
+
+
+{\ttfamily \#include $<$Level.\+h$>$}
+
+
+
+Level 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{\texorpdfstring{$\sim$}{\string~}\+Level}} ()
+\item 
+void \mbox{\hyperlink{classLevel_a62e412eaad753d2baa2f94239cb80e41}{update}} ()
+\item 
+void \mbox{\hyperlink{classLevel_a4ce1e8089977edfb4a02a7d5b94225c2}{render}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLevel_a562c4c550399622bcd7898330b28885e}{get\+Tilesets}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classLayer}{Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0}{get\+Layers}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classTileLayer}{Tile\+Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLevel_aaf4b6bb1835c91d169953cc873359c49}{get\+Collision\+Layers}} ()
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classTileLayer}{Tile\+Layer}} \texorpdfstring{$\ast$}{*} $>$ \& \mbox{\hyperlink{classLevel_a6b225dd0782ac112cffb3e9a160212fb}{get\+Collidable\+Layers}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLevel_a98b9579253fbf55f7d631853c4cd7e9c}{get\+Player}} ()
+\item 
+void \mbox{\hyperlink{classLevel_aa7fd5d84b67987bd08c8b97d57ed068b}{set\+Player}} (\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}p\+Player)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLevel_a7a696c928ca5d5354db6e50e46d0f67d}{Level}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \mbox{\hyperlink{classLevel_a37d7c848b940eb7fb8fef706b31dfbf5}{m\+\_\+tilesets}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classLayer}{Layer}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classLevel_a7c6c5e6e5574530b6f6d4bb57a626164}{m\+\_\+layers}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classTileLayer}{Tile\+Layer}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classLevel_a316539bbf28012f2b134a9416f236e81}{m\+\_\+collision\+Layers}}
+\item 
+\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLevel_ad25d96764062d594bd8ee0b5a86ccd06}{m\+\_\+p\+Player}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLevel_ac3aabe83d429e91cdac9f1760f253220}{Level\+Parser}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00024}{24}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca} 
+\index{Level@{Level}!````~Level@{\texorpdfstring{$\sim$}{\string~}Level}}
+\index{````~Level@{\texorpdfstring{$\sim$}{\string~}Level}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Level()}{\string~Level()}}
+{\footnotesize\ttfamily Level\+::\texorpdfstring{$\sim$}{\string~}\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Level_8cpp_source}{Level.\+cpp}} 第 \mbox{\hyperlink{Level_8cpp_source_l00012}{12}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00040}{m\+\_\+layers}}.
+
+\Hypertarget{classLevel_a7a696c928ca5d5354db6e50e46d0f67d}\label{classLevel_a7a696c928ca5d5354db6e50e46d0f67d} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8cpp_source}{Level.\+cpp}} 第 \mbox{\hyperlink{Level_8cpp_source_l00010}{10}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classLevel_a6b225dd0782ac112cffb3e9a160212fb}\label{classLevel_a6b225dd0782ac112cffb3e9a160212fb} 
+\index{Level@{Level}!getCollidableLayers@{getCollidableLayers}}
+\index{getCollidableLayers@{getCollidableLayers}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getCollidableLayers()}{getCollidableLayers()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classTileLayer}{Tile\+Layer}} \texorpdfstring{$\ast$}{*} $>$ \& Level\+::get\+Collidable\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00033}{33}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00041}{m\+\_\+collision\+Layers}}.
+
+\Hypertarget{classLevel_aaf4b6bb1835c91d169953cc873359c49}\label{classLevel_aaf4b6bb1835c91d169953cc873359c49} 
+\index{Level@{Level}!getCollisionLayers@{getCollisionLayers}}
+\index{getCollisionLayers@{getCollisionLayers}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getCollisionLayers()}{getCollisionLayers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classTileLayer}{Tile\+Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} Level\+::get\+Collision\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00032}{32}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00041}{m\+\_\+collision\+Layers}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{Level\+Parser\+::parse\+Level()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevel_aaf4b6bb1835c91d169953cc873359c49_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0}\label{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0} 
+\index{Level@{Level}!getLayers@{getLayers}}
+\index{getLayers@{getLayers}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getLayers()}{getLayers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classLayer}{Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} Level\+::get\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00031}{31}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00040}{m\+\_\+layers}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{Level\+Parser\+::parse\+Level()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevel_a98b9579253fbf55f7d631853c4cd7e9c}\label{classLevel_a98b9579253fbf55f7d631853c4cd7e9c} 
+\index{Level@{Level}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*} Level\+::get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00034}{34}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00042}{m\+\_\+p\+Player}}.
+
+\Hypertarget{classLevel_a562c4c550399622bcd7898330b28885e}\label{classLevel_a562c4c550399622bcd7898330b28885e} 
+\index{Level@{Level}!getTilesets@{getTilesets}}
+\index{getTilesets@{getTilesets}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getTilesets()}{getTilesets()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \texorpdfstring{$\ast$}{*} Level\+::get\+Tilesets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00030}{30}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00039}{m\+\_\+tilesets}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{Level\+Parser\+::parse\+Level()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevel_a562c4c550399622bcd7898330b28885e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevel_a4ce1e8089977edfb4a02a7d5b94225c2}\label{classLevel_a4ce1e8089977edfb4a02a7d5b94225c2} 
+\index{Level@{Level}!render@{render}}
+\index{render@{render}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Level\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Level_8cpp_source}{Level.\+cpp}} 第 \mbox{\hyperlink{Level_8cpp_source_l00021}{21}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00040}{m\+\_\+layers}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00033}{Play\+State\+::render()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classLevel_a4ce1e8089977edfb4a02a7d5b94225c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevel_aa7fd5d84b67987bd08c8b97d57ed068b}\label{classLevel_aa7fd5d84b67987bd08c8b97d57ed068b} 
+\index{Level@{Level}!setPlayer@{setPlayer}}
+\index{setPlayer@{setPlayer}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{setPlayer()}{setPlayer()}}
+{\footnotesize\ttfamily void Level\+::set\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}}]{p\+Player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00035}{35}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00042}{m\+\_\+p\+Player}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{Level\+Parser\+::parse\+Object\+Layer()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevel_aa7fd5d84b67987bd08c8b97d57ed068b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevel_a62e412eaad753d2baa2f94239cb80e41}\label{classLevel_a62e412eaad753d2baa2f94239cb80e41} 
+\index{Level@{Level}!update@{update}}
+\index{update@{update}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Level\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Level_8cpp_source}{Level.\+cpp}} 第 \mbox{\hyperlink{Level_8cpp_source_l00030}{30}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00040}{m\+\_\+layers}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classLevel_a62e412eaad753d2baa2f94239cb80e41_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classLevel_ac3aabe83d429e91cdac9f1760f253220}\label{classLevel_ac3aabe83d429e91cdac9f1760f253220} 
+\index{Level@{Level}!LevelParser@{LevelParser}}
+\index{LevelParser@{LevelParser}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{LevelParser}{LevelParser}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classLevelParser}{Level\+Parser}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00037}{37}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classLevel_a316539bbf28012f2b134a9416f236e81}\label{classLevel_a316539bbf28012f2b134a9416f236e81} 
+\index{Level@{Level}!m\_collisionLayers@{m\_collisionLayers}}
+\index{m\_collisionLayers@{m\_collisionLayers}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{m\_collisionLayers}{m\_collisionLayers}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classTileLayer}{Tile\+Layer}}\texorpdfstring{$\ast$}{*}$>$ Level\+::m\+\_\+collision\+Layers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00041}{41}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Level_8h_source_l00033}{get\+Collidable\+Layers()}} , 以及 \mbox{\hyperlink{Level_8h_source_l00032}{get\+Collision\+Layers()}}.
+
+\Hypertarget{classLevel_a7c6c5e6e5574530b6f6d4bb57a626164}\label{classLevel_a7c6c5e6e5574530b6f6d4bb57a626164} 
+\index{Level@{Level}!m\_layers@{m\_layers}}
+\index{m\_layers@{m\_layers}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{m\_layers}{m\_layers}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classLayer}{Layer}}\texorpdfstring{$\ast$}{*}$>$ Level\+::m\+\_\+layers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00040}{40}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Level_8h_source_l00031}{get\+Layers()}}, \mbox{\hyperlink{Level_8cpp_source_l00021}{render()}}, \mbox{\hyperlink{Level_8cpp_source_l00030}{update()}} , 以及 \mbox{\hyperlink{Level_8cpp_source_l00012}{\texorpdfstring{$\sim$}{\string~}\+Level()}}.
+
+\Hypertarget{classLevel_ad25d96764062d594bd8ee0b5a86ccd06}\label{classLevel_ad25d96764062d594bd8ee0b5a86ccd06} 
+\index{Level@{Level}!m\_pPlayer@{m\_pPlayer}}
+\index{m\_pPlayer@{m\_pPlayer}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{m\_pPlayer}{m\_pPlayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}}\texorpdfstring{$\ast$}{*} Level\+::m\+\_\+p\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00042}{42}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Level_8h_source_l00034}{get\+Player()}} , 以及 \mbox{\hyperlink{Level_8h_source_l00035}{set\+Player()}}.
+
+\Hypertarget{classLevel_a37d7c848b940eb7fb8fef706b31dfbf5}\label{classLevel_a37d7c848b940eb7fb8fef706b31dfbf5} 
+\index{Level@{Level}!m\_tilesets@{m\_tilesets}}
+\index{m\_tilesets@{m\_tilesets}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{m\_tilesets}{m\_tilesets}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structTileset}{Tileset}}$>$ Level\+::m\+\_\+tilesets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Level_8h_source}{Level.\+h}} 第 \mbox{\hyperlink{Level_8h_source_l00039}{39}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Level_8h_source_l00030}{get\+Tilesets()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{Level_8h}{Level.\+h}}\item 
+src/\mbox{\hyperlink{Level_8cpp}{Level.\+cpp}}\end{DoxyCompactItemize}

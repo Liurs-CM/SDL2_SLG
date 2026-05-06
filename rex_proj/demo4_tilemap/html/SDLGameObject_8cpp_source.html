@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/SDLGameObject.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">SDLGameObject.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="SDLGameObject_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="SDLGameObject_8h.html">SDLGameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="TextureManager_8h.html">TextureManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="Camera_8h.html">Camera.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="Game_8h.html">Game.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="GameLib_8h.html">GameLib.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classSDLGameObject.html#a19f3c6074f181947371b58880528b770">    7</a></span><a class="code hl_function" href="classSDLGameObject.html#a19f3c6074f181947371b58880528b770">SDLGameObject::SDLGameObject</a>() :  <a class="code hl_class" href="classGameObject.html">GameObject</a>(), </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    m_position(0,0),</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    m_velocity(0,0),</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    m_acceleration(0,0),</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    m_currentRow(1),</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    m_currentFrame(0),</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    m_angle(0),</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    m_alpha(255),</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    m_bPlayedDeathSound(false) </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{ }</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">   18</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">SDLGameObject::load</a>(std::unique_ptr&lt;LoaderParams&gt; <span class="keyword">const</span> &amp;pParams)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> = <a class="code hl_class" href="classVector2D.html">Vector2D</a>(pParams-&gt;getX(), pParams-&gt;getY());</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_variable" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a> = pParams-&gt;getWidth();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a> = pParams-&gt;getHeight();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_variable" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a> = pParams-&gt;getTextureID();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="classSDLGameObject.html#aa5e2fd74464fc97d6bbb82af4567820c">m_numFrames</a> = std::max&lt;uint8_t&gt;(1, pParams-&gt;getNumFrames());</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="classSDLGameObject.html#a64c90350fa4231d0b1345f82ff50a23f">m_animSpeed</a> = std::max&lt;uint8_t&gt;(1, pParams-&gt;getAnimSpeed());</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classSDLGameObject.html#ab703854bfb62a291ad23dc1f01d5190d">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSDLGameObject.html#ab703854bfb62a291ad23dc1f01d5190d">SDLGameObject::draw</a>()</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">m_velocity</a>.<a class="code hl_function" href="classVector2D.html#a527601e47976bcfdac2520817bfee675">getX</a>() &gt;= 0) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85">drawFrame</a>(<a class="code hl_variable" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a>, <a class="code hl_variable" href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">m_positionScreen</a>, <a class="code hl_variable" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a>, <a class="code hl_variable" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a>, <a class="code hl_variable" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a>, <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85">drawFrame</a>(<a class="code hl_variable" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a>, <a class="code hl_variable" href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">m_positionScreen</a>, <a class="code hl_variable" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a>, <a class="code hl_variable" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a>, <a class="code hl_variable" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a>, <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a>, 255, SDL_FLIP_HORIZONTAL);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">SDLGameObject::update</a>()</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">m_velocity</a> += <a class="code hl_variable" href="classSDLGameObject.html#a62c0967676d9bc80367eefee417d47f4">m_acceleration</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> += <a class="code hl_variable" href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">m_velocity</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_variable" href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">m_positionScreen</a> = <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> - <a class="code hl_function" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89">TheCamera::Instance</a>()-&gt;<a class="code hl_function" href="classCamera.html#aec9074b278b84e784cd493ded9e46910">getPosition</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> = <a class="code hl_variable" href="classSDLGameObject.html#a36e37cf3359295267db04c901664c1e1">m_currentAnim</a>.<a class="code hl_function" href="classAnimatedGraphic.html#ad1bf1e18c6656a75668d833c178ea3c8">getCurrentFrame</a>(<a class="code hl_variable" href="classSDLGameObject.html#a64c90350fa4231d0b1345f82ff50a23f">m_animSpeed</a>, <a class="code hl_variable" href="classSDLGameObject.html#aa5e2fd74464fc97d6bbb82af4567820c">m_numFrames</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="ttc" id="aCamera_8h_html"><div class="ttname"><a href="Camera_8h.html">Camera.h</a></div></div>
+<div class="ttc" id="aGameLib_8h_html"><div class="ttname"><a href="GameLib_8h.html">GameLib.h</a></div></div>
+<div class="ttc" id="aGame_8h_html"><div class="ttname"><a href="Game_8h.html">Game.h</a></div></div>
+<div class="ttc" id="aSDLGameObject_8h_html"><div class="ttname"><a href="SDLGameObject_8h.html">SDLGameObject.h</a></div></div>
+<div class="ttc" id="aTextureManager_8h_html"><div class="ttname"><a href="TextureManager_8h.html">TextureManager.h</a></div></div>
+<div class="ttc" id="aclassAnimatedGraphic_html_ad1bf1e18c6656a75668d833c178ea3c8"><div class="ttname"><a href="classAnimatedGraphic.html#ad1bf1e18c6656a75668d833c178ea3c8">AnimatedGraphic::getCurrentFrame</a></div><div class="ttdeci">uint8_t getCurrentFrame(uint8_t m_animSpeed, uint8_t m_numFrames)</div><div class="ttdef"><b>Definition</b> <a href="AnimatedGraphic_8h_source.html#l00013">AnimatedGraphic.h:13</a></div></div>
+<div class="ttc" id="aclassCamera_html_a38bcf7d4fe8373d726b8824ab30efd89"><div class="ttname"><a href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89">Camera::Instance</a></div><div class="ttdeci">static Camera * Instance()</div><div class="ttdef"><b>Definition</b> <a href="Camera_8h_source.html#l00013">Camera.h:13</a></div></div>
+<div class="ttc" id="aclassCamera_html_aec9074b278b84e784cd493ded9e46910"><div class="ttname"><a href="classCamera.html#aec9074b278b84e784cd493ded9e46910">Camera::getPosition</a></div><div class="ttdeci">Vector2D getPosition() const</div><div class="ttdef"><b>Definition</b> <a href="Camera_8h_source.html#l00010">Camera.h:10</a></div></div>
+<div class="ttc" id="aclassGameObject_html"><div class="ttname"><a href="classGameObject.html">GameObject</a></div><div class="ttdef"><b>Definition</b> <a href="GameObject_8h_source.html#l00008">GameObject.h:9</a></div></div>
+<div class="ttc" id="aclassGameObject_html_aa076bd4409a384038567f2d0c8548477"><div class="ttname"><a href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">GameObject::m_textureID</a></div><div class="ttdeci">std::string m_textureID</div><div class="ttdef"><b>Definition</b> <a href="GameObject_8h_source.html#l00019">GameObject.h:19</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a19f3c6074f181947371b58880528b770"><div class="ttname"><a href="classSDLGameObject.html#a19f3c6074f181947371b58880528b770">SDLGameObject::SDLGameObject</a></div><div class="ttdeci">SDLGameObject()</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8cpp_source.html#l00007">SDLGameObject.cpp:7</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a24370c74982f8b6bfa756d0054130a84"><div class="ttname"><a href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">SDLGameObject::m_currentRow</a></div><div class="ttdeci">uint8_t m_currentRow</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00029">SDLGameObject.h:29</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a36e37cf3359295267db04c901664c1e1"><div class="ttname"><a href="classSDLGameObject.html#a36e37cf3359295267db04c901664c1e1">SDLGameObject::m_currentAnim</a></div><div class="ttdeci">AnimatedGraphic m_currentAnim</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00039">SDLGameObject.h:39</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a504c3090fb1a15dcfbe5f57cea6b0143"><div class="ttname"><a href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">SDLGameObject::m_currentFrame</a></div><div class="ttdeci">uint8_t m_currentFrame</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00030">SDLGameObject.h:30</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a5400fc2ad61046e18b416387e5552cda"><div class="ttname"><a href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">SDLGameObject::m_positionScreen</a></div><div class="ttdeci">Vector2D m_positionScreen</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00033">SDLGameObject.h:33</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a62c0967676d9bc80367eefee417d47f4"><div class="ttname"><a href="classSDLGameObject.html#a62c0967676d9bc80367eefee417d47f4">SDLGameObject::m_acceleration</a></div><div class="ttdeci">Vector2D m_acceleration</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00028">SDLGameObject.h:28</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a64c90350fa4231d0b1345f82ff50a23f"><div class="ttname"><a href="classSDLGameObject.html#a64c90350fa4231d0b1345f82ff50a23f">SDLGameObject::m_animSpeed</a></div><div class="ttdeci">uint8_t m_animSpeed</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00037">SDLGameObject.h:37</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a7983783a01d56ee12985e1a0d708f0e0"><div class="ttname"><a href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">SDLGameObject::m_velocity</a></div><div class="ttdeci">Vector2D m_velocity</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00027">SDLGameObject.h:27</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a92bb16fe7c646857fdc02093d58a232a"><div class="ttname"><a href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">SDLGameObject::m_position</a></div><div class="ttdeci">Vector2D m_position</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00026">SDLGameObject.h:26</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a9322e790f0515760f36b62ce35d4a090"><div class="ttname"><a href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">SDLGameObject::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8cpp_source.html#l00037">SDLGameObject.cpp:37</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_aa5d3c6b48ee55cd7293ac09a7adffbf0"><div class="ttname"><a href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">SDLGameObject::m_height</a></div><div class="ttdeci">uint16_t m_height</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00035">SDLGameObject.h:35</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_aa5e2fd74464fc97d6bbb82af4567820c"><div class="ttname"><a href="classSDLGameObject.html#aa5e2fd74464fc97d6bbb82af4567820c">SDLGameObject::m_numFrames</a></div><div class="ttdeci">uint8_t m_numFrames</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00036">SDLGameObject.h:36</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_ab703854bfb62a291ad23dc1f01d5190d"><div class="ttname"><a href="classSDLGameObject.html#ab703854bfb62a291ad23dc1f01d5190d">SDLGameObject::draw</a></div><div class="ttdeci">virtual void draw()</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8cpp_source.html#l00028">SDLGameObject.cpp:28</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_ade865a0eefca735ddafc3d319c566c9f"><div class="ttname"><a href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">SDLGameObject::load</a></div><div class="ttdeci">virtual void load(std::unique_ptr&lt; LoaderParams &gt; const &amp;pParams)</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8cpp_source.html#l00018">SDLGameObject.cpp:18</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_af1a901cd008cb8903fb72f27087c3070"><div class="ttname"><a href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">SDLGameObject::m_width</a></div><div class="ttdeci">uint16_t m_width</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00034">SDLGameObject.h:34</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_a8152a12de458e940d09f2850d8f71b85"><div class="ttname"><a href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85">TextureManager::drawFrame</a></div><div class="ttdeci">void drawFrame(std::string id, Vector2D pos, uint16_t width, uint16_t height, uint8_t currentRow, uint8_t currentFrame, int alpha=255, SDL_RendererFlip flip=SDL_FLIP_NONE)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00055">TextureManager.cpp:55</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_ab5434f5ba0cc3e02623f23699573a5a6"><div class="ttname"><a href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TextureManager::Instance</a></div><div class="ttdeci">static TextureManager * Instance()</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8h_source.html#l00028">TextureManager.h:28</a></div></div>
+<div class="ttc" id="aclassVector2D_html"><div class="ttname"><a href="classVector2D.html">Vector2D</a></div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00006">Vector2D.h:7</a></div></div>
+<div class="ttc" id="aclassVector2D_html_a527601e47976bcfdac2520817bfee675"><div class="ttname"><a href="classVector2D.html#a527601e47976bcfdac2520817bfee675">Vector2D::getX</a></div><div class="ttdeci">float getX()</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00011">Vector2D.h:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,29 @@
+\doxysection{main.\+cpp}
+\hypertarget{main_8cpp_source}{}\label{main_8cpp_source}\index{src/main.cpp@{src/main.cpp}}
+\mbox{\hyperlink{main_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameLib_8h}{GameLib.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00005}\mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{00005}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[])}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00007}00007\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}game\ initing...\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00008}00008\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>init(\textcolor{stringliteral}{"{}SDL2\ Tiled\ World"{}},\ \mbox{\hyperlink{GameLib_8h_a180bbc2e5a9a7645bcb01b9e5d021178}{SCR\_X}},\ \mbox{\hyperlink{GameLib_8h_ac42316a2724692c52c4973ce2f4f5c7f}{SCR\_Y}},\ \mbox{\hyperlink{GameLib_8h_ac9eaa6e6daf0eac52333b01bc6fa823b}{SCR\_W}},\ \mbox{\hyperlink{GameLib_8h_afe18b489773963299583dea3401debf9}{SCR\_H}},\ \textcolor{keyword}{false}))\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00009}00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>running())\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00010}00010\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_adb5563f62c0c82e3e42ec36501aa5698}{handleEvents}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_a79df6376b332d63c9eca0dcee30305c3}{update}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_a15ddd769261d923827a3cdf41499c843}{render}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_ac8e7e425d970ec5d1eba5e2ff3efbc78}{syncFPS}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00016}00016\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}game\ init\ failure\ -\/\ "{}}\ <<\ SDL\_GetError();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00019}00019\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}game\ closing...\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_ad4f36a72a2d06696f7973788606f57fc}{clean}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023\ \}}
+
+\end{DoxyCode}

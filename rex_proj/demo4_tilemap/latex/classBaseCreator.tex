@@ -1,0 +1,73 @@
+\doxysection{Base\+Creator类 参考}
+\hypertarget{classBaseCreator}{}\label{classBaseCreator}\index{BaseCreator@{BaseCreator}}
+
+
+{\ttfamily \#include $<$Game\+Object\+Factory.\+h$>$}
+
+
+
+类 Base\+Creator 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classBaseCreator__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130}{create\+Game\+Object}} () const =0
+\item 
+virtual \mbox{\hyperlink{classBaseCreator_a961384508a4a04cc7920fa85994e991d}{\texorpdfstring{$\sim$}{\string~}\+Base\+Creator}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00008}{8}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classBaseCreator_a961384508a4a04cc7920fa85994e991d}\label{classBaseCreator_a961384508a4a04cc7920fa85994e991d} 
+\index{BaseCreator@{BaseCreator}!````~BaseCreator@{\texorpdfstring{$\sim$}{\string~}BaseCreator}}
+\index{````~BaseCreator@{\texorpdfstring{$\sim$}{\string~}BaseCreator}!BaseCreator@{BaseCreator}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BaseCreator()}{\string~BaseCreator()}}
+{\footnotesize\ttfamily virtual Base\+Creator\+::\texorpdfstring{$\sim$}{\string~}\+Base\+Creator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00012}{12}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130}\label{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130} 
+\index{BaseCreator@{BaseCreator}!createGameObject@{createGameObject}}
+\index{createGameObject@{createGameObject}!BaseCreator@{BaseCreator}}
+\doxysubsubsection{\texorpdfstring{createGameObject()}{createGameObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*} Base\+Creator\+::create\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classCatCreator_a724abdb1a415cffaf004e05160d64ec0}{Cat\+Creator}}, \mbox{\hyperlink{classLevel1BossCreator_ac64dc2588473f71b8a2e9cd65472d27e}{Level1\+Boss\+Creator}}, \mbox{\hyperlink{classMenuButtonCreator_a14fc41fea5097b152c1aad034c627e1e}{Menu\+Button\+Creator}}, \mbox{\hyperlink{classPlayerCreator_ac0c37d0e8fc41afac3f4a5c052d5f042}{Player\+Creator}} , 以及 \mbox{\hyperlink{classScrollingBackgroundCreator_a6f0ee72ee4b0c909546adbfdc6522cfe}{Scrolling\+Background\+Creator}} 内被实现.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameObjectFactory_8h_source_l00041}{Game\+Object\+Factory\+::create()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130_icgraph}
+\end{center}
+\end{figure}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{GameObjectFactory_8h}{Game\+Object\+Factory.\+h}}\end{DoxyCompactItemize}

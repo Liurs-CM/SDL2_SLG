@@ -1,0 +1,298 @@
+\doxysection{Level\+Parser类 参考}
+\hypertarget{classLevelParser}{}\label{classLevelParser}\index{LevelParser@{LevelParser}}
+
+
+{\ttfamily \#include $<$Level\+Parser.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLevelParser_a9d813a327e3df4e604e7aae6e2524546}{parse\+Level}} (const char \texorpdfstring{$\ast$}{*}state\+File)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLevelParser_ae25f39d008db3ab571891efff034d976}{parse\+Tilesets}} (XMLElement \texorpdfstring{$\ast$}{*}p\+Tileset\+Root, std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \texorpdfstring{$\ast$}{*}p\+Tilesets)
+\item 
+void \mbox{\hyperlink{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e}{parse\+Tile\+Layer}} (XMLElement \texorpdfstring{$\ast$}{*}p\+Tile\+Element, std\+::vector$<$ \mbox{\hyperlink{classLayer}{Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}p\+Layers, const std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \texorpdfstring{$\ast$}{*}p\+Tilesets, std\+::vector$<$ \mbox{\hyperlink{classTileLayer}{Tile\+Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}p\+Collision\+Layers)
+\item 
+void \mbox{\hyperlink{classLevelParser_ac1dee9c778d7f19667d31f9b22798357}{parse\+Object\+Properties}} (XMLElement \texorpdfstring{$\ast$}{*}object\+Element, int \&width, int \&height, int \&num\+Frames, std\+::string \&texture\+ID, int \&callback\+ID, int \&anim\+Speed)
+\item 
+void \mbox{\hyperlink{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417}{parse\+Object\+Layer}} (XMLElement \texorpdfstring{$\ast$}{*}p\+Object\+Element, std\+::vector$<$ \mbox{\hyperlink{classLayer}{Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}p\+Layers, \mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}p\+Level)
+\item 
+void \mbox{\hyperlink{classLevelParser_a4a30070533a70ef1544b641ccf5880ba}{parse\+Textures}} (XMLElement \texorpdfstring{$\ast$}{*}p\+Texture\+Root)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLevelParser_a4b80024bd484a2aeb63626cd66c1002a}{m\+\_\+tile\+Size}}
+\item 
+int \mbox{\hyperlink{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}{m\+\_\+width}}
+\item 
+int \mbox{\hyperlink{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c}{m\+\_\+height}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{LevelParser_8h_source}{Level\+Parser.\+h}} 第 \mbox{\hyperlink{LevelParser_8h_source_l00013}{13}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classLevelParser_a9d813a327e3df4e604e7aae6e2524546}\label{classLevelParser_a9d813a327e3df4e604e7aae6e2524546} 
+\index{LevelParser@{LevelParser}!parseLevel@{parseLevel}}
+\index{parseLevel@{parseLevel}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{parseLevel()}{parseLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*} Level\+Parser\+::parse\+Level (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{state\+File }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{29}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{LevelParser_8cpp_source_l00017}{get\+Attribute\+Int()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00024}{get\+Attribute\+String()}}, \mbox{\hyperlink{Level_8h_source_l00032}{Level\+::get\+Collision\+Layers()}}, \mbox{\hyperlink{Level_8h_source_l00031}{Level\+::get\+Layers()}}, \mbox{\hyperlink{Level_8h_source_l00030}{Level\+::get\+Tilesets()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00012}{is\+Element\+Named()}}, \mbox{\hyperlink{LevelParser_8h_source_l00025}{m\+\_\+height}}, \mbox{\hyperlink{LevelParser_8h_source_l00023}{m\+\_\+tile\+Size}}, \mbox{\hyperlink{LevelParser_8h_source_l00024}{m\+\_\+width}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{parse\+Object\+Layer()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00080}{parse\+Textures()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{parse\+Tile\+Layer()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00086}{parse\+Tilesets()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00044}{Play\+State\+::on\+Enter()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a9d813a327e3df4e604e7aae6e2524546_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a9d813a327e3df4e604e7aae6e2524546_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417}\label{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417} 
+\index{LevelParser@{LevelParser}!parseObjectLayer@{parseObjectLayer}}
+\index{parseObjectLayer@{parseObjectLayer}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{parseObjectLayer()}{parseObjectLayer()}}
+{\footnotesize\ttfamily void Level\+Parser\+::parse\+Object\+Layer (\begin{DoxyParamCaption}\item[{XMLElement \texorpdfstring{$\ast$}{*}}]{p\+Object\+Element,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLayer}{Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{p\+Layers,  }\item[{\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}}]{p\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{107}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameObjectFactory_8h_source_l00041}{Game\+Object\+Factory\+::create()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00017}{get\+Attribute\+Int()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00024}{get\+Attribute\+String()}}, \mbox{\hyperlink{ObjectLayer_8h_source_l00014}{Object\+Layer\+::get\+Game\+Objects()}}, \mbox{\hyperlink{GameObjectFactory_8h_source_l00018}{Game\+Object\+Factory\+::\+Instance()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00012}{is\+Element\+Named()}}, \mbox{\hyperlink{classGameObject_a729edce3955766d5c8dfcda6f310392d}{Game\+Object\+::load()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00145}{parse\+Object\+Properties()}} , 以及 \mbox{\hyperlink{Level_8h_source_l00035}{Level\+::set\+Player()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{parse\+Level()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevelParser_ac1dee9c778d7f19667d31f9b22798357}\label{classLevelParser_ac1dee9c778d7f19667d31f9b22798357} 
+\index{LevelParser@{LevelParser}!parseObjectProperties@{parseObjectProperties}}
+\index{parseObjectProperties@{parseObjectProperties}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{parseObjectProperties()}{parseObjectProperties()}}
+{\footnotesize\ttfamily void Level\+Parser\+::parse\+Object\+Properties (\begin{DoxyParamCaption}\item[{XMLElement \texorpdfstring{$\ast$}{*}}]{object\+Element,  }\item[{int \&}]{width,  }\item[{int \&}]{height,  }\item[{int \&}]{num\+Frames,  }\item[{std\+::string \&}]{texture\+ID,  }\item[{int \&}]{callback\+ID,  }\item[{int \&}]{anim\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00145}{145}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{LevelParser_8cpp_source_l00017}{get\+Attribute\+Int()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00024}{get\+Attribute\+String()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00012}{is\+Element\+Named()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{parse\+Object\+Layer()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_ac1dee9c778d7f19667d31f9b22798357_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_ac1dee9c778d7f19667d31f9b22798357_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevelParser_a4a30070533a70ef1544b641ccf5880ba}\label{classLevelParser_a4a30070533a70ef1544b641ccf5880ba} 
+\index{LevelParser@{LevelParser}!parseTextures@{parseTextures}}
+\index{parseTextures@{parseTextures}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{parseTextures()}{parseTextures()}}
+{\footnotesize\ttfamily void Level\+Parser\+::parse\+Textures (\begin{DoxyParamCaption}\item[{XMLElement \texorpdfstring{$\ast$}{*}}]{p\+Texture\+Root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00080}{80}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}} , 以及 \mbox{\hyperlink{TextureManager_8cpp_source_l00011}{Texture\+Manager\+::load()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{parse\+Level()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a4a30070533a70ef1544b641ccf5880ba_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a4a30070533a70ef1544b641ccf5880ba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e}\label{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e} 
+\index{LevelParser@{LevelParser}!parseTileLayer@{parseTileLayer}}
+\index{parseTileLayer@{parseTileLayer}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{parseTileLayer()}{parseTileLayer()}}
+{\footnotesize\ttfamily void Level\+Parser\+::parse\+Tile\+Layer (\begin{DoxyParamCaption}\item[{XMLElement \texorpdfstring{$\ast$}{*}}]{p\+Tile\+Element,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classLayer}{Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{p\+Layers,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \texorpdfstring{$\ast$}{*}}]{p\+Tilesets,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classTileLayer}{Tile\+Layer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{p\+Collision\+Layers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{172}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{LevelParser_8h_source_l00025}{m\+\_\+height}}, \mbox{\hyperlink{LevelParser_8h_source_l00023}{m\+\_\+tile\+Size}}, \mbox{\hyperlink{LevelParser_8h_source_l00024}{m\+\_\+width}}, \mbox{\hyperlink{TileLayer_8h_source_l00019}{Tile\+Layer\+::set\+Map\+Height()}}, \mbox{\hyperlink{TileLayer_8h_source_l00018}{Tile\+Layer\+::set\+Map\+Width()}} , 以及 \mbox{\hyperlink{TileLayer_8h_source_l00016}{Tile\+Layer\+::set\+Tile\+IDs()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{parse\+Level()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLevelParser_ae25f39d008db3ab571891efff034d976}\label{classLevelParser_ae25f39d008db3ab571891efff034d976} 
+\index{LevelParser@{LevelParser}!parseTilesets@{parseTilesets}}
+\index{parseTilesets@{parseTilesets}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{parseTilesets()}{parseTilesets()}}
+{\footnotesize\ttfamily void Level\+Parser\+::parse\+Tilesets (\begin{DoxyParamCaption}\item[{XMLElement \texorpdfstring{$\ast$}{*}}]{p\+Tileset\+Root,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structTileset}{Tileset}} $>$ \texorpdfstring{$\ast$}{*}}]{p\+Tilesets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00086}{86}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Level_8h_source_l00013}{Tileset\+::first\+Grid\+ID}}, \mbox{\hyperlink{Level_8h_source_l00019}{Tileset\+::height}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00011}{Texture\+Manager\+::load()}}, \mbox{\hyperlink{Level_8h_source_l00017}{Tileset\+::margin}}, \mbox{\hyperlink{Level_8h_source_l00021}{Tileset\+::name}}, \mbox{\hyperlink{Level_8h_source_l00020}{Tileset\+::num\+Columns}}, \mbox{\hyperlink{Level_8h_source_l00016}{Tileset\+::spacing}}, \mbox{\hyperlink{Level_8h_source_l00015}{Tileset\+::tile\+Height}}, \mbox{\hyperlink{Level_8h_source_l00014}{Tileset\+::tile\+Width}} , 以及 \mbox{\hyperlink{Level_8h_source_l00018}{Tileset\+::width}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{parse\+Level()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_ae25f39d008db3ab571891efff034d976_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLevelParser_ae25f39d008db3ab571891efff034d976_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c}\label{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c} 
+\index{LevelParser@{LevelParser}!m\_height@{m\_height}}
+\index{m\_height@{m\_height}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{m\_height}{m\_height}}
+{\footnotesize\ttfamily int Level\+Parser\+::m\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8h_source}{Level\+Parser.\+h}} 第 \mbox{\hyperlink{LevelParser_8h_source_l00025}{25}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{parse\+Level()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{parse\+Tile\+Layer()}}.
+
+\Hypertarget{classLevelParser_a4b80024bd484a2aeb63626cd66c1002a}\label{classLevelParser_a4b80024bd484a2aeb63626cd66c1002a} 
+\index{LevelParser@{LevelParser}!m\_tileSize@{m\_tileSize}}
+\index{m\_tileSize@{m\_tileSize}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{m\_tileSize}{m\_tileSize}}
+{\footnotesize\ttfamily int Level\+Parser\+::m\+\_\+tile\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8h_source}{Level\+Parser.\+h}} 第 \mbox{\hyperlink{LevelParser_8h_source_l00023}{23}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{parse\+Level()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{parse\+Tile\+Layer()}}.
+
+\Hypertarget{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}\label{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad} 
+\index{LevelParser@{LevelParser}!m\_width@{m\_width}}
+\index{m\_width@{m\_width}!LevelParser@{LevelParser}}
+\doxysubsubsection{\texorpdfstring{m\_width}{m\_width}}
+{\footnotesize\ttfamily int Level\+Parser\+::m\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8h_source}{Level\+Parser.\+h}} 第 \mbox{\hyperlink{LevelParser_8h_source_l00024}{24}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{parse\+Level()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00172}{parse\+Tile\+Layer()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{LevelParser_8h}{Level\+Parser.\+h}}\item 
+src/\mbox{\hyperlink{LevelParser_8cpp}{Level\+Parser.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="MenuButton::setCallback" name="MenuButton::setCallback">
+<area shape="rect" id="Node000001" title=" " alt="" coords="511,55,696,80"/>
+<area shape="rect" id="Node000002" href="$classMenuMainState.html#afd7368e00cceec1f5b868635fd4d05f6" title=" " alt="" coords="245,5,459,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="524,55,417,33,418,28,525,49"/>
+<area shape="rect" id="Node000004" href="$classMenuOverState.html#ae8975ea54e66744f830f1fe29f76b6d9" title=" " alt="" coords="245,55,459,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="497,70,459,70,459,65,497,65"/>
+<area shape="rect" id="Node000006" href="$classMenuPauseState.html#a2aa960be508029ee135fabf2e7c78594" title=" " alt="" coords="241,104,463,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="525,85,418,107,417,101,524,80"/>
+<area shape="rect" id="Node000003" href="$classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,5,191,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="231,21,191,21,191,15,231,15"/>
+<area shape="rect" id="Node000005" href="$classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,55,190,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="231,70,190,70,190,65,231,65"/>
+<area shape="rect" id="Node000007" href="$classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,104,193,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="228,119,193,119,193,114,228,114"/>
+</map>

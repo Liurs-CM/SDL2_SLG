@@ -1,0 +1,7 @@
+<map id="MenuMainState::s_exitFromMenu" name="MenuMainState::s_exitFromMenu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,31,476,56"/>
+<area shape="rect" id="Node000002" href="$classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="5,5,188,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,33,188,30,188,24,222,28"/>
+<area shape="rect" id="Node000003" href="$classMenuMainState.html#aaa1ed1b8d8f785b657e0a4114899c4a1" title=" " alt="" coords="8,55,185,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,58,186,62,185,56,222,53"/>
+</map>

@@ -1,0 +1,379 @@
+\doxysection{Game\+State\+Machine类 参考}
+\hypertarget{classGameStateMachine}{}\label{classGameStateMachine}\index{GameStateMachine@{GameStateMachine}}
+
+
+{\ttfamily \#include $<$Game\+State\+Machine.\+h$>$}
+
+
+
+Game\+State\+Machine 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classGameStateMachine__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameStateMachine_af44901f3f0ead9f2534cf3cdd5e122c8}{Game\+State\+Machine}} ()
+\item 
+void \mbox{\hyperlink{classGameStateMachine_a7391cf427e60eea13232085ed6767dcc}{push\+State}} (\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*}p\+State)
+\item 
+void \mbox{\hyperlink{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}{change\+State}} (\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*}p\+State)
+\item 
+void \mbox{\hyperlink{classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f}{pop\+State}} ()
+\item 
+void \mbox{\hyperlink{classGameStateMachine_a7a3be350727fff550f09cc0499398ece}{update}} ()
+\item 
+void \mbox{\hyperlink{classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5}{render}} ()
+\item 
+void \mbox{\hyperlink{classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4}{clean}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*} $>$ \& \mbox{\hyperlink{classGameStateMachine_a0c0cb8880dacfcc4cb37077b14ad95ff}{get\+Game\+States}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695}{pop\+State\+Private}} ()
+\item 
+void \mbox{\hyperlink{classGameStateMachine_af65df6fca772a845852199aa5db0ef39}{change\+State\+Private}} (\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*}p\+State)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\+\_\+game\+States}}
+\item 
+\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557}{new\+State}}
+\item 
+bool \mbox{\hyperlink{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}{pop\+State\+Flag}}
+\item 
+bool \mbox{\hyperlink{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}{change\+State\+Flag}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8h_source}{Game\+State\+Machine.\+h}} 第 \mbox{\hyperlink{GameStateMachine_8h_source_l00006}{6}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classGameStateMachine_af44901f3f0ead9f2534cf3cdd5e122c8}\label{classGameStateMachine_af44901f3f0ead9f2534cf3cdd5e122c8} 
+\index{GameStateMachine@{GameStateMachine}!GameStateMachine@{GameStateMachine}}
+\index{GameStateMachine@{GameStateMachine}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{GameStateMachine()}{GameStateMachine()}}
+{\footnotesize\ttfamily Game\+State\+Machine\+::\+Game\+State\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8h_source}{Game\+State\+Machine.\+h}} 第 \mbox{\hyperlink{GameStateMachine_8h_source_l00009}{9}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}\label{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d} 
+\index{GameStateMachine@{GameStateMachine}!changeState@{changeState}}
+\index{changeState@{changeState}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::change\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*}}]{p\+State }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{101}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00023}{change\+State\+Flag}} , 以及 \mbox{\hyperlink{GameStateMachine_8h_source_l00021}{new\+State}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00132}{Game\+::handle\+Events()}}, \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00013}{Menu\+Over\+State\+::s\+\_\+game\+Over\+To\+Main()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00014}{Menu\+Main\+State\+::s\+\_\+menu\+To\+Play()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00013}{Menu\+Pause\+State\+::s\+\_\+pause\+To\+Main()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00018}{Menu\+Over\+State\+::s\+\_\+restart\+Play()}}, \mbox{\hyperlink{Game_8cpp_source_l00107}{Game\+::set\+Current\+Level()}} , 以及 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameStateMachine_af65df6fca772a845852199aa5db0ef39}\label{classGameStateMachine_af65df6fca772a845852199aa5db0ef39} 
+\index{GameStateMachine@{GameStateMachine}!changeStatePrivate@{changeStatePrivate}}
+\index{changeStatePrivate@{changeStatePrivate}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{changeStatePrivate()}{changeStatePrivate()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::change\+State\+Private (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*}}]{p\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00023}{23}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{Game\+State\+::get\+State\+ID()}} , 以及 \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{m\+\_\+game\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_af65df6fca772a845852199aa5db0ef39_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_af65df6fca772a845852199aa5db0ef39_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4}\label{classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4} 
+\index{GameStateMachine@{GameStateMachine}!clean@{clean}}
+\index{clean@{clean}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00085}{85}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{m\+\_\+game\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{Game\+::clean()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameStateMachine_a0c0cb8880dacfcc4cb37077b14ad95ff}\label{classGameStateMachine_a0c0cb8880dacfcc4cb37077b14ad95ff} 
+\index{GameStateMachine@{GameStateMachine}!getGameStates@{getGameStates}}
+\index{getGameStates@{getGameStates}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{getGameStates()}{getGameStates()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*} $>$ \& Game\+State\+Machine\+::get\+Game\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8h_source}{Game\+State\+Machine.\+h}} 第 \mbox{\hyperlink{GameStateMachine_8h_source_l00016}{16}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{m\+\_\+game\+States}}.
+
+\Hypertarget{classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f}\label{classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f} 
+\index{GameStateMachine@{GameStateMachine}!popState@{popState}}
+\index{popState@{popState}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{popState()}{popState()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::pop\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00096}{96}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00022}{pop\+State\+Flag}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00018}{Menu\+Pause\+State\+::s\+\_\+resume\+Play()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695}\label{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695} 
+\index{GameStateMachine@{GameStateMachine}!popStatePrivate@{popStatePrivate}}
+\index{popStatePrivate@{popStatePrivate}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{popStatePrivate()}{popStatePrivate()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::pop\+State\+Private (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00011}{11}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{m\+\_\+game\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameStateMachine_a7391cf427e60eea13232085ed6767dcc}\label{classGameStateMachine_a7391cf427e60eea13232085ed6767dcc} 
+\index{GameStateMachine@{GameStateMachine}!pushState@{pushState}}
+\index{pushState@{pushState}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{pushState()}{pushState()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::push\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*}}]{p\+State }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00004}{4}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{m\+\_\+game\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_a7391cf427e60eea13232085ed6767dcc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5}\label{classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5} 
+\index{GameStateMachine@{GameStateMachine}!render@{render}}
+\index{render@{render}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00077}{77}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{m\+\_\+game\+States}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00115}{Game\+::render()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameStateMachine_a7a3be350727fff550f09cc0499398ece}\label{classGameStateMachine_a7a3be350727fff550f09cc0499398ece} 
+\index{GameStateMachine@{GameStateMachine}!update@{update}}
+\index{update@{update}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+State\+Machine\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8cpp_source}{Game\+State\+Machine.\+cpp}} 第 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{58}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8h_source_l00023}{change\+State\+Flag}}, \mbox{\hyperlink{GameStateMachine_8cpp_source_l00023}{change\+State\+Private()}}, \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{m\+\_\+game\+States}}, \mbox{\hyperlink{GameStateMachine_8h_source_l00021}{new\+State}}, \mbox{\hyperlink{GameStateMachine_8h_source_l00022}{pop\+State\+Flag}} , 以及 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00011}{pop\+State\+Private()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00127}{Game\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_a7a3be350727fff550f09cc0499398ece_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameStateMachine_a7a3be350727fff550f09cc0499398ece_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}\label{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4} 
+\index{GameStateMachine@{GameStateMachine}!changeStateFlag@{changeStateFlag}}
+\index{changeStateFlag@{changeStateFlag}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{changeStateFlag}{changeStateFlag}}
+{\footnotesize\ttfamily bool Game\+State\+Machine\+::change\+State\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8h_source}{Game\+State\+Machine.\+h}} 第 \mbox{\hyperlink{GameStateMachine_8h_source_l00023}{23}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{change\+State()}} , 以及 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{update()}}.
+
+\Hypertarget{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}\label{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7} 
+\index{GameStateMachine@{GameStateMachine}!m\_gameStates@{m\_gameStates}}
+\index{m\_gameStates@{m\_gameStates}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{m\_gameStates}{m\_gameStates}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classGameState}{Game\+State}}\texorpdfstring{$\ast$}{*}$>$ Game\+State\+Machine\+::m\+\_\+game\+States\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8h_source}{Game\+State\+Machine.\+h}} 第 \mbox{\hyperlink{GameStateMachine_8h_source_l00018}{18}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00023}{change\+State\+Private()}}, \mbox{\hyperlink{GameStateMachine_8cpp_source_l00085}{clean()}}, \mbox{\hyperlink{GameStateMachine_8h_source_l00016}{get\+Game\+States()}}, \mbox{\hyperlink{GameStateMachine_8cpp_source_l00011}{pop\+State\+Private()}}, \mbox{\hyperlink{GameStateMachine_8cpp_source_l00004}{push\+State()}}, \mbox{\hyperlink{GameStateMachine_8cpp_source_l00077}{render()}} , 以及 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{update()}}.
+
+\Hypertarget{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557}\label{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557} 
+\index{GameStateMachine@{GameStateMachine}!newState@{newState}}
+\index{newState@{newState}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{newState}{newState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameState}{Game\+State}}\texorpdfstring{$\ast$}{*} Game\+State\+Machine\+::new\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8h_source}{Game\+State\+Machine.\+h}} 第 \mbox{\hyperlink{GameStateMachine_8h_source_l00021}{21}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{change\+State()}} , 以及 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{update()}}.
+
+\Hypertarget{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}\label{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73} 
+\index{GameStateMachine@{GameStateMachine}!popStateFlag@{popStateFlag}}
+\index{popStateFlag@{popStateFlag}!GameStateMachine@{GameStateMachine}}
+\doxysubsubsection{\texorpdfstring{popStateFlag}{popStateFlag}}
+{\footnotesize\ttfamily bool Game\+State\+Machine\+::pop\+State\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameStateMachine_8h_source}{Game\+State\+Machine.\+h}} 第 \mbox{\hyperlink{GameStateMachine_8h_source_l00022}{22}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00096}{pop\+State()}} , 以及 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{update()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{GameStateMachine_8h}{Game\+State\+Machine.\+h}}\item 
+src/\mbox{\hyperlink{GameStateMachine_8cpp}{Game\+State\+Machine.\+cpp}}\end{DoxyCompactItemize}

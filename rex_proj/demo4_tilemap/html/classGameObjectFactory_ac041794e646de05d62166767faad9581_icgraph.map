@@ -1,0 +1,21 @@
+<map id="GameObjectFactory::Instance" name="GameObjectFactory::Instance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="703,55,860,95"/>
+<area shape="rect" id="Node000002" href="$classGame.html#a04464aa1c667b81f2c0fb2d4f7b0ac83" title=" " alt="" coords="515,5,605,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="690,54,605,32,606,27,691,49"/>
+<area shape="rect" id="Node000003" href="$classLevelParser.html#a45e78b13e41a2cb2afaf97d60639b417" title=" " alt="" coords="469,55,651,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="689,78,651,78,651,73,689,73"/>
+<area shape="rect" id="Node000006" href="$classStateParser.html#acf8695d64d8d3b9f2900b8a707729b08" title=" " alt="" coords="465,131,655,156"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="703,102,603,133,602,128,702,97"/>
+<area shape="rect" id="Node000004" href="$classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="241,60,417,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="455,77,417,76,418,71,455,71"/>
+<area shape="rect" id="Node000005" href="$classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="28,57,171,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="227,74,171,73,171,68,227,69"/>
+<area shape="rect" id="Node000007" href="$classStateParser.html#ae4b0e2e1350675193e1114c13f3e5e02" title=" " alt="" coords="242,151,417,176"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="452,155,417,158,417,153,451,150"/>
+<area shape="rect" id="Node000008" href="$classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,107,191,132"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="248,151,166,135,167,129,249,145"/>
+<area shape="rect" id="Node000009" href="$classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,156,190,181"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="228,168,190,169,190,164,228,163"/>
+<area shape="rect" id="Node000010" href="$classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,205,193,231"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="263,182,154,208,153,203,261,177"/>
+</map>

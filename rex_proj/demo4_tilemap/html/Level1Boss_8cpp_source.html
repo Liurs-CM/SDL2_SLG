@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/Level1Boss.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Level1Boss.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Level1Boss_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="Level1Boss_8h.html">Level1Boss.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="SoundManager_8h.html">SoundManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classLevel1Boss.html#a303ee6c7dbcbef479d0bd334a5a193b0">    4</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLevel1Boss.html#a303ee6c7dbcbef479d0bd334a5a193b0">Level1Boss::update</a>()</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="classLevel1Boss.html#ac52b43e1fb205c4649f901482e63c293">m_entered</a>)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a>.<a class="code hl_function" href="classVector2D.html#a527601e47976bcfdac2520817bfee675">getX</a>() &lt; (<a class="code hl_variable" href="GameLib_8h.html#ac9eaa6e6daf0eac52333b01bc6fa823b">SCR_W</a> - (<a class="code hl_variable" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a> + 20)))</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            <a class="code hl_variable" href="classLevel1Boss.html#ac52b43e1fb205c4649f901482e63c293">m_entered</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;boss enter pos: &quot;</span> &lt;&lt; <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_function" href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">SDLGameObject::update</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a>.<a class="code hl_function" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b">getY</a>() + <a class="code hl_variable" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a> &gt;= <a class="code hl_variable" href="GameLib_8h.html#afe18b489773963299583dea3401debf9">SCR_H</a>)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">m_velocity</a>.<a class="code hl_function" href="classVector2D.html#a9b47adcbdf2c10f3ba893285b5c34709">setY</a>(-1);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a>.<a class="code hl_function" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b">getY</a>() &lt;= 0)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">m_velocity</a>.<a class="code hl_function" href="classVector2D.html#a9b47adcbdf2c10f3ba893285b5c34709">setY</a>(1);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+</div>
+<div class="ttc" id="aGameLib_8h_html_ac9eaa6e6daf0eac52333b01bc6fa823b"><div class="ttname"><a href="GameLib_8h.html#ac9eaa6e6daf0eac52333b01bc6fa823b">SCR_W</a></div><div class="ttdeci">constexpr uint16_t SCR_W</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00010">GameLib.h:10</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_afe18b489773963299583dea3401debf9"><div class="ttname"><a href="GameLib_8h.html#afe18b489773963299583dea3401debf9">SCR_H</a></div><div class="ttdeci">constexpr uint16_t SCR_H</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00011">GameLib.h:11</a></div></div>
+<div class="ttc" id="aLevel1Boss_8h_html"><div class="ttname"><a href="Level1Boss_8h.html">Level1Boss.h</a></div></div>
+<div class="ttc" id="aSoundManager_8h_html"><div class="ttname"><a href="SoundManager_8h.html">SoundManager.h</a></div></div>
+<div class="ttc" id="aclassLevel1Boss_html_a303ee6c7dbcbef479d0bd334a5a193b0"><div class="ttname"><a href="classLevel1Boss.html#a303ee6c7dbcbef479d0bd334a5a193b0">Level1Boss::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition</b> <a href="Level1Boss_8cpp_source.html#l00004">Level1Boss.cpp:4</a></div></div>
+<div class="ttc" id="aclassLevel1Boss_html_ac52b43e1fb205c4649f901482e63c293"><div class="ttname"><a href="classLevel1Boss.html#ac52b43e1fb205c4649f901482e63c293">Level1Boss::m_entered</a></div><div class="ttdeci">bool m_entered</div><div class="ttdef"><b>Definition</b> <a href="Level1Boss_8h_source.html#l00021">Level1Boss.h:21</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a7983783a01d56ee12985e1a0d708f0e0"><div class="ttname"><a href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">SDLGameObject::m_velocity</a></div><div class="ttdeci">Vector2D m_velocity</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00027">SDLGameObject.h:27</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a92bb16fe7c646857fdc02093d58a232a"><div class="ttname"><a href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">SDLGameObject::m_position</a></div><div class="ttdeci">Vector2D m_position</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00026">SDLGameObject.h:26</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a9322e790f0515760f36b62ce35d4a090"><div class="ttname"><a href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">SDLGameObject::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8cpp_source.html#l00037">SDLGameObject.cpp:37</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_aa5d3c6b48ee55cd7293ac09a7adffbf0"><div class="ttname"><a href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">SDLGameObject::m_height</a></div><div class="ttdeci">uint16_t m_height</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00035">SDLGameObject.h:35</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_af1a901cd008cb8903fb72f27087c3070"><div class="ttname"><a href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">SDLGameObject::m_width</a></div><div class="ttdeci">uint16_t m_width</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00034">SDLGameObject.h:34</a></div></div>
+<div class="ttc" id="aclassVector2D_html_a527601e47976bcfdac2520817bfee675"><div class="ttname"><a href="classVector2D.html#a527601e47976bcfdac2520817bfee675">Vector2D::getX</a></div><div class="ttdeci">float getX()</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00011">Vector2D.h:11</a></div></div>
+<div class="ttc" id="aclassVector2D_html_a5b797fb62a3c21ced0cc8e27afd62f8b"><div class="ttname"><a href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b">Vector2D::getY</a></div><div class="ttdeci">float getY()</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00012">Vector2D.h:12</a></div></div>
+<div class="ttc" id="aclassVector2D_html_a9b47adcbdf2c10f3ba893285b5c34709"><div class="ttname"><a href="classVector2D.html#a9b47adcbdf2c10f3ba893285b5c34709">Vector2D::setY</a></div><div class="ttdeci">void setY(float y)</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00014">Vector2D.h:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

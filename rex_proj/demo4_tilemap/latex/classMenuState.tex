@@ -1,0 +1,143 @@
+\doxysection{Menu\+State类 参考}
+\hypertarget{classMenuState}{}\label{classMenuState}\index{MenuState@{MenuState}}
+
+
+{\ttfamily \#include $<$Menu\+State.\+h$>$}
+
+
+
+类 Menu\+State 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Menu\+State 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classMenuState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classMenuState_abbd5869601cb7673c38e9deb44b4342a}{\texorpdfstring{$\sim$}{\string~}\+Menu\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameState_adc1bfdf7ee7c1f48e4841995db4e16c3}{\texorpdfstring{$\sim$}{\string~}\+Game\+State}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classGameState_ab2864bfa04f92f6966861a1f2883bda0}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classGameState_abb892a3560e8fbedb3e4526af5deed7b}{render}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classGameState_ad17154015d2de5e669067c34d2cfe5b3}{on\+Enter}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classGameState_aed6186fd65fefb5460f89ceed82829a1}{on\+Exit}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{get\+State\+ID}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}}) ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classMenuState_a52b9dc2da4b74bcf878e09d697e1d53e}{set\+Callbacks}} (const std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \&callbacks)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameState_a4fa0a2bf50315c4a35a3890a0adcee5c}{Game\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\+\_\+callbacks}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGameState_a5738bb77af0103b4419c0669a61dc23b}{m\+\_\+loading\+Complete}}
+\item 
+bool \mbox{\hyperlink{classGameState_abd2cc9eda4f7ec4cca4fb86d76a02830}{m\+\_\+exiting}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\+\_\+texture\+IDList}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{MenuState_8h_source}{Menu\+State.\+h}} 第 \mbox{\hyperlink{MenuState_8h_source_l00005}{5}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classMenuState_a43d24eed2595e1ed609640189a96d835}\label{classMenuState_a43d24eed2595e1ed609640189a96d835} 
+\index{MenuState@{MenuState}!Callback@{Callback}}
+\index{Callback@{Callback}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{Callback}{Callback}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Menu\+State\+::\+Callback) ()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuState_8h_source}{Menu\+State.\+h}} 第 \mbox{\hyperlink{MenuState_8h_source_l00010}{10}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classMenuState_abbd5869601cb7673c38e9deb44b4342a}\label{classMenuState_abbd5869601cb7673c38e9deb44b4342a} 
+\index{MenuState@{MenuState}!````~MenuState@{\texorpdfstring{$\sim$}{\string~}MenuState}}
+\index{````~MenuState@{\texorpdfstring{$\sim$}{\string~}MenuState}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MenuState()}{\string~MenuState()}}
+{\footnotesize\ttfamily virtual Menu\+State\+::\texorpdfstring{$\sim$}{\string~}\+Menu\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuState_8h_source}{Menu\+State.\+h}} 第 \mbox{\hyperlink{MenuState_8h_source_l00008}{8}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classMenuState_a52b9dc2da4b74bcf878e09d697e1d53e}\label{classMenuState_a52b9dc2da4b74bcf878e09d697e1d53e} 
+\index{MenuState@{MenuState}!setCallbacks@{setCallbacks}}
+\index{setCallbacks@{setCallbacks}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{setCallbacks()}{setCallbacks()}}
+{\footnotesize\ttfamily virtual void Menu\+State\+::set\+Callbacks (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \&}]{callbacks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classMenuMainState_afd7368e00cceec1f5b868635fd4d05f6}{Menu\+Main\+State}}, \mbox{\hyperlink{classMenuOverState_ae8975ea54e66744f830f1fe29f76b6d9}{Menu\+Over\+State}} , 以及 \mbox{\hyperlink{classMenuPauseState_a2aa960be508029ee135fabf2e7c78594}{Menu\+Pause\+State}} 内被实现.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}\label{classMenuState_a4ac06f7bc867dc879a853a73a33de68a} 
+\index{MenuState@{MenuState}!m\_callbacks@{m\_callbacks}}
+\index{m\_callbacks@{m\_callbacks}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{m\_callbacks}{m\_callbacks}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}}$>$ Menu\+State\+::m\+\_\+callbacks\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuState_8h_source}{Menu\+State.\+h}} 第 \mbox{\hyperlink{MenuState_8h_source_l00012}{12}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00045}{Menu\+Main\+State\+::on\+Enter()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{Menu\+Over\+State\+::on\+Enter()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{Menu\+Pause\+State\+::on\+Enter()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{MenuState_8h}{Menu\+State.\+h}}\end{DoxyCompactItemize}

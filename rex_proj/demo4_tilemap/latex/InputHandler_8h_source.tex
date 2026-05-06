@@ -1,0 +1,88 @@
+\doxysection{Input\+Handler.\+h}
+\hypertarget{InputHandler_8h_source}{}\label{InputHandler_8h_source}\index{inc/InputHandler.h@{inc/InputHandler.h}}
+\mbox{\hyperlink{InputHandler_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_InputHandler\_\_}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_InputHandler\_\_}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vector2D_8h}{Vector2D.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00010}\mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56e}{00010}}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56e}{mouse\_buttons}}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00012}\mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56eadb45120aafd37a973140edee24708065}{00012}}\ \ \ \ \ \mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56eadb45120aafd37a973140edee24708065}{LEFT}}\ =\ 0,}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00013}\mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56ea1a2710fb8b50ea593b207d1e79fea574}{00013}}\ \ \ \ \ \mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56ea1a2710fb8b50ea593b207d1e79fea574}{MIDDLE}}\ =\ 1,}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00014}00014\ \ \ \ \ \mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56eaec8379af7490bb9eaaf579cf17876f38}{RIGHT}}\ =\ 2}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00015}\mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56eaec8379af7490bb9eaaf579cf17876f38}{00015}}\ \};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00017}\mbox{\hyperlink{classInputHandler}{00017}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInputHandler}{InputHandler}}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00018}00018\ \{}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00020}\mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classInputHandler}{InputHandler}}*\ \mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{Instance}}()}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4}{s\_pInstance}}\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4}{s\_pInstance}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classInputHandler_a698aa4af4f326a9881835fda251ca996}{InputHandler}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_a72ec3b0da1f1747064bf00fc9d180d48}{update}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_a23b2e1fac565e5bcd5ea393795b7ac67}{clean}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_ab12b2b63605d7661317ba290ee6b89a3}{reset\_mouseButtonState}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_a26679af399a96975ed6e56145cc1c891}{initialiseJoysticks}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00032}\mbox{\hyperlink{classInputHandler_acc459d8a54215929133a9c3f68c3e5ad}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInputHandler_acc459d8a54215929133a9c3f68c3e5ad}{joysticksInitialised}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classInputHandler_a4bb562d04d9e29adf095c8296052c6bc}{m\_bJoysticksInitialised}};\ \}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00033}\mbox{\hyperlink{classInputHandler_a3afea5f90871baebcbf0303a3a9949c9}{00033}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classVector2D}{Vector2D}}*\ \mbox{\hyperlink{classInputHandler_a3afea5f90871baebcbf0303a3a9949c9}{getMousePosition}}()}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classInputHandler_aba8e448adf3a9858a1ab3917fe1555a2}{m\_mousePosition}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInputHandler_ab60a988015ec0b4d983dc305062d5b95}{isKeyDown}}(SDL\_Scancode\ key)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInputHandler_ae1a0b20e221ed371eb0d6cab3326c91c}{isKeyPressed}}(SDL\_Scancode\ key)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00039}\mbox{\hyperlink{classInputHandler_a903957ecb9ff6b3c6534b3c55c54576d}{00039}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInputHandler_a903957ecb9ff6b3c6534b3c55c54576d}{getMouseButtonState}}(\textcolor{keywordtype}{int}\ buttonNumber)}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classInputHandler_ab10a1551229d199ec59559abe1428628}{m\_mouseButtonStates}}[buttonNumber];}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00043}\mbox{\hyperlink{classInputHandler_a796ce1fa945fbdd008544e9e96dddd62}{00043}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInputHandler_a796ce1fa945fbdd008544e9e96dddd62}{getButtonState}}(\textcolor{keywordtype}{int}\ joy,\ \textcolor{keywordtype}{int}\ buttonNumber)}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classInputHandler_a0e786bf871ee1867e9baf9aa9abf3977}{m\_buttonStates}}[joy][buttonNumber];}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00048}00048\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classInputHandler_a698aa4af4f326a9881835fda251ca996}{InputHandler}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00050}\mbox{\hyperlink{classInputHandler_ac1f7efb54b34d433d6ffba62627452b6}{00050}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classInputHandler_ac1f7efb54b34d433d6ffba62627452b6}{\string~InputHandler}}()\ \{\ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classInputHandler_aba8e448adf3a9858a1ab3917fe1555a2}{m\_mousePosition}};\ \}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00051}\mbox{\hyperlink{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4}{00051}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classInputHandler}{InputHandler}}*\ \mbox{\hyperlink{classInputHandler_a92d9821fdc1a0ad2144573d8bd2d23c4}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00052}\mbox{\hyperlink{classInputHandler_a7273a85187c054c74125b73bbe065242}{00052}}\ \ \ \ \ \ \ \ \ std::vector<SDL\_Joystick*>\ \mbox{\hyperlink{classInputHandler_a7273a85187c054c74125b73bbe065242}{m\_joysticks}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00053}\mbox{\hyperlink{classInputHandler_a4bb562d04d9e29adf095c8296052c6bc}{00053}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInputHandler_a4bb562d04d9e29adf095c8296052c6bc}{m\_bJoysticksInitialised}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00054}\mbox{\hyperlink{classInputHandler_a3c032bd032d300bde4edf28e8c951dac}{00054}}\ \ \ \ \ \ \ \ \ std::vector<std::pair<Vector2D*,\ Vector2D*>>\ \mbox{\hyperlink{classInputHandler_a3c032bd032d300bde4edf28e8c951dac}{m\_joystickValues}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00055}\mbox{\hyperlink{classInputHandler_a0e786bf871ee1867e9baf9aa9abf3977}{00055}}\ \ \ \ \ \ \ \ \ std::vector<std::vector<bool>>\ \mbox{\hyperlink{classInputHandler_a0e786bf871ee1867e9baf9aa9abf3977}{m\_buttonStates}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00056}\mbox{\hyperlink{classInputHandler_ab10a1551229d199ec59559abe1428628}{00056}}\ \ \ \ \ \ \ \ \ std::array<bool,\ 3>\ \mbox{\hyperlink{classInputHandler_ab10a1551229d199ec59559abe1428628}{m\_mouseButtonStates}}\{\};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00057}\mbox{\hyperlink{classInputHandler_aba8e448adf3a9858a1ab3917fe1555a2}{00057}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classVector2D}{Vector2D}}*\ \mbox{\hyperlink{classInputHandler_aba8e448adf3a9858a1ab3917fe1555a2}{m\_mousePosition}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00058}\mbox{\hyperlink{classInputHandler_ac7961836b9af15aba904abfb39fd87a7}{00058}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ Uint8*\ \mbox{\hyperlink{classInputHandler_ac7961836b9af15aba904abfb39fd87a7}{m\_keystates}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00059}\mbox{\hyperlink{classInputHandler_ac560fdbbaffae6b6f8cb8ab5847946be}{00059}}\ \ \ \ \ \ \ \ \ std::unordered\_set<SDL\_Scancode>\ \mbox{\hyperlink{classInputHandler_ac560fdbbaffae6b6f8cb8ab5847946be}{m\_keysPressedThisFrame}};\ \textcolor{comment}{//\ 本帧新按下的键（非\ repeat）}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classInputHandler_a4acfed351fe6975aa8a7f067839b3b0c}{xvalue}}(\textcolor{keywordtype}{int}\ joy,\ \textcolor{keywordtype}{int}\ stick);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classInputHandler_a5204b72c62b7433595204a121261cce4}{yvalue}}(\textcolor{keywordtype}{int}\ joy,\ \textcolor{keywordtype}{int}\ stick);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00063}\mbox{\hyperlink{classInputHandler_a8543844dac8b086878a849990389cc39}{00063}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classInputHandler_a8543844dac8b086878a849990389cc39}{m\_joystickDeadZone}}\ =\ 10000;}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ handle\ keyboard\ events}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_a8544854ae1b484d8d63a692c2a2894d8}{onKeyDown}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_a504095b5fb4d09684c5559d9a9942347}{onKeyUp}}();}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ handle\ mouse\ events}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00070}00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_ae0e79260cb14258c2b1b0376dfa57526}{onMouseMove}}(SDL\_Event\&\ event);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_a54b8f5083c31b5be33c624c3ea011e12}{onMouseButtonDown}}(SDL\_Event\&\ event);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_ad884a2ee40b0660147ebb9a804c43ed3}{onMouseButtonUp}}(SDL\_Event\&\ event);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ handle\ joysticks\ events}}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_aff057dc49aa3a7ffa32ba243ce88e1c4}{onJoystickAxisMove}}(SDL\_Event\&\ event);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_ad9b465c650ff836d4569df7fb1f01d1e}{onJoystickButtonDown}}(SDL\_Event\&\ event);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInputHandler_a563cde40533eb752b6c25db074f392f1}{onJoystickButtonUp}}(SDL\_Event\&\ event);}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00078}00078\ \};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00080}\mbox{\hyperlink{InputHandler_8h_a2d10b61effab86c53d295a39522ecfbe}{00080}}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{classInputHandler}{InputHandler}}\ \mbox{\hyperlink{InputHandler_8h_a2d10b61effab86c53d295a39522ecfbe}{TheInputHandler}};}
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{InputHandler_8h_source_l00082}00082\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ defined(\_\_InputHandler\_\_)\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

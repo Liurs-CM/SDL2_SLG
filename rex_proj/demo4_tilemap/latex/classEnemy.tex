@@ -1,0 +1,202 @@
+\doxysection{Enemy类 参考}
+\hypertarget{classEnemy}{}\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+
+
+类 Enemy 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classEnemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Enemy 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEnemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classEnemy_a038e636d16b708f92627348a36750702}{is\+Dead}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classEnemy_a2be19e5e08e20bc14e3ed7a0c68e7dd2}{type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classSDLGameObject_a0211a693afa22b3fe93981f99abbe4fa}{\texorpdfstring{$\sim$}{\string~}\+SDLGame\+Object}} ()
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{load}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLoaderParams}{Loader\+Params}} $>$ const \&p\+Params)
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4}{clean}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a337c731857f6923fdfd824e55683aa7c}{get\+Position}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a2b461de1c3b8c28374e0fa16e17e924f}{get\+Velocity}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_a053e11805c9c1194dc269a695bcb168a}{get\+Width}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aac76406d11a56335f275d9d8efff82cd}{get\+Height}} ()
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}} $>$ \mbox{\hyperlink{classSDLGameObject_addb0c9209a10e396b7f6a8114755d23e}{clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy}} ()
+\item 
+virtual \mbox{\hyperlink{classEnemy_a065a22a70c78bfc03da4c032312c6da5}{\texorpdfstring{$\sim$}{\string~}\+Enemy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSDLGameObject_a19f3c6074f181947371b58880528b770}{SDLGame\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classEnemy_ad5f79651d73e7d60f201b881fe09c490}{m\+\_\+health}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\+\_\+position}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\+\_\+velocity}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a62c0967676d9bc80367eefee417d47f4}{m\+\_\+acceleration}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}{m\+\_\+current\+Row}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\+\_\+current\+Frame}}
+\item 
+double \mbox{\hyperlink{classSDLGameObject_a86d1f9c1db3958e1e5e0185bd30ffc3c}{m\+\_\+angle}}
+\item 
+int \mbox{\hyperlink{classSDLGameObject_a2208f9ebf1e5bcae92c06e910cef62b7}{m\+\_\+alpha}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}{m\+\_\+position\+Screen}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\+\_\+width}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\+\_\+height}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c}{m\+\_\+num\+Frames}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f}{m\+\_\+anim\+Speed}}
+\item 
+bool \mbox{\hyperlink{classSDLGameObject_a97ede378f4edc6c5a4f000d6dbd11fba}{m\+\_\+b\+Played\+Death\+Sound}}
+\item 
+\mbox{\hyperlink{classAnimatedGraphic}{Animated\+Graphic}} \mbox{\hyperlink{classSDLGameObject_a36e37cf3359295267db04c901664c1e1}{m\+\_\+current\+Anim}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\+\_\+texture\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{Enemy_8h_source}{Enemy.\+h}} 第 \mbox{\hyperlink{Enemy_8h_source_l00005}{5}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classEnemy_a94f30d348b6d2840fd71675472ba38dd}\label{classEnemy_a94f30d348b6d2840fd71675472ba38dd} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{Enemy_8h_source}{Enemy.\+h}} 第 \mbox{\hyperlink{Enemy_8h_source_l00011}{11}} 行定义.
+
+\Hypertarget{classEnemy_a065a22a70c78bfc03da4c032312c6da5}\label{classEnemy_a065a22a70c78bfc03da4c032312c6da5} 
+\index{Enemy@{Enemy}!````~Enemy@{\texorpdfstring{$\sim$}{\string~}Enemy}}
+\index{````~Enemy@{\texorpdfstring{$\sim$}{\string~}Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Enemy()}{\string~Enemy()}}
+{\footnotesize\ttfamily virtual Enemy\+::\texorpdfstring{$\sim$}{\string~}\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{Enemy_8h_source}{Enemy.\+h}} 第 \mbox{\hyperlink{Enemy_8h_source_l00012}{12}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classEnemy_a038e636d16b708f92627348a36750702}\label{classEnemy_a038e636d16b708f92627348a36750702} 
+\index{Enemy@{Enemy}!isDead@{isDead}}
+\index{isDead@{isDead}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Enemy_8h_source}{Enemy.\+h}} 第 \mbox{\hyperlink{Enemy_8h_source_l00008}{8}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Enemy_8h_source_l00013}{m\+\_\+health}}.
+
+\Hypertarget{classEnemy_a2be19e5e08e20bc14e3ed7a0c68e7dd2}\label{classEnemy_a2be19e5e08e20bc14e3ed7a0c68e7dd2} 
+\index{Enemy@{Enemy}!type@{type}}
+\index{type@{type}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual std\+::string Enemy\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+重载 \mbox{\hyperlink{classSDLGameObject_a5bc827ddc71df9a0302430a209dca80c}{SDLGame\+Object}} .
+
+
+
+在文件 \mbox{\hyperlink{Enemy_8h_source}{Enemy.\+h}} 第 \mbox{\hyperlink{Enemy_8h_source_l00009}{9}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classEnemy_ad5f79651d73e7d60f201b881fe09c490}\label{classEnemy_ad5f79651d73e7d60f201b881fe09c490} 
+\index{Enemy@{Enemy}!m\_health@{m\_health}}
+\index{m\_health@{m\_health}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{m\_health}{m\_health}}
+{\footnotesize\ttfamily int Enemy\+::m\+\_\+health\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{Enemy_8h_source}{Enemy.\+h}} 第 \mbox{\hyperlink{Enemy_8h_source_l00013}{13}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Cat_8h_source_l00009}{Cat\+::\+Cat()}}, \mbox{\hyperlink{Enemy_8h_source_l00008}{is\+Dead()}} , 以及 \mbox{\hyperlink{Level1Boss_8h_source_l00009}{Level1\+Boss\+::\+Level1\+Boss()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{Enemy_8h}{Enemy.\+h}}\end{DoxyCompactItemize}

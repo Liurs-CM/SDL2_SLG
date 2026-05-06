@@ -1,0 +1,9 @@
+<map id="MenuMainState::s_exitFromMenu" name="MenuMainState::s_exitFromMenu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,245,56"/>
+<area shape="rect" id="Node000002" href="$classGame.html#acdbfa8f0e96add056fcc70b8188f397e" title=" " alt="" coords="293,5,417,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,28,279,24,280,29,241,33"/>
+<area shape="rect" id="Node000004" href="$classGame.html#a8272be134d16c277bb014ad6a22fc357" title=" " alt="" coords="308,55,403,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,53,295,58,294,64,245,59"/>
+<area shape="rect" id="Node000003" href="$classGame.html#ad59df6562a58a614fda24622d3715b65" title=" " alt="" coords="465,5,573,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,15,451,15,451,21,418,21"/>
+</map>

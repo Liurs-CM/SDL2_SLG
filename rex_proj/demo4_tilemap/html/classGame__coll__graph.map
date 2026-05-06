@@ -1,0 +1,8 @@
+<map id="Game" name="Game">
+<area shape="rect" id="Node000001" title=" " alt="" coords="50,181,111,207"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="126,184,134,187,138,194,129,203,112,205,111,199,127,198,133,194,131,192,124,189"/>
+<area shape="rect" id="Node000002" href="$classGameStateMachine.html" title=" " alt="" coords="5,93,156,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,133,83,181,78,181,78,133"/>
+<area shape="rect" id="Node000003" href="$classGameState.html" title=" " alt="" coords="33,5,128,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,45,83,93,78,93,78,45"/>
+</map>

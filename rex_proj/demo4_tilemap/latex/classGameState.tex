@@ -1,0 +1,186 @@
+\doxysection{Game\+State类 参考}
+\hypertarget{classGameState}{}\label{classGameState}\index{GameState@{GameState}}
+
+
+{\ttfamily \#include $<$Game\+State.\+h$>$}
+
+
+
+类 Game\+State 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameState__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameState_adc1bfdf7ee7c1f48e4841995db4e16c3}{\texorpdfstring{$\sim$}{\string~}\+Game\+State}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classGameState_ab2864bfa04f92f6966861a1f2883bda0}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classGameState_abb892a3560e8fbedb3e4526af5deed7b}{render}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classGameState_ad17154015d2de5e669067c34d2cfe5b3}{on\+Enter}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classGameState_aed6186fd65fefb5460f89ceed82829a1}{on\+Exit}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{get\+State\+ID}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameState_a4fa0a2bf50315c4a35a3890a0adcee5c}{Game\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGameState_a5738bb77af0103b4419c0669a61dc23b}{m\+\_\+loading\+Complete}}
+\item 
+bool \mbox{\hyperlink{classGameState_abd2cc9eda4f7ec4cca4fb86d76a02830}{m\+\_\+exiting}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\+\_\+texture\+IDList}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{GameState_8h_source}{Game\+State.\+h}} 第 \mbox{\hyperlink{GameState_8h_source_l00006}{6}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classGameState_adc1bfdf7ee7c1f48e4841995db4e16c3}\label{classGameState_adc1bfdf7ee7c1f48e4841995db4e16c3} 
+\index{GameState@{GameState}!````~GameState@{\texorpdfstring{$\sim$}{\string~}GameState}}
+\index{````~GameState@{\texorpdfstring{$\sim$}{\string~}GameState}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GameState()}{\string~GameState()}}
+{\footnotesize\ttfamily virtual Game\+State\+::\texorpdfstring{$\sim$}{\string~}\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{classGameState_a4fa0a2bf50315c4a35a3890a0adcee5c}\label{classGameState_a4fa0a2bf50315c4a35a3890a0adcee5c} 
+\index{GameState@{GameState}!GameState@{GameState}}
+\index{GameState@{GameState}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{GameState()}{GameState()}}
+{\footnotesize\ttfamily Game\+State\+::\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{GameState_8h_source}{Game\+State.\+h}} 第 \mbox{\hyperlink{GameState_8h_source_l00016}{16}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classGameState_aec93c95e04a96791b818bda9036eecae}\label{classGameState_aec93c95e04a96791b818bda9036eecae} 
+\index{GameState@{GameState}!getStateID@{getStateID}}
+\index{getStateID@{getStateID}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{getStateID()}{getStateID()}}
+{\footnotesize\ttfamily virtual std\+::string Game\+State\+::get\+State\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classMenuMainState_a6a9f44ccbeb27238b00fd9081862fd63}{Menu\+Main\+State}}, \mbox{\hyperlink{classMenuOverState_a36a8861b6390c1eaf639d3e035d84a73}{Menu\+Over\+State}}, \mbox{\hyperlink{classMenuPauseState_a9b2a0dd4e72c95d9c6ac06ffa13ae7f3}{Menu\+Pause\+State}} , 以及 \mbox{\hyperlink{classPlayState_a8a9e49f36d2ec9660037ff7010458e5a}{Play\+State}} 内被实现.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00023}{Game\+State\+Machine\+::change\+State\+Private()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameState_aec93c95e04a96791b818bda9036eecae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameState_ad17154015d2de5e669067c34d2cfe5b3}\label{classGameState_ad17154015d2de5e669067c34d2cfe5b3} 
+\index{GameState@{GameState}!onEnter@{onEnter}}
+\index{onEnter@{onEnter}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{onEnter()}{onEnter()}}
+{\footnotesize\ttfamily virtual bool Game\+State\+::on\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classMenuMainState_ab488838da48beffb97d440befa77f01b}{Menu\+Main\+State}}, \mbox{\hyperlink{classMenuOverState_a50b20e765ea93c1ede3ce92c33c730bd}{Menu\+Over\+State}}, \mbox{\hyperlink{classMenuPauseState_a15eba5e95a5ec94f1dd4f7b47e047de2}{Menu\+Pause\+State}} , 以及 \mbox{\hyperlink{classPlayState_a412edf86cef5eaffdfd63d69af42c39b}{Play\+State}} 内被实现.
+
+\Hypertarget{classGameState_aed6186fd65fefb5460f89ceed82829a1}\label{classGameState_aed6186fd65fefb5460f89ceed82829a1} 
+\index{GameState@{GameState}!onExit@{onExit}}
+\index{onExit@{onExit}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily virtual bool Game\+State\+::on\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classMenuMainState_abbb4152f58414588107e7d42c3a08530}{Menu\+Main\+State}}, \mbox{\hyperlink{classMenuOverState_ab0740eb89914ed4317ac8b35c5244eec}{Menu\+Over\+State}}, \mbox{\hyperlink{classMenuPauseState_a5f05d3923a24f9c3256e9894646b76e7}{Menu\+Pause\+State}} , 以及 \mbox{\hyperlink{classPlayState_aed7fef037f6e9c9fc4a02924e2fe7154}{Play\+State}} 内被实现.
+
+\Hypertarget{classGameState_abb892a3560e8fbedb3e4526af5deed7b}\label{classGameState_abb892a3560e8fbedb3e4526af5deed7b} 
+\index{GameState@{GameState}!render@{render}}
+\index{render@{render}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void Game\+State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classMenuMainState_ac44cf2d88c1649f1931bd19f10776bf8}{Menu\+Main\+State}}, \mbox{\hyperlink{classMenuOverState_aa1549d986dfcee43a658c24f060652b7}{Menu\+Over\+State}}, \mbox{\hyperlink{classMenuPauseState_afc0434dcb454274bd4f42ff7c4ff58d8}{Menu\+Pause\+State}} , 以及 \mbox{\hyperlink{classPlayState_ad0b2654d0d822b853c6d06ee5c4a95c2}{Play\+State}} 内被实现.
+
+\Hypertarget{classGameState_ab2864bfa04f92f6966861a1f2883bda0}\label{classGameState_ab2864bfa04f92f6966861a1f2883bda0} 
+\index{GameState@{GameState}!update@{update}}
+\index{update@{update}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Game\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classMenuMainState_aaa1ed1b8d8f785b657e0a4114899c4a1}{Menu\+Main\+State}}, \mbox{\hyperlink{classMenuOverState_a370affe64ef1e4e87bc8fb3be7119c21}{Menu\+Over\+State}}, \mbox{\hyperlink{classMenuPauseState_aae1d1d2ec5f4869333d54692a453c475}{Menu\+Pause\+State}} , 以及 \mbox{\hyperlink{classPlayState_a3beac23cba7b9541714ebd33ea77a913}{Play\+State}} 内被实现.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classGameState_abd2cc9eda4f7ec4cca4fb86d76a02830}\label{classGameState_abd2cc9eda4f7ec4cca4fb86d76a02830} 
+\index{GameState@{GameState}!m\_exiting@{m\_exiting}}
+\index{m\_exiting@{m\_exiting}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{m\_exiting}{m\_exiting}}
+{\footnotesize\ttfamily bool Game\+State\+::m\+\_\+exiting\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{GameState_8h_source}{Game\+State.\+h}} 第 \mbox{\hyperlink{GameState_8h_source_l00018}{18}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00058}{Play\+State\+::on\+Exit()}} , 以及 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+\Hypertarget{classGameState_a5738bb77af0103b4419c0669a61dc23b}\label{classGameState_a5738bb77af0103b4419c0669a61dc23b} 
+\index{GameState@{GameState}!m\_loadingComplete@{m\_loadingComplete}}
+\index{m\_loadingComplete@{m\_loadingComplete}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{m\_loadingComplete}{m\_loadingComplete}}
+{\footnotesize\ttfamily bool Game\+State\+::m\+\_\+loading\+Complete\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{GameState_8h_source}{Game\+State.\+h}} 第 \mbox{\hyperlink{GameState_8h_source_l00017}{17}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00044}{Play\+State\+::on\+Enter()}}, \mbox{\hyperlink{PlayState_8cpp_source_l00033}{Play\+State\+::render()}} , 以及 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+\Hypertarget{classGameState_a066cad511a40acd1835731bb016dc2c5}\label{classGameState_a066cad511a40acd1835731bb016dc2c5} 
+\index{GameState@{GameState}!m\_textureIDList@{m\_textureIDList}}
+\index{m\_textureIDList@{m\_textureIDList}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{m\_textureIDList}{m\_textureIDList}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Game\+State\+::m\+\_\+texture\+IDList\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{GameState_8h_source}{Game\+State.\+h}} 第 \mbox{\hyperlink{GameState_8h_source_l00019}{19}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00045}{Menu\+Main\+State\+::on\+Enter()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00038}{Menu\+Over\+State\+::on\+Enter()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{Menu\+Pause\+State\+::on\+Enter()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00058}{Menu\+Main\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00051}{Menu\+Over\+State\+::on\+Exit()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00055}{Menu\+Pause\+State\+::on\+Exit()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{GameState_8h}{Game\+State.\+h}}\end{DoxyCompactItemize}

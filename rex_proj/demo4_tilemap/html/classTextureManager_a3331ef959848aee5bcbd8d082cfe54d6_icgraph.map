@@ -1,0 +1,9 @@
+<map id="TextureManager::clearFromTextureMap" name="TextureManager::clearFromTextureMap">
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,47,432,87"/>
+<area shape="rect" id="Node000002" href="$classMenuMainState.html#abbb4152f58414588107e7d42c3a08530" title=" " alt="" coords="8,5,181,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,47,156,33,157,28,223,42"/>
+<area shape="rect" id="Node000003" href="$classMenuOverState.html#ab0740eb89914ed4317ac8b35c5244eec" title=" " alt="" coords="9,55,181,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,70,181,70,181,65,218,65"/>
+<area shape="rect" id="Node000004" href="$classMenuPauseState.html#a5f05d3923a24f9c3256e9894646b76e7" title=" " alt="" coords="5,104,184,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,93,157,107,156,101,221,88"/>
+</map>

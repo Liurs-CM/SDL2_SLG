@@ -1,0 +1,54 @@
+\doxysection{Menu\+Button.\+cpp}
+\hypertarget{MenuButton_8cpp_source}{}\label{MenuButton_8cpp_source}\index{src/MenuButton.cpp@{src/MenuButton.cpp}}
+\mbox{\hyperlink{MenuButton_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MenuButton_8h}{MenuButton.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{InputHandler_8h}{InputHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00005}\mbox{\hyperlink{classMenuButton_a322b34a062c93f8604b12bfb35b40073}{00005}}\ \mbox{\hyperlink{classMenuButton_a322b34a062c93f8604b12bfb35b40073}{MenuButton::MenuButton}}()\ :\ \mbox{\hyperlink{classSDLGameObject}{SDLGameObject}}(),\ m\_callback(0),\ m\_bReleased(true)\ \{\ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00007}\mbox{\hyperlink{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5}{00007}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5}{MenuButton::load}}(std::unique\_ptr<LoaderParams>\ \textcolor{keyword}{const}\ \&pParams)}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00009}00009\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{SDLGameObject::load}}(std::move(pParams));}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00010}00010\ \ \ \ \ \mbox{\hyperlink{classMenuButton_a1969e41c95042c83201035681d01d663}{m\_callbackID}}\ =\ pParams-\/>getCallbackID();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}}\ =\ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215a8d402266ab388c1e800195d451dbba65}{MOUSE\_OUT}};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00012}00012\ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00014}\mbox{\hyperlink{classMenuButton_a3e854949b52808f9d6092e149a116f5c}{00014}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a3e854949b52808f9d6092e149a116f5c}{MenuButton::draw}}()}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//SDLGameObject::draw();}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a8152a12de458e940d09f2850d8f71b85}{drawFrame}}(\mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\_textureID}},\ \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}},\ \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\_width}},\ \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\_height}},\ \mbox{\hyperlink{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}{m\_currentRow}},\ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}});}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00020}\mbox{\hyperlink{classMenuButton_a86b038172871555da45606e20fa6bad7}{00020}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a86b038172871555da45606e20fa6bad7}{MenuButton::update}}()}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{classVector2D}{Vector2D}}*\ pMousePos\ =\ \mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{TheInputHandler::Instance}}()-\/>\mbox{\hyperlink{classInputHandler_a3afea5f90871baebcbf0303a3a9949c9}{getMousePosition}}();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{if}(pMousePos-\/>\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ <\ (\mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ +\ \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\_width}})\ \&\&\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ pMousePos-\/>\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ >\ \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ \&\&\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ pMousePos-\/>\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}()\ <\ (\mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}()\ +\ \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\_height}})\ \&\&\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ pMousePos-\/>\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}()\ >\ \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}())}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00027}00027\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{TheInputHandler::Instance}}()-\/>getMouseButtonState(\mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56eadb45120aafd37a973140edee24708065}{LEFT}})\ \&\&\ \mbox{\hyperlink{classMenuButton_a7edc93b34531d1debe656331b7b5269e}{m\_bReleased}})}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}}\ =\ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ad21446b1f91ce5de0d43aa6478dd52e7}{CLICKED}};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac}{m\_callback}}\ !=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac}{m\_callback}}();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton_a7edc93b34531d1debe656331b7b5269e}{m\_bReleased}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{TheInputHandler::Instance}}()-\/>getMouseButtonState(\mbox{\hyperlink{InputHandler_8h_a7e5f61c59f658d9196d15f3b98f1e56eadb45120aafd37a973140edee24708065}{LEFT}}))}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton_a7edc93b34531d1debe656331b7b5269e}{m\_bReleased}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}}\ =\ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ab67862558b00554582f4b9dc6aee42b8}{MOUSE\_OVER}};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00043}00043\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\_currentFrame}}\ =\ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215a8d402266ab388c1e800195d451dbba65}{MOUSE\_OUT}};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00045}00045\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00046}00046\ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8cpp_source_l00048}\mbox{\hyperlink{classMenuButton_a970fc154ec16a7c0c9ad7f3626199bba}{00048}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a970fc154ec16a7c0c9ad7f3626199bba}{MenuButton::clean}}()\ \{\ \}}
+
+\end{DoxyCode}

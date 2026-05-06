@@ -1,0 +1,548 @@
+\doxysection{SDLGame\+Object类 参考}
+\hypertarget{classSDLGameObject}{}\label{classSDLGameObject}\index{SDLGameObject@{SDLGameObject}}
+
+
+{\ttfamily \#include $<$SDLGame\+Object.\+h$>$}
+
+
+
+类 SDLGame\+Object 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDLGameObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+SDLGame\+Object 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDLGameObject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classSDLGameObject_a0211a693afa22b3fe93981f99abbe4fa}{\texorpdfstring{$\sim$}{\string~}\+SDLGame\+Object}} ()
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{load}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLoaderParams}{Loader\+Params}} $>$ const \&p\+Params)
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4}{clean}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classSDLGameObject_a5bc827ddc71df9a0302430a209dca80c}{type}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a337c731857f6923fdfd824e55683aa7c}{get\+Position}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classSDLGameObject_a2b461de1c3b8c28374e0fa16e17e924f}{get\+Velocity}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_a053e11805c9c1194dc269a695bcb168a}{get\+Width}} ()
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aac76406d11a56335f275d9d8efff82cd}{get\+Height}} ()
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}} $>$ \mbox{\hyperlink{classSDLGameObject_addb0c9209a10e396b7f6a8114755d23e}{clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSDLGameObject_a19f3c6074f181947371b58880528b770}{SDLGame\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\+\_\+position}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\+\_\+velocity}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a62c0967676d9bc80367eefee417d47f4}{m\+\_\+acceleration}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}{m\+\_\+current\+Row}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}{m\+\_\+current\+Frame}}
+\item 
+double \mbox{\hyperlink{classSDLGameObject_a86d1f9c1db3958e1e5e0185bd30ffc3c}{m\+\_\+angle}}
+\item 
+int \mbox{\hyperlink{classSDLGameObject_a2208f9ebf1e5bcae92c06e910cef62b7}{m\+\_\+alpha}}
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}{m\+\_\+position\+Screen}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\+\_\+width}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\+\_\+height}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c}{m\+\_\+num\+Frames}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f}{m\+\_\+anim\+Speed}}
+\item 
+bool \mbox{\hyperlink{classSDLGameObject_a97ede378f4edc6c5a4f000d6dbd11fba}{m\+\_\+b\+Played\+Death\+Sound}}
+\item 
+\mbox{\hyperlink{classAnimatedGraphic}{Animated\+Graphic}} \mbox{\hyperlink{classSDLGameObject_a36e37cf3359295267db04c901664c1e1}{m\+\_\+current\+Anim}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameObject}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classGameObject_aa076bd4409a384038567f2d0c8548477}{m\+\_\+texture\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00010}{10}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classSDLGameObject_a0211a693afa22b3fe93981f99abbe4fa}\label{classSDLGameObject_a0211a693afa22b3fe93981f99abbe4fa} 
+\index{SDLGameObject@{SDLGameObject}!````~SDLGameObject@{\texorpdfstring{$\sim$}{\string~}SDLGameObject}}
+\index{````~SDLGameObject@{\texorpdfstring{$\sim$}{\string~}SDLGameObject}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SDLGameObject()}{\string~SDLGameObject()}}
+{\footnotesize\ttfamily virtual SDLGame\+Object\+::\texorpdfstring{$\sim$}{\string~}\+SDLGame\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00013}{13}} 行定义.
+
+\Hypertarget{classSDLGameObject_a19f3c6074f181947371b58880528b770}\label{classSDLGameObject_a19f3c6074f181947371b58880528b770} 
+\index{SDLGameObject@{SDLGameObject}!SDLGameObject@{SDLGameObject}}
+\index{SDLGameObject@{SDLGameObject}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{SDLGameObject()}{SDLGameObject()}}
+{\footnotesize\ttfamily SDLGame\+Object\+::\+SDLGame\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8cpp_source}{SDLGame\+Object.\+cpp}} 第 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00007}{7}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4}\label{classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4} 
+\index{SDLGameObject@{SDLGameObject}!clean@{clean}}
+\index{clean@{clean}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily virtual void SDLGame\+Object\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameObject_a8e8c897a0be1966cfb6488ce97206d60}{Game\+Object}}.
+
+
+
+被 \mbox{\hyperlink{classMenuButton_a970fc154ec16a7c0c9ad7f3626199bba}{Menu\+Button}}, \mbox{\hyperlink{classPlayer_a883c81df5be3b931ecfa6c8de08acfbd}{Player}} , 以及 \mbox{\hyperlink{classScrollingBackground_af02af0dc1c7fb6cb9714cdfa07584960}{Scrolling\+Background}} 重载.
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00017}{17}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00063}{Scrolling\+Background\+::clean()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSDLGameObject_addb0c9209a10e396b7f6a8114755d23e}\label{classSDLGameObject_addb0c9209a10e396b7f6a8114755d23e} 
+\index{SDLGameObject@{SDLGameObject}!clone@{clone}}
+\index{clone@{clone}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSDLGameObject}{SDLGame\+Object}} $>$ SDLGame\+Object\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00023}{23}} 行定义.
+
+\Hypertarget{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d}\label{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d} 
+\index{SDLGameObject@{SDLGameObject}!draw@{draw}}
+\index{draw@{draw}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void SDLGame\+Object\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameObject_a59f11cba9071a39ba2f486a8364ed536}{Game\+Object}}.
+
+
+
+被 \mbox{\hyperlink{classMenuButton_a3e854949b52808f9d6092e149a116f5c}{Menu\+Button}}, \mbox{\hyperlink{classPlayer_ac18c9d30d2997765321c62030a4b20b7}{Player}} , 以及 \mbox{\hyperlink{classScrollingBackground_a676bef16122c81feced1c0b0eaff58e0}{Scrolling\+Background}} 重载.
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8cpp_source}{SDLGame\+Object.\+cpp}} 第 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{28}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8cpp_source_l00055}{Texture\+Manager\+::draw\+Frame()}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00030}{m\+\_\+current\+Frame}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00029}{m\+\_\+current\+Row}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{m\+\_\+height}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00033}{m\+\_\+position\+Screen}}, \mbox{\hyperlink{GameObject_8h_source_l00019}{Game\+Object\+::m\+\_\+texture\+ID}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00027}{m\+\_\+velocity}} , 以及 \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{m\+\_\+width}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSDLGameObject_aac76406d11a56335f275d9d8efff82cd}\label{classSDLGameObject_aac76406d11a56335f275d9d8efff82cd} 
+\index{SDLGameObject@{SDLGameObject}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily const uint16\+\_\+t SDLGame\+Object\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00022}{22}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{m\+\_\+height}}.
+
+\Hypertarget{classSDLGameObject_a337c731857f6923fdfd824e55683aa7c}\label{classSDLGameObject_a337c731857f6923fdfd824e55683aa7c} 
+\index{SDLGameObject@{SDLGameObject}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \& SDLGame\+Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00019}{19}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{m\+\_\+position}}.
+
+\Hypertarget{classSDLGameObject_a2b461de1c3b8c28374e0fa16e17e924f}\label{classSDLGameObject_a2b461de1c3b8c28374e0fa16e17e924f} 
+\index{SDLGameObject@{SDLGameObject}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \& SDLGame\+Object\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00020}{20}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SDLGameObject_8h_source_l00027}{m\+\_\+velocity}}.
+
+\Hypertarget{classSDLGameObject_a053e11805c9c1194dc269a695bcb168a}\label{classSDLGameObject_a053e11805c9c1194dc269a695bcb168a} 
+\index{SDLGameObject@{SDLGameObject}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily const uint16\+\_\+t SDLGame\+Object\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00021}{21}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{m\+\_\+width}}.
+
+\Hypertarget{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}\label{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f} 
+\index{SDLGameObject@{SDLGameObject}!load@{load}}
+\index{load@{load}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void SDLGame\+Object\+::load (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classLoaderParams}{Loader\+Params}} $>$ const \&}]{p\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameObject_a729edce3955766d5c8dfcda6f310392d}{Game\+Object}}.
+
+
+
+被 \mbox{\hyperlink{classCat_a525022b88bf7f9e37b710f645f9df966}{Cat}}, \mbox{\hyperlink{classLevel1Boss_a38b2a5f8a29b44ba1643e4b8f42ced86}{Level1\+Boss}}, \mbox{\hyperlink{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5}{Menu\+Button}}, \mbox{\hyperlink{classPlayer_aea8a0ec1781b64472230e0d4c1d267ff}{Player}} , 以及 \mbox{\hyperlink{classScrollingBackground_ac0752b405276cf590ce3a6af63507988}{Scrolling\+Background}} 重载.
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8cpp_source}{SDLGame\+Object.\+cpp}} 第 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{18}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{SDLGameObject_8h_source_l00037}{m\+\_\+anim\+Speed}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{m\+\_\+height}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00036}{m\+\_\+num\+Frames}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{m\+\_\+position}}, \mbox{\hyperlink{GameObject_8h_source_l00019}{Game\+Object\+::m\+\_\+texture\+ID}} , 以及 \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{m\+\_\+width}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Cat_8h_source_l00010}{Cat\+::load()}}, \mbox{\hyperlink{Level1Boss_8h_source_l00014}{Level1\+Boss\+::load()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00007}{Menu\+Button\+::load()}}, \mbox{\hyperlink{Player_8cpp_source_l00013}{Player\+::load()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{Scrolling\+Background\+::load()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSDLGameObject_a5bc827ddc71df9a0302430a209dca80c}\label{classSDLGameObject_a5bc827ddc71df9a0302430a209dca80c} 
+\index{SDLGameObject@{SDLGameObject}!type@{type}}
+\index{type@{type}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual std\+::string SDLGame\+Object\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameObject_ab0f7dd9a72a3f0ae4b7a406b04a3c71f}{Game\+Object}}.
+
+
+
+被 \mbox{\hyperlink{classEnemy_a2be19e5e08e20bc14e3ed7a0c68e7dd2}{Enemy}} , 以及 \mbox{\hyperlink{classPlayer_a7479192fb44f2e8ec18021a4cad92bd6}{Player}} 重载.
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00018}{18}} 行定义.
+
+\Hypertarget{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}\label{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090} 
+\index{SDLGameObject@{SDLGameObject}!update@{update}}
+\index{update@{update}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void SDLGame\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameObject_ae83128d0e0efef691417779605ee037c}{Game\+Object}}.
+
+
+
+被 \mbox{\hyperlink{classCat_aaf85e2d49f4d1ed3c967c96df79f6ab2}{Cat}}, \mbox{\hyperlink{classLevel1Boss_a303ee6c7dbcbef479d0bd334a5a193b0}{Level1\+Boss}}, \mbox{\hyperlink{classMenuButton_a86b038172871555da45606e20fa6bad7}{Menu\+Button}}, \mbox{\hyperlink{classPlayer_a82c3476f3e65a4e2ac6bcd040771bdd4}{Player}} , 以及 \mbox{\hyperlink{classScrollingBackground_a8ebbb33e58cc5aef089a430188b18959}{Scrolling\+Background}} 重载.
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8cpp_source}{SDLGame\+Object.\+cpp}} 第 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{37}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{AnimatedGraphic_8h_source_l00013}{Animated\+Graphic\+::get\+Current\+Frame()}}, \mbox{\hyperlink{Camera_8h_source_l00010}{Camera\+::get\+Position()}}, \mbox{\hyperlink{Camera_8h_source_l00013}{Camera\+::\+Instance()}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00028}{m\+\_\+acceleration}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00037}{m\+\_\+anim\+Speed}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00039}{m\+\_\+current\+Anim}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00030}{m\+\_\+current\+Frame}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00036}{m\+\_\+num\+Frames}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{m\+\_\+position}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00033}{m\+\_\+position\+Screen}} , 以及 \mbox{\hyperlink{SDLGameObject_8h_source_l00027}{m\+\_\+velocity}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Cat_8h_source_l00017}{Cat\+::update()}} , 以及 \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classSDLGameObject_a62c0967676d9bc80367eefee417d47f4}\label{classSDLGameObject_a62c0967676d9bc80367eefee417d47f4} 
+\index{SDLGameObject@{SDLGameObject}!m\_acceleration@{m\_acceleration}}
+\index{m\_acceleration@{m\_acceleration}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_acceleration}{m\_acceleration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} SDLGame\+Object\+::m\+\_\+acceleration\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00028}{28}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_a2208f9ebf1e5bcae92c06e910cef62b7}\label{classSDLGameObject_a2208f9ebf1e5bcae92c06e910cef62b7} 
+\index{SDLGameObject@{SDLGameObject}!m\_alpha@{m\_alpha}}
+\index{m\_alpha@{m\_alpha}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_alpha}{m\_alpha}}
+{\footnotesize\ttfamily int SDLGame\+Object\+::m\+\_\+alpha\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00032}{32}} 行定义.
+
+\Hypertarget{classSDLGameObject_a86d1f9c1db3958e1e5e0185bd30ffc3c}\label{classSDLGameObject_a86d1f9c1db3958e1e5e0185bd30ffc3c} 
+\index{SDLGameObject@{SDLGameObject}!m\_angle@{m\_angle}}
+\index{m\_angle@{m\_angle}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_angle}{m\_angle}}
+{\footnotesize\ttfamily double SDLGame\+Object\+::m\+\_\+angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00031}{31}} 行定义.
+
+\Hypertarget{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f}\label{classSDLGameObject_a64c90350fa4231d0b1345f82ff50a23f} 
+\index{SDLGameObject@{SDLGameObject}!m\_animSpeed@{m\_animSpeed}}
+\index{m\_animSpeed@{m\_animSpeed}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_animSpeed}{m\_animSpeed}}
+{\footnotesize\ttfamily uint8\+\_\+t SDLGame\+Object\+::m\+\_\+anim\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00037}{37}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00013}{Player\+::load()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{load()}} , 以及 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_a97ede378f4edc6c5a4f000d6dbd11fba}\label{classSDLGameObject_a97ede378f4edc6c5a4f000d6dbd11fba} 
+\index{SDLGameObject@{SDLGameObject}!m\_bPlayedDeathSound@{m\_bPlayedDeathSound}}
+\index{m\_bPlayedDeathSound@{m\_bPlayedDeathSound}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_bPlayedDeathSound}{m\_bPlayedDeathSound}}
+{\footnotesize\ttfamily bool SDLGame\+Object\+::m\+\_\+b\+Played\+Death\+Sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00038}{38}} 行定义.
+
+\Hypertarget{classSDLGameObject_a36e37cf3359295267db04c901664c1e1}\label{classSDLGameObject_a36e37cf3359295267db04c901664c1e1} 
+\index{SDLGameObject@{SDLGameObject}!m\_currentAnim@{m\_currentAnim}}
+\index{m\_currentAnim@{m\_currentAnim}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_currentAnim}{m\_currentAnim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimatedGraphic}{Animated\+Graphic}} SDLGame\+Object\+::m\+\_\+current\+Anim\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00039}{39}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143}\label{classSDLGameObject_a504c3090fb1a15dcfbe5f57cea6b0143} 
+\index{SDLGameObject@{SDLGameObject}!m\_currentFrame@{m\_currentFrame}}
+\index{m\_currentFrame@{m\_currentFrame}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_currentFrame}{m\_currentFrame}}
+{\footnotesize\ttfamily uint8\+\_\+t SDLGame\+Object\+::m\+\_\+current\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00030}{30}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{Menu\+Button\+::draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00102}{Player\+::handle\+Animation()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00007}{Menu\+Button\+::load()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}} , 以及 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84}\label{classSDLGameObject_a24370c74982f8b6bfa756d0054130a84} 
+\index{SDLGameObject@{SDLGameObject}!m\_currentRow@{m\_currentRow}}
+\index{m\_currentRow@{m\_currentRow}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_currentRow}{m\_currentRow}}
+{\footnotesize\ttfamily uint8\+\_\+t SDLGame\+Object\+::m\+\_\+current\+Row\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00029}{29}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{Menu\+Button\+::draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{draw()}} , 以及 \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}.
+
+\Hypertarget{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}\label{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0} 
+\index{SDLGameObject@{SDLGameObject}!m\_height@{m\_height}}
+\index{m\_height@{m\_height}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_height}{m\_height}}
+{\footnotesize\ttfamily uint16\+\_\+t SDLGame\+Object\+::m\+\_\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00035}{35}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{Menu\+Button\+::draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{draw()}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00022}{get\+Height()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{Scrolling\+Background\+::load()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{load()}}, \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{Scrolling\+Background\+::update()}}.
+
+\Hypertarget{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c}\label{classSDLGameObject_aa5e2fd74464fc97d6bbb82af4567820c} 
+\index{SDLGameObject@{SDLGameObject}!m\_numFrames@{m\_numFrames}}
+\index{m\_numFrames@{m\_numFrames}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_numFrames}{m\_numFrames}}
+{\footnotesize\ttfamily uint8\+\_\+t SDLGame\+Object\+::m\+\_\+num\+Frames\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00036}{36}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{load()}} , 以及 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}\label{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a} 
+\index{SDLGameObject@{SDLGameObject}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} SDLGame\+Object\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00026}{26}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{Menu\+Button\+::draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00019}{get\+Position()}}, \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}, \mbox{\hyperlink{Player_8cpp_source_l00013}{Player\+::load()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{Scrolling\+Background\+::load()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{load()}}, \mbox{\hyperlink{Cat_8h_source_l00017}{Cat\+::update()}}, \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}}, \mbox{\hyperlink{Player_8cpp_source_l00032}{Player\+::update()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{Scrolling\+Background\+::update()}} , 以及 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda}\label{classSDLGameObject_a5400fc2ad61046e18b416387e5552cda} 
+\index{SDLGameObject@{SDLGameObject}!m\_positionScreen@{m\_positionScreen}}
+\index{m\_positionScreen@{m\_positionScreen}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_positionScreen}{m\_positionScreen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} SDLGame\+Object\+::m\+\_\+position\+Screen\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00033}{33}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00032}{Player\+::update()}} , 以及 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}\label{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0} 
+\index{SDLGameObject@{SDLGameObject}!m\_velocity@{m\_velocity}}
+\index{m\_velocity@{m\_velocity}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_velocity}{m\_velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} SDLGame\+Object\+::m\+\_\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00027}{27}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{draw()}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00020}{get\+Velocity()}}, \mbox{\hyperlink{Cat_8h_source_l00010}{Cat\+::load()}}, \mbox{\hyperlink{Level1Boss_8h_source_l00014}{Level1\+Boss\+::load()}}, \mbox{\hyperlink{Cat_8h_source_l00017}{Cat\+::update()}}, \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}} , 以及 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00037}{update()}}.
+
+\Hypertarget{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}\label{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070} 
+\index{SDLGameObject@{SDLGameObject}!m\_width@{m\_width}}
+\index{m\_width@{m\_width}!SDLGameObject@{SDLGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_width}{m\_width}}
+{\footnotesize\ttfamily uint16\+\_\+t SDLGame\+Object\+::m\+\_\+width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{SDLGameObject_8h_source}{SDLGame\+Object.\+h}} 第 \mbox{\hyperlink{SDLGameObject_8h_source_l00034}{34}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{Menu\+Button\+::draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{draw()}}, \mbox{\hyperlink{SDLGameObject_8h_source_l00021}{get\+Width()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{Scrolling\+Background\+::load()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00018}{load()}}, \mbox{\hyperlink{Cat_8h_source_l00017}{Cat\+::update()}}, \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{Scrolling\+Background\+::update()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{SDLGameObject_8h}{SDLGame\+Object.\+h}}\item 
+src/\mbox{\hyperlink{SDLGameObject_8cpp}{SDLGame\+Object.\+cpp}}\end{DoxyCompactItemize}

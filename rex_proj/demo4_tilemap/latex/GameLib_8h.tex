@@ -1,0 +1,562 @@
+\doxysection{inc/\+Game\+Lib.h 文件参考}
+\hypertarget{GameLib_8h}{}\label{GameLib_8h}\index{inc/GameLib.h@{inc/GameLib.h}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+Game\+Lib.\+h 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{GameLib_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GameLib_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classGameLib}{Game\+Lib}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a180bbc2e5a9a7645bcb01b9e5d021178}{SCR\+\_\+X}}~1000
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_ac42316a2724692c52c4973ce2f4f5c7f}{SCR\+\_\+Y}}~500
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a4c736195492abc5f49af63a57f487cdb}{MAP\+\_\+W}}~3200
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a07ffd6e3f128f941b2f400c352896a74}{MAP\+\_\+H}}~2400
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_af0cee92dec0a54dad52eec38fd9a2466}{GRID\+\_\+X}}~10
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_ad8c6cf1074fa26eb4554030f04ee57d1}{GRID\+\_\+Y}}~30
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a5ba0b105774bfdc09ce545d73dcdedd3}{GRID\+\_\+\+ROWS}}~12
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a881e2cda79b5951641b07f678f6ef929}{GRID\+\_\+\+COLS}}~15
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a7a4127f14f16563da90eb3c836bc404f}{CELL\+\_\+\+SIZE}}~32
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a4f2180facbb45edf1aeff1c5aec6186d}{MAX\+\_\+\+SNAKE}}~400
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}}~0x\+FF000000
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a9b44987ffdc2af19b635206b94334b69}{COLOR\+\_\+\+WHITE}}~0x\+FFFFFFFF
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_ad86358bf19927183dd7b4ae215a29731}{COLOR\+\_\+\+RED}}~0x\+FFFF0000
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_afc9149f5de51bd9ac4f5ebbfa153f018}{COLOR\+\_\+\+GREEN}}~0x\+FF00\+FF00
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a23c70d699a5a775bc2e1ebeb8603f630}{COLOR\+\_\+\+BLUE}}~0x\+FF0000\+FF
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a4534b577b74a58b0f4b7be027af664e0}{COLOR\+\_\+\+YELLOW}}~0x\+FFFFFF00
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a82573859711fce56f1aa0a76b18a9b18}{COLOR\+\_\+\+CYAN}}~0x\+FF00\+FFFF
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a8deb0beccea721b35bdb1b4f7264fe75}{COLOR\+\_\+\+MAGENTA}}~0x\+FFFF00\+FF
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_aef75f616b9a3fdb10d38395dfb996873}{COLOR\+\_\+\+ORANGE}}~0x\+FFFF8800
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_adc400e6efc54843fb9400270bbc61368}{COLOR\+\_\+\+PINK}}~0x\+FFFF88\+CC
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a361bd41194ac13caf9169f3f689dc179}{COLOR\+\_\+\+PURPLE}}~0x\+FF8800\+FF
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a3aaf3b0287d26dfb6ecb3b1c46e950c8}{COLOR\+\_\+\+GRAY}}~0x\+FF888888
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a2c546bb9d8660d44115f17f15d561fae}{COLOR\+\_\+\+DARK\+\_\+\+GRAY}}~0x\+FF444444
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_adc2954ef000e2049ff7368a66e921a81}{COLOR\+\_\+\+LIGHT\+\_\+\+GRAY}}~0x\+FFCCCCCC
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a68b9570c39bd1e193fe65b734cc47cb2}{COLOR\+\_\+\+DARK\+\_\+\+RED}}~0x\+FF880000
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_aaaaec42f9e5d8b8240243192d9ee43ec}{COLOR\+\_\+\+DARK\+\_\+\+GREEN}}~0x\+FF008800
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a13d2340de395ffd615ad44cf397377d7}{COLOR\+\_\+\+DARK\+\_\+\+BLUE}}~0x\+FF000088
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_ae2936f1df3cf780ba2e7f08301f4c493}{COLOR\+\_\+\+SKY\+\_\+\+BLUE}}~0x\+FF87\+CEEB
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a928e144dbbe4316dbb854245c7e38de7}{COLOR\+\_\+\+BROWN}}~0x\+FF8\+B4513
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a8d66c272228e3ae3e88df54b665deab8}{COLOR\+\_\+\+GOLD}}~0x\+FFFFD700
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a7836ebd1d17ff9b43127d69473f7c402}{COLOR\+\_\+\+TRANSPARENT}}~0x00000000
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_acf4f59d5bb70b6d1ab8cc5f50c255e20}{COLOR\+\_\+\+RGB}}(r,  g,  b)~((uint32\+\_\+t)(0x\+FF000000 \texorpdfstring{$\vert$}{|} (((r) \& 0x\+FF) $<$$<$ 16) \texorpdfstring{$\vert$}{|} (((g) \& 0x\+FF) $<$$<$ 8) \texorpdfstring{$\vert$}{|} ((b) \& 0x\+FF)))
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_ad614e0344d51859fc601a914c6765194}{COLOR\+\_\+\+ARGB}}(a,  r,  g,  b)~((uint32\+\_\+t)((((a) \& 0x\+FF) $<$$<$ 24) \texorpdfstring{$\vert$}{|} (((r) \& 0x\+FF) $<$$<$ 16) \texorpdfstring{$\vert$}{|} (((g) \& 0x\+FF) $<$$<$ 8) \texorpdfstring{$\vert$}{|} ((b) \& 0x\+FF)))
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_ad6c7d8a7b86d9f4bb87840350107ea46}{COLOR\+\_\+\+GET\+\_\+A}}(c)~(((c) $>$$>$ 24) \& 0x\+FF)
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a29607ad112a1f5c2a29e6ffb1afd703d}{COLOR\+\_\+\+GET\+\_\+R}}(c)~(((c) $>$$>$ 16) \& 0x\+FF)
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a87604365f6b558befa36e9340cf44bbb}{COLOR\+\_\+\+GET\+\_\+G}}(c)~(((c) $>$$>$ 8) \& 0x\+FF)
+\item 
+\#define \mbox{\hyperlink{GameLib_8h_a6a6c59d9980833421e357f6ab0a3197c}{COLOR\+\_\+\+GET\+\_\+B}}(c)~((c) \& 0x\+FF)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+constexpr uint8\+\_\+t \mbox{\hyperlink{GameLib_8h_ae4e0076494c455f4a13102d261bb5e64}{FPS}} = 165
+\item 
+constexpr uint16\+\_\+t \mbox{\hyperlink{GameLib_8h_a52a0e25f6d7e2c6b3ac0e3f681201422}{DELAY\+\_\+\+TIME\+\_\+\+MS}} = 1000 / \mbox{\hyperlink{GameLib_8h_ae4e0076494c455f4a13102d261bb5e64}{FPS}}
+\item 
+constexpr uint16\+\_\+t \mbox{\hyperlink{GameLib_8h_ac9eaa6e6daf0eac52333b01bc6fa823b}{SCR\+\_\+W}} = 640
+\item 
+constexpr uint16\+\_\+t \mbox{\hyperlink{GameLib_8h_afe18b489773963299583dea3401debf9}{SCR\+\_\+H}} = 480
+\item 
+static const unsigned char \mbox{\hyperlink{GameLib_8h_a6d60f02bdc8f1fd2318d136eb1954852}{\+\_\+gamelib\+\_\+font8x8}} \mbox{[}95\mbox{]}\mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{GameLib_8h_a7a4127f14f16563da90eb3c836bc404f}\label{GameLib_8h_a7a4127f14f16563da90eb3c836bc404f} 
+\index{GameLib.h@{GameLib.h}!CELL\_SIZE@{CELL\_SIZE}}
+\index{CELL\_SIZE@{CELL\_SIZE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{CELL\_SIZE}{CELL\_SIZE}}
+{\footnotesize\ttfamily \#define CELL\+\_\+\+SIZE~32}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00021}{21}} 行定义.
+
+\Hypertarget{GameLib_8h_ad614e0344d51859fc601a914c6765194}\label{GameLib_8h_ad614e0344d51859fc601a914c6765194} 
+\index{GameLib.h@{GameLib.h}!COLOR\_ARGB@{COLOR\_ARGB}}
+\index{COLOR\_ARGB@{COLOR\_ARGB}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_ARGB}{COLOR\_ARGB}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+ARGB(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{r,  }\item[{}]{g,  }\item[{}]{b }\end{DoxyParamCaption})~((uint32\+\_\+t)((((a) \& 0x\+FF) $<$$<$ 24) \texorpdfstring{$\vert$}{|} (((r) \& 0x\+FF) $<$$<$ 16) \texorpdfstring{$\vert$}{|} (((g) \& 0x\+FF) $<$$<$ 8) \texorpdfstring{$\vert$}{|} ((b) \& 0x\+FF)))}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00051}{51}} 行定义.
+
+\Hypertarget{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}\label{GameLib_8h_aba2a7fe77a7501e5844370eec0185207} 
+\index{GameLib.h@{GameLib.h}!COLOR\_BLACK@{COLOR\_BLACK}}
+\index{COLOR\_BLACK@{COLOR\_BLACK}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_BLACK}{COLOR\_BLACK}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+BLACK~0x\+FF000000}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00027}{27}} 行定义.
+
+\Hypertarget{GameLib_8h_a23c70d699a5a775bc2e1ebeb8603f630}\label{GameLib_8h_a23c70d699a5a775bc2e1ebeb8603f630} 
+\index{GameLib.h@{GameLib.h}!COLOR\_BLUE@{COLOR\_BLUE}}
+\index{COLOR\_BLUE@{COLOR\_BLUE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_BLUE}{COLOR\_BLUE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+BLUE~0x\+FF0000\+FF}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00031}{31}} 行定义.
+
+\Hypertarget{GameLib_8h_a928e144dbbe4316dbb854245c7e38de7}\label{GameLib_8h_a928e144dbbe4316dbb854245c7e38de7} 
+\index{GameLib.h@{GameLib.h}!COLOR\_BROWN@{COLOR\_BROWN}}
+\index{COLOR\_BROWN@{COLOR\_BROWN}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_BROWN}{COLOR\_BROWN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+BROWN~0x\+FF8\+B4513}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00045}{45}} 行定义.
+
+\Hypertarget{GameLib_8h_a82573859711fce56f1aa0a76b18a9b18}\label{GameLib_8h_a82573859711fce56f1aa0a76b18a9b18} 
+\index{GameLib.h@{GameLib.h}!COLOR\_CYAN@{COLOR\_CYAN}}
+\index{COLOR\_CYAN@{COLOR\_CYAN}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_CYAN}{COLOR\_CYAN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+CYAN~0x\+FF00\+FFFF}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00033}{33}} 行定义.
+
+\Hypertarget{GameLib_8h_a13d2340de395ffd615ad44cf397377d7}\label{GameLib_8h_a13d2340de395ffd615ad44cf397377d7} 
+\index{GameLib.h@{GameLib.h}!COLOR\_DARK\_BLUE@{COLOR\_DARK\_BLUE}}
+\index{COLOR\_DARK\_BLUE@{COLOR\_DARK\_BLUE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_DARK\_BLUE}{COLOR\_DARK\_BLUE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+DARK\+\_\+\+BLUE~0x\+FF000088}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00043}{43}} 行定义.
+
+\Hypertarget{GameLib_8h_a2c546bb9d8660d44115f17f15d561fae}\label{GameLib_8h_a2c546bb9d8660d44115f17f15d561fae} 
+\index{GameLib.h@{GameLib.h}!COLOR\_DARK\_GRAY@{COLOR\_DARK\_GRAY}}
+\index{COLOR\_DARK\_GRAY@{COLOR\_DARK\_GRAY}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_DARK\_GRAY}{COLOR\_DARK\_GRAY}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+DARK\+\_\+\+GRAY~0x\+FF444444}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00039}{39}} 行定义.
+
+\Hypertarget{GameLib_8h_aaaaec42f9e5d8b8240243192d9ee43ec}\label{GameLib_8h_aaaaec42f9e5d8b8240243192d9ee43ec} 
+\index{GameLib.h@{GameLib.h}!COLOR\_DARK\_GREEN@{COLOR\_DARK\_GREEN}}
+\index{COLOR\_DARK\_GREEN@{COLOR\_DARK\_GREEN}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_DARK\_GREEN}{COLOR\_DARK\_GREEN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+DARK\+\_\+\+GREEN~0x\+FF008800}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00042}{42}} 行定义.
+
+\Hypertarget{GameLib_8h_a68b9570c39bd1e193fe65b734cc47cb2}\label{GameLib_8h_a68b9570c39bd1e193fe65b734cc47cb2} 
+\index{GameLib.h@{GameLib.h}!COLOR\_DARK\_RED@{COLOR\_DARK\_RED}}
+\index{COLOR\_DARK\_RED@{COLOR\_DARK\_RED}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_DARK\_RED}{COLOR\_DARK\_RED}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+DARK\+\_\+\+RED~0x\+FF880000}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00041}{41}} 行定义.
+
+\Hypertarget{GameLib_8h_ad6c7d8a7b86d9f4bb87840350107ea46}\label{GameLib_8h_ad6c7d8a7b86d9f4bb87840350107ea46} 
+\index{GameLib.h@{GameLib.h}!COLOR\_GET\_A@{COLOR\_GET\_A}}
+\index{COLOR\_GET\_A@{COLOR\_GET\_A}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GET\_A}{COLOR\_GET\_A}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GET\+\_\+A(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(((c) $>$$>$ 24) \& 0x\+FF)}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00054}{54}} 行定义.
+
+\Hypertarget{GameLib_8h_a6a6c59d9980833421e357f6ab0a3197c}\label{GameLib_8h_a6a6c59d9980833421e357f6ab0a3197c} 
+\index{GameLib.h@{GameLib.h}!COLOR\_GET\_B@{COLOR\_GET\_B}}
+\index{COLOR\_GET\_B@{COLOR\_GET\_B}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GET\_B}{COLOR\_GET\_B}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GET\+\_\+B(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~((c) \& 0x\+FF)}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00057}{57}} 行定义.
+
+\Hypertarget{GameLib_8h_a87604365f6b558befa36e9340cf44bbb}\label{GameLib_8h_a87604365f6b558befa36e9340cf44bbb} 
+\index{GameLib.h@{GameLib.h}!COLOR\_GET\_G@{COLOR\_GET\_G}}
+\index{COLOR\_GET\_G@{COLOR\_GET\_G}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GET\_G}{COLOR\_GET\_G}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GET\+\_\+G(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(((c) $>$$>$ 8) \& 0x\+FF)}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00056}{56}} 行定义.
+
+\Hypertarget{GameLib_8h_a29607ad112a1f5c2a29e6ffb1afd703d}\label{GameLib_8h_a29607ad112a1f5c2a29e6ffb1afd703d} 
+\index{GameLib.h@{GameLib.h}!COLOR\_GET\_R@{COLOR\_GET\_R}}
+\index{COLOR\_GET\_R@{COLOR\_GET\_R}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GET\_R}{COLOR\_GET\_R}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GET\+\_\+R(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~(((c) $>$$>$ 16) \& 0x\+FF)}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00055}{55}} 行定义.
+
+\Hypertarget{GameLib_8h_a8d66c272228e3ae3e88df54b665deab8}\label{GameLib_8h_a8d66c272228e3ae3e88df54b665deab8} 
+\index{GameLib.h@{GameLib.h}!COLOR\_GOLD@{COLOR\_GOLD}}
+\index{COLOR\_GOLD@{COLOR\_GOLD}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GOLD}{COLOR\_GOLD}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GOLD~0x\+FFFFD700}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00046}{46}} 行定义.
+
+\Hypertarget{GameLib_8h_a3aaf3b0287d26dfb6ecb3b1c46e950c8}\label{GameLib_8h_a3aaf3b0287d26dfb6ecb3b1c46e950c8} 
+\index{GameLib.h@{GameLib.h}!COLOR\_GRAY@{COLOR\_GRAY}}
+\index{COLOR\_GRAY@{COLOR\_GRAY}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GRAY}{COLOR\_GRAY}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GRAY~0x\+FF888888}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00038}{38}} 行定义.
+
+\Hypertarget{GameLib_8h_afc9149f5de51bd9ac4f5ebbfa153f018}\label{GameLib_8h_afc9149f5de51bd9ac4f5ebbfa153f018} 
+\index{GameLib.h@{GameLib.h}!COLOR\_GREEN@{COLOR\_GREEN}}
+\index{COLOR\_GREEN@{COLOR\_GREEN}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GREEN}{COLOR\_GREEN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GREEN~0x\+FF00\+FF00}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00030}{30}} 行定义.
+
+\Hypertarget{GameLib_8h_adc2954ef000e2049ff7368a66e921a81}\label{GameLib_8h_adc2954ef000e2049ff7368a66e921a81} 
+\index{GameLib.h@{GameLib.h}!COLOR\_LIGHT\_GRAY@{COLOR\_LIGHT\_GRAY}}
+\index{COLOR\_LIGHT\_GRAY@{COLOR\_LIGHT\_GRAY}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_LIGHT\_GRAY}{COLOR\_LIGHT\_GRAY}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+LIGHT\+\_\+\+GRAY~0x\+FFCCCCCC}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00040}{40}} 行定义.
+
+\Hypertarget{GameLib_8h_a8deb0beccea721b35bdb1b4f7264fe75}\label{GameLib_8h_a8deb0beccea721b35bdb1b4f7264fe75} 
+\index{GameLib.h@{GameLib.h}!COLOR\_MAGENTA@{COLOR\_MAGENTA}}
+\index{COLOR\_MAGENTA@{COLOR\_MAGENTA}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_MAGENTA}{COLOR\_MAGENTA}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+MAGENTA~0x\+FFFF00\+FF}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00034}{34}} 行定义.
+
+\Hypertarget{GameLib_8h_aef75f616b9a3fdb10d38395dfb996873}\label{GameLib_8h_aef75f616b9a3fdb10d38395dfb996873} 
+\index{GameLib.h@{GameLib.h}!COLOR\_ORANGE@{COLOR\_ORANGE}}
+\index{COLOR\_ORANGE@{COLOR\_ORANGE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_ORANGE}{COLOR\_ORANGE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+ORANGE~0x\+FFFF8800}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00035}{35}} 行定义.
+
+\Hypertarget{GameLib_8h_adc400e6efc54843fb9400270bbc61368}\label{GameLib_8h_adc400e6efc54843fb9400270bbc61368} 
+\index{GameLib.h@{GameLib.h}!COLOR\_PINK@{COLOR\_PINK}}
+\index{COLOR\_PINK@{COLOR\_PINK}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_PINK}{COLOR\_PINK}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+PINK~0x\+FFFF88\+CC}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00036}{36}} 行定义.
+
+\Hypertarget{GameLib_8h_a361bd41194ac13caf9169f3f689dc179}\label{GameLib_8h_a361bd41194ac13caf9169f3f689dc179} 
+\index{GameLib.h@{GameLib.h}!COLOR\_PURPLE@{COLOR\_PURPLE}}
+\index{COLOR\_PURPLE@{COLOR\_PURPLE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_PURPLE}{COLOR\_PURPLE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+PURPLE~0x\+FF8800\+FF}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00037}{37}} 行定义.
+
+\Hypertarget{GameLib_8h_ad86358bf19927183dd7b4ae215a29731}\label{GameLib_8h_ad86358bf19927183dd7b4ae215a29731} 
+\index{GameLib.h@{GameLib.h}!COLOR\_RED@{COLOR\_RED}}
+\index{COLOR\_RED@{COLOR\_RED}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_RED}{COLOR\_RED}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+RED~0x\+FFFF0000}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00029}{29}} 行定义.
+
+\Hypertarget{GameLib_8h_acf4f59d5bb70b6d1ab8cc5f50c255e20}\label{GameLib_8h_acf4f59d5bb70b6d1ab8cc5f50c255e20} 
+\index{GameLib.h@{GameLib.h}!COLOR\_RGB@{COLOR\_RGB}}
+\index{COLOR\_RGB@{COLOR\_RGB}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_RGB}{COLOR\_RGB}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+RGB(\begin{DoxyParamCaption}\item[{}]{r,  }\item[{}]{g,  }\item[{}]{b }\end{DoxyParamCaption})~((uint32\+\_\+t)(0x\+FF000000 \texorpdfstring{$\vert$}{|} (((r) \& 0x\+FF) $<$$<$ 16) \texorpdfstring{$\vert$}{|} (((g) \& 0x\+FF) $<$$<$ 8) \texorpdfstring{$\vert$}{|} ((b) \& 0x\+FF)))}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00050}{50}} 行定义.
+
+\Hypertarget{GameLib_8h_ae2936f1df3cf780ba2e7f08301f4c493}\label{GameLib_8h_ae2936f1df3cf780ba2e7f08301f4c493} 
+\index{GameLib.h@{GameLib.h}!COLOR\_SKY\_BLUE@{COLOR\_SKY\_BLUE}}
+\index{COLOR\_SKY\_BLUE@{COLOR\_SKY\_BLUE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_SKY\_BLUE}{COLOR\_SKY\_BLUE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+SKY\+\_\+\+BLUE~0x\+FF87\+CEEB}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00044}{44}} 行定义.
+
+\Hypertarget{GameLib_8h_a7836ebd1d17ff9b43127d69473f7c402}\label{GameLib_8h_a7836ebd1d17ff9b43127d69473f7c402} 
+\index{GameLib.h@{GameLib.h}!COLOR\_TRANSPARENT@{COLOR\_TRANSPARENT}}
+\index{COLOR\_TRANSPARENT@{COLOR\_TRANSPARENT}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_TRANSPARENT}{COLOR\_TRANSPARENT}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+TRANSPARENT~0x00000000}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00047}{47}} 行定义.
+
+\Hypertarget{GameLib_8h_a9b44987ffdc2af19b635206b94334b69}\label{GameLib_8h_a9b44987ffdc2af19b635206b94334b69} 
+\index{GameLib.h@{GameLib.h}!COLOR\_WHITE@{COLOR\_WHITE}}
+\index{COLOR\_WHITE@{COLOR\_WHITE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_WHITE}{COLOR\_WHITE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+WHITE~0x\+FFFFFFFF}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00028}{28}} 行定义.
+
+\Hypertarget{GameLib_8h_a4534b577b74a58b0f4b7be027af664e0}\label{GameLib_8h_a4534b577b74a58b0f4b7be027af664e0} 
+\index{GameLib.h@{GameLib.h}!COLOR\_YELLOW@{COLOR\_YELLOW}}
+\index{COLOR\_YELLOW@{COLOR\_YELLOW}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_YELLOW}{COLOR\_YELLOW}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+YELLOW~0x\+FFFFFF00}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00032}{32}} 行定义.
+
+\Hypertarget{GameLib_8h_a881e2cda79b5951641b07f678f6ef929}\label{GameLib_8h_a881e2cda79b5951641b07f678f6ef929} 
+\index{GameLib.h@{GameLib.h}!GRID\_COLS@{GRID\_COLS}}
+\index{GRID\_COLS@{GRID\_COLS}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{GRID\_COLS}{GRID\_COLS}}
+{\footnotesize\ttfamily \#define GRID\+\_\+\+COLS~15}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00020}{20}} 行定义.
+
+\Hypertarget{GameLib_8h_a5ba0b105774bfdc09ce545d73dcdedd3}\label{GameLib_8h_a5ba0b105774bfdc09ce545d73dcdedd3} 
+\index{GameLib.h@{GameLib.h}!GRID\_ROWS@{GRID\_ROWS}}
+\index{GRID\_ROWS@{GRID\_ROWS}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{GRID\_ROWS}{GRID\_ROWS}}
+{\footnotesize\ttfamily \#define GRID\+\_\+\+ROWS~12}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00019}{19}} 行定义.
+
+\Hypertarget{GameLib_8h_af0cee92dec0a54dad52eec38fd9a2466}\label{GameLib_8h_af0cee92dec0a54dad52eec38fd9a2466} 
+\index{GameLib.h@{GameLib.h}!GRID\_X@{GRID\_X}}
+\index{GRID\_X@{GRID\_X}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{GRID\_X}{GRID\_X}}
+{\footnotesize\ttfamily \#define GRID\+\_\+X~10}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00017}{17}} 行定义.
+
+\Hypertarget{GameLib_8h_ad8c6cf1074fa26eb4554030f04ee57d1}\label{GameLib_8h_ad8c6cf1074fa26eb4554030f04ee57d1} 
+\index{GameLib.h@{GameLib.h}!GRID\_Y@{GRID\_Y}}
+\index{GRID\_Y@{GRID\_Y}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{GRID\_Y}{GRID\_Y}}
+{\footnotesize\ttfamily \#define GRID\+\_\+Y~30}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00018}{18}} 行定义.
+
+\Hypertarget{GameLib_8h_a07ffd6e3f128f941b2f400c352896a74}\label{GameLib_8h_a07ffd6e3f128f941b2f400c352896a74} 
+\index{GameLib.h@{GameLib.h}!MAP\_H@{MAP\_H}}
+\index{MAP\_H@{MAP\_H}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{MAP\_H}{MAP\_H}}
+{\footnotesize\ttfamily \#define MAP\+\_\+H~2400}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00015}{15}} 行定义.
+
+\Hypertarget{GameLib_8h_a4c736195492abc5f49af63a57f487cdb}\label{GameLib_8h_a4c736195492abc5f49af63a57f487cdb} 
+\index{GameLib.h@{GameLib.h}!MAP\_W@{MAP\_W}}
+\index{MAP\_W@{MAP\_W}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{MAP\_W}{MAP\_W}}
+{\footnotesize\ttfamily \#define MAP\+\_\+W~3200}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00014}{14}} 行定义.
+
+\Hypertarget{GameLib_8h_a4f2180facbb45edf1aeff1c5aec6186d}\label{GameLib_8h_a4f2180facbb45edf1aeff1c5aec6186d} 
+\index{GameLib.h@{GameLib.h}!MAX\_SNAKE@{MAX\_SNAKE}}
+\index{MAX\_SNAKE@{MAX\_SNAKE}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_SNAKE}{MAX\_SNAKE}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+SNAKE~400}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00022}{22}} 行定义.
+
+\Hypertarget{GameLib_8h_a180bbc2e5a9a7645bcb01b9e5d021178}\label{GameLib_8h_a180bbc2e5a9a7645bcb01b9e5d021178} 
+\index{GameLib.h@{GameLib.h}!SCR\_X@{SCR\_X}}
+\index{SCR\_X@{SCR\_X}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{SCR\_X}{SCR\_X}}
+{\footnotesize\ttfamily \#define SCR\+\_\+X~1000}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00012}{12}} 行定义.
+
+\Hypertarget{GameLib_8h_ac42316a2724692c52c4973ce2f4f5c7f}\label{GameLib_8h_ac42316a2724692c52c4973ce2f4f5c7f} 
+\index{GameLib.h@{GameLib.h}!SCR\_Y@{SCR\_Y}}
+\index{SCR\_Y@{SCR\_Y}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{SCR\_Y}{SCR\_Y}}
+{\footnotesize\ttfamily \#define SCR\+\_\+Y~500}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00013}{13}} 行定义.
+
+
+
+\doxysubsection{变量说明}
+\Hypertarget{GameLib_8h_a6d60f02bdc8f1fd2318d136eb1954852}\label{GameLib_8h_a6d60f02bdc8f1fd2318d136eb1954852} 
+\index{GameLib.h@{GameLib.h}!\_gamelib\_font8x8@{\_gamelib\_font8x8}}
+\index{\_gamelib\_font8x8@{\_gamelib\_font8x8}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{\_gamelib\_font8x8}{\_gamelib\_font8x8}}
+{\footnotesize\ttfamily const unsigned char \+\_\+gamelib\+\_\+font8x8\mbox{[}95\mbox{]}\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00060}{60}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TextureManager_8cpp_source_l00098}{Texture\+Manager\+::draw\+Text()}} , 以及 \mbox{\hyperlink{TextureManager_8cpp_source_l00133}{Texture\+Manager\+::draw\+Text\+Scale()}}.
+
+\Hypertarget{GameLib_8h_a52a0e25f6d7e2c6b3ac0e3f681201422}\label{GameLib_8h_a52a0e25f6d7e2c6b3ac0e3f681201422} 
+\index{GameLib.h@{GameLib.h}!DELAY\_TIME\_MS@{DELAY\_TIME\_MS}}
+\index{DELAY\_TIME\_MS@{DELAY\_TIME\_MS}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{DELAY\_TIME\_MS}{DELAY\_TIME\_MS}}
+{\footnotesize\ttfamily constexpr uint16\+\_\+t DELAY\+\_\+\+TIME\+\_\+\+MS = 1000 / \mbox{\hyperlink{GameLib_8h_ae4e0076494c455f4a13102d261bb5e64}{FPS}}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00008}{8}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00154}{Game\+::sync\+FPS()}}.
+
+\Hypertarget{GameLib_8h_ae4e0076494c455f4a13102d261bb5e64}\label{GameLib_8h_ae4e0076494c455f4a13102d261bb5e64} 
+\index{GameLib.h@{GameLib.h}!FPS@{FPS}}
+\index{FPS@{FPS}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{FPS}{FPS}}
+{\footnotesize\ttfamily constexpr uint8\+\_\+t FPS = 165\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00007}{7}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{AnimatedGraphic_8h_source_l00013}{Animated\+Graphic\+::get\+Current\+Frame()}}, \mbox{\hyperlink{Player_8cpp_source_l00013}{Player\+::load()}} , 以及 \mbox{\hyperlink{AnimatedGraphic_8h_source_l00012}{Animated\+Graphic\+::update\+Global\+Frame()}}.
+
+\Hypertarget{GameLib_8h_afe18b489773963299583dea3401debf9}\label{GameLib_8h_afe18b489773963299583dea3401debf9} 
+\index{GameLib.h@{GameLib.h}!SCR\_H@{SCR\_H}}
+\index{SCR\_H@{SCR\_H}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{SCR\_H}{SCR\_H}}
+{\footnotesize\ttfamily constexpr uint16\+\_\+t SCR\+\_\+H = 480\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00011}{11}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00006}{Tile\+Layer\+::\+Tile\+Layer()}} , 以及 \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}.
+
+\Hypertarget{GameLib_8h_ac9eaa6e6daf0eac52333b01bc6fa823b}\label{GameLib_8h_ac9eaa6e6daf0eac52333b01bc6fa823b} 
+\index{GameLib.h@{GameLib.h}!SCR\_W@{SCR\_W}}
+\index{SCR\_W@{SCR\_W}!GameLib.h@{GameLib.h}}
+\doxysubsubsection{\texorpdfstring{SCR\_W}{SCR\_W}}
+{\footnotesize\ttfamily constexpr uint16\+\_\+t SCR\+\_\+W = 640\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{GameLib_8h_source}{Game\+Lib.\+h}} 第 \mbox{\hyperlink{GameLib_8h_source_l00010}{10}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00006}{Tile\+Layer\+::\+Tile\+Layer()}}, \mbox{\hyperlink{Cat_8h_source_l00017}{Cat\+::update()}} , 以及 \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}.
+

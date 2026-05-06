@@ -1,0 +1,92 @@
+\doxysection{Menu\+Main\+State.\+cpp}
+\hypertarget{MenuMainState_8cpp_source}{}\label{MenuMainState_8cpp_source}\index{src/MenuMainState.cpp@{src/MenuMainState.cpp}}
+\mbox{\hyperlink{MenuMainState_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MenuMainState_8h}{MenuMainState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MenuButton_8h}{MenuButton.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{StateParser_8h}{StateParser.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{InputHandler_8h}{InputHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{PlayState_8h}{PlayState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <assert.h>}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00011}00011\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classMenuMainState_a869ae95acd3639a8ca39b884d023df6f}{MenuMainState::s\_menuID}}\ =\ \textcolor{stringliteral}{"{}MENU"{}};}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00013}00013\ \textcolor{comment}{//\ Callbacks}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00014}\mbox{\hyperlink{classMenuMainState_af702ce2061f11e27d8f9bac620d215d1}{00014}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuMainState_af702ce2061f11e27d8f9bac620d215d1}{MenuMainState::s\_menuToPlay}}()}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_a9f5ae2306d2feffd806a19040d8d43de}{getStateMachine}}()-\/>\mbox{\hyperlink{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}{changeState}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayState}{PlayState}}());}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00017}00017\ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00019}\mbox{\hyperlink{classMenuMainState_a9ca0b0ac5bb6bbc03444725a4ab37bf4}{00019}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuMainState_a9ca0b0ac5bb6bbc03444725a4ab37bf4}{MenuMainState::s\_exitFromMenu}}()}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00020}00020\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{TheGame::Instance}}()-\/>\mbox{\hyperlink{classGame_a8272be134d16c277bb014ad6a22fc357}{quit}}();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00023}00023\ \textcolor{comment}{//\ end\ callbacks}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00025}\mbox{\hyperlink{classMenuMainState_aaa1ed1b8d8f785b657e0a4114899c4a1}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuMainState_aaa1ed1b8d8f785b657e0a4114899c4a1}{MenuMainState::update}}()}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{TheInputHandler::Instance}}()-\/>isKeyPressed(SDL\_SCANCODE\_ESCAPE))\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuMainState_a9ca0b0ac5bb6bbc03444725a4ab37bf4}{s\_exitFromMenu}}();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00029}00029\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{TheInputHandler::Instance}}()-\/>isKeyDown(SDL\_SCANCODE\_SPACE))\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuMainState_af702ce2061f11e27d8f9bac620d215d1}{s\_menuToPlay}}();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classMenuMainState_a892f578e9c0f1082282eb91ac8c2ccd0}{m\_gameObjects}})\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ obj-\/>update();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00038}\mbox{\hyperlink{classMenuMainState_ac44cf2d88c1649f1931bd19f10776bf8}{00038}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuMainState_ac44cf2d88c1649f1931bd19f10776bf8}{MenuMainState::render}}()}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00039}00039\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classMenuMainState_a892f578e9c0f1082282eb91ac8c2ccd0}{m\_gameObjects}})\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ obj-\/>draw();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00042}00042\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00043}00043\ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00045}\mbox{\hyperlink{classMenuMainState_ab488838da48beffb97d440befa77f01b}{00045}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMenuMainState_ab488838da48beffb97d440befa77f01b}{MenuMainState::onEnter}}()}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00046}00046\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{comment}{//\ parse\ the\ state}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classStateParser}{StateParser}}\ stateParser;}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00049}00049\ \ \ \ \ stateParser.\mbox{\hyperlink{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02}{parseState}}(\textcolor{stringliteral}{"{}assets/test.xml"{}},\ \mbox{\hyperlink{classMenuMainState_a869ae95acd3639a8ca39b884d023df6f}{s\_menuID}},\ \&\mbox{\hyperlink{classMenuMainState_a892f578e9c0f1082282eb91ac8c2ccd0}{m\_gameObjects}},\ \&\mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\_textureIDList}});}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}}.push\_back(0);}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}}.push\_back(\mbox{\hyperlink{classMenuMainState_af702ce2061f11e27d8f9bac620d215d1}{s\_menuToPlay}});}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}}.push\_back(\mbox{\hyperlink{classMenuMainState_a9ca0b0ac5bb6bbc03444725a4ab37bf4}{s\_exitFromMenu}});}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{classMenuMainState_afd7368e00cceec1f5b868635fd4d05f6}{setCallbacks}}(\mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\_callbacks}});}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00054}00054\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}entering\ MenuMainState\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00056}00056\ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00058}\mbox{\hyperlink{classMenuMainState_abbb4152f58414588107e7d42c3a08530}{00058}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMenuMainState_abbb4152f58414588107e7d42c3a08530}{MenuMainState::onExit}}()}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00059}00059\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//\ clean\ the\ game\ objects}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \ \mbox{\hyperlink{classMenuMainState_a892f578e9c0f1082282eb91ac8c2ccd0}{m\_gameObjects}})}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00062}00062\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ obj-\/>clean();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00064}00064\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00065}00065\ \ \ \ \ \mbox{\hyperlink{classMenuMainState_a892f578e9c0f1082282eb91ac8c2ccd0}{m\_gameObjects}}.clear();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\_textureIDList}})}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00067}00067\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6}{clearFromTextureMap}}(obj);}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00070}00070\ \ \ \ \ \mbox{\hyperlink{classInputHandler_a14e7f0e3e3c076ef4d0bb69870452e55}{TheInputHandler::Instance}}()-\/>\mbox{\hyperlink{classInputHandler_ab12b2b63605d7661317ba290ee6b89a3}{reset\_mouseButtonState}}();}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00071}00071\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}exiting\ MenuMainState\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00075}\mbox{\hyperlink{classMenuMainState_afd7368e00cceec1f5b868635fd4d05f6}{00075}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuMainState_afd7368e00cceec1f5b868635fd4d05f6}{MenuMainState::setCallbacks}}(\textcolor{keyword}{const}\ std::vector<Callback>\&\ callbacks)}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00076}00076\ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ obj\ :\ \mbox{\hyperlink{classMenuMainState_a892f578e9c0f1082282eb91ac8c2ccd0}{m\_gameObjects}})}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00078}00078\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classMenuButton}{MenuButton}}*\textcolor{keyword}{>}(obj.get())\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton}{MenuButton}}*\ pButton\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classMenuButton}{MenuButton}}*\textcolor{keyword}{>}(obj.get());}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ pButton-\/>\mbox{\hyperlink{classMenuButton_a919648d93c3b9bb742830c560c424e78}{setCallback}}(callbacks[pButton-\/>\mbox{\hyperlink{classMenuButton_a191c5ecd63f2fc598470c6398d169321}{getCallbackID}}()]);}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00084}00084\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00085}00085\ \}}
+\DoxyCodeLine{\Hypertarget{MenuMainState_8cpp_source_l00086}00086\ }
+
+\end{DoxyCode}

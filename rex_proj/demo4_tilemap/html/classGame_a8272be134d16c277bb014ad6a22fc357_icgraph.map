@@ -1,0 +1,15 @@
+<map id="Game::quit" name="Game::quit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="627,80,721,105"/>
+<area shape="rect" id="Node000002" href="$classMenuMainState.html#a9ca0b0ac5bb6bbc03444725a4ab37bf4" title=" " alt="" coords="339,55,579,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="613,88,566,83,567,77,613,83"/>
+<area shape="rect" id="Node000005" href="$classInputHandler.html#a72ec3b0da1f1747064bf00fc9d180d48" title=" " alt="" coords="379,104,538,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="613,102,539,110,538,105,612,97"/>
+<area shape="rect" id="Node000003" href="$classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="108,5,291,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,55,266,33,267,28,378,49"/>
+<area shape="rect" id="Node000004" href="$classMenuMainState.html#aaa1ed1b8d8f785b657e0a4114899c4a1" title=" " alt="" coords="111,55,288,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="325,70,288,70,288,65,325,65"/>
+<area shape="rect" id="Node000006" href="$classGame.html#adb5563f62c0c82e3e42ec36501aa5698" title=" " alt="" coords="121,104,278,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="366,119,278,119,278,114,366,114"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,104,60,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="107,119,60,119,60,114,107,114"/>
+</map>

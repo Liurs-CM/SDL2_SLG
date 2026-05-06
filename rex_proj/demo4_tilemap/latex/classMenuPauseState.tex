@@ -1,0 +1,375 @@
+\doxysection{Menu\+Pause\+State类 参考}
+\hypertarget{classMenuPauseState}{}\label{classMenuPauseState}\index{MenuPauseState@{MenuPauseState}}
+
+
+{\ttfamily \#include $<$Menu\+Pause\+State.\+h$>$}
+
+
+
+类 Menu\+Pause\+State 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classMenuPauseState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Menu\+Pause\+State 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classMenuPauseState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classMenuPauseState_aa21b993a4669e0b1e99d634b100a7acc}{\texorpdfstring{$\sim$}{\string~}\+Menu\+Pause\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{classMenuPauseState_aae1d1d2ec5f4869333d54692a453c475}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classMenuPauseState_afc0434dcb454274bd4f42ff7c4ff58d8}{render}} ()
+\item 
+virtual bool \mbox{\hyperlink{classMenuPauseState_a15eba5e95a5ec94f1dd4f7b47e047de2}{on\+Enter}} ()
+\item 
+virtual bool \mbox{\hyperlink{classMenuPauseState_a5f05d3923a24f9c3256e9894646b76e7}{on\+Exit}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classMenuPauseState_a9b2a0dd4e72c95d9c6ac06ffa13ae7f3}{get\+State\+ID}} () const
+\item 
+virtual void \mbox{\hyperlink{classMenuPauseState_a2aa960be508029ee135fabf2e7c78594}{set\+Callbacks}} (const std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \&callbacks)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classMenuState}{Menu\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classMenuState_abbd5869601cb7673c38e9deb44b4342a}{\texorpdfstring{$\sim$}{\string~}\+Menu\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGameState_adc1bfdf7ee7c1f48e4841995db4e16c3}{\texorpdfstring{$\sim$}{\string~}\+Game\+State}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classMenuPauseState_afa67ee79ca7c8193500cf9e8a9197e39}{s\+\_\+pause\+To\+Main}} ()
+\item 
+static void \mbox{\hyperlink{classMenuPauseState_afb69b19913759d84ca15bc054d797aa9}{s\+\_\+resume\+Play}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ $>$ \mbox{\hyperlink{classMenuPauseState_a37204fd8409874156b343c703c37d50e}{m\+\_\+game\+Objects}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{classMenuPauseState_a68cd0f120d758d3a7875f488c7ee6e26}{s\+\_\+pause\+ID}} = "{}PAUSE"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Protected 类型 继承自 \mbox{\hyperlink{classMenuState}{Menu\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}}) ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameState_a4fa0a2bf50315c4a35a3890a0adcee5c}{Game\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classMenuState}{Menu\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \mbox{\hyperlink{classMenuState_a4ac06f7bc867dc879a853a73a33de68a}{m\+\_\+callbacks}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classGameState}{Game\+State}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGameState_a5738bb77af0103b4419c0669a61dc23b}{m\+\_\+loading\+Complete}}
+\item 
+bool \mbox{\hyperlink{classGameState_abd2cc9eda4f7ec4cca4fb86d76a02830}{m\+\_\+exiting}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGameState_a066cad511a40acd1835731bb016dc2c5}{m\+\_\+texture\+IDList}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8h_source}{Menu\+Pause\+State.\+h}} 第 \mbox{\hyperlink{MenuPauseState_8h_source_l00008}{8}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classMenuPauseState_aa21b993a4669e0b1e99d634b100a7acc}\label{classMenuPauseState_aa21b993a4669e0b1e99d634b100a7acc} 
+\index{MenuPauseState@{MenuPauseState}!````~MenuPauseState@{\texorpdfstring{$\sim$}{\string~}MenuPauseState}}
+\index{````~MenuPauseState@{\texorpdfstring{$\sim$}{\string~}MenuPauseState}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MenuPauseState()}{\string~MenuPauseState()}}
+{\footnotesize\ttfamily virtual Menu\+Pause\+State\+::\texorpdfstring{$\sim$}{\string~}\+Menu\+Pause\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8h_source}{Menu\+Pause\+State.\+h}} 第 \mbox{\hyperlink{MenuPauseState_8h_source_l00011}{11}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classMenuPauseState_a9b2a0dd4e72c95d9c6ac06ffa13ae7f3}\label{classMenuPauseState_a9b2a0dd4e72c95d9c6ac06ffa13ae7f3} 
+\index{MenuPauseState@{MenuPauseState}!getStateID@{getStateID}}
+\index{getStateID@{getStateID}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{getStateID()}{getStateID()}}
+{\footnotesize\ttfamily virtual std\+::string Menu\+Pause\+State\+::get\+State\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8h_source}{Menu\+Pause\+State.\+h}} 第 \mbox{\hyperlink{MenuPauseState_8h_source_l00016}{16}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuPauseState_8h_source_l00019}{s\+\_\+pause\+ID}}.
+
+\Hypertarget{classMenuPauseState_a15eba5e95a5ec94f1dd4f7b47e047de2}\label{classMenuPauseState_a15eba5e95a5ec94f1dd4f7b47e047de2} 
+\index{MenuPauseState@{MenuPauseState}!onEnter@{onEnter}}
+\index{onEnter@{onEnter}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{onEnter()}{onEnter()}}
+{\footnotesize\ttfamily bool Menu\+Pause\+State\+::on\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_ad17154015d2de5e669067c34d2cfe5b3}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8cpp_source}{Menu\+Pause\+State.\+cpp}} 第 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{43}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuState_8h_source_l00012}{Menu\+State\+::m\+\_\+callbacks}}, \mbox{\hyperlink{MenuPauseState_8h_source_l00022}{m\+\_\+game\+Objects}}, \mbox{\hyperlink{GameState_8h_source_l00019}{Game\+State\+::m\+\_\+texture\+IDList}}, \mbox{\hyperlink{StateParser_8cpp_source_l00007}{State\+Parser\+::parse\+State()}}, \mbox{\hyperlink{MenuPauseState_8h_source_l00019}{s\+\_\+pause\+ID}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00013}{s\+\_\+pause\+To\+Main()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00018}{s\+\_\+resume\+Play()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00071}{set\+Callbacks()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_a15eba5e95a5ec94f1dd4f7b47e047de2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuPauseState_a5f05d3923a24f9c3256e9894646b76e7}\label{classMenuPauseState_a5f05d3923a24f9c3256e9894646b76e7} 
+\index{MenuPauseState@{MenuPauseState}!onExit@{onExit}}
+\index{onExit@{onExit}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily bool Menu\+Pause\+State\+::on\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_aed6186fd65fefb5460f89ceed82829a1}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8cpp_source}{Menu\+Pause\+State.\+cpp}} 第 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00055}{55}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8cpp_source_l00072}{Texture\+Manager\+::clear\+From\+Texture\+Map()}}, \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{MenuPauseState_8h_source_l00022}{m\+\_\+game\+Objects}}, \mbox{\hyperlink{GameState_8h_source_l00019}{Game\+State\+::m\+\_\+texture\+IDList}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00309}{Input\+Handler\+::reset\+\_\+mouse\+Button\+State()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_a5f05d3923a24f9c3256e9894646b76e7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuPauseState_afc0434dcb454274bd4f42ff7c4ff58d8}\label{classMenuPauseState_afc0434dcb454274bd4f42ff7c4ff58d8} 
+\index{MenuPauseState@{MenuPauseState}!render@{render}}
+\index{render@{render}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Menu\+Pause\+State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_abb892a3560e8fbedb3e4526af5deed7b}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8cpp_source}{Menu\+Pause\+State.\+cpp}} 第 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00036}{36}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuPauseState_8h_source_l00022}{m\+\_\+game\+Objects}}.
+
+\Hypertarget{classMenuPauseState_afa67ee79ca7c8193500cf9e8a9197e39}\label{classMenuPauseState_afa67ee79ca7c8193500cf9e8a9197e39} 
+\index{MenuPauseState@{MenuPauseState}!s\_pauseToMain@{s\_pauseToMain}}
+\index{s\_pauseToMain@{s\_pauseToMain}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{s\_pauseToMain()}{s\_pauseToMain()}}
+{\footnotesize\ttfamily void Menu\+Pause\+State\+::s\+\_\+pause\+To\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8cpp_source}{Menu\+Pause\+State.\+cpp}} 第 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00013}{13}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{Game\+State\+Machine\+::change\+State()}}, \mbox{\hyperlink{Game_8h_source_l00019}{Game\+::get\+State\+Machine()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00033}{Game\+::\+Instance()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{on\+Enter()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00023}{update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_afa67ee79ca7c8193500cf9e8a9197e39_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_afa67ee79ca7c8193500cf9e8a9197e39_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuPauseState_afb69b19913759d84ca15bc054d797aa9}\label{classMenuPauseState_afb69b19913759d84ca15bc054d797aa9} 
+\index{MenuPauseState@{MenuPauseState}!s\_resumePlay@{s\_resumePlay}}
+\index{s\_resumePlay@{s\_resumePlay}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{s\_resumePlay()}{s\_resumePlay()}}
+{\footnotesize\ttfamily void Menu\+Pause\+State\+::s\+\_\+resume\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8cpp_source}{Menu\+Pause\+State.\+cpp}} 第 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00018}{18}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00019}{Game\+::get\+State\+Machine()}}, \mbox{\hyperlink{Game_8h_source_l00033}{Game\+::\+Instance()}} , 以及 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00096}{Game\+State\+Machine\+::pop\+State()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{on\+Enter()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00023}{update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_afb69b19913759d84ca15bc054d797aa9_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_afb69b19913759d84ca15bc054d797aa9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuPauseState_a2aa960be508029ee135fabf2e7c78594}\label{classMenuPauseState_a2aa960be508029ee135fabf2e7c78594} 
+\index{MenuPauseState@{MenuPauseState}!setCallbacks@{setCallbacks}}
+\index{setCallbacks@{setCallbacks}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{setCallbacks()}{setCallbacks()}}
+{\footnotesize\ttfamily void Menu\+Pause\+State\+::set\+Callbacks (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classMenuState_a43d24eed2595e1ed609640189a96d835}{Callback}} $>$ \&}]{callbacks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classMenuState_a52b9dc2da4b74bcf878e09d697e1d53e}{Menu\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8cpp_source}{Menu\+Pause\+State.\+cpp}} 第 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00071}{71}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{MenuButton_8h_source_l00016}{Menu\+Button\+::get\+Callback\+ID()}}, \mbox{\hyperlink{MenuPauseState_8h_source_l00022}{m\+\_\+game\+Objects}} , 以及 \mbox{\hyperlink{MenuButton_8h_source_l00015}{Menu\+Button\+::set\+Callback()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{on\+Enter()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_a2aa960be508029ee135fabf2e7c78594_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_a2aa960be508029ee135fabf2e7c78594_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMenuPauseState_aae1d1d2ec5f4869333d54692a453c475}\label{classMenuPauseState_aae1d1d2ec5f4869333d54692a453c475} 
+\index{MenuPauseState@{MenuPauseState}!update@{update}}
+\index{update@{update}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Menu\+Pause\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{classGameState_ab2864bfa04f92f6966861a1f2883bda0}{Game\+State}}.
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8cpp_source}{Menu\+Pause\+State.\+cpp}} 第 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00023}{23}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{MenuPauseState_8h_source_l00022}{m\+\_\+game\+Objects}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00013}{s\+\_\+pause\+To\+Main()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00018}{s\+\_\+resume\+Play()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenuPauseState_aae1d1d2ec5f4869333d54692a453c475_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classMenuPauseState_a37204fd8409874156b343c703c37d50e}\label{classMenuPauseState_a37204fd8409874156b343c703c37d50e} 
+\index{MenuPauseState@{MenuPauseState}!m\_gameObjects@{m\_gameObjects}}
+\index{m\_gameObjects@{m\_gameObjects}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{m\_gameObjects}{m\_gameObjects}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGameObject}{Game\+Object}}$>$ $>$ Menu\+Pause\+State\+::m\+\_\+game\+Objects\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8h_source}{Menu\+Pause\+State.\+h}} 第 \mbox{\hyperlink{MenuPauseState_8h_source_l00022}{22}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{on\+Enter()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00055}{on\+Exit()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00036}{render()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00071}{set\+Callbacks()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00023}{update()}}.
+
+\Hypertarget{classMenuPauseState_a68cd0f120d758d3a7875f488c7ee6e26}\label{classMenuPauseState_a68cd0f120d758d3a7875f488c7ee6e26} 
+\index{MenuPauseState@{MenuPauseState}!s\_pauseID@{s\_pauseID}}
+\index{s\_pauseID@{s\_pauseID}!MenuPauseState@{MenuPauseState}}
+\doxysubsubsection{\texorpdfstring{s\_pauseID}{s\_pauseID}}
+{\footnotesize\ttfamily const std\+::string Menu\+Pause\+State\+::s\+\_\+pause\+ID = "{}PAUSE"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{MenuPauseState_8h_source}{Menu\+Pause\+State.\+h}} 第 \mbox{\hyperlink{MenuPauseState_8h_source_l00019}{19}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuPauseState_8h_source_l00016}{get\+State\+ID()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00043}{on\+Enter()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{MenuPauseState_8h}{Menu\+Pause\+State.\+h}}\item 
+src/\mbox{\hyperlink{MenuPauseState_8cpp}{Menu\+Pause\+State.\+cpp}}\end{DoxyCompactItemize}

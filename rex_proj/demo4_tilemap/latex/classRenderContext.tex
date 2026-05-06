@@ -1,0 +1,103 @@
+\doxysection{Render\+Context类 参考}
+\hypertarget{classRenderContext}{}\label{classRenderContext}\index{RenderContext@{RenderContext}}
+
+
+{\ttfamily \#include $<$Render\+Context.\+h$>$}
+
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classRenderContext_aaa9d803a841e52ca896dfdb4646edc2c}{set}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+static SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classRenderContext_aa29fcab69a29cbead013d0b6f455c8b0}{s\+\_\+renderer}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{RenderContext_8h_source}{Render\+Context.\+h}} 第 \mbox{\hyperlink{RenderContext_8h_source_l00005}{5}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}\label{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1} 
+\index{RenderContext@{RenderContext}!get@{get}}
+\index{get@{get}!RenderContext@{RenderContext}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} Render\+Context\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{RenderContext_8h_source}{Render\+Context.\+h}} 第 \mbox{\hyperlink{RenderContext_8h_source_l00013}{13}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00018}{s\+\_\+renderer}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00025}{Scrolling\+Background\+::draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00029}{Texture\+Manager\+::draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00180}{Texture\+Manager\+::draw\+Circle()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00055}{Texture\+Manager\+::draw\+Frame()}}, \mbox{\hyperlink{Shape_8cpp_source_l00073}{Shape\+::draw\+Health\+Bar()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00089}{Texture\+Manager\+::draw\+Line()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00040}{Texture\+Manager\+::draw\+Rotat()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00098}{Texture\+Manager\+::draw\+Text()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00133}{Texture\+Manager\+::draw\+Text\+Scale()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00077}{Texture\+Manager\+::draw\+Tile()}} , 以及 \mbox{\hyperlink{TextureManager_8cpp_source_l00011}{Texture\+Manager\+::load()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classRenderContext_aaa9d803a841e52ca896dfdb4646edc2c}\label{classRenderContext_aaa9d803a841e52ca896dfdb4646edc2c} 
+\index{RenderContext@{RenderContext}!set@{set}}
+\index{set@{set}!RenderContext@{RenderContext}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily static void Render\+Context\+::set (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{RenderContext_8h_source}{Render\+Context.\+h}} 第 \mbox{\hyperlink{RenderContext_8h_source_l00008}{8}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00018}{s\+\_\+renderer}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classRenderContext_aaa9d803a841e52ca896dfdb4646edc2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classRenderContext_aa29fcab69a29cbead013d0b6f455c8b0}\label{classRenderContext_aa29fcab69a29cbead013d0b6f455c8b0} 
+\index{RenderContext@{RenderContext}!s\_renderer@{s\_renderer}}
+\index{s\_renderer@{s\_renderer}!RenderContext@{RenderContext}}
+\doxysubsubsection{\texorpdfstring{s\_renderer}{s\_renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} Render\+Context\+::s\+\_\+renderer = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{RenderContext_8h_source}{Render\+Context.\+h}} 第 \mbox{\hyperlink{RenderContext_8h_source_l00018}{18}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{RenderContext_8h_source_l00013}{get()}} , 以及 \mbox{\hyperlink{RenderContext_8h_source_l00008}{set()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{RenderContext_8h}{Render\+Context.\+h}}\item 
+src/\mbox{\hyperlink{RenderContext_8cpp}{Render\+Context.\+cpp}}\end{DoxyCompactItemize}

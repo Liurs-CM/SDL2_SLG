@@ -1,0 +1,97 @@
+\doxysection{src/\+Level\+Parser.cpp 文件参考}
+\hypertarget{LevelParser_8cpp}{}\label{LevelParser_8cpp}\index{src/LevelParser.cpp@{src/LevelParser.cpp}}
+{\ttfamily \#include "{}Level\+Parser.\+h"{}}\newline
+{\ttfamily \#include "{}Texture\+Manager.\+h"{}}\newline
+{\ttfamily \#include "{}Object\+Layer.\+h"{}}\newline
+{\ttfamily \#include "{}Tile\+Layer.\+h"{}}\newline
+{\ttfamily \#include "{}Game\+Object\+Factory.\+h"{}}\newline
+{\ttfamily \#include "{}Level.\+h"{}}\newline
+{\ttfamily \#include "{}lib/base64.\+h"{}}\newline
+{\ttfamily \#include "{}lib/zlib.\+h"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Level\+Parser.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LevelParser_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{is\+Element\+Named}} (const tinyxml2\+::\+XMLElement \texorpdfstring{$\ast$}{*}element, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+int \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{get\+Attribute\+Int}} (const tinyxml2\+::\+XMLElement \texorpdfstring{$\ast$}{*}element, const char \texorpdfstring{$\ast$}{*}name, int default\+Value=0)
+\item 
+std\+::string \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{get\+Attribute\+String}} (const tinyxml2\+::\+XMLElement \texorpdfstring{$\ast$}{*}element, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}default\+Value="{}"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}\label{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10} 
+\index{LevelParser.cpp@{LevelParser.cpp}!getAttributeInt@{getAttributeInt}}
+\index{getAttributeInt@{getAttributeInt}!LevelParser.cpp@{LevelParser.cpp}}
+\doxysubsubsection{\texorpdfstring{getAttributeInt()}{getAttributeInt()}}
+{\footnotesize\ttfamily int get\+Attribute\+Int (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \texorpdfstring{$\ast$}{*}}]{element,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{int}]{default\+Value = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00017}{17}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{Level\+Parser\+::parse\+Level()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{Level\+Parser\+::parse\+Object\+Layer()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00145}{Level\+Parser\+::parse\+Object\+Properties()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}\label{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690} 
+\index{LevelParser.cpp@{LevelParser.cpp}!getAttributeString@{getAttributeString}}
+\index{getAttributeString@{getAttributeString}!LevelParser.cpp@{LevelParser.cpp}}
+\doxysubsubsection{\texorpdfstring{getAttributeString()}{getAttributeString()}}
+{\footnotesize\ttfamily std\+::string get\+Attribute\+String (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \texorpdfstring{$\ast$}{*}}]{element,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{default\+Value = {\ttfamily "{}"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00024}{24}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{Level\+Parser\+::parse\+Level()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{Level\+Parser\+::parse\+Object\+Layer()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00145}{Level\+Parser\+::parse\+Object\+Properties()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}\label{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80} 
+\index{LevelParser.cpp@{LevelParser.cpp}!isElementNamed@{isElementNamed}}
+\index{isElementNamed@{isElementNamed}!LevelParser.cpp@{LevelParser.cpp}}
+\doxysubsubsection{\texorpdfstring{isElementNamed()}{isElementNamed()}}
+{\footnotesize\ttfamily bool is\+Element\+Named (\begin{DoxyParamCaption}\item[{const tinyxml2\+::\+XMLElement \texorpdfstring{$\ast$}{*}}]{element,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{LevelParser_8cpp_source}{Level\+Parser.\+cpp}} 第 \mbox{\hyperlink{LevelParser_8cpp_source_l00012}{12}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00029}{Level\+Parser\+::parse\+Level()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{Level\+Parser\+::parse\+Object\+Layer()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00145}{Level\+Parser\+::parse\+Object\+Properties()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,523 @@
+\doxysection{Vector2\+D类 参考}
+\hypertarget{classVector2D}{}\label{classVector2D}\index{Vector2D@{Vector2D}}
+
+
+{\ttfamily \#include $<$Vector2\+D.\+h$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector2D_a98e9997ebb7a629f4db52397d4e0d653}{Vector2D}} ()
+\item 
+\mbox{\hyperlink{classVector2D_a166ca1df158a260a7cbf3b57ff147a4a}{Vector2D}} (float x, float y)
+\item 
+float \mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}} ()
+\item 
+float \mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}} ()
+\item 
+void \mbox{\hyperlink{classVector2D_ac458bd997d2f0c6c7234cf1e8a7b73b8}{setX}} (float x)
+\item 
+void \mbox{\hyperlink{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709}{setY}} (float y)
+\item 
+float \mbox{\hyperlink{classVector2D_ae9c6666151cd09a233f35c13cdfd9049}{length}} ()
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classVector2D_a0cbdd827a484e7bf3db35194715f3140}{operator=}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&v2)
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classVector2D_aa98d8882a429397b69d246a996191a92}{operator+}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&v2) const
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classVector2D_a54c2c8eda08b5b5d4ef2098dbcb0c65f}{operator+=}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&v2)
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classVector2D_a251772bc24e826046ad093cbd08ae346}{operator-\/}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&v2) const
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classVector2D_a899ac2240815b682987aafbcd46dcedd}{operator-\/=}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&v2)
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classVector2D_afe8ec16d5f9fa65bf22489c0e0102f33}{operator\texorpdfstring{$\ast$}{*}}} (float scalar)
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classVector2D_a4b6e791820b5526dd371d98d31205c6e}{operator\texorpdfstring{$\ast$}{*}=}} (float scalar)
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classVector2D_a8cd7cab406efc12492645757a88443dd}{operator/}} (float scalar)
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \& \mbox{\hyperlink{classVector2D_a29be0c5bb27bb3863d9fc7280fcd9cf0}{operator/=}} (float scalar)
+\item 
+bool \mbox{\hyperlink{classVector2D_a0c9cccb051d5e6051f7e750efeff1367}{operator==}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&v2) const
+\item 
+bool \mbox{\hyperlink{classVector2D_a71a5d2623b666d6d8c38f80c85fdfe64}{operator!=}} (const \mbox{\hyperlink{classVector2D}{Vector2D}} \&v2) const
+\item 
+\mbox{\hyperlink{classVector2D}{Vector2D}} \mbox{\hyperlink{classVector2D_a50fdb50a78c8ada9c59869dccd0b469d}{get\+\_\+normalize}} ()
+\item 
+void \mbox{\hyperlink{classVector2D_a39a3335f33d7e9850b99e4498ba4d856}{normalize}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classVector2D_aeba78e197a8ba61f5728cd12710a260b}{m\+\_\+x}}
+\item 
+float \mbox{\hyperlink{classVector2D_a2dae7f715b79bbec5470161f6061d13b}{m\+\_\+y}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classVector2D_a3042faf2fa1b8228cc82456632e02532}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classVector2D}{Vector2D}} \&vec)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00006}{6}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classVector2D_a98e9997ebb7a629f4db52397d4e0d653}\label{classVector2D_a98e9997ebb7a629f4db52397d4e0d653} 
+\index{Vector2D@{Vector2D}!Vector2D@{Vector2D}}
+\index{Vector2D@{Vector2D}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{Vector2D()}{Vector2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vector2\+D\+::\+Vector2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00009}{9}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Vector2D_8h_source_l00078}{get\+\_\+normalize()}}, \mbox{\hyperlink{Vector2D_8h_source_l00046}{operator\texorpdfstring{$\ast$}{*}()}}, \mbox{\hyperlink{Vector2D_8h_source_l00022}{operator+()}}, \mbox{\hyperlink{Vector2D_8h_source_l00034}{operator-\/()}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00058}{operator/()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_a98e9997ebb7a629f4db52397d4e0d653_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a166ca1df158a260a7cbf3b57ff147a4a}\label{classVector2D_a166ca1df158a260a7cbf3b57ff147a4a} 
+\index{Vector2D@{Vector2D}!Vector2D@{Vector2D}}
+\index{Vector2D@{Vector2D}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{Vector2D()}{Vector2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vector2\+D\+::\+Vector2D (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00010}{10}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classVector2D_a50fdb50a78c8ada9c59869dccd0b469d}\label{classVector2D_a50fdb50a78c8ada9c59869dccd0b469d} 
+\index{Vector2D@{Vector2D}!get\_normalize@{get\_normalize}}
+\index{get\_normalize@{get\_normalize}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{get\_normalize()}{get\_normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Vector2\+D\+::get\+\_\+normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00078}{78}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00015}{length()}}, \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}}, \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00009}{Vector2\+D()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_a50fdb50a78c8ada9c59869dccd0b469d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_a50fdb50a78c8ada9c59869dccd0b469d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a527601e47976bcfdac2520817bfee675}\label{classVector2D_a527601e47976bcfdac2520817bfee675} 
+\index{Vector2D@{Vector2D}!getX@{getX}}
+\index{getX@{getX}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float Vector2\+D\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00011}{11}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{SDLGame\+Object\+::draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00029}{Texture\+Manager\+::draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00055}{Texture\+Manager\+::draw\+Frame()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00040}{Texture\+Manager\+::draw\+Rotat()}}, \mbox{\hyperlink{Camera_8cpp_source_l00013}{Camera\+::follow()}}, \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{Scrolling\+Background\+::load()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{Tile\+Layer\+::render()}}, \mbox{\hyperlink{Cat_8h_source_l00017}{Cat\+::update()}}, \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{Scrolling\+Background\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_a527601e47976bcfdac2520817bfee675_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}\label{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b} 
+\index{Vector2D@{Vector2D}!getY@{getY}}
+\index{getY@{getY}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily float Vector2\+D\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00012}{12}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00029}{Texture\+Manager\+::draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00055}{Texture\+Manager\+::draw\+Frame()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00040}{Texture\+Manager\+::draw\+Rotat()}}, \mbox{\hyperlink{Camera_8cpp_source_l00013}{Camera\+::follow()}}, \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00012}{Scrolling\+Background\+::load()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{Tile\+Layer\+::render()}}, \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00020}{Menu\+Button\+::update()}} , 以及 \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00034}{Scrolling\+Background\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_ae9c6666151cd09a233f35c13cdfd9049}\label{classVector2D_ae9c6666151cd09a233f35c13cdfd9049} 
+\index{Vector2D@{Vector2D}!length@{length}}
+\index{length@{length}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily float Vector2\+D\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00015}{15}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Vector2D_8h_source_l00078}{get\+\_\+normalize()}}, \mbox{\hyperlink{Player_8cpp_source_l00044}{Player\+::handle\+Input()}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00087}{normalize()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_ae9c6666151cd09a233f35c13cdfd9049_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a39a3335f33d7e9850b99e4498ba4d856}\label{classVector2D_a39a3335f33d7e9850b99e4498ba4d856} 
+\index{Vector2D@{Vector2D}!normalize@{normalize}}
+\index{normalize@{normalize}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily void Vector2\+D\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00087}{87}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00015}{length()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classVector2D_a39a3335f33d7e9850b99e4498ba4d856_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a71a5d2623b666d6d8c38f80c85fdfe64}\label{classVector2D_a71a5d2623b666d6d8c38f80c85fdfe64} 
+\index{Vector2D@{Vector2D}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Vector2\+D\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{v2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00074}{74}} 行定义.
+
+\Hypertarget{classVector2D_afe8ec16d5f9fa65bf22489c0e0102f33}\label{classVector2D_afe8ec16d5f9fa65bf22489c0e0102f33} 
+\index{Vector2D@{Vector2D}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Vector2\+D\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00046}{46}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}}, \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00009}{Vector2\+D()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classVector2D_afe8ec16d5f9fa65bf22489c0e0102f33_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a4b6e791820b5526dd371d98d31205c6e}\label{classVector2D_a4b6e791820b5526dd371d98d31205c6e} 
+\index{Vector2D@{Vector2D}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \& Vector2\+D\+::operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00051}{51}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+\Hypertarget{classVector2D_aa98d8882a429397b69d246a996191a92}\label{classVector2D_aa98d8882a429397b69d246a996191a92} 
+\index{Vector2D@{Vector2D}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Vector2\+D\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{v2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00022}{22}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}}, \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00009}{Vector2\+D()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classVector2D_aa98d8882a429397b69d246a996191a92_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a54c2c8eda08b5b5d4ef2098dbcb0c65f}\label{classVector2D_a54c2c8eda08b5b5d4ef2098dbcb0c65f} 
+\index{Vector2D@{Vector2D}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \& Vector2\+D\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00027}{27}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+\Hypertarget{classVector2D_a251772bc24e826046ad093cbd08ae346}\label{classVector2D_a251772bc24e826046ad093cbd08ae346} 
+\index{Vector2D@{Vector2D}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Vector2\+D\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{v2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00034}{34}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}}, \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00009}{Vector2\+D()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classVector2D_a251772bc24e826046ad093cbd08ae346_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a899ac2240815b682987aafbcd46dcedd}\label{classVector2D_a899ac2240815b682987aafbcd46dcedd} 
+\index{Vector2D@{Vector2D}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \& Vector2\+D\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00039}{39}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+\Hypertarget{classVector2D_a8cd7cab406efc12492645757a88443dd}\label{classVector2D_a8cd7cab406efc12492645757a88443dd} 
+\index{Vector2D@{Vector2D}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} Vector2\+D\+::operator/ (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00058}{58}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}}, \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00009}{Vector2\+D()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classVector2D_a8cd7cab406efc12492645757a88443dd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a29be0c5bb27bb3863d9fc7280fcd9cf0}\label{classVector2D_a29be0c5bb27bb3863d9fc7280fcd9cf0} 
+\index{Vector2D@{Vector2D}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \& Vector2\+D\+::operator/= (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00063}{63}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+\Hypertarget{classVector2D_a0cbdd827a484e7bf3db35194715f3140}\label{classVector2D_a0cbdd827a484e7bf3db35194715f3140} 
+\index{Vector2D@{Vector2D}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2D}{Vector2D}} \& Vector2\+D\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00016}{16}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+\Hypertarget{classVector2D_a0c9cccb051d5e6051f7e750efeff1367}\label{classVector2D_a0c9cccb051d5e6051f7e750efeff1367} 
+\index{Vector2D@{Vector2D}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Vector2\+D\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{v2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00070}{70}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+\Hypertarget{classVector2D_ac458bd997d2f0c6c7234cf1e8a7b73b8}\label{classVector2D_ac458bd997d2f0c6c7234cf1e8a7b73b8} 
+\index{Vector2D@{Vector2D}!setX@{setX}}
+\index{setX@{setX}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Vector2\+D\+::setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00013}{13}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00102}{m\+\_\+x}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Camera_8cpp_source_l00013}{Camera\+::follow()}}, \mbox{\hyperlink{Cat_8h_source_l00010}{Cat\+::load()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00159}{Input\+Handler\+::on\+Mouse\+Move()}} , 以及 \mbox{\hyperlink{Cat_8h_source_l00017}{Cat\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_ac458bd997d2f0c6c7234cf1e8a7b73b8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709}\label{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709} 
+\index{Vector2D@{Vector2D}!setY@{setY}}
+\index{setY@{setY}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Vector2\+D\+::setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00014}{14}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Vector2D_8h_source_l00103}{m\+\_\+y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Camera_8cpp_source_l00013}{Camera\+::follow()}}, \mbox{\hyperlink{Level1Boss_8h_source_l00014}{Level1\+Boss\+::load()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00159}{Input\+Handler\+::on\+Mouse\+Move()}} , 以及 \mbox{\hyperlink{Level1Boss_8cpp_source_l00004}{Level1\+Boss\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classVector2D_a3042faf2fa1b8228cc82456632e02532}\label{classVector2D_a3042faf2fa1b8228cc82456632e02532} 
+\index{Vector2D@{Vector2D}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classVector2D}{Vector2D}} \&}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00096}{96}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classVector2D_aeba78e197a8ba61f5728cd12710a260b}\label{classVector2D_aeba78e197a8ba61f5728cd12710a260b} 
+\index{Vector2D@{Vector2D}!m\_x@{m\_x}}
+\index{m\_x@{m\_x}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{m\_x}{m\_x}}
+{\footnotesize\ttfamily float Vector2\+D\+::m\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00102}{102}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Vector2D_8h_source_l00078}{get\+\_\+normalize()}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00015}{length()}}, \mbox{\hyperlink{Vector2D_8h_source_l00046}{operator\texorpdfstring{$\ast$}{*}()}}, \mbox{\hyperlink{Vector2D_8h_source_l00051}{operator\texorpdfstring{$\ast$}{*}=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00022}{operator+()}}, \mbox{\hyperlink{Vector2D_8h_source_l00027}{operator+=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00034}{operator-\/()}}, \mbox{\hyperlink{Vector2D_8h_source_l00039}{operator-\/=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00058}{operator/()}}, \mbox{\hyperlink{Vector2D_8h_source_l00063}{operator/=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00016}{operator=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00070}{operator==()}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00013}{set\+X()}}.
+
+\Hypertarget{classVector2D_a2dae7f715b79bbec5470161f6061d13b}\label{classVector2D_a2dae7f715b79bbec5470161f6061d13b} 
+\index{Vector2D@{Vector2D}!m\_y@{m\_y}}
+\index{m\_y@{m\_y}!Vector2D@{Vector2D}}
+\doxysubsubsection{\texorpdfstring{m\_y}{m\_y}}
+{\footnotesize\ttfamily float Vector2\+D\+::m\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Vector2D_8h_source}{Vector2\+D.\+h}} 第 \mbox{\hyperlink{Vector2D_8h_source_l00103}{103}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Vector2D_8h_source_l00078}{get\+\_\+normalize()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{get\+Y()}}, \mbox{\hyperlink{Vector2D_8h_source_l00015}{length()}}, \mbox{\hyperlink{Vector2D_8h_source_l00046}{operator\texorpdfstring{$\ast$}{*}()}}, \mbox{\hyperlink{Vector2D_8h_source_l00051}{operator\texorpdfstring{$\ast$}{*}=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00022}{operator+()}}, \mbox{\hyperlink{Vector2D_8h_source_l00027}{operator+=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00034}{operator-\/()}}, \mbox{\hyperlink{Vector2D_8h_source_l00039}{operator-\/=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00058}{operator/()}}, \mbox{\hyperlink{Vector2D_8h_source_l00063}{operator/=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00016}{operator=()}}, \mbox{\hyperlink{Vector2D_8h_source_l00070}{operator==()}} , 以及 \mbox{\hyperlink{Vector2D_8h_source_l00014}{set\+Y()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{Vector2D_8h}{Vector2\+D.\+h}}\end{DoxyCompactItemize}

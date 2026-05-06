@@ -1,0 +1,7 @@
+<map id="ScrollingBackground::update" name="ScrollingBackground::update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,160,63"/>
+<area shape="rect" id="Node000002" href="$classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="208,5,327,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,30,194,25,195,31,160,35"/>
+<area shape="rect" id="Node000003" href="$classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="208,55,327,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,51,195,55,194,61,160,56"/>
+</map>

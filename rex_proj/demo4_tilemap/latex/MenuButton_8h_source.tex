@@ -1,0 +1,45 @@
+\doxysection{Menu\+Button.\+h}
+\hypertarget{MenuButton_8h_source}{}\label{MenuButton_8h_source}\index{inc/MenuButton.h@{inc/MenuButton.h}}
+\mbox{\hyperlink{MenuButton_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_MenuObject\_\_}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_MenuObject\_\_}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SDLGameObject_8h}{SDLGameObject.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObjectFactory_8h}{GameObjectFactory.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00006}\mbox{\hyperlink{classMenuButton}{00006}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMenuButton}{MenuButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classSDLGameObject}{SDLGameObject}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00008}00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00009}00009\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton_a322b34a062c93f8604b12bfb35b40073}{MenuButton}}();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00010}\mbox{\hyperlink{classMenuButton_abf3157d5518972c9f9aa87f74bf4f15f}{00010}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMenuButton_abf3157d5518972c9f9aa87f74bf4f15f}{\string~MenuButton}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a250e6a4e6e9c4063b741cbfcb3c5f7b5}{load}}(std::unique\_ptr<LoaderParams>\ \textcolor{keyword}{const}\ \&pParams);}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a3e854949b52808f9d6092e149a116f5c}{draw}}();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a86b038172871555da45606e20fa6bad7}{update}}();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a970fc154ec16a7c0c9ad7f3626199bba}{clean}}();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00015}\mbox{\hyperlink{classMenuButton_a919648d93c3b9bb742830c560c424e78}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuButton_a919648d93c3b9bb742830c560c424e78}{setCallback}}(\textcolor{keywordtype}{void}(*callback)())\ \{\ \mbox{\hyperlink{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac}{m\_callback}}\ =\ callback;\}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00016}\mbox{\hyperlink{classMenuButton_a191c5ecd63f2fc598470c6398d169321}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMenuButton_a191c5ecd63f2fc598470c6398d169321}{getCallbackID}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMenuButton_a1969e41c95042c83201035681d01d663}{m\_callbackID}};\ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00018}\mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215}{button\_state}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00020}\mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215a8d402266ab388c1e800195d451dbba65}{00020}}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215a8d402266ab388c1e800195d451dbba65}{MOUSE\_OUT}}\ =\ 0,}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00021}\mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ab67862558b00554582f4b9dc6aee42b8}{00021}}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ab67862558b00554582f4b9dc6aee42b8}{MOUSE\_OVER}}\ =\ 1,}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ad21446b1f91ce5de0d43aa6478dd52e7}{CLICKED}}\ =\ 2}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00023}\mbox{\hyperlink{classMenuButton_aeada9e53bae44e0a773bb8b9c1e7e215ad21446b1f91ce5de0d43aa6478dd52e7}{00023}}\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00024}\mbox{\hyperlink{classMenuButton_a1969e41c95042c83201035681d01d663}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMenuButton_a1969e41c95042c83201035681d01d663}{m\_callbackID}};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00025}\mbox{\hyperlink{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac}{00025}}\ \ \ \ \ \ \ \ \ void\ (*\mbox{\hyperlink{classMenuButton_a66f9cb1004c1e51172b0dc4bdb65e1ac}{m\_callback}})();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00026}\mbox{\hyperlink{classMenuButton_a7edc93b34531d1debe656331b7b5269e}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMenuButton_a7edc93b34531d1debe656331b7b5269e}{m\_bReleased}};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00027}00027\ \};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00029}\mbox{\hyperlink{classMenuButtonCreator}{00029}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMenuButtonCreator}{MenuButtonCreator}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBaseCreator}{BaseCreator}}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00030}00030\ \{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00031}00031\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00032}\mbox{\hyperlink{classMenuButtonCreator_a14fc41fea5097b152c1aad034c627e1e}{00032}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameObject}{GameObject}}*\ \mbox{\hyperlink{classMenuButtonCreator_a14fc41fea5097b152c1aad034c627e1e}{createGameObject}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00033}00033\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMenuButton}{MenuButton}}();}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00036}00036\ \};}
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{MenuButton_8h_source_l00039}00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_MenuObject\_\_}}
+
+\end{DoxyCode}

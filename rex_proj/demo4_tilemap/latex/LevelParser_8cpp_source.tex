@@ -1,0 +1,250 @@
+\doxysection{Level\+Parser.\+cpp}
+\hypertarget{LevelParser_8cpp_source}{}\label{LevelParser_8cpp_source}\index{src/LevelParser.cpp@{src/LevelParser.cpp}}
+\mbox{\hyperlink{LevelParser_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{LevelParser_8h}{LevelParser.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ObjectLayer_8h}{ObjectLayer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TileLayer_8h}{TileLayer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObjectFactory_8h}{GameObjectFactory.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Level_8h}{Level.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}lib/base64.h"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}lib/zlib.h"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00011}00011\ \textcolor{comment}{//\ 辅助函数：检查元素名称是否匹配}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00012}\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{00012}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(\textcolor{keyword}{const}\ tinyxml2::XMLElement*\ element,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00013}00013\ \ \ \ \ \textcolor{keywordflow}{return}\ element\ \&\&\ element-\/>Value()\ \&\&\ std::strcmp(element-\/>Value(),\ name)\ ==\ 0;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00014}00014\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00016}00016\ \textcolor{comment}{//\ 辅助函数：安全获取整数属性}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00017}\mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{00017}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{getAttributeInt}}(\textcolor{keyword}{const}\ tinyxml2::XMLElement*\ element,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keywordtype}{int}\ defaultValue\ =\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{int}\ value\ =\ defaultValue;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00019}00019\ \ \ \ \ element-\/>QueryIntAttribute(name,\ \&value);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{return}\ value;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00023}00023\ \textcolor{comment}{//\ 辅助函数：安全获取字符串属性}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00024}\mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{00024}}\ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(\textcolor{keyword}{const}\ tinyxml2::XMLElement*\ element,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ defaultValue\ =\ \textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ value\ =\ element-\/>Attribute(name);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordflow}{return}\ value\ ?\ std::string(value)\ :\ std::string(defaultValue);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00029}\mbox{\hyperlink{classLevelParser_a9d813a327e3df4e604e7aae6e2524546}{00029}}\ \mbox{\hyperlink{classLevel}{Level}}*\ \mbox{\hyperlink{classLevelParser_a9d813a327e3df4e604e7aae6e2524546}{LevelParser::parseLevel}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *levelFile)}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00030}00030\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{comment}{//\ create\ a\ tinyXML\ document\ and\ load\ the\ map\ xml}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00032}00032\ \ \ \ \ XMLDocument\ levelDocument;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{if}(levelDocument.LoadFile(levelFile)\ !=\ XML\_SUCCESS)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ load\ level\ file:\ "{}}\ <<\ levelDocument.ErrorStr()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{comment}{//\ get\ the\ root\ node\ and\ display\ some\ values}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00039}00039\ \ \ \ \ XMLElement*\ pRoot\ =\ levelDocument.RootElement();}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00040}00040\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Loading\ level:\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}Version:\ "{}}\ <<\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(pRoot,\ \textcolor{stringliteral}{"{}version"{}})\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}Width:"{}}\ <<\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(pRoot,\ \textcolor{stringliteral}{"{}width"{}})\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ -\/\ Height:"{}}\ <<\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(pRoot,\ \textcolor{stringliteral}{"{}height"{}})\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}Tile\ Width:"{}}\ <<\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(pRoot,\ \textcolor{stringliteral}{"{}tilewidth"{}})\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ -\/\ Tile\ Height:"{}}\ <<\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(pRoot,\ \textcolor{stringliteral}{"{}tileheight"{}})\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{classLevelParser_a4b80024bd484a2aeb63626cd66c1002a}{m\_tileSize}}\ =\ \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{getAttributeInt}}(pRoot,\ \textcolor{stringliteral}{"{}tilewidth"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}{m\_width}}\ =\ \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{getAttributeInt}}(pRoot,\ \textcolor{stringliteral}{"{}width"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c}{m\_height}}\ =\ \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{getAttributeInt}}(pRoot,\ \textcolor{stringliteral}{"{}height"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{comment}{//\ create\ the\ level\ object}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classLevel}{Level}}*\ pLevel\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classLevel}{Level}}();}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//\ we\ must\ parse\ the\ textures\ needed\ for\ this\ level,\ which\ have\ been\ added\ to\ properties}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ e\ =\ pRoot-\/>FirstChildElement();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSiblingElement())}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00054}00054\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{//we\ know\ that\ properties\ is\ the\ first\ child\ of\ the\ root}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(e,\ \textcolor{stringliteral}{"{}properties"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ prop\ =\ e-\/>FirstChildElement();\ prop;\ prop\ =\ prop-\/>NextSiblingElement())\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(prop,\ \textcolor{stringliteral}{"{}property"{}}))\ \{\ \mbox{\hyperlink{classLevelParser_a4a30070533a70ef1544b641ccf5880ba}{parseTextures}}(prop);\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ we\ must\ now\ parse\ the\ tilesets}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(e,\ \textcolor{stringliteral}{"{}tileset"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevelParser_ae25f39d008db3ab571891efff034d976}{parseTilesets}}(e,\ pLevel-\/>\mbox{\hyperlink{classLevel_a562c4c550399622bcd7898330b28885e}{getTilesets}}());}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ parse\ any\ object\ layers}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(e,\ \textcolor{stringliteral}{"{}objectgroup"{}})\ ||\ \mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(e,\ \textcolor{stringliteral}{"{}layer"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(e-\/>FirstChildElement(),\ \textcolor{stringliteral}{"{}object"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417}{parseObjectLayer}}(e,\ pLevel-\/>\mbox{\hyperlink{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0}{getLayers}}(),\ pLevel);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(e-\/>FirstChildElement(),\ \textcolor{stringliteral}{"{}data"{}})\ ||}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (e-\/>FirstChildElement()-\/>NextSiblingElement()\ !=\ 0\ \&\&\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ e-\/>FirstChildElement()-\/>NextSiblingElement()-\/>Value()\ ==\ std::string(\textcolor{stringliteral}{"{}data"{}})))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e}{parseTileLayer}}(e,\ pLevel-\/>\mbox{\hyperlink{classLevel_a5b5fc8f813383b03c6b9f8e7bac56fb0}{getLayers}}(),\ pLevel-\/>\mbox{\hyperlink{classLevel_a562c4c550399622bcd7898330b28885e}{getTilesets}}(),\ pLevel-\/>\mbox{\hyperlink{classLevel_aaf4b6bb1835c91d169953cc873359c49}{getCollisionLayers}}());}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keywordflow}{return}\ pLevel;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00078}00078\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00080}\mbox{\hyperlink{classLevelParser_a4a30070533a70ef1544b641ccf5880ba}{00080}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevelParser_a4a30070533a70ef1544b641ccf5880ba}{LevelParser::parseTextures}}(XMLElement*\ pTextureRoot)}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00081}00081\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00082}00082\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}adding\ texture\ "{}}\ <<\ pTextureRoot-\/>Attribute(\textcolor{stringliteral}{"{}value"{}})\ <<\ \textcolor{stringliteral}{"{}\ with\ ID\ "{}}\ <<\ pTextureRoot-\/>Attribute(\textcolor{stringliteral}{"{}name"{}})\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a1921cb89735d57489e49984c7572611c}{load}}(pTextureRoot-\/>Attribute(\textcolor{stringliteral}{"{}value"{}}),\ pTextureRoot-\/>Attribute(\textcolor{stringliteral}{"{}name"{}}));}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00084}00084\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00086}\mbox{\hyperlink{classLevelParser_ae25f39d008db3ab571891efff034d976}{00086}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevelParser_ae25f39d008db3ab571891efff034d976}{LevelParser::parseTilesets}}(XMLElement*\ pTilesetRoot,\ std::vector<Tileset>*\ pTilesets)}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00087}00087\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00088}00088\ \ \ \ \ std::string\ assetsTag\ =\ \textcolor{stringliteral}{"{}assets/"{}};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{comment}{//\ first\ add\ the\ tileset\ to\ texture\ manager}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00090}00090\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}adding\ texture\ "{}}\ <<\ pTilesetRoot-\/>FirstChildElement()-\/>Attribute(\textcolor{stringliteral}{"{}source"{}})\ <<\ \textcolor{stringliteral}{"{}\ with\ ID\ "{}}\ <<\ pTilesetRoot-\/>Attribute(\textcolor{stringliteral}{"{}name"{}})\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00091}00091\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a1921cb89735d57489e49984c7572611c}{load}}(assetsTag.append(pTilesetRoot-\/>FirstChildElement()-\/>Attribute(\textcolor{stringliteral}{"{}source"{}})),\ pTilesetRoot-\/>Attribute(\textcolor{stringliteral}{"{}name"{}}));}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00093}00093\ \ \ \ \ \textcolor{comment}{//\ create\ a\ tileset\ object}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00094}00094\ \ \ \ \ \mbox{\hyperlink{structTileset}{Tileset}}\ tileset;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00095}00095\ \ \ \ \ pTilesetRoot-\/>FirstChildElement()-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}width"{}},\ \&tileset.\mbox{\hyperlink{structTileset_a2308e20e094ef2ba3abde3296bf5a732}{width}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00096}00096\ \ \ \ \ pTilesetRoot-\/>FirstChildElement()-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}height"{}},\ \&tileset.\mbox{\hyperlink{structTileset_a89cacbd7eef862a8409e7ca89d8f1d6f}{height}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00097}00097\ \ \ \ \ pTilesetRoot-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}firstgid"{}},\ \&tileset.\mbox{\hyperlink{structTileset_a15347962a9cd3daea9d953cf76e4b77d}{firstGridID}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00098}00098\ \ \ \ \ pTilesetRoot-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}tilewidth"{}},\ \&tileset.\mbox{\hyperlink{structTileset_a477770a6cc81a9a53bf5928ebd5c88a9}{tileWidth}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00099}00099\ \ \ \ \ pTilesetRoot-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}tileheight"{}},\ \&tileset.\mbox{\hyperlink{structTileset_a62c8b00674890f60189f1ace74aeee88}{tileHeight}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00100}00100\ \ \ \ \ pTilesetRoot-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}spacing"{}},\ \&tileset.\mbox{\hyperlink{structTileset_aebaac85c2e99d31883440cc2495c2f16}{spacing}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00101}00101\ \ \ \ \ pTilesetRoot-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}margin"{}},\ \&tileset.\mbox{\hyperlink{structTileset_a964f53e69b260f2e2dce178e557bf324}{margin}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00102}00102\ \ \ \ \ tileset.\mbox{\hyperlink{structTileset_a18d4be506284b7ab3cf2e2b7e688042a}{name}}\ =\ pTilesetRoot-\/>Attribute(\textcolor{stringliteral}{"{}name"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00103}00103\ \ \ \ \ tileset.\mbox{\hyperlink{structTileset_a666d036f94655943bc9091cc4ecb56c1}{numColumns}}\ =\ tileset.\mbox{\hyperlink{structTileset_a2308e20e094ef2ba3abde3296bf5a732}{width}}\ /\ (tileset.\mbox{\hyperlink{structTileset_a477770a6cc81a9a53bf5928ebd5c88a9}{tileWidth}}\ +\ tileset.\mbox{\hyperlink{structTileset_aebaac85c2e99d31883440cc2495c2f16}{spacing}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00104}00104\ \ \ \ \ pTilesets-\/>push\_back(tileset);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00105}00105\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00107}\mbox{\hyperlink{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417}{00107}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevelParser_a45e78b13e41a2cb2afaf97d60639b417}{LevelParser::parseObjectLayer}}(tinyxml2::XMLElement*\ pObjectElement,\ std::vector<Layer*>*\ pLayers,\ \mbox{\hyperlink{classLevel}{Level}}*\ pLevel)\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00108}00108\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00109}00109\ \ \ \ \ \mbox{\hyperlink{classObjectLayer}{ObjectLayer}}*\ pObjectLayer\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classObjectLayer}{ObjectLayer}}();}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00110}00110\ \ \ \ \ \textcolor{comment}{//\ 提前定义默认值}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00111}00111\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ 0,\ y\ =\ 0,\ width\ =\ 0,\ height\ =\ 0,\ numFrames\ =\ 1,\ callbackID\ =\ 0,\ animSpeed\ =\ 4;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00112}00112\ \ \ \ \ std::string\ type,\ textureID;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{comment}{//\ 遍历所有对象元素}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00114}00114\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ e\ =\ pObjectElement-\/>FirstChildElement();\ e;\ e\ =\ e-\/>NextSiblingElement())\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00115}00115\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00116}00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(e,\ \textcolor{stringliteral}{"{}object"{}}))\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00117}00117\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 重置默认值}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00118}00118\ \ \ \ \ \ \ \ \ x\ =\ \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{getAttributeInt}}(e,\ \textcolor{stringliteral}{"{}x"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00119}00119\ \ \ \ \ \ \ \ \ y\ =\ \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{getAttributeInt}}(e,\ \textcolor{stringliteral}{"{}y"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ type\ =\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(e,\ \textcolor{stringliteral}{"{}type"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ width\ =\ height\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00122}00122\ \ \ \ \ \ \ \ \ numFrames\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00123}00123\ \ \ \ \ \ \ \ \ callbackID\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ animSpeed\ =\ 4;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ textureID.clear();}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00126}00126\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 创建游戏对象}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00127}00127\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameObject}{GameObject}}*\ pGameObject\ =\ \mbox{\hyperlink{classGameObjectFactory_ac041794e646de05d62166767faad9581}{TheGameObjectFactory::Instance}}()-\/>\mbox{\hyperlink{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134}{create}}(type);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!pGameObject)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ create\ game\ object\ of\ type:\ "{}}\ <<\ type\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00131}00131\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00132}00132\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 解析属性\ -\/\ 提取为单独函数以减少嵌套}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevelParser_ac1dee9c778d7f19667d31f9b22798357}{parseObjectProperties}}(e,\ width,\ height,\ numFrames,\ textureID,\ callbackID,\ animSpeed);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00134}00134\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 加载游戏对象}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00135}00135\ \ \ \ \ \ \ \ \ pGameObject-\/>\mbox{\hyperlink{classGameObject_a729edce3955766d5c8dfcda6f310392d}{load}}(std::make\_unique<LoaderParams>(x,\ y,\ width,\ height,\ textureID,\ numFrames,\ callbackID,\ animSpeed));}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00136}00136\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 设置玩家引用（如果适用）}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00137}00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (type\ ==\ \textcolor{stringliteral}{"{}Player"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ pLevel-\/>\mbox{\hyperlink{classLevel_aa7fd5d84b67987bd08c8b97d57ed068b}{setPlayer}}(\textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classPlayer}{Player}}*\textcolor{keyword}{>}(pGameObject));}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00139}00139\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00140}00140\ \ \ \ \ \ \ \ \ pObjectLayer-\/>\mbox{\hyperlink{classObjectLayer_a14bf695f73acd9a9651f6af9c8945aae}{getGameObjects}}()-\/>push\_back(std::unique\_ptr<GameObject>(pGameObject));}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00141}00141\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00142}00142\ \ \ \ \ pLayers-\/>push\_back(pObjectLayer);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00143}00143\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00145}\mbox{\hyperlink{classLevelParser_ac1dee9c778d7f19667d31f9b22798357}{00145}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevelParser_ac1dee9c778d7f19667d31f9b22798357}{LevelParser::parseObjectProperties}}(tinyxml2::XMLElement*\ objectElement,\ \textcolor{keywordtype}{int}\&\ width,\ \textcolor{keywordtype}{int}\&\ height,\ \textcolor{keywordtype}{int}\&\ numFrames,\ std::string\&\ textureID,\ \textcolor{keywordtype}{int}\&\ callbackID,\ \textcolor{keywordtype}{int}\&\ animSpeed)\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00146}00146\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00147}00147\ \ \ \ \ \textcolor{comment}{//\ 属性名到变量的映射（仅适用于整型）}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00148}00148\ \ \ \ \ std::unordered\_map<std::string,\ int*>\ intProps\ =\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00149}00149\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}numFrames"{}},\ \&numFrames\},}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00150}00150\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}textureHeight"{}},\ \&height\},}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00151}00151\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}textureWidth"{}},\ \&width\},}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00152}00152\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}callbackID"{}},\ \&callbackID\},}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}animSpeed"{}},\ \&animSpeed\}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00154}00154\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00155}00155\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ properties\ =\ objectElement-\/>FirstChildElement();\ properties;\ properties\ =\ properties-\/>NextSiblingElement())\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00156}00156\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00157}00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(properties,\ \textcolor{stringliteral}{"{}properties"{}}))\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00158}00158\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ property\ =\ properties-\/>FirstChildElement();\ property;\ \textcolor{keyword}{property}\ =\ \textcolor{keyword}{property}-\/>NextSiblingElement())\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00159}00159\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{LevelParser_8cpp_add60c460962bf36409cb2266cdb7bd80}{isElementNamed}}(property,\ \textcolor{stringliteral}{"{}property"{}}))\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00161}00161\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ propName\ =\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(property,\ \textcolor{stringliteral}{"{}name"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (propName\ ==\ \textcolor{stringliteral}{"{}textureID"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ textureID\ =\ \mbox{\hyperlink{LevelParser_8cpp_a26628cf7c2effe2f2267b73ffe0f4690}{getAttributeString}}(property,\ \textcolor{stringliteral}{"{}value"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ it\ =\ intProps.find(propName);\ it\ !=\ intProps.end())\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *(it-\/>second)\ =\ \mbox{\hyperlink{LevelParser_8cpp_a991ce8f866ee913ac8c9b788fc738e10}{getAttributeInt}}(property,\ \textcolor{stringliteral}{"{}value"{}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00169}00169\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00170}00170\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00172}\mbox{\hyperlink{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e}{00172}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevelParser_a540913a0a461c22ad22efd9642a2ab8e}{LevelParser::parseTileLayer}}(XMLElement*\ pTileElement,\ std::vector<Layer*>\ *pLayers,\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00173}00173\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Tileset>*\ pTilesets,\ std::vector<TileLayer*>\ *pCollisionLayers)}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00174}00174\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00175}00175\ \ \ \ \ \mbox{\hyperlink{classTileLayer}{TileLayer}}*\ pTileLayer\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classTileLayer}{TileLayer}}(\mbox{\hyperlink{classLevelParser_a4b80024bd484a2aeb63626cd66c1002a}{m\_tileSize}},\ *pTilesets);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00176}00176\ \ \ \ \ \textcolor{keywordtype}{bool}\ collidable\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00177}00177\ \ \ \ \ \textcolor{comment}{//\ tile\ data}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00178}00178\ \ \ \ \ std::vector<std::vector<int>>\ data;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00179}00179\ \ \ \ \ std::string\ decodedIDs;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00180}00180\ \ \ \ \ XMLElement*\ pDataNode;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00181}00181\ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ e\ =\ pTileElement-\/>FirstChildElement();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSiblingElement())}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00182}00182\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00183}00183\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(e-\/>Value()\ ==\ std::string(\textcolor{stringliteral}{"{}properties"{}}))}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00184}00184\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00185}00185\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ property\ =\ e-\/>FirstChildElement();\ \textcolor{keyword}{property}\ !=\ NULL;\ \textcolor{keyword}{property}\ =\ \textcolor{keyword}{property}-\/>NextSiblingElement())}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00186}00186\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00187}00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(property-\/>Value()\ ==\ std::string(\textcolor{stringliteral}{"{}property"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00188}00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(property-\/>Attribute(\textcolor{stringliteral}{"{}name"{}})\ ==\ std::string(\textcolor{stringliteral}{"{}collidable"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00189}00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ collidable\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00191}00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00192}00192\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00193}00193\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00194}00194\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(e-\/>Value()\ ==\ std::string(\textcolor{stringliteral}{"{}data"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00195}00195\ \ \ \ \ \ \ \ \ \ \ \ \ pDataNode\ =\ e;}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00196}00196\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00197}00197\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00198}00198\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00199}00199\ \ \ \ \ \textcolor{keywordflow}{for}(XMLNode*\ e\ =\ pDataNode-\/>FirstChild();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSibling())}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00200}00200\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00201}00201\ \ \ \ \ \ \ \ \ XMLText*\ text\ =\ e-\/>ToText();}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00202}00202\ \ \ \ \ \ \ \ \ std::string\ t\ =\ text-\/>Value();}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00203}00203\ \ \ \ \ \ \ \ \ t.erase(std::remove\_if(t.begin(),\ t.end(),\ ::isspace),\ t.end());}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00204}00204\ \ \ \ \ \ \ \ \ decodedIDs\ +=\ base64\_decode(t);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00205}00205\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00206}00206\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00207}00207\ \ \ \ \ \textcolor{comment}{//\ uncompress\ zlib\ compression}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00208}00208\ \ \ \ \ std::vector<uint32\_t>\ ids(\mbox{\hyperlink{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}{m\_width}}\ *\ \mbox{\hyperlink{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c}{m\_height}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00209}00209\ \ \ \ \ uLongf\ sizeofids\ =\ ids.size()\ *\ \textcolor{keyword}{sizeof}(uint32\_t);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00210}00210\ \ \ \ \ \textcolor{keywordtype}{int}\ uncompress\_result\ =\ uncompress(}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00211}00211\ \ \ \ \ \ \ \ \ \ \ \ \ (Bytef*)ids.data(),\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00212}00212\ \ \ \ \ \ \ \ \ \ \ \ \ \&sizeofids,}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00213}00213\ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keyword}{const}\ Bytef*)decodedIDs.data(),\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00214}00214\ \ \ \ \ \ \ \ \ \ \ \ \ decodedIDs.size());}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00215}00215\ \ \ \ \ \textcolor{keywordflow}{if}(uncompress\_result\ !=\ Z\_OK)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00216}00216\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}zlib\ uncompress\ failed!\ Error\ code:\ "{}}\ <<\ uncompress\_result\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00217}00217\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 可能原因：数据不是\ zlib\ 压缩、损坏、buffer\ 太小等}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00218}00218\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00219}00219\ \ \ \ \ \textcolor{keywordflow}{if}\ (sizeofids\ !=\ ids.size()\ *\ \textcolor{keyword}{sizeof}(uint32\_t))\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00220}00220\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Decompressed\ size\ mismatch!\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00221}00221\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00222}00222\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00223}00223\ \ \ \ \ std::vector<int>\ layerRow(\mbox{\hyperlink{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}{m\_width}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00224}00224\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ \mbox{\hyperlink{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c}{m\_height}};\ j++)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00225}00225\ \ \ \ \ \ \ \ \ data.push\_back(layerRow);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00226}00226\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00227}00227\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00228}00228\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ rows\ =\ 0;\ rows\ <\ \mbox{\hyperlink{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c}{m\_height}};\ rows++)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00229}00229\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ cols\ =\ 0;\ cols\ <\ \mbox{\hyperlink{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}{m\_width}};\ cols++)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00230}00230\ \ \ \ \ \ \ \ \ \ \ \ \ data[rows][cols]\ =\ ids[rows\ *\ \mbox{\hyperlink{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}{m\_width}}\ +\ cols];}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00231}00231\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00232}00232\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00233}00233\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00234}00234\ \ \ \ \ pTileLayer-\/>\mbox{\hyperlink{classTileLayer_a2d0ef9789523c9a1f11bc6d472985757}{setTileIDs}}(data);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00235}00235\ \ \ \ \ pTileLayer-\/>\mbox{\hyperlink{classTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e}{setMapHeight}}(\mbox{\hyperlink{classLevelParser_a3d90db8aba923a9c1e56236cd8ef5a4c}{m\_height}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00236}00236\ \ \ \ \ pTileLayer-\/>\mbox{\hyperlink{classTileLayer_a840abb35a28b7b401535d9dd0c84ffde}{setMapWidth}}(\mbox{\hyperlink{classLevelParser_aab835de0241d1c1d2e8b49e22630e1ad}{m\_width}});}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00237}00237\ \ \ \ \ \textcolor{comment}{//std::cout\ <<\ "{}Map\ hight-\/width:"{}\ <<\ m\_width\ <<\ "{},"{}\ <<\ m\_height\ <<\ "{}!\(\backslash\)n"{};}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00238}00238\ }
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00239}00239\ \ \ \ \ \textcolor{keywordflow}{if}(collidable)\ \{}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00240}00240\ \ \ \ \ \ \ \ \ pCollisionLayers-\/>push\_back(pTileLayer);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00241}00241\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00242}00242\ \ \ \ \ pLayers-\/>push\_back(pTileLayer);}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00243}00243\ \}}
+\DoxyCodeLine{\Hypertarget{LevelParser_8cpp_source_l00244}00244\ }
+
+\end{DoxyCode}

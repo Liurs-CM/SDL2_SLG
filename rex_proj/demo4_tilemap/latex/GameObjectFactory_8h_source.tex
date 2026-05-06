@@ -1,0 +1,66 @@
+\doxysection{Game\+Object\+Factory.\+h}
+\hypertarget{GameObjectFactory_8h_source}{}\label{GameObjectFactory_8h_source}\index{inc/GameObjectFactory.h@{inc/GameObjectFactory.h}}
+\mbox{\hyperlink{GameObjectFactory_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_GameObjectFactory\_\_}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_GameObjectFactory\_\_}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObject_8h}{GameObject.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00008}\mbox{\hyperlink{classBaseCreator}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBaseCreator}{BaseCreator}}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00011}\mbox{\hyperlink{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classGameObject}{GameObject}}*\ \mbox{\hyperlink{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130}{createGameObject}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00012}\mbox{\hyperlink{classBaseCreator_a961384508a4a04cc7920fa85994e991d}{00012}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classBaseCreator_a961384508a4a04cc7920fa85994e991d}{\string~BaseCreator}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00013}00013\ \};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00015}\mbox{\hyperlink{classGameObjectFactory}{00015}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameObjectFactory}{GameObjectFactory}}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00018}\mbox{\hyperlink{classGameObjectFactory_ac041794e646de05d62166767faad9581}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classGameObjectFactory}{GameObjectFactory}}*\ \mbox{\hyperlink{classGameObjectFactory_ac041794e646de05d62166767faad9581}{Instance}}()}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a}{pInstance}}\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a}{pInstance}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classGameObjectFactory}{GameObjectFactory}}();}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a}{pInstance}};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00028}\mbox{\hyperlink{classGameObjectFactory_abdf1f09c78ee3df65dcbace8c2d99132}{00028}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGameObjectFactory_abdf1f09c78ee3df65dcbace8c2d99132}{registerType}}(std::string\ typeID,\ \mbox{\hyperlink{classBaseCreator}{BaseCreator}}*\ pCreator)}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ std::map<std::string,\ BaseCreator*>::iterator\ it\ =\ \mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{m\_creators}}.find(typeID);}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ if\ the\ type\ is\ alreade\ registered,\ do\ nothing}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it\ !=\ \mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{m\_creators}}.end())}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ pCreator;}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{m\_creators}}[typeID]\ =\ pCreator;}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00041}\mbox{\hyperlink{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134}{00041}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameObject}{GameObject}}*\ \mbox{\hyperlink{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134}{create}}(std::string\ typeID)}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ std::map<std::string,\ BaseCreator*>::iterator\ it\ =\ \mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{m\_creators}}.find(typeID);}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(it\ ==\ \mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{m\_creators}}.end())}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}could\ not\ find\ type:\ "{}}\ <<\ typeID\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBaseCreator}{BaseCreator}}*\ pCreator\ =\ (*it).second;}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pCreator-\/>\mbox{\hyperlink{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130}{createGameObject}}();}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00053}00053\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00054}\mbox{\hyperlink{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a}{00054}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classGameObjectFactory}{GameObjectFactory}}*\ \mbox{\hyperlink{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a}{pInstance}};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00055}\mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{00055}}\ \ \ \ \ \ \ \ \ std::map<std::string,\ BaseCreator*>\ \mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{m\_creators}};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00056}00056\ \};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00058}\mbox{\hyperlink{GameObjectFactory_8h_ac6cef7998600e518fa512030d444fb48}{00058}}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{classGameObjectFactory}{GameObjectFactory}}\ \mbox{\hyperlink{GameObjectFactory_8h_ac6cef7998600e518fa512030d444fb48}{TheGameObjectFactory}};}
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{GameObjectFactory_8h_source_l00060}00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_GameObjectFactory\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,91 @@
+\doxysection{State\+Parser.\+cpp}
+\hypertarget{StateParser_8cpp_source}{}\label{StateParser_8cpp_source}\index{src/StateParser.cpp@{src/StateParser.cpp}}
+\mbox{\hyperlink{StateParser_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{StateParser_8h}{StateParser.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObjectFactory_8h}{GameObjectFactory.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00007}\mbox{\hyperlink{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02}{00007}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classStateParser_ae4b0e2e1350675193e1114c13f3e5e02}{StateParser::parseState}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ stateFile,\ std::string\ stateID,\ std::vector<std::unique\_ptr<GameObject>>\ *pObjects,\ std::vector<std::string>\ *pTextureIDs)}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00009}00009\ \ \ \ \ \textcolor{comment}{//\ create\ the\ XML\ document}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00010}00010\ \ \ \ \ XMLDocument\ xmlDoc;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{comment}{//\ load\ the\ state\ file}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{keywordflow}{if}(xmlDoc.LoadFile(stateFile)\ !=\ XML\_SUCCESS)\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ std::cerr\ <<\ xmlDoc.ErrorStr()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//\ get\ the\ root\ element}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00017}00017\ \ \ \ \ XMLElement*\ pRoot\ =\ xmlDoc.RootElement();\ \textcolor{comment}{//\ <STATES>}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{comment}{//\ pre\ declare\ the\ states\ root\ node}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00020}00020\ \ \ \ \ XMLElement*\ pStateRoot\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//\ get\ this\ states\ root\ node\ and\ assign\ it\ to\ pStateRoot}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ e\ =\ pRoot-\/>FirstChildElement();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSiblingElement())\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(e-\/>Value()\ ==\ stateID)\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ pStateRoot\ =\ e;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00026}00026\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{comment}{//\ pre\ declare\ the\ texture\ root}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00029}00029\ \ \ \ \ XMLElement*\ pTextureRoot\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ get\ the\ root\ of\ the\ texture\ elements}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ e\ =\ pStateRoot-\/>FirstChildElement();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSiblingElement())\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(e-\/>Value()\ ==\ std::string(\textcolor{stringliteral}{"{}TEXTURES"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ pTextureRoot\ =\ e;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{comment}{//\ now\ parse\ the\ textures}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{classStateParser_a4d1b50831424304b41b0900d1a746180}{parseTextures}}(pTextureRoot,\ pTextureIDs);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{comment}{//\ pre\ declare\ the\ object\ root\ node}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00040}00040\ \ \ \ \ XMLElement*\ pObjectRoot\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{comment}{//\ get\ the\ root\ node\ and\ assign\ it\ to\ pObjectRoot}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ e\ =\ pStateRoot-\/>FirstChildElement();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSiblingElement())\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(e-\/>Value()\ ==\ std::string(\textcolor{stringliteral}{"{}OBJECTS"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ pObjectRoot\ =\ e;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00046}00046\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{comment}{//\ now\ parse\ the\ objects}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classStateParser_acf8695d64d8d3b9f2900b8a707729b08}{parseObjects}}(pObjectRoot,\ pObjects);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00053}\mbox{\hyperlink{classStateParser_a4d1b50831424304b41b0900d1a746180}{00053}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStateParser_a4d1b50831424304b41b0900d1a746180}{StateParser::parseTextures}}(XMLElement*\ pStateRoot,\ std::vector<std::string>\ *pTextureIDs)}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00054}00054\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ e\ =\ pStateRoot-\/>FirstChildElement();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSiblingElement())}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00056}00056\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ std::string\ filenameAttribute\ =\ e-\/>Attribute(\textcolor{stringliteral}{"{}filename"{}});}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ std::string\ idAttribute\ =\ e-\/>Attribute(\textcolor{stringliteral}{"{}ID"{}});}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ pTextureIDs-\/>push\_back(idAttribute);\ \textcolor{comment}{//\ push\ into\ list}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a1921cb89735d57489e49984c7572611c}{load}}(filenameAttribute,\ idAttribute);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00061}00061\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00062}00062\ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00064}\mbox{\hyperlink{classStateParser_acf8695d64d8d3b9f2900b8a707729b08}{00064}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStateParser_acf8695d64d8d3b9f2900b8a707729b08}{StateParser::parseObjects}}(XMLElement\ *pStateRoot,\ std::vector<std::unique\_ptr<GameObject>>\ *pObjects)}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00065}00065\ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{keywordflow}{for}(XMLElement*\ e\ =\ pStateRoot-\/>FirstChildElement();\ e\ !=\ NULL;\ e\ =\ e-\/>NextSiblingElement())}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00067}00067\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ y,\ width,\ height,\ numFrames,\ callbackID;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ animSpeed;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ std::string\ textureID;}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ e-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}x"{}},\ \&x);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ e-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}y"{}},\ \&y);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ e-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}width"{}},\ \&width);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ e-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}height"{}},\ \&height);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ e-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}numFrames"{}},\ \&numFrames);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ e-\/>QueryIntAttribute(\textcolor{stringliteral}{"{}callbackID"{}},\ \&callbackID);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ e-\/>QueryFloatAttribute(\textcolor{stringliteral}{"{}animSpeed"{}},\ \&animSpeed);}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ textureID\ =\ e-\/>Attribute(\textcolor{stringliteral}{"{}textureID"{}});}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameObject}{GameObject}}*\ pGameObject\ =\ \mbox{\hyperlink{classGameObjectFactory_ac041794e646de05d62166767faad9581}{TheGameObjectFactory::Instance}}()-\/>\mbox{\hyperlink{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134}{create}}(e-\/>Attribute(\textcolor{stringliteral}{"{}type"{}}));}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ pGameObject-\/>\mbox{\hyperlink{classGameObject_a729edce3955766d5c8dfcda6f310392d}{load}}(std::unique\_ptr<LoaderParams>(\textcolor{keyword}{new}\ \mbox{\hyperlink{classLoaderParams}{LoaderParams}}(x,\ y,\ width,\ height,\ textureID,\ numFrames,\ callbackID,\ animSpeed)));}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ pObjects-\/>push\_back(std::unique\_ptr<GameObject>(pGameObject));}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00084}00084\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{StateParser_8cpp_source_l00085}00085\ \}}
+
+\end{DoxyCode}

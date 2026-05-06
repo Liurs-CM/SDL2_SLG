@@ -1,0 +1,7 @@
+<map id="LevelParser::parseTileLayer" name="LevelParser::parseTileLayer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="420,5,621,31"/>
+<area shape="rect" id="Node000002" href="$classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="196,5,372,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="406,21,372,21,372,15,406,15"/>
+<area shape="rect" id="Node000003" href="$classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+</map>

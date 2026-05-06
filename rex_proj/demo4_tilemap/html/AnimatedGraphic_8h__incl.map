@@ -1,0 +1,13 @@
+<map id="inc/AnimatedGraphic.h" name="inc/AnimatedGraphic.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,264,31"/>
+<area shape="rect" id="Node000002" href="$GameLib_8h.html" title=" " alt="" coords="83,79,175,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,33,147,69,143,66,168,29"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="200,79,259,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="189,29,215,66,211,69,185,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,106,66,145,63,141,113,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,152,162,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="132,104,132,138,127,138,127,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="186,152,273,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,102,203,142,200,146,144,106"/>
+</map>

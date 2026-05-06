@@ -1,0 +1,7 @@
+<map id="Level1Boss::load" name="Level1Boss::load">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,137,56"/>
+<area shape="rect" id="Node000002" href="$classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f" title=" " alt="" coords="185,5,349,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,32,171,28,172,33,138,37"/>
+<area shape="rect" id="Node000003" href="$classVector2D.html#a9b47adcbdf2c10f3ba893285b5c34709" title=" " alt="" coords="209,55,326,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,49,195,56,194,61,137,54"/>
+</map>

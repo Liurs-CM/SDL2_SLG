@@ -1,0 +1,171 @@
+\doxysection{Game\+Object\+Factory类 参考}
+\hypertarget{classGameObjectFactory}{}\label{classGameObjectFactory}\index{GameObjectFactory@{GameObjectFactory}}
+
+
+{\ttfamily \#include $<$Game\+Object\+Factory.\+h$>$}
+
+
+
+Game\+Object\+Factory 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classGameObjectFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGameObjectFactory_abdf1f09c78ee3df65dcbace8c2d99132}{register\+Type}} (std\+::string type\+ID, \mbox{\hyperlink{classBaseCreator}{Base\+Creator}} \texorpdfstring{$\ast$}{*}p\+Creator)
+\item 
+\mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134}{create}} (std\+::string type\+ID)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGameObjectFactory}{Game\+Object\+Factory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGameObjectFactory_ac041794e646de05d62166767faad9581}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classBaseCreator}{Base\+Creator}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}{m\+\_\+creators}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGameObjectFactory}{Game\+Object\+Factory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a}{p\+Instance}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00015}{15}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134}\label{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134} 
+\index{GameObjectFactory@{GameObjectFactory}!create@{create}}
+\index{create@{create}!GameObjectFactory@{GameObjectFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*} Game\+Object\+Factory\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{type\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00041}{41}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{classBaseCreator_aafe411c83ea73e1a001ca7046f46b130}{Base\+Creator\+::create\+Game\+Object()}} , 以及 \mbox{\hyperlink{GameObjectFactory_8h_source_l00055}{m\+\_\+creators}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{Level\+Parser\+::parse\+Object\+Layer()}} , 以及 \mbox{\hyperlink{StateParser_8cpp_source_l00064}{State\+Parser\+::parse\+Objects()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameObjectFactory_a704834a35c0a7d2b7267999bbb4ee134_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameObjectFactory_ac041794e646de05d62166767faad9581}\label{classGameObjectFactory_ac041794e646de05d62166767faad9581} 
+\index{GameObjectFactory@{GameObjectFactory}!Instance@{Instance}}
+\index{Instance@{Instance}!GameObjectFactory@{GameObjectFactory}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classGameObjectFactory}{Game\+Object\+Factory}} \texorpdfstring{$\ast$}{*} Game\+Object\+Factory\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00018}{18}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameObjectFactory_8h_source_l00054}{p\+Instance}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00107}{Level\+Parser\+::parse\+Object\+Layer()}} , 以及 \mbox{\hyperlink{StateParser_8cpp_source_l00064}{State\+Parser\+::parse\+Objects()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameObjectFactory_ac041794e646de05d62166767faad9581_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGameObjectFactory_abdf1f09c78ee3df65dcbace8c2d99132}\label{classGameObjectFactory_abdf1f09c78ee3df65dcbace8c2d99132} 
+\index{GameObjectFactory@{GameObjectFactory}!registerType@{registerType}}
+\index{registerType@{registerType}!GameObjectFactory@{GameObjectFactory}}
+\doxysubsubsection{\texorpdfstring{registerType()}{registerType()}}
+{\footnotesize\ttfamily bool Game\+Object\+Factory\+::register\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type\+ID,  }\item[{\mbox{\hyperlink{classBaseCreator}{Base\+Creator}} \texorpdfstring{$\ast$}{*}}]{p\+Creator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00028}{28}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameObjectFactory_8h_source_l00055}{m\+\_\+creators}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00045}{Game\+::init()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classGameObjectFactory_abdf1f09c78ee3df65dcbace8c2d99132_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611}\label{classGameObjectFactory_a64f24d4ca4aaa16eb5bb9f3d6cf12611} 
+\index{GameObjectFactory@{GameObjectFactory}!m\_creators@{m\_creators}}
+\index{m\_creators@{m\_creators}!GameObjectFactory@{GameObjectFactory}}
+\doxysubsubsection{\texorpdfstring{m\_creators}{m\_creators}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classBaseCreator}{Base\+Creator}}\texorpdfstring{$\ast$}{*}$>$ Game\+Object\+Factory\+::m\+\_\+creators\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00055}{55}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameObjectFactory_8h_source_l00041}{create()}} , 以及 \mbox{\hyperlink{GameObjectFactory_8h_source_l00028}{register\+Type()}}.
+
+\Hypertarget{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a}\label{classGameObjectFactory_afedf44e5d80c6935e772584c3e8a553a} 
+\index{GameObjectFactory@{GameObjectFactory}!pInstance@{pInstance}}
+\index{pInstance@{pInstance}!GameObjectFactory@{GameObjectFactory}}
+\doxysubsubsection{\texorpdfstring{pInstance}{pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameObjectFactory}{Game\+Object\+Factory}} \texorpdfstring{$\ast$}{*} Game\+Object\+Factory\+::p\+Instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{GameObjectFactory_8h_source}{Game\+Object\+Factory.\+h}} 第 \mbox{\hyperlink{GameObjectFactory_8h_source_l00054}{54}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{GameObjectFactory_8h_source_l00018}{Instance()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{GameObjectFactory_8h}{Game\+Object\+Factory.\+h}}\item 
+src/\mbox{\hyperlink{GameObjectFactory_8cpp}{Game\+Object\+Factory.\+cpp}}\end{DoxyCompactItemize}

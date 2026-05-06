@@ -1,0 +1,601 @@
+\doxysection{Texture\+Manager类 参考}
+\hypertarget{classTextureManager}{}\label{classTextureManager}\index{TextureManager@{TextureManager}}
+
+
+{\ttfamily \#include $<$Texture\+Manager.\+h$>$}
+
+
+
+Texture\+Manager 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classTextureManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classTextureManager_a1921cb89735d57489e49984c7572611c}{load}} (std\+::string file\+Name, std\+::string id)
+\item 
+void \mbox{\hyperlink{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61}{draw}} (std\+::string id, \mbox{\hyperlink{classVector2D}{Vector2D}} pos, uint16\+\_\+t width, uint16\+\_\+t height, SDL\+\_\+\+Renderer\+Flip flip=SDL\+\_\+\+FLIP\+\_\+\+NONE)
+\item 
+void \mbox{\hyperlink{classTextureManager_a36331e211cbd13a7cfc15af1540a5f89}{draw\+Rotat}} (std\+::string id, \mbox{\hyperlink{classVector2D}{Vector2D}} pos, int width, int height, int current\+Row, int current\+Frame, double angle, SDL\+\_\+\+Renderer\+Flip flip=SDL\+\_\+\+FLIP\+\_\+\+NONE)
+\item 
+void \mbox{\hyperlink{classTextureManager_a8152a12de458e940d09f2850d8f71b85}{draw\+Frame}} (std\+::string id, \mbox{\hyperlink{classVector2D}{Vector2D}} pos, uint16\+\_\+t width, uint16\+\_\+t height, uint8\+\_\+t current\+Row, uint8\+\_\+t current\+Frame, int alpha=255, SDL\+\_\+\+Renderer\+Flip flip=SDL\+\_\+\+FLIP\+\_\+\+NONE)
+\item 
+void \mbox{\hyperlink{classTextureManager_af9f207db2e64e465e8588a1733708de3}{draw\+Line}} (int x1, int y1, int x2, int y2, uint32\+\_\+t color=\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}})
+\item 
+void \mbox{\hyperlink{classTextureManager_a25c66880a004153371df2dd0e7a6041b}{draw\+Text}} (int x, int y, const char \texorpdfstring{$\ast$}{*}text, uint32\+\_\+t color=\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}})
+\item 
+void \mbox{\hyperlink{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93}{draw\+Text\+Scale}} (int x, int y, const char \texorpdfstring{$\ast$}{*}text, uint32\+\_\+t color=\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}}, int scale=1)
+\item 
+void \mbox{\hyperlink{classTextureManager_a3a2051122a31204406b04457c4e3fee4}{draw\+Printf}} (int x, int y, uint32\+\_\+t color, const char \texorpdfstring{$\ast$}{*}fmt,...)
+\item 
+void \mbox{\hyperlink{classTextureManager_a17440efbdb49e196fdf01fdd475127e5}{draw\+Circle}} (int cx, int cy, int radius, bool Fill=false, uint32\+\_\+t color=\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}})
+\item 
+void \mbox{\hyperlink{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19}{draw\+Tile}} (std\+::string id, uint8\+\_\+t margin, uint8\+\_\+t spacing, int x, int y, uint16\+\_\+t width, uint16\+\_\+t height, uint8\+\_\+t current\+Row, uint8\+\_\+t current\+Frame)
+\item 
+void \mbox{\hyperlink{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf}{draw\+Grid}} (int x, int y, int rows, int cols, int cell\+Size, uint32\+\_\+t color)
+\item 
+void \mbox{\hyperlink{classTextureManager_af083b78d46ed8e1ad20b22db1a8c5497}{clear\+Texture\+Map}} ()
+\item 
+void \mbox{\hyperlink{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6}{clear\+From\+Texture\+Map}} (std\+::string id)
+\item 
+std\+::map$<$ std\+::string, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classTextureManager_aadd910b82ceaf9f347aa2477baaa444f}{get\+Texture\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTextureManager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTextureManager_ad76abb178b37cedf4514eb0154349935}{Texture\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}{m\+\_\+texture\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTextureManager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTextureManager_a958f69ecfcfb08130efc5f50685c7c67}{s\+\_\+p\+Instance}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{TextureManager_8h_source}{Texture\+Manager.\+h}} 第 \mbox{\hyperlink{TextureManager_8h_source_l00011}{11}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classTextureManager_ad76abb178b37cedf4514eb0154349935}\label{classTextureManager_ad76abb178b37cedf4514eb0154349935} 
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{TextureManager()}{TextureManager()}}
+{\footnotesize\ttfamily Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8h_source}{Texture\+Manager.\+h}} 第 \mbox{\hyperlink{TextureManager_8h_source_l00039}{39}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TextureManager_8h_source_l00028}{Instance()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_ad76abb178b37cedf4514eb0154349935_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6}\label{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6} 
+\index{TextureManager@{TextureManager}!clearFromTextureMap@{clearFromTextureMap}}
+\index{clearFromTextureMap@{clearFromTextureMap}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{clearFromTextureMap()}{clearFromTextureMap()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::clear\+From\+Texture\+Map (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00072}{72}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00058}{Menu\+Main\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00051}{Menu\+Over\+State\+::on\+Exit()}} , 以及 \mbox{\hyperlink{MenuPauseState_8cpp_source_l00055}{Menu\+Pause\+State\+::on\+Exit()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a3331ef959848aee5bcbd8d082cfe54d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_af083b78d46ed8e1ad20b22db1a8c5497}\label{classTextureManager_af083b78d46ed8e1ad20b22db1a8c5497} 
+\index{TextureManager@{TextureManager}!clearTextureMap@{clearTextureMap}}
+\index{clearTextureMap@{clearTextureMap}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{clearTextureMap()}{clearTextureMap()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::clear\+Texture\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00067}{67}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{Game\+::clean()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_af083b78d46ed8e1ad20b22db1a8c5497_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61}\label{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61} 
+\index{TextureManager@{TextureManager}!draw@{draw}}
+\index{draw@{draw}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{\mbox{\hyperlink{classVector2D}{Vector2D}}}]{pos,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{SDL\+\_\+\+Renderer\+Flip}]{flip = {\ttfamily SDL\+\_\+FLIP\+\_\+NONE} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00029}{29}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}} , 以及 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_a17440efbdb49e196fdf01fdd475127e5}\label{classTextureManager_a17440efbdb49e196fdf01fdd475127e5} 
+\index{TextureManager@{TextureManager}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Circle (\begin{DoxyParamCaption}\item[{int}]{cx,  }\item[{int}]{cy,  }\item[{int}]{radius,  }\item[{bool}]{Fill = {\ttfamily false},  }\item[{uint32\+\_\+t}]{color = {\ttfamily \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}}} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00180}{180}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a17440efbdb49e196fdf01fdd475127e5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a17440efbdb49e196fdf01fdd475127e5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_a8152a12de458e940d09f2850d8f71b85}\label{classTextureManager_a8152a12de458e940d09f2850d8f71b85} 
+\index{TextureManager@{TextureManager}!drawFrame@{drawFrame}}
+\index{drawFrame@{drawFrame}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawFrame()}{drawFrame()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Frame (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{\mbox{\hyperlink{classVector2D}{Vector2D}}}]{pos,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint8\+\_\+t}]{current\+Row,  }\item[{uint8\+\_\+t}]{current\+Frame,  }\item[{int}]{alpha = {\ttfamily 255},  }\item[{SDL\+\_\+\+Renderer\+Flip}]{flip = {\ttfamily SDL\+\_\+FLIP\+\_\+NONE} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00055}{55}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}} , 以及 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{Menu\+Button\+::draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}} , 以及 \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{SDLGame\+Object\+::draw()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a8152a12de458e940d09f2850d8f71b85_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a8152a12de458e940d09f2850d8f71b85_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf}\label{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf} 
+\index{TextureManager@{TextureManager}!drawGrid@{drawGrid}}
+\index{drawGrid@{drawGrid}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawGrid()}{drawGrid()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Grid (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{rows,  }\item[{int}]{cols,  }\item[{int}]{cell\+Size,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00239}{239}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8cpp_source_l00089}{draw\+Line()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_af9f207db2e64e465e8588a1733708de3}\label{classTextureManager_af9f207db2e64e465e8588a1733708de3} 
+\index{TextureManager@{TextureManager}!drawLine@{drawLine}}
+\index{drawLine@{drawLine}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawLine()}{drawLine()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Line (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{uint32\+\_\+t}]{color = {\ttfamily \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}}} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00089}{89}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TextureManager_8cpp_source_l00239}{draw\+Grid()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_af9f207db2e64e465e8588a1733708de3_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_af9f207db2e64e465e8588a1733708de3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_a3a2051122a31204406b04457c4e3fee4}\label{classTextureManager_a3a2051122a31204406b04457c4e3fee4} 
+\index{TextureManager@{TextureManager}!drawPrintf@{drawPrintf}}
+\index{drawPrintf@{drawPrintf}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawPrintf()}{drawPrintf()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Printf (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint32\+\_\+t}]{color,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00168}{168}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8cpp_source_l00098}{draw\+Text()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}} , 以及 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a3a2051122a31204406b04457c4e3fee4_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a3a2051122a31204406b04457c4e3fee4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_a36331e211cbd13a7cfc15af1540a5f89}\label{classTextureManager_a36331e211cbd13a7cfc15af1540a5f89} 
+\index{TextureManager@{TextureManager}!drawRotat@{drawRotat}}
+\index{drawRotat@{drawRotat}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawRotat()}{drawRotat()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Rotat (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{\mbox{\hyperlink{classVector2D}{Vector2D}}}]{pos,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{current\+Row,  }\item[{int}]{current\+Frame,  }\item[{double}]{angle,  }\item[{SDL\+\_\+\+Renderer\+Flip}]{flip = {\ttfamily SDL\+\_\+FLIP\+\_\+NONE} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00040}{40}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}, \mbox{\hyperlink{Vector2D_8h_source_l00011}{Vector2\+D\+::get\+X()}}, \mbox{\hyperlink{Vector2D_8h_source_l00012}{Vector2\+D\+::get\+Y()}} , 以及 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a36331e211cbd13a7cfc15af1540a5f89_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_a25c66880a004153371df2dd0e7a6041b}\label{classTextureManager_a25c66880a004153371df2dd0e7a6041b} 
+\index{TextureManager@{TextureManager}!drawText@{drawText}}
+\index{drawText@{drawText}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Text (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{text,  }\item[{uint32\+\_\+t}]{color = {\ttfamily \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}}} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00098}{98}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameLib_8h_source_l00060}{\+\_\+gamelib\+\_\+font8x8}} , 以及 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TextureManager_8cpp_source_l00168}{draw\+Printf()}} , 以及 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a25c66880a004153371df2dd0e7a6041b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a25c66880a004153371df2dd0e7a6041b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93}\label{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93} 
+\index{TextureManager@{TextureManager}!drawTextScale@{drawTextScale}}
+\index{drawTextScale@{drawTextScale}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawTextScale()}{drawTextScale()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Text\+Scale (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{text,  }\item[{uint32\+\_\+t}]{color = {\ttfamily \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\+\_\+\+BLACK}}},  }\item[{int}]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00133}{133}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameLib_8h_source_l00060}{\+\_\+gamelib\+\_\+font8x8}} , 以及 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19}\label{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19} 
+\index{TextureManager@{TextureManager}!drawTile@{drawTile}}
+\index{drawTile@{drawTile}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{drawTile()}{drawTile()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::draw\+Tile (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{uint8\+\_\+t}]{margin,  }\item[{uint8\+\_\+t}]{spacing,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint8\+\_\+t}]{current\+Row,  }\item[{uint8\+\_\+t}]{current\+Frame }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00077}{77}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}} , 以及 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{Tile\+Layer\+::render()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_aadd910b82ceaf9f347aa2477baaa444f}\label{classTextureManager_aadd910b82ceaf9f347aa2477baaa444f} 
+\index{TextureManager@{TextureManager}!getTextureMap@{getTextureMap}}
+\index{getTextureMap@{getTextureMap}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{getTextureMap()}{getTextureMap()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} $>$ Texture\+Manager\+::get\+Texture\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8h_source}{Texture\+Manager.\+h}} 第 \mbox{\hyperlink{TextureManager_8h_source_l00027}{27}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+\Hypertarget{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}\label{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6} 
+\index{TextureManager@{TextureManager}!Instance@{Instance}}
+\index{Instance@{Instance}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTextureManager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*} Texture\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8h_source}{Texture\+Manager.\+h}} 第 \mbox{\hyperlink{TextureManager_8h_source_l00028}{28}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{TextureManager_8h_source_l00041}{s\+\_\+p\+Instance}} , 以及 \mbox{\hyperlink{TextureManager_8h_source_l00039}{Texture\+Manager()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{Game\+::clean()}}, \mbox{\hyperlink{MenuButton_8cpp_source_l00014}{Menu\+Button\+::draw()}}, \mbox{\hyperlink{Player_8cpp_source_l00020}{Player\+::draw()}}, \mbox{\hyperlink{ScrollingBackground_8cpp_source_l00025}{Scrolling\+Background\+::draw()}}, \mbox{\hyperlink{SDLGameObject_8cpp_source_l00028}{SDLGame\+Object\+::draw()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00058}{Menu\+Main\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00051}{Menu\+Over\+State\+::on\+Exit()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00055}{Menu\+Pause\+State\+::on\+Exit()}}, \mbox{\hyperlink{StateParser_8cpp_source_l00053}{State\+Parser\+::parse\+Textures()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00080}{Level\+Parser\+::parse\+Textures()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00086}{Level\+Parser\+::parse\+Tilesets()}}, \mbox{\hyperlink{TileLayer_8cpp_source_l00020}{Tile\+Layer\+::render()}} , 以及 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTextureManager_a1921cb89735d57489e49984c7572611c}\label{classTextureManager_a1921cb89735d57489e49984c7572611c} 
+\index{TextureManager@{TextureManager}!load@{load}}
+\index{load@{load}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool Texture\+Manager\+::load (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name,  }\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8cpp_source}{Texture\+Manager.\+cpp}} 第 \mbox{\hyperlink{TextureManager_8cpp_source_l00011}{11}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{RenderContext_8h_source_l00013}{Render\+Context\+::get()}} , 以及 \mbox{\hyperlink{TextureManager_8h_source_l00040}{m\+\_\+texture\+Map}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{StateParser_8cpp_source_l00053}{State\+Parser\+::parse\+Textures()}}, \mbox{\hyperlink{LevelParser_8cpp_source_l00080}{Level\+Parser\+::parse\+Textures()}} , 以及 \mbox{\hyperlink{LevelParser_8cpp_source_l00086}{Level\+Parser\+::parse\+Tilesets()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classTextureManager_a1921cb89735d57489e49984c7572611c_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTextureManager_a1921cb89735d57489e49984c7572611c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef}\label{classTextureManager_ab78a1ae0477b016569b32ac4ceaeaaef} 
+\index{TextureManager@{TextureManager}!m\_textureMap@{m\_textureMap}}
+\index{m\_textureMap@{m\_textureMap}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{m\_textureMap}{m\_textureMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*}$>$ Texture\+Manager\+::m\+\_\+texture\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8h_source}{Texture\+Manager.\+h}} 第 \mbox{\hyperlink{TextureManager_8h_source_l00040}{40}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TextureManager_8cpp_source_l00072}{clear\+From\+Texture\+Map()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00067}{clear\+Texture\+Map()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00029}{draw()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00055}{draw\+Frame()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00040}{draw\+Rotat()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00077}{draw\+Tile()}}, \mbox{\hyperlink{TextureManager_8h_source_l00027}{get\+Texture\+Map()}} , 以及 \mbox{\hyperlink{TextureManager_8cpp_source_l00011}{load()}}.
+
+\Hypertarget{classTextureManager_a958f69ecfcfb08130efc5f50685c7c67}\label{classTextureManager_a958f69ecfcfb08130efc5f50685c7c67} 
+\index{TextureManager@{TextureManager}!s\_pInstance@{s\_pInstance}}
+\index{s\_pInstance@{s\_pInstance}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{s\_pInstance}{s\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTextureManager}{Texture\+Manager}} \texorpdfstring{$\ast$}{*} Texture\+Manager\+::s\+\_\+p\+Instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{TextureManager_8h_source}{Texture\+Manager.\+h}} 第 \mbox{\hyperlink{TextureManager_8h_source_l00041}{41}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{TextureManager_8h_source_l00028}{Instance()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{TextureManager_8h}{Texture\+Manager.\+h}}\item 
+src/\mbox{\hyperlink{TextureManager_8cpp}{Texture\+Manager.\+cpp}}\end{DoxyCompactItemize}

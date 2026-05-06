@@ -1,0 +1,47 @@
+\doxysection{Sound\+Manager.\+h}
+\hypertarget{SoundManager_8h_source}{}\label{SoundManager_8h_source}\index{inc/SoundManager.h@{inc/SoundManager.h}}
+\mbox{\hyperlink{SoundManager_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_SoundManager\_\_}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_SoundManager\_\_}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}SDL\_mixer.h"{}}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00008}\mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1e}{00008}}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1e}{sound\_type}}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00010}\mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1ea1b983b8b1663848b4a3d598f3e0f0eb1}{00010}}\ \ \ \ \ \mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1ea1b983b8b1663848b4a3d598f3e0f0eb1}{SOUND\_MUSIC}}\ =\ 0,}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1eaaa0a70ddaa3102f56f8aa3c334f8f8b1}{SOUND\_SFX}}\ =\ 1}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00012}\mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1eaaa0a70ddaa3102f56f8aa3c334f8f8b1}{00012}}\ \};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00014}\mbox{\hyperlink{classSoundManager}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSoundManager}{SoundManager}}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00016}00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00017}\mbox{\hyperlink{classSoundManager_afb88058c46a2036b74f2775fc0cc2731}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classSoundManager}{SoundManager}}*\ \mbox{\hyperlink{classSoundManager_afb88058c46a2036b74f2775fc0cc2731}{Instance}}()}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}{s\_pInstance}}\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}{s\_pInstance}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSoundManager_abcc1fbf3488be5788a42c9a4fe56df35}{SoundManager}}();}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSoundManager_acf34a5ccff062eb30f4930b2426d23de}{load}}(std::string\ fileName,\ std::string\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{SoundManager_8h_adfb4b3d4c43f1e78a1e95150ca37fd1e}{sound\_type}}\ type);}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSoundManager_a44a5bc613545fc32b876f0a8c48ba542}{playSound}}(std::string\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ loop);}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSoundManager_a6d17613cbba68c4ee1897aaad890d80e}{playMusic}}(std::string\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ loop);}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00030}\mbox{\hyperlink{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}{00030}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classSoundManager}{SoundManager}}*\ \mbox{\hyperlink{classSoundManager_aad8c40bed5309488aaad5ccad8c83029}{s\_pInstance}};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00031}\mbox{\hyperlink{classSoundManager_a002bacf2ea6c35ff9ae240bc28c642aa}{00031}}\ \ \ \ \ \ \ \ \ std::map<std::string,\ Mix\_Chunk*>\ \mbox{\hyperlink{classSoundManager_a002bacf2ea6c35ff9ae240bc28c642aa}{m\_sfxs}};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00032}\mbox{\hyperlink{classSoundManager_ab57fd7c604471e90e78af9ef99b7171d}{00032}}\ \ \ \ \ \ \ \ \ std::map<std::string,\ Mix\_Music*>\ \mbox{\hyperlink{classSoundManager_ab57fd7c604471e90e78af9ef99b7171d}{m\_music}};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSoundManager_abcc1fbf3488be5788a42c9a4fe56df35}{SoundManager}}();}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSoundManager_ad5dbf8eab22db48ff8f3db51b02f8938}{\string~SoundManager}}();}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00035}\mbox{\hyperlink{classSoundManager_a3505269eb71fc0796284149507c2845b}{00035}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSoundManager_a3505269eb71fc0796284149507c2845b}{SoundManager}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSoundManager}{SoundManager}}\&);}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00036}\mbox{\hyperlink{classSoundManager_ae6ac98927c411fc2811fd71caa9f3c01}{00036}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSoundManager}{SoundManager}}\&\ \mbox{\hyperlink{classSoundManager_ae6ac98927c411fc2811fd71caa9f3c01}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSoundManager}{SoundManager}}\&);}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00037}00037\ \};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00039}\mbox{\hyperlink{SoundManager_8h_a82014a5c41de7ba6a056966643d570db}{00039}}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{classSoundManager}{SoundManager}}\ \mbox{\hyperlink{SoundManager_8h_a82014a5c41de7ba6a056966643d570db}{TheSoundManager}};}
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{SoundManager_8h_source_l00041}00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_SoundManager\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,32 @@
+<map id="GameStateMachine::changeState" name="GameStateMachine::changeState">
+<area shape="rect" id="Node000001" title=" " alt="" coords="527,187,732,227"/>
+<area shape="rect" id="Node000002" href="$classGame.html#adb5563f62c0c82e3e42ec36501aa5698" title=" " alt="" coords="281,5,439,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,178,554,109,518,73,477,44,438,29,440,24,480,40,521,69,558,105,611,174"/>
+<area shape="rect" id="Node000004" href="$classGame.html#a04464aa1c667b81f2c0fb2d4f7b0ac83" title=" " alt="" coords="315,55,405,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="596,179,543,135,511,113,478,95,441,82,405,75,406,70,443,77,480,90,514,109,546,131,599,175"/>
+<area shape="rect" id="Node000005" href="$classMenuOverState.html#ac17514b38c2a72ffb152ce07fda0c76f" title=" " alt="" coords="253,105,467,145"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="558,185,478,159,437,147,439,142,479,154,560,180"/>
+<area shape="rect" id="Node000007" href="$classMenuMainState.html#af702ce2061f11e27d8f9bac620d215d1" title=" " alt="" coords="247,219,473,244"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="513,220,473,224,473,219,513,215"/>
+<area shape="rect" id="Node000010" href="$classMenuPauseState.html#afa67ee79ca7c8193500cf9e8a9197e39" title=" " alt="" coords="241,268,479,293"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="558,234,479,258,426,271,425,265,478,253,557,229"/>
+<area shape="rect" id="Node000013" href="$classMenuOverState.html#a0c1f130bd4488d2fcf54bdb375179139" title=" " alt="" coords="252,169,468,195"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="513,199,468,195,469,190,513,194"/>
+<area shape="rect" id="Node000014" href="$classGame.html#ad7c1d10b807c0707e4b9f71e975135f4" title=" " alt="" coords="274,317,446,343"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="595,238,542,275,480,308,445,320,443,315,478,304,539,271,592,234"/>
+<area shape="rect" id="Node000015" href="$classPlayState.html#a3beac23cba7b9541714ebd33ea77a913" title=" " alt="" coords="291,367,429,392"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="608,240,554,301,519,332,480,358,455,368,430,375,428,370,454,363,477,353,516,328,550,297,604,237"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="72,5,127,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="268,21,127,21,127,15,268,15"/>
+<area shape="rect" id="Node000006" href="$classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,116,190,141"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="239,129,190,130,190,125,239,124"/>
+<area shape="rect" id="Node000008" href="$classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,169,191,195"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="278,219,167,197,168,192,279,213"/>
+<area shape="rect" id="Node000009" href="$classMenuMainState.html#aaa1ed1b8d8f785b657e0a4114899c4a1" title=" " alt="" coords="11,219,188,244"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="234,234,188,234,188,229,234,229"/>
+<area shape="rect" id="Node000011" href="$classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,268,193,293"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="228,283,193,283,193,278,228,278"/>
+<area shape="rect" id="Node000012" href="$classMenuPauseState.html#aae1d1d2ec5f4869333d54692a453c475" title=" " alt="" coords="8,317,191,343"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="279,299,168,320,167,315,278,293"/>
+<area shape="poly" id="edge13_Node000013_Node000006" title=" " alt="" coords="283,169,161,144,162,139,284,164"/>
+</map>

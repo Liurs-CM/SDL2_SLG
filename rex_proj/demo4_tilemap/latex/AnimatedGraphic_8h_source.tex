@@ -1,0 +1,24 @@
+\doxysection{Animated\+Graphic.\+h}
+\hypertarget{AnimatedGraphic_8h_source}{}\label{AnimatedGraphic_8h_source}\index{inc/AnimatedGraphic.h@{inc/AnimatedGraphic.h}}
+\mbox{\hyperlink{AnimatedGraphic_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_AnimatedGraphic\_\_}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_AnimatedGraphic\_\_}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameLib_8h}{GameLib.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00006}\mbox{\hyperlink{classAnimatedGraphic}{00006}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAnimatedGraphic}{AnimatedGraphic}}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00008}00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00009}\mbox{\hyperlink{classAnimatedGraphic_a66289cc189531382693c03ed1460d0b6}{00009}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAnimatedGraphic_a66289cc189531382693c03ed1460d0b6}{AnimatedGraphic}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00010}\mbox{\hyperlink{classAnimatedGraphic_a70dcc51668200964eebffa4183ba1494}{00010}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAnimatedGraphic_a70dcc51668200964eebffa4183ba1494}{\string~AnimatedGraphic}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00011}\mbox{\hyperlink{classAnimatedGraphic_a8f00462424c7430e1488b16e5df8f29e}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ uint8\_t\ \mbox{\hyperlink{classAnimatedGraphic_a8f00462424c7430e1488b16e5df8f29e}{globalFrame\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00012}\mbox{\hyperlink{classAnimatedGraphic_abcc3141be4744cf84eb6b3b4e9f9c492}{00012}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedGraphic_abcc3141be4744cf84eb6b3b4e9f9c492}{updateGlobalFrame}}()\ \{\ \mbox{\hyperlink{classAnimatedGraphic_a8f00462424c7430e1488b16e5df8f29e}{globalFrame\_}}\ =\ (\mbox{\hyperlink{classAnimatedGraphic_a8f00462424c7430e1488b16e5df8f29e}{globalFrame\_}}\ +\ 1)\ \%\ \mbox{\hyperlink{GameLib_8h_ae4e0076494c455f4a13102d261bb5e64}{FPS}};\ \}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00013}\mbox{\hyperlink{classAnimatedGraphic_ad1bf1e18c6656a75668d833c178ea3c8}{00013}}\ \ \ \ \ \ \ \ \ uint8\_t\ \mbox{\hyperlink{classAnimatedGraphic_ad1bf1e18c6656a75668d833c178ea3c8}{getCurrentFrame}}(uint8\_t\ m\_animSpeed,\ uint8\_t\ m\_numFrames)\ \{}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \ (\ m\_animSpeed\ *\ \mbox{\hyperlink{classAnimatedGraphic_a8f00462424c7430e1488b16e5df8f29e}{globalFrame\_}}\ /\ \mbox{\hyperlink{GameLib_8h_ae4e0076494c455f4a13102d261bb5e64}{FPS}})\ \%\ m\_numFrames;}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00016}00016\ \};}
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{AnimatedGraphic_8h_source_l00018}00018\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_AnimatedGraphic\_\_}}
+
+\end{DoxyCode}

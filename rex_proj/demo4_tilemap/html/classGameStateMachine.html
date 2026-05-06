@@ -1,0 +1,658 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: GameStateMachine类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classGameStateMachine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GameStateMachine类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a>&gt;</code></p>
+<div class="dynheader">
+GameStateMachine 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine__coll__graph.png" border="0" usemap="#aGameStateMachine_coll__map" alt="Collaboration graph"/></div>
+<map name="aGameStateMachine_coll__map" id="aGameStateMachine_coll__map">
+<area shape="rect" title=" " alt="" coords="5,93,156,119"/>
+<area shape="rect" href="classGameState.html" title=" " alt="" coords="33,5,128,31"/>
+<area shape="poly" title=" " alt="" coords="83,45,83,93,78,93,78,45"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af44901f3f0ead9f2534cf3cdd5e122c8" id="r_af44901f3f0ead9f2534cf3cdd5e122c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#af44901f3f0ead9f2534cf3cdd5e122c8">GameStateMachine</a> ()</td></tr>
+<tr class="separator:af44901f3f0ead9f2534cf3cdd5e122c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7391cf427e60eea13232085ed6767dcc" id="r_a7391cf427e60eea13232085ed6767dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#a7391cf427e60eea13232085ed6767dcc">pushState</a> (<a class="el" href="classGameState.html">GameState</a> *pState)</td></tr>
+<tr class="separator:a7391cf427e60eea13232085ed6767dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d07f3e577091c2b56a93173607e5e7d" id="r_a8d07f3e577091c2b56a93173607e5e7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#a8d07f3e577091c2b56a93173607e5e7d">changeState</a> (<a class="el" href="classGameState.html">GameState</a> *pState)</td></tr>
+<tr class="separator:a8d07f3e577091c2b56a93173607e5e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691905effed30b630c3971fb5bbfcc4f" id="r_a691905effed30b630c3971fb5bbfcc4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#a691905effed30b630c3971fb5bbfcc4f">popState</a> ()</td></tr>
+<tr class="separator:a691905effed30b630c3971fb5bbfcc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3be350727fff550f09cc0499398ece" id="r_a7a3be350727fff550f09cc0499398ece"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#a7a3be350727fff550f09cc0499398ece">update</a> ()</td></tr>
+<tr class="separator:a7a3be350727fff550f09cc0499398ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfad06d5c6aa2f7d96a18e405f6d56c5" id="r_abfad06d5c6aa2f7d96a18e405f6d56c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#abfad06d5c6aa2f7d96a18e405f6d56c5">render</a> ()</td></tr>
+<tr class="separator:abfad06d5c6aa2f7d96a18e405f6d56c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08969deb53d587e33ff43e3848d43a4" id="r_ac08969deb53d587e33ff43e3848d43a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#ac08969deb53d587e33ff43e3848d43a4">clean</a> ()</td></tr>
+<tr class="separator:ac08969deb53d587e33ff43e3848d43a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0cb8880dacfcc4cb37077b14ad95ff" id="r_a0c0cb8880dacfcc4cb37077b14ad95ff"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classGameState.html">GameState</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#a0c0cb8880dacfcc4cb37077b14ad95ff">getGameStates</a> ()</td></tr>
+<tr class="separator:a0c0cb8880dacfcc4cb37077b14ad95ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ab37e523850a6ae757e8121253a6f1695" id="r_ab37e523850a6ae757e8121253a6f1695"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#ab37e523850a6ae757e8121253a6f1695">popStatePrivate</a> ()</td></tr>
+<tr class="separator:ab37e523850a6ae757e8121253a6f1695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65df6fca772a845852199aa5db0ef39" id="r_af65df6fca772a845852199aa5db0ef39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#af65df6fca772a845852199aa5db0ef39">changeStatePrivate</a> (<a class="el" href="classGameState.html">GameState</a> *pState)</td></tr>
+<tr class="separator:af65df6fca772a845852199aa5db0ef39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a425a33b1d57229faa557e3680efab1e7" id="r_a425a33b1d57229faa557e3680efab1e7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classGameState.html">GameState</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#a425a33b1d57229faa557e3680efab1e7">m_gameStates</a></td></tr>
+<tr class="separator:a425a33b1d57229faa557e3680efab1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb110e60f9ec10e407d1c37b728d1557" id="r_aeb110e60f9ec10e407d1c37b728d1557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameState.html">GameState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#aeb110e60f9ec10e407d1c37b728d1557">newState</a></td></tr>
+<tr class="separator:aeb110e60f9ec10e407d1c37b728d1557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33f727e7c335732142a475bd3a51d73" id="r_ab33f727e7c335732142a475bd3a51d73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#ab33f727e7c335732142a475bd3a51d73">popStateFlag</a></td></tr>
+<tr class="separator:ab33f727e7c335732142a475bd3a51d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527e57c6b6139fc9b16b6edc90d258c4" id="r_a527e57c6b6139fc9b16b6edc90d258c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameStateMachine.html#a527e57c6b6139fc9b16b6edc90d258c4">changeStateFlag</a></td></tr>
+<tr class="separator:a527e57c6b6139fc9b16b6edc90d258c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a> 第 <a class="el" href="GameStateMachine_8h_source.html#l00006">6</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="af44901f3f0ead9f2534cf3cdd5e122c8" name="af44901f3f0ead9f2534cf3cdd5e122c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44901f3f0ead9f2534cf3cdd5e122c8">&#9670;&#160;</a></span>GameStateMachine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameStateMachine::GameStateMachine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a> 第 <a class="el" href="GameStateMachine_8h_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a8d07f3e577091c2b56a93173607e5e7d" name="a8d07f3e577091c2b56a93173607e5e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d07f3e577091c2b56a93173607e5e7d">&#9670;&#160;</a></span>changeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::changeState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameState.html">GameState</a> *&#160;</td>
+          <td class="paramname"><em>pState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00101">101</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00023">changeStateFlag</a> , 以及 <a class="el" href="GameStateMachine_8h_source.html#l00021">newState</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Game_8cpp_source.html#l00132">Game::handleEvents()</a>, <a class="el" href="Game_8cpp_source.html#l00045">Game::init()</a>, <a class="el" href="MenuOverState_8cpp_source.html#l00013">MenuOverState::s_gameOverToMain()</a>, <a class="el" href="MenuMainState_8cpp_source.html#l00014">MenuMainState::s_menuToPlay()</a>, <a class="el" href="MenuPauseState_8cpp_source.html#l00013">MenuPauseState::s_pauseToMain()</a>, <a class="el" href="MenuOverState_8cpp_source.html#l00018">MenuOverState::s_restartPlay()</a>, <a class="el" href="Game_8cpp_source.html#l00107">Game::setCurrentLevel()</a> , 以及 <a class="el" href="PlayState_8cpp_source.html#l00014">PlayState::update()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d_icgraph.png" border="0" usemap="#aclassGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d_icgraph" id="aclassGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d_icgraph">
+<area shape="rect" title=" " alt="" coords="527,187,732,227"/>
+<area shape="rect" href="classGame.html#adb5563f62c0c82e3e42ec36501aa5698" title=" " alt="" coords="281,5,439,31"/>
+<area shape="poly" title=" " alt="" coords="607,178,554,109,518,73,477,44,438,29,440,24,480,40,521,69,558,105,611,174"/>
+<area shape="rect" href="classGame.html#a04464aa1c667b81f2c0fb2d4f7b0ac83" title=" " alt="" coords="315,55,405,80"/>
+<area shape="poly" title=" " alt="" coords="596,179,543,135,511,113,478,95,441,82,405,75,406,70,443,77,480,90,514,109,546,131,599,175"/>
+<area shape="rect" href="classMenuOverState.html#ac17514b38c2a72ffb152ce07fda0c76f" title=" " alt="" coords="253,105,467,145"/>
+<area shape="poly" title=" " alt="" coords="558,185,478,159,437,147,439,142,479,154,560,180"/>
+<area shape="rect" href="classMenuMainState.html#af702ce2061f11e27d8f9bac620d215d1" title=" " alt="" coords="247,219,473,244"/>
+<area shape="poly" title=" " alt="" coords="513,220,473,224,473,219,513,215"/>
+<area shape="rect" href="classMenuPauseState.html#afa67ee79ca7c8193500cf9e8a9197e39" title=" " alt="" coords="241,268,479,293"/>
+<area shape="poly" title=" " alt="" coords="558,234,479,258,426,271,425,265,478,253,557,229"/>
+<area shape="rect" href="classMenuOverState.html#a0c1f130bd4488d2fcf54bdb375179139" title=" " alt="" coords="252,169,468,195"/>
+<area shape="poly" title=" " alt="" coords="513,199,468,195,469,190,513,194"/>
+<area shape="rect" href="classGame.html#ad7c1d10b807c0707e4b9f71e975135f4" title=" " alt="" coords="274,317,446,343"/>
+<area shape="poly" title=" " alt="" coords="595,238,542,275,480,308,445,320,443,315,478,304,539,271,592,234"/>
+<area shape="rect" href="classPlayState.html#a3beac23cba7b9541714ebd33ea77a913" title=" " alt="" coords="291,367,429,392"/>
+<area shape="poly" title=" " alt="" coords="608,240,554,301,519,332,480,358,455,368,430,375,428,370,454,363,477,353,516,328,550,297,604,237"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="72,5,127,31"/>
+<area shape="poly" title=" " alt="" coords="268,21,127,21,127,15,268,15"/>
+<area shape="rect" href="classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,116,190,141"/>
+<area shape="poly" title=" " alt="" coords="239,129,190,130,190,125,239,124"/>
+<area shape="rect" href="classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,169,191,195"/>
+<area shape="poly" title=" " alt="" coords="278,219,167,197,168,192,279,213"/>
+<area shape="rect" href="classMenuMainState.html#aaa1ed1b8d8f785b657e0a4114899c4a1" title=" " alt="" coords="11,219,188,244"/>
+<area shape="poly" title=" " alt="" coords="234,234,188,234,188,229,234,229"/>
+<area shape="rect" href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,268,193,293"/>
+<area shape="poly" title=" " alt="" coords="228,283,193,283,193,278,228,278"/>
+<area shape="rect" href="classMenuPauseState.html#aae1d1d2ec5f4869333d54692a453c475" title=" " alt="" coords="8,317,191,343"/>
+<area shape="poly" title=" " alt="" coords="279,299,168,320,167,315,278,293"/>
+<area shape="poly" title=" " alt="" coords="283,169,161,144,162,139,284,164"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af65df6fca772a845852199aa5db0ef39" name="af65df6fca772a845852199aa5db0ef39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65df6fca772a845852199aa5db0ef39">&#9670;&#160;</a></span>changeStatePrivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::changeStatePrivate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameState.html">GameState</a> *&#160;</td>
+          <td class="paramname"><em>pState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00023">23</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="classGameState.html#aec93c95e04a96791b818bda9036eecae">GameState::getStateID()</a> , 以及 <a class="el" href="GameStateMachine_8h_source.html#l00018">m_gameStates</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="GameStateMachine_8cpp_source.html#l00058">update()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_af65df6fca772a845852199aa5db0ef39_cgraph.png" border="0" usemap="#aclassGameStateMachine_af65df6fca772a845852199aa5db0ef39_cgraph" alt=""/></div>
+<map name="aclassGameStateMachine_af65df6fca772a845852199aa5db0ef39_cgraph" id="aclassGameStateMachine_af65df6fca772a845852199aa5db0ef39_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,211,45"/>
+<area shape="rect" href="classGameState.html#aec93c95e04a96791b818bda9036eecae" title=" " alt="" coords="259,13,431,38"/>
+<area shape="poly" title=" " alt="" coords="211,23,245,23,245,28,211,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_af65df6fca772a845852199aa5db0ef39_icgraph.png" border="0" usemap="#aclassGameStateMachine_af65df6fca772a845852199aa5db0ef39_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_af65df6fca772a845852199aa5db0ef39_icgraph" id="aclassGameStateMachine_af65df6fca772a845852199aa5db0ef39_icgraph">
+<area shape="rect" title=" " alt="" coords="521,5,727,45"/>
+<area shape="rect" href="classGameStateMachine.html#a7a3be350727fff550f09cc0499398ece" title=" " alt="" coords="271,13,473,38"/>
+<area shape="poly" title=" " alt="" coords="508,28,473,28,473,23,508,23"/>
+<area shape="rect" href="classGame.html#a79df6376b332d63c9eca0dcee30305c3" title=" " alt="" coords="108,13,223,38"/>
+<area shape="poly" title=" " alt="" coords="257,28,223,28,223,23,257,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac08969deb53d587e33ff43e3848d43a4" name="ac08969deb53d587e33ff43e3848d43a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac08969deb53d587e33ff43e3848d43a4">&#9670;&#160;</a></span>clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::clean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00085">85</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00018">m_gameStates</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Game_8cpp_source.html#l00141">Game::clean()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4_icgraph.png" border="0" usemap="#aclassGameStateMachine_ac08969deb53d587e33ff43e3848d43a4_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_ac08969deb53d587e33ff43e3848d43a4_icgraph" id="aclassGameStateMachine_ac08969deb53d587e33ff43e3848d43a4_icgraph">
+<area shape="rect" title=" " alt="" coords="260,5,453,31"/>
+<area shape="rect" href="classGame.html#ad4f36a72a2d06696f7973788606f57fc" title=" " alt="" coords="108,5,212,31"/>
+<area shape="poly" title=" " alt="" coords="246,21,212,21,212,15,246,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0c0cb8880dacfcc4cb37077b14ad95ff" name="a0c0cb8880dacfcc4cb37077b14ad95ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0cb8880dacfcc4cb37077b14ad95ff">&#9670;&#160;</a></span>getGameStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classGameState.html">GameState</a> * &gt; &amp; GameStateMachine::getGameStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a> 第 <a class="el" href="GameStateMachine_8h_source.html#l00016">16</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00018">m_gameStates</a>.</p>
+
+</div>
+</div>
+<a id="a691905effed30b630c3971fb5bbfcc4f" name="a691905effed30b630c3971fb5bbfcc4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691905effed30b630c3971fb5bbfcc4f">&#9670;&#160;</a></span>popState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::popState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00096">96</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00022">popStateFlag</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuPauseState_8cpp_source.html#l00018">MenuPauseState::s_resumePlay()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f_icgraph.png" border="0" usemap="#aclassGameStateMachine_a691905effed30b630c3971fb5bbfcc4f_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_a691905effed30b630c3971fb5bbfcc4f_icgraph" id="aclassGameStateMachine_a691905effed30b630c3971fb5bbfcc4f_icgraph">
+<area shape="rect" title=" " alt="" coords="519,31,735,56"/>
+<area shape="rect" href="classMenuPauseState.html#afb69b19913759d84ca15bc054d797aa9" title=" " alt="" coords="241,31,471,56"/>
+<area shape="poly" title=" " alt="" coords="505,46,471,46,471,41,505,41"/>
+<area shape="rect" href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,5,193,31"/>
+<area shape="poly" title=" " alt="" coords="227,33,193,30,194,25,228,28"/>
+<area shape="rect" href="classMenuPauseState.html#aae1d1d2ec5f4869333d54692a453c475" title=" " alt="" coords="8,55,191,80"/>
+<area shape="poly" title=" " alt="" coords="228,58,191,61,191,56,227,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab37e523850a6ae757e8121253a6f1695" name="ab37e523850a6ae757e8121253a6f1695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37e523850a6ae757e8121253a6f1695">&#9670;&#160;</a></span>popStatePrivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::popStatePrivate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00011">11</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00018">m_gameStates</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="GameStateMachine_8cpp_source.html#l00058">update()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_ab37e523850a6ae757e8121253a6f1695_icgraph.png" border="0" usemap="#aclassGameStateMachine_ab37e523850a6ae757e8121253a6f1695_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_ab37e523850a6ae757e8121253a6f1695_icgraph" id="aclassGameStateMachine_ab37e523850a6ae757e8121253a6f1695_icgraph">
+<area shape="rect" title=" " alt="" coords="521,5,737,45"/>
+<area shape="rect" href="classGameStateMachine.html#a7a3be350727fff550f09cc0499398ece" title=" " alt="" coords="271,13,473,38"/>
+<area shape="poly" title=" " alt="" coords="508,28,473,28,473,23,508,23"/>
+<area shape="rect" href="classGame.html#a79df6376b332d63c9eca0dcee30305c3" title=" " alt="" coords="108,13,223,38"/>
+<area shape="poly" title=" " alt="" coords="257,28,223,28,223,23,257,23"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7391cf427e60eea13232085ed6767dcc" name="a7391cf427e60eea13232085ed6767dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7391cf427e60eea13232085ed6767dcc">&#9670;&#160;</a></span>pushState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::pushState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGameState.html">GameState</a> *&#160;</td>
+          <td class="paramname"><em>pState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00004">4</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00018">m_gameStates</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="PlayState_8cpp_source.html#l00014">PlayState::update()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_a7391cf427e60eea13232085ed6767dcc_icgraph.png" border="0" usemap="#aclassGameStateMachine_a7391cf427e60eea13232085ed6767dcc_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_a7391cf427e60eea13232085ed6767dcc_icgraph" id="aclassGameStateMachine_a7391cf427e60eea13232085ed6767dcc_icgraph">
+<area shape="rect" title=" " alt="" coords="191,5,413,31"/>
+<area shape="rect" href="classPlayState.html#a3beac23cba7b9541714ebd33ea77a913" title=" " alt="" coords="5,5,143,31"/>
+<area shape="poly" title=" " alt="" coords="177,21,143,21,143,15,177,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abfad06d5c6aa2f7d96a18e405f6d56c5" name="abfad06d5c6aa2f7d96a18e405f6d56c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfad06d5c6aa2f7d96a18e405f6d56c5">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00077">77</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00018">m_gameStates</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Game_8cpp_source.html#l00115">Game::render()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5_icgraph.png" border="0" usemap="#aclassGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5_icgraph" id="aclassGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5_icgraph">
+<area shape="rect" title=" " alt="" coords="267,5,467,31"/>
+<area shape="rect" href="classGame.html#a15ddd769261d923827a3cdf41499c843" title=" " alt="" coords="108,5,219,31"/>
+<area shape="poly" title=" " alt="" coords="253,21,219,21,219,15,253,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a3be350727fff550f09cc0499398ece" name="a7a3be350727fff550f09cc0499398ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3be350727fff550f09cc0499398ece">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameStateMachine::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a> 第 <a class="el" href="GameStateMachine_8cpp_source.html#l00058">58</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameStateMachine_8h_source.html#l00023">changeStateFlag</a>, <a class="el" href="GameStateMachine_8cpp_source.html#l00023">changeStatePrivate()</a>, <a class="el" href="GameStateMachine_8h_source.html#l00018">m_gameStates</a>, <a class="el" href="GameStateMachine_8h_source.html#l00021">newState</a>, <a class="el" href="GameStateMachine_8h_source.html#l00022">popStateFlag</a> , 以及 <a class="el" href="GameStateMachine_8cpp_source.html#l00011">popStatePrivate()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Game_8cpp_source.html#l00127">Game::update()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_a7a3be350727fff550f09cc0499398ece_cgraph.png" border="0" usemap="#aclassGameStateMachine_a7a3be350727fff550f09cc0499398ece_cgraph" alt=""/></div>
+<map name="aclassGameStateMachine_a7a3be350727fff550f09cc0499398ece_cgraph" id="aclassGameStateMachine_a7a3be350727fff550f09cc0499398ece_cgraph">
+<area shape="rect" title=" " alt="" coords="5,45,208,70"/>
+<area shape="rect" href="classGameStateMachine.html#af65df6fca772a845852199aa5db0ef39" title=" " alt="" coords="261,5,467,45"/>
+<area shape="poly" title=" " alt="" coords="208,42,247,37,248,42,209,47"/>
+<area shape="rect" href="classGameStateMachine.html#ab37e523850a6ae757e8121253a6f1695" title=" " alt="" coords="256,69,472,109"/>
+<area shape="poly" title=" " alt="" coords="209,67,243,72,242,77,208,73"/>
+<area shape="rect" href="classGameState.html#aec93c95e04a96791b818bda9036eecae" title=" " alt="" coords="520,13,692,38"/>
+<area shape="poly" title=" " alt="" coords="467,23,507,23,507,28,467,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGameStateMachine_a7a3be350727fff550f09cc0499398ece_icgraph.png" border="0" usemap="#aclassGameStateMachine_a7a3be350727fff550f09cc0499398ece_icgraph" alt=""/></div>
+<map name="aclassGameStateMachine_a7a3be350727fff550f09cc0499398ece_icgraph" id="aclassGameStateMachine_a7a3be350727fff550f09cc0499398ece_icgraph">
+<area shape="rect" title=" " alt="" coords="271,5,473,31"/>
+<area shape="rect" href="classGame.html#a79df6376b332d63c9eca0dcee30305c3" title=" " alt="" coords="108,5,223,31"/>
+<area shape="poly" title=" " alt="" coords="257,21,223,21,223,15,257,15"/>
+<area shape="rect" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a527e57c6b6139fc9b16b6edc90d258c4" name="a527e57c6b6139fc9b16b6edc90d258c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527e57c6b6139fc9b16b6edc90d258c4">&#9670;&#160;</a></span>changeStateFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameStateMachine::changeStateFlag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a> 第 <a class="el" href="GameStateMachine_8h_source.html#l00023">23</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="GameStateMachine_8cpp_source.html#l00101">changeState()</a> , 以及 <a class="el" href="GameStateMachine_8cpp_source.html#l00058">update()</a>.</p>
+
+</div>
+</div>
+<a id="a425a33b1d57229faa557e3680efab1e7" name="a425a33b1d57229faa557e3680efab1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a425a33b1d57229faa557e3680efab1e7">&#9670;&#160;</a></span>m_gameStates</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classGameState.html">GameState</a>*&gt; GameStateMachine::m_gameStates</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a> 第 <a class="el" href="GameStateMachine_8h_source.html#l00018">18</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="GameStateMachine_8cpp_source.html#l00023">changeStatePrivate()</a>, <a class="el" href="GameStateMachine_8cpp_source.html#l00085">clean()</a>, <a class="el" href="GameStateMachine_8h_source.html#l00016">getGameStates()</a>, <a class="el" href="GameStateMachine_8cpp_source.html#l00011">popStatePrivate()</a>, <a class="el" href="GameStateMachine_8cpp_source.html#l00004">pushState()</a>, <a class="el" href="GameStateMachine_8cpp_source.html#l00077">render()</a> , 以及 <a class="el" href="GameStateMachine_8cpp_source.html#l00058">update()</a>.</p>
+
+</div>
+</div>
+<a id="aeb110e60f9ec10e407d1c37b728d1557" name="aeb110e60f9ec10e407d1c37b728d1557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb110e60f9ec10e407d1c37b728d1557">&#9670;&#160;</a></span>newState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGameState.html">GameState</a>* GameStateMachine::newState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a> 第 <a class="el" href="GameStateMachine_8h_source.html#l00021">21</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="GameStateMachine_8cpp_source.html#l00101">changeState()</a> , 以及 <a class="el" href="GameStateMachine_8cpp_source.html#l00058">update()</a>.</p>
+
+</div>
+</div>
+<a id="ab33f727e7c335732142a475bd3a51d73" name="ab33f727e7c335732142a475bd3a51d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33f727e7c335732142a475bd3a51d73">&#9670;&#160;</a></span>popStateFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameStateMachine::popStateFlag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a> 第 <a class="el" href="GameStateMachine_8h_source.html#l00022">22</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="GameStateMachine_8cpp_source.html#l00096">popState()</a> , 以及 <a class="el" href="GameStateMachine_8cpp_source.html#l00058">update()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>inc/<a class="el" href="GameStateMachine_8h_source.html">GameStateMachine.h</a></li>
+<li>src/<a class="el" href="GameStateMachine_8cpp_source.html">GameStateMachine.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

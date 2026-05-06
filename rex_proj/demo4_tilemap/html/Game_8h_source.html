@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: inc/Game.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Game.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Game_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __Game__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __Game__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;SDL.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="GameLib_8h.html">GameLib.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="Vector2D_8h.html">Vector2D.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="TextureManager_8h.html">TextureManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="GameStateMachine_8h.html">GameStateMachine.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classGame.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classGame.html">Game</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classGame.html#a04464aa1c667b81f2c0fb2d4f7b0ac83">init</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keywordtype">int</span> x_pos, <span class="keywordtype">int</span> y_pos, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">bool</span> fullscreen);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#a15ddd769261d923827a3cdf41499c843">render</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#a79df6376b332d63c9eca0dcee30305c3">update</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#adb5563f62c0c82e3e42ec36501aa5698">handleEvents</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#ad4f36a72a2d06696f7973788606f57fc">clean</a>(); </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="comment">//function to access the private running variable</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classGame.html#a8272be134d16c277bb014ad6a22fc357">   18</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#a8272be134d16c277bb014ad6a22fc357">quit</a>() { <a class="code hl_variable" href="classGame.html#aa3a259841306a82c4a71b96b14bdcfcd">m_bRunning</a> = <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classGame.html#a9f5ae2306d2feffd806a19040d8d43de">   19</a></span>        <a class="code hl_class" href="classGameStateMachine.html">GameStateMachine</a>* <a class="code hl_function" href="classGame.html#a9f5ae2306d2feffd806a19040d8d43de">getStateMachine</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#ae0cc72cf3ceddadb5db571dc6049b684">m_pGameStateMachine</a>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classGame.html#a4b2331e8df2d9112fb33a2de11f2628a">   20</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#a4b2331e8df2d9112fb33a2de11f2628a">setPlayerLives</a>(<span class="keywordtype">int</span> lives) { <a class="code hl_variable" href="classGame.html#ae6a8641e0e179218baebd1d50149ac90">m_playerLives</a> = lives; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classGame.html#a81c27e138b3a57b68fc8ab1f13ecacff">   21</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classGame.html#a81c27e138b3a57b68fc8ab1f13ecacff">getPlayerLives</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#ae6a8641e0e179218baebd1d50149ac90">m_playerLives</a>; }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classGame.html#a06d97c98ce548ed867c8d5632dfe9712">   22</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classGame.html#a06d97c98ce548ed867c8d5632dfe9712">changingState</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#af0c6d0d9d9a5dccd3adb333e5295f98b">m_bChangingState</a>; }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classGame.html#a160d659de16ee09050804cbdf7b3c188">   23</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#a160d659de16ee09050804cbdf7b3c188">changingState</a>(<span class="keywordtype">bool</span> cs) { <a class="code hl_variable" href="classGame.html#af0c6d0d9d9a5dccd3adb333e5295f98b">m_bChangingState</a> = cs; }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#ad7c1d10b807c0707e4b9f71e975135f4">setCurrentLevel</a>(<span class="keywordtype">int</span> currentLevel);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classGame.html#a941ad22aa81df2683c5ecd8ca33ce503">   25</a></span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classGame.html#a941ad22aa81df2683c5ecd8ca33ce503">getCurrentLevel</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a40574155b02092c9f44243242bf4c132">m_currentLevel</a>; }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classGame.html#aa0f8d7a69e278db1b1ca72f9e573d4c4">   26</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#aa0f8d7a69e278db1b1ca72f9e573d4c4">setNextLevel</a>(<span class="keywordtype">int</span> nextLevel) { <a class="code hl_variable" href="classGame.html#a58e0e671382e076c8da78695615b73b8">m_nextLevel</a> = nextLevel; }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classGame.html#a8976be277a48c3ec06c59a4098dbaf5e">   27</a></span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classGame.html#a8976be277a48c3ec06c59a4098dbaf5e">getNextLevel</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a58e0e671382e076c8da78695615b73b8">m_nextLevel</a>; }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classGame.html#a3d23ff5d889b6effa22105afed751e30">   28</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#a3d23ff5d889b6effa22105afed751e30">setLevelComplete</a>(<span class="keywordtype">bool</span> levelComplete) { <a class="code hl_variable" href="classGame.html#ae648f66b9e722e97d46a7713b6e75d0c">m_bLevelComplete</a> = levelComplete; }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classGame.html#ab91b31127372d11d268a6fad0f74ceb9">   29</a></span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classGame.html#ab91b31127372d11d268a6fad0f74ceb9">getLevelComplete</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#ae648f66b9e722e97d46a7713b6e75d0c">m_bLevelComplete</a>; }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classGame.html#afd9af52dcc5835f2a8c37f441a256b9d">   30</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classGame.html#afd9af52dcc5835f2a8c37f441a256b9d">running</a>() { <a class="code hl_variable" href="classGame.html#a9dc1bffd31791b876e01b03f1c0592b0">frameStart</a> = SDL_GetTicks(); <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#aa3a259841306a82c4a71b96b14bdcfcd">m_bRunning</a>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classGame.html#ac8e7e425d970ec5d1eba5e2ff3efbc78">syncFPS</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classGame.html#a57d8693d76de75c01e810a5d2d0fb033">   32</a></span>        Uint32 <a class="code hl_function" href="classGame.html#a57d8693d76de75c01e810a5d2d0fb033">getframeTime</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a2e9487c400fc80943530a3da6f450596">frameTime</a>; }</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classGame.html#acdbfa8f0e96add056fcc70b8188f397e">   33</a></span>        <span class="keyword">static</span> <a class="code hl_class" href="classGame.html">Game</a>* <a class="code hl_function" href="classGame.html#acdbfa8f0e96add056fcc70b8188f397e">Instance</a>()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="classGame.html#a2d22a6286d4b5a9565ab5109a7877935">s_pInstance</a> == 0)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_variable" href="classGame.html#a2d22a6286d4b5a9565ab5109a7877935">s_pInstance</a> = <span class="keyword">new</span> <a class="code hl_function" href="classGame.html#ad59df6562a58a614fda24622d3715b65">Game</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a2d22a6286d4b5a9565ab5109a7877935">s_pInstance</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a2d22a6286d4b5a9565ab5109a7877935">s_pInstance</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classGame.html#a9db0ce98d627ce12718b71690a119bc0">   42</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classGame.html#a9db0ce98d627ce12718b71690a119bc0">getGameWidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a1d0d13fe5b2cac287178f6d95e1c9bb8">m_gameWidth</a>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classGame.html#a28105114d738e841509cb78b0c311e1c">   43</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classGame.html#a28105114d738e841509cb78b0c311e1c">getGameHeight</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#acddbaa4f521c400f13d9b6680fd2bf43">m_gameHeight</a>; }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classGame.html#a0e2d17fc293d6f87fa9b8b96b63fc1d0">   44</a></span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classGame.html#a0e2d17fc293d6f87fa9b8b96b63fc1d0">getScrollSpeed</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a5aa0277a7db96180460255986ab47599">m_scrollSpeed</a>; }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classGame.html#a7cc2b1efe8254e0ffc29cbbfc4d7a4dc">   45</a></span>        std::vector&lt;std::string&gt; <a class="code hl_function" href="classGame.html#a7cc2b1efe8254e0ffc29cbbfc4d7a4dc">getLevelFiles</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classGame.html#a4b2d8c25d45cf8e666b79ae37e3d9596">m_levelFiles</a>; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_function" href="classGame.html#ad59df6562a58a614fda24622d3715b65">Game</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_function" href="classGame.html#ae3d112ca6e0e55150d2fdbc704474530">~Game</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classGame.html#a1d0d13fe5b2cac287178f6d95e1c9bb8">   50</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classGame.html#a1d0d13fe5b2cac287178f6d95e1c9bb8">m_gameWidth</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classGame.html#acddbaa4f521c400f13d9b6680fd2bf43">   51</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classGame.html#acddbaa4f521c400f13d9b6680fd2bf43">m_gameHeight</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classGame.html#a9dc1bffd31791b876e01b03f1c0592b0">   52</a></span>        Uint32 <a class="code hl_variable" href="classGame.html#a9dc1bffd31791b876e01b03f1c0592b0">frameStart</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classGame.html#a2e9487c400fc80943530a3da6f450596">   53</a></span>        Uint32 <a class="code hl_variable" href="classGame.html#a2e9487c400fc80943530a3da6f450596">frameTime</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classGame.html#aa3ae7b190375776e7f7bc43a8e145606">   54</a></span>        SDL_Window* <a class="code hl_variable" href="classGame.html#aa3ae7b190375776e7f7bc43a8e145606">m_pWindow</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classGame.html#afc081211beabbd6fc25e0de17b8dbb67">   55</a></span>        SDL_Renderer* <a class="code hl_variable" href="classGame.html#afc081211beabbd6fc25e0de17b8dbb67">m_pRenderer</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classGame.html#aa3a259841306a82c4a71b96b14bdcfcd">   56</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classGame.html#aa3a259841306a82c4a71b96b14bdcfcd">m_bRunning</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classGame.html#ae0cc72cf3ceddadb5db571dc6049b684">   57</a></span>        <a class="code hl_class" href="classGameStateMachine.html">GameStateMachine</a>* <a class="code hl_variable" href="classGame.html#ae0cc72cf3ceddadb5db571dc6049b684">m_pGameStateMachine</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classGame.html#ae6a8641e0e179218baebd1d50149ac90">   58</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classGame.html#ae6a8641e0e179218baebd1d50149ac90">m_playerLives</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classGame.html#a5aa0277a7db96180460255986ab47599">   59</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="classGame.html#a5aa0277a7db96180460255986ab47599">m_scrollSpeed</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classGame.html#ae648f66b9e722e97d46a7713b6e75d0c">   60</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classGame.html#ae648f66b9e722e97d46a7713b6e75d0c">m_bLevelComplete</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classGame.html#af0c6d0d9d9a5dccd3adb333e5295f98b">   61</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="classGame.html#af0c6d0d9d9a5dccd3adb333e5295f98b">m_bChangingState</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classGame.html#a4b2d8c25d45cf8e666b79ae37e3d9596">   62</a></span>        std::vector&lt;std::string&gt; <a class="code hl_variable" href="classGame.html#a4b2d8c25d45cf8e666b79ae37e3d9596">m_levelFiles</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classGame.html#a40574155b02092c9f44243242bf4c132">   63</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classGame.html#a40574155b02092c9f44243242bf4c132">m_currentLevel</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classGame.html#a58e0e671382e076c8da78695615b73b8">   64</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classGame.html#a58e0e671382e076c8da78695615b73b8">m_nextLevel</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classGame.html#a2d22a6286d4b5a9565ab5109a7877935">   65</a></span>        <span class="keyword">static</span> <a class="code hl_class" href="classGame.html">Game</a>* <a class="code hl_variable" href="classGame.html#a2d22a6286d4b5a9565ab5109a7877935">s_pInstance</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="Game_8h.html#a32559a1ab96d880fa029541eef73453b">   68</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classGame.html">Game</a> <a class="code hl_typedef" href="Game_8h.html#a32559a1ab96d880fa029541eef73453b">TheGame</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">// __Game__</span></div>
+<div class="ttc" id="aGameLib_8h_html"><div class="ttname"><a href="GameLib_8h.html">GameLib.h</a></div></div>
+<div class="ttc" id="aGameStateMachine_8h_html"><div class="ttname"><a href="GameStateMachine_8h.html">GameStateMachine.h</a></div></div>
+<div class="ttc" id="aGame_8h_html_a32559a1ab96d880fa029541eef73453b"><div class="ttname"><a href="Game_8h.html#a32559a1ab96d880fa029541eef73453b">TheGame</a></div><div class="ttdeci">Game TheGame</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00068">Game.h:68</a></div></div>
+<div class="ttc" id="aTextureManager_8h_html"><div class="ttname"><a href="TextureManager_8h.html">TextureManager.h</a></div></div>
+<div class="ttc" id="aVector2D_8h_html"><div class="ttname"><a href="Vector2D_8h.html">Vector2D.h</a></div></div>
+<div class="ttc" id="aclassGameStateMachine_html"><div class="ttname"><a href="classGameStateMachine.html">GameStateMachine</a></div><div class="ttdef"><b>Definition</b> <a href="GameStateMachine_8h_source.html#l00006">GameStateMachine.h:7</a></div></div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00009">Game.h:10</a></div></div>
+<div class="ttc" id="aclassGame_html_a04464aa1c667b81f2c0fb2d4f7b0ac83"><div class="ttname"><a href="classGame.html#a04464aa1c667b81f2c0fb2d4f7b0ac83">Game::init</a></div><div class="ttdeci">bool init(const char *title, int x_pos, int y_pos, int width, int height, bool fullscreen)</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00045">Game.cpp:45</a></div></div>
+<div class="ttc" id="aclassGame_html_a06d97c98ce548ed867c8d5632dfe9712"><div class="ttname"><a href="classGame.html#a06d97c98ce548ed867c8d5632dfe9712">Game::changingState</a></div><div class="ttdeci">bool changingState()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00022">Game.h:22</a></div></div>
+<div class="ttc" id="aclassGame_html_a0e2d17fc293d6f87fa9b8b96b63fc1d0"><div class="ttname"><a href="classGame.html#a0e2d17fc293d6f87fa9b8b96b63fc1d0">Game::getScrollSpeed</a></div><div class="ttdeci">float getScrollSpeed()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00044">Game.h:44</a></div></div>
+<div class="ttc" id="aclassGame_html_a15ddd769261d923827a3cdf41499c843"><div class="ttname"><a href="classGame.html#a15ddd769261d923827a3cdf41499c843">Game::render</a></div><div class="ttdeci">void render()</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00115">Game.cpp:115</a></div></div>
+<div class="ttc" id="aclassGame_html_a160d659de16ee09050804cbdf7b3c188"><div class="ttname"><a href="classGame.html#a160d659de16ee09050804cbdf7b3c188">Game::changingState</a></div><div class="ttdeci">void changingState(bool cs)</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00023">Game.h:23</a></div></div>
+<div class="ttc" id="aclassGame_html_a1d0d13fe5b2cac287178f6d95e1c9bb8"><div class="ttname"><a href="classGame.html#a1d0d13fe5b2cac287178f6d95e1c9bb8">Game::m_gameWidth</a></div><div class="ttdeci">int m_gameWidth</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00050">Game.h:50</a></div></div>
+<div class="ttc" id="aclassGame_html_a28105114d738e841509cb78b0c311e1c"><div class="ttname"><a href="classGame.html#a28105114d738e841509cb78b0c311e1c">Game::getGameHeight</a></div><div class="ttdeci">int getGameHeight() const</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00043">Game.h:43</a></div></div>
+<div class="ttc" id="aclassGame_html_a2d22a6286d4b5a9565ab5109a7877935"><div class="ttname"><a href="classGame.html#a2d22a6286d4b5a9565ab5109a7877935">Game::s_pInstance</a></div><div class="ttdeci">static Game * s_pInstance</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00065">Game.h:65</a></div></div>
+<div class="ttc" id="aclassGame_html_a2e9487c400fc80943530a3da6f450596"><div class="ttname"><a href="classGame.html#a2e9487c400fc80943530a3da6f450596">Game::frameTime</a></div><div class="ttdeci">Uint32 frameTime</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00053">Game.h:53</a></div></div>
+<div class="ttc" id="aclassGame_html_a3d23ff5d889b6effa22105afed751e30"><div class="ttname"><a href="classGame.html#a3d23ff5d889b6effa22105afed751e30">Game::setLevelComplete</a></div><div class="ttdeci">void setLevelComplete(bool levelComplete)</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00028">Game.h:28</a></div></div>
+<div class="ttc" id="aclassGame_html_a40574155b02092c9f44243242bf4c132"><div class="ttname"><a href="classGame.html#a40574155b02092c9f44243242bf4c132">Game::m_currentLevel</a></div><div class="ttdeci">int m_currentLevel</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00063">Game.h:63</a></div></div>
+<div class="ttc" id="aclassGame_html_a4b2331e8df2d9112fb33a2de11f2628a"><div class="ttname"><a href="classGame.html#a4b2331e8df2d9112fb33a2de11f2628a">Game::setPlayerLives</a></div><div class="ttdeci">void setPlayerLives(int lives)</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00020">Game.h:20</a></div></div>
+<div class="ttc" id="aclassGame_html_a4b2d8c25d45cf8e666b79ae37e3d9596"><div class="ttname"><a href="classGame.html#a4b2d8c25d45cf8e666b79ae37e3d9596">Game::m_levelFiles</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_levelFiles</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00062">Game.h:62</a></div></div>
+<div class="ttc" id="aclassGame_html_a57d8693d76de75c01e810a5d2d0fb033"><div class="ttname"><a href="classGame.html#a57d8693d76de75c01e810a5d2d0fb033">Game::getframeTime</a></div><div class="ttdeci">Uint32 getframeTime()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00032">Game.h:32</a></div></div>
+<div class="ttc" id="aclassGame_html_a58e0e671382e076c8da78695615b73b8"><div class="ttname"><a href="classGame.html#a58e0e671382e076c8da78695615b73b8">Game::m_nextLevel</a></div><div class="ttdeci">int m_nextLevel</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00064">Game.h:64</a></div></div>
+<div class="ttc" id="aclassGame_html_a5aa0277a7db96180460255986ab47599"><div class="ttname"><a href="classGame.html#a5aa0277a7db96180460255986ab47599">Game::m_scrollSpeed</a></div><div class="ttdeci">float m_scrollSpeed</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00059">Game.h:59</a></div></div>
+<div class="ttc" id="aclassGame_html_a79df6376b332d63c9eca0dcee30305c3"><div class="ttname"><a href="classGame.html#a79df6376b332d63c9eca0dcee30305c3">Game::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00127">Game.cpp:127</a></div></div>
+<div class="ttc" id="aclassGame_html_a7cc2b1efe8254e0ffc29cbbfc4d7a4dc"><div class="ttname"><a href="classGame.html#a7cc2b1efe8254e0ffc29cbbfc4d7a4dc">Game::getLevelFiles</a></div><div class="ttdeci">std::vector&lt; std::string &gt; getLevelFiles()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00045">Game.h:45</a></div></div>
+<div class="ttc" id="aclassGame_html_a81c27e138b3a57b68fc8ab1f13ecacff"><div class="ttname"><a href="classGame.html#a81c27e138b3a57b68fc8ab1f13ecacff">Game::getPlayerLives</a></div><div class="ttdeci">int getPlayerLives()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00021">Game.h:21</a></div></div>
+<div class="ttc" id="aclassGame_html_a8272be134d16c277bb014ad6a22fc357"><div class="ttname"><a href="classGame.html#a8272be134d16c277bb014ad6a22fc357">Game::quit</a></div><div class="ttdeci">void quit()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00018">Game.h:18</a></div></div>
+<div class="ttc" id="aclassGame_html_a8976be277a48c3ec06c59a4098dbaf5e"><div class="ttname"><a href="classGame.html#a8976be277a48c3ec06c59a4098dbaf5e">Game::getNextLevel</a></div><div class="ttdeci">const int getNextLevel()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00027">Game.h:27</a></div></div>
+<div class="ttc" id="aclassGame_html_a941ad22aa81df2683c5ecd8ca33ce503"><div class="ttname"><a href="classGame.html#a941ad22aa81df2683c5ecd8ca33ce503">Game::getCurrentLevel</a></div><div class="ttdeci">const int getCurrentLevel()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00025">Game.h:25</a></div></div>
+<div class="ttc" id="aclassGame_html_a9db0ce98d627ce12718b71690a119bc0"><div class="ttname"><a href="classGame.html#a9db0ce98d627ce12718b71690a119bc0">Game::getGameWidth</a></div><div class="ttdeci">int getGameWidth() const</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00042">Game.h:42</a></div></div>
+<div class="ttc" id="aclassGame_html_a9dc1bffd31791b876e01b03f1c0592b0"><div class="ttname"><a href="classGame.html#a9dc1bffd31791b876e01b03f1c0592b0">Game::frameStart</a></div><div class="ttdeci">Uint32 frameStart</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00052">Game.h:52</a></div></div>
+<div class="ttc" id="aclassGame_html_a9f5ae2306d2feffd806a19040d8d43de"><div class="ttname"><a href="classGame.html#a9f5ae2306d2feffd806a19040d8d43de">Game::getStateMachine</a></div><div class="ttdeci">GameStateMachine * getStateMachine()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00019">Game.h:19</a></div></div>
+<div class="ttc" id="aclassGame_html_aa0f8d7a69e278db1b1ca72f9e573d4c4"><div class="ttname"><a href="classGame.html#aa0f8d7a69e278db1b1ca72f9e573d4c4">Game::setNextLevel</a></div><div class="ttdeci">void setNextLevel(int nextLevel)</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00026">Game.h:26</a></div></div>
+<div class="ttc" id="aclassGame_html_aa3a259841306a82c4a71b96b14bdcfcd"><div class="ttname"><a href="classGame.html#aa3a259841306a82c4a71b96b14bdcfcd">Game::m_bRunning</a></div><div class="ttdeci">bool m_bRunning</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00056">Game.h:56</a></div></div>
+<div class="ttc" id="aclassGame_html_aa3ae7b190375776e7f7bc43a8e145606"><div class="ttname"><a href="classGame.html#aa3ae7b190375776e7f7bc43a8e145606">Game::m_pWindow</a></div><div class="ttdeci">SDL_Window * m_pWindow</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00054">Game.h:54</a></div></div>
+<div class="ttc" id="aclassGame_html_ab91b31127372d11d268a6fad0f74ceb9"><div class="ttname"><a href="classGame.html#ab91b31127372d11d268a6fad0f74ceb9">Game::getLevelComplete</a></div><div class="ttdeci">const bool getLevelComplete()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00029">Game.h:29</a></div></div>
+<div class="ttc" id="aclassGame_html_ac8e7e425d970ec5d1eba5e2ff3efbc78"><div class="ttname"><a href="classGame.html#ac8e7e425d970ec5d1eba5e2ff3efbc78">Game::syncFPS</a></div><div class="ttdeci">void syncFPS()</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00154">Game.cpp:154</a></div></div>
+<div class="ttc" id="aclassGame_html_acdbfa8f0e96add056fcc70b8188f397e"><div class="ttname"><a href="classGame.html#acdbfa8f0e96add056fcc70b8188f397e">Game::Instance</a></div><div class="ttdeci">static Game * Instance()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00033">Game.h:33</a></div></div>
+<div class="ttc" id="aclassGame_html_acddbaa4f521c400f13d9b6680fd2bf43"><div class="ttname"><a href="classGame.html#acddbaa4f521c400f13d9b6680fd2bf43">Game::m_gameHeight</a></div><div class="ttdeci">int m_gameHeight</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00051">Game.h:51</a></div></div>
+<div class="ttc" id="aclassGame_html_ad4f36a72a2d06696f7973788606f57fc"><div class="ttname"><a href="classGame.html#ad4f36a72a2d06696f7973788606f57fc">Game::clean</a></div><div class="ttdeci">void clean()</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00141">Game.cpp:141</a></div></div>
+<div class="ttc" id="aclassGame_html_ad59df6562a58a614fda24622d3715b65"><div class="ttname"><a href="classGame.html#ad59df6562a58a614fda24622d3715b65">Game::Game</a></div><div class="ttdeci">Game()</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00022">Game.cpp:22</a></div></div>
+<div class="ttc" id="aclassGame_html_ad7c1d10b807c0707e4b9f71e975135f4"><div class="ttname"><a href="classGame.html#ad7c1d10b807c0707e4b9f71e975135f4">Game::setCurrentLevel</a></div><div class="ttdeci">void setCurrentLevel(int currentLevel)</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00107">Game.cpp:107</a></div></div>
+<div class="ttc" id="aclassGame_html_adb5563f62c0c82e3e42ec36501aa5698"><div class="ttname"><a href="classGame.html#adb5563f62c0c82e3e42ec36501aa5698">Game::handleEvents</a></div><div class="ttdeci">void handleEvents()</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00132">Game.cpp:132</a></div></div>
+<div class="ttc" id="aclassGame_html_ae0cc72cf3ceddadb5db571dc6049b684"><div class="ttname"><a href="classGame.html#ae0cc72cf3ceddadb5db571dc6049b684">Game::m_pGameStateMachine</a></div><div class="ttdeci">GameStateMachine * m_pGameStateMachine</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00057">Game.h:57</a></div></div>
+<div class="ttc" id="aclassGame_html_ae3d112ca6e0e55150d2fdbc704474530"><div class="ttname"><a href="classGame.html#ae3d112ca6e0e55150d2fdbc704474530">Game::~Game</a></div><div class="ttdeci">~Game()</div><div class="ttdef"><b>Definition</b> <a href="Game_8cpp_source.html#l00038">Game.cpp:38</a></div></div>
+<div class="ttc" id="aclassGame_html_ae648f66b9e722e97d46a7713b6e75d0c"><div class="ttname"><a href="classGame.html#ae648f66b9e722e97d46a7713b6e75d0c">Game::m_bLevelComplete</a></div><div class="ttdeci">bool m_bLevelComplete</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00060">Game.h:60</a></div></div>
+<div class="ttc" id="aclassGame_html_ae6a8641e0e179218baebd1d50149ac90"><div class="ttname"><a href="classGame.html#ae6a8641e0e179218baebd1d50149ac90">Game::m_playerLives</a></div><div class="ttdeci">int m_playerLives</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00058">Game.h:58</a></div></div>
+<div class="ttc" id="aclassGame_html_af0c6d0d9d9a5dccd3adb333e5295f98b"><div class="ttname"><a href="classGame.html#af0c6d0d9d9a5dccd3adb333e5295f98b">Game::m_bChangingState</a></div><div class="ttdeci">bool m_bChangingState</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00061">Game.h:61</a></div></div>
+<div class="ttc" id="aclassGame_html_afc081211beabbd6fc25e0de17b8dbb67"><div class="ttname"><a href="classGame.html#afc081211beabbd6fc25e0de17b8dbb67">Game::m_pRenderer</a></div><div class="ttdeci">SDL_Renderer * m_pRenderer</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00055">Game.h:55</a></div></div>
+<div class="ttc" id="aclassGame_html_afd9af52dcc5835f2a8c37f441a256b9d"><div class="ttname"><a href="classGame.html#afd9af52dcc5835f2a8c37f441a256b9d">Game::running</a></div><div class="ttdeci">bool running()</div><div class="ttdef"><b>Definition</b> <a href="Game_8h_source.html#l00030">Game.h:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

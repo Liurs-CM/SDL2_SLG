@@ -1,0 +1,11 @@
+<map id="MenuMainState::s_menuToPlay" name="MenuMainState::s_menuToPlay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,70,231,95"/>
+<area shape="rect" id="Node000002" href="$classGameStateMachine.html#a8d07f3e577091c2b56a93173607e5e7d" title=" " alt="" coords="279,5,484,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,67,275,46,276,51,178,73"/>
+<area shape="rect" id="Node000003" href="$classGame.html#a9f5ae2306d2feffd806a19040d8d43de" title=" " alt="" coords="292,70,471,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,80,278,80,278,85,231,85"/>
+<area shape="rect" id="Node000004" href="$classGame.html#acdbfa8f0e96add056fcc70b8188f397e" title=" " alt="" coords="319,119,443,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,93,306,115,305,121,186,98"/>
+<area shape="rect" id="Node000005" href="$classGame.html#ad59df6562a58a614fda24622d3715b65" title=" " alt="" coords="532,119,640,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="444,129,519,129,519,135,444,135"/>
+</map>

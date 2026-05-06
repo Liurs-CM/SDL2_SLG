@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: StateParser类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="classStateParser-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">StateParser类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="StateParser_8h_source.html">StateParser.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae4b0e2e1350675193e1114c13f3e5e02" id="r_ae4b0e2e1350675193e1114c13f3e5e02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStateParser.html#ae4b0e2e1350675193e1114c13f3e5e02">parseState</a> (const char *stateFile, std::string stateID, std::vector&lt; std::unique_ptr&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; &gt; *pObjects, std::vector&lt; std::string &gt; *pTextureIDs)</td></tr>
+<tr class="separator:ae4b0e2e1350675193e1114c13f3e5e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:acf8695d64d8d3b9f2900b8a707729b08" id="r_acf8695d64d8d3b9f2900b8a707729b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStateParser.html#acf8695d64d8d3b9f2900b8a707729b08">parseObjects</a> (XMLElement *pStateRoot, std::vector&lt; std::unique_ptr&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; &gt; *pObjects)</td></tr>
+<tr class="separator:acf8695d64d8d3b9f2900b8a707729b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1b50831424304b41b0900d1a746180" id="r_a4d1b50831424304b41b0900d1a746180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStateParser.html#a4d1b50831424304b41b0900d1a746180">parseTextures</a> (XMLElement *psStateRoot, std::vector&lt; std::string &gt; *pTextureIDs)</td></tr>
+<tr class="separator:a4d1b50831424304b41b0900d1a746180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="StateParser_8h_source.html">StateParser.h</a> 第 <a class="el" href="StateParser_8h_source.html#l00011">11</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="acf8695d64d8d3b9f2900b8a707729b08" name="acf8695d64d8d3b9f2900b8a707729b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8695d64d8d3b9f2900b8a707729b08">&#9670;&#160;</a></span>parseObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StateParser::parseObjects </td>
+          <td>(</td>
+          <td class="paramtype">XMLElement *&#160;</td>
+          <td class="paramname"><em>pStateRoot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; &gt; *&#160;</td>
+          <td class="paramname"><em>pObjects</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="StateParser_8cpp_source.html">StateParser.cpp</a> 第 <a class="el" href="StateParser_8cpp_source.html#l00064">64</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="GameObjectFactory_8h_source.html#l00041">GameObjectFactory::create()</a>, <a class="el" href="GameObjectFactory_8h_source.html#l00018">GameObjectFactory::Instance()</a> , 以及 <a class="el" href="classGameObject.html#a729edce3955766d5c8dfcda6f310392d">GameObject::load()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="StateParser_8cpp_source.html#l00007">parseState()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStateParser_acf8695d64d8d3b9f2900b8a707729b08_cgraph.png" border="0" usemap="#aclassStateParser_acf8695d64d8d3b9f2900b8a707729b08_cgraph" alt=""/></div>
+<map name="aclassStateParser_acf8695d64d8d3b9f2900b8a707729b08_cgraph" id="aclassStateParser_acf8695d64d8d3b9f2900b8a707729b08_cgraph">
+<area shape="rect" title=" " alt="" coords="5,77,195,102"/>
+<area shape="rect" href="classGameObjectFactory.html#a704834a35c0a7d2b7267999bbb4ee134" title=" " alt="" coords="243,5,400,45"/>
+<area shape="poly" title=" " alt="" coords="144,74,238,47,239,52,146,79"/>
+<area shape="rect" href="classGameObjectFactory.html#ac041794e646de05d62166767faad9581" title=" " alt="" coords="243,69,400,109"/>
+<area shape="poly" title=" " alt="" coords="195,87,229,87,229,92,195,92"/>
+<area shape="rect" href="classGameObject.html#a729edce3955766d5c8dfcda6f310392d" title=" " alt="" coords="252,134,391,159"/>
+<area shape="poly" title=" " alt="" coords="151,99,259,128,258,133,149,105"/>
+<area shape="rect" href="classBaseCreator.html#aafe411c83ea73e1a001ca7046f46b130" title=" " alt="" coords="448,13,680,38"/>
+<area shape="poly" title=" " alt="" coords="401,23,434,23,434,28,401,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStateParser_acf8695d64d8d3b9f2900b8a707729b08_icgraph.png" border="0" usemap="#aclassStateParser_acf8695d64d8d3b9f2900b8a707729b08_icgraph" alt=""/></div>
+<map name="aclassStateParser_acf8695d64d8d3b9f2900b8a707729b08_icgraph" id="aclassStateParser_acf8695d64d8d3b9f2900b8a707729b08_icgraph">
+<area shape="rect" title=" " alt="" coords="464,55,653,80"/>
+<area shape="rect" href="classStateParser.html#ae4b0e2e1350675193e1114c13f3e5e02" title=" " alt="" coords="241,55,416,80"/>
+<area shape="poly" title=" " alt="" coords="450,70,416,70,416,65,450,65"/>
+<area shape="rect" href="classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="255,54,159,33,160,28,256,49"/>
+<area shape="rect" href="classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="228,70,190,70,190,65,228,65"/>
+<area shape="rect" href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,104,193,129"/>
+<area shape="poly" title=" " alt="" coords="256,86,160,107,159,101,255,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae4b0e2e1350675193e1114c13f3e5e02" name="ae4b0e2e1350675193e1114c13f3e5e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b0e2e1350675193e1114c13f3e5e02">&#9670;&#160;</a></span>parseState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StateParser::parseState </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>stateFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>stateID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classGameObject.html">GameObject</a> &gt; &gt; *&#160;</td>
+          <td class="paramname"><em>pObjects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt; *&#160;</td>
+          <td class="paramname"><em>pTextureIDs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="StateParser_8cpp_source.html">StateParser.cpp</a> 第 <a class="el" href="StateParser_8cpp_source.html#l00007">7</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="StateParser_8cpp_source.html#l00064">parseObjects()</a> , 以及 <a class="el" href="StateParser_8cpp_source.html#l00053">parseTextures()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuMainState_8cpp_source.html#l00045">MenuMainState::onEnter()</a>, <a class="el" href="MenuOverState_8cpp_source.html#l00038">MenuOverState::onEnter()</a> , 以及 <a class="el" href="MenuPauseState_8cpp_source.html#l00043">MenuPauseState::onEnter()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStateParser_ae4b0e2e1350675193e1114c13f3e5e02_cgraph.png" border="0" usemap="#aclassStateParser_ae4b0e2e1350675193e1114c13f3e5e02_cgraph" alt=""/></div>
+<map name="aclassStateParser_ae4b0e2e1350675193e1114c13f3e5e02_cgraph" id="aclassStateParser_ae4b0e2e1350675193e1114c13f3e5e02_cgraph">
+<area shape="rect" title=" " alt="" coords="5,159,180,185"/>
+<area shape="rect" href="classStateParser.html#acf8695d64d8d3b9f2900b8a707729b08" title=" " alt="" coords="231,106,420,131"/>
+<area shape="poly" title=" " alt="" coords="148,157,256,132,257,137,150,162"/>
+<area shape="rect" href="classStateParser.html#a4d1b50831424304b41b0900d1a746180" title=" " alt="" coords="228,183,423,209"/>
+<area shape="poly" title=" " alt="" coords="181,178,215,182,214,187,180,184"/>
+<area shape="rect" href="classGameObjectFactory.html#a704834a35c0a7d2b7267999bbb4ee134" title=" " alt="" coords="487,5,645,45"/>
+<area shape="poly" title=" " alt="" coords="354,103,470,55,489,48,491,53,472,60,356,108"/>
+<area shape="rect" href="classGameObjectFactory.html#ac041794e646de05d62166767faad9581" title=" " alt="" coords="487,69,645,109"/>
+<area shape="poly" title=" " alt="" coords="420,105,474,98,474,103,420,110"/>
+<area shape="rect" href="classGameObject.html#a729edce3955766d5c8dfcda6f310392d" title=" " alt="" coords="497,134,635,159"/>
+<area shape="poly" title=" " alt="" coords="420,127,483,134,483,140,420,132"/>
+<area shape="rect" href="classBaseCreator.html#aafe411c83ea73e1a001ca7046f46b130" title=" " alt="" coords="713,13,945,38"/>
+<area shape="poly" title=" " alt="" coords="645,23,700,23,700,28,645,28"/>
+<area shape="rect" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6" title=" " alt="" coords="471,183,661,209"/>
+<area shape="poly" title=" " alt="" coords="423,193,457,193,457,199,423,199"/>
+<area shape="rect" href="classTextureManager.html#a1921cb89735d57489e49984c7572611c" title=" " alt="" coords="485,233,647,258"/>
+<area shape="poly" title=" " alt="" coords="388,206,490,227,489,232,387,211"/>
+<area shape="rect" href="classTextureManager.html#ad76abb178b37cedf4514eb0154349935" title=" " alt="" coords="709,183,949,209"/>
+<area shape="poly" title=" " alt="" coords="661,193,696,193,696,199,661,199"/>
+<area shape="rect" href="classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="755,233,903,258"/>
+<area shape="poly" title=" " alt="" coords="648,243,741,243,741,248,648,248"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStateParser_ae4b0e2e1350675193e1114c13f3e5e02_icgraph.png" border="0" usemap="#aclassStateParser_ae4b0e2e1350675193e1114c13f3e5e02_icgraph" alt=""/></div>
+<map name="aclassStateParser_ae4b0e2e1350675193e1114c13f3e5e02_icgraph" id="aclassStateParser_ae4b0e2e1350675193e1114c13f3e5e02_icgraph">
+<area shape="rect" title=" " alt="" coords="241,55,416,80"/>
+<area shape="rect" href="classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="255,54,159,33,160,28,256,49"/>
+<area shape="rect" href="classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="228,70,190,70,190,65,228,65"/>
+<area shape="rect" href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,104,193,129"/>
+<area shape="poly" title=" " alt="" coords="256,86,160,107,159,101,255,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d1b50831424304b41b0900d1a746180" name="a4d1b50831424304b41b0900d1a746180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1b50831424304b41b0900d1a746180">&#9670;&#160;</a></span>parseTextures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StateParser::parseTextures </td>
+          <td>(</td>
+          <td class="paramtype">XMLElement *&#160;</td>
+          <td class="paramname"><em>psStateRoot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt; *&#160;</td>
+          <td class="paramname"><em>pTextureIDs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="StateParser_8cpp_source.html">StateParser.cpp</a> 第 <a class="el" href="StateParser_8cpp_source.html#l00053">53</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TextureManager_8h_source.html#l00028">TextureManager::Instance()</a> , 以及 <a class="el" href="TextureManager_8cpp_source.html#l00011">TextureManager::load()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="StateParser_8cpp_source.html#l00007">parseState()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStateParser_a4d1b50831424304b41b0900d1a746180_cgraph.png" border="0" usemap="#aclassStateParser_a4d1b50831424304b41b0900d1a746180_cgraph" alt=""/></div>
+<map name="aclassStateParser_a4d1b50831424304b41b0900d1a746180_cgraph" id="aclassStateParser_a4d1b50831424304b41b0900d1a746180_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,200,56"/>
+<area shape="rect" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6" title=" " alt="" coords="248,5,439,31"/>
+<area shape="poly" title=" " alt="" coords="200,30,234,27,235,32,200,36"/>
+<area shape="rect" href="classTextureManager.html#a1921cb89735d57489e49984c7572611c" title=" " alt="" coords="262,55,425,80"/>
+<area shape="poly" title=" " alt="" coords="200,50,248,55,248,61,200,56"/>
+<area shape="rect" href="classTextureManager.html#ad76abb178b37cedf4514eb0154349935" title=" " alt="" coords="487,5,727,31"/>
+<area shape="poly" title=" " alt="" coords="439,15,473,15,473,21,439,21"/>
+<area shape="rect" href="classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="533,55,681,80"/>
+<area shape="poly" title=" " alt="" coords="425,65,519,65,519,70,425,70"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStateParser_a4d1b50831424304b41b0900d1a746180_icgraph.png" border="0" usemap="#aclassStateParser_a4d1b50831424304b41b0900d1a746180_icgraph" alt=""/></div>
+<map name="aclassStateParser_a4d1b50831424304b41b0900d1a746180_icgraph" id="aclassStateParser_a4d1b50831424304b41b0900d1a746180_icgraph">
+<area shape="rect" title=" " alt="" coords="464,55,659,80"/>
+<area shape="rect" href="classStateParser.html#ae4b0e2e1350675193e1114c13f3e5e02" title=" " alt="" coords="241,55,416,80"/>
+<area shape="poly" title=" " alt="" coords="450,70,416,70,416,65,450,65"/>
+<area shape="rect" href="classMenuMainState.html#ab488838da48beffb97d440befa77f01b" title=" " alt="" coords="8,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="255,54,159,33,160,28,256,49"/>
+<area shape="rect" href="classMenuOverState.html#a50b20e765ea93c1ede3ce92c33c730bd" title=" " alt="" coords="9,55,190,80"/>
+<area shape="poly" title=" " alt="" coords="228,70,190,70,190,65,228,65"/>
+<area shape="rect" href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2" title=" " alt="" coords="5,104,193,129"/>
+<area shape="poly" title=" " alt="" coords="256,86,160,107,159,101,255,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>inc/<a class="el" href="StateParser_8h_source.html">StateParser.h</a></li>
+<li>src/<a class="el" href="StateParser_8cpp_source.html">StateParser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

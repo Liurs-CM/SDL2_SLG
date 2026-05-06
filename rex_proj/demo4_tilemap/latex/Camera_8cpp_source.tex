@@ -1,0 +1,38 @@
+\doxysection{Camera.\+cpp}
+\hypertarget{Camera_8cpp_source}{}\label{Camera_8cpp_source}\index{src/Camera.cpp@{src/Camera.cpp}}
+\mbox{\hyperlink{Camera_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Camera_8h}{Camera.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameLib_8h}{GameLib.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00005}00005\ \mbox{\hyperlink{classCamera}{Camera}}*\ \mbox{\hyperlink{classCamera_afc05dfe93be5dae81525c39c19ee0b36}{Camera::s\_pInstance}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00007}\mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{00007}}\ \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera::Camera}}()\ :}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00008}00008\ \ \ \ \ m\_position(0,0),}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00009}00009\ \ \ \ \ m\_width(\mbox{\hyperlink{GameLib_8h_ac9eaa6e6daf0eac52333b01bc6fa823b}{SCR\_W}}),}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00010}00010\ \ \ \ \ m\_height(\mbox{\hyperlink{GameLib_8h_afe18b489773963299583dea3401debf9}{SCR\_H}})}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00011}00011\ \{\ \}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00013}\mbox{\hyperlink{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28}{00013}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_ac40d7b1afe12d127a7b33424e7ebfc28}{Camera::follow}}(\mbox{\hyperlink{classVector2D}{Vector2D}}\ target)}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\_position}}\ =\ \mbox{\hyperlink{classVector2D}{Vector2D}}(target.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ -\/\ \mbox{\hyperlink{classCamera_a4b8e18df05238a00133366679a320871}{m\_width}}\ /\ 2,\ target.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}()\ -\/\ \mbox{\hyperlink{classCamera_a829a0f6f02a0f4286824e30a1923f7a5}{m\_height}}\ /\ 2);}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\_position}}.\mbox{\hyperlink{classVector2D_ac458bd997d2f0c6c7234cf1e8a7b73b8}{setX}}(std::max(0.0f,\ std::min(\mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\_position}}.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}(),\ \textcolor{keywordtype}{float}(\mbox{\hyperlink{GameLib_8h_a4c736195492abc5f49af63a57f487cdb}{MAP\_W}}\ -\/\ \mbox{\hyperlink{classCamera_a4b8e18df05238a00133366679a320871}{m\_width}}))));}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\_position}}.\mbox{\hyperlink{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709}{setY}}(std::max(0.0f,\ std::min(\mbox{\hyperlink{classCamera_aa2316df15090ec38c3fc9be03ba8b2e6}{m\_position}}.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}(),\ \textcolor{keywordtype}{float}(\mbox{\hyperlink{GameLib_8h_a07ffd6e3f128f941b2f400c352896a74}{MAP\_H}}\ -\/\ \mbox{\hyperlink{classCamera_a829a0f6f02a0f4286824e30a1923f7a5}{m\_height}}))));}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//Vector2D\ to\_position\ =\ Vector2D(target.getX()\ -\/\ m\_width\ /\ 2,\ target.getY()\ -\/\ m\_height\ /\ 2);}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{comment}{//to\_position.setX(std::max(0,\ std::min(int(to\_position.getX()),\ MAP\_W\ -\/\ m\_width)));}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{comment}{//to\_position.setY(std::max(0,\ std::min(int(to\_position.getY()),\ MAP\_H\ -\/\ m\_height)));}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{comment}{//if(m\_position\ !=\ to\_position)\{}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//\ \ \ \ Vector2D\ dist\ =\ to\_position\ -\/\ m\_position;}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//\ \ \ \ if(dist.length()\ <\ 1.0f)\ \{}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ m\_position\ =\ to\_position;}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \}}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ \ \ \ else\ \{}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ m\_position\ +=\ dist.get\_normalize()\ *\ shift\_speed;}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \}}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00035}00035\ }
+
+\end{DoxyCode}

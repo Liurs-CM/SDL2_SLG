@@ -1,0 +1,32 @@
+\doxysection{Game\+State\+Machine.\+h}
+\hypertarget{GameStateMachine_8h_source}{}\label{GameStateMachine_8h_source}\index{inc/GameStateMachine.h@{inc/GameStateMachine.h}}
+\mbox{\hyperlink{GameStateMachine_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_GameStateMachine\_\_}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_GameStateMachine\_\_}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameState_8h}{GameState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00006}\mbox{\hyperlink{classGameStateMachine}{00006}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameStateMachine}{GameStateMachine}}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00008}00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00009}\mbox{\hyperlink{classGameStateMachine_af44901f3f0ead9f2534cf3cdd5e122c8}{00009}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_af44901f3f0ead9f2534cf3cdd5e122c8}{GameStateMachine}}()\ :\ \mbox{\hyperlink{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557}{newState}}(nullptr),\ \mbox{\hyperlink{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}{popStateFlag}}(false),\ \mbox{\hyperlink{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}{changeStateFlag}}(false)\ \{\}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00010}00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a7391cf427e60eea13232085ed6767dcc}{pushState}}(\mbox{\hyperlink{classGameState}{GameState}}*\ pState);}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}{changeState}}(\mbox{\hyperlink{classGameState}{GameState}}*\ pState);}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f}{popState}}();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a7a3be350727fff550f09cc0499398ece}{update}}();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5}{render}}();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4}{clean}}();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00016}\mbox{\hyperlink{classGameStateMachine_a0c0cb8880dacfcc4cb37077b14ad95ff}{00016}}\ \ \ \ \ \ \ \ \ std::vector<GameState*>\&\ \mbox{\hyperlink{classGameStateMachine_a0c0cb8880dacfcc4cb37077b14ad95ff}{getGameStates}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}};\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00018}\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{00018}}\ \ \ \ \ \ \ \ \ std::vector<GameState*>\ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695}{popStatePrivate}}();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_af65df6fca772a845852199aa5db0ef39}{changeStatePrivate}}(\mbox{\hyperlink{classGameState}{GameState}}*\ pState);}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00021}\mbox{\hyperlink{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557}{00021}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameState}{GameState}}*\ \mbox{\hyperlink{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557}{newState}};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00022}\mbox{\hyperlink{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}{popStateFlag}};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00023}\mbox{\hyperlink{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}{00023}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}{changeStateFlag}};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00024}00024\ \};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8h_source_l00026}00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_GameStateMachine\_\_}}
+
+\end{DoxyCode}

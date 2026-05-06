@@ -1,0 +1,32 @@
+\doxysection{Level1\+Boss.\+cpp}
+\hypertarget{Level1Boss_8cpp_source}{}\label{Level1Boss_8cpp_source}\index{src/Level1Boss.cpp@{src/Level1Boss.cpp}}
+\mbox{\hyperlink{Level1Boss_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Level1Boss_8h}{Level1Boss.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SoundManager_8h}{SoundManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00004}\mbox{\hyperlink{classLevel1Boss_a303ee6c7dbcbef479d0bd334a5a193b0}{00004}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevel1Boss_a303ee6c7dbcbef479d0bd334a5a193b0}{Level1Boss::update}}()}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00006}00006\ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classLevel1Boss_ac52b43e1fb205c4649f901482e63c293}{m\_entered}})}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00007}00007\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00008}00008\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ <\ (\mbox{\hyperlink{GameLib_8h_ac9eaa6e6daf0eac52333b01bc6fa823b}{SCR\_W}}\ -\/\ (\mbox{\hyperlink{classSDLGameObject_af1a901cd008cb8903fb72f27087c3070}{m\_width}}\ +\ 20)))}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00009}00009\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00010}00010\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevel1Boss_ac52b43e1fb205c4649f901482e63c293}{m\_entered}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}boss\ enter\ pos:\ "{}}\ <<\ \mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00013}00013\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a9322e790f0515760f36b62ce35d4a090}{SDLGameObject::update}}();}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}()\ +\ \mbox{\hyperlink{classSDLGameObject_aa5d3c6b48ee55cd7293ac09a7adffbf0}{m\_height}}\ >=\ \mbox{\hyperlink{GameLib_8h_afe18b489773963299583dea3401debf9}{SCR\_H}})}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\_velocity}}.\mbox{\hyperlink{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709}{setY}}(-\/1);}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSDLGameObject_a92bb16fe7c646857fdc02093d58a232a}{m\_position}}.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}()\ <=\ 0)}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\_velocity}}.\mbox{\hyperlink{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709}{setY}}(1);}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00025}00025\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8cpp_source_l00026}00026\ \}}
+
+\end{DoxyCode}

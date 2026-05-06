@@ -1,0 +1,66 @@
+\doxysection{Tile\+Layer.\+cpp}
+\hypertarget{TileLayer_8cpp_source}{}\label{TileLayer_8cpp_source}\index{src/TileLayer.cpp@{src/TileLayer.cpp}}
+\mbox{\hyperlink{TileLayer_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TileLayer_8h}{TileLayer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Camera_8h}{Camera.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00006}\mbox{\hyperlink{classTileLayer_a7fbd33d6c7dd8be6aacaa87b282c252e}{00006}}\ \mbox{\hyperlink{classTileLayer_a7fbd33d6c7dd8be6aacaa87b282c252e}{TileLayer::TileLayer}}(\textcolor{keywordtype}{int}\ tileSize,\ \textcolor{keyword}{const}\ std::vector<Tileset>\&\ tilesets)\ :\ m\_tileSize(tileSize),\ m\_tilesets(tilesets),\ m\_position(0,0),\ m\_velocity(0,0)}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00008}00008\ \ \ \ \ \mbox{\hyperlink{classTileLayer_a22fc2345220696dcffa7a6785824f5e8}{m\_numColumns}}\ =\ (\mbox{\hyperlink{GameLib_8h_ac9eaa6e6daf0eac52333b01bc6fa823b}{SCR\_W}}\ /\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}})\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00009}00009\ \ \ \ \ \mbox{\hyperlink{classTileLayer_ab52da1d995ebda1729861e1b41eee029}{m\_numRows}}\ =\ (\mbox{\hyperlink{GameLib_8h_afe18b489773963299583dea3401debf9}{SCR\_H}}\ /\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}});}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00010}00010\ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00012}\mbox{\hyperlink{classTileLayer_afc5c61c51ad8e14078036c347df718fe}{00012}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileLayer_afc5c61c51ad8e14078036c347df718fe}{TileLayer::update}}(\mbox{\hyperlink{classLevel}{Level}}*\ pLevel)}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//setPosition(TheCamera::Instance()-\/>getPosition());}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classTileLayer_ae8e4975a29ad513501923854ce2b33a2}{m\_position}}\ =\ \mbox{\hyperlink{classCamera_a38bcf7d4fe8373d726b8824ab30efd89}{TheCamera::Instance}}()-\/>\mbox{\hyperlink{classCamera_aec9074b278b84e784cd493ded9e46910}{getPosition}}();}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//std::cout\ <<\ "{}TileLayer\ pos:\ "{}\ <<\ m\_position\ <<\ "{}\(\backslash\)n"{};}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//std::cout\ <<\ "{}Camera\ pos:\ "{}\ <<\ TheCamera::Instance()-\/>getPosition()\ <<\ "{}\(\backslash\)n"{};}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00020}\mbox{\hyperlink{classTileLayer_af32fb583946d920c19b76e1381283ebf}{00020}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileLayer_af32fb583946d920c19b76e1381283ebf}{TileLayer::render}}()}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ y,\ x2,\ y2\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00023}00023\ \ \ \ \ x\ =\ \mbox{\hyperlink{classTileLayer_ae8e4975a29ad513501923854ce2b33a2}{m\_position}}.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}()\ /\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}};}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00024}00024\ \ \ \ \ y\ =\ \mbox{\hyperlink{classTileLayer_ae8e4975a29ad513501923854ce2b33a2}{m\_position}}.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}()\ /\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}};}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00025}00025\ \ \ \ \ x2\ =\ int(\mbox{\hyperlink{classTileLayer_ae8e4975a29ad513501923854ce2b33a2}{m\_position}}.\mbox{\hyperlink{classVector2D_a527601e47976bcfdac2520817bfee675}{getX}}())\ \%\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}};}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00026}00026\ \ \ \ \ y2\ =\ int(\mbox{\hyperlink{classTileLayer_ae8e4975a29ad513501923854ce2b33a2}{m\_position}}.\mbox{\hyperlink{classVector2D_a5b797fb62a3c21ced0cc8e27afd62f8b}{getY}}())\ \%\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}};}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classTileLayer_ab52da1d995ebda1729861e1b41eee029}{m\_numRows}};\ i++)}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00028}00028\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ \mbox{\hyperlink{classTileLayer_a22fc2345220696dcffa7a6785824f5e8}{m\_numColumns}};\ j++)}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ (i\ +\ y)\ <\ 0\ ||\ (i\ +\ y)\ >=\ \mbox{\hyperlink{classTileLayer_a1afe6488faa3e2bf3a772617035ab030}{m\_mapHeight}}\ ||\ }
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (j\ +\ x)\ <\ 0\ ||\ (j\ +\ x)\ >=\ \mbox{\hyperlink{classTileLayer_ad538dc72294ebe5b4fd0a25109d1b119}{m\_mapWidth}}\ )\ }
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ \textcolor{keywordflow}{continue};\ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ \mbox{\hyperlink{classTileLayer_a6cadf5d32536c725dc6e4d6e4191ed89}{m\_tileIDs}}[i\ +\ y][j\ +\ x];}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{id}\ ==\ 0)\ \{\ \textcolor{keywordflow}{continue};\ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structTileset}{Tileset}}\ tileset\ =\ \mbox{\hyperlink{classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2}{getTilesetByID}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{id}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_ae7be0baaa156d4c3d5d6fccde762fe19}{drawTile}}(tileset.\mbox{\hyperlink{structTileset_a18d4be506284b7ab3cf2e2b7e688042a}{name}},\ tileset.\mbox{\hyperlink{structTileset_a964f53e69b260f2e2dce178e557bf324}{margin}},\ tileset.\mbox{\hyperlink{structTileset_aebaac85c2e99d31883440cc2495c2f16}{spacing}},\ (j\ *\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}})\ -\/\ x2,\ (i\ *\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}})\ -\/\ y2,\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}},\ \mbox{\hyperlink{classTileLayer_a4c0ae3b970af4aafbe790e73630167e2}{m\_tileSize}},\ (\textcolor{keywordtype}{id}\ -\/\ (tileset.\mbox{\hyperlink{structTileset_a15347962a9cd3daea9d953cf76e4b77d}{firstGridID}}\ -\/\ 1))\ /\ tileset.\mbox{\hyperlink{structTileset_a666d036f94655943bc9091cc4ecb56c1}{numColumns}},\ (\textcolor{keywordtype}{id}\ -\/\ (tileset.\mbox{\hyperlink{structTileset_a15347962a9cd3daea9d953cf76e4b77d}{firstGridID}}\ -\/\ 1))\ \%\ tileset.\mbox{\hyperlink{structTileset_a666d036f94655943bc9091cc4ecb56c1}{numColumns}});}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00043}\mbox{\hyperlink{classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2}{00043}}\ \mbox{\hyperlink{structTileset}{Tileset}}\ \mbox{\hyperlink{classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2}{TileLayer::getTilesetByID}}(\textcolor{keywordtype}{int}\ tileID)}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00044}00044\ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}{m\_tilesets}}.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00046}00046\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ i\ +\ 1\ <=\ \mbox{\hyperlink{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}{m\_tilesets}}.size()\ -\/\ 1)}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(tileID\ >=\ \mbox{\hyperlink{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}{m\_tilesets}}[i].firstGridID\ \&\&\ tileID\ <\ \mbox{\hyperlink{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}{m\_tilesets}}[i\ +\ 1].firstGridID)\ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}{m\_tilesets}}[i];}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classTileLayer_a354f473fbd1e6beafd23cfded4b57f4f}{m\_tilesets}}[i];}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00057}00057\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}did\ not\ find\ tileset,\ returning\ empty\ tileset\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00058}00058\ \ \ \ \ \mbox{\hyperlink{structTileset}{Tileset}}\ t;}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordflow}{return}\ t;}
+\DoxyCodeLine{\Hypertarget{TileLayer_8cpp_source_l00060}00060\ \}}
+
+\end{DoxyCode}

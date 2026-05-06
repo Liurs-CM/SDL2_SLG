@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: inc/TileLayer.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TileLayer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="TileLayer_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __TileLayer__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __TileLayer__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">Layer.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="Level_8h.html">Level.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="Vector2D_8h.html">Vector2D.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classTileLayer.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classTileLayer.html">TileLayer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classLayer.html">Layer</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_class" href="classTileLayer.html">TileLayer</a>(<span class="keywordtype">int</span> tileSize, <span class="keyword">const</span> std::vector&lt;Tileset&gt;&amp; tilesets);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classTileLayer.html#adb96031096770029f830606b493742f7">   13</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classTileLayer.html#adb96031096770029f830606b493742f7">~TileLayer</a>() {}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTileLayer.html#afc5c61c51ad8e14078036c347df718fe">update</a>(<a class="code hl_class" href="classLevel.html">Level</a>* pLevel);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTileLayer.html#af32fb583946d920c19b76e1381283ebf">render</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classTileLayer.html#a2d0ef9789523c9a1f11bc6d472985757">   16</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classTileLayer.html#a2d0ef9789523c9a1f11bc6d472985757">setTileIDs</a>(<span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt;&amp; data) { <a class="code hl_variable" href="classTileLayer.html#a6cadf5d32536c725dc6e4d6e4191ed89">m_tileIDs</a> = data; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classTileLayer.html#a58f18ccbd90291d6ef67c475b81c0b4f">   17</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classTileLayer.html#a58f18ccbd90291d6ef67c475b81c0b4f">setTileSize</a>(<span class="keywordtype">int</span> tileSize) { <a class="code hl_variable" href="classTileLayer.html#a4c0ae3b970af4aafbe790e73630167e2">m_tileSize</a> = tileSize; }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classTileLayer.html#a840abb35a28b7b401535d9dd0c84ffde">   18</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classTileLayer.html#a840abb35a28b7b401535d9dd0c84ffde">setMapWidth</a>(<span class="keywordtype">int</span> mapWidth) { <a class="code hl_variable" href="classTileLayer.html#ad538dc72294ebe5b4fd0a25109d1b119">m_mapWidth</a> = mapWidth; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classTileLayer.html#a40f00aeadc0d3fc8ca43cbeb0450de0e">   19</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classTileLayer.html#a40f00aeadc0d3fc8ca43cbeb0450de0e">setMapHeight</a>(<span class="keywordtype">int</span> mapHeight) { <a class="code hl_variable" href="classTileLayer.html#a1afe6488faa3e2bf3a772617035ab030">m_mapHeight</a> = mapHeight; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classTileLayer.html#a35752649bbc441a2a571577aeeb36a68">   20</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classTileLayer.html#a35752649bbc441a2a571577aeeb36a68">setPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="classVector2D.html">Vector2D</a>&amp; position) { <a class="code hl_variable" href="classTileLayer.html#ae8e4975a29ad513501923854ce2b33a2">m_position</a> = position; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classTileLayer.html#a74ff0f33671097b9e605f7b47412ee73">   21</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classTileLayer.html#a74ff0f33671097b9e605f7b47412ee73">getTileSize</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classTileLayer.html#a4c0ae3b970af4aafbe790e73630167e2">m_tileSize</a>; }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classTileLayer.html#a4eb4a70880fd750b09e7a2cce2770dec">   22</a></span>        <span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt;&gt;&amp; <a class="code hl_function" href="classTileLayer.html#a4eb4a70880fd750b09e7a2cce2770dec">getTileIDs</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classTileLayer.html#a6cadf5d32536c725dc6e4d6e4191ed89">m_tileIDs</a>; }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_struct" href="structTileset.html">Tileset</a> <a class="code hl_function" href="classTileLayer.html#a2b91f0f2a113c94ff6293fa4b822f3d2">getTilesetByID</a>(<span class="keywordtype">int</span> tileID);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classTileLayer.html#a7d6409032419ab74a03715de4189e432">   24</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="classVector2D.html">Vector2D</a> <a class="code hl_function" href="classTileLayer.html#a7d6409032419ab74a03715de4189e432">getPosition</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classTileLayer.html#ae8e4975a29ad513501923854ce2b33a2">m_position</a>; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classTileLayer.html#a22fc2345220696dcffa7a6785824f5e8">   26</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classTileLayer.html#a22fc2345220696dcffa7a6785824f5e8">m_numColumns</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classTileLayer.html#ab52da1d995ebda1729861e1b41eee029">   27</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classTileLayer.html#ab52da1d995ebda1729861e1b41eee029">m_numRows</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classTileLayer.html#a1afe6488faa3e2bf3a772617035ab030">   28</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classTileLayer.html#a1afe6488faa3e2bf3a772617035ab030">m_mapHeight</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classTileLayer.html#ad538dc72294ebe5b4fd0a25109d1b119">   29</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classTileLayer.html#ad538dc72294ebe5b4fd0a25109d1b119">m_mapWidth</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classTileLayer.html#a4c0ae3b970af4aafbe790e73630167e2">   30</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classTileLayer.html#a4c0ae3b970af4aafbe790e73630167e2">m_tileSize</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classTileLayer.html#a354f473fbd1e6beafd23cfded4b57f4f">   31</a></span>        <span class="keyword">const</span> std::vector&lt;Tileset&gt;&amp; <a class="code hl_variable" href="classTileLayer.html#a354f473fbd1e6beafd23cfded4b57f4f">m_tilesets</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classTileLayer.html#ae8e4975a29ad513501923854ce2b33a2">   32</a></span>        <a class="code hl_class" href="classVector2D.html">Vector2D</a> <a class="code hl_variable" href="classTileLayer.html#ae8e4975a29ad513501923854ce2b33a2">m_position</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classTileLayer.html#a2e1dbc38cb2773c01979eeb9c1af1d52">   33</a></span>        <a class="code hl_class" href="classVector2D.html">Vector2D</a> <a class="code hl_variable" href="classTileLayer.html#a2e1dbc38cb2773c01979eeb9c1af1d52">m_velocity</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classTileLayer.html#a6cadf5d32536c725dc6e4d6e4191ed89">   34</a></span>        std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code hl_variable" href="classTileLayer.html#a6cadf5d32536c725dc6e4d6e4191ed89">m_tileIDs</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">// __TileLayer__</span></div>
+<div class="ttc" id="aLayer_8h_html"><div class="ttname"><a href="Layer_8h.html">Layer.h</a></div></div>
+<div class="ttc" id="aLevel_8h_html"><div class="ttname"><a href="Level_8h.html">Level.h</a></div></div>
+<div class="ttc" id="aVector2D_8h_html"><div class="ttname"><a href="Vector2D_8h.html">Vector2D.h</a></div></div>
+<div class="ttc" id="aclassLayer_html"><div class="ttname"><a href="classLayer.html">Layer</a></div><div class="ttdef"><b>Definition</b> <a href="Layer_8h_source.html#l00005">Layer.h:6</a></div></div>
+<div class="ttc" id="aclassLevel_html"><div class="ttname"><a href="classLevel.html">Level</a></div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00024">Level.h:25</a></div></div>
+<div class="ttc" id="aclassTileLayer_html"><div class="ttname"><a href="classTileLayer.html">TileLayer</a></div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00009">TileLayer.h:10</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a1afe6488faa3e2bf3a772617035ab030"><div class="ttname"><a href="classTileLayer.html#a1afe6488faa3e2bf3a772617035ab030">TileLayer::m_mapHeight</a></div><div class="ttdeci">int m_mapHeight</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00028">TileLayer.h:28</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a22fc2345220696dcffa7a6785824f5e8"><div class="ttname"><a href="classTileLayer.html#a22fc2345220696dcffa7a6785824f5e8">TileLayer::m_numColumns</a></div><div class="ttdeci">int m_numColumns</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00026">TileLayer.h:26</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a2b91f0f2a113c94ff6293fa4b822f3d2"><div class="ttname"><a href="classTileLayer.html#a2b91f0f2a113c94ff6293fa4b822f3d2">TileLayer::getTilesetByID</a></div><div class="ttdeci">Tileset getTilesetByID(int tileID)</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8cpp_source.html#l00043">TileLayer.cpp:43</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a2d0ef9789523c9a1f11bc6d472985757"><div class="ttname"><a href="classTileLayer.html#a2d0ef9789523c9a1f11bc6d472985757">TileLayer::setTileIDs</a></div><div class="ttdeci">void setTileIDs(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;data)</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00016">TileLayer.h:16</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a2e1dbc38cb2773c01979eeb9c1af1d52"><div class="ttname"><a href="classTileLayer.html#a2e1dbc38cb2773c01979eeb9c1af1d52">TileLayer::m_velocity</a></div><div class="ttdeci">Vector2D m_velocity</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00033">TileLayer.h:33</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a354f473fbd1e6beafd23cfded4b57f4f"><div class="ttname"><a href="classTileLayer.html#a354f473fbd1e6beafd23cfded4b57f4f">TileLayer::m_tilesets</a></div><div class="ttdeci">const std::vector&lt; Tileset &gt; &amp; m_tilesets</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00031">TileLayer.h:31</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a35752649bbc441a2a571577aeeb36a68"><div class="ttname"><a href="classTileLayer.html#a35752649bbc441a2a571577aeeb36a68">TileLayer::setPosition</a></div><div class="ttdeci">void setPosition(const Vector2D &amp;position)</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00020">TileLayer.h:20</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a40f00aeadc0d3fc8ca43cbeb0450de0e"><div class="ttname"><a href="classTileLayer.html#a40f00aeadc0d3fc8ca43cbeb0450de0e">TileLayer::setMapHeight</a></div><div class="ttdeci">void setMapHeight(int mapHeight)</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00019">TileLayer.h:19</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a4c0ae3b970af4aafbe790e73630167e2"><div class="ttname"><a href="classTileLayer.html#a4c0ae3b970af4aafbe790e73630167e2">TileLayer::m_tileSize</a></div><div class="ttdeci">int m_tileSize</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00030">TileLayer.h:30</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a4eb4a70880fd750b09e7a2cce2770dec"><div class="ttname"><a href="classTileLayer.html#a4eb4a70880fd750b09e7a2cce2770dec">TileLayer::getTileIDs</a></div><div class="ttdeci">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp; getTileIDs()</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00022">TileLayer.h:22</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a58f18ccbd90291d6ef67c475b81c0b4f"><div class="ttname"><a href="classTileLayer.html#a58f18ccbd90291d6ef67c475b81c0b4f">TileLayer::setTileSize</a></div><div class="ttdeci">void setTileSize(int tileSize)</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00017">TileLayer.h:17</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a6cadf5d32536c725dc6e4d6e4191ed89"><div class="ttname"><a href="classTileLayer.html#a6cadf5d32536c725dc6e4d6e4191ed89">TileLayer::m_tileIDs</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; m_tileIDs</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00034">TileLayer.h:34</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a74ff0f33671097b9e605f7b47412ee73"><div class="ttname"><a href="classTileLayer.html#a74ff0f33671097b9e605f7b47412ee73">TileLayer::getTileSize</a></div><div class="ttdeci">int getTileSize()</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00021">TileLayer.h:21</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a7d6409032419ab74a03715de4189e432"><div class="ttname"><a href="classTileLayer.html#a7d6409032419ab74a03715de4189e432">TileLayer::getPosition</a></div><div class="ttdeci">const Vector2D getPosition()</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00024">TileLayer.h:24</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_a840abb35a28b7b401535d9dd0c84ffde"><div class="ttname"><a href="classTileLayer.html#a840abb35a28b7b401535d9dd0c84ffde">TileLayer::setMapWidth</a></div><div class="ttdeci">void setMapWidth(int mapWidth)</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00018">TileLayer.h:18</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_ab52da1d995ebda1729861e1b41eee029"><div class="ttname"><a href="classTileLayer.html#ab52da1d995ebda1729861e1b41eee029">TileLayer::m_numRows</a></div><div class="ttdeci">int m_numRows</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00027">TileLayer.h:27</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_ad538dc72294ebe5b4fd0a25109d1b119"><div class="ttname"><a href="classTileLayer.html#ad538dc72294ebe5b4fd0a25109d1b119">TileLayer::m_mapWidth</a></div><div class="ttdeci">int m_mapWidth</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00029">TileLayer.h:29</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_adb96031096770029f830606b493742f7"><div class="ttname"><a href="classTileLayer.html#adb96031096770029f830606b493742f7">TileLayer::~TileLayer</a></div><div class="ttdeci">virtual ~TileLayer()</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00013">TileLayer.h:13</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_ae8e4975a29ad513501923854ce2b33a2"><div class="ttname"><a href="classTileLayer.html#ae8e4975a29ad513501923854ce2b33a2">TileLayer::m_position</a></div><div class="ttdeci">Vector2D m_position</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8h_source.html#l00032">TileLayer.h:32</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_af32fb583946d920c19b76e1381283ebf"><div class="ttname"><a href="classTileLayer.html#af32fb583946d920c19b76e1381283ebf">TileLayer::render</a></div><div class="ttdeci">virtual void render()</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8cpp_source.html#l00020">TileLayer.cpp:20</a></div></div>
+<div class="ttc" id="aclassTileLayer_html_afc5c61c51ad8e14078036c347df718fe"><div class="ttname"><a href="classTileLayer.html#afc5c61c51ad8e14078036c347df718fe">TileLayer::update</a></div><div class="ttdeci">virtual void update(Level *pLevel)</div><div class="ttdef"><b>Definition</b> <a href="TileLayer_8cpp_source.html#l00012">TileLayer.cpp:12</a></div></div>
+<div class="ttc" id="aclassVector2D_html"><div class="ttname"><a href="classVector2D.html">Vector2D</a></div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00006">Vector2D.h:7</a></div></div>
+<div class="ttc" id="astructTileset_html"><div class="ttname"><a href="structTileset.html">Tileset</a></div><div class="ttdef"><b>Definition</b> <a href="Level_8h_source.html#l00011">Level.h:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

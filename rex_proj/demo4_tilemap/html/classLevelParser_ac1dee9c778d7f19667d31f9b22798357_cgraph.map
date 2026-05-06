@@ -1,0 +1,9 @@
+<map id="LevelParser::parseObjectProperties" name="LevelParser::parseObjectProperties">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,188,87"/>
+<area shape="rect" id="Node000002" href="$LevelParser_8cpp.html#a991ce8f866ee913ac8c9b788fc738e10" title=" " alt="" coords="247,5,364,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,45,237,31,238,36,182,50"/>
+<area shape="rect" id="Node000003" href="$LevelParser_8cpp.html#a26628cf7c2effe2f2267b73ffe0f4690" title=" " alt="" coords="236,55,375,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,65,222,65,222,70,188,70"/>
+<area shape="rect" id="Node000004" href="$LevelParser_8cpp.html#add60c460962bf36409cb2266cdb7bd80" title=" " alt="" coords="238,104,373,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,85,238,98,237,103,181,90"/>
+</map>

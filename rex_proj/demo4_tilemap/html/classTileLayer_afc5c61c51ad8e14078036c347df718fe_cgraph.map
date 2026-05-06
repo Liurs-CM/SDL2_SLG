@@ -1,0 +1,9 @@
+<map id="TileLayer::update" name="TileLayer::update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000002" href="$classCamera.html#aec9074b278b84e784cd493ded9e46910" title=" " alt="" coords="188,5,343,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,32,174,27,175,33,141,37"/>
+<area shape="rect" id="Node000003" href="$classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89" title=" " alt="" coords="197,55,333,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,49,184,55,183,60,140,54"/>
+<area shape="rect" id="Node000004" href="$classCamera.html#a01f94c3543f56ede7af49dc778f19331" title=" " alt="" coords="391,55,523,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="334,65,377,65,377,70,334,70"/>
+</map>

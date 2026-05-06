@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/TextureManager.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TextureManager.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="TextureManager_8h_source.html">TextureManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="RenderContext_8h_source.html">RenderContext.h</a>&quot;</code><br />
+<code>#include &quot;SDL_image.h&quot;</code><br />
+<code>#include &quot;SDL_ttf.h&quot;</code><br />
+<code>#include &lt;SDL2_gfxPrimitives.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TextureManager.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="TextureManager_8cpp__incl.png" border="0" usemap="#asrc_2TextureManager_8cpp" alt=""/></div>
+<map name="asrc_2TextureManager_8cpp" id="asrc_2TextureManager_8cpp">
+<area shape="rect" title=" " alt="" coords="733,5,909,31"/>
+<area shape="rect" href="TextureManager_8h.html" title=" " alt="" coords="365,79,504,104"/>
+<area shape="poly" title=" " alt="" coords="760,33,511,79,510,74,759,28"/>
+<area shape="rect" title=" " alt="" coords="652,225,732,251"/>
+<area shape="poly" title=" " alt="" coords="807,33,782,54,758,80,738,114,722,150,701,213,696,211,717,148,733,112,754,77,778,50,803,29"/>
+<area shape="rect" href="RenderContext_8h.html" title=" " alt="" coords="563,79,693,104"/>
+<area shape="poly" title=" " alt="" coords="791,33,673,76,671,71,789,28"/>
+<area shape="rect" title=" " alt="" coords="768,79,875,104"/>
+<area shape="poly" title=" " alt="" coords="824,31,824,65,819,65,819,31"/>
+<area shape="rect" title=" " alt="" coords="899,79,979,104"/>
+<area shape="poly" title=" " alt="" coords="842,28,909,69,906,74,839,33"/>
+<area shape="rect" title=" " alt="" coords="1003,79,1165,104"/>
+<area shape="poly" title=" " alt="" coords="864,28,1029,72,1027,78,863,33"/>
+<area shape="rect" title=" " alt="" coords="1189,79,1251,104"/>
+<area shape="poly" title=" " alt="" coords="903,28,1028,48,1175,76,1174,81,1027,53,903,33"/>
+<area shape="rect" href="Vector2D_8h.html" title=" " alt="" coords="517,152,611,177"/>
+<area shape="poly" title=" " alt="" coords="457,102,532,143,529,147,454,106"/>
+<area shape="rect" title=" " alt="" coords="487,225,550,251"/>
+<area shape="poly" title=" " alt="" coords="444,103,507,212,503,215,439,106"/>
+<area shape="rect" href="GameLib_8h.html" title=" " alt="" coords="83,152,175,177"/>
+<area shape="poly" title=" " alt="" coords="386,107,190,152,188,147,385,101"/>
+<area shape="rect" title=" " alt="" coords="635,152,693,177"/>
+<area shape="poly" title=" " alt="" coords="472,101,622,148,621,153,471,107"/>
+<area shape="rect" title=" " alt="" coords="200,152,251,177"/>
+<area shape="poly" title=" " alt="" coords="402,107,265,153,263,148,400,101"/>
+<area shape="rect" title=" " alt="" coords="275,152,333,177"/>
+<area shape="poly" title=" " alt="" coords="415,106,338,148,336,143,412,102"/>
+<area shape="rect" title=" " alt="" coords="357,152,443,177"/>
+<area shape="poly" title=" " alt="" coords="431,106,414,141,409,138,427,103"/>
+<area shape="poly" title=" " alt="" coords="559,179,536,215,531,212,554,176"/>
+<area shape="poly" title=" " alt="" coords="586,175,660,216,658,221,583,180"/>
+<area shape="rect" title=" " alt="" coords="5,225,72,251"/>
+<area shape="poly" title=" " alt="" coords="116,179,66,219,63,214,113,175"/>
+<area shape="rect" title=" " alt="" coords="97,225,162,251"/>
+<area shape="poly" title=" " alt="" coords="132,178,132,212,127,212,127,178"/>
+<area shape="rect" title=" " alt="" coords="186,225,273,251"/>
+<area shape="poly" title=" " alt="" coords="147,175,203,215,200,219,144,180"/>
+<area shape="poly" title=" " alt="" coords="636,103,654,138,650,141,632,106"/>
+</map>
+</div>
+</div>
+<p><a href="TextureManager_8cpp_source.html">浏览源代码.</a></p>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

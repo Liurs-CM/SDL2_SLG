@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: SDLGameObject类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classSDLGameObject-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">SDLGameObject类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a>&gt;</code></p>
+<div class="dynheader">
+类 SDLGameObject 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDLGameObject__inherit__graph.png" border="0" usemap="#aSDLGameObject_inherit__map" alt="Inheritance graph"/></div>
+<map name="aSDLGameObject_inherit__map" id="aSDLGameObject_inherit__map">
+<area shape="rect" title=" " alt="" coords="171,79,299,104"/>
+<area shape="rect" href="classEnemy.html" title=" " alt="" coords="41,152,107,177"/>
+<area shape="poly" title=" " alt="" coords="198,112,101,154,99,149,196,107"/>
+<area shape="rect" href="classMenuButton.html" title=" " alt="" coords="131,152,233,177"/>
+<area shape="poly" title=" " alt="" coords="221,117,193,153,189,150,216,113"/>
+<area shape="rect" href="classPlayer.html" title=" " alt="" coords="257,152,320,177"/>
+<area shape="poly" title=" " alt="" coords="254,113,282,150,278,153,250,117"/>
+<area shape="rect" href="classScrollingBackground.html" title=" " alt="" coords="345,152,499,177"/>
+<area shape="poly" title=" " alt="" coords="279,106,392,149,391,154,277,111"/>
+<area shape="rect" href="classGameObject.html" title=" " alt="" coords="184,5,287,31"/>
+<area shape="poly" title=" " alt="" coords="238,44,238,79,233,79,233,44"/>
+<area shape="rect" href="classCat.html" title=" " alt="" coords="5,225,49,251"/>
+<area shape="poly" title=" " alt="" coords="61,190,37,227,33,224,57,187"/>
+<area shape="rect" href="classLevel1Boss.html" title=" " alt="" coords="74,225,170,251"/>
+<area shape="poly" title=" " alt="" coords="92,187,116,224,112,227,87,190"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+SDLGameObject 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDLGameObject__coll__graph.png" border="0" usemap="#aSDLGameObject_coll__map" alt="Collaboration graph"/></div>
+<map name="aSDLGameObject_coll__map" id="aSDLGameObject_coll__map">
+<area shape="rect" title=" " alt="" coords="109,137,237,163"/>
+<area shape="rect" href="classGameObject.html" title=" " alt="" coords="5,5,108,31"/>
+<area shape="poly" title=" " alt="" coords="78,39,164,135,160,139,74,43"/>
+<area shape="rect" href="classVector2D.html" title=" " alt="" coords="132,5,213,31"/>
+<area shape="poly" title=" " alt="" coords="175,44,175,137,170,137,170,44"/>
+<area shape="rect" href="classAnimatedGraphic.html" title=" " alt="" coords="253,5,388,31"/>
+<area shape="poly" title=" " alt="" coords="322,45,314,81,305,99,293,115,267,133,238,144,236,139,265,128,289,111,301,97,309,79,317,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0211a693afa22b3fe93981f99abbe4fa" id="r_a0211a693afa22b3fe93981f99abbe4fa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a0211a693afa22b3fe93981f99abbe4fa">~SDLGameObject</a> ()</td></tr>
+<tr class="separator:a0211a693afa22b3fe93981f99abbe4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade865a0eefca735ddafc3d319c566c9f" id="r_ade865a0eefca735ddafc3d319c566c9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">load</a> (std::unique_ptr&lt; <a class="el" href="classLoaderParams.html">LoaderParams</a> &gt; const &amp;pParams)</td></tr>
+<tr class="separator:ade865a0eefca735ddafc3d319c566c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab703854bfb62a291ad23dc1f01d5190d" id="r_ab703854bfb62a291ad23dc1f01d5190d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#ab703854bfb62a291ad23dc1f01d5190d">draw</a> ()</td></tr>
+<tr class="separator:ab703854bfb62a291ad23dc1f01d5190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9322e790f0515760f36b62ce35d4a090" id="r_a9322e790f0515760f36b62ce35d4a090"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090">update</a> ()</td></tr>
+<tr class="separator:a9322e790f0515760f36b62ce35d4a090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2fbd4a073536f2ec2b27521e69e8c4" id="r_aea2fbd4a073536f2ec2b27521e69e8c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#aea2fbd4a073536f2ec2b27521e69e8c4">clean</a> ()</td></tr>
+<tr class="separator:aea2fbd4a073536f2ec2b27521e69e8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc827ddc71df9a0302430a209dca80c" id="r_a5bc827ddc71df9a0302430a209dca80c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a5bc827ddc71df9a0302430a209dca80c">type</a> ()</td></tr>
+<tr class="separator:a5bc827ddc71df9a0302430a209dca80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337c731857f6923fdfd824e55683aa7c" id="r_a337c731857f6923fdfd824e55683aa7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a337c731857f6923fdfd824e55683aa7c">getPosition</a> ()</td></tr>
+<tr class="separator:a337c731857f6923fdfd824e55683aa7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b461de1c3b8c28374e0fa16e17e924f" id="r_a2b461de1c3b8c28374e0fa16e17e924f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a2b461de1c3b8c28374e0fa16e17e924f">getVelocity</a> ()</td></tr>
+<tr class="separator:a2b461de1c3b8c28374e0fa16e17e924f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053e11805c9c1194dc269a695bcb168a" id="r_a053e11805c9c1194dc269a695bcb168a"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a053e11805c9c1194dc269a695bcb168a">getWidth</a> ()</td></tr>
+<tr class="separator:a053e11805c9c1194dc269a695bcb168a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac76406d11a56335f275d9d8efff82cd" id="r_aac76406d11a56335f275d9d8efff82cd"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#aac76406d11a56335f275d9d8efff82cd">getHeight</a> ()</td></tr>
+<tr class="separator:aac76406d11a56335f275d9d8efff82cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb0c9209a10e396b7f6a8114755d23e" id="r_addb0c9209a10e396b7f6a8114755d23e"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classSDLGameObject.html">SDLGameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#addb0c9209a10e396b7f6a8114755d23e">clone</a> ()</td></tr>
+<tr class="separator:addb0c9209a10e396b7f6a8114755d23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classGameObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGameObject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classGameObject.html">GameObject</a></td></tr>
+<tr class="memitem:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_classGameObject" id="r_a67ae2fa6e7916c799700cd659975d8ea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a67ae2fa6e7916c799700cd659975d8ea">~GameObject</a> ()=default</td></tr>
+<tr class="separator:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_classGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a19f3c6074f181947371b58880528b770" id="r_a19f3c6074f181947371b58880528b770"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a19f3c6074f181947371b58880528b770">SDLGameObject</a> ()</td></tr>
+<tr class="separator:a19f3c6074f181947371b58880528b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classGameObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGameObject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classGameObject.html">GameObject</a></td></tr>
+<tr class="memitem:a0348e3ee2e83d56eafca7a3547f432c4 inherit pro_methods_classGameObject" id="r_a0348e3ee2e83d56eafca7a3547f432c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#a0348e3ee2e83d56eafca7a3547f432c4">GameObject</a> ()</td></tr>
+<tr class="separator:a0348e3ee2e83d56eafca7a3547f432c4 inherit pro_methods_classGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a92bb16fe7c646857fdc02093d58a232a" id="r_a92bb16fe7c646857fdc02093d58a232a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a></td></tr>
+<tr class="separator:a92bb16fe7c646857fdc02093d58a232a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7983783a01d56ee12985e1a0d708f0e0" id="r_a7983783a01d56ee12985e1a0d708f0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a7983783a01d56ee12985e1a0d708f0e0">m_velocity</a></td></tr>
+<tr class="separator:a7983783a01d56ee12985e1a0d708f0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c0967676d9bc80367eefee417d47f4" id="r_a62c0967676d9bc80367eefee417d47f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a62c0967676d9bc80367eefee417d47f4">m_acceleration</a></td></tr>
+<tr class="separator:a62c0967676d9bc80367eefee417d47f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24370c74982f8b6bfa756d0054130a84" id="r_a24370c74982f8b6bfa756d0054130a84"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a></td></tr>
+<tr class="separator:a24370c74982f8b6bfa756d0054130a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504c3090fb1a15dcfbe5f57cea6b0143" id="r_a504c3090fb1a15dcfbe5f57cea6b0143"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a></td></tr>
+<tr class="separator:a504c3090fb1a15dcfbe5f57cea6b0143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d1f9c1db3958e1e5e0185bd30ffc3c" id="r_a86d1f9c1db3958e1e5e0185bd30ffc3c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a86d1f9c1db3958e1e5e0185bd30ffc3c">m_angle</a></td></tr>
+<tr class="separator:a86d1f9c1db3958e1e5e0185bd30ffc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2208f9ebf1e5bcae92c06e910cef62b7" id="r_a2208f9ebf1e5bcae92c06e910cef62b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a2208f9ebf1e5bcae92c06e910cef62b7">m_alpha</a></td></tr>
+<tr class="separator:a2208f9ebf1e5bcae92c06e910cef62b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5400fc2ad61046e18b416387e5552cda" id="r_a5400fc2ad61046e18b416387e5552cda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">m_positionScreen</a></td></tr>
+<tr class="separator:a5400fc2ad61046e18b416387e5552cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a901cd008cb8903fb72f27087c3070" id="r_af1a901cd008cb8903fb72f27087c3070"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a></td></tr>
+<tr class="separator:af1a901cd008cb8903fb72f27087c3070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d3c6b48ee55cd7293ac09a7adffbf0" id="r_aa5d3c6b48ee55cd7293ac09a7adffbf0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a></td></tr>
+<tr class="separator:aa5d3c6b48ee55cd7293ac09a7adffbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e2fd74464fc97d6bbb82af4567820c" id="r_aa5e2fd74464fc97d6bbb82af4567820c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#aa5e2fd74464fc97d6bbb82af4567820c">m_numFrames</a></td></tr>
+<tr class="separator:aa5e2fd74464fc97d6bbb82af4567820c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c90350fa4231d0b1345f82ff50a23f" id="r_a64c90350fa4231d0b1345f82ff50a23f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a64c90350fa4231d0b1345f82ff50a23f">m_animSpeed</a></td></tr>
+<tr class="separator:a64c90350fa4231d0b1345f82ff50a23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ede378f4edc6c5a4f000d6dbd11fba" id="r_a97ede378f4edc6c5a4f000d6dbd11fba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a97ede378f4edc6c5a4f000d6dbd11fba">m_bPlayedDeathSound</a></td></tr>
+<tr class="separator:a97ede378f4edc6c5a4f000d6dbd11fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e37cf3359295267db04c901664c1e1" id="r_a36e37cf3359295267db04c901664c1e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnimatedGraphic.html">AnimatedGraphic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDLGameObject.html#a36e37cf3359295267db04c901664c1e1">m_currentAnim</a></td></tr>
+<tr class="separator:a36e37cf3359295267db04c901664c1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classGameObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classGameObject')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classGameObject.html">GameObject</a></td></tr>
+<tr class="memitem:aa076bd4409a384038567f2d0c8548477 inherit pro_attribs_classGameObject" id="r_aa076bd4409a384038567f2d0c8548477"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a></td></tr>
+<tr class="separator:aa076bd4409a384038567f2d0c8548477 inherit pro_attribs_classGameObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00010">10</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a0211a693afa22b3fe93981f99abbe4fa" name="a0211a693afa22b3fe93981f99abbe4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0211a693afa22b3fe93981f99abbe4fa">&#9670;&#160;</a></span>~SDLGameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SDLGameObject::~SDLGameObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a19f3c6074f181947371b58880528b770" name="a19f3c6074f181947371b58880528b770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f3c6074f181947371b58880528b770">&#9670;&#160;</a></span>SDLGameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDLGameObject::SDLGameObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8cpp_source.html">SDLGameObject.cpp</a> 第 <a class="el" href="SDLGameObject_8cpp_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aea2fbd4a073536f2ec2b27521e69e8c4" name="aea2fbd4a073536f2ec2b27521e69e8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2fbd4a073536f2ec2b27521e69e8c4">&#9670;&#160;</a></span>clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SDLGameObject::clean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classGameObject.html#a8e8c897a0be1966cfb6488ce97206d60">GameObject</a>.</p>
+
+<p>被 <a class="el" href="classMenuButton.html#a970fc154ec16a7c0c9ad7f3626199bba">MenuButton</a>, <a class="el" href="classPlayer.html#a883c81df5be3b931ecfa6c8de08acfbd">Player</a> , 以及 <a class="el" href="classScrollingBackground.html#af02af0dc1c7fb6cb9714cdfa07584960">ScrollingBackground</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00017">17</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="ScrollingBackground_8cpp_source.html#l00063">ScrollingBackground::clean()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4_icgraph.png" border="0" usemap="#aclassSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4_icgraph" alt=""/></div>
+<map name="aclassSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4_icgraph" id="aclassSDLGameObject_aea2fbd4a073536f2ec2b27521e69e8c4_icgraph">
+<area shape="rect" title=" " alt="" coords="208,13,379,38"/>
+<area shape="rect" href="classScrollingBackground.html#af02af0dc1c7fb6cb9714cdfa07584960" title=" " alt="" coords="5,5,160,45"/>
+<area shape="poly" title=" " alt="" coords="195,28,160,28,160,23,195,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addb0c9209a10e396b7f6a8114755d23e" name="addb0c9209a10e396b7f6a8114755d23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb0c9209a10e396b7f6a8114755d23e">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classSDLGameObject.html">SDLGameObject</a> &gt; SDLGameObject::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab703854bfb62a291ad23dc1f01d5190d" name="ab703854bfb62a291ad23dc1f01d5190d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab703854bfb62a291ad23dc1f01d5190d">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SDLGameObject::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classGameObject.html#a59f11cba9071a39ba2f486a8364ed536">GameObject</a>.</p>
+
+<p>被 <a class="el" href="classMenuButton.html#a3e854949b52808f9d6092e149a116f5c">MenuButton</a>, <a class="el" href="classPlayer.html#ac18c9d30d2997765321c62030a4b20b7">Player</a> , 以及 <a class="el" href="classScrollingBackground.html#a676bef16122c81feced1c0b0eaff58e0">ScrollingBackground</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8cpp_source.html">SDLGameObject.cpp</a> 第 <a class="el" href="SDLGameObject_8cpp_source.html#l00028">28</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TextureManager_8cpp_source.html#l00055">TextureManager::drawFrame()</a>, <a class="el" href="Vector2D_8h_source.html#l00011">Vector2D::getX()</a>, <a class="el" href="TextureManager_8h_source.html#l00028">TextureManager::Instance()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00030">m_currentFrame</a>, <a class="el" href="SDLGameObject_8h_source.html#l00029">m_currentRow</a>, <a class="el" href="SDLGameObject_8h_source.html#l00035">m_height</a>, <a class="el" href="SDLGameObject_8h_source.html#l00033">m_positionScreen</a>, <a class="el" href="GameObject_8h_source.html#l00019">GameObject::m_textureID</a>, <a class="el" href="SDLGameObject_8h_source.html#l00027">m_velocity</a> , 以及 <a class="el" href="SDLGameObject_8h_source.html#l00034">m_width</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d_cgraph.png" border="0" usemap="#aclassSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d_cgraph" alt=""/></div>
+<map name="aclassSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d_cgraph" id="aclassSDLGameObject_ab703854bfb62a291ad23dc1f01d5190d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,173,129"/>
+<area shape="rect" href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85" title=" " alt="" coords="221,53,429,79"/>
+<area shape="poly" title=" " alt="" coords="149,101,252,79,253,84,150,106"/>
+<area shape="rect" href="classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="538,104,657,129"/>
+<area shape="poly" title=" " alt="" coords="174,114,524,114,524,119,174,119"/>
+<area shape="rect" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6" title=" " alt="" coords="230,155,421,180"/>
+<area shape="poly" title=" " alt="" coords="150,127,253,149,252,154,149,132"/>
+<area shape="rect" href="classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="523,5,671,31"/>
+<area shape="poly" title=" " alt="" coords="397,51,511,30,512,36,398,56"/>
+<area shape="poly" title=" " alt="" coords="395,76,525,101,524,106,394,81"/>
+<area shape="rect" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="538,55,657,80"/>
+<area shape="poly" title=" " alt="" coords="430,64,525,64,525,70,430,69"/>
+<area shape="rect" href="classTextureManager.html#ad76abb178b37cedf4514eb0154349935" title=" " alt="" coords="477,155,717,180"/>
+<area shape="poly" title=" " alt="" coords="421,165,463,165,463,170,421,170"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aac76406d11a56335f275d9d8efff82cd" name="aac76406d11a56335f275d9d8efff82cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac76406d11a56335f275d9d8efff82cd">&#9670;&#160;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint16_t SDLGameObject::getHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00022">22</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="SDLGameObject_8h_source.html#l00035">m_height</a>.</p>
+
+</div>
+</div>
+<a id="a337c731857f6923fdfd824e55683aa7c" name="a337c731857f6923fdfd824e55683aa7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337c731857f6923fdfd824e55683aa7c">&#9670;&#160;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> &amp; SDLGameObject::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00019">19</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="SDLGameObject_8h_source.html#l00026">m_position</a>.</p>
+
+</div>
+</div>
+<a id="a2b461de1c3b8c28374e0fa16e17e924f" name="a2b461de1c3b8c28374e0fa16e17e924f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b461de1c3b8c28374e0fa16e17e924f">&#9670;&#160;</a></span>getVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> &amp; SDLGameObject::getVelocity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00020">20</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="SDLGameObject_8h_source.html#l00027">m_velocity</a>.</p>
+
+</div>
+</div>
+<a id="a053e11805c9c1194dc269a695bcb168a" name="a053e11805c9c1194dc269a695bcb168a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053e11805c9c1194dc269a695bcb168a">&#9670;&#160;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint16_t SDLGameObject::getWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00021">21</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="SDLGameObject_8h_source.html#l00034">m_width</a>.</p>
+
+</div>
+</div>
+<a id="ade865a0eefca735ddafc3d319c566c9f" name="ade865a0eefca735ddafc3d319c566c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade865a0eefca735ddafc3d319c566c9f">&#9670;&#160;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SDLGameObject::load </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classLoaderParams.html">LoaderParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>pParams</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classGameObject.html#a729edce3955766d5c8dfcda6f310392d">GameObject</a>.</p>
+
+<p>被 <a class="el" href="classCat.html#a525022b88bf7f9e37b710f645f9df966">Cat</a>, <a class="el" href="classLevel1Boss.html#a38b2a5f8a29b44ba1643e4b8f42ced86">Level1Boss</a>, <a class="el" href="classMenuButton.html#a250e6a4e6e9c4063b741cbfcb3c5f7b5">MenuButton</a>, <a class="el" href="classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff">Player</a> , 以及 <a class="el" href="classScrollingBackground.html#ac0752b405276cf590ce3a6af63507988">ScrollingBackground</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8cpp_source.html">SDLGameObject.cpp</a> 第 <a class="el" href="SDLGameObject_8cpp_source.html#l00018">18</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="SDLGameObject_8h_source.html#l00037">m_animSpeed</a>, <a class="el" href="SDLGameObject_8h_source.html#l00035">m_height</a>, <a class="el" href="SDLGameObject_8h_source.html#l00036">m_numFrames</a>, <a class="el" href="SDLGameObject_8h_source.html#l00026">m_position</a>, <a class="el" href="GameObject_8h_source.html#l00019">GameObject::m_textureID</a> , 以及 <a class="el" href="SDLGameObject_8h_source.html#l00034">m_width</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Cat_8h_source.html#l00010">Cat::load()</a>, <a class="el" href="Level1Boss_8h_source.html#l00014">Level1Boss::load()</a>, <a class="el" href="MenuButton_8cpp_source.html#l00007">MenuButton::load()</a>, <a class="el" href="Player_8cpp_source.html#l00013">Player::load()</a> , 以及 <a class="el" href="ScrollingBackground_8cpp_source.html#l00012">ScrollingBackground::load()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f_icgraph.png" border="0" usemap="#aclassSDLGameObject_ade865a0eefca735ddafc3d319c566c9f_icgraph" alt=""/></div>
+<map name="aclassSDLGameObject_ade865a0eefca735ddafc3d319c566c9f_icgraph" id="aclassSDLGameObject_ade865a0eefca735ddafc3d319c566c9f_icgraph">
+<area shape="rect" title=" " alt="" coords="208,104,372,129"/>
+<area shape="rect" href="classCat.html#a525022b88bf7f9e37b710f645f9df966" title=" " alt="" coords="43,5,123,31"/>
+<area shape="poly" title=" " alt="" coords="257,99,211,71,159,44,122,31,124,26,161,40,214,67,260,94"/>
+<area shape="rect" href="classLevel1Boss.html#a38b2a5f8a29b44ba1643e4b8f42ced86" title=" " alt="" coords="17,55,149,80"/>
+<area shape="poly" title=" " alt="" coords="222,103,136,83,138,77,223,98"/>
+<area shape="rect" href="classMenuButton.html#a250e6a4e6e9c4063b741cbfcb3c5f7b5" title=" " alt="" coords="14,104,151,129"/>
+<area shape="poly" title=" " alt="" coords="194,119,152,119,152,114,194,114"/>
+<area shape="rect" href="classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff" title=" " alt="" coords="33,153,132,179"/>
+<area shape="poly" title=" " alt="" coords="223,135,133,157,132,152,222,130"/>
+<area shape="rect" href="classScrollingBackground.html#ac0752b405276cf590ce3a6af63507988" title=" " alt="" coords="5,203,160,243"/>
+<area shape="poly" title=" " alt="" coords="257,139,161,192,133,206,131,201,159,188,255,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5bc827ddc71df9a0302430a209dca80c" name="a5bc827ddc71df9a0302430a209dca80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc827ddc71df9a0302430a209dca80c">&#9670;&#160;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string SDLGameObject::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classGameObject.html#ab0f7dd9a72a3f0ae4b7a406b04a3c71f">GameObject</a>.</p>
+
+<p>被 <a class="el" href="classEnemy.html#a2be19e5e08e20bc14e3ed7a0c68e7dd2">Enemy</a> , 以及 <a class="el" href="classPlayer.html#a7479192fb44f2e8ec18021a4cad92bd6">Player</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9322e790f0515760f36b62ce35d4a090" name="a9322e790f0515760f36b62ce35d4a090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9322e790f0515760f36b62ce35d4a090">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SDLGameObject::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classGameObject.html#ae83128d0e0efef691417779605ee037c">GameObject</a>.</p>
+
+<p>被 <a class="el" href="classCat.html#aaf85e2d49f4d1ed3c967c96df79f6ab2">Cat</a>, <a class="el" href="classLevel1Boss.html#a303ee6c7dbcbef479d0bd334a5a193b0">Level1Boss</a>, <a class="el" href="classMenuButton.html#a86b038172871555da45606e20fa6bad7">MenuButton</a>, <a class="el" href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4">Player</a> , 以及 <a class="el" href="classScrollingBackground.html#a8ebbb33e58cc5aef089a430188b18959">ScrollingBackground</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8cpp_source.html">SDLGameObject.cpp</a> 第 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">37</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="AnimatedGraphic_8h_source.html#l00013">AnimatedGraphic::getCurrentFrame()</a>, <a class="el" href="Camera_8h_source.html#l00010">Camera::getPosition()</a>, <a class="el" href="Camera_8h_source.html#l00013">Camera::Instance()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00028">m_acceleration</a>, <a class="el" href="SDLGameObject_8h_source.html#l00037">m_animSpeed</a>, <a class="el" href="SDLGameObject_8h_source.html#l00039">m_currentAnim</a>, <a class="el" href="SDLGameObject_8h_source.html#l00030">m_currentFrame</a>, <a class="el" href="SDLGameObject_8h_source.html#l00036">m_numFrames</a>, <a class="el" href="SDLGameObject_8h_source.html#l00026">m_position</a>, <a class="el" href="SDLGameObject_8h_source.html#l00033">m_positionScreen</a> , 以及 <a class="el" href="SDLGameObject_8h_source.html#l00027">m_velocity</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Cat_8h_source.html#l00017">Cat::update()</a> , 以及 <a class="el" href="Level1Boss_8cpp_source.html#l00004">Level1Boss::update()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDLGameObject_a9322e790f0515760f36b62ce35d4a090_cgraph.png" border="0" usemap="#aclassSDLGameObject_a9322e790f0515760f36b62ce35d4a090_cgraph" alt=""/></div>
+<map name="aclassSDLGameObject_a9322e790f0515760f36b62ce35d4a090_cgraph" id="aclassSDLGameObject_a9322e790f0515760f36b62ce35d4a090_cgraph">
+<area shape="rect" title=" " alt="" coords="5,70,187,95"/>
+<area shape="rect" href="classAnimatedGraphic.html#ad1bf1e18c6656a75668d833c178ea3c8" title=" " alt="" coords="235,5,447,45"/>
+<area shape="poly" title=" " alt="" coords="150,67,241,46,242,51,152,73"/>
+<area shape="rect" href="classCamera.html#aec9074b278b84e784cd493ded9e46910" title=" " alt="" coords="263,70,418,95"/>
+<area shape="poly" title=" " alt="" coords="187,80,249,80,249,85,187,85"/>
+<area shape="rect" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89" title=" " alt="" coords="273,119,409,145"/>
+<area shape="poly" title=" " alt="" coords="160,93,264,114,263,119,159,98"/>
+<area shape="rect" href="classCamera.html#a01f94c3543f56ede7af49dc778f19331" title=" " alt="" coords="495,119,627,145"/>
+<area shape="poly" title=" " alt="" coords="409,129,481,129,481,135,409,135"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDLGameObject_a9322e790f0515760f36b62ce35d4a090_icgraph.png" border="0" usemap="#aclassSDLGameObject_a9322e790f0515760f36b62ce35d4a090_icgraph" alt=""/></div>
+<map name="aclassSDLGameObject_a9322e790f0515760f36b62ce35d4a090_icgraph" id="aclassSDLGameObject_a9322e790f0515760f36b62ce35d4a090_icgraph">
+<area shape="rect" title=" " alt="" coords="203,31,384,56"/>
+<area shape="rect" href="classCat.html#aaf85e2d49f4d1ed3c967c96df79f6ab2" title=" " alt="" coords="31,5,129,31"/>
+<area shape="poly" title=" " alt="" coords="189,34,129,26,129,21,189,28"/>
+<area shape="rect" href="classLevel1Boss.html#a303ee6c7dbcbef479d0bd334a5a193b0" title=" " alt="" coords="5,55,155,80"/>
+<area shape="poly" title=" " alt="" coords="189,58,155,62,155,56,189,52"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a62c0967676d9bc80367eefee417d47f4" name="a62c0967676d9bc80367eefee417d47f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c0967676d9bc80367eefee417d47f4">&#9670;&#160;</a></span>m_acceleration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> SDLGameObject::m_acceleration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00028">28</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="a2208f9ebf1e5bcae92c06e910cef62b7" name="a2208f9ebf1e5bcae92c06e910cef62b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2208f9ebf1e5bcae92c06e910cef62b7">&#9670;&#160;</a></span>m_alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SDLGameObject::m_alpha</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a86d1f9c1db3958e1e5e0185bd30ffc3c" name="a86d1f9c1db3958e1e5e0185bd30ffc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d1f9c1db3958e1e5e0185bd30ffc3c">&#9670;&#160;</a></span>m_angle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SDLGameObject::m_angle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a64c90350fa4231d0b1345f82ff50a23f" name="a64c90350fa4231d0b1345f82ff50a23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c90350fa4231d0b1345f82ff50a23f">&#9670;&#160;</a></span>m_animSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SDLGameObject::m_animSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00037">37</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00013">Player::load()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00018">load()</a> , 以及 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="a97ede378f4edc6c5a4f000d6dbd11fba" name="a97ede378f4edc6c5a4f000d6dbd11fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ede378f4edc6c5a4f000d6dbd11fba">&#9670;&#160;</a></span>m_bPlayedDeathSound</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SDLGameObject::m_bPlayedDeathSound</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a36e37cf3359295267db04c901664c1e1" name="a36e37cf3359295267db04c901664c1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e37cf3359295267db04c901664c1e1">&#9670;&#160;</a></span>m_currentAnim</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAnimatedGraphic.html">AnimatedGraphic</a> SDLGameObject::m_currentAnim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00039">39</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="a504c3090fb1a15dcfbe5f57cea6b0143" name="a504c3090fb1a15dcfbe5f57cea6b0143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a504c3090fb1a15dcfbe5f57cea6b0143">&#9670;&#160;</a></span>m_currentFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SDLGameObject::m_currentFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00030">30</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuButton_8cpp_source.html#l00014">MenuButton::draw()</a>, <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00028">draw()</a>, <a class="el" href="Player_8cpp_source.html#l00102">Player::handleAnimation()</a>, <a class="el" href="MenuButton_8cpp_source.html#l00007">MenuButton::load()</a>, <a class="el" href="MenuButton_8cpp_source.html#l00020">MenuButton::update()</a> , 以及 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="a24370c74982f8b6bfa756d0054130a84" name="a24370c74982f8b6bfa756d0054130a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24370c74982f8b6bfa756d0054130a84">&#9670;&#160;</a></span>m_currentRow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SDLGameObject::m_currentRow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuButton_8cpp_source.html#l00014">MenuButton::draw()</a>, <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00028">draw()</a> , 以及 <a class="el" href="Player_8cpp_source.html#l00044">Player::handleInput()</a>.</p>
+
+</div>
+</div>
+<a id="aa5d3c6b48ee55cd7293ac09a7adffbf0" name="aa5d3c6b48ee55cd7293ac09a7adffbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d3c6b48ee55cd7293ac09a7adffbf0">&#9670;&#160;</a></span>m_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SDLGameObject::m_height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00035">35</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuButton_8cpp_source.html#l00014">MenuButton::draw()</a>, <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00028">draw()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00022">getHeight()</a>, <a class="el" href="ScrollingBackground_8cpp_source.html#l00012">ScrollingBackground::load()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00018">load()</a>, <a class="el" href="Level1Boss_8cpp_source.html#l00004">Level1Boss::update()</a>, <a class="el" href="MenuButton_8cpp_source.html#l00020">MenuButton::update()</a> , 以及 <a class="el" href="ScrollingBackground_8cpp_source.html#l00034">ScrollingBackground::update()</a>.</p>
+
+</div>
+</div>
+<a id="aa5e2fd74464fc97d6bbb82af4567820c" name="aa5e2fd74464fc97d6bbb82af4567820c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e2fd74464fc97d6bbb82af4567820c">&#9670;&#160;</a></span>m_numFrames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SDLGameObject::m_numFrames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00036">36</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00018">load()</a> , 以及 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="a92bb16fe7c646857fdc02093d58a232a" name="a92bb16fe7c646857fdc02093d58a232a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bb16fe7c646857fdc02093d58a232a">&#9670;&#160;</a></span>m_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> SDLGameObject::m_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00026">26</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuButton_8cpp_source.html#l00014">MenuButton::draw()</a>, <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00019">getPosition()</a>, <a class="el" href="Player_8cpp_source.html#l00044">Player::handleInput()</a>, <a class="el" href="Player_8cpp_source.html#l00013">Player::load()</a>, <a class="el" href="ScrollingBackground_8cpp_source.html#l00012">ScrollingBackground::load()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00018">load()</a>, <a class="el" href="Cat_8h_source.html#l00017">Cat::update()</a>, <a class="el" href="Level1Boss_8cpp_source.html#l00004">Level1Boss::update()</a>, <a class="el" href="MenuButton_8cpp_source.html#l00020">MenuButton::update()</a>, <a class="el" href="Player_8cpp_source.html#l00032">Player::update()</a>, <a class="el" href="ScrollingBackground_8cpp_source.html#l00034">ScrollingBackground::update()</a> , 以及 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="a5400fc2ad61046e18b416387e5552cda" name="a5400fc2ad61046e18b416387e5552cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5400fc2ad61046e18b416387e5552cda">&#9670;&#160;</a></span>m_positionScreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> SDLGameObject::m_positionScreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00033">33</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00028">draw()</a>, <a class="el" href="Player_8cpp_source.html#l00032">Player::update()</a> , 以及 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="a7983783a01d56ee12985e1a0d708f0e0" name="a7983783a01d56ee12985e1a0d708f0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7983783a01d56ee12985e1a0d708f0e0">&#9670;&#160;</a></span>m_velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> SDLGameObject::m_velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00027">27</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="SDLGameObject_8cpp_source.html#l00028">draw()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00020">getVelocity()</a>, <a class="el" href="Cat_8h_source.html#l00010">Cat::load()</a>, <a class="el" href="Level1Boss_8h_source.html#l00014">Level1Boss::load()</a>, <a class="el" href="Cat_8h_source.html#l00017">Cat::update()</a>, <a class="el" href="Level1Boss_8cpp_source.html#l00004">Level1Boss::update()</a> , 以及 <a class="el" href="SDLGameObject_8cpp_source.html#l00037">update()</a>.</p>
+
+</div>
+</div>
+<a id="af1a901cd008cb8903fb72f27087c3070" name="af1a901cd008cb8903fb72f27087c3070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a901cd008cb8903fb72f27087c3070">&#9670;&#160;</a></span>m_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SDLGameObject::m_width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a> 第 <a class="el" href="SDLGameObject_8h_source.html#l00034">34</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="MenuButton_8cpp_source.html#l00014">MenuButton::draw()</a>, <a class="el" href="Player_8cpp_source.html#l00020">Player::draw()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00028">draw()</a>, <a class="el" href="SDLGameObject_8h_source.html#l00021">getWidth()</a>, <a class="el" href="ScrollingBackground_8cpp_source.html#l00012">ScrollingBackground::load()</a>, <a class="el" href="SDLGameObject_8cpp_source.html#l00018">load()</a>, <a class="el" href="Cat_8h_source.html#l00017">Cat::update()</a>, <a class="el" href="Level1Boss_8cpp_source.html#l00004">Level1Boss::update()</a>, <a class="el" href="MenuButton_8cpp_source.html#l00020">MenuButton::update()</a> , 以及 <a class="el" href="ScrollingBackground_8cpp_source.html#l00034">ScrollingBackground::update()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>inc/<a class="el" href="SDLGameObject_8h_source.html">SDLGameObject.h</a></li>
+<li>src/<a class="el" href="SDLGameObject_8cpp_source.html">SDLGameObject.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

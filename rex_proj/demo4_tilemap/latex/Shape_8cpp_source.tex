@@ -1,0 +1,126 @@
+\doxysection{Shape.\+cpp}
+\hypertarget{Shape_8cpp_source}{}\label{Shape_8cpp_source}\index{src/Shape.cpp@{src/Shape.cpp}}
+\mbox{\hyperlink{Shape_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Shape_8h}{Shape.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameLib_8h}{GameLib.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <SDL2\_gfxPrimitives.h>}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00006}00006\ \mbox{\hyperlink{classShape}{Shape}}*\ \mbox{\hyperlink{classShape_a8f4bb17b2679e5b67f5453913107f731}{Shape::s\_pInstance}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00008}\mbox{\hyperlink{classShape_af3490b86dd15bc7889a627960adf7340}{00008}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classShape_af3490b86dd15bc7889a627960adf7340}{Shape::Shape\_genrate}}()}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00010}00010\ \ \ \ \ \textcolor{comment}{//\ Grid}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{comment}{//int\ gridW\ =\ GRID\_COLS\ *\ CELL\_SIZE;}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//int\ gridH\ =\ GRID\_ROWS\ *\ CELL\_SIZE;}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00013}00013\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_adf702159b5e237016bb677c9a1ca9cbf}{drawGrid}}(\mbox{\hyperlink{GameLib_8h_af0cee92dec0a54dad52eec38fd9a2466}{GRID\_X}},\ \mbox{\hyperlink{GameLib_8h_ad8c6cf1074fa26eb4554030f04ee57d1}{GRID\_Y}},\ \mbox{\hyperlink{GameLib_8h_a5ba0b105774bfdc09ce545d73dcdedd3}{GRID\_ROWS}},\ \mbox{\hyperlink{GameLib_8h_a881e2cda79b5951641b07f678f6ef929}{GRID\_COLS}},\ \mbox{\hyperlink{GameLib_8h_a7a4127f14f16563da90eb3c836bc404f}{CELL\_SIZE}},\ \mbox{\hyperlink{GameLib_8h_a2c546bb9d8660d44115f17f15d561fae}{COLOR\_DARK\_GRAY}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ Row\ 1:\ Pixels\ and\ Lines\ -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a25c66880a004153371df2dd0e7a6041b}{drawText}}(20,\ 15,\ \textcolor{stringliteral}{"{}Pixels"{}},\ \mbox{\hyperlink{GameLib_8h_a9b44987ffdc2af19b635206b94334b69}{COLOR\_WHITE}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00016}00016\ \ \ \ \ SDL\_SetRenderDrawColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{GameLib_8h_a29607ad112a1f5c2a29e6ffb1afd703d}{COLOR\_GET\_R}}(\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}}),\ \mbox{\hyperlink{GameLib_8h_a87604365f6b558befa36e9340cf44bbb}{COLOR\_GET\_G}}(\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}}),\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{GameLib_8h_a6a6c59d9980833421e357f6ab0a3197c}{COLOR\_GET\_B}}(\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}}),\ \mbox{\hyperlink{GameLib_8h_ad6c7d8a7b86d9f4bb87840350107ea46}{COLOR\_GET\_A}}(\mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}}));}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{comment}{//SDL\_SetRenderDrawColor(pRenderer,\ 0,0,0,255);}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00020}00020\ \ \ \ \ SDL\_Rect\ rect\ =\ \{420,\ 330,\ 80,\ 60\};}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00021}00021\ \ \ \ \ SDL\_RenderFillRect(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ \&rect);\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 50;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ px\ =\ 420\ +\ \mbox{\hyperlink{classGameLib_aea6d65a7fdd231c2d4718166f231a9d2}{GameLib::Random}}(0,\ 80);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ py\ =\ 330\ +\ \mbox{\hyperlink{classGameLib_aea6d65a7fdd231c2d4718166f231a9d2}{GameLib::Random}}(0,\ 60);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ Uint8\ r=\ \mbox{\hyperlink{classGameLib_aea6d65a7fdd231c2d4718166f231a9d2}{GameLib::Random}}(100,255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ Uint8\ g=\ \mbox{\hyperlink{classGameLib_aea6d65a7fdd231c2d4718166f231a9d2}{GameLib::Random}}(100,255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ Uint8\ b=\ \mbox{\hyperlink{classGameLib_aea6d65a7fdd231c2d4718166f231a9d2}{GameLib::Random}}(100,255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ SDL\_SetRenderDrawColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ r,\ g,\ b,\ 255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ SDL\_RenderDrawPoint(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ px,\ py);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00032}00032\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a25c66880a004153371df2dd0e7a6041b}{drawText}}(140,\ 315,\ \textcolor{stringliteral}{"{}Lines"{}},\ \mbox{\hyperlink{GameLib_8h_a9b44987ffdc2af19b635206b94334b69}{COLOR\_WHITE}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00033}00033\ \ \ \ \ lineColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 140,\ 335,\ 230,\ 335,\ \mbox{\hyperlink{GameLib_8h_ad86358bf19927183dd7b4ae215a29731}{COLOR\_RED}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00034}00034\ \ \ \ \ lineColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 140,\ 335,\ 230,\ 385,\ \mbox{\hyperlink{GameLib_8h_afc9149f5de51bd9ac4f5ebbfa153f018}{COLOR\_GREEN}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00035}00035\ \ \ \ \ lineColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 140,\ 335,\ 185,\ 385,\ \mbox{\hyperlink{GameLib_8h_a23c70d699a5a775bc2e1ebeb8603f630}{COLOR\_BLUE}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00036}00036\ \ \ \ \ lineColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 140,\ 360,\ 230,\ 360,\ \mbox{\hyperlink{GameLib_8h_a4534b577b74a58b0f4b7be027af664e0}{COLOR\_YELLOW}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00038}00038\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_ab8b6e096d0a03703d8772e9bd8ef8e93}{drawTextScale}}(100,10,\ \textcolor{stringliteral}{"{}Hi,\ windows-\/>SDL2!"{}},\ \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}},\ 3);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a25c66880a004153371df2dd0e7a6041b}{drawText}}(10,\ 180,\ \textcolor{stringliteral}{"{}hi,\ test\ drawtext"{}},\ \mbox{\hyperlink{GameLib_8h_a23c70d699a5a775bc2e1ebeb8603f630}{COLOR\_BLUE}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a3a2051122a31204406b04457c4e3fee4}{drawPrintf}}(10,\ 200,\ \mbox{\hyperlink{GameLib_8h_a4534b577b74a58b0f4b7be027af664e0}{COLOR\_YELLOW}},\ \textcolor{stringliteral}{"{}hi,\ test\ printf\ Time:\ \%2.f\ s"{}},\ SDL\_GetTicks()\ /\ 1000.0f);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a17440efbdb49e196fdf01fdd475127e5}{drawCircle}}(75,\ 300,\ 50);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a17440efbdb49e196fdf01fdd475127e5}{drawCircle}}(55,\ 300,\ 30);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a17440efbdb49e196fdf01fdd475127e5}{drawCircle}}(70,\ 300,\ 10,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00044}00044\ \ \ \ \ circleColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 105,\ 300,\ 20,\ \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00045}00045\ \ \ \ \ filledCircleColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 100,\ 300,\ 10,\ \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00046}00046\ \ \ \ \ arcColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 75,\ 300,\ 40,\ 50,\ 110,\ \mbox{\hyperlink{GameLib_8h_aba2a7fe77a7501e5844370eec0185207}{COLOR\_BLACK}});}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classTextureManager_ab5434f5ba0cc3e02623f23699573a5a6}{TheTextureManager::Instance}}()-\/>\mbox{\hyperlink{classTextureManager_a55a5d5f4ec5ab276dc73ea2c55574a61}{draw}}(\textcolor{stringliteral}{"{}cat"{}},\ \mbox{\hyperlink{classVector2D}{Vector2D}}(20,20),\ 36,\ 36);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00049}00049\ \ \ \ \ SDL\_SetRenderDrawColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 255,0,255,255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{classShape_a576fa65faf5c01bd4880b12fcf3bb1a3}{initHealthBarSystem}}();}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{classShape_a408cd4bcfb83d325a0b3660bdf81e760}{drawHealthBar}}(204,\ 104,\ 20,\ 4,\ 500,\ 1000);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{classShape_a408cd4bcfb83d325a0b3660bdf81e760}{drawHealthBar}}(204,\ 128,\ 50,\ 5,\ 5\ *\ \mbox{\hyperlink{classShape_af9f12d78ce6961bef6c729c9662e12db}{m\_currentAnim}}.\mbox{\hyperlink{classAnimatedGraphic_a8f00462424c7430e1488b16e5df8f29e}{globalFrame\_}},\ 1000);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{classShape_a408cd4bcfb83d325a0b3660bdf81e760}{drawHealthBar}}(204,\ 152,\ 80,\ 8,\ 1000\ -\/\ 5\ *\ \mbox{\hyperlink{classShape_af9f12d78ce6961bef6c729c9662e12db}{m\_currentAnim}}.\mbox{\hyperlink{classAnimatedGraphic_a8f00462424c7430e1488b16e5df8f29e}{globalFrame\_}},\ 1000);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00055}00055\ \}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00057}\mbox{\hyperlink{classShape_a576fa65faf5c01bd4880b12fcf3bb1a3}{00057}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classShape_a576fa65faf5c01bd4880b12fcf3bb1a3}{Shape::initHealthBarSystem}}()\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00058}00058\ \{}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{comment}{//\ 创建\ 256x1\ 渐变纹理（红→黄→绿）}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00060}00060\ \ \ \ \ SDL\_Surface*\ s\ =\ SDL\_CreateRGBSurface(0,\ 256,\ 1,\ 32,\ 0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ 0;\ x\ <\ 256;\ ++x)\ \{}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ t\ =\ x\ /\ 255.0f;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ Uint8\ r\ =\ (t\ <\ 0.5f)\ ?\ 255\ :\ (Uint8)(255\ *\ (1\ -\/\ (t\ -\/\ 0.5f)\ *\ 2));}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ Uint8\ g\ =\ (t\ <\ 0.5f)\ ?\ (Uint8)(255\ *\ t\ *\ 2)\ :\ 255;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ Uint8\ b\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ ((Uint32*)s-\/>pixels)[x]\ =\ SDL\_MapRGB(s-\/>format,\ r,\ g,\ b);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{classShape_a8da27d8765b3c67c058da77b9ea0da1f}{gHealthGradient}}\ =\ SDL\_CreateTextureFromSurface(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ s);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00069}00069\ \ \ \ \ SDL\_FreeSurface(s);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00073}\mbox{\hyperlink{classShape_a408cd4bcfb83d325a0b3660bdf81e760}{00073}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classShape_a408cd4bcfb83d325a0b3660bdf81e760}{Shape::drawHealthBar}}(}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 屏幕位置}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \ \ \ \ \ \textcolor{comment}{//\ 血条尺寸}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ currentHP,\ \textcolor{keywordtype}{int}\ maxHP)\ \ \ \textcolor{comment}{//\ 绝对血量值}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00078}00078\ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}}\ =\ \mbox{\hyperlink{classRenderContext_a54cee44459b9a44a53ec9983480dc7f1}{RenderContext::get}}();}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SEG\_SIZE\ =\ 100;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MAX\_SEG\ =\ 10;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{comment}{//\ 1.\ 计算段数（按绝对值）}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keywordtype}{int}\ curSeg\ =\ std::min(currentHP\ /\ SEG\_SIZE,\ MAX\_SEG);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{keywordtype}{int}\ maxSeg\ =\ std::min(maxHP\ /\ SEG\_SIZE,\ MAX\_SEG);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{keywordflow}{if}\ (maxSeg\ ==\ 0)\ maxSeg\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordflow}{if}\ (currentHP\ >\ 0\ \&\&\ curSeg\ ==\ 0)\ curSeg\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{keywordtype}{float}\ ratio\ =\ (float)curSeg\ /\ maxSeg;}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{comment}{//\ 2.\ 背景（可选）}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00091}00091\ \ \ \ \ SDL\_SetRenderDrawColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 127,\ 127,\ 127,\ 255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00092}00092\ \ \ \ \ SDL\_Rect\ rect\ =\ \{x,\ y,\ width,\ height\};}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00093}00093\ \ \ \ \ SDL\_RenderFillRect(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ \&rect);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00095}00095\ \ \ \ \ \textcolor{comment}{//\ 3.\ 渐变前景}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{keywordflow}{if}\ (ratio\ >\ 0.0f)\ \{}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ SDL\_Rect\ src\ =\ \{0,\ 0,\ (int)(256\ *\ ratio),\ 1\};}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ SDL\_Rect\ dst\ =\ \{x,\ y,\ (int)(width\ *\ ratio),\ height\};}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ SDL\_RenderCopy(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ \mbox{\hyperlink{classShape_a8da27d8765b3c67c058da77b9ea0da1f}{gHealthGradient}},\ \&src,\ \&dst);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{comment}{//\ 4.\ ★\ 1像素黑边框\ ★}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00103}00103\ \ \ \ \ SDL\_SetRenderDrawColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 0,\ 0,\ 0,\ 255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00104}00104\ \ \ \ \ SDL\_RenderDrawRect(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ \&rect);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00106}00106\ \ \ \ \ \textcolor{comment}{//\ 5.\ ★\ >1000\ 高亮（白边）★}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{keywordflow}{if}\ (maxHP\ >=\ 1000)\ \{}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ SDL\_SetRenderDrawColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 255,\ 255,\ 255,\ 255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00109}00109\ \ \ \ \ \ \ \ \ rect\ =\ \{x\ -\/\ 1,\ y\ -\/\ 1,\ width\ +\ 2,\ height\ +\ 2\};}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00110}00110\ \ \ \ \ \ \ \ \ SDL\_RenderDrawRect(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ \&rect);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00112}00112\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{comment}{//\ 6.\ ★\ 1像素黑点倒角\ ★}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00114}00114\ \ \ \ \ SDL\_SetRenderDrawColor(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ 127,\ 127,\ 127,\ 255);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00115}00115\ \ \ \ \ SDL\_RenderDrawPoint(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ x\ -\/\ 1,\ y\ -\/\ 1);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00116}00116\ \ \ \ \ SDL\_RenderDrawPoint(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ x\ -\/\ 1,\ y\ +\ height);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00117}00117\ \ \ \ \ SDL\_RenderDrawPoint(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ x\ +\ width,\ y\ -\/\ 1);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00118}00118\ \ \ \ \ SDL\_RenderDrawPoint(\mbox{\hyperlink{classShape_ae47773e0b9c57484b254b1f2799438df}{pRenderer}},\ x\ +\ width,\ y\ +\ height);}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00119}00119\ \}}
+\DoxyCodeLine{\Hypertarget{Shape_8cpp_source_l00120}00120\ }
+
+\end{DoxyCode}

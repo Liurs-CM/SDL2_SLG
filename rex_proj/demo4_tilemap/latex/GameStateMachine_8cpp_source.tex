@@ -1,0 +1,111 @@
+\doxysection{Game\+State\+Machine.\+cpp}
+\hypertarget{GameStateMachine_8cpp_source}{}\label{GameStateMachine_8cpp_source}\index{src/GameStateMachine.cpp@{src/GameStateMachine.cpp}}
+\mbox{\hyperlink{GameStateMachine_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameStateMachine_8h}{GameStateMachine.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00004}\mbox{\hyperlink{classGameStateMachine_a7391cf427e60eea13232085ed6767dcc}{00004}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a7391cf427e60eea13232085ed6767dcc}{GameStateMachine::pushState}}(\mbox{\hyperlink{classGameState}{GameState}}\ *pState)}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00006}00006\ \ \ \ \ \textcolor{comment}{//std::cout\ <<\ "{}enter\ "{}<<\ pState-\/>getStateID()\ <<\ std::endl;}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00007}00007\ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.push\_back(pState);}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00008}00008\ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>onEnter();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00009}00009\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00011}\mbox{\hyperlink{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695}{00011}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695}{GameStateMachine::popStatePrivate}}()}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00013}00013\ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.empty())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00014}00014\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>onExit())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//std::cout\ <<\ "{}exit\ "{}<<\ m\_gameStates.back()-\/>getStateID()\ <<\ std::endl;}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.pop\_back();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00023}\mbox{\hyperlink{classGameStateMachine_af65df6fca772a845852199aa5db0ef39}{00023}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_af65df6fca772a845852199aa5db0ef39}{GameStateMachine::changeStatePrivate}}(\mbox{\hyperlink{classGameState}{GameState}}*\ pState)}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.empty())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00026}00026\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>getStateID()\ ==\ pState-\/>\mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{getStateID}}())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \textcolor{comment}{//\ do\ nothing}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>onExit())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.pop\_back();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ We\ check\ if\ the\ State\ exists\ in\ the\ StateMachine,\ if\ it\ exists}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ we\ eliminate\ them\ to\ free\ memory\ and\ an\ unneeded\ State}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ it\ =\ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.begin();\ it\ !=\ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.end();\ ++it)}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(((*it)-\/>getStateID()\ ==\ pState-\/>\mbox{\hyperlink{classGameState_aec93c95e04a96791b818bda9036eecae}{getStateID}}())\ \&\&\ ((*it)-\/>onExit()))}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ (*it);}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.erase(it);}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{comment}{//\ push\ back\ our\ new\ state}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.push\_back(pState);}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//\ initialise\ it}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00055}00055\ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>onEnter();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00056}00056\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00058}\mbox{\hyperlink{classGameStateMachine_a7a3be350727fff550f09cc0499398ece}{00058}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a7a3be350727fff550f09cc0499398ece}{GameStateMachine::update}}()}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00059}00059\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.empty())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00061}00061\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>update();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00063}00063\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}{changeStateFlag}})}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00066}00066\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_af65df6fca772a845852199aa5db0ef39}{changeStatePrivate}}(\mbox{\hyperlink{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557}{newState}});}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}{changeStateFlag}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}{popStateFlag}})}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00071}00071\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_ab37e523850a6ae757e8121253a6f1695}{popStatePrivate}}();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}{popStateFlag}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00074}00074\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00077}\mbox{\hyperlink{classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5}{00077}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_abfad06d5c6aa2f7d96a18e405f6d56c5}{GameStateMachine::render}}()}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00078}00078\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.empty())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00080}00080\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>render();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00083}00083\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00085}\mbox{\hyperlink{classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4}{00085}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_ac08969deb53d587e33ff43e3848d43a4}{GameStateMachine::clean}}()}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00086}00086\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.empty())}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00088}00088\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back()-\/>onExit();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.back();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a425a33b1d57229faa557e3680efab1e7}{m\_gameStates}}.clear();}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00092}00092\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00093}00093\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00096}\mbox{\hyperlink{classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f}{00096}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a691905effed30b630c3971fb5bbfcc4f}{GameStateMachine::popState}}()}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00097}00097\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00098}00098\ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_ab33f727e7c335732142a475bd3a51d73}{popStateFlag}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00099}00099\ \}}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00101}\mbox{\hyperlink{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}{00101}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameStateMachine_a8d07f3e577091c2b56a93173607e5e7d}{GameStateMachine::changeState}}(\mbox{\hyperlink{classGameState}{GameState}}*\ pState)}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00102}00102\ \{}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00103}00103\ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_a527e57c6b6139fc9b16b6edc90d258c4}{changeStateFlag}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00104}00104\ \ \ \ \ \mbox{\hyperlink{classGameStateMachine_aeb110e60f9ec10e407d1c37b728d1557}{newState}}\ =\ pState;}
+\DoxyCodeLine{\Hypertarget{GameStateMachine_8cpp_source_l00105}00105\ \}}
+
+\end{DoxyCode}

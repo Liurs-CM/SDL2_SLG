@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/Player.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Player.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Player_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="Player_8h.html">Player.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="Camera_8h.html">Camera.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="InputHandler_8h.html">InputHandler.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="TextureManager_8h.html">TextureManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="SoundManager_8h.html">SoundManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="GameLib_8h.html">GameLib.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="Game_8h.html">Game.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classPlayer.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">    9</a></span><a class="code hl_function" href="classPlayer.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player::Player</a>() : <a class="code hl_class" href="classSDLGameObject.html">SDLGameObject</a>() {}</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="classPlayer.html#a36eb4265e72f7b8c3c8f8a523f5a054b">Player::dirNames</a>[4] = {<span class="stringliteral">&quot;Up&quot;</span>, <span class="stringliteral">&quot;Down&quot;</span>, <span class="stringliteral">&quot;Left&quot;</span>, <span class="stringliteral">&quot;Right&quot;</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff">Player::load</a>(std::unique_ptr&lt;LoaderParams&gt; <span class="keyword">const</span> &amp;pParams)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">SDLGameObject::load</a>(std::move(pParams));</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> = <a class="code hl_class" href="classVector2D.html">Vector2D</a>(<a class="code hl_define" href="GameLib_8h.html#af0cee92dec0a54dad52eec38fd9a2466">GRID_X</a> + <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a> * 5, <a class="code hl_define" href="GameLib_8h.html#ad8c6cf1074fa26eb4554030f04ee57d1">GRID_Y</a> + <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a> * 5);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_variable" href="classPlayer.html#ac4ae01872ffae5f242790a5a24090f58">m_delayFrame</a> = <a class="code hl_variable" href="GameLib_8h.html#ae4e0076494c455f4a13102d261bb5e64">FPS</a> / <a class="code hl_variable" href="classSDLGameObject.html#a64c90350fa4231d0b1345f82ff50a23f">m_animSpeed</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classPlayer.html#ac18c9d30d2997765321c62030a4b20b7">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPlayer.html#ac18c9d30d2997765321c62030a4b20b7">Player::draw</a>()</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//SDLGameObject::draw();</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">//TheTextureManager::Instance()-&gt;drawPrintf(10, 220, COLOR_GREEN, &quot;hi,move[%d],Dire[%s],Frame[%d/%d]%d,dlyFrame[%d/%d]%d&quot;, moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames, m_animSpeed, m_animTimer, m_delayFrame, m_currentAnim.globalFrame_);</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a3a2051122a31204406b04457c4e3fee4">drawPrintf</a>(10, 220, <a class="code hl_define" href="GameLib_8h.html#afc9149f5de51bd9ac4f5ebbfa153f018">COLOR_GREEN</a>, <span class="stringliteral">&quot;hi,move[%d],Dir[%s],Frame[%d/%d],(%.0f,%.0f)&quot;</span>, <a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a>, <a class="code hl_variable" href="classPlayer.html#a36eb4265e72f7b8c3c8f8a523f5a054b">dirNames</a>[<a class="code hl_variable" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a>-1], <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a>, <a class="code hl_variable" href="classSDLGameObject.html#aa5e2fd74464fc97d6bbb82af4567820c">m_numFrames</a>, <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a>.<a class="code hl_function" href="classVector2D.html#a527601e47976bcfdac2520817bfee675">getX</a>(), <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a>.<a class="code hl_function" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b">getY</a>());</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85">drawFrame</a>(<a class="code hl_variable" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a>,  <a class="code hl_variable" href="classPlayer.html#a0f65056f6368af21e495bf6a837767ac">at_positionScreen</a> - <a class="code hl_class" href="classVector2D.html">Vector2D</a>(5,5), <a class="code hl_variable" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a>, <a class="code hl_variable" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a>, <a class="code hl_variable" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a>, <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// m_position delay frame</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a>){</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85">drawFrame</a>(<a class="code hl_variable" href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">m_textureID</a>, <a class="code hl_variable" href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">m_positionScreen</a> - <a class="code hl_class" href="classVector2D.html">Vector2D</a>(5,5), <a class="code hl_variable" href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">m_width</a>, <a class="code hl_variable" href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">m_height</a>, <a class="code hl_variable" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a>, 0, 32);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4">   32</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4">Player::update</a>()</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="classPlayer.html#a3c2e7e40fe2018229d44168bd484c182">handleInput</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//SDLGameObject::update();</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="classPlayer.html#a96e7e759de6b3ab58f97813f135a9036">handleAnimation</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89">TheCamera::Instance</a>()-&gt;<a class="code hl_function" href="classCamera.html#ac40d7b1afe12d127a7b33424e7ebfc28">follow</a>(<a class="code hl_variable" href="classPlayer.html#a3a59564329781b136945f041bbc922e0">at_position</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_variable" href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">m_positionScreen</a> = <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> - <a class="code hl_function" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89">TheCamera::Instance</a>()-&gt;<a class="code hl_function" href="classCamera.html#aec9074b278b84e784cd493ded9e46910">getPosition</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="classPlayer.html#a0f65056f6368af21e495bf6a837767ac">at_positionScreen</a> = <a class="code hl_variable" href="classPlayer.html#a3a59564329781b136945f041bbc922e0">at_position</a> - <a class="code hl_function" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89">TheCamera::Instance</a>()-&gt;<a class="code hl_function" href="classCamera.html#aec9074b278b84e784cd493ded9e46910">getPosition</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classPlayer.html#a883c81df5be3b931ecfa6c8de08acfbd">   42</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPlayer.html#a883c81df5be3b931ecfa6c8de08acfbd">Player::clean</a>() { }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classPlayer.html#a3c2e7e40fe2018229d44168bd484c182">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPlayer.html#a3c2e7e40fe2018229d44168bd484c182">Player::handleInput</a>()</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">TheInputHandler::Instance</a>()-&gt;getMouseButtonState(<a class="code hl_enumvalue" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758">LEFT</a>))</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_class" href="classVector2D.html">Vector2D</a> delt_pos = *(<a class="code hl_function" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">TheInputHandler::Instance</a>()-&gt;<a class="code hl_function" href="classInputHandler.html#a3afea5f90871baebcbf0303a3a9949c9">getMousePosition</a>()) - <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> + <a class="code hl_function" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89">TheCamera::Instance</a>()-&gt;<a class="code hl_function" href="classCamera.html#aec9074b278b84e784cd493ded9e46910">getPosition</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">int</span> x = int(delt_pos.<a class="code hl_function" href="classVector2D.html#a527601e47976bcfdac2520817bfee675">getX</a>() / <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">int</span> y = int(delt_pos.<a class="code hl_function" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b">getY</a>() / <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a> = <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> + <a class="code hl_class" href="classVector2D.html">Vector2D</a>(x, y) * <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">//to_position = m_position + Vector2D(0,-1) * CELL_SIZE;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_variable" href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">m_currentDirection</a> = <a class="code hl_enumvalue" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f">Direction::DOWN</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">TheInputHandler::Instance</a>()-&gt;isKeyDown(SDL_SCANCODE_W))</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a> = <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> + <a class="code hl_class" href="classVector2D.html">Vector2D</a>(0,-1) * <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_variable" href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">m_currentDirection</a> = <a class="code hl_enumvalue" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936afbaedde498cdead4f2780217646e9ba1">Direction::UP</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="comment">//std::cout &lt;&lt; m_position &lt;&lt; &quot;move up\n&quot;;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">TheInputHandler::Instance</a>()-&gt;isKeyDown(SDL_SCANCODE_S))</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a> = <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> + <a class="code hl_class" href="classVector2D.html">Vector2D</a>(0,1) * <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_variable" href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">m_currentDirection</a> = <a class="code hl_enumvalue" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f">Direction::DOWN</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">//std::cout &lt;&lt; m_position &lt;&lt; &quot;move down\n&quot;;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">TheInputHandler::Instance</a>()-&gt;isKeyDown(SDL_SCANCODE_A))</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a> = <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> + <a class="code hl_class" href="classVector2D.html">Vector2D</a>(-1,0) * <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_variable" href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">m_currentDirection</a> = <a class="code hl_enumvalue" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758">Direction::LEFT</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">//std::cout &lt;&lt; m_position &lt;&lt; &quot;move left\n&quot;;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">TheInputHandler::Instance</a>()-&gt;isKeyDown(SDL_SCANCODE_D))</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a> = <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> + <a class="code hl_class" href="classVector2D.html">Vector2D</a>(1,0) * <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_variable" href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">m_currentDirection</a> = <a class="code hl_enumvalue" href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403">Direction::RIGHT</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">//std::cout &lt;&lt; m_position &lt;&lt; &quot;move right\n&quot;;</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">TheInputHandler::Instance</a>()-&gt;isKeyPressed(SDL_SCANCODE_SPACE))</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_function" href="classSoundManager.html#afb88058c46a2036b74f2775fc0cc2731">TheSoundManager::Instance</a>()-&gt;<a class="code hl_function" href="classSoundManager.html#a44a5bc613545fc32b876f0a8c48ba542">playSound</a>(<span class="stringliteral">&quot;shoot&quot;</span>, 0);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_variable" href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">m_currentRow</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">m_currentDirection</a>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a>) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_class" href="classVector2D.html">Vector2D</a> dist = <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a> - <a class="code hl_variable" href="classPlayer.html#a3a59564329781b136945f041bbc922e0">at_position</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">if</span>(dist.<a class="code hl_function" href="classVector2D.html#ae9c6666151cd09a233f35c13cdfd9049">length</a>() &lt; 1.0f) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <a class="code hl_variable" href="classPlayer.html#a3a59564329781b136945f041bbc922e0">at_position</a> = <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_variable" href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">m_position</a> = <a class="code hl_variable" href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">to_position</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_variable" href="classPlayer.html#a3a59564329781b136945f041bbc922e0">at_position</a> += dist.<a class="code hl_function" href="classVector2D.html#a50fdb50a78c8ada9c59869dccd0b469d">get_normalize</a>() * <a class="code hl_variable" href="classPlayer.html#a0a31cec571e14e317c22cc115a644544">shift_speed</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classPlayer.html#a96e7e759de6b3ab58f97813f135a9036">  102</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPlayer.html#a96e7e759de6b3ab58f97813f135a9036">Player::handleAnimation</a>()</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_variable" href="classPlayer.html#a05b112a79073678c53bd19019befc7f6">m_animTimer</a>++;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classPlayer.html#a05b112a79073678c53bd19019befc7f6">m_animTimer</a> &gt;= <a class="code hl_variable" href="classPlayer.html#ac4ae01872ffae5f242790a5a24090f58">m_delayFrame</a>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_variable" href="classPlayer.html#a05b112a79073678c53bd19019befc7f6">m_animTimer</a> -= <a class="code hl_variable" href="classPlayer.html#ac4ae01872ffae5f242790a5a24090f58">m_delayFrame</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">moving</a>) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> = (<a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> &gt;= 2) ? -1 : <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> += 1;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> = (<a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> == -1) ? 2 : <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> = (<a class="code hl_variable" href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">m_currentFrame</a> == 0) ? 3 : 0; <span class="comment">// standing frame</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="ttc" id="aCamera_8h_html"><div class="ttname"><a href="Camera_8h.html">Camera.h</a></div></div>
+<div class="ttc" id="aGameLib_8h_html"><div class="ttname"><a href="GameLib_8h.html">GameLib.h</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a7a4127f14f16563da90eb3c836bc404f"><div class="ttname"><a href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a></div><div class="ttdeci">#define CELL_SIZE</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00021">GameLib.h:21</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_ad8c6cf1074fa26eb4554030f04ee57d1"><div class="ttname"><a href="GameLib_8h.html#ad8c6cf1074fa26eb4554030f04ee57d1">GRID_Y</a></div><div class="ttdeci">#define GRID_Y</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00018">GameLib.h:18</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_ae4e0076494c455f4a13102d261bb5e64"><div class="ttname"><a href="GameLib_8h.html#ae4e0076494c455f4a13102d261bb5e64">FPS</a></div><div class="ttdeci">constexpr uint8_t FPS</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00007">GameLib.h:7</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_af0cee92dec0a54dad52eec38fd9a2466"><div class="ttname"><a href="GameLib_8h.html#af0cee92dec0a54dad52eec38fd9a2466">GRID_X</a></div><div class="ttdeci">#define GRID_X</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00017">GameLib.h:17</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_afc9149f5de51bd9ac4f5ebbfa153f018"><div class="ttname"><a href="GameLib_8h.html#afc9149f5de51bd9ac4f5ebbfa153f018">COLOR_GREEN</a></div><div class="ttdeci">#define COLOR_GREEN</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00030">GameLib.h:30</a></div></div>
+<div class="ttc" id="aGame_8h_html"><div class="ttname"><a href="Game_8h.html">Game.h</a></div></div>
+<div class="ttc" id="aInputHandler_8h_html"><div class="ttname"><a href="InputHandler_8h.html">InputHandler.h</a></div></div>
+<div class="ttc" id="aPlayer_8h_html"><div class="ttname"><a href="Player_8h.html">Player.h</a></div></div>
+<div class="ttc" id="aSoundManager_8h_html"><div class="ttname"><a href="SoundManager_8h.html">SoundManager.h</a></div></div>
+<div class="ttc" id="aTextureManager_8h_html"><div class="ttname"><a href="TextureManager_8h.html">TextureManager.h</a></div></div>
+<div class="ttc" id="aclassCamera_html_a38bcf7d4fe8373d726b8824ab30efd89"><div class="ttname"><a href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89">Camera::Instance</a></div><div class="ttdeci">static Camera * Instance()</div><div class="ttdef"><b>Definition</b> <a href="Camera_8h_source.html#l00013">Camera.h:13</a></div></div>
+<div class="ttc" id="aclassCamera_html_ac40d7b1afe12d127a7b33424e7ebfc28"><div class="ttname"><a href="classCamera.html#ac40d7b1afe12d127a7b33424e7ebfc28">Camera::follow</a></div><div class="ttdeci">void follow(Vector2D target)</div><div class="ttdef"><b>Definition</b> <a href="Camera_8cpp_source.html#l00013">Camera.cpp:13</a></div></div>
+<div class="ttc" id="aclassCamera_html_aec9074b278b84e784cd493ded9e46910"><div class="ttname"><a href="classCamera.html#aec9074b278b84e784cd493ded9e46910">Camera::getPosition</a></div><div class="ttdeci">Vector2D getPosition() const</div><div class="ttdef"><b>Definition</b> <a href="Camera_8h_source.html#l00010">Camera.h:10</a></div></div>
+<div class="ttc" id="aclassGameObject_html_aa076bd4409a384038567f2d0c8548477"><div class="ttname"><a href="classGameObject.html#aa076bd4409a384038567f2d0c8548477">GameObject::m_textureID</a></div><div class="ttdeci">std::string m_textureID</div><div class="ttdef"><b>Definition</b> <a href="GameObject_8h_source.html#l00019">GameObject.h:19</a></div></div>
+<div class="ttc" id="aclassInputHandler_html_a14e7f0e3e3c076ef4d0bb69870452e55"><div class="ttname"><a href="classInputHandler.html#a14e7f0e3e3c076ef4d0bb69870452e55">InputHandler::Instance</a></div><div class="ttdeci">static InputHandler * Instance()</div><div class="ttdef"><b>Definition</b> <a href="InputHandler_8h_source.html#l00020">InputHandler.h:20</a></div></div>
+<div class="ttc" id="aclassInputHandler_html_a3afea5f90871baebcbf0303a3a9949c9"><div class="ttname"><a href="classInputHandler.html#a3afea5f90871baebcbf0303a3a9949c9">InputHandler::getMousePosition</a></div><div class="ttdeci">Vector2D * getMousePosition()</div><div class="ttdef"><b>Definition</b> <a href="InputHandler_8h_source.html#l00033">InputHandler.h:33</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a05b112a79073678c53bd19019befc7f6"><div class="ttname"><a href="classPlayer.html#a05b112a79073678c53bd19019befc7f6">Player::m_animTimer</a></div><div class="ttdeci">int8_t m_animTimer</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00022">Player.h:22</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a0a31cec571e14e317c22cc115a644544"><div class="ttname"><a href="classPlayer.html#a0a31cec571e14e317c22cc115a644544">Player::shift_speed</a></div><div class="ttdeci">float shift_speed</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00020">Player.h:20</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a0f65056f6368af21e495bf6a837767ac"><div class="ttname"><a href="classPlayer.html#a0f65056f6368af21e495bf6a837767ac">Player::at_positionScreen</a></div><div class="ttdeci">Vector2D at_positionScreen</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00026">Player.h:26</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a36eb4265e72f7b8c3c8f8a523f5a054b"><div class="ttname"><a href="classPlayer.html#a36eb4265e72f7b8c3c8f8a523f5a054b">Player::dirNames</a></div><div class="ttdeci">static const char * dirNames[4]</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00011">Player.h:11</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a3a59564329781b136945f041bbc922e0"><div class="ttname"><a href="classPlayer.html#a3a59564329781b136945f041bbc922e0">Player::at_position</a></div><div class="ttdeci">Vector2D at_position</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00025">Player.h:25</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a3c2e7e40fe2018229d44168bd484c182"><div class="ttname"><a href="classPlayer.html#a3c2e7e40fe2018229d44168bd484c182">Player::handleInput</a></div><div class="ttdeci">void handleInput()</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l00044">Player.cpp:44</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a82c3476f3e65a4e2ac6bcd040771bdd4"><div class="ttname"><a href="classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4">Player::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l00032">Player.cpp:32</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a883c81df5be3b931ecfa6c8de08acfbd"><div class="ttname"><a href="classPlayer.html#a883c81df5be3b931ecfa6c8de08acfbd">Player::clean</a></div><div class="ttdeci">void clean()</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l00042">Player.cpp:42</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a898bb49094948ad36c0020be8c304b33"><div class="ttname"><a href="classPlayer.html#a898bb49094948ad36c0020be8c304b33">Player::to_position</a></div><div class="ttdeci">Vector2D to_position</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00024">Player.h:24</a></div></div>
+<div class="ttc" id="aclassPlayer_html_a96e7e759de6b3ab58f97813f135a9036"><div class="ttname"><a href="classPlayer.html#a96e7e759de6b3ab58f97813f135a9036">Player::handleAnimation</a></div><div class="ttdeci">void handleAnimation()</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l00102">Player.cpp:102</a></div></div>
+<div class="ttc" id="aclassPlayer_html_aaf48c4184bee665e1f7f625dedc25adf"><div class="ttname"><a href="classPlayer.html#aaf48c4184bee665e1f7f625dedc25adf">Player::moving</a></div><div class="ttdeci">bool moving</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00021">Player.h:21</a></div></div>
+<div class="ttc" id="aclassPlayer_html_ac18c9d30d2997765321c62030a4b20b7"><div class="ttname"><a href="classPlayer.html#ac18c9d30d2997765321c62030a4b20b7">Player::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l00020">Player.cpp:20</a></div></div>
+<div class="ttc" id="aclassPlayer_html_ac4ae01872ffae5f242790a5a24090f58"><div class="ttname"><a href="classPlayer.html#ac4ae01872ffae5f242790a5a24090f58">Player::m_delayFrame</a></div><div class="ttdeci">uint8_t m_delayFrame</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00023">Player.h:23</a></div></div>
+<div class="ttc" id="aclassPlayer_html_ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403"><div class="ttname"><a href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a21507b40c80068eda19865706fdc2403">Player::Direction::RIGHT</a></div><div class="ttdeci">@ RIGHT</div></div>
+<div class="ttc" id="aclassPlayer_html_ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758"><div class="ttname"><a href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936a684d325a7303f52e64011467ff5c5758">Player::Direction::LEFT</a></div><div class="ttdeci">@ LEFT</div></div>
+<div class="ttc" id="aclassPlayer_html_ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f"><div class="ttname"><a href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936ac4e0e4e3118472beeb2ae75827450f1f">Player::Direction::DOWN</a></div><div class="ttdeci">@ DOWN</div></div>
+<div class="ttc" id="aclassPlayer_html_ad1b5932229b5d87c3dbca5bfcacb6936afbaedde498cdead4f2780217646e9ba1"><div class="ttname"><a href="classPlayer.html#ad1b5932229b5d87c3dbca5bfcacb6936afbaedde498cdead4f2780217646e9ba1">Player::Direction::UP</a></div><div class="ttdeci">@ UP</div></div>
+<div class="ttc" id="aclassPlayer_html_ae73ec6359361202085396ed9f5152ccd"><div class="ttname"><a href="classPlayer.html#ae73ec6359361202085396ed9f5152ccd">Player::m_currentDirection</a></div><div class="ttdeci">Direction m_currentDirection</div><div class="ttdef"><b>Definition</b> <a href="Player_8h_source.html#l00018">Player.h:18</a></div></div>
+<div class="ttc" id="aclassPlayer_html_aea8a0ec1781b64472230e0d4c1d267ff"><div class="ttname"><a href="classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff">Player::load</a></div><div class="ttdeci">virtual void load(std::unique_ptr&lt; LoaderParams &gt; const &amp;pParams)</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l00013">Player.cpp:13</a></div></div>
+<div class="ttc" id="aclassPlayer_html_affe0cc3cb714f6deb4e62f0c0d3f1fd8"><div class="ttname"><a href="classPlayer.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player::Player</a></div><div class="ttdeci">Player()</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l00009">Player.cpp:9</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html"><div class="ttname"><a href="classSDLGameObject.html">SDLGameObject</a></div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00010">SDLGameObject.h:11</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a24370c74982f8b6bfa756d0054130a84"><div class="ttname"><a href="classSDLGameObject.html#a24370c74982f8b6bfa756d0054130a84">SDLGameObject::m_currentRow</a></div><div class="ttdeci">uint8_t m_currentRow</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00029">SDLGameObject.h:29</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a504c3090fb1a15dcfbe5f57cea6b0143"><div class="ttname"><a href="classSDLGameObject.html#a504c3090fb1a15dcfbe5f57cea6b0143">SDLGameObject::m_currentFrame</a></div><div class="ttdeci">uint8_t m_currentFrame</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00030">SDLGameObject.h:30</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a5400fc2ad61046e18b416387e5552cda"><div class="ttname"><a href="classSDLGameObject.html#a5400fc2ad61046e18b416387e5552cda">SDLGameObject::m_positionScreen</a></div><div class="ttdeci">Vector2D m_positionScreen</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00033">SDLGameObject.h:33</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a64c90350fa4231d0b1345f82ff50a23f"><div class="ttname"><a href="classSDLGameObject.html#a64c90350fa4231d0b1345f82ff50a23f">SDLGameObject::m_animSpeed</a></div><div class="ttdeci">uint8_t m_animSpeed</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00037">SDLGameObject.h:37</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_a92bb16fe7c646857fdc02093d58a232a"><div class="ttname"><a href="classSDLGameObject.html#a92bb16fe7c646857fdc02093d58a232a">SDLGameObject::m_position</a></div><div class="ttdeci">Vector2D m_position</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00026">SDLGameObject.h:26</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_aa5d3c6b48ee55cd7293ac09a7adffbf0"><div class="ttname"><a href="classSDLGameObject.html#aa5d3c6b48ee55cd7293ac09a7adffbf0">SDLGameObject::m_height</a></div><div class="ttdeci">uint16_t m_height</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00035">SDLGameObject.h:35</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_aa5e2fd74464fc97d6bbb82af4567820c"><div class="ttname"><a href="classSDLGameObject.html#aa5e2fd74464fc97d6bbb82af4567820c">SDLGameObject::m_numFrames</a></div><div class="ttdeci">uint8_t m_numFrames</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00036">SDLGameObject.h:36</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_ade865a0eefca735ddafc3d319c566c9f"><div class="ttname"><a href="classSDLGameObject.html#ade865a0eefca735ddafc3d319c566c9f">SDLGameObject::load</a></div><div class="ttdeci">virtual void load(std::unique_ptr&lt; LoaderParams &gt; const &amp;pParams)</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8cpp_source.html#l00018">SDLGameObject.cpp:18</a></div></div>
+<div class="ttc" id="aclassSDLGameObject_html_af1a901cd008cb8903fb72f27087c3070"><div class="ttname"><a href="classSDLGameObject.html#af1a901cd008cb8903fb72f27087c3070">SDLGameObject::m_width</a></div><div class="ttdeci">uint16_t m_width</div><div class="ttdef"><b>Definition</b> <a href="SDLGameObject_8h_source.html#l00034">SDLGameObject.h:34</a></div></div>
+<div class="ttc" id="aclassSoundManager_html_a44a5bc613545fc32b876f0a8c48ba542"><div class="ttname"><a href="classSoundManager.html#a44a5bc613545fc32b876f0a8c48ba542">SoundManager::playSound</a></div><div class="ttdeci">void playSound(std::string id, int loop)</div><div class="ttdef"><b>Definition</b> <a href="SoundManager_8cpp_source.html#l00049">SoundManager.cpp:49</a></div></div>
+<div class="ttc" id="aclassSoundManager_html_afb88058c46a2036b74f2775fc0cc2731"><div class="ttname"><a href="classSoundManager.html#afb88058c46a2036b74f2775fc0cc2731">SoundManager::Instance</a></div><div class="ttdeci">static SoundManager * Instance()</div><div class="ttdef"><b>Definition</b> <a href="SoundManager_8h_source.html#l00017">SoundManager.h:17</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_a3a2051122a31204406b04457c4e3fee4"><div class="ttname"><a href="classTextureManager.html#a3a2051122a31204406b04457c4e3fee4">TextureManager::drawPrintf</a></div><div class="ttdeci">void drawPrintf(int x, int y, uint32_t color, const char *fmt,...)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00168">TextureManager.cpp:168</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_a8152a12de458e940d09f2850d8f71b85"><div class="ttname"><a href="classTextureManager.html#a8152a12de458e940d09f2850d8f71b85">TextureManager::drawFrame</a></div><div class="ttdeci">void drawFrame(std::string id, Vector2D pos, uint16_t width, uint16_t height, uint8_t currentRow, uint8_t currentFrame, int alpha=255, SDL_RendererFlip flip=SDL_FLIP_NONE)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00055">TextureManager.cpp:55</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_ab5434f5ba0cc3e02623f23699573a5a6"><div class="ttname"><a href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TextureManager::Instance</a></div><div class="ttdeci">static TextureManager * Instance()</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8h_source.html#l00028">TextureManager.h:28</a></div></div>
+<div class="ttc" id="aclassVector2D_html"><div class="ttname"><a href="classVector2D.html">Vector2D</a></div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00006">Vector2D.h:7</a></div></div>
+<div class="ttc" id="aclassVector2D_html_a50fdb50a78c8ada9c59869dccd0b469d"><div class="ttname"><a href="classVector2D.html#a50fdb50a78c8ada9c59869dccd0b469d">Vector2D::get_normalize</a></div><div class="ttdeci">Vector2D get_normalize()</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00078">Vector2D.h:78</a></div></div>
+<div class="ttc" id="aclassVector2D_html_a527601e47976bcfdac2520817bfee675"><div class="ttname"><a href="classVector2D.html#a527601e47976bcfdac2520817bfee675">Vector2D::getX</a></div><div class="ttdeci">float getX()</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00011">Vector2D.h:11</a></div></div>
+<div class="ttc" id="aclassVector2D_html_a5b797fb62a3c21ced0cc8e27afd62f8b"><div class="ttname"><a href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b">Vector2D::getY</a></div><div class="ttdeci">float getY()</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00012">Vector2D.h:12</a></div></div>
+<div class="ttc" id="aclassVector2D_html_ae9c6666151cd09a233f35c13cdfd9049"><div class="ttname"><a href="classVector2D.html#ae9c6666151cd09a233f35c13cdfd9049">Vector2D::length</a></div><div class="ttdeci">float length()</div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00015">Vector2D.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

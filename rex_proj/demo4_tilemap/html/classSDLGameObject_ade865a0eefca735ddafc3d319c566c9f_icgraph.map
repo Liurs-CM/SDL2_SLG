@@ -1,0 +1,13 @@
+<map id="SDLGameObject::load" name="SDLGameObject::load">
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,104,372,129"/>
+<area shape="rect" id="Node000002" href="$classCat.html#a525022b88bf7f9e37b710f645f9df966" title=" " alt="" coords="43,5,123,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,99,211,71,159,44,122,31,124,26,161,40,214,67,260,94"/>
+<area shape="rect" id="Node000003" href="$classLevel1Boss.html#a38b2a5f8a29b44ba1643e4b8f42ced86" title=" " alt="" coords="17,55,149,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,103,136,83,138,77,223,98"/>
+<area shape="rect" id="Node000004" href="$classMenuButton.html#a250e6a4e6e9c4063b741cbfcb3c5f7b5" title=" " alt="" coords="14,104,151,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,119,152,119,152,114,194,114"/>
+<area shape="rect" id="Node000005" href="$classPlayer.html#aea8a0ec1781b64472230e0d4c1d267ff" title=" " alt="" coords="33,153,132,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="223,135,133,157,132,152,222,130"/>
+<area shape="rect" id="Node000006" href="$classScrollingBackground.html#ac0752b405276cf590ce3a6af63507988" title=" " alt="" coords="5,203,160,243"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="257,139,161,192,133,206,131,201,159,188,255,134"/>
+</map>

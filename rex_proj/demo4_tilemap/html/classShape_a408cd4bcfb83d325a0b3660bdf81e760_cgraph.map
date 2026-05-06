@@ -1,0 +1,5 @@
+<map id="Shape::drawHealthBar" name="Shape::drawHealthBar">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,31"/>
+<area shape="rect" id="Node000002" href="$classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="220,5,368,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,15,206,15,206,21,172,21"/>
+</map>

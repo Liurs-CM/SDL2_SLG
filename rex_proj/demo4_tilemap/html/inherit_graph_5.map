@@ -1,0 +1,17 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classGameObject.html" title=" " alt="" coords="5,104,108,129"/>
+<area shape="rect" id="Node000001" href="$classSDLGameObject.html" title=" " alt="" coords="156,104,284,129"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="122,114,155,114,155,119,122,119"/>
+<area shape="rect" id="Node000002" href="$classEnemy.html" title=" " alt="" coords="376,29,443,55"/>
+<area shape="poly" id="edge7_Node000001_Node000002" title=" " alt="" coords="258,95,331,64,375,49,377,54,333,68,260,100"/>
+<area shape="rect" id="Node000005" href="$classMenuButton.html" title=" " alt="" coords="359,79,460,104"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="297,104,358,95,359,101,298,109"/>
+<area shape="rect" id="Node000006" href="$classPlayer.html" title=" " alt="" coords="378,128,441,153"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="298,124,378,134,377,139,297,129"/>
+<area shape="rect" id="Node000007" href="$classScrollingBackground.html" title=" " alt="" coords="332,177,487,203"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="262,132,333,162,368,175,367,180,331,167,260,137"/>
+<area shape="rect" id="Node000003" href="$classCat.html" title=" " alt="" coords="561,5,605,31"/>
+<area shape="poly" id="edge8_Node000002_Node000003" title=" " alt="" coords="456,33,560,18,561,24,456,38"/>
+<area shape="rect" id="Node000004" href="$classLevel1Boss.html" title=" " alt="" coords="535,55,631,80"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="456,46,535,58,534,63,456,51"/>
+</map>

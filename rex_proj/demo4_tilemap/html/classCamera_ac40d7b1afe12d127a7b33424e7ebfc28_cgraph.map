@@ -1,0 +1,11 @@
+<map id="Camera::follow" name="Camera::follow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,127,105"/>
+<area shape="rect" id="Node000002" href="$classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="175,5,293,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,77,174,40,188,33,190,38,176,44,95,82"/>
+<area shape="rect" id="Node000003" href="$classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="175,55,293,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,81,160,76,161,81,127,86"/>
+<area shape="rect" id="Node000004" href="$classVector2D.html#ac458bd997d2f0c6c7234cf1e8a7b73b8" title=" " alt="" coords="175,104,293,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,99,161,104,160,109,127,104"/>
+<area shape="rect" id="Node000005" href="$classVector2D.html#a9b47adcbdf2c10f3ba893285b5c34709" title=" " alt="" coords="175,153,293,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="97,103,176,138,192,145,190,150,174,143,94,108"/>
+</map>

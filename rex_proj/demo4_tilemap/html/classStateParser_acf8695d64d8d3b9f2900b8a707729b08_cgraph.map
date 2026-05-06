@@ -1,0 +1,11 @@
+<map id="StateParser::parseObjects" name="StateParser::parseObjects">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,195,102"/>
+<area shape="rect" id="Node000002" href="$classGameObjectFactory.html#a704834a35c0a7d2b7267999bbb4ee134" title=" " alt="" coords="243,5,400,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,74,238,47,239,52,146,79"/>
+<area shape="rect" id="Node000004" href="$classGameObjectFactory.html#ac041794e646de05d62166767faad9581" title=" " alt="" coords="243,69,400,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,87,229,87,229,92,195,92"/>
+<area shape="rect" id="Node000005" href="$classGameObject.html#a729edce3955766d5c8dfcda6f310392d" title=" " alt="" coords="252,134,391,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="151,99,259,128,258,133,149,105"/>
+<area shape="rect" id="Node000003" href="$classBaseCreator.html#aafe411c83ea73e1a001ca7046f46b130" title=" " alt="" coords="448,13,680,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,23,434,23,434,28,401,28"/>
+</map>

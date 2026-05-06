@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: TileLayer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classTileLayer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">TileLayer类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="TileLayer_8h_source.html">TileLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+类 TileLayer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer__inherit__graph.png" border="0" usemap="#aTileLayer_inherit__map" alt="Inheritance graph"/></div>
+<map name="aTileLayer_inherit__map" id="aTileLayer_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,88,104"/>
+<area shape="rect" href="classLayer.html" title=" " alt="" coords="17,5,76,31"/>
+<area shape="poly" title=" " alt="" coords="49,44,49,79,44,79,44,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+TileLayer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer__coll__graph.png" border="0" usemap="#aTileLayer_coll__map" alt="Collaboration graph"/></div>
+<map name="aTileLayer_coll__map" id="aTileLayer_coll__map">
+<area shape="rect" title=" " alt="" coords="40,108,123,133"/>
+<area shape="rect" href="classLayer.html" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" title=" " alt="" coords="48,42,78,107,74,109,44,45"/>
+<area shape="rect" href="classVector2D.html" title=" " alt="" coords="89,5,170,31"/>
+<area shape="poly" title=" " alt="" coords="120,44,89,109,84,107,116,42"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7fbd33d6c7dd8be6aacaa87b282c252e" id="r_a7fbd33d6c7dd8be6aacaa87b282c252e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a7fbd33d6c7dd8be6aacaa87b282c252e">TileLayer</a> (int tileSize, const std::vector&lt; <a class="el" href="structTileset.html">Tileset</a> &gt; &amp;tilesets)</td></tr>
+<tr class="separator:a7fbd33d6c7dd8be6aacaa87b282c252e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb96031096770029f830606b493742f7" id="r_adb96031096770029f830606b493742f7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#adb96031096770029f830606b493742f7">~TileLayer</a> ()</td></tr>
+<tr class="separator:adb96031096770029f830606b493742f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc5c61c51ad8e14078036c347df718fe" id="r_afc5c61c51ad8e14078036c347df718fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#afc5c61c51ad8e14078036c347df718fe">update</a> (<a class="el" href="classLevel.html">Level</a> *pLevel)</td></tr>
+<tr class="separator:afc5c61c51ad8e14078036c347df718fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32fb583946d920c19b76e1381283ebf" id="r_af32fb583946d920c19b76e1381283ebf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#af32fb583946d920c19b76e1381283ebf">render</a> ()</td></tr>
+<tr class="separator:af32fb583946d920c19b76e1381283ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0ef9789523c9a1f11bc6d472985757" id="r_a2d0ef9789523c9a1f11bc6d472985757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a2d0ef9789523c9a1f11bc6d472985757">setTileIDs</a> (const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;data)</td></tr>
+<tr class="separator:a2d0ef9789523c9a1f11bc6d472985757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f18ccbd90291d6ef67c475b81c0b4f" id="r_a58f18ccbd90291d6ef67c475b81c0b4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a58f18ccbd90291d6ef67c475b81c0b4f">setTileSize</a> (int tileSize)</td></tr>
+<tr class="separator:a58f18ccbd90291d6ef67c475b81c0b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840abb35a28b7b401535d9dd0c84ffde" id="r_a840abb35a28b7b401535d9dd0c84ffde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a840abb35a28b7b401535d9dd0c84ffde">setMapWidth</a> (int mapWidth)</td></tr>
+<tr class="separator:a840abb35a28b7b401535d9dd0c84ffde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f00aeadc0d3fc8ca43cbeb0450de0e" id="r_a40f00aeadc0d3fc8ca43cbeb0450de0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a40f00aeadc0d3fc8ca43cbeb0450de0e">setMapHeight</a> (int mapHeight)</td></tr>
+<tr class="separator:a40f00aeadc0d3fc8ca43cbeb0450de0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35752649bbc441a2a571577aeeb36a68" id="r_a35752649bbc441a2a571577aeeb36a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a35752649bbc441a2a571577aeeb36a68">setPosition</a> (const <a class="el" href="classVector2D.html">Vector2D</a> &amp;position)</td></tr>
+<tr class="separator:a35752649bbc441a2a571577aeeb36a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ff0f33671097b9e605f7b47412ee73" id="r_a74ff0f33671097b9e605f7b47412ee73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a74ff0f33671097b9e605f7b47412ee73">getTileSize</a> ()</td></tr>
+<tr class="separator:a74ff0f33671097b9e605f7b47412ee73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb4a70880fd750b09e7a2cce2770dec" id="r_a4eb4a70880fd750b09e7a2cce2770dec"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a4eb4a70880fd750b09e7a2cce2770dec">getTileIDs</a> ()</td></tr>
+<tr class="separator:a4eb4a70880fd750b09e7a2cce2770dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b91f0f2a113c94ff6293fa4b822f3d2" id="r_a2b91f0f2a113c94ff6293fa4b822f3d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTileset.html">Tileset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a2b91f0f2a113c94ff6293fa4b822f3d2">getTilesetByID</a> (int tileID)</td></tr>
+<tr class="separator:a2b91f0f2a113c94ff6293fa4b822f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6409032419ab74a03715de4189e432" id="r_a7d6409032419ab74a03715de4189e432"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a7d6409032419ab74a03715de4189e432">getPosition</a> ()</td></tr>
+<tr class="separator:a7d6409032419ab74a03715de4189e432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classLayer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLayer')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classLayer.html">Layer</a></td></tr>
+<tr class="memitem:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_classLayer" id="r_a2bac093f2a650095a5551fc455d10dc5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLayer.html#a2bac093f2a650095a5551fc455d10dc5">~Layer</a> ()</td></tr>
+<tr class="separator:a2bac093f2a650095a5551fc455d10dc5 inherit pub_methods_classLayer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a22fc2345220696dcffa7a6785824f5e8" id="r_a22fc2345220696dcffa7a6785824f5e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a22fc2345220696dcffa7a6785824f5e8">m_numColumns</a></td></tr>
+<tr class="separator:a22fc2345220696dcffa7a6785824f5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52da1d995ebda1729861e1b41eee029" id="r_ab52da1d995ebda1729861e1b41eee029"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#ab52da1d995ebda1729861e1b41eee029">m_numRows</a></td></tr>
+<tr class="separator:ab52da1d995ebda1729861e1b41eee029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afe6488faa3e2bf3a772617035ab030" id="r_a1afe6488faa3e2bf3a772617035ab030"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a1afe6488faa3e2bf3a772617035ab030">m_mapHeight</a></td></tr>
+<tr class="separator:a1afe6488faa3e2bf3a772617035ab030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad538dc72294ebe5b4fd0a25109d1b119" id="r_ad538dc72294ebe5b4fd0a25109d1b119"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#ad538dc72294ebe5b4fd0a25109d1b119">m_mapWidth</a></td></tr>
+<tr class="separator:ad538dc72294ebe5b4fd0a25109d1b119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0ae3b970af4aafbe790e73630167e2" id="r_a4c0ae3b970af4aafbe790e73630167e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a4c0ae3b970af4aafbe790e73630167e2">m_tileSize</a></td></tr>
+<tr class="separator:a4c0ae3b970af4aafbe790e73630167e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354f473fbd1e6beafd23cfded4b57f4f" id="r_a354f473fbd1e6beafd23cfded4b57f4f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structTileset.html">Tileset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a354f473fbd1e6beafd23cfded4b57f4f">m_tilesets</a></td></tr>
+<tr class="separator:a354f473fbd1e6beafd23cfded4b57f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e4975a29ad513501923854ce2b33a2" id="r_ae8e4975a29ad513501923854ce2b33a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#ae8e4975a29ad513501923854ce2b33a2">m_position</a></td></tr>
+<tr class="separator:ae8e4975a29ad513501923854ce2b33a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1dbc38cb2773c01979eeb9c1af1d52" id="r_a2e1dbc38cb2773c01979eeb9c1af1d52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a2e1dbc38cb2773c01979eeb9c1af1d52">m_velocity</a></td></tr>
+<tr class="separator:a2e1dbc38cb2773c01979eeb9c1af1d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cadf5d32536c725dc6e4d6e4191ed89" id="r_a6cadf5d32536c725dc6e4d6e4191ed89"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileLayer.html#a6cadf5d32536c725dc6e4d6e4191ed89">m_tileIDs</a></td></tr>
+<tr class="separator:a6cadf5d32536c725dc6e4d6e4191ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00009">9</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a7fbd33d6c7dd8be6aacaa87b282c252e" name="a7fbd33d6c7dd8be6aacaa87b282c252e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbd33d6c7dd8be6aacaa87b282c252e">&#9670;&#160;</a></span>TileLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TileLayer::TileLayer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tileSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structTileset.html">Tileset</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tilesets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8cpp_source.html">TileLayer.cpp</a> 第 <a class="el" href="TileLayer_8cpp_source.html#l00006">6</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00026">m_numColumns</a>, <a class="el" href="TileLayer_8h_source.html#l00027">m_numRows</a>, <a class="el" href="TileLayer_8h_source.html#l00030">m_tileSize</a>, <a class="el" href="GameLib_8h_source.html#l00011">SCR_H</a> , 以及 <a class="el" href="GameLib_8h_source.html#l00010">SCR_W</a>.</p>
+
+</div>
+</div>
+<a id="adb96031096770029f830606b493742f7" name="adb96031096770029f830606b493742f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb96031096770029f830606b493742f7">&#9670;&#160;</a></span>~TileLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TileLayer::~TileLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a7d6409032419ab74a03715de4189e432" name="a7d6409032419ab74a03715de4189e432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6409032419ab74a03715de4189e432">&#9670;&#160;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classVector2D.html">Vector2D</a> TileLayer::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00024">24</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00032">m_position</a>.</p>
+
+</div>
+</div>
+<a id="a4eb4a70880fd750b09e7a2cce2770dec" name="a4eb4a70880fd750b09e7a2cce2770dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb4a70880fd750b09e7a2cce2770dec">&#9670;&#160;</a></span>getTileIDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp; TileLayer::getTileIDs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00022">22</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00034">m_tileIDs</a>.</p>
+
+</div>
+</div>
+<a id="a2b91f0f2a113c94ff6293fa4b822f3d2" name="a2b91f0f2a113c94ff6293fa4b822f3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b91f0f2a113c94ff6293fa4b822f3d2">&#9670;&#160;</a></span>getTilesetByID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTileset.html">Tileset</a> TileLayer::getTilesetByID </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tileID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8cpp_source.html">TileLayer.cpp</a> 第 <a class="el" href="TileLayer_8cpp_source.html#l00043">43</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00031">m_tilesets</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2_icgraph.png" border="0" usemap="#aclassTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2_icgraph" alt=""/></div>
+<map name="aclassTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2_icgraph" id="aclassTileLayer_a2b91f0f2a113c94ff6293fa4b822f3d2_icgraph">
+<area shape="rect" title=" " alt="" coords="185,5,372,31"/>
+<area shape="rect" href="classTileLayer.html#af32fb583946d920c19b76e1381283ebf" title=" " alt="" coords="5,5,137,31"/>
+<area shape="poly" title=" " alt="" coords="172,21,137,21,137,15,172,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a74ff0f33671097b9e605f7b47412ee73" name="a74ff0f33671097b9e605f7b47412ee73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ff0f33671097b9e605f7b47412ee73">&#9670;&#160;</a></span>getTileSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TileLayer::getTileSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00021">21</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00030">m_tileSize</a>.</p>
+
+</div>
+</div>
+<a id="af32fb583946d920c19b76e1381283ebf" name="af32fb583946d920c19b76e1381283ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32fb583946d920c19b76e1381283ebf">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileLayer::render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classLayer.html#adf702910e0e14fb48cb54690dab1b5ff">Layer</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8cpp_source.html">TileLayer.cpp</a> 第 <a class="el" href="TileLayer_8cpp_source.html#l00020">20</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TextureManager_8cpp_source.html#l00077">TextureManager::drawTile()</a>, <a class="el" href="Level_8h_source.html#l00013">Tileset::firstGridID</a>, <a class="el" href="TileLayer_8cpp_source.html#l00043">getTilesetByID()</a>, <a class="el" href="Vector2D_8h_source.html#l00011">Vector2D::getX()</a>, <a class="el" href="Vector2D_8h_source.html#l00012">Vector2D::getY()</a>, <a class="el" href="TextureManager_8h_source.html#l00028">TextureManager::Instance()</a>, <a class="el" href="TileLayer_8h_source.html#l00028">m_mapHeight</a>, <a class="el" href="TileLayer_8h_source.html#l00029">m_mapWidth</a>, <a class="el" href="TileLayer_8h_source.html#l00026">m_numColumns</a>, <a class="el" href="TileLayer_8h_source.html#l00027">m_numRows</a>, <a class="el" href="TileLayer_8h_source.html#l00032">m_position</a>, <a class="el" href="TileLayer_8h_source.html#l00034">m_tileIDs</a>, <a class="el" href="TileLayer_8h_source.html#l00030">m_tileSize</a>, <a class="el" href="Level_8h_source.html#l00017">Tileset::margin</a>, <a class="el" href="Level_8h_source.html#l00021">Tileset::name</a>, <a class="el" href="Level_8h_source.html#l00020">Tileset::numColumns</a> , 以及 <a class="el" href="Level_8h_source.html#l00016">Tileset::spacing</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer_af32fb583946d920c19b76e1381283ebf_cgraph.png" border="0" usemap="#aclassTileLayer_af32fb583946d920c19b76e1381283ebf_cgraph" alt=""/></div>
+<map name="aclassTileLayer_af32fb583946d920c19b76e1381283ebf_cgraph" id="aclassTileLayer_af32fb583946d920c19b76e1381283ebf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,137,129"/>
+<area shape="rect" href="classTextureManager.html#ae7be0baaa156d4c3d5d6fccde762fe19" title=" " alt="" coords="185,5,376,31"/>
+<area shape="poly" title=" " alt="" coords="87,102,129,71,184,40,203,32,205,37,186,44,132,75,90,106"/>
+<area shape="rect" href="classTileLayer.html#a2b91f0f2a113c94ff6293fa4b822f3d2" title=" " alt="" coords="187,55,374,80"/>
+<area shape="poly" title=" " alt="" coords="125,101,212,81,214,86,127,107"/>
+<area shape="rect" href="classVector2D.html#a527601e47976bcfdac2520817bfee675" title=" " alt="" coords="221,104,340,129"/>
+<area shape="poly" title=" " alt="" coords="137,114,207,114,207,119,137,119"/>
+<area shape="rect" href="classVector2D.html#a5b797fb62a3c21ced0cc8e27afd62f8b" title=" " alt="" coords="221,153,340,179"/>
+<area shape="poly" title=" " alt="" coords="127,127,214,148,212,153,125,132"/>
+<area shape="rect" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6" title=" " alt="" coords="185,203,376,228"/>
+<area shape="poly" title=" " alt="" coords="90,127,133,157,186,188,209,196,207,201,184,192,130,162,87,132"/>
+<area shape="rect" href="classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1" title=" " alt="" coords="470,5,618,31"/>
+<area shape="poly" title=" " alt="" coords="376,15,456,15,456,21,376,21"/>
+<area shape="rect" href="classTextureManager.html#ad76abb178b37cedf4514eb0154349935" title=" " alt="" coords="424,203,664,228"/>
+<area shape="poly" title=" " alt="" coords="376,213,410,213,410,218,376,218"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a40f00aeadc0d3fc8ca43cbeb0450de0e" name="a40f00aeadc0d3fc8ca43cbeb0450de0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f00aeadc0d3fc8ca43cbeb0450de0e">&#9670;&#160;</a></span>setMapHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileLayer::setMapHeight </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mapHeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00019">19</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00028">m_mapHeight</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="LevelParser_8cpp_source.html#l00172">LevelParser::parseTileLayer()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e_icgraph.png" border="0" usemap="#aclassTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e_icgraph" alt=""/></div>
+<map name="aclassTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e_icgraph" id="aclassTileLayer_a40f00aeadc0d3fc8ca43cbeb0450de0e_icgraph">
+<area shape="rect" title=" " alt="" coords="669,5,851,31"/>
+<area shape="rect" href="classLevelParser.html#a540913a0a461c22ad22efd9642a2ab8e" title=" " alt="" coords="420,5,621,31"/>
+<area shape="poly" title=" " alt="" coords="656,21,622,21,622,15,656,15"/>
+<area shape="rect" href="classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="196,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="406,21,372,21,372,15,406,15"/>
+<area shape="rect" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a840abb35a28b7b401535d9dd0c84ffde" name="a840abb35a28b7b401535d9dd0c84ffde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840abb35a28b7b401535d9dd0c84ffde">&#9670;&#160;</a></span>setMapWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileLayer::setMapWidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mapWidth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00018">18</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00029">m_mapWidth</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="LevelParser_8cpp_source.html#l00172">LevelParser::parseTileLayer()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer_a840abb35a28b7b401535d9dd0c84ffde_icgraph.png" border="0" usemap="#aclassTileLayer_a840abb35a28b7b401535d9dd0c84ffde_icgraph" alt=""/></div>
+<map name="aclassTileLayer_a840abb35a28b7b401535d9dd0c84ffde_icgraph" id="aclassTileLayer_a840abb35a28b7b401535d9dd0c84ffde_icgraph">
+<area shape="rect" title=" " alt="" coords="669,5,845,31"/>
+<area shape="rect" href="classLevelParser.html#a540913a0a461c22ad22efd9642a2ab8e" title=" " alt="" coords="420,5,621,31"/>
+<area shape="poly" title=" " alt="" coords="655,21,621,21,621,15,655,15"/>
+<area shape="rect" href="classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="196,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="406,21,372,21,372,15,406,15"/>
+<area shape="rect" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a35752649bbc441a2a571577aeeb36a68" name="a35752649bbc441a2a571577aeeb36a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35752649bbc441a2a571577aeeb36a68">&#9670;&#160;</a></span>setPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileLayer::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVector2D.html">Vector2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00020">20</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00032">m_position</a>.</p>
+
+</div>
+</div>
+<a id="a2d0ef9789523c9a1f11bc6d472985757" name="a2d0ef9789523c9a1f11bc6d472985757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0ef9789523c9a1f11bc6d472985757">&#9670;&#160;</a></span>setTileIDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileLayer::setTileIDs </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00016">16</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00034">m_tileIDs</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="LevelParser_8cpp_source.html#l00172">LevelParser::parseTileLayer()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer_a2d0ef9789523c9a1f11bc6d472985757_icgraph.png" border="0" usemap="#aclassTileLayer_a2d0ef9789523c9a1f11bc6d472985757_icgraph" alt=""/></div>
+<map name="aclassTileLayer_a2d0ef9789523c9a1f11bc6d472985757_icgraph" id="aclassTileLayer_a2d0ef9789523c9a1f11bc6d472985757_icgraph">
+<area shape="rect" title=" " alt="" coords="669,5,824,31"/>
+<area shape="rect" href="classLevelParser.html#a540913a0a461c22ad22efd9642a2ab8e" title=" " alt="" coords="420,5,621,31"/>
+<area shape="poly" title=" " alt="" coords="656,21,622,21,622,15,656,15"/>
+<area shape="rect" href="classLevelParser.html#a9d813a327e3df4e604e7aae6e2524546" title=" " alt="" coords="196,5,372,31"/>
+<area shape="poly" title=" " alt="" coords="406,21,372,21,372,15,406,15"/>
+<area shape="rect" href="classPlayState.html#a412edf86cef5eaffdfd63d69af42c39b" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a58f18ccbd90291d6ef67c475b81c0b4f" name="a58f18ccbd90291d6ef67c475b81c0b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f18ccbd90291d6ef67c475b81c0b4f">&#9670;&#160;</a></span>setTileSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileLayer::setTileSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tileSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00017">17</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="TileLayer_8h_source.html#l00030">m_tileSize</a>.</p>
+
+</div>
+</div>
+<a id="afc5c61c51ad8e14078036c347df718fe" name="afc5c61c51ad8e14078036c347df718fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5c61c51ad8e14078036c347df718fe">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileLayer::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLevel.html">Level</a> *&#160;</td>
+          <td class="paramname"><em>pLevel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classLayer.html#afbf017a1ed9a4adfe66b86bf8d4fa63e">Layer</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8cpp_source.html">TileLayer.cpp</a> 第 <a class="el" href="TileLayer_8cpp_source.html#l00012">12</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="Camera_8h_source.html#l00010">Camera::getPosition()</a>, <a class="el" href="Camera_8h_source.html#l00013">Camera::Instance()</a> , 以及 <a class="el" href="TileLayer_8h_source.html#l00032">m_position</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTileLayer_afc5c61c51ad8e14078036c347df718fe_cgraph.png" border="0" usemap="#aclassTileLayer_afc5c61c51ad8e14078036c347df718fe_cgraph" alt=""/></div>
+<map name="aclassTileLayer_afc5c61c51ad8e14078036c347df718fe_cgraph" id="aclassTileLayer_afc5c61c51ad8e14078036c347df718fe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,140,56"/>
+<area shape="rect" href="classCamera.html#aec9074b278b84e784cd493ded9e46910" title=" " alt="" coords="188,5,343,31"/>
+<area shape="poly" title=" " alt="" coords="140,32,174,27,175,33,141,37"/>
+<area shape="rect" href="classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89" title=" " alt="" coords="197,55,333,80"/>
+<area shape="poly" title=" " alt="" coords="141,49,184,55,183,60,140,54"/>
+<area shape="rect" href="classCamera.html#a01f94c3543f56ede7af49dc778f19331" title=" " alt="" coords="391,55,523,80"/>
+<area shape="poly" title=" " alt="" coords="334,65,377,65,377,70,334,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a1afe6488faa3e2bf3a772617035ab030" name="a1afe6488faa3e2bf3a772617035ab030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afe6488faa3e2bf3a772617035ab030">&#9670;&#160;</a></span>m_mapHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TileLayer::m_mapHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00028">28</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a> , 以及 <a class="el" href="TileLayer_8h_source.html#l00019">setMapHeight()</a>.</p>
+
+</div>
+</div>
+<a id="ad538dc72294ebe5b4fd0a25109d1b119" name="ad538dc72294ebe5b4fd0a25109d1b119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad538dc72294ebe5b4fd0a25109d1b119">&#9670;&#160;</a></span>m_mapWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TileLayer::m_mapWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a> , 以及 <a class="el" href="TileLayer_8h_source.html#l00018">setMapWidth()</a>.</p>
+
+</div>
+</div>
+<a id="a22fc2345220696dcffa7a6785824f5e8" name="a22fc2345220696dcffa7a6785824f5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22fc2345220696dcffa7a6785824f5e8">&#9670;&#160;</a></span>m_numColumns</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TileLayer::m_numColumns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00026">26</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a> , 以及 <a class="el" href="TileLayer_8cpp_source.html#l00006">TileLayer()</a>.</p>
+
+</div>
+</div>
+<a id="ab52da1d995ebda1729861e1b41eee029" name="ab52da1d995ebda1729861e1b41eee029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52da1d995ebda1729861e1b41eee029">&#9670;&#160;</a></span>m_numRows</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TileLayer::m_numRows</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00027">27</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a> , 以及 <a class="el" href="TileLayer_8cpp_source.html#l00006">TileLayer()</a>.</p>
+
+</div>
+</div>
+<a id="ae8e4975a29ad513501923854ce2b33a2" name="ae8e4975a29ad513501923854ce2b33a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e4975a29ad513501923854ce2b33a2">&#9670;&#160;</a></span>m_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> TileLayer::m_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00032">32</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8h_source.html#l00024">getPosition()</a>, <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a>, <a class="el" href="TileLayer_8h_source.html#l00020">setPosition()</a> , 以及 <a class="el" href="TileLayer_8cpp_source.html#l00012">update()</a>.</p>
+
+</div>
+</div>
+<a id="a6cadf5d32536c725dc6e4d6e4191ed89" name="a6cadf5d32536c725dc6e4d6e4191ed89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cadf5d32536c725dc6e4d6e4191ed89">&#9670;&#160;</a></span>m_tileIDs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt; TileLayer::m_tileIDs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00034">34</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8h_source.html#l00022">getTileIDs()</a>, <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a> , 以及 <a class="el" href="TileLayer_8h_source.html#l00016">setTileIDs()</a>.</p>
+
+</div>
+</div>
+<a id="a354f473fbd1e6beafd23cfded4b57f4f" name="a354f473fbd1e6beafd23cfded4b57f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354f473fbd1e6beafd23cfded4b57f4f">&#9670;&#160;</a></span>m_tilesets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="structTileset.html">Tileset</a>&gt;&amp; TileLayer::m_tilesets</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00031">31</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8cpp_source.html#l00043">getTilesetByID()</a>.</p>
+
+</div>
+</div>
+<a id="a4c0ae3b970af4aafbe790e73630167e2" name="a4c0ae3b970af4aafbe790e73630167e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0ae3b970af4aafbe790e73630167e2">&#9670;&#160;</a></span>m_tileSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TileLayer::m_tileSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00030">30</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="TileLayer_8h_source.html#l00021">getTileSize()</a>, <a class="el" href="TileLayer_8cpp_source.html#l00020">render()</a>, <a class="el" href="TileLayer_8h_source.html#l00017">setTileSize()</a> , 以及 <a class="el" href="TileLayer_8cpp_source.html#l00006">TileLayer()</a>.</p>
+
+</div>
+</div>
+<a id="a2e1dbc38cb2773c01979eeb9c1af1d52" name="a2e1dbc38cb2773c01979eeb9c1af1d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1dbc38cb2773c01979eeb9c1af1d52">&#9670;&#160;</a></span>m_velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2D.html">Vector2D</a> TileLayer::m_velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="TileLayer_8h_source.html">TileLayer.h</a> 第 <a class="el" href="TileLayer_8h_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>inc/<a class="el" href="TileLayer_8h_source.html">TileLayer.h</a></li>
+<li>src/<a class="el" href="TileLayer_8cpp_source.html">TileLayer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

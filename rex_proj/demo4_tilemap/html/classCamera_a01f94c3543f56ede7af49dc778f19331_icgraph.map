@@ -1,0 +1,18 @@
+<map id="Camera::Camera" name="Camera::Camera">
+<area shape="rect" id="Node000001" title=" " alt="" coords="616,81,748,107"/>
+<area shape="rect" id="Node000002" href="$classCamera.html#a38bcf7d4fe8373d726b8824ab30efd89" title=" " alt="" coords="432,81,568,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="602,97,568,97,568,91,602,91"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#a3c2e7e40fe2018229d44168bd484c182" title=" " alt="" coords="219,5,367,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,79,383,53,330,33,332,28,385,47,455,74"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title=" " alt="" coords="22,31,138,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="418,87,138,53,138,48,419,82"/>
+<area shape="rect" id="Node000005" href="$classSDLGameObject.html#a9322e790f0515760f36b62ce35d4a090" title=" " alt="" coords="203,107,384,132"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="419,107,385,111,384,106,418,101"/>
+<area shape="rect" id="Node000008" href="$classTileLayer.html#afc5c61c51ad8e14078036c347df718fe" title=" " alt="" coords="226,156,361,181"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="461,115,385,146,345,159,343,153,383,141,459,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="206,31,138,39,138,34,205,26"/>
+<area shape="rect" id="Node000006" href="$classCat.html#aaf85e2d49f4d1ed3c967c96df79f6ab2" title=" " alt="" coords="31,81,129,107"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="189,110,129,102,129,97,189,104"/>
+<area shape="rect" id="Node000007" href="$classLevel1Boss.html#a303ee6c7dbcbef479d0bd334a5a193b0" title=" " alt="" coords="5,131,155,156"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="189,134,155,138,155,132,189,128"/>
+</map>

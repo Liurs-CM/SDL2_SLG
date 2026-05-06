@@ -1,0 +1,33 @@
+\doxysection{Play\+State.\+h}
+\hypertarget{PlayState_8h_source}{}\label{PlayState_8h_source}\index{inc/PlayState.h@{inc/PlayState.h}}
+\mbox{\hyperlink{PlayState_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_PlayState\_\_}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_PlayState\_\_}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameState_8h}{GameState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Level_8h}{Level.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00008}00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameObject}{GameObject}};}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00009}00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSDLGameObject}{SDLGameObject}};}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00010}00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLevel}{Level}};}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00012}\mbox{\hyperlink{classPlayState}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPlayState}{PlayState}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classGameState}{GameState}}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00014}00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00015}\mbox{\hyperlink{classPlayState_a063aa1bc206d83773bc6a770e9e5d1bc}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classPlayState_a063aa1bc206d83773bc6a770e9e5d1bc}{\string~PlayState}}()\ \{\ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classPlayState_a72f574abe80fe9ea31e83aa4694b4337}{pLevel}};\ \}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayState_a3beac23cba7b9541714ebd33ea77a913}{update}}();}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayState_ad0b2654d0d822b853c6d06ee5c4a95c2}{render}}();}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPlayState_a412edf86cef5eaffdfd63d69af42c39b}{onEnter}}();}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPlayState_aed7fef037f6e9c9fc4a02924e2fe7154}{onExit}}();}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00020}\mbox{\hyperlink{classPlayState_a8a9e49f36d2ec9660037ff7010458e5a}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classPlayState_a8a9e49f36d2ec9660037ff7010458e5a}{getStateID}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayState_aa342bc3254ffe622f8abe78001293389}{s\_playID}};\ \}}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00022}\mbox{\hyperlink{classPlayState_aa342bc3254ffe622f8abe78001293389}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classPlayState_aa342bc3254ffe622f8abe78001293389}{s\_playID}};}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00023}\mbox{\hyperlink{classPlayState_abd5582cb45db972c24fb907b0c85aa01}{00023}}\ \ \ \ \ \ \ \ \ std::vector<GameObject*>\ \mbox{\hyperlink{classPlayState_abd5582cb45db972c24fb907b0c85aa01}{m\_gameObjects}};}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00024}\mbox{\hyperlink{classPlayState_a72f574abe80fe9ea31e83aa4694b4337}{00024}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevel}{Level}}*\ \mbox{\hyperlink{classPlayState_a72f574abe80fe9ea31e83aa4694b4337}{pLevel}};}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00025}00025\ \};}
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{PlayState_8h_source_l00027}00027\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_PlayState\_\_}}
+
+\end{DoxyCode}

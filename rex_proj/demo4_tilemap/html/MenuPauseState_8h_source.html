@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: inc/MenuPauseState.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MenuPauseState.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="MenuPauseState_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __MenuPauseState__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __MenuPauseState__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="MenuState_8h.html">MenuState.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="GameObject_8h.html">GameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classMenuPauseState.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classMenuPauseState.html">MenuPauseState</a> : <span class="keyword">public</span> <a class="code hl_class" href="classMenuState.html">MenuState</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classMenuPauseState.html#aa21b993a4669e0b1e99d634b100a7acc">   11</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classMenuPauseState.html#aa21b993a4669e0b1e99d634b100a7acc">~MenuPauseState</a>() {}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuPauseState.html#aae1d1d2ec5f4869333d54692a453c475">update</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuPauseState.html#afc0434dcb454274bd4f42ff7c4ff58d8">render</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2">onEnter</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classMenuPauseState.html#a5f05d3923a24f9c3256e9894646b76e7">onExit</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classMenuPauseState.html#a9b2a0dd4e72c95d9c6ac06ffa13ae7f3">   16</a></span>        <span class="keyword">virtual</span> std::string <a class="code hl_function" href="classMenuPauseState.html#a9b2a0dd4e72c95d9c6ac06ffa13ae7f3">getStateID</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classMenuPauseState.html#a68cd0f120d758d3a7875f488c7ee6e26">s_pauseID</a>; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuPauseState.html#a2aa960be508029ee135fabf2e7c78594">setCallbacks</a>(<span class="keyword">const</span> std::vector&lt;Callback&gt;&amp; callbacks);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classMenuPauseState.html#a68cd0f120d758d3a7875f488c7ee6e26">   19</a></span>        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_variable" href="classMenuPauseState.html#a68cd0f120d758d3a7875f488c7ee6e26">s_pauseID</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuPauseState.html#afa67ee79ca7c8193500cf9e8a9197e39">s_pauseToMain</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMenuPauseState.html#afb69b19913759d84ca15bc054d797aa9">s_resumePlay</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classMenuPauseState.html#a37204fd8409874156b343c703c37d50e">   22</a></span>        std::vector&lt;std::unique_ptr&lt;GameObject&gt;&gt; <a class="code hl_variable" href="classMenuPauseState.html#a37204fd8409874156b343c703c37d50e">m_gameObjects</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">// __MenuPauseState__</span></div>
+<div class="ttc" id="aGameObject_8h_html"><div class="ttname"><a href="GameObject_8h.html">GameObject.h</a></div></div>
+<div class="ttc" id="aMenuState_8h_html"><div class="ttname"><a href="MenuState_8h.html">MenuState.h</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html"><div class="ttname"><a href="classMenuPauseState.html">MenuPauseState</a></div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8h_source.html#l00008">MenuPauseState.h:9</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_a15eba5e95a5ec94f1dd4f7b47e047de2"><div class="ttname"><a href="classMenuPauseState.html#a15eba5e95a5ec94f1dd4f7b47e047de2">MenuPauseState::onEnter</a></div><div class="ttdeci">virtual bool onEnter()</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8cpp_source.html#l00043">MenuPauseState.cpp:43</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_a2aa960be508029ee135fabf2e7c78594"><div class="ttname"><a href="classMenuPauseState.html#a2aa960be508029ee135fabf2e7c78594">MenuPauseState::setCallbacks</a></div><div class="ttdeci">virtual void setCallbacks(const std::vector&lt; Callback &gt; &amp;callbacks)</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8cpp_source.html#l00071">MenuPauseState.cpp:71</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_a37204fd8409874156b343c703c37d50e"><div class="ttname"><a href="classMenuPauseState.html#a37204fd8409874156b343c703c37d50e">MenuPauseState::m_gameObjects</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; GameObject &gt; &gt; m_gameObjects</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8h_source.html#l00022">MenuPauseState.h:22</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_a5f05d3923a24f9c3256e9894646b76e7"><div class="ttname"><a href="classMenuPauseState.html#a5f05d3923a24f9c3256e9894646b76e7">MenuPauseState::onExit</a></div><div class="ttdeci">virtual bool onExit()</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8cpp_source.html#l00055">MenuPauseState.cpp:55</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_a68cd0f120d758d3a7875f488c7ee6e26"><div class="ttname"><a href="classMenuPauseState.html#a68cd0f120d758d3a7875f488c7ee6e26">MenuPauseState::s_pauseID</a></div><div class="ttdeci">static const std::string s_pauseID</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8h_source.html#l00019">MenuPauseState.h:19</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_a9b2a0dd4e72c95d9c6ac06ffa13ae7f3"><div class="ttname"><a href="classMenuPauseState.html#a9b2a0dd4e72c95d9c6ac06ffa13ae7f3">MenuPauseState::getStateID</a></div><div class="ttdeci">virtual std::string getStateID() const</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8h_source.html#l00016">MenuPauseState.h:16</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_aa21b993a4669e0b1e99d634b100a7acc"><div class="ttname"><a href="classMenuPauseState.html#aa21b993a4669e0b1e99d634b100a7acc">MenuPauseState::~MenuPauseState</a></div><div class="ttdeci">virtual ~MenuPauseState()</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8h_source.html#l00011">MenuPauseState.h:11</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_aae1d1d2ec5f4869333d54692a453c475"><div class="ttname"><a href="classMenuPauseState.html#aae1d1d2ec5f4869333d54692a453c475">MenuPauseState::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8cpp_source.html#l00023">MenuPauseState.cpp:23</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_afa67ee79ca7c8193500cf9e8a9197e39"><div class="ttname"><a href="classMenuPauseState.html#afa67ee79ca7c8193500cf9e8a9197e39">MenuPauseState::s_pauseToMain</a></div><div class="ttdeci">static void s_pauseToMain()</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8cpp_source.html#l00013">MenuPauseState.cpp:13</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_afb69b19913759d84ca15bc054d797aa9"><div class="ttname"><a href="classMenuPauseState.html#afb69b19913759d84ca15bc054d797aa9">MenuPauseState::s_resumePlay</a></div><div class="ttdeci">static void s_resumePlay()</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8cpp_source.html#l00018">MenuPauseState.cpp:18</a></div></div>
+<div class="ttc" id="aclassMenuPauseState_html_afc0434dcb454274bd4f42ff7c4ff58d8"><div class="ttname"><a href="classMenuPauseState.html#afc0434dcb454274bd4f42ff7c4ff58d8">MenuPauseState::render</a></div><div class="ttdeci">virtual void render()</div><div class="ttdef"><b>Definition</b> <a href="MenuPauseState_8cpp_source.html#l00036">MenuPauseState.cpp:36</a></div></div>
+<div class="ttc" id="aclassMenuState_html"><div class="ttname"><a href="classMenuState.html">MenuState</a></div><div class="ttdef"><b>Definition</b> <a href="MenuState_8h_source.html#l00005">MenuState.h:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

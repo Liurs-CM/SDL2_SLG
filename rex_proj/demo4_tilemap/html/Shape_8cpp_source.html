@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/Shape.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Shape.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Shape_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="Shape_8h.html">Shape.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="TextureManager_8h.html">TextureManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="GameLib_8h.html">GameLib.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;SDL2_gfxPrimitives.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><a class="code hl_class" href="classShape.html">Shape</a>* <a class="code hl_variable" href="classShape.html#a8f4bb17b2679e5b67f5453913107f731">Shape::s_pInstance</a> = 0;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classShape.html#af3490b86dd15bc7889a627960adf7340">    8</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classShape.html#af3490b86dd15bc7889a627960adf7340">Shape::Shape_genrate</a>()</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// Grid</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">//int gridW = GRID_COLS * CELL_SIZE;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">//int gridH = GRID_ROWS * CELL_SIZE;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#adf702159b5e237016bb677c9a1ca9cbf">drawGrid</a>(<a class="code hl_define" href="GameLib_8h.html#af0cee92dec0a54dad52eec38fd9a2466">GRID_X</a>, <a class="code hl_define" href="GameLib_8h.html#ad8c6cf1074fa26eb4554030f04ee57d1">GRID_Y</a>, <a class="code hl_define" href="GameLib_8h.html#a5ba0b105774bfdc09ce545d73dcdedd3">GRID_ROWS</a>, <a class="code hl_define" href="GameLib_8h.html#a881e2cda79b5951641b07f678f6ef929">GRID_COLS</a>, <a class="code hl_define" href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>, <a class="code hl_define" href="GameLib_8h.html#a2c546bb9d8660d44115f17f15d561fae">COLOR_DARK_GRAY</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">// --- Row 1: Pixels and Lines ---</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a25c66880a004153371df2dd0e7a6041b">drawText</a>(20, 15, <span class="stringliteral">&quot;Pixels&quot;</span>, <a class="code hl_define" href="GameLib_8h.html#a9b44987ffdc2af19b635206b94334b69">COLOR_WHITE</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    SDL_SetRenderDrawColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_define" href="GameLib_8h.html#a29607ad112a1f5c2a29e6ffb1afd703d">COLOR_GET_R</a>(<a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>), <a class="code hl_define" href="GameLib_8h.html#a87604365f6b558befa36e9340cf44bbb">COLOR_GET_G</a>(<a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>), </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_define" href="GameLib_8h.html#a6a6c59d9980833421e357f6ab0a3197c">COLOR_GET_B</a>(<a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>), <a class="code hl_define" href="GameLib_8h.html#ad6c7d8a7b86d9f4bb87840350107ea46">COLOR_GET_A</a>(<a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>));</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//SDL_SetRenderDrawColor(pRenderer, 0,0,0,255);</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    SDL_Rect rect = {420, 330, 80, 60};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    SDL_RenderFillRect(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, &amp;rect); </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 50; i++) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">int</span> px = 420 + <a class="code hl_function" href="classGameLib.html#aea6d65a7fdd231c2d4718166f231a9d2">GameLib::Random</a>(0, 80);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">int</span> py = 330 + <a class="code hl_function" href="classGameLib.html#aea6d65a7fdd231c2d4718166f231a9d2">GameLib::Random</a>(0, 60);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        Uint8 r= <a class="code hl_function" href="classGameLib.html#aea6d65a7fdd231c2d4718166f231a9d2">GameLib::Random</a>(100,255);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        Uint8 g= <a class="code hl_function" href="classGameLib.html#aea6d65a7fdd231c2d4718166f231a9d2">GameLib::Random</a>(100,255);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        Uint8 b= <a class="code hl_function" href="classGameLib.html#aea6d65a7fdd231c2d4718166f231a9d2">GameLib::Random</a>(100,255);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        SDL_SetRenderDrawColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, r, g, b, 255);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        SDL_RenderDrawPoint(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, px, py);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a25c66880a004153371df2dd0e7a6041b">drawText</a>(140, 315, <span class="stringliteral">&quot;Lines&quot;</span>, <a class="code hl_define" href="GameLib_8h.html#a9b44987ffdc2af19b635206b94334b69">COLOR_WHITE</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    lineColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 140, 335, 230, 335, <a class="code hl_define" href="GameLib_8h.html#ad86358bf19927183dd7b4ae215a29731">COLOR_RED</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    lineColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 140, 335, 230, 385, <a class="code hl_define" href="GameLib_8h.html#afc9149f5de51bd9ac4f5ebbfa153f018">COLOR_GREEN</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    lineColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 140, 335, 185, 385, <a class="code hl_define" href="GameLib_8h.html#a23c70d699a5a775bc2e1ebeb8603f630">COLOR_BLUE</a>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    lineColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 140, 360, 230, 360, <a class="code hl_define" href="GameLib_8h.html#a4534b577b74a58b0f4b7be027af664e0">COLOR_YELLOW</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#ab8b6e096d0a03703d8772e9bd8ef8e93">drawTextScale</a>(100,10, <span class="stringliteral">&quot;Hi, windows-&gt;SDL2!&quot;</span>, <a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>, 3);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a25c66880a004153371df2dd0e7a6041b">drawText</a>(10, 180, <span class="stringliteral">&quot;hi, test drawtext&quot;</span>, <a class="code hl_define" href="GameLib_8h.html#a23c70d699a5a775bc2e1ebeb8603f630">COLOR_BLUE</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a3a2051122a31204406b04457c4e3fee4">drawPrintf</a>(10, 200, <a class="code hl_define" href="GameLib_8h.html#a4534b577b74a58b0f4b7be027af664e0">COLOR_YELLOW</a>, <span class="stringliteral">&quot;hi, test printf Time: %2.f s&quot;</span>, SDL_GetTicks() / 1000.0f);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a17440efbdb49e196fdf01fdd475127e5">drawCircle</a>(75, 300, 50);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a17440efbdb49e196fdf01fdd475127e5">drawCircle</a>(55, 300, 30);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a17440efbdb49e196fdf01fdd475127e5">drawCircle</a>(70, 300, 10, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    circleColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 105, 300, 20, <a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    filledCircleColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 100, 300, 10, <a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    arcColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 75, 300, 40, 50, 110, <a class="code hl_define" href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TheTextureManager::Instance</a>()-&gt;<a class="code hl_function" href="classTextureManager.html#a55a5d5f4ec5ab276dc73ea2c55574a61">draw</a>(<span class="stringliteral">&quot;cat&quot;</span>, <a class="code hl_class" href="classVector2D.html">Vector2D</a>(20,20), 36, 36);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    SDL_SetRenderDrawColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 255,0,255,255);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="classShape.html#a576fa65faf5c01bd4880b12fcf3bb1a3">initHealthBarSystem</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_function" href="classShape.html#a408cd4bcfb83d325a0b3660bdf81e760">drawHealthBar</a>(204, 104, 20, 4, 500, 1000);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="classShape.html#a408cd4bcfb83d325a0b3660bdf81e760">drawHealthBar</a>(204, 128, 50, 5, 5 * <a class="code hl_variable" href="classShape.html#af9f12d78ce6961bef6c729c9662e12db">m_currentAnim</a>.<a class="code hl_variable" href="classAnimatedGraphic.html#a8f00462424c7430e1488b16e5df8f29e">globalFrame_</a>, 1000);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_function" href="classShape.html#a408cd4bcfb83d325a0b3660bdf81e760">drawHealthBar</a>(204, 152, 80, 8, 1000 - 5 * <a class="code hl_variable" href="classShape.html#af9f12d78ce6961bef6c729c9662e12db">m_currentAnim</a>.<a class="code hl_variable" href="classAnimatedGraphic.html#a8f00462424c7430e1488b16e5df8f29e">globalFrame_</a>, 1000);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classShape.html#a576fa65faf5c01bd4880b12fcf3bb1a3">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classShape.html#a576fa65faf5c01bd4880b12fcf3bb1a3">Shape::initHealthBarSystem</a>() </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// 创建 256x1 渐变纹理（红→黄→绿）</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    SDL_Surface* s = SDL_CreateRGBSurface(0, 256, 1, 32, 0, 0, 0, 0);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; 256; ++x) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">float</span> t = x / 255.0f;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        Uint8 r = (t &lt; 0.5f) ? 255 : (Uint8)(255 * (1 - (t - 0.5f) * 2));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        Uint8 g = (t &lt; 0.5f) ? (Uint8)(255 * t * 2) : 255;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        Uint8 b = 0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        ((Uint32*)s-&gt;pixels)[x] = SDL_MapRGB(s-&gt;format, r, g, b);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_variable" href="classShape.html#a8da27d8765b3c67c058da77b9ea0da1f">gHealthGradient</a> = SDL_CreateTextureFromSurface(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, s);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    SDL_FreeSurface(s);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classShape.html#a408cd4bcfb83d325a0b3660bdf81e760">   73</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classShape.html#a408cd4bcfb83d325a0b3660bdf81e760">Shape::drawHealthBar</a>(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y,               <span class="comment">// 屏幕位置</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height,      <span class="comment">// 血条尺寸</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">int</span> currentHP, <span class="keywordtype">int</span> maxHP)   <span class="comment">// 绝对血量值</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    SDL_Renderer* <a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a> = <a class="code hl_function" href="classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1">RenderContext::get</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> SEG_SIZE = 100;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_SEG = 10;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// 1. 计算段数（按绝对值）</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">int</span> curSeg = std::min(currentHP / SEG_SIZE, MAX_SEG);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">int</span> maxSeg = std::min(maxHP / SEG_SIZE, MAX_SEG);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (maxSeg == 0) maxSeg = 1;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> (currentHP &gt; 0 &amp;&amp; curSeg == 0) curSeg = 1;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">float</span> ratio = (float)curSeg / maxSeg;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// 2. 背景（可选）</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    SDL_SetRenderDrawColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 127, 127, 127, 255);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    SDL_Rect rect = {x, y, width, height};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    SDL_RenderFillRect(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, &amp;rect);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// 3. 渐变前景</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span> (ratio &gt; 0.0f) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        SDL_Rect src = {0, 0, (int)(256 * ratio), 1};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        SDL_Rect dst = {x, y, (int)(width * ratio), height};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        SDL_RenderCopy(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, <a class="code hl_variable" href="classShape.html#a8da27d8765b3c67c058da77b9ea0da1f">gHealthGradient</a>, &amp;src, &amp;dst);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// 4. ★ 1像素黑边框 ★</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    SDL_SetRenderDrawColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 0, 0, 0, 255);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    SDL_RenderDrawRect(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, &amp;rect);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// 5. ★ &gt;1000 高亮（白边）★</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">if</span> (maxHP &gt;= 1000) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        SDL_SetRenderDrawColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 255, 255, 255, 255);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        rect = {x - 1, y - 1, width + 2, height + 2};</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        SDL_RenderDrawRect(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, &amp;rect);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// 6. ★ 1像素黑点倒角 ★</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    SDL_SetRenderDrawColor(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, 127, 127, 127, 255);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    SDL_RenderDrawPoint(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, x - 1, y - 1);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    SDL_RenderDrawPoint(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, x - 1, y + height);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    SDL_RenderDrawPoint(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, x + width, y - 1);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    SDL_RenderDrawPoint(<a class="code hl_variable" href="classShape.html#ae47773e0b9c57484b254b1f2799438df">pRenderer</a>, x + width, y + height);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="ttc" id="aGameLib_8h_html"><div class="ttname"><a href="GameLib_8h.html">GameLib.h</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a23c70d699a5a775bc2e1ebeb8603f630"><div class="ttname"><a href="GameLib_8h.html#a23c70d699a5a775bc2e1ebeb8603f630">COLOR_BLUE</a></div><div class="ttdeci">#define COLOR_BLUE</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00031">GameLib.h:31</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a29607ad112a1f5c2a29e6ffb1afd703d"><div class="ttname"><a href="GameLib_8h.html#a29607ad112a1f5c2a29e6ffb1afd703d">COLOR_GET_R</a></div><div class="ttdeci">#define COLOR_GET_R(c)</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00055">GameLib.h:55</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a2c546bb9d8660d44115f17f15d561fae"><div class="ttname"><a href="GameLib_8h.html#a2c546bb9d8660d44115f17f15d561fae">COLOR_DARK_GRAY</a></div><div class="ttdeci">#define COLOR_DARK_GRAY</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00039">GameLib.h:39</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a4534b577b74a58b0f4b7be027af664e0"><div class="ttname"><a href="GameLib_8h.html#a4534b577b74a58b0f4b7be027af664e0">COLOR_YELLOW</a></div><div class="ttdeci">#define COLOR_YELLOW</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00032">GameLib.h:32</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a5ba0b105774bfdc09ce545d73dcdedd3"><div class="ttname"><a href="GameLib_8h.html#a5ba0b105774bfdc09ce545d73dcdedd3">GRID_ROWS</a></div><div class="ttdeci">#define GRID_ROWS</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00019">GameLib.h:19</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a6a6c59d9980833421e357f6ab0a3197c"><div class="ttname"><a href="GameLib_8h.html#a6a6c59d9980833421e357f6ab0a3197c">COLOR_GET_B</a></div><div class="ttdeci">#define COLOR_GET_B(c)</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00057">GameLib.h:57</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a7a4127f14f16563da90eb3c836bc404f"><div class="ttname"><a href="GameLib_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a></div><div class="ttdeci">#define CELL_SIZE</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00021">GameLib.h:21</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a87604365f6b558befa36e9340cf44bbb"><div class="ttname"><a href="GameLib_8h.html#a87604365f6b558befa36e9340cf44bbb">COLOR_GET_G</a></div><div class="ttdeci">#define COLOR_GET_G(c)</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00056">GameLib.h:56</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a881e2cda79b5951641b07f678f6ef929"><div class="ttname"><a href="GameLib_8h.html#a881e2cda79b5951641b07f678f6ef929">GRID_COLS</a></div><div class="ttdeci">#define GRID_COLS</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00020">GameLib.h:20</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_a9b44987ffdc2af19b635206b94334b69"><div class="ttname"><a href="GameLib_8h.html#a9b44987ffdc2af19b635206b94334b69">COLOR_WHITE</a></div><div class="ttdeci">#define COLOR_WHITE</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00028">GameLib.h:28</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_aba2a7fe77a7501e5844370eec0185207"><div class="ttname"><a href="GameLib_8h.html#aba2a7fe77a7501e5844370eec0185207">COLOR_BLACK</a></div><div class="ttdeci">#define COLOR_BLACK</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00027">GameLib.h:27</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_ad6c7d8a7b86d9f4bb87840350107ea46"><div class="ttname"><a href="GameLib_8h.html#ad6c7d8a7b86d9f4bb87840350107ea46">COLOR_GET_A</a></div><div class="ttdeci">#define COLOR_GET_A(c)</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00054">GameLib.h:54</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_ad86358bf19927183dd7b4ae215a29731"><div class="ttname"><a href="GameLib_8h.html#ad86358bf19927183dd7b4ae215a29731">COLOR_RED</a></div><div class="ttdeci">#define COLOR_RED</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00029">GameLib.h:29</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_ad8c6cf1074fa26eb4554030f04ee57d1"><div class="ttname"><a href="GameLib_8h.html#ad8c6cf1074fa26eb4554030f04ee57d1">GRID_Y</a></div><div class="ttdeci">#define GRID_Y</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00018">GameLib.h:18</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_af0cee92dec0a54dad52eec38fd9a2466"><div class="ttname"><a href="GameLib_8h.html#af0cee92dec0a54dad52eec38fd9a2466">GRID_X</a></div><div class="ttdeci">#define GRID_X</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00017">GameLib.h:17</a></div></div>
+<div class="ttc" id="aGameLib_8h_html_afc9149f5de51bd9ac4f5ebbfa153f018"><div class="ttname"><a href="GameLib_8h.html#afc9149f5de51bd9ac4f5ebbfa153f018">COLOR_GREEN</a></div><div class="ttdeci">#define COLOR_GREEN</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00030">GameLib.h:30</a></div></div>
+<div class="ttc" id="aShape_8h_html"><div class="ttname"><a href="Shape_8h.html">Shape.h</a></div></div>
+<div class="ttc" id="aTextureManager_8h_html"><div class="ttname"><a href="TextureManager_8h.html">TextureManager.h</a></div></div>
+<div class="ttc" id="aclassAnimatedGraphic_html_a8f00462424c7430e1488b16e5df8f29e"><div class="ttname"><a href="classAnimatedGraphic.html#a8f00462424c7430e1488b16e5df8f29e">AnimatedGraphic::globalFrame_</a></div><div class="ttdeci">static uint8_t globalFrame_</div><div class="ttdef"><b>Definition</b> <a href="AnimatedGraphic_8h_source.html#l00011">AnimatedGraphic.h:11</a></div></div>
+<div class="ttc" id="aclassGameLib_html_aea6d65a7fdd231c2d4718166f231a9d2"><div class="ttname"><a href="classGameLib.html#aea6d65a7fdd231c2d4718166f231a9d2">GameLib::Random</a></div><div class="ttdeci">static int Random(int minVal, int maxVal)</div><div class="ttdef"><b>Definition</b> <a href="GameLib_8h_source.html#l00165">GameLib.h:165</a></div></div>
+<div class="ttc" id="aclassRenderContext_html_a54cee44459b9a44a53ec9983480dc7f1"><div class="ttname"><a href="classRenderContext.html#a54cee44459b9a44a53ec9983480dc7f1">RenderContext::get</a></div><div class="ttdeci">static SDL_Renderer * get()</div><div class="ttdef"><b>Definition</b> <a href="RenderContext_8h_source.html#l00013">RenderContext.h:13</a></div></div>
+<div class="ttc" id="aclassShape_html"><div class="ttname"><a href="classShape.html">Shape</a></div><div class="ttdef"><b>Definition</b> <a href="Shape_8h_source.html#l00006">Shape.h:7</a></div></div>
+<div class="ttc" id="aclassShape_html_a408cd4bcfb83d325a0b3660bdf81e760"><div class="ttname"><a href="classShape.html#a408cd4bcfb83d325a0b3660bdf81e760">Shape::drawHealthBar</a></div><div class="ttdeci">void drawHealthBar(int x, int y, int width, int height, int currentHP, int maxHP)</div><div class="ttdef"><b>Definition</b> <a href="Shape_8cpp_source.html#l00073">Shape.cpp:73</a></div></div>
+<div class="ttc" id="aclassShape_html_a576fa65faf5c01bd4880b12fcf3bb1a3"><div class="ttname"><a href="classShape.html#a576fa65faf5c01bd4880b12fcf3bb1a3">Shape::initHealthBarSystem</a></div><div class="ttdeci">void initHealthBarSystem()</div><div class="ttdef"><b>Definition</b> <a href="Shape_8cpp_source.html#l00057">Shape.cpp:57</a></div></div>
+<div class="ttc" id="aclassShape_html_a8da27d8765b3c67c058da77b9ea0da1f"><div class="ttname"><a href="classShape.html#a8da27d8765b3c67c058da77b9ea0da1f">Shape::gHealthGradient</a></div><div class="ttdeci">SDL_Texture * gHealthGradient</div><div class="ttdef"><b>Definition</b> <a href="Shape_8h_source.html#l00029">Shape.h:29</a></div></div>
+<div class="ttc" id="aclassShape_html_a8f4bb17b2679e5b67f5453913107f731"><div class="ttname"><a href="classShape.html#a8f4bb17b2679e5b67f5453913107f731">Shape::s_pInstance</a></div><div class="ttdeci">static Shape * s_pInstance</div><div class="ttdef"><b>Definition</b> <a href="Shape_8h_source.html#l00027">Shape.h:27</a></div></div>
+<div class="ttc" id="aclassShape_html_ae47773e0b9c57484b254b1f2799438df"><div class="ttname"><a href="classShape.html#ae47773e0b9c57484b254b1f2799438df">Shape::pRenderer</a></div><div class="ttdeci">SDL_Renderer * pRenderer</div><div class="ttdef"><b>Definition</b> <a href="Shape_8h_source.html#l00028">Shape.h:28</a></div></div>
+<div class="ttc" id="aclassShape_html_af3490b86dd15bc7889a627960adf7340"><div class="ttname"><a href="classShape.html#af3490b86dd15bc7889a627960adf7340">Shape::Shape_genrate</a></div><div class="ttdeci">void Shape_genrate()</div><div class="ttdef"><b>Definition</b> <a href="Shape_8cpp_source.html#l00008">Shape.cpp:8</a></div></div>
+<div class="ttc" id="aclassShape_html_af9f12d78ce6961bef6c729c9662e12db"><div class="ttname"><a href="classShape.html#af9f12d78ce6961bef6c729c9662e12db">Shape::m_currentAnim</a></div><div class="ttdeci">AnimatedGraphic m_currentAnim</div><div class="ttdef"><b>Definition</b> <a href="Shape_8h_source.html#l00030">Shape.h:30</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_a17440efbdb49e196fdf01fdd475127e5"><div class="ttname"><a href="classTextureManager.html#a17440efbdb49e196fdf01fdd475127e5">TextureManager::drawCircle</a></div><div class="ttdeci">void drawCircle(int cx, int cy, int radius, bool Fill=false, uint32_t color=COLOR_BLACK)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00180">TextureManager.cpp:180</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_a25c66880a004153371df2dd0e7a6041b"><div class="ttname"><a href="classTextureManager.html#a25c66880a004153371df2dd0e7a6041b">TextureManager::drawText</a></div><div class="ttdeci">void drawText(int x, int y, const char *text, uint32_t color=COLOR_BLACK)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00098">TextureManager.cpp:98</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_a3a2051122a31204406b04457c4e3fee4"><div class="ttname"><a href="classTextureManager.html#a3a2051122a31204406b04457c4e3fee4">TextureManager::drawPrintf</a></div><div class="ttdeci">void drawPrintf(int x, int y, uint32_t color, const char *fmt,...)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00168">TextureManager.cpp:168</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_a55a5d5f4ec5ab276dc73ea2c55574a61"><div class="ttname"><a href="classTextureManager.html#a55a5d5f4ec5ab276dc73ea2c55574a61">TextureManager::draw</a></div><div class="ttdeci">void draw(std::string id, Vector2D pos, uint16_t width, uint16_t height, SDL_RendererFlip flip=SDL_FLIP_NONE)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00029">TextureManager.cpp:29</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_ab5434f5ba0cc3e02623f23699573a5a6"><div class="ttname"><a href="classTextureManager.html#ab5434f5ba0cc3e02623f23699573a5a6">TextureManager::Instance</a></div><div class="ttdeci">static TextureManager * Instance()</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8h_source.html#l00028">TextureManager.h:28</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_ab8b6e096d0a03703d8772e9bd8ef8e93"><div class="ttname"><a href="classTextureManager.html#ab8b6e096d0a03703d8772e9bd8ef8e93">TextureManager::drawTextScale</a></div><div class="ttdeci">void drawTextScale(int x, int y, const char *text, uint32_t color=COLOR_BLACK, int scale=1)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00133">TextureManager.cpp:133</a></div></div>
+<div class="ttc" id="aclassTextureManager_html_adf702159b5e237016bb677c9a1ca9cbf"><div class="ttname"><a href="classTextureManager.html#adf702159b5e237016bb677c9a1ca9cbf">TextureManager::drawGrid</a></div><div class="ttdeci">void drawGrid(int x, int y, int rows, int cols, int cellSize, uint32_t color)</div><div class="ttdef"><b>Definition</b> <a href="TextureManager_8cpp_source.html#l00239">TextureManager.cpp:239</a></div></div>
+<div class="ttc" id="aclassVector2D_html"><div class="ttname"><a href="classVector2D.html">Vector2D</a></div><div class="ttdef"><b>Definition</b> <a href="Vector2D_8h_source.html#l00006">Vector2D.h:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

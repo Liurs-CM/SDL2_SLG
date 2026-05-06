@@ -1,0 +1,31 @@
+\doxysection{Menu\+Pause\+State.\+h}
+\hypertarget{MenuPauseState_8h_source}{}\label{MenuPauseState_8h_source}\index{inc/MenuPauseState.h@{inc/MenuPauseState.h}}
+\mbox{\hyperlink{MenuPauseState_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_MenuPauseState\_\_}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_MenuPauseState\_\_}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MenuState_8h}{MenuState.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObject_8h}{GameObject.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00008}\mbox{\hyperlink{classMenuPauseState}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMenuPauseState}{MenuPauseState}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classMenuState}{MenuState}}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00011}\mbox{\hyperlink{classMenuPauseState_aa21b993a4669e0b1e99d634b100a7acc}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMenuPauseState_aa21b993a4669e0b1e99d634b100a7acc}{\string~MenuPauseState}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuPauseState_aae1d1d2ec5f4869333d54692a453c475}{update}}();}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuPauseState_afc0434dcb454274bd4f42ff7c4ff58d8}{render}}();}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMenuPauseState_a15eba5e95a5ec94f1dd4f7b47e047de2}{onEnter}}();}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMenuPauseState_a5f05d3923a24f9c3256e9894646b76e7}{onExit}}();}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00016}\mbox{\hyperlink{classMenuPauseState_a9b2a0dd4e72c95d9c6ac06ffa13ae7f3}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classMenuPauseState_a9b2a0dd4e72c95d9c6ac06ffa13ae7f3}{getStateID}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMenuPauseState_a68cd0f120d758d3a7875f488c7ee6e26}{s\_pauseID}};\ \}}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuPauseState_a2aa960be508029ee135fabf2e7c78594}{setCallbacks}}(\textcolor{keyword}{const}\ std::vector<Callback>\&\ callbacks);}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00018}00018\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00019}\mbox{\hyperlink{classMenuPauseState_a68cd0f120d758d3a7875f488c7ee6e26}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classMenuPauseState_a68cd0f120d758d3a7875f488c7ee6e26}{s\_pauseID}};}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuPauseState_afa67ee79ca7c8193500cf9e8a9197e39}{s\_pauseToMain}}();}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuPauseState_afb69b19913759d84ca15bc054d797aa9}{s\_resumePlay}}();}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00022}\mbox{\hyperlink{classMenuPauseState_a37204fd8409874156b343c703c37d50e}{00022}}\ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<GameObject>>\ \mbox{\hyperlink{classMenuPauseState_a37204fd8409874156b343c703c37d50e}{m\_gameObjects}};}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00023}00023\ \};}
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{MenuPauseState_8h_source_l00025}00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_MenuPauseState\_\_}}
+
+\end{DoxyCode}

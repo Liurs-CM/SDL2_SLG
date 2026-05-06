@@ -1,0 +1,40 @@
+\doxysection{Level1\+Boss.\+h}
+\hypertarget{Level1Boss_8h_source}{}\label{Level1Boss_8h_source}\index{inc/Level1Boss.h@{inc/Level1Boss.h}}
+\mbox{\hyperlink{Level1Boss_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ \_\_Level1Boss\_\_}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ \_\_Level1Boss\_\_}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Enemy_8h}{Enemy.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{GameObjectFactory_8h}{GameObjectFactory.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00006}\mbox{\hyperlink{classLevel1Boss}{00006}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLevel1Boss}{Level1Boss}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEnemy}{Enemy}}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00008}00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00009}\mbox{\hyperlink{classLevel1Boss_a6fae06ffb105c3a324bf1de9b1922961}{00009}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevel1Boss_a6fae06ffb105c3a324bf1de9b1922961}{Level1Boss}}()\ :\ \mbox{\hyperlink{classEnemy}{Enemy}}()\ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00010}00010\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEnemy_ad5f79651d73e7d60f201b881fe09c490}{m\_health}}\ =\ 100;}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00011}00011\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLevel1Boss_ac52b43e1fb205c4649f901482e63c293}{m\_entered}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00012}00012\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00013}\mbox{\hyperlink{classLevel1Boss_a68884a40d906f679755be3b84915a6eb}{00013}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLevel1Boss_a68884a40d906f679755be3b84915a6eb}{\string~Level1Boss}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00014}\mbox{\hyperlink{classLevel1Boss_a38b2a5f8a29b44ba1643e4b8f42ced86}{00014}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevel1Boss_a38b2a5f8a29b44ba1643e4b8f42ced86}{load}}(std::unique\_ptr<LoaderParams>\ \textcolor{keyword}{const}\ \&pParams)}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_ade865a0eefca735ddafc3d319c566c9f}{SDLGameObject::load}}(std::move(pParams));}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLGameObject_a7983783a01d56ee12985e1a0d708f0e0}{m\_velocity}}.\mbox{\hyperlink{classVector2D_a9b47adcbdf2c10f3ba893285b5c34709}{setY}}(-\/1);}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevel1Boss_a303ee6c7dbcbef479d0bd334a5a193b0}{update}}();}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00020}00020\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00021}\mbox{\hyperlink{classLevel1Boss_ac52b43e1fb205c4649f901482e63c293}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLevel1Boss_ac52b43e1fb205c4649f901482e63c293}{m\_entered}};}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00022}00022\ \};}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00025}\mbox{\hyperlink{classLevel1BossCreator}{00025}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLevel1BossCreator}{Level1BossCreator}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBaseCreator}{BaseCreator}}\ }
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00027}\mbox{\hyperlink{classLevel1BossCreator_ac64dc2588473f71b8a2e9cd65472d27e}{00027}}\ \ \ \ \ \mbox{\hyperlink{classGameObject}{GameObject}}*\ \mbox{\hyperlink{classLevel1BossCreator_ac64dc2588473f71b8a2e9cd65472d27e}{createGameObject}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00028}00028\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classLevel1Boss}{Level1Boss}}();}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00031}00031\ \};}
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{Level1Boss_8h_source_l00034}00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_Level1Boss\_\_}}
+
+\end{DoxyCode}

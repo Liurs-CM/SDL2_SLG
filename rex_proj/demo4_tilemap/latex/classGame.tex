@@ -1,0 +1,937 @@
+\doxysection{Game类 参考}
+\hypertarget{classGame}{}\label{classGame}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Game 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classGame_a04464aa1c667b81f2c0fb2d4f7b0ac83}{init}} (const char \texorpdfstring{$\ast$}{*}title, int x\+\_\+pos, int y\+\_\+pos, int width, int height, bool fullscreen)
+\item 
+void \mbox{\hyperlink{classGame_a15ddd769261d923827a3cdf41499c843}{render}} ()
+\item 
+void \mbox{\hyperlink{classGame_a79df6376b332d63c9eca0dcee30305c3}{update}} ()
+\item 
+void \mbox{\hyperlink{classGame_adb5563f62c0c82e3e42ec36501aa5698}{handle\+Events}} ()
+\item 
+void \mbox{\hyperlink{classGame_ad4f36a72a2d06696f7973788606f57fc}{clean}} ()
+\item 
+void \mbox{\hyperlink{classGame_a8272be134d16c277bb014ad6a22fc357}{quit}} ()
+\item 
+\mbox{\hyperlink{classGameStateMachine}{Game\+State\+Machine}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_a9f5ae2306d2feffd806a19040d8d43de}{get\+State\+Machine}} ()
+\item 
+void \mbox{\hyperlink{classGame_a4b2331e8df2d9112fb33a2de11f2628a}{set\+Player\+Lives}} (int lives)
+\item 
+int \mbox{\hyperlink{classGame_a81c27e138b3a57b68fc8ab1f13ecacff}{get\+Player\+Lives}} ()
+\item 
+bool \mbox{\hyperlink{classGame_a06d97c98ce548ed867c8d5632dfe9712}{changing\+State}} ()
+\item 
+void \mbox{\hyperlink{classGame_a160d659de16ee09050804cbdf7b3c188}{changing\+State}} (bool cs)
+\item 
+void \mbox{\hyperlink{classGame_ad7c1d10b807c0707e4b9f71e975135f4}{set\+Current\+Level}} (int current\+Level)
+\item 
+const int \mbox{\hyperlink{classGame_a941ad22aa81df2683c5ecd8ca33ce503}{get\+Current\+Level}} ()
+\item 
+void \mbox{\hyperlink{classGame_aa0f8d7a69e278db1b1ca72f9e573d4c4}{set\+Next\+Level}} (int next\+Level)
+\item 
+const int \mbox{\hyperlink{classGame_a8976be277a48c3ec06c59a4098dbaf5e}{get\+Next\+Level}} ()
+\item 
+void \mbox{\hyperlink{classGame_a3d23ff5d889b6effa22105afed751e30}{set\+Level\+Complete}} (bool level\+Complete)
+\item 
+const bool \mbox{\hyperlink{classGame_ab91b31127372d11d268a6fad0f74ceb9}{get\+Level\+Complete}} ()
+\item 
+bool \mbox{\hyperlink{classGame_afd9af52dcc5835f2a8c37f441a256b9d}{running}} ()
+\item 
+void \mbox{\hyperlink{classGame_ac8e7e425d970ec5d1eba5e2ff3efbc78}{sync\+FPS}} ()
+\item 
+Uint32 \mbox{\hyperlink{classGame_a57d8693d76de75c01e810a5d2d0fb033}{getframe\+Time}} ()
+\item 
+int \mbox{\hyperlink{classGame_a9db0ce98d627ce12718b71690a119bc0}{get\+Game\+Width}} () const
+\item 
+int \mbox{\hyperlink{classGame_a28105114d738e841509cb78b0c311e1c}{get\+Game\+Height}} () const
+\item 
+float \mbox{\hyperlink{classGame_a0e2d17fc293d6f87fa9b8b96b63fc1d0}{get\+Scroll\+Speed}} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGame_a7cc2b1efe8254e0ffc29cbbfc4d7a4dc}{get\+Level\+Files}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_acdbfa8f0e96add056fcc70b8188f397e}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{\texorpdfstring{$\sim$}{\string~}\+Game}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGame_a1d0d13fe5b2cac287178f6d95e1c9bb8}{m\+\_\+game\+Width}}
+\item 
+int \mbox{\hyperlink{classGame_acddbaa4f521c400f13d9b6680fd2bf43}{m\+\_\+game\+Height}}
+\item 
+Uint32 \mbox{\hyperlink{classGame_a9dc1bffd31791b876e01b03f1c0592b0}{frame\+Start}}
+\item 
+Uint32 \mbox{\hyperlink{classGame_a2e9487c400fc80943530a3da6f450596}{frame\+Time}}
+\item 
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_aa3ae7b190375776e7f7bc43a8e145606}{m\+\_\+p\+Window}}
+\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_afc081211beabbd6fc25e0de17b8dbb67}{m\+\_\+p\+Renderer}}
+\item 
+bool \mbox{\hyperlink{classGame_aa3a259841306a82c4a71b96b14bdcfcd}{m\+\_\+b\+Running}}
+\item 
+\mbox{\hyperlink{classGameStateMachine}{Game\+State\+Machine}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_ae0cc72cf3ceddadb5db571dc6049b684}{m\+\_\+p\+Game\+State\+Machine}}
+\item 
+int \mbox{\hyperlink{classGame_ae6a8641e0e179218baebd1d50149ac90}{m\+\_\+player\+Lives}}
+\item 
+float \mbox{\hyperlink{classGame_a5aa0277a7db96180460255986ab47599}{m\+\_\+scroll\+Speed}}
+\item 
+bool \mbox{\hyperlink{classGame_ae648f66b9e722e97d46a7713b6e75d0c}{m\+\_\+b\+Level\+Complete}}
+\item 
+bool \mbox{\hyperlink{classGame_af0c6d0d9d9a5dccd3adb333e5295f98b}{m\+\_\+b\+Changing\+State}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGame_a4b2d8c25d45cf8e666b79ae37e3d9596}{m\+\_\+level\+Files}}
+\item 
+int \mbox{\hyperlink{classGame_a40574155b02092c9f44243242bf4c132}{m\+\_\+current\+Level}}
+\item 
+int \mbox{\hyperlink{classGame_a58e0e671382e076c8da78695615b73b8}{m\+\_\+next\+Level}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_a2d22a6286d4b5a9565ab5109a7877935}{s\+\_\+p\+Instance}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00009}{9}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00022}{22}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00063}{m\+\_\+current\+Level}} , 以及 \mbox{\hyperlink{Game_8h_source_l00062}{m\+\_\+level\+Files}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00033}{Instance()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_ad59df6562a58a614fda24622d3715b65_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530} 
+\index{Game@{Game}!````~Game@{\texorpdfstring{$\sim$}{\string~}Game}}
+\index{````~Game@{\texorpdfstring{$\sim$}{\string~}Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Game()}{\string~Game()}}
+{\footnotesize\ttfamily Game\+::\texorpdfstring{$\sim$}{\string~}\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00038}{38}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00055}{m\+\_\+p\+Renderer}} , 以及 \mbox{\hyperlink{Game_8h_source_l00054}{m\+\_\+p\+Window}}.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classGame_a06d97c98ce548ed867c8d5632dfe9712}\label{classGame_a06d97c98ce548ed867c8d5632dfe9712} 
+\index{Game@{Game}!changingState@{changingState}}
+\index{changingState@{changingState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{changingState()}{changingState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Game\+::changing\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00022}{22}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00061}{m\+\_\+b\+Changing\+State}}.
+
+\Hypertarget{classGame_a160d659de16ee09050804cbdf7b3c188}\label{classGame_a160d659de16ee09050804cbdf7b3c188} 
+\index{Game@{Game}!changingState@{changingState}}
+\index{changingState@{changingState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{changingState()}{changingState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+::changing\+State (\begin{DoxyParamCaption}\item[{bool}]{cs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00023}{23}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00061}{m\+\_\+b\+Changing\+State}}.
+
+\Hypertarget{classGame_ad4f36a72a2d06696f7973788606f57fc}\label{classGame_ad4f36a72a2d06696f7973788606f57fc} 
+\index{Game@{Game}!clean@{clean}}
+\index{clean@{clean}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void Game\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00141}{141}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00085}{Game\+State\+Machine\+::clean()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00056}{Input\+Handler\+::clean()}}, \mbox{\hyperlink{TextureManager_8cpp_source_l00067}{Texture\+Manager\+::clear\+Texture\+Map()}}, \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{TextureManager_8h_source_l00028}{Texture\+Manager\+::\+Instance()}}, \mbox{\hyperlink{Game_8h_source_l00057}{m\+\_\+p\+Game\+State\+Machine}}, \mbox{\hyperlink{Game_8h_source_l00055}{m\+\_\+p\+Renderer}} , 以及 \mbox{\hyperlink{Game_8h_source_l00054}{m\+\_\+p\+Window}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_ad4f36a72a2d06696f7973788606f57fc_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classGame_ad4f36a72a2d06696f7973788606f57fc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a941ad22aa81df2683c5ecd8ca33ce503}\label{classGame_a941ad22aa81df2683c5ecd8ca33ce503} 
+\index{Game@{Game}!getCurrentLevel@{getCurrentLevel}}
+\index{getCurrentLevel@{getCurrentLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getCurrentLevel()}{getCurrentLevel()}}
+{\footnotesize\ttfamily const int Game\+::get\+Current\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00025}{25}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00063}{m\+\_\+current\+Level}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00044}{Play\+State\+::on\+Enter()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a941ad22aa81df2683c5ecd8ca33ce503_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a57d8693d76de75c01e810a5d2d0fb033}\label{classGame_a57d8693d76de75c01e810a5d2d0fb033} 
+\index{Game@{Game}!getframeTime@{getframeTime}}
+\index{getframeTime@{getframeTime}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getframeTime()}{getframeTime()}}
+{\footnotesize\ttfamily Uint32 Game\+::getframe\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00032}{32}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00053}{frame\+Time}}.
+
+\Hypertarget{classGame_a28105114d738e841509cb78b0c311e1c}\label{classGame_a28105114d738e841509cb78b0c311e1c} 
+\index{Game@{Game}!getGameHeight@{getGameHeight}}
+\index{getGameHeight@{getGameHeight}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getGameHeight()}{getGameHeight()}}
+{\footnotesize\ttfamily int Game\+::get\+Game\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00043}{43}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00051}{m\+\_\+game\+Height}}.
+
+\Hypertarget{classGame_a9db0ce98d627ce12718b71690a119bc0}\label{classGame_a9db0ce98d627ce12718b71690a119bc0} 
+\index{Game@{Game}!getGameWidth@{getGameWidth}}
+\index{getGameWidth@{getGameWidth}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getGameWidth()}{getGameWidth()}}
+{\footnotesize\ttfamily int Game\+::get\+Game\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00042}{42}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00050}{m\+\_\+game\+Width}}.
+
+\Hypertarget{classGame_ab91b31127372d11d268a6fad0f74ceb9}\label{classGame_ab91b31127372d11d268a6fad0f74ceb9} 
+\index{Game@{Game}!getLevelComplete@{getLevelComplete}}
+\index{getLevelComplete@{getLevelComplete}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getLevelComplete()}{getLevelComplete()}}
+{\footnotesize\ttfamily const bool Game\+::get\+Level\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00029}{29}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00060}{m\+\_\+b\+Level\+Complete}}.
+
+\Hypertarget{classGame_a7cc2b1efe8254e0ffc29cbbfc4d7a4dc}\label{classGame_a7cc2b1efe8254e0ffc29cbbfc4d7a4dc} 
+\index{Game@{Game}!getLevelFiles@{getLevelFiles}}
+\index{getLevelFiles@{getLevelFiles}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getLevelFiles()}{getLevelFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Game\+::get\+Level\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00045}{45}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00062}{m\+\_\+level\+Files}}.
+
+\Hypertarget{classGame_a8976be277a48c3ec06c59a4098dbaf5e}\label{classGame_a8976be277a48c3ec06c59a4098dbaf5e} 
+\index{Game@{Game}!getNextLevel@{getNextLevel}}
+\index{getNextLevel@{getNextLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getNextLevel()}{getNextLevel()}}
+{\footnotesize\ttfamily const int Game\+::get\+Next\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00027}{27}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00064}{m\+\_\+next\+Level}}.
+
+\Hypertarget{classGame_a81c27e138b3a57b68fc8ab1f13ecacff}\label{classGame_a81c27e138b3a57b68fc8ab1f13ecacff} 
+\index{Game@{Game}!getPlayerLives@{getPlayerLives}}
+\index{getPlayerLives@{getPlayerLives}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPlayerLives()}{getPlayerLives()}}
+{\footnotesize\ttfamily int Game\+::get\+Player\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00021}{21}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00058}{m\+\_\+player\+Lives}}.
+
+\Hypertarget{classGame_a0e2d17fc293d6f87fa9b8b96b63fc1d0}\label{classGame_a0e2d17fc293d6f87fa9b8b96b63fc1d0} 
+\index{Game@{Game}!getScrollSpeed@{getScrollSpeed}}
+\index{getScrollSpeed@{getScrollSpeed}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getScrollSpeed()}{getScrollSpeed()}}
+{\footnotesize\ttfamily float Game\+::get\+Scroll\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00044}{44}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00059}{m\+\_\+scroll\+Speed}}.
+
+\Hypertarget{classGame_a9f5ae2306d2feffd806a19040d8d43de}\label{classGame_a9f5ae2306d2feffd806a19040d8d43de} 
+\index{Game@{Game}!getStateMachine@{getStateMachine}}
+\index{getStateMachine@{getStateMachine}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getStateMachine()}{getStateMachine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameStateMachine}{Game\+State\+Machine}} \texorpdfstring{$\ast$}{*} Game\+::get\+State\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00019}{19}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00057}{m\+\_\+p\+Game\+State\+Machine}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuOverState_8cpp_source_l00013}{Menu\+Over\+State\+::s\+\_\+game\+Over\+To\+Main()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00014}{Menu\+Main\+State\+::s\+\_\+menu\+To\+Play()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00013}{Menu\+Pause\+State\+::s\+\_\+pause\+To\+Main()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00018}{Menu\+Over\+State\+::s\+\_\+restart\+Play()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00018}{Menu\+Pause\+State\+::s\+\_\+resume\+Play()}} , 以及 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a9f5ae2306d2feffd806a19040d8d43de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_adb5563f62c0c82e3e42ec36501aa5698}\label{classGame_adb5563f62c0c82e3e42ec36501aa5698} 
+\index{Game@{Game}!handleEvents@{handleEvents}}
+\index{handleEvents@{handleEvents}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{handleEvents()}{handleEvents()}}
+{\footnotesize\ttfamily void Game\+::handle\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00132}{132}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{Game\+State\+Machine\+::change\+State()}}, \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{Game_8h_source_l00057}{m\+\_\+p\+Game\+State\+Machine}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{Input\+Handler\+::update()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_adb5563f62c0c82e3e42ec36501aa5698_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classGame_adb5563f62c0c82e3e42ec36501aa5698_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a04464aa1c667b81f2c0fb2d4f7b0ac83}\label{classGame_a04464aa1c667b81f2c0fb2d4f7b0ac83} 
+\index{Game@{Game}!init@{init}}
+\index{init@{init}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool Game\+::init (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{title,  }\item[{int}]{x\+\_\+pos,  }\item[{int}]{y\+\_\+pos,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{fullscreen }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00045}{45}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{Game\+State\+Machine\+::change\+State()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00014}{Input\+Handler\+::initialise\+Joysticks()}}, \mbox{\hyperlink{GameObjectFactory_8h_source_l00018}{Game\+Object\+Factory\+::\+Instance()}}, \mbox{\hyperlink{InputHandler_8h_source_l00020}{Input\+Handler\+::\+Instance()}}, \mbox{\hyperlink{SoundManager_8h_source_l00017}{Sound\+Manager\+::\+Instance()}}, \mbox{\hyperlink{SoundManager_8cpp_source_l00015}{Sound\+Manager\+::load()}}, \mbox{\hyperlink{Game_8h_source_l00056}{m\+\_\+b\+Running}}, \mbox{\hyperlink{Game_8h_source_l00057}{m\+\_\+p\+Game\+State\+Machine}}, \mbox{\hyperlink{Game_8h_source_l00055}{m\+\_\+p\+Renderer}}, \mbox{\hyperlink{Game_8h_source_l00054}{m\+\_\+p\+Window}}, \mbox{\hyperlink{SoundManager_8cpp_source_l00044}{Sound\+Manager\+::play\+Music()}}, \mbox{\hyperlink{GameObjectFactory_8h_source_l00028}{Game\+Object\+Factory\+::register\+Type()}}, \mbox{\hyperlink{RenderContext_8h_source_l00008}{Render\+Context\+::set()}}, \mbox{\hyperlink{SoundManager_8h_source_l00010}{SOUND\+\_\+\+MUSIC}} , 以及 \mbox{\hyperlink{SoundManager_8h_source_l00011}{SOUND\+\_\+\+SFX}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a04464aa1c667b81f2c0fb2d4f7b0ac83_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_acdbfa8f0e96add056fcc70b8188f397e}\label{classGame_acdbfa8f0e96add056fcc70b8188f397e} 
+\index{Game@{Game}!Instance@{Instance}}
+\index{Instance@{Instance}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} Game\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00033}{33}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8cpp_source_l00022}{Game()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00065}{s\+\_\+p\+Instance}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}, \mbox{\hyperlink{PlayState_8cpp_source_l00044}{Play\+State\+::on\+Enter()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00019}{Menu\+Main\+State\+::s\+\_\+exit\+From\+Menu()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00013}{Menu\+Over\+State\+::s\+\_\+game\+Over\+To\+Main()}}, \mbox{\hyperlink{MenuMainState_8cpp_source_l00014}{Menu\+Main\+State\+::s\+\_\+menu\+To\+Play()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00013}{Menu\+Pause\+State\+::s\+\_\+pause\+To\+Main()}}, \mbox{\hyperlink{MenuOverState_8cpp_source_l00018}{Menu\+Over\+State\+::s\+\_\+restart\+Play()}}, \mbox{\hyperlink{MenuPauseState_8cpp_source_l00018}{Menu\+Pause\+State\+::s\+\_\+resume\+Play()}}, \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{Input\+Handler\+::update()}} , 以及 \mbox{\hyperlink{PlayState_8cpp_source_l00014}{Play\+State\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classGame_acdbfa8f0e96add056fcc70b8188f397e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_acdbfa8f0e96add056fcc70b8188f397e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a8272be134d16c277bb014ad6a22fc357}\label{classGame_a8272be134d16c277bb014ad6a22fc357} 
+\index{Game@{Game}!quit@{quit}}
+\index{quit@{quit}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void Game\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00018}{18}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00056}{m\+\_\+b\+Running}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{MenuMainState_8cpp_source_l00019}{Menu\+Main\+State\+::s\+\_\+exit\+From\+Menu()}} , 以及 \mbox{\hyperlink{InputHandler_8cpp_source_l00067}{Input\+Handler\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a8272be134d16c277bb014ad6a22fc357_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a15ddd769261d923827a3cdf41499c843}\label{classGame_a15ddd769261d923827a3cdf41499c843} 
+\index{Game@{Game}!render@{render}}
+\index{render@{render}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00115}{115}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Shape_8h_source_l00015}{Shape\+::\+Instance()}}, \mbox{\hyperlink{Game_8h_source_l00057}{m\+\_\+p\+Game\+State\+Machine}}, \mbox{\hyperlink{Game_8h_source_l00055}{m\+\_\+p\+Renderer}}, \mbox{\hyperlink{GameStateMachine_8cpp_source_l00077}{Game\+State\+Machine\+::render()}} , 以及 \mbox{\hyperlink{Shape_8cpp_source_l00008}{Shape\+::\+Shape\+\_\+genrate()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a15ddd769261d923827a3cdf41499c843_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classGame_a15ddd769261d923827a3cdf41499c843_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_afd9af52dcc5835f2a8c37f441a256b9d}\label{classGame_afd9af52dcc5835f2a8c37f441a256b9d} 
+\index{Game@{Game}!running@{running}}
+\index{running@{running}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{running()}{running()}}
+{\footnotesize\ttfamily bool Game\+::running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00030}{30}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00052}{frame\+Start}} , 以及 \mbox{\hyperlink{Game_8h_source_l00056}{m\+\_\+b\+Running}}.
+
+\Hypertarget{classGame_ad7c1d10b807c0707e4b9f71e975135f4}\label{classGame_ad7c1d10b807c0707e4b9f71e975135f4} 
+\index{Game@{Game}!setCurrentLevel@{setCurrentLevel}}
+\index{setCurrentLevel@{setCurrentLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setCurrentLevel()}{setCurrentLevel()}}
+{\footnotesize\ttfamily void Game\+::set\+Current\+Level (\begin{DoxyParamCaption}\item[{int}]{current\+Level }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00107}{107}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00101}{Game\+State\+Machine\+::change\+State()}}, \mbox{\hyperlink{Game_8h_source_l00060}{m\+\_\+b\+Level\+Complete}}, \mbox{\hyperlink{Game_8h_source_l00063}{m\+\_\+current\+Level}} , 以及 \mbox{\hyperlink{Game_8h_source_l00057}{m\+\_\+p\+Game\+State\+Machine}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_ad7c1d10b807c0707e4b9f71e975135f4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a3d23ff5d889b6effa22105afed751e30}\label{classGame_a3d23ff5d889b6effa22105afed751e30} 
+\index{Game@{Game}!setLevelComplete@{setLevelComplete}}
+\index{setLevelComplete@{setLevelComplete}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setLevelComplete()}{setLevelComplete()}}
+{\footnotesize\ttfamily void Game\+::set\+Level\+Complete (\begin{DoxyParamCaption}\item[{bool}]{level\+Complete }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00028}{28}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00060}{m\+\_\+b\+Level\+Complete}}.
+
+\Hypertarget{classGame_aa0f8d7a69e278db1b1ca72f9e573d4c4}\label{classGame_aa0f8d7a69e278db1b1ca72f9e573d4c4} 
+\index{Game@{Game}!setNextLevel@{setNextLevel}}
+\index{setNextLevel@{setNextLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setNextLevel()}{setNextLevel()}}
+{\footnotesize\ttfamily void Game\+::set\+Next\+Level (\begin{DoxyParamCaption}\item[{int}]{next\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00026}{26}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00064}{m\+\_\+next\+Level}}.
+
+\Hypertarget{classGame_a4b2331e8df2d9112fb33a2de11f2628a}\label{classGame_a4b2331e8df2d9112fb33a2de11f2628a} 
+\index{Game@{Game}!setPlayerLives@{setPlayerLives}}
+\index{setPlayerLives@{setPlayerLives}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setPlayerLives()}{setPlayerLives()}}
+{\footnotesize\ttfamily void Game\+::set\+Player\+Lives (\begin{DoxyParamCaption}\item[{int}]{lives }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00020}{20}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00058}{m\+\_\+player\+Lives}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{PlayState_8cpp_source_l00044}{Play\+State\+::on\+Enter()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classGame_a4b2331e8df2d9112fb33a2de11f2628a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_ac8e7e425d970ec5d1eba5e2ff3efbc78}\label{classGame_ac8e7e425d970ec5d1eba5e2ff3efbc78} 
+\index{Game@{Game}!syncFPS@{syncFPS}}
+\index{syncFPS@{syncFPS}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{syncFPS()}{syncFPS()}}
+{\footnotesize\ttfamily void Game\+::sync\+FPS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00154}{154}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{GameLib_8h_source_l00008}{DELAY\+\_\+\+TIME\+\_\+\+MS}}, \mbox{\hyperlink{Game_8h_source_l00052}{frame\+Start}}, \mbox{\hyperlink{Game_8h_source_l00053}{frame\+Time}} , 以及 \mbox{\hyperlink{AnimatedGraphic_8h_source_l00012}{Animated\+Graphic\+::update\+Global\+Frame()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_ac8e7e425d970ec5d1eba5e2ff3efbc78_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classGame_ac8e7e425d970ec5d1eba5e2ff3efbc78_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a79df6376b332d63c9eca0dcee30305c3}\label{classGame_a79df6376b332d63c9eca0dcee30305c3} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}} 第 \mbox{\hyperlink{Game_8cpp_source_l00127}{127}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{Game_8h_source_l00057}{m\+\_\+p\+Game\+State\+Machine}} , 以及 \mbox{\hyperlink{GameStateMachine_8cpp_source_l00058}{Game\+State\+Machine\+::update()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{main_8cpp_source_l00005}{main()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a79df6376b332d63c9eca0dcee30305c3_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classGame_a79df6376b332d63c9eca0dcee30305c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classGame_a9dc1bffd31791b876e01b03f1c0592b0}\label{classGame_a9dc1bffd31791b876e01b03f1c0592b0} 
+\index{Game@{Game}!frameStart@{frameStart}}
+\index{frameStart@{frameStart}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{frameStart}{frameStart}}
+{\footnotesize\ttfamily Uint32 Game\+::frame\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00052}{52}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00030}{running()}} , 以及 \mbox{\hyperlink{Game_8cpp_source_l00154}{sync\+FPS()}}.
+
+\Hypertarget{classGame_a2e9487c400fc80943530a3da6f450596}\label{classGame_a2e9487c400fc80943530a3da6f450596} 
+\index{Game@{Game}!frameTime@{frameTime}}
+\index{frameTime@{frameTime}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{frameTime}{frameTime}}
+{\footnotesize\ttfamily Uint32 Game\+::frame\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00053}{53}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00032}{getframe\+Time()}} , 以及 \mbox{\hyperlink{Game_8cpp_source_l00154}{sync\+FPS()}}.
+
+\Hypertarget{classGame_af0c6d0d9d9a5dccd3adb333e5295f98b}\label{classGame_af0c6d0d9d9a5dccd3adb333e5295f98b} 
+\index{Game@{Game}!m\_bChangingState@{m\_bChangingState}}
+\index{m\_bChangingState@{m\_bChangingState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_bChangingState}{m\_bChangingState}}
+{\footnotesize\ttfamily bool Game\+::m\+\_\+b\+Changing\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00061}{61}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00022}{changing\+State()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00023}{changing\+State()}}.
+
+\Hypertarget{classGame_ae648f66b9e722e97d46a7713b6e75d0c}\label{classGame_ae648f66b9e722e97d46a7713b6e75d0c} 
+\index{Game@{Game}!m\_bLevelComplete@{m\_bLevelComplete}}
+\index{m\_bLevelComplete@{m\_bLevelComplete}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_bLevelComplete}{m\_bLevelComplete}}
+{\footnotesize\ttfamily bool Game\+::m\+\_\+b\+Level\+Complete\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00060}{60}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00029}{get\+Level\+Complete()}}, \mbox{\hyperlink{Game_8cpp_source_l00107}{set\+Current\+Level()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00028}{set\+Level\+Complete()}}.
+
+\Hypertarget{classGame_aa3a259841306a82c4a71b96b14bdcfcd}\label{classGame_aa3a259841306a82c4a71b96b14bdcfcd} 
+\index{Game@{Game}!m\_bRunning@{m\_bRunning}}
+\index{m\_bRunning@{m\_bRunning}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_bRunning}{m\_bRunning}}
+{\footnotesize\ttfamily bool Game\+::m\+\_\+b\+Running\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00056}{56}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00045}{init()}}, \mbox{\hyperlink{Game_8h_source_l00018}{quit()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00030}{running()}}.
+
+\Hypertarget{classGame_a40574155b02092c9f44243242bf4c132}\label{classGame_a40574155b02092c9f44243242bf4c132} 
+\index{Game@{Game}!m\_currentLevel@{m\_currentLevel}}
+\index{m\_currentLevel@{m\_currentLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_currentLevel}{m\_currentLevel}}
+{\footnotesize\ttfamily int Game\+::m\+\_\+current\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00063}{63}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00022}{Game()}}, \mbox{\hyperlink{Game_8h_source_l00025}{get\+Current\+Level()}} , 以及 \mbox{\hyperlink{Game_8cpp_source_l00107}{set\+Current\+Level()}}.
+
+\Hypertarget{classGame_acddbaa4f521c400f13d9b6680fd2bf43}\label{classGame_acddbaa4f521c400f13d9b6680fd2bf43} 
+\index{Game@{Game}!m\_gameHeight@{m\_gameHeight}}
+\index{m\_gameHeight@{m\_gameHeight}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_gameHeight}{m\_gameHeight}}
+{\footnotesize\ttfamily int Game\+::m\+\_\+game\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00051}{51}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00043}{get\+Game\+Height()}}.
+
+\Hypertarget{classGame_a1d0d13fe5b2cac287178f6d95e1c9bb8}\label{classGame_a1d0d13fe5b2cac287178f6d95e1c9bb8} 
+\index{Game@{Game}!m\_gameWidth@{m\_gameWidth}}
+\index{m\_gameWidth@{m\_gameWidth}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_gameWidth}{m\_gameWidth}}
+{\footnotesize\ttfamily int Game\+::m\+\_\+game\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00050}{50}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00042}{get\+Game\+Width()}}.
+
+\Hypertarget{classGame_a4b2d8c25d45cf8e666b79ae37e3d9596}\label{classGame_a4b2d8c25d45cf8e666b79ae37e3d9596} 
+\index{Game@{Game}!m\_levelFiles@{m\_levelFiles}}
+\index{m\_levelFiles@{m\_levelFiles}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_levelFiles}{m\_levelFiles}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Game\+::m\+\_\+level\+Files\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00062}{62}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00022}{Game()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00045}{get\+Level\+Files()}}.
+
+\Hypertarget{classGame_a58e0e671382e076c8da78695615b73b8}\label{classGame_a58e0e671382e076c8da78695615b73b8} 
+\index{Game@{Game}!m\_nextLevel@{m\_nextLevel}}
+\index{m\_nextLevel@{m\_nextLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_nextLevel}{m\_nextLevel}}
+{\footnotesize\ttfamily int Game\+::m\+\_\+next\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00064}{64}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00027}{get\+Next\+Level()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00026}{set\+Next\+Level()}}.
+
+\Hypertarget{classGame_ae0cc72cf3ceddadb5db571dc6049b684}\label{classGame_ae0cc72cf3ceddadb5db571dc6049b684} 
+\index{Game@{Game}!m\_pGameStateMachine@{m\_pGameStateMachine}}
+\index{m\_pGameStateMachine@{m\_pGameStateMachine}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_pGameStateMachine}{m\_pGameStateMachine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameStateMachine}{Game\+State\+Machine}}\texorpdfstring{$\ast$}{*} Game\+::m\+\_\+p\+Game\+State\+Machine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00057}{57}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{clean()}}, \mbox{\hyperlink{Game_8h_source_l00019}{get\+State\+Machine()}}, \mbox{\hyperlink{Game_8cpp_source_l00132}{handle\+Events()}}, \mbox{\hyperlink{Game_8cpp_source_l00045}{init()}}, \mbox{\hyperlink{Game_8cpp_source_l00115}{render()}}, \mbox{\hyperlink{Game_8cpp_source_l00107}{set\+Current\+Level()}} , 以及 \mbox{\hyperlink{Game_8cpp_source_l00127}{update()}}.
+
+\Hypertarget{classGame_ae6a8641e0e179218baebd1d50149ac90}\label{classGame_ae6a8641e0e179218baebd1d50149ac90} 
+\index{Game@{Game}!m\_playerLives@{m\_playerLives}}
+\index{m\_playerLives@{m\_playerLives}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_playerLives}{m\_playerLives}}
+{\footnotesize\ttfamily int Game\+::m\+\_\+player\+Lives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00058}{58}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00021}{get\+Player\+Lives()}} , 以及 \mbox{\hyperlink{Game_8h_source_l00020}{set\+Player\+Lives()}}.
+
+\Hypertarget{classGame_afc081211beabbd6fc25e0de17b8dbb67}\label{classGame_afc081211beabbd6fc25e0de17b8dbb67} 
+\index{Game@{Game}!m\_pRenderer@{m\_pRenderer}}
+\index{m\_pRenderer@{m\_pRenderer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_pRenderer}{m\_pRenderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} Game\+::m\+\_\+p\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00055}{55}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{clean()}}, \mbox{\hyperlink{Game_8cpp_source_l00045}{init()}}, \mbox{\hyperlink{Game_8cpp_source_l00115}{render()}} , 以及 \mbox{\hyperlink{Game_8cpp_source_l00038}{\texorpdfstring{$\sim$}{\string~}\+Game()}}.
+
+\Hypertarget{classGame_aa3ae7b190375776e7f7bc43a8e145606}\label{classGame_aa3ae7b190375776e7f7bc43a8e145606} 
+\index{Game@{Game}!m\_pWindow@{m\_pWindow}}
+\index{m\_pWindow@{m\_pWindow}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_pWindow}{m\_pWindow}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window\texorpdfstring{$\ast$}{*} Game\+::m\+\_\+p\+Window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00054}{54}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8cpp_source_l00141}{clean()}}, \mbox{\hyperlink{Game_8cpp_source_l00045}{init()}} , 以及 \mbox{\hyperlink{Game_8cpp_source_l00038}{\texorpdfstring{$\sim$}{\string~}\+Game()}}.
+
+\Hypertarget{classGame_a5aa0277a7db96180460255986ab47599}\label{classGame_a5aa0277a7db96180460255986ab47599} 
+\index{Game@{Game}!m\_scrollSpeed@{m\_scrollSpeed}}
+\index{m\_scrollSpeed@{m\_scrollSpeed}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_scrollSpeed}{m\_scrollSpeed}}
+{\footnotesize\ttfamily float Game\+::m\+\_\+scroll\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00059}{59}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00044}{get\+Scroll\+Speed()}}.
+
+\Hypertarget{classGame_a2d22a6286d4b5a9565ab5109a7877935}\label{classGame_a2d22a6286d4b5a9565ab5109a7877935} 
+\index{Game@{Game}!s\_pInstance@{s\_pInstance}}
+\index{s\_pInstance@{s\_pInstance}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{s\_pInstance}{s\_pInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} Game\+::s\+\_\+p\+Instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{Game_8h_source}{Game.\+h}} 第 \mbox{\hyperlink{Game_8h_source_l00065}{65}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{Game_8h_source_l00033}{Instance()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{Game_8h}{Game.\+h}}\item 
+src/\mbox{\hyperlink{Game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}
