@@ -4,22 +4,22 @@
 #include "astar.h"
 
 // --- 常量定义 ---
-const int TILE_SIZE = 32;      // 每个格子的像素大小
-const int MAP_WIDTH = 20;      // 地图宽度（格子数）
-const int MAP_HEIGHT = 15;     // 地图高度（格子数）
+const int TILE_SIZE = 32;
+const int MAP_WIDTH = 20;
+const int MAP_HEIGHT = 15;
 const int SCREEN_WIDTH = MAP_WIDTH * TILE_SIZE;
 const int SCREEN_HEIGHT = MAP_HEIGHT * TILE_SIZE;
 
 // --- 颜色定义 ---
-const SDL_Color COLOR_BG = {240, 240, 240, 255};       // 背景色
-const SDL_Color COLOR_OBSTACLE = {50, 50, 50, 255};    // 障碍物颜色
-const SDL_Color COLOR_PATH = {200, 50, 50, 255};       // 路径颜色
-const SDL_Color COLOR_START = {50, 200, 50, 255};      // 起点颜色
-const SDL_Color COLOR_GOAL = {50, 50, 200, 255};       // 终点颜色
+const SDL_Color COLOR_BG = {240, 240, 240, 255};
+const SDL_Color COLOR_OBSTACLE = {50, 50, 50, 255};
+const SDL_Color COLOR_PATH = {200, 50, 50, 255};
+const SDL_Color COLOR_START = {50, 200, 50, 255};
+const SDL_Color COLOR_GOAL = {50, 50, 200, 255};
 
 // --- 渲染函数 ---
-void renderMap(SDL_Renderer* renderer, const std::vector<std::vector<bool>>& obstacles, const std::vector<Point>& path, const Point& start, const Point& goal) {
-    // 清空渲染器
+void renderMap(SDL_Renderer* renderer, const std::vector<std::vector<bool>>& obstacles, 
+        const std::vector<Point>& path, const Point& start, const Point& goal) {
     SDL_SetRenderDrawColor(renderer, COLOR_BG.r, COLOR_BG.g, COLOR_BG.b, COLOR_BG.a);
     SDL_RenderClear(renderer);
 
@@ -41,17 +41,22 @@ void renderMap(SDL_Renderer* renderer, const std::vector<std::vector<bool>>& obs
         SDL_RenderFillRect(renderer, &rect);
     }
 
-    // 绘制起点和终点
+    // 绘制起点
     SDL_Rect startRect = {start.x * TILE_SIZE, start.y * TILE_SIZE, TILE_SIZE, TILE_SIZE};
     SDL_SetRenderDrawColor(renderer, COLOR_START.r, COLOR_START.g, COLOR_START.b, COLOR_START.a);
     SDL_RenderFillRect(renderer, &startRect);
 
+    // 绘制终点
     SDL_Rect goalRect = {goal.x * TILE_SIZE, goal.y * TILE_SIZE, TILE_SIZE, TILE_SIZE};
     SDL_SetRenderDrawColor(renderer, COLOR_GOAL.r, COLOR_GOAL.g, COLOR_GOAL.b, COLOR_GOAL.a);
     SDL_RenderFillRect(renderer, &goalRect);
 
-    // 更新屏幕
     SDL_RenderPresent(renderer);
+}
+
+// --- 辅助函数：将屏幕坐标转换为网格坐标 ---
+Point screenToGrid(int screenX, int screenY) {
+    return Point(screenX / TILE_SIZE, screenY / TILE_SIZE);
 }
 
 int main(int argc, char* argv[]) {
@@ -61,7 +66,8 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    SDL_Window* window = SDL_CreateWindow("A* Pathfinding Demo", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+    SDL_Window* window = SDL_CreateWindow("A* Pathfinding Demo", SDL_WINDOWPOS_UNDEFINED, 
+            SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
     if (!window) {
         std::cerr << "Window could not be created! SDL_Error: " << SDL_GetError() << std::endl;
         SDL_Quit();
@@ -79,16 +85,19 @@ int main(int argc, char* argv[]) {
     // --- 游戏逻辑 ---
     AStar astar(MAP_WIDTH, MAP_HEIGHT);
 
-    // 定义障碍物 (true 表示障碍物)
+    // 定义障碍物
     std::vector<std::vector<bool>> obstacles(MAP_HEIGHT, std::vector<bool>(MAP_WIDTH, false));
-    // 创建一些简单的障碍物
     for (int x = 5; x < 15; ++x) obstacles[7][x] = true;
     for (int y = 3; y < 10; ++y) obstacles[y][10] = true;
 
     Point start(2, 2);
     Point goal(17, 12);
 
-    // 执行寻路
+    // 拖拽状态
+    bool isDragging = false;      // 是否正在拖拽
+    bool isDraggingStart = false; // true: 拖拽起点, false: 拖拽终点
+
+    // 初始寻路
     auto path = astar.findPath(start, goal, obstacles);
 
     // --- 主循环 ---
@@ -99,17 +108,53 @@ int main(int argc, char* argv[]) {
             if (e.type == SDL_QUIT) {
                 quit = true;
             }
+
+            // --- 鼠标事件处理 ---
+            if (e.type == SDL_MOUSEBUTTONDOWN && e.button.button == SDL_BUTTON_LEFT) {
+                Point gridPos = screenToGrid(e.button.x, e.button.y);
+
+                // 检查是否点击了起点或终点
+                if (gridPos == start) {
+                    isDragging = true;
+                    isDraggingStart = true;
+                } else if (gridPos == goal) {
+                    isDragging = true;
+                    isDraggingStart = false;
+                }
+            }
+
+            if (e.type == SDL_MOUSEMOTION && isDragging) {
+                Point gridPos = screenToGrid(e.motion.x, e.motion.y);
+
+                // 确保新位置在地图范围内且不是障碍物
+                if (gridPos.x >= 0 && gridPos.x < MAP_WIDTH && 
+                        gridPos.y >= 0 && gridPos.y < MAP_HEIGHT &&
+                        !obstacles[gridPos.y][gridPos.x]) {
+
+                    if (isDraggingStart) {
+                        start = gridPos;
+                    } else {
+                        goal = gridPos;
+                    }
+
+                    // 实时重新寻路
+                    path = astar.findPath(start, goal, obstacles);
+                }
+            }
+
+            if (e.type == SDL_MOUSEBUTTONUP && e.button.button == SDL_BUTTON_LEFT) {
+                isDragging = false;
+            }
         }
 
         // 渲染
         if (path) {
             renderMap(renderer, obstacles, *path, start, goal);
         } else {
-            // 如果没有路径，只渲染地图
             renderMap(renderer, obstacles, {}, start, goal);
         }
 
-        SDL_Delay(100); // 控制帧率
+        SDL_Delay(16); // 约 60 FPS
     }
 
     // --- 清理资源 ---

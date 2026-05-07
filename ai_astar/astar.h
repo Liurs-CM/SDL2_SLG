@@ -17,6 +17,10 @@ struct Point {
     bool operator==(const Point& other) const {
         return x == other.x && y == other.y;
     }
+    // --- 新增：重载 != 运算符 ---
+    bool operator!=(const Point& other) const {
+        return !(*this == other); // 直接复用 operator==
+    }
 };
 
 // 为 Point 定义哈希函数，使其能作为 unordered_set 的键
