@@ -23,9 +23,6 @@ class SDLGameObject : public GameObject
         virtual std::unique_ptr<SDLGameObject> clone() { return nullptr; }
     protected:
         SDLGameObject();
-        Vector2D m_position;
-        Vector2D m_velocity;
-        Vector2D m_acceleration;
         uint8_t m_currentRow;
         uint8_t m_currentFrame;
         double m_angle;

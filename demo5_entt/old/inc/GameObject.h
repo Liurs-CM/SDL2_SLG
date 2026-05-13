@@ -5,6 +5,16 @@
 #include <string>
 #include <memory>
 
+struct Movement
+{
+    Vector2D position;
+    Vector2D velocity;
+    Vector2D acceleration;
+    Movement(Vector2D pos) : position(pos), velocity(0,0), acceleration(0,0) {}
+};
+
+
+
 class GameObject
 {
     public:

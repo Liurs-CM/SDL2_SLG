@@ -17,8 +17,6 @@ class Game
         //function to access the private running variable
 	    void quit() { m_bRunning = false; }
         GameStateMachine* getStateMachine() { return m_pGameStateMachine; }
-        void setPlayerLives(int lives) { m_playerLives = lives; }
-        int getPlayerLives() { return m_playerLives; }
         bool changingState() { return m_bChangingState; }
         void changingState(bool cs) { m_bChangingState = cs; }
         void setCurrentLevel(int currentLevel);
