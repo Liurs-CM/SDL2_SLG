@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Game.hpp"
 #include "Constants.hpp"
+#include "sys/PlayerInput.hpp"
 #include "util/FrameCap.hpp"
 #include "util/SDL_Check.hpp"
 #include "util/SDL_Delete.hpp"
@@ -64,20 +65,28 @@ void Application::run() {
         FrameCap sync{fps};
 
         SDL_Event e;
+        Dir pending_move = Dir::none;
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) {
                 quit = true;
                 break;
             } else if (e.type == SDL_KEYDOWN) {
-                game.input(e.key.keysym.scancode);
+                auto dir = readDir(e.key.keysym.scancode);
+                if (dir != Dir::none) {
+                    pending_move = *dir; // 缓存本次回合的方向
+                }
+                //game.input(e.key.keysym.scancode);
             }
         }
 
         // Game::logic is called once for each tile
         // Game::render is called for each pixel between tiles
-        if (frame % tileSize == 0) {
+        if (pending_move != Dir::none) {
+            // 可选：将方向传给 game，或让 game 内部通过状态判断
+            game.input(pending_move);
+            // 执行一回合：玩家移动 + 幽灵移动 + 碰撞检测等
             if (!game.logic()) {
-                quit = true;
+                quit = true; // 游戏结束（如死亡）
             }
         }
 

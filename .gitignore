@@ -54,3 +54,6 @@ cmake_install.cmake
 Makefile
 .tags
 demo
+.cache
+.clangd
+build/

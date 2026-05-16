@@ -19,9 +19,9 @@ void Game::init() {
     rand.seed(std::random_device{}());
 }
 
-void Game::input(const SDL_Scancode key) {
+void Game::input(Dir dir) {
     if (state == State::playing) {
-        playerInput(reg, key);
+        playerInput(reg, dir);
     }
 }
 
@@ -40,6 +40,10 @@ bool Game::logic() {
     // many dots they've eaten. So `dots` would have to be moved into a component
 
     if (state != State::playing) {
+        return true;
+    }
+
+    if (pending_dir_ == Dir::none) {
         return true;
     }
 

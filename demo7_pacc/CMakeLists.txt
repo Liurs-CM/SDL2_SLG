@@ -144,8 +144,7 @@ if(CTAGS_EXE)
         --exclude=.git
         --exclude=CMakeFiles
         -f ${CMAKE_SOURCE_DIR}/.tags
-        ${CMAKE_SOURCE_DIR}/inc
-        ${CMAKE_SOURCE_DIR}/src
+        ${SOURCES}
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
         COMMENT "🔖 Generating .tags for inc/ and src/..."
         VERBATIM

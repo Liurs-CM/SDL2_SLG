@@ -1,6 +1,10 @@
 cmake_minimum_required (VERSION 3.28)
 project (demo LANGUAGES CXX)
 
+#CC=clang-18 CXX=clang++-18 cmake -B build -G Ninja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_STANDARD=20
+#cmake --build build
+#ln -sf build/compile_commands.json .
+
 # === 基础设置 ===
 set(CMAKE_CXX_STANDARD 20)
 #advise comment to use "cmake -DCMAKE_CXX_COMPILER=clang++ -B build"
@@ -37,6 +41,7 @@ add_executable (${CMAKE_PROJECT_NAME} ${SOURCES})
 set_property(TARGET ${CMAKE_PROJECT_NAME} PROPERTY CXX_STANDARD 20)
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/third_party
     ${SDL2_INCLUDE_DIRS}
     ${SDL2_MIXER_INCLUDE_DIRS}
     ${SDL2_IMAGE_INCLUDE_DIRS}
@@ -98,8 +103,8 @@ endif()
 
 # === 4. 调试辅助：AST / IR 查看（以 main.cpp 为例）===
 # 自动查找主源文件（假设存在 src/main.cpp 或类似）
-set(MAIN_FILES "")
-list(FILTER SOURCES INCLUDE REGEX "main\\.cpp$" OUTPUT_VARIABLE MAIN_FILES)
+set(MAIN_FILES ${SOURCES})
+list(FILTER MAIN_FILES INCLUDE REGEX "main\\.cpp$")
 list(LENGTH MAIN_FILES main_count)
 if(main_count GREATER 0)
     list(GET MAIN_FILES 0 MAIN_SOURCE_FILE)

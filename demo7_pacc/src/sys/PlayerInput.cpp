@@ -1,34 +1,30 @@
 #include "PlayerInput.hpp"
-#include "comp/Dir.hpp"
 #include "comp/Player.hpp"
 #include "sys/CanMove.hpp"
 #include <entt/entity/registry.hpp>
 
-namespace {
-
-    Dir readDir(const SDL_Scancode key) {
-        switch (key) {
-            case SDL_SCANCODE_W:
-            case SDL_SCANCODE_UP:
-                return Dir::up;
-            case SDL_SCANCODE_D:
-            case SDL_SCANCODE_RIGHT:
-                return Dir::right;
-            case SDL_SCANCODE_S:
-            case SDL_SCANCODE_DOWN:
-                return Dir::down;
-            case SDL_SCANCODE_A:
-            case SDL_SCANCODE_LEFT:
-                return Dir::left;
-            default:
-                return Dir::none;
-        }
+Dir readDir(const SDL_Scancode key) 
+{
+    switch (key) {
+        case SDL_SCANCODE_W:
+        case SDL_SCANCODE_UP:
+            return Dir::up;
+        case SDL_SCANCODE_D:
+        case SDL_SCANCODE_RIGHT:
+            return Dir::right;
+        case SDL_SCANCODE_S:
+        case SDL_SCANCODE_DOWN:
+            return Dir::down;
+        case SDL_SCANCODE_A:
+        case SDL_SCANCODE_LEFT:
+            return Dir::left;
+        default:
+            return Dir::none;
     }
-
 }
 
-bool playerInput(entt::registry &reg, const SDL_Scancode key) {
-    const Dir dir = readDir(key);
+bool playerInput(entt::registry &reg, const Dir key_dir) {
+    const Dir dir = key_dir;
     if (dir == Dir::none) {
         return false;
     }

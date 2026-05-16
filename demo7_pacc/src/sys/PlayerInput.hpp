@@ -1,4 +1,5 @@
 #pragma once
+#include "comp/Dir.hpp"
 #include <SDL_scancode.h>
 #include <entt/entity/fwd.hpp>
 
@@ -10,4 +11,5 @@
 // This takes the scancode of the key that was pressed and sets the DesiredDir
 // of the player.
 
-bool playerInput(entt::registry &, SDL_Scancode);
+Dir readDir(const SDL_Scancode key);
+bool playerInput(entt::registry &, Dir dir);
