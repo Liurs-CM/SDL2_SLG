@@ -1,0 +1,9 @@
+<map id="entt::type_index::value" name="entt::type_index::value">
+<area shape="rect" id="Node000001" title="Returns the sequential identifier of a given type." alt="" coords="228,63,400,88"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1dispatcher.html#a80c2122d247f4273eaaf82a45cba2a34" title=" " alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,62,142,33,143,28,252,57"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#af897c0ad07cc22d382c9fada83269835" title=" " alt="" coords="19,55,166,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,78,166,78,166,73,214,73"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1emitter.html#acb3426620771d08d6ae24a462c383704" title=" " alt="" coords="15,120,170,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,94,143,123,142,117,250,89"/>
+</map>

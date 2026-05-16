@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/signal/delegate.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_3770b56db630d50757db22e5ccfbfe1a.html">signal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">delegate.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">../config/config.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+delegate.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="delegate_8hpp__incl.png" border="0" usemap="#athird__party_2entt_2signal_2delegate_8hpp" alt=""/></div>
+<map name="athird__party_2entt_2signal_2delegate_8hpp" id="athird__party_2entt_2signal_2delegate_8hpp">
+<area shape="rect" title=" " alt="" coords="173,5,340,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,60,119"/>
+<area shape="poly" title=" " alt="" coords="204,48,74,93,72,88,202,43"/>
+<area shape="rect" title=" " alt="" coords="84,93,155,119"/>
+<area shape="poly" title=" " alt="" coords="225,48,153,89,150,84,222,43"/>
+<area shape="rect" title=" " alt="" coords="179,93,239,119"/>
+<area shape="poly" title=" " alt="" coords="247,47,225,83,221,80,243,44"/>
+<area shape="rect" title=" " alt="" coords="263,93,349,119"/>
+<area shape="poly" title=" " alt="" coords="271,44,294,80,289,83,266,47"/>
+<area shape="rect" title=" " alt="" coords="340,167,432,192"/>
+<area shape="poly" title=" " alt="" coords="301,43,334,64,363,92,378,122,386,152,381,154,373,124,359,95,331,68,298,48"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="426,93,554,119"/>
+<area shape="poly" title=" " alt="" coords="313,43,444,86,442,91,312,48"/>
+<area shape="poly" title=" " alt="" coords="475,121,416,161,413,156,472,116"/>
+<area shape="rect" title=" " alt="" coords="457,167,523,192"/>
+<area shape="poly" title=" " alt="" coords="493,119,493,153,487,153,487,119"/>
+<area shape="rect" title=" " alt="" coords="547,167,617,192"/>
+<area shape="poly" title=" " alt="" coords="506,117,558,156,555,160,503,121"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="delegate_8hpp__dep__incl.png" border="0" usemap="#athird__party_2entt_2signal_2delegate_8hppdep" alt=""/></div>
+<map name="athird__party_2entt_2signal_2delegate_8hppdep" id="athird__party_2entt_2signal_2delegate_8hppdep">
+<area shape="rect" title=" " alt="" coords="43,5,209,45"/>
+<area shape="rect" href="helper_8hpp.html" title=" " alt="" coords="43,269,209,309"/>
+<area shape="poly" title=" " alt="" coords="129,59,129,269,123,269,123,59"/>
+<area shape="rect" href="entt_8hpp.html" title=" " alt="" coords="2555,357,2737,383"/>
+<area shape="poly" title=" " alt="" coords="102,57,61,111,41,143,24,178,12,213,8,247,15,279,33,307,63,315,134,322,381,335,729,345,1139,353,1974,362,2555,366,2555,371,1974,367,1139,358,729,350,380,340,134,328,62,320,30,311,10,281,3,247,7,212,19,176,36,141,57,108,98,54"/>
+<area shape="rect" href="sigh_8hpp.html" title=" " alt="" coords="2148,93,2315,133"/>
+<area shape="poly" title=" " alt="" coords="223,28,2148,106,2148,111,223,33"/>
+<area shape="poly" title=" " alt="" coords="223,307,448,324,741,337,1430,355,2099,363,2555,366,2555,371,2099,369,1430,360,740,343,448,329,222,312"/>
+<area shape="poly" title=" " alt="" coords="2329,121,2470,140,2631,170,2707,189,2774,212,2827,238,2847,252,2863,268,2872,287,2871,304,2860,318,2843,330,2794,349,2737,361,2736,356,2793,343,2840,326,2857,314,2866,302,2867,288,2858,271,2844,256,2824,242,2771,217,2705,194,2629,175,2469,145,2328,127"/>
+<area shape="rect" href="registry_8hpp.html" title=" " alt="" coords="1494,181,1659,221"/>
+<area shape="poly" title=" " alt="" coords="2135,130,1660,192,1659,187,2134,125"/>
+<area shape="rect" href="dispatcher_8hpp.html" title=" " alt="" coords="2924,181,3091,221"/>
+<area shape="poly" title=" " alt="" coords="2329,119,2589,142,2905,179,2924,182,2924,187,2904,184,2589,147,2328,124"/>
+<area shape="poly" title=" " alt="" coords="1480,205,1256,208,943,217,585,237,401,253,221,272,209,274,209,268,220,267,400,247,584,232,943,212,1255,203,1480,200"/>
+<area shape="poly" title=" " alt="" coords="1673,200,1914,202,2211,211,2353,220,2476,231,2569,247,2600,256,2621,267,2637,288,2646,313,2649,357,2644,357,2641,314,2633,291,2618,271,2598,261,2567,252,2475,237,2352,225,2211,217,1914,208,1673,205"/>
+<area shape="rect" href="factories_8cpp.html" title=" " alt="" coords="423,277,584,302"/>
+<area shape="poly" title=" " alt="" coords="1480,208,1313,214,1093,225,845,244,596,272,554,279,553,274,595,267,845,239,1092,220,1313,208,1480,202"/>
+<area shape="rect" href="game_8hpp.html" title=" " alt="" coords="608,277,751,302"/>
+<area shape="poly" title=" " alt="" coords="1480,209,1161,228,963,247,764,272,726,279,725,274,763,267,962,241,1161,223,1480,204"/>
+<area shape="rect" href="can__move_8cpp.html" title=" " alt="" coords="775,277,941,302"/>
+<area shape="poly" title=" " alt="" coords="1480,213,1240,236,953,272,912,279,911,274,952,267,1240,230,1480,208"/>
+<area shape="rect" href="change__ghost__mode_8cpp.html" title=" " alt="" coords="965,269,1127,309"/>
+<area shape="poly" title=" " alt="" coords="1481,219,1140,272,1127,274,1126,269,1139,267,1480,213"/>
+<area shape="rect" href="eat__dots_8cpp.html" title=" " alt="" coords="1151,277,1306,302"/>
+<area shape="poly" title=" " alt="" coords="1488,227,1276,279,1274,274,1486,222"/>
+<area shape="rect" href="house_8cpp.html" title=" " alt="" coords="1331,277,1468,302"/>
+<area shape="poly" title=" " alt="" coords="1526,230,1424,279,1422,274,1524,225"/>
+<area shape="rect" href="movement_8cpp.html" title=" " alt="" coords="1492,277,1661,302"/>
+<area shape="poly" title=" " alt="" coords="1579,235,1579,276,1574,276,1574,235"/>
+<area shape="rect" href="player__ghost__collide_8cpp.html" title=" " alt="" coords="1686,269,1841,309"/>
+<area shape="poly" title=" " alt="" coords="1631,225,1724,267,1721,272,1629,229"/>
+<area shape="rect" href="player__input_8cpp.html" title=" " alt="" coords="1865,277,2043,302"/>
+<area shape="poly" title=" " alt="" coords="1673,222,1904,274,1903,279,1672,227"/>
+<area shape="rect" href="pursue__target_8cpp.html" title=" " alt="" coords="2068,277,2256,302"/>
+<area shape="poly" title=" " alt="" coords="1673,212,2056,267,2099,274,2098,279,2055,272,1672,218"/>
+<area shape="rect" href="render_8cpp.html" title=" " alt="" coords="2281,277,2419,302"/>
+<area shape="poly" title=" " alt="" coords="1673,205,1942,227,2105,244,2268,267,2305,274,2304,279,2267,272,2104,249,1941,232,1673,211"/>
+<area shape="rect" href="set__target_8cpp.html" title=" " alt="" coords="2444,277,2608,302"/>
+<area shape="poly" title=" " alt="" coords="1673,204,2009,224,2220,242,2432,267,2475,274,2474,279,2431,272,2219,247,2009,229,1673,209"/>
+<area shape="rect" href="actor_8hpp.html" title=" " alt="" coords="2683,269,2849,309"/>
+<area shape="poly" title=" " alt="" coords="1673,202,1857,208,2104,219,2383,238,2665,267,2684,269,2683,275,2664,272,2383,244,2104,225,1857,213,1673,207"/>
+<area shape="rect" href="observer_8hpp.html" title=" " alt="" coords="233,269,398,309"/>
+<area shape="poly" title=" " alt="" coords="1481,206,1285,211,1019,222,716,241,410,272,399,274,398,268,410,267,716,236,1018,216,1284,206,1480,201"/>
+<area shape="poly" title=" " alt="" coords="2727,319,2665,359,2662,355,2724,315"/>
+<area shape="poly" title=" " alt="" coords="412,307,619,323,886,336,1517,353,2131,362,2555,366,2555,371,2131,368,1517,359,886,341,618,328,412,312"/>
+<area shape="poly" title=" " alt="" coords="2988,235,2953,275,2931,295,2906,312,2865,331,2822,346,2737,363,2736,358,2820,341,2863,326,2903,307,2927,291,2949,271,2984,231"/>
+</map>
+</div>
+</div>
+<p><a href="delegate_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1connect__arg__t.html">entt::connect_arg_t&lt; auto &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to wrap a function or a member of a specified type.  <a href="structentt_1_1connect__arg__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4.html">entt::delegate&lt; Ret(Args...)&gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class to use to send around functions and members.  <a href="classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespaceentt" id="r_namespaceentt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html">entt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a656b2ec80abf493ce1924b314d13fd18" id="r_a656b2ec80abf493ce1924b314d13fd18"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Ret</a> , typename... Args&gt; </td></tr>
+<tr class="memitem:a656b2ec80abf493ce1924b314d13fd18"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a656b2ec80abf493ce1924b314d13fd18">entt::operator!=</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1delegate.html">delegate</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Ret</a>(Args...)&gt; &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">lhs</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1delegate.html">delegate</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Ret</a>(Args...)&gt; &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">rhs</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a656b2ec80abf493ce1924b314d13fd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the contents of two delegates.  <br /></td></tr>
+<tr class="separator:a656b2ec80abf493ce1924b314d13fd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadf3d988bd61ff81745d4e105ee7698" id="r_afadf3d988bd61ff81745d4e105ee7698"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a> Candidate&gt; </td></tr>
+<tr class="memitem:afadf3d988bd61ff81745d4e105ee7698"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceentt.html#afadf3d988bd61ff81745d4e105ee7698">entt::delegate</a> (<a class="el" href="structentt_1_1connect__arg__t.html">connect_arg_t</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Candidate</a> &gt;) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> -&gt; <a class="el" href="classentt_1_1delegate.html">delegate</a>&lt; std::remove_pointer_t&lt; internal::function_pointer_t&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">decltype</a>(<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Candidate</a>)&gt; &gt; &gt;</td></tr>
+<tr class="memdesc:afadf3d988bd61ff81745d4e105ee7698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide.  <br /></td></tr>
+<tr class="separator:afadf3d988bd61ff81745d4e105ee7698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68d0082111ae45bbdd311cecf4f166e" id="r_ac68d0082111ae45bbdd311cecf4f166e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a> Candidate, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> Type &gt; </td></tr>
+<tr class="memitem:ac68d0082111ae45bbdd311cecf4f166e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceentt.html#ac68d0082111ae45bbdd311cecf4f166e">entt::delegate</a> (<a class="el" href="structentt_1_1connect__arg__t.html">connect_arg_t</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Candidate</a> &gt;, Type &amp;&amp;) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> -&gt; <a class="el" href="classentt_1_1delegate.html">delegate</a>&lt; std::remove_pointer_t&lt; internal::function_pointer_t&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">decltype</a>(<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Candidate</a>), Type &gt; &gt; &gt;</td></tr>
+<tr class="memdesc:ac68d0082111ae45bbdd311cecf4f166e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide.  <br /></td></tr>
+<tr class="separator:ac68d0082111ae45bbdd311cecf4f166e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:af1e73acd6f3d892955819677dc2664b7" id="r_af1e73acd6f3d892955819677dc2664b7"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a> Func&gt; </td></tr>
+<tr class="memitem:af1e73acd6f3d892955819677dc2664b7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="structentt_1_1connect__arg__t.html">connect_arg_t</a>&lt; Func &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceentt.html#af1e73acd6f3d892955819677dc2664b7">entt::connect_arg</a> {}</td></tr>
+<tr class="memdesc:af1e73acd6f3d892955819677dc2664b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant of type <a class="el" href="structentt_1_1connect__arg__t.html" title="Used to wrap a function or a member of a specified type.">connect_arg_t</a> used to disambiguate calls.  <br /></td></tr>
+<tr class="separator:af1e73acd6f3d892955819677dc2664b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

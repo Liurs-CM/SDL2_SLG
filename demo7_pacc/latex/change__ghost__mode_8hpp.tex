@@ -1,0 +1,205 @@
+\doxysection{src/sys/change\+\_\+ghost\+\_\+mode.hpp 文件参考}
+\hypertarget{change__ghost__mode_8hpp}{}\label{change__ghost__mode_8hpp}\index{src/sys/change\_ghost\_mode.hpp@{src/sys/change\_ghost\_mode.hpp}}
+{\ttfamily \#include $<$entt/entity/fwd.\+hpp$>$}\newline
+change\+\_\+ghost\+\_\+mode.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{change__ghost__mode_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{change__ghost__mode_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{change__ghost__mode_8hpp_a49e74dc311275a0eaba9db7e993cf585}{ghost\+Scared}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{change__ghost__mode_8hpp_a66489197663eca58fd41a2c13c681cc5}{ghost\+Scared\+Timeout}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{change__ghost__mode_8hpp_aefd710a82c9dc222ff4c08e4fb54df0f}{ghost\+Eaten}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&, entt\+::entity)
+\item 
+void \mbox{\hyperlink{change__ghost__mode_8hpp_a7d607ff60208c9a2e149df66d4fa6084}{ghost\+Scatter}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{change__ghost__mode_8hpp_a9ffe54093a794a6a0c04feb96e463f7e}{ghost\+Chase}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{change__ghost__mode_8hpp_a9ffe54093a794a6a0c04feb96e463f7e}\label{change__ghost__mode_8hpp_a9ffe54093a794a6a0c04feb96e463f7e} 
+\index{change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}!ghostChase@{ghostChase}}
+\index{ghostChase@{ghostChase}!change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostChase()}{ghostChase()}}
+{\footnotesize\ttfamily void ghost\+Chase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{change__ghost__mode_8cpp_source}{change\+\_\+ghost\+\_\+mode.\+cpp}} 第 \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00055}{55}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{registry_8hpp_source_l00830}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::remove()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a9ffe54093a794a6a0c04feb96e463f7e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a9ffe54093a794a6a0c04feb96e463f7e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{change__ghost__mode_8hpp_aefd710a82c9dc222ff4c08e4fb54df0f}\label{change__ghost__mode_8hpp_aefd710a82c9dc222ff4c08e4fb54df0f} 
+\index{change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}!ghostEaten@{ghostEaten}}
+\index{ghostEaten@{ghostEaten}!change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostEaten()}{ghostEaten()}}
+{\footnotesize\ttfamily void ghost\+Eaten (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{entt\+::entity}]{ghost }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{change__ghost__mode_8cpp_source}{change\+\_\+ghost\+\_\+mode.\+cpp}} 第 \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00041}{41}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00830}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::remove()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_aefd710a82c9dc222ff4c08e4fb54df0f_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_aefd710a82c9dc222ff4c08e4fb54df0f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{change__ghost__mode_8hpp_a49e74dc311275a0eaba9db7e993cf585}\label{change__ghost__mode_8hpp_a49e74dc311275a0eaba9db7e993cf585} 
+\index{change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}!ghostScared@{ghostScared}}
+\index{ghostScared@{ghostScared}!change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostScared()}{ghostScared()}}
+{\footnotesize\ttfamily void ghost\+Scared (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{change__ghost__mode_8cpp_source}{change\+\_\+ghost\+\_\+mode.\+cpp}} 第 \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00016}{16}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{registry_8hpp_source_l00921}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::has()}}, \mbox{\hyperlink{registry_8hpp_source_l00871}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::remove\+\_\+if\+\_\+exists()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a49e74dc311275a0eaba9db7e993cf585_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a49e74dc311275a0eaba9db7e993cf585_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{change__ghost__mode_8hpp_a66489197663eca58fd41a2c13c681cc5}\label{change__ghost__mode_8hpp_a66489197663eca58fd41a2c13c681cc5} 
+\index{change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}!ghostScaredTimeout@{ghostScaredTimeout}}
+\index{ghostScaredTimeout@{ghostScaredTimeout}!change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostScaredTimeout()}{ghostScaredTimeout()}}
+{\footnotesize\ttfamily void ghost\+Scared\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{change__ghost__mode_8cpp_source}{change\+\_\+ghost\+\_\+mode.\+cpp}} 第 \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00027}{27}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{registry_8hpp_source_l00830}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::remove()}}, \mbox{\hyperlink{ghost__mode_8hpp_source_l00026}{Scared\+Mode\+::timer}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a66489197663eca58fd41a2c13c681cc5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a66489197663eca58fd41a2c13c681cc5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{change__ghost__mode_8hpp_a7d607ff60208c9a2e149df66d4fa6084}\label{change__ghost__mode_8hpp_a7d607ff60208c9a2e149df66d4fa6084} 
+\index{change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}!ghostScatter@{ghostScatter}}
+\index{ghostScatter@{ghostScatter}!change\_ghost\_mode.hpp@{change\_ghost\_mode.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostScatter()}{ghostScatter()}}
+{\footnotesize\ttfamily void ghost\+Scatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{change__ghost__mode_8cpp_source}{change\+\_\+ghost\+\_\+mode.\+cpp}} 第 \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00047}{47}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{registry_8hpp_source_l00830}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::remove()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a7d607ff60208c9a2e149df66d4fa6084_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{change__ghost__mode_8hpp_a7d607ff60208c9a2e149df66d4fa6084_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,123 @@
+\doxysection{entt\+::emitter\texorpdfstring{$<$}{<} Derived \texorpdfstring{$>$}{>}\+::connection\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1emitter_1_1connection}{}\label{structentt_1_1emitter_1_1connection}\index{entt::emitter$<$ Derived $>$::connection$<$ Event $>$@{entt::emitter$<$ Derived $>$::connection$<$ Event $>$}}
+
+
+Generic connection type for events.  
+
+
+
+
+{\ttfamily \#include $<$emitter.\+hpp$>$}
+
+
+
+类 entt\+::emitter\texorpdfstring{$<$}{<} Derived \texorpdfstring{$>$}{>}\+::connection\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{structentt_1_1emitter_1_1connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+entt\+::emitter\texorpdfstring{$<$}{<} Derived \texorpdfstring{$>$}{>}\+::connection\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{structentt_1_1emitter_1_1connection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1emitter_1_1connection_a3dcb29742c6824dd28743eb0d896f9c3}{connection}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1emitter_1_1connection_a0fa687596e072155e92e586e9de089c3}{connection}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler}{pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::connection\+\_\+type conn)
+\begin{DoxyCompactList}\small\item\em Creates a connection that wraps its underlying instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{structentt_1_1emitter_1_1connection_a0f3bb10ad57dc0e06298fc9ba38a7bd9}{emitter}}
+\begin{DoxyCompactList}\small\item\em Event emitters are friend classes of connections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}$>$\newline
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}}$>$\newline
+struct entt\+::emitter$<$ Derived $>$\+::connection$<$ Event $>$}
+Generic connection type for events. 
+
+Type of the connection object returned by the event emitter whenever a listener for the given type is registered.~\newline
+ It can be used to break connections still in use.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Event} & Type of event for which the connection is created. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00169}{169}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1emitter_1_1connection_a3dcb29742c6824dd28743eb0d896f9c3}\label{structentt_1_1emitter_1_1connection_a3dcb29742c6824dd28743eb0d896f9c3} 
+\index{entt::emitter$<$ Derived $>$::connection$<$ Event $>$@{entt::emitter$<$ Derived $>$::connection$<$ Event $>$}!connection@{connection}}
+\index{connection@{connection}!entt::emitter$<$ Derived $>$::connection$<$ Event $>$@{entt::emitter$<$ Derived $>$::connection$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::connection$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\Hypertarget{structentt_1_1emitter_1_1connection_a0fa687596e072155e92e586e9de089c3}\label{structentt_1_1emitter_1_1connection_a0fa687596e072155e92e586e9de089c3} 
+\index{entt::emitter$<$ Derived $>$::connection$<$ Event $>$@{entt::emitter$<$ Derived $>$::connection$<$ Event $>$}!connection@{connection}}
+\index{connection@{connection}!entt::emitter$<$ Derived $>$::connection$<$ Event $>$@{entt::emitter$<$ Derived $>$::connection$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::connection$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler}{pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::connection\+\_\+type}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a connection that wraps its underlying instance. 
+
+
+\begin{DoxyParams}{参数}
+{\em conn} & A connection object to wrap. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00180}{180}} 行定义.
+
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{structentt_1_1emitter_1_1connection_a0f3bb10ad57dc0e06298fc9ba38a7bd9}\label{structentt_1_1emitter_1_1connection_a0f3bb10ad57dc0e06298fc9ba38a7bd9} 
+\index{entt::emitter$<$ Derived $>$::connection$<$ Event $>$@{entt::emitter$<$ Derived $>$::connection$<$ Event $>$}!emitter@{emitter}}
+\index{emitter@{emitter}!entt::emitter$<$ Derived $>$::connection$<$ Event $>$@{entt::emitter$<$ Derived $>$::connection$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{emitter}{emitter}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{friend}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1emitter}{emitter}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Event emitters are friend classes of connections. 
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00171}{171}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/signal/\mbox{\hyperlink{emitter_8hpp}{emitter.\+hpp}}\end{DoxyCompactItemize}

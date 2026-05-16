@@ -1,0 +1,7 @@
+<map id="entt::basic_registry::orphans" name="entt::basic_registry::orphans">
+<area shape="rect" id="Node000001" title="Iterates orphans and applies them the given function object." alt="" coords="221,37,368,77"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__continuous__loader.html#aaaa1d17e50b1bdfccb43b8cc61ff9f31" title="Destroys those entities that have no components." alt="" coords="5,5,173,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,47,173,41,174,36,208,41"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__snapshot__loader.html#aff688b0c41ccf78aaf17fbec3f1cf5c0" title="Destroys those entities that have no components." alt="" coords="11,69,167,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,73,168,80,167,75,208,68"/>
+</map>

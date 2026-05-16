@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/sys/set_target.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_220d2bd384b446346a1cdcf02b1b2295.html">sys</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">set_target.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;random&gt;</code><br />
+<code>#include &quot;<a class="el" href="maze_8hpp_source.html">core/maze.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="entity_2fwd_8hpp_source.html">entt/entity/fwd.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+set_target.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp__incl.png" border="0" usemap="#asrc_2sys_2set__target_8hpp" alt=""/></div>
+<map name="asrc_2sys_2set__target_8hpp" id="asrc_2sys_2set__target_8hpp">
+<area shape="rect" title=" " alt="" coords="32,5,197,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,77,104"/>
+<area shape="poly" title=" " alt="" coords="104,33,65,71,61,67,101,29"/>
+<area shape="rect" href="maze_8hpp.html" title=" " alt="" coords="47,152,166,177"/>
+<area shape="poly" title=" " alt="" coords="117,31,111,138,105,138,111,31"/>
+<area shape="rect" href="entity_2fwd_8hpp.html" title=" " alt="" coords="167,79,313,104"/>
+<area shape="poly" title=" " alt="" coords="136,28,209,69,206,74,133,33"/>
+<area shape="rect" title=" " alt="" coords="79,299,145,324"/>
+<area shape="poly" title=" " alt="" coords="110,178,114,285,108,285,104,178"/>
+<area shape="rect" href="grid_8hpp.html" title=" " alt="" coords="297,225,397,251"/>
+<area shape="poly" title=" " alt="" coords="146,175,295,219,294,224,144,180"/>
+<area shape="rect" title=" " alt="" coords="267,299,330,324"/>
+<area shape="poly" title=" " alt="" coords="341,253,316,289,312,286,337,250"/>
+<area shape="rect" title=" " alt="" coords="173,299,243,324"/>
+<area shape="poly" title=" " alt="" coords="326,253,244,295,242,290,323,248"/>
+<area shape="rect" title=" " alt="" coords="354,299,414,324"/>
+<area shape="poly" title=" " alt="" coords="355,250,374,285,369,288,350,252"/>
+<area shape="rect" href="pos_8hpp.html" title=" " alt="" coords="438,299,511,324"/>
+<area shape="poly" title=" " alt="" coords="369,248,443,289,440,294,366,253"/>
+<area shape="rect" href="core_2fwd_8hpp.html" title=" " alt="" coords="189,152,307,177"/>
+<area shape="poly" title=" " alt="" coords="244,104,248,138,243,139,239,105"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="144,225,272,251"/>
+<area shape="poly" title=" " alt="" coords="244,179,224,215,219,212,239,176"/>
+<area shape="poly" title=" " alt="" coords="194,253,140,292,137,288,191,249"/>
+<area shape="poly" title=" " alt="" coords="211,251,211,285,205,285,205,251"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp__dep__incl.png" border="0" usemap="#asrc_2sys_2set__target_8hppdep" alt=""/></div>
+<map name="asrc_2sys_2set__target_8hppdep" id="asrc_2sys_2set__target_8hppdep">
+<area shape="rect" title=" " alt="" coords="81,5,247,31"/>
+<area shape="rect" href="game_8cpp.html" title=" " alt="" coords="5,79,147,104"/>
+<area shape="poly" title=" " alt="" coords="141,41,92,81,89,76,138,37"/>
+<area shape="rect" href="set__target_8cpp.html" title=" " alt="" coords="171,79,335,104"/>
+<area shape="poly" title=" " alt="" coords="191,37,240,76,237,81,187,41"/>
+</map>
+</div>
+</div>
+<p><a href="set__target_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a12c136aa7757633827bdd4d69ac67277" id="r_a12c136aa7757633827bdd4d69ac67277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="set__target_8hpp.html#a12c136aa7757633827bdd4d69ac67277">setBlinkyChaseTarget</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;)</td></tr>
+<tr class="separator:a12c136aa7757633827bdd4d69ac67277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed32ed66c9b9308eb7ac8123ec93908" id="r_a0ed32ed66c9b9308eb7ac8123ec93908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="set__target_8hpp.html#a0ed32ed66c9b9308eb7ac8123ec93908">setPinkyChaseTarget</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;)</td></tr>
+<tr class="separator:a0ed32ed66c9b9308eb7ac8123ec93908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e9e2bc47e2703c6775319295d7292d" id="r_a97e9e2bc47e2703c6775319295d7292d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="set__target_8hpp.html#a97e9e2bc47e2703c6775319295d7292d">setInkyChaseTarget</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;)</td></tr>
+<tr class="separator:a97e9e2bc47e2703c6775319295d7292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0274f666fba303f0c15ca3d4407e31b" id="r_af0274f666fba303f0c15ca3d4407e31b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="set__target_8hpp.html#af0274f666fba303f0c15ca3d4407e31b">setClydeChaseTarget</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;)</td></tr>
+<tr class="separator:af0274f666fba303f0c15ca3d4407e31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1de278eb090bd9a16ca670c1947be5" id="r_aff1de278eb090bd9a16ca670c1947be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="set__target_8hpp.html#aff1de278eb090bd9a16ca670c1947be5">setScatterTarget</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;)</td></tr>
+<tr class="separator:aff1de278eb090bd9a16ca670c1947be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3d2a8780b15181352f8c7639d569cb" id="r_a0c3d2a8780b15181352f8c7639d569cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="set__target_8hpp.html#a0c3d2a8780b15181352f8c7639d569cb">setScaredTarget</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;, const <a class="el" href="maze_8hpp.html#a5d4a998c7ef1ab2e682be3da0c646f23">MazeState</a> &amp;, std::mt19937 &amp;)</td></tr>
+<tr class="separator:a0c3d2a8780b15181352f8c7639d569cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc6a47b9a6d9a894704aa9cb3cf7b85" id="r_affc6a47b9a6d9a894704aa9cb3cf7b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="set__target_8hpp.html#affc6a47b9a6d9a894704aa9cb3cf7b85">setEatenTarget</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;)</td></tr>
+<tr class="separator:affc6a47b9a6d9a894704aa9cb3cf7b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a12c136aa7757633827bdd4d69ac67277" name="a12c136aa7757633827bdd4d69ac67277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c136aa7757633827bdd4d69ac67277">&#9670;&#160;</a></span>setBlinkyChaseTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setBlinkyChaseTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="set__target_8cpp_source.html">set_target.cpp</a> 第 <a class="el" href="set__target_8cpp_source.html#l00021">21</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="registry_8hpp_source.html#l00960">entt::basic_registry&lt; Entity &gt;::get()</a>, <a class="el" href="position_8hpp_source.html#l00018">Position::p</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a12c136aa7757633827bdd4d69ac67277_cgraph.png" border="0" usemap="#aset__target_8hpp_a12c136aa7757633827bdd4d69ac67277_cgraph" alt=""/></div>
+<map name="aset__target_8hpp_a12c136aa7757633827bdd4d69ac67277_cgraph" id="aset__target_8hpp_a12c136aa7757633827bdd4d69ac67277_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,168,67"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a696e43e4d153ebfc9370d2f9b5fe3984" title="Returns references to the given components for an entity." alt="" coords="216,13,391,38"/>
+<area shape="poly" title=" " alt="" coords="168,41,202,36,203,42,169,46"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="230,63,377,103"/>
+<area shape="poly" title=" " alt="" coords="169,63,216,69,216,74,168,68"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="439,5,585,45"/>
+<area shape="poly" title=" " alt="" coords="391,23,425,23,425,28,391,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a12c136aa7757633827bdd4d69ac67277_icgraph.png" border="0" usemap="#aset__target_8hpp_a12c136aa7757633827bdd4d69ac67277_icgraph" alt=""/></div>
+<map name="aset__target_8hpp_a12c136aa7757633827bdd4d69ac67277_icgraph" id="aset__target_8hpp_a12c136aa7757633827bdd4d69ac67277_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,591,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="415,21,380,21,380,15,415,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af0274f666fba303f0c15ca3d4407e31b" name="af0274f666fba303f0c15ca3d4407e31b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0274f666fba303f0c15ca3d4407e31b">&#9670;&#160;</a></span>setClydeChaseTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setClydeChaseTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="set__target_8cpp_source.html">set_target.cpp</a> 第 <a class="el" href="set__target_8cpp_source.html#l00051">51</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="pos_8hpp_source.html#l00048">distance()</a>, <a class="el" href="registry_8hpp_source.html#l00960">entt::basic_registry&lt; Entity &gt;::get()</a>, <a class="el" href="position_8hpp_source.html#l00018">Position::p</a>, <a class="el" href="home__position_8hpp_source.html#l00016">HomePosition::scatter</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_cgraph.png" border="0" usemap="#aset__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_cgraph" alt=""/></div>
+<map name="aset__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_cgraph" id="aset__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,61,164,87"/>
+<area shape="rect" href="pos_8hpp.html#ac1f9ce5d9b824aa9d834d62e9c3eedf0" title=" " alt="" coords="261,8,338,33"/>
+<area shape="poly" title=" " alt="" coords="136,59,247,31,248,36,137,64"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a696e43e4d153ebfc9370d2f9b5fe3984" title="Returns references to the given components for an entity." alt="" coords="212,61,387,87"/>
+<area shape="poly" title=" " alt="" coords="164,71,198,71,198,77,164,77"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="226,111,373,151"/>
+<area shape="poly" title=" " alt="" coords="134,84,213,106,212,111,132,89"/>
+<area shape="rect" href="pos_8hpp.html#ac981712b50b885f6249a9a099ed0d02d" title=" " alt="" coords="465,5,551,31"/>
+<area shape="poly" title=" " alt="" coords="338,18,452,16,452,21,338,23"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="435,55,581,95"/>
+<area shape="poly" title=" " alt="" coords="387,72,421,72,421,77,387,77"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_icgraph.png" border="0" usemap="#aset__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_icgraph" alt=""/></div>
+<map name="aset__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_icgraph" id="aset__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,587,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="affc6a47b9a6d9a894704aa9cb3cf7b85" name="affc6a47b9a6d9a894704aa9cb3cf7b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc6a47b9a6d9a894704aa9cb3cf7b85">&#9670;&#160;</a></span>setEatenTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setEatenTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="set__target_8cpp_source.html">set_target.cpp</a> 第 <a class="el" href="set__target_8cpp_source.html#l00103">103</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="home__position_8hpp_source.html#l00015">HomePosition::home</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_cgraph.png" border="0" usemap="#aset__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_cgraph" alt=""/></div>
+<map name="aset__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_cgraph" id="aset__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,124,38"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="172,5,319,45"/>
+<area shape="poly" title=" " alt="" coords="124,23,158,23,158,28,124,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_icgraph.png" border="0" usemap="#aset__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_icgraph" alt=""/></div>
+<map name="aset__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_icgraph" id="aset__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,547,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a97e9e2bc47e2703c6775319295d7292d" name="a97e9e2bc47e2703c6775319295d7292d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e9e2bc47e2703c6775319295d7292d">&#9670;&#160;</a></span>setInkyChaseTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setInkyChaseTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="set__target_8cpp_source.html">set_target.cpp</a> 第 <a class="el" href="set__target_8cpp_source.html#l00039">39</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="chase__target_8hpp_source.html#l00032">InkyChaseTarget::blinky</a>, <a class="el" href="registry_8hpp_source.html#l00960">entt::basic_registry&lt; Entity &gt;::get()</a>, <a class="el" href="chase__target_8hpp_source.html#l00031">InkyChaseTarget::player</a>, <a class="el" href="dir__to__pos_8hpp_source.html#l00015">toPos()</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_cgraph.png" border="0" usemap="#aset__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_cgraph" alt=""/></div>
+<map name="aset__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_cgraph" id="aset__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,62,155,87"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a696e43e4d153ebfc9370d2f9b5fe3984" title="Returns references to the given components for an entity." alt="" coords="203,13,377,38"/>
+<area shape="poly" title=" " alt="" coords="134,59,221,39,223,44,135,65"/>
+<area shape="rect" href="dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="261,62,319,87"/>
+<area shape="poly" title=" " alt="" coords="155,72,247,72,247,77,155,77"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="217,112,363,152"/>
+<area shape="poly" title=" " alt="" coords="128,85,204,106,203,111,127,90"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="425,5,572,45"/>
+<area shape="poly" title=" " alt="" coords="378,23,412,23,412,28,378,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_icgraph.png" border="0" usemap="#aset__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_icgraph" alt=""/></div>
+<map name="aset__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_icgraph" id="aset__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,577,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ed32ed66c9b9308eb7ac8123ec93908" name="a0ed32ed66c9b9308eb7ac8123ec93908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed32ed66c9b9308eb7ac8123ec93908">&#9670;&#160;</a></span>setPinkyChaseTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setPinkyChaseTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="set__target_8cpp_source.html">set_target.cpp</a> 第 <a class="el" href="set__target_8cpp_source.html#l00029">29</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="registry_8hpp_source.html#l00960">entt::basic_registry&lt; Entity &gt;::get()</a>, <a class="el" href="dir__to__pos_8hpp_source.html#l00015">toPos()</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_cgraph.png" border="0" usemap="#aset__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_cgraph" alt=""/></div>
+<map name="aset__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_cgraph" id="aset__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_cgraph">
+<area shape="rect" title=" " alt="" coords="5,62,163,87"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a696e43e4d153ebfc9370d2f9b5fe3984" title="Returns references to the given components for an entity." alt="" coords="211,13,385,38"/>
+<area shape="poly" title=" " alt="" coords="139,59,228,39,229,44,140,65"/>
+<area shape="rect" href="dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="269,62,327,87"/>
+<area shape="poly" title=" " alt="" coords="163,72,255,72,255,77,163,77"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="225,112,371,152"/>
+<area shape="poly" title=" " alt="" coords="133,85,212,106,211,111,132,90"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="433,5,580,45"/>
+<area shape="poly" title=" " alt="" coords="386,23,420,23,420,28,386,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_icgraph.png" border="0" usemap="#aset__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_icgraph" alt=""/></div>
+<map name="aset__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_icgraph" id="aset__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,585,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0c3d2a8780b15181352f8c7639d569cb" name="a0c3d2a8780b15181352f8c7639d569cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c3d2a8780b15181352f8c7639d569cb">&#9670;&#160;</a></span>setScaredTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setScaredTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="maze_8hpp.html#a5d4a998c7ef1ab2e682be3da0c646f23">MazeState</a> &amp;&#160;</td>
+          <td class="paramname"><em>maze</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::mt19937 &amp;&#160;</td>
+          <td class="paramname"><em>rand</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="set__target_8cpp_source.html">set_target.cpp</a> 第 <a class="el" href="set__target_8cpp_source.html#l00074">74</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="can__move_8cpp_source.html#l00015">canMove()</a>, <a class="el" href="util_2dir_8hpp_source.html#l00026">opposite()</a>, <a class="el" href="util_2dir_8hpp_source.html#l00036">rotateCW()</a>, <a class="el" href="dir__to__pos_8hpp_source.html#l00015">toPos()</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_cgraph.png" border="0" usemap="#aset__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_cgraph" alt=""/></div>
+<map name="aset__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_cgraph" id="aset__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,114,132,139"/>
+<area shape="rect" href="can__move_8cpp.html#ac44feff324cce2df74e8465e4cc46b28" title=" " alt="" coords="213,13,294,38"/>
+<area shape="poly" title=" " alt="" coords="87,112,179,55,207,41,209,46,181,60,90,116"/>
+<area shape="rect" href="dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="434,62,493,87"/>
+<area shape="poly" title=" " alt="" coords="122,111,180,100,311,84,420,75,421,80,312,89,180,105,123,117"/>
+<area shape="rect" href="util_2dir_8hpp.html#a83356231f8b8faefbec0e467f4839163" title=" " alt="" coords="214,114,293,139"/>
+<area shape="poly" title=" " alt="" coords="132,124,200,124,200,129,132,129"/>
+<area shape="rect" href="util_2dir_8hpp.html#a917850c3152487d5ee489514eb4a67eb" title=" " alt="" coords="212,163,295,189"/>
+<area shape="poly" title=" " alt="" coords="118,137,199,159,198,164,116,142"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="180,213,327,253"/>
+<area shape="poly" title=" " alt="" coords="88,137,130,167,181,199,193,205,190,210,179,204,127,171,85,142"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258" title="Checks if an entity has all the given components." alt="" coords="375,13,552,38"/>
+<area shape="poly" title=" " alt="" coords="294,23,361,23,361,28,294,28"/>
+<area shape="poly" title=" " alt="" coords="295,32,421,62,420,67,294,37"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="600,5,747,45"/>
+<area shape="poly" title=" " alt="" coords="553,23,586,23,586,28,553,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_icgraph.png" border="0" usemap="#aset__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_icgraph" alt=""/></div>
+<map name="aset__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_icgraph" id="aset__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,555,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aff1de278eb090bd9a16ca670c1947be5" name="aff1de278eb090bd9a16ca670c1947be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1de278eb090bd9a16ca670c1947be5">&#9670;&#160;</a></span>setScatterTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setScatterTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="set__target_8cpp_source.html">set_target.cpp</a> 第 <a class="el" href="set__target_8cpp_source.html#l00067">67</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="home__position_8hpp_source.html#l00016">HomePosition::scatter</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_cgraph.png" border="0" usemap="#aset__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_cgraph" alt=""/></div>
+<map name="aset__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_cgraph" id="aset__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,133,38"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="181,5,328,45"/>
+<area shape="poly" title=" " alt="" coords="134,23,168,23,168,28,134,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_icgraph.png" border="0" usemap="#aset__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_icgraph" alt=""/></div>
+<map name="aset__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_icgraph" id="aset__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,556,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

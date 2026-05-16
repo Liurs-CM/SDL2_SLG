@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/signal/emitter.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_3770b56db630d50757db22e5ccfbfe1a.html">signal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a>  </div>
+  <div class="headertitle"><div class="title">emitter.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">../config/config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="core_2fwd_8hpp_source.html">../core/fwd.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="type__info_8hpp_source.html">../core/type_info.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+emitter.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="emitter_8hpp__incl.png" border="0" usemap="#athird__party_2entt_2signal_2emitter_8hpp" alt=""/></div>
+<map name="athird__party_2entt_2signal_2emitter_8hpp" id="athird__party_2entt_2signal_2emitter_8hpp">
+<area shape="rect" title=" " alt="" coords="419,5,586,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,91,119"/>
+<area shape="poly" title=" " alt="" coords="419,42,105,96,104,90,419,37"/>
+<area shape="rect" title=" " alt="" coords="115,93,202,119"/>
+<area shape="poly" title=" " alt="" coords="421,48,216,94,215,89,420,43"/>
+<area shape="rect" title=" " alt="" coords="226,93,297,119"/>
+<area shape="poly" title=" " alt="" coords="446,48,311,92,309,86,444,43"/>
+<area shape="rect" title=" " alt="" coords="321,93,364,119"/>
+<area shape="poly" title=" " alt="" coords="466,48,378,91,375,86,463,43"/>
+<area shape="rect" title=" " alt="" coords="388,93,465,119"/>
+<area shape="poly" title=" " alt="" coords="486,47,450,85,446,81,482,44"/>
+<area shape="rect" title=" " alt="" coords="527,387,619,412"/>
+<area shape="poly" title=" " alt="" coords="505,46,505,178,505,254,510,289,523,322,557,375,552,378,518,324,505,290,500,254,500,178,500,46"/>
+<area shape="rect" title=" " alt="" coords="821,93,881,119"/>
+<area shape="poly" title=" " alt="" coords="587,41,808,91,807,96,586,47"/>
+<area shape="rect" title=" " alt="" coords="905,93,967,119"/>
+<area shape="poly" title=" " alt="" coords="587,36,726,58,892,90,891,96,725,64,586,41"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="644,313,772,339"/>
+<area shape="poly" title=" " alt="" coords="511,45,549,160,575,222,599,264,629,288,662,306,659,310,626,292,595,267,570,225,544,162,506,46"/>
+<area shape="rect" href="core_2fwd_8hpp.html" title=" " alt="" coords="609,240,727,265"/>
+<area shape="poly" title=" " alt="" coords="527,44,574,92,624,164,659,227,654,229,619,167,570,95,523,48"/>
+<area shape="rect" href="type__info_8hpp.html" title=" " alt="" coords="641,93,796,119"/>
+<area shape="poly" title=" " alt="" coords="555,43,675,86,673,91,553,48"/>
+<area shape="poly" title=" " alt="" coords="688,341,609,382,606,378,685,336"/>
+<area shape="rect" title=" " alt="" coords="848,387,915,412"/>
+<area shape="poly" title=" " alt="" coords="737,336,841,379,839,384,735,341"/>
+<area shape="rect" title=" " alt="" coords="673,387,743,412"/>
+<area shape="poly" title=" " alt="" coords="711,339,711,373,705,373,705,339"/>
+<area shape="poly" title=" " alt="" coords="677,264,697,300,692,303,672,267"/>
+<area shape="poly" title=" " alt="" coords="797,116,926,138,979,151,1007,165,1018,181,1022,195,1022,210,1017,223,996,246,963,266,922,283,876,296,786,316,785,311,875,291,920,278,960,261,992,242,1012,220,1017,209,1017,196,1013,183,1004,169,977,156,925,144,796,121"/>
+<area shape="poly" title=" " alt="" coords="712,120,697,142,684,168,676,198,672,226,667,226,671,197,679,166,692,139,707,117"/>
+<area shape="rect" href="attribute_8h.html" title=" " alt="" coords="693,167,827,192"/>
+<area shape="poly" title=" " alt="" coords="728,118,749,153,744,156,723,120"/>
+<area shape="rect" href="hashed__string_8hpp.html" title=" " alt="" coords="852,167,993,192"/>
+<area shape="poly" title=" " alt="" coords="752,116,878,160,876,165,751,121"/>
+<area shape="poly" title=" " alt="" coords="917,194,889,230,848,267,805,293,761,311,759,306,802,288,845,263,885,226,913,191"/>
+<area shape="poly" title=" " alt="" coords="923,193,889,374,883,373,918,192"/>
+<area shape="poly" title=" " alt="" coords="882,195,723,239,721,234,881,189"/>
+<area shape="rect" title=" " alt="" coords="763,240,834,265"/>
+<area shape="poly" title=" " alt="" coords="904,194,832,235,829,231,901,190"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="emitter_8hpp__dep__incl.png" border="0" usemap="#athird__party_2entt_2signal_2emitter_8hppdep" alt=""/></div>
+<map name="athird__party_2entt_2signal_2emitter_8hppdep" id="athird__party_2entt_2signal_2emitter_8hppdep">
+<area shape="rect" title=" " alt="" coords="13,5,179,45"/>
+<area shape="rect" href="entt_8hpp.html" title=" " alt="" coords="5,93,187,119"/>
+<area shape="poly" title=" " alt="" coords="99,59,99,93,93,93,93,59"/>
+</map>
+</div>
+</div>
+<p><a href="emitter_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html">entt::emitter&lt; Derived &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose event emitter.  <a href="classentt_1_1emitter.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1emitter_1_1basic__pool.html">entt::emitter&lt; Derived &gt;::basic_pool</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1emitter_1_1pool__handler.html">entt::emitter&lt; Derived &gt;::pool_handler&lt; Event &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1emitter_1_1connection.html">entt::emitter&lt; Derived &gt;::connection&lt; Event &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic connection type for events.  <a href="structentt_1_1emitter_1_1connection.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespaceentt" id="r_namespaceentt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html">entt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

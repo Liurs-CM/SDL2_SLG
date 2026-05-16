@@ -1,0 +1,15 @@
+<map id="entt::storage&lt; Entity, Type, std::enable_if_t&lt; ENTT_IS_EMPTY(Type)&gt; &gt;::emplace" name="entt::storage&lt; Entity, Type, std::enable_if_t&lt; ENTT_IS_EMPTY(Type)&gt; &gt;::emplace">
+<area shape="rect" id="Node000001" title="Assigns an entity to a storage and constructs its object." alt="" coords="5,59,199,129"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="247,81,437,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,91,233,91,233,97,199,97"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="491,5,669,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,79,525,32,527,37,384,84"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="485,107,675,132"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="438,101,472,105,471,110,437,107"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="723,83,893,108"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="438,91,675,91,709,92,709,97,675,97,438,96"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="725,132,891,157"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="371,104,424,125,486,142,543,149,602,152,711,150,711,156,602,158,543,155,485,147,422,130,369,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="675,107,708,103,709,108,675,112"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="675,127,711,131,711,137,675,133"/>
+</map>

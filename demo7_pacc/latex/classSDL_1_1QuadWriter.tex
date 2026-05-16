@@ -1,0 +1,202 @@
+\doxysection{SDL\+::Quad\+Writer类 参考}
+\hypertarget{classSDL_1_1QuadWriter}{}\label{classSDL_1_1QuadWriter}\index{SDL::QuadWriter@{SDL::QuadWriter}}
+
+
+{\ttfamily \#include $<$sdl\+\_\+quad\+\_\+writer.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSDL_1_1QuadWriter_a2855d8b16d79981543bd42a7f8d76476}{Quad\+Writer}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{tile\+Pos}} (\mbox{\hyperlink{structPos}{Pos}}, \mbox{\hyperlink{structPos}{Pos}}, double=0.\+0)
+\item 
+void \mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tile\+Tex}} (\mbox{\hyperlink{structanimera_1_1SpriteRect}{animera\+::\+Sprite\+Rect}})
+\item 
+void \mbox{\hyperlink{classSDL_1_1QuadWriter_a760e1bb5d2744c45fea47941bb708403}{tile\+Tex}} (\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{animera\+::\+Sprite\+ID}})
+\item 
+void \mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{render}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSDL_1_1QuadWriter_af1f2110b22c1a552d75a243a746e59c6}{renderer}}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSDL_1_1QuadWriter_ad99ad72cad9295bfdd642975e9a0d199}{texture}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classSDL_1_1QuadWriter_aca02dbdcfebd3f0eb6b733bb421091f9}{src\+Rect}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classSDL_1_1QuadWriter_afa9fcd8649271ea484d164da9bd96a41}{dst\+Rect}}
+\item 
+double \mbox{\hyperlink{classSDL_1_1QuadWriter_acdaedd0dc9b0bfc377f3ad723f8eb351}{angle}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8hpp_source}{sdl\+\_\+quad\+\_\+writer.\+hpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8hpp_source_l00018}{18}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classSDL_1_1QuadWriter_a2855d8b16d79981543bd42a7f8d76476}\label{classSDL_1_1QuadWriter_a2855d8b16d79981543bd42a7f8d76476} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!QuadWriter@{QuadWriter}}
+\index{QuadWriter@{QuadWriter}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{QuadWriter()}{QuadWriter()}}
+{\footnotesize\ttfamily SDL\+::\+Quad\+Writer\+::\+Quad\+Writer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8cpp_source}{sdl\+\_\+quad\+\_\+writer.\+cpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8cpp_source_l00013}{13}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}\label{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!render@{render}}
+\index{render@{render}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void SDL\+::\+Quad\+Writer\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8cpp_source}{sdl\+\_\+quad\+\_\+writer.\+cpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8cpp_source_l00043}{43}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sdl__check_8hpp_source_l00038}{SDL\+\_\+\+CHECK}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{render_8cpp_source_l00056}{dot\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00073}{full\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00031}{ghost\+Render()}} , 以及 \mbox{\hyperlink{render_8cpp_source_l00019}{player\+Render()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}\label{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!tilePos@{tilePos}}
+\index{tilePos@{tilePos}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{tilePos()}{tilePos()}}
+{\footnotesize\ttfamily void SDL\+::\+Quad\+Writer\+::tile\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPos}{Pos}}}]{pos,  }\item[{\mbox{\hyperlink{structPos}{Pos}}}]{size,  }\item[{double}]{ang = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8cpp_source}{sdl\+\_\+quad\+\_\+writer.\+cpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8cpp_source_l00022}{22}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{render_8cpp_source_l00056}{dot\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00073}{full\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00031}{ghost\+Render()}} , 以及 \mbox{\hyperlink{render_8cpp_source_l00019}{player\+Render()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSDL_1_1QuadWriter_a760e1bb5d2744c45fea47941bb708403}\label{classSDL_1_1QuadWriter_a760e1bb5d2744c45fea47941bb708403} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!tileTex@{tileTex}}
+\index{tileTex@{tileTex}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{tileTex()}{tileTex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void SDL\+::\+Quad\+Writer\+::tile\+Tex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{animera\+::\+Sprite\+ID}}}]{id }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8cpp_source}{sdl\+\_\+quad\+\_\+writer.\+cpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8cpp_source_l00039}{39}} 行定义.
+
+\Hypertarget{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}\label{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!tileTex@{tileTex}}
+\index{tileTex@{tileTex}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{tileTex()}{tileTex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void SDL\+::\+Quad\+Writer\+::tile\+Tex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structanimera_1_1SpriteRect}{animera\+::\+Sprite\+Rect}}}]{rect }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8cpp_source}{sdl\+\_\+quad\+\_\+writer.\+cpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8cpp_source_l00032}{32}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sprites_8cpp_source_l00010}{animera\+::\+Sprite\+Rect\+::h}}, \mbox{\hyperlink{sprites_8cpp_source_l00010}{animera\+::\+Sprite\+Rect\+::w}}, \mbox{\hyperlink{sprites_8cpp_source_l00009}{animera\+::\+Sprite\+Rect\+::x}} , 以及 \mbox{\hyperlink{sprites_8cpp_source_l00009}{animera\+::\+Sprite\+Rect\+::y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{render_8cpp_source_l00056}{dot\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00073}{full\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00031}{ghost\+Render()}} , 以及 \mbox{\hyperlink{render_8cpp_source_l00019}{player\+Render()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classSDL_1_1QuadWriter_acdaedd0dc9b0bfc377f3ad723f8eb351}\label{classSDL_1_1QuadWriter_acdaedd0dc9b0bfc377f3ad723f8eb351} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!angle@{angle}}
+\index{angle@{angle}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily double SDL\+::\+Quad\+Writer\+::angle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8hpp_source}{sdl\+\_\+quad\+\_\+writer.\+hpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8hpp_source_l00034}{34}} 行定义.
+
+\Hypertarget{classSDL_1_1QuadWriter_afa9fcd8649271ea484d164da9bd96a41}\label{classSDL_1_1QuadWriter_afa9fcd8649271ea484d164da9bd96a41} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!dstRect@{dstRect}}
+\index{dstRect@{dstRect}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{dstRect}{dstRect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect SDL\+::\+Quad\+Writer\+::dst\+Rect\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8hpp_source}{sdl\+\_\+quad\+\_\+writer.\+hpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8hpp_source_l00033}{33}} 行定义.
+
+\Hypertarget{classSDL_1_1QuadWriter_af1f2110b22c1a552d75a243a746e59c6}\label{classSDL_1_1QuadWriter_af1f2110b22c1a552d75a243a746e59c6} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!renderer@{renderer}}
+\index{renderer@{renderer}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} SDL\+::\+Quad\+Writer\+::renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8hpp_source}{sdl\+\_\+quad\+\_\+writer.\+hpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8hpp_source_l00029}{29}} 行定义.
+
+\Hypertarget{classSDL_1_1QuadWriter_aca02dbdcfebd3f0eb6b733bb421091f9}\label{classSDL_1_1QuadWriter_aca02dbdcfebd3f0eb6b733bb421091f9} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!srcRect@{srcRect}}
+\index{srcRect@{srcRect}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{srcRect}{srcRect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect SDL\+::\+Quad\+Writer\+::src\+Rect\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8hpp_source}{sdl\+\_\+quad\+\_\+writer.\+hpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8hpp_source_l00032}{32}} 行定义.
+
+\Hypertarget{classSDL_1_1QuadWriter_ad99ad72cad9295bfdd642975e9a0d199}\label{classSDL_1_1QuadWriter_ad99ad72cad9295bfdd642975e9a0d199} 
+\index{SDL::QuadWriter@{SDL::QuadWriter}!texture@{texture}}
+\index{texture@{texture}!SDL::QuadWriter@{SDL::QuadWriter}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} SDL\+::\+Quad\+Writer\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sdl__quad__writer_8hpp_source}{sdl\+\_\+quad\+\_\+writer.\+hpp}} 第 \mbox{\hyperlink{sdl__quad__writer_8hpp_source_l00030}{30}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\mbox{\hyperlink{sdl__quad__writer_8hpp}{sdl\+\_\+quad\+\_\+writer.\+hpp}}\item 
+src/util/\mbox{\hyperlink{sdl__quad__writer_8cpp}{sdl\+\_\+quad\+\_\+writer.\+cpp}}\end{DoxyCompactItemize}

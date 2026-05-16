@@ -1,0 +1,48 @@
+\doxysection{eat\+\_\+dots.\+cpp}
+\hypertarget{eat__dots_8cpp_source}{}\label{eat__dots_8cpp_source}\index{src/sys/eat\_dots.cpp@{src/sys/eat\_dots.cpp}}
+\mbox{\hyperlink{eat__dots_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ eat\_dots.cpp}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 22/9/18.}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{eat__dots_8hpp}{eat\_dots.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{player_8hpp}{comp/player.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8hpp}{comp/position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00015}00015\ \textcolor{keyword}{namespace\ }\{}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00017}00017\ \textcolor{keywordtype}{int}\ countConsumptions(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&maze,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}}\ food)\ \{}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00018}00018\ \ \ \textcolor{keywordtype}{int}\ count\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00019}00019\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceentt_af2118c00dea16193aee017d1408beb53}{view}}\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structPlayer}{Player}},\ \mbox{\hyperlink{structPosition}{Position}}>();}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00020}00020\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ \mbox{\hyperlink{namespaceentt_af2118c00dea16193aee017d1408beb53}{view}})\ \{}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pos\ =\ \mbox{\hyperlink{namespaceentt_af2118c00dea16193aee017d1408beb53}{view}}.get<\mbox{\hyperlink{structPosition}{Position}}>(e).p;}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5}{maze}}.outOfRange(pos))\ \{}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00023}00023\ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}}\ \&tile\ =\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5}{maze}}[pos];}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordflow}{if}\ (tile\ ==\ food)\ \{}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00027}00027\ \ \ \ \ \ \ ++count;}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00028}00028\ \ \ \ \ \ \ tile\ =\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617caa2e4822a98337283e39f7b60acf85ec9}{Tile::empty}};}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00029}00029\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00030}00030\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00031}00031\ \ \ \textcolor{keywordflow}{return}\ count;}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00036}\mbox{\hyperlink{eat__dots_8cpp_a98273433608ea803b2ed4ae5a2eaa7a0}{00036}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{eat__dots_8cpp_a98273433608ea803b2ed4ae5a2eaa7a0}{eatDots}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&maze)\ \{}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00037}00037\ \ \ \textcolor{keywordflow}{return}\ countConsumptions(reg,\ maze,\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062}{Tile::dot}});}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00038}00038\ \}}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00040}\mbox{\hyperlink{eat__dots_8cpp_a26605eae0ccd9a9fc7e153e2aa1bcf99}{00040}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{eat__dots_8cpp_a26605eae0ccd9a9fc7e153e2aa1bcf99}{eatEnergizer}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&maze)\ \{}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00041}00041\ \ \ \textcolor{keywordflow}{return}\ countConsumptions(reg,\ maze,\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d}{Tile::energizer}});}
+\DoxyCodeLine{\Hypertarget{eat__dots_8cpp_source_l00042}00042\ \}}
+
+\end{DoxyCode}

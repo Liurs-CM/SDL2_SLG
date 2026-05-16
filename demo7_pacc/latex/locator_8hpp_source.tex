@@ -1,0 +1,60 @@
+\doxysection{locator.\+hpp}
+\hypertarget{locator_8hpp_source}{}\label{locator_8hpp_source}\index{third\_party/entt/locator/locator.hpp@{third\_party/entt/locator/locator.hpp}}
+\mbox{\hyperlink{locator_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_LOCATOR\_LOCATOR\_HPP}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_LOCATOR\_LOCATOR\_HPP}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}../config/config.h"{}}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00010}00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00024}00024\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Service>}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00025}\mbox{\hyperlink{structentt_1_1service__locator}{00025}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1service__locator}{service\_locator}}\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00027}\mbox{\hyperlink{structentt_1_1service__locator_af34a883e56f32a98d7b8a5db87bdf504}{00027}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1service__locator_af34a883e56f32a98d7b8a5db87bdf504}{service\_type}}\ =\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{Service}};}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00030}\mbox{\hyperlink{structentt_1_1service__locator_a120cdb3eb1d820e5649f3d8bac8098d0}{00030}}\ \ \ \ \ \mbox{\hyperlink{structentt_1_1service__locator_a120cdb3eb1d820e5649f3d8bac8098d0}{service\_locator}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00032}\mbox{\hyperlink{structentt_1_1service__locator_a2cbb6cfc1614067ae92f1c60580236a8}{00032}}\ \ \ \ \ \mbox{\hyperlink{structentt_1_1service__locator_a2cbb6cfc1614067ae92f1c60580236a8}{\string~service\_locator}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00038}\mbox{\hyperlink{structentt_1_1service__locator_a9265b7273a758003283a79f7a4de6250}{00038}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structentt_1_1service__locator_a9265b7273a758003283a79f7a4de6250}{empty}}()\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{bool}\textcolor{keyword}{>}(\mbox{\hyperlink{structentt_1_1service__locator_ada4e8207f1dc9d25587ea92156fba67e}{service}});}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00052}\mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{00052}}\ \ \ \ \ \textcolor{keyword}{static}\ std::weak\_ptr<Service>\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{get}}()\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structentt_1_1service__locator_ada4e8207f1dc9d25587ea92156fba67e}{service}};}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00054}00054\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00070}\mbox{\hyperlink{structentt_1_1service__locator_ae3bfba661f1cdc4e335a41823b1af103}{00070}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{Service}}\ \&\ \mbox{\hyperlink{structentt_1_1service__locator_ae3bfba661f1cdc4e335a41823b1af103}{ref}}()\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\mbox{\hyperlink{structentt_1_1service__locator_ada4e8207f1dc9d25587ea92156fba67e}{service}};}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00072}00072\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00080}00080\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{Impl}}\ =\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{Service}},\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{Args}}>}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00081}\mbox{\hyperlink{structentt_1_1service__locator_a116dc62f5d2a1c65db9d7528c957e91f}{00081}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structentt_1_1service__locator_a116dc62f5d2a1c65db9d7528c957e91f}{set}}(\mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{Args}}\ \&\&...\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{args}})\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1service__locator_ada4e8207f1dc9d25587ea92156fba67e}{service}}\ =\ std::make\_shared<Impl>(std::forward<Args>(\mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{args}})...);}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00083}00083\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00089}\mbox{\hyperlink{structentt_1_1service__locator_a86770e79d01ab5fb0dddffba0bf9a697}{00089}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structentt_1_1service__locator_a86770e79d01ab5fb0dddffba0bf9a697}{set}}(std::shared\_ptr<Service>\ \mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{ptr}})\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{config_8h_a8c592b57b97f4686da8ffe09beb735a8}{ENTT\_ASSERT}}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{bool}\textcolor{keyword}{>}(\mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{ptr}}));}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1service__locator_ada4e8207f1dc9d25587ea92156fba67e}{service}}\ =\ std::move(\mbox{\hyperlink{structentt_1_1service__locator_a84ab357173d4784b66fc00331a2dd7ae}{ptr}});}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00092}00092\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00099}\mbox{\hyperlink{structentt_1_1service__locator_a4d655acab54d87058ad41a266830d0e8}{00099}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structentt_1_1service__locator_a4d655acab54d87058ad41a266830d0e8}{reset}}()\ \{}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1service__locator_ada4e8207f1dc9d25587ea92156fba67e}{service}}.reset();}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00101}00101\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00103}00103\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00104}00104\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ std::shared\_ptr<Service>\ \mbox{\hyperlink{structentt_1_1service__locator_ada4e8207f1dc9d25587ea92156fba67e}{service}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00105}00105\ \};}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00108}00108\ \}}
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{locator_8hpp_source_l00111}00111\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

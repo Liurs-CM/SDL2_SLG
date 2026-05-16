@@ -1,0 +1,13 @@
+<map id="entt::storage::get" name="entt::storage::get">
+<area shape="rect" id="Node000001" title="Returns the object associated with an entity." alt="" coords="5,29,140,55"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="188,29,359,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,39,174,39,174,45,140,45"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="407,29,596,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,39,393,39,393,45,359,45"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="644,5,815,31"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="328,27,406,14,523,8,630,10,630,15,523,14,407,19,329,32"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="646,55,813,80"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="329,52,407,65,524,70,632,69,632,75,524,76,406,70,328,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,29,630,26,630,31,597,35"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="597,50,633,54,632,59,596,55"/>
+</map>

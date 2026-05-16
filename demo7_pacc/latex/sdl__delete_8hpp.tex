@@ -1,0 +1,47 @@
+\doxysection{src/util/sdl\+\_\+delete.hpp 文件参考}
+\hypertarget{sdl__delete_8hpp}{}\label{sdl__delete_8hpp}\index{src/util/sdl\_delete.hpp@{src/util/sdl\_delete.hpp}}
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+render.\+h$>$}\newline
+sdl\+\_\+delete.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{sdl__delete_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{sdl__delete_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteWindow}{SDL\+::\+Delete\+Window}}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteTexture}{SDL\+::\+Delete\+Texture}}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteSurface}{SDL\+::\+Delete\+Surface}}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteRenderer}{SDL\+::\+Delete\+Renderer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceSDL}{SDL}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespaceSDL_a613a620356819580afd00fb32155a972}{SDL\+::\+Window}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Window, \mbox{\hyperlink{structSDL_1_1DeleteWindow}{Delete\+Window}} $>$
+\item 
+using \mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{SDL\+::\+Texture}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Texture, \mbox{\hyperlink{structSDL_1_1DeleteTexture}{Delete\+Texture}} $>$
+\item 
+using \mbox{\hyperlink{namespaceSDL_a11506dcfb46d3496382f8d46b1510333}{SDL\+::\+Surface}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Surface, \mbox{\hyperlink{structSDL_1_1DeleteSurface}{Delete\+Surface}} $>$
+\item 
+using \mbox{\hyperlink{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb}{SDL\+::\+Renderer}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Renderer, \mbox{\hyperlink{structSDL_1_1DeleteRenderer}{Delete\+Renderer}} $>$
+\end{DoxyCompactItemize}

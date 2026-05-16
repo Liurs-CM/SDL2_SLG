@@ -1,0 +1,869 @@
+\doxysection{entt\+::meta\+\_\+any类 参考}
+\hypertarget{classentt_1_1meta__any}{}\label{classentt_1_1meta__any}\index{entt::meta\_any@{entt::meta\_any}}
+
+
+Opaque container for values of any type.  
+
+
+
+
+{\ttfamily \#include $<$meta.\+hpp$>$}
+
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1meta__any_1_1type__traits}{type\+\_\+traits}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any_a7d9eaa43621da68af96080b7f345f2b6}{meta\+\_\+any}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1meta__any_ab3f48ed052dfade00d8f34cb7e381990}{meta\+\_\+any}} (std\+::in\+\_\+place\+\_\+type\+\_\+t$<$ Type $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Constructs a meta any by directly initializing the new object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1meta__any_a7c5f042e2e14803083d602d9d401c9cc}{meta\+\_\+any}} (std\+::reference\+\_\+wrapper$<$ Type $>$ value)
+\begin{DoxyCompactList}\small\item\em Constructs a meta any that holds an unmanaged object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}}  = std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+same\+\_\+v$<$std\+::remove\+\_\+cv\+\_\+t$<$std\+::remove\+\_\+reference\+\_\+t$<$\+Type$>$$>$, meta\+\_\+any$>$$>$$>$ }\\\mbox{\hyperlink{classentt_1_1meta__any_a7e1dba79e26c96a353743a327d1c7b8e}{meta\+\_\+any}} (Type \&\&value)
+\begin{DoxyCompactList}\small\item\em Constructs a meta any from a given value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any_a8070ecc97c91d3c294d07339073e0a6a}{meta\+\_\+any}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any_afb14535cc13fc0b3c9790d150d3d7bf5}{meta\+\_\+any}} (\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}})
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any_a816dae3d4ed3e41fcb376ec5ec9c38c1}{\texorpdfstring{$\sim$}{\string~}meta\+\_\+any}} ()
+\begin{DoxyCompactList}\small\item\em Frees the internal storage, whatever it means. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \& \mbox{\hyperlink{classentt_1_1meta__any_a8fd8de742fa96263c3374f34c3cc3858}{operator=}} (Type \&\&value)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \& \mbox{\hyperlink{classentt_1_1meta__any_abfdee38e7e969095aadbda73105347ac}{operator=}} (\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}})
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__any_a406ea303f140056a30103d90afab2737}{type}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the meta type of the underlying object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_ae4bd512055fcd5c08b7aa94d2d4b8b70}{data}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an opaque pointer to the contained instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_ab0f359e784ec94ec5c7697ca31524f61}{data}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an opaque pointer to the contained instance.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_a36163818889d714deea373c268526b54}{try\+\_\+cast}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Tries to cast an instance to a given type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_a4b275ec91a940ffc2c67b4e0a065c693}{try\+\_\+cast}} ()
+\begin{DoxyCompactList}\small\item\em Tries to cast an instance to a given type.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} Type \& \mbox{\hyperlink{classentt_1_1meta__any_abd10f34b6d62e51f8e352631c7a89ff9}{cast}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Tries to cast an instance to a given type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\Type \& \mbox{\hyperlink{classentt_1_1meta__any_ab2096afa37432e6d0e7128cd6f1bedaa}{cast}} ()
+\begin{DoxyCompactList}\small\item\em Tries to cast an instance to a given type.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{classentt_1_1meta__any_a3d45a3781d92493250d065ea900b8d70}{convert}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Tries to convert an instance to a given type and returns it. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__any_a7808deb0d8926b75fa173d1e193a2597}{convert}} ()
+\begin{DoxyCompactList}\small\item\em Tries to convert an instance to a given type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__any_a5b214afbab6c460f91fa050118bf1e86}{emplace}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Replaces the contained object by initializing a new instance directly. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{classentt_1_1meta__any_a19e4e6ced0b40d68b9e8761cde69a987}{ref}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Aliasing constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{classentt_1_1meta__any_a1194d940c7fa56a80c5547130c4650c7}{operator\texorpdfstring{$\ast$}{*}}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indirection operator for aliasing construction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any_ad1cbe0447f1b0df45706712566f1b2a0}{operator bool}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns false if a container is empty, true otherwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__any_a1bd17bffb75be10543e85c78185d765a}{operator==}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if two containers differ in their content. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_a0863cb0e94440dad3a143171ff676766}{storage\+\_\+type}} = std\+::aligned\+\_\+storage\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}), \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{alignof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_a6ed04468b7b61075b7193c219cf554b4}{copy\+\_\+fn\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&)
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_aa143ce275da53c70ab33ecc307504265}{steal\+\_\+fn\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&, \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&)
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_af3d035f662b6b86edbc152d56135f1d5}{destroy\+\_\+fn\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{struct}} \mbox{\hyperlink{structentt_1_1meta__any_1_1type__traits}{type\+\_\+traits}}$<$ Type, std\+::enable\+\_\+if\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(Type)$<$=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}) \&\&std\+::is\+\_\+nothrow\+\_\+move\+\_\+constructible\+\_\+v$<$ Type $>$ $>$ $>$ \{ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{template}}$<$ typename... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} $>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__any_a9691b03b83ad8d0ce3a6e323aa7aad87}{instance}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&any, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \{ any.\+instance=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{new}}(\&any.\+storage) Type\{std\+::forward$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} $>$(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})...\};\} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} destroy(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&any) \{ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}{node}}=internal\+::meta\+\_\+info$<$ Type $>$\mbox{\hyperlink{namespaceentt_a2129cb8668f5dcbc11854be6a4a0b6e5}{\+::resolve}}();\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{if}}(\mbox{\hyperlink{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}{node}}-\/$>$dtor) \{ \mbox{\hyperlink{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}{node}}-\/$>$ dtor \mbox{\hyperlink{classentt_1_1meta__any_af739675a58aa9a41beeb49a34a09a68e}{invoke}} (any.\+instance)
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any_aee9555c031229f10313c02ec1b56d6a2}{static\+\_\+cast}} (any.\+instance) -\/$>$ \texorpdfstring{$\sim$}{\string~}Type()
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any_acb9d64e34fe95386394ffe79fdf5ccb7}{meta\+\_\+any}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node \texorpdfstring{$\ast$}{*}curr, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classentt_1_1meta__any_a19e4e6ced0b40d68b9e8761cde69a987}{ref}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__any_ab5cc06fa7b3b9fb31e04d93f02c4abe6}{copy}} (\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{to}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{from}})
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__any_aaee4151dc5892724c6b3fa928982cd4d}{steal}} (\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{to}}, \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{from}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any_a0863cb0e94440dad3a143171ff676766}{storage\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__any_ac61d994ae2f3392a1ec0021b42b48ebc}{storage}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_a9691b03b83ad8d0ce3a6e323aa7aad87}{instance}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}{node}}
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any_af3d035f662b6b86edbc152d56135f1d5}{destroy\+\_\+fn\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_ad7f173c330a1849310dac451f4e1a8b8}{destroy\+\_\+fn}}
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any_a6ed04468b7b61075b7193c219cf554b4}{copy\+\_\+fn\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_a29204104eca0ed5699eb3f32633087d1}{copy\+\_\+fn}}
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any_aa143ce275da53c70ab33ecc307504265}{steal\+\_\+fn\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__any_a6b108f9342e9ad8d2c641cb370552f98}{steal\+\_\+fn}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__any_a939cebbfd07b49ed6365c302f838dc03}{swap}} (\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{lhs}}, \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{rhs}})
+\begin{DoxyCompactList}\small\item\em Swaps two meta any objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Opaque container for values of any type. 
+
+This class uses a technique called small buffer optimization (SBO) to get rid of memory allocations if possible. This should improve overall performance. 
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00278}{278}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1meta__any_a6ed04468b7b61075b7193c219cf554b4}\label{classentt_1_1meta__any_a6ed04468b7b61075b7193c219cf554b4} 
+\index{entt::meta\_any@{entt::meta\_any}!copy\_fn\_type@{copy\_fn\_type}}
+\index{copy\_fn\_type@{copy\_fn\_type}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{copy\_fn\_type}{copy\_fn\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_a6ed04468b7b61075b7193c219cf554b4}{entt\+::meta\+\_\+any\+::copy\+\_\+fn\+\_\+type}} =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00280}{280}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_af3d035f662b6b86edbc152d56135f1d5}\label{classentt_1_1meta__any_af3d035f662b6b86edbc152d56135f1d5} 
+\index{entt::meta\_any@{entt::meta\_any}!destroy\_fn\_type@{destroy\_fn\_type}}
+\index{destroy\_fn\_type@{destroy\_fn\_type}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{destroy\_fn\_type}{destroy\_fn\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_af3d035f662b6b86edbc152d56135f1d5}{entt\+::meta\+\_\+any\+::destroy\+\_\+fn\+\_\+type}} =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00282}{282}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_aa143ce275da53c70ab33ecc307504265}\label{classentt_1_1meta__any_aa143ce275da53c70ab33ecc307504265} 
+\index{entt::meta\_any@{entt::meta\_any}!steal\_fn\_type@{steal\_fn\_type}}
+\index{steal\_fn\_type@{steal\_fn\_type}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{steal\_fn\_type}{steal\_fn\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_aa143ce275da53c70ab33ecc307504265}{entt\+::meta\+\_\+any\+::steal\+\_\+fn\+\_\+type}} =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&, \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00281}{281}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a0863cb0e94440dad3a143171ff676766}\label{classentt_1_1meta__any_a0863cb0e94440dad3a143171ff676766} 
+\index{entt::meta\_any@{entt::meta\_any}!storage\_type@{storage\_type}}
+\index{storage\_type@{storage\_type}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{storage\_type}{storage\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__any_a0863cb0e94440dad3a143171ff676766}{entt\+::meta\+\_\+any\+::storage\+\_\+type}} =  std\+::aligned\+\_\+storage\+\_\+t$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}), \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{alignof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00279}{279}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1meta__any_acb9d64e34fe95386394ffe79fdf5ccb7}\label{classentt_1_1meta__any_acb9d64e34fe95386394ffe79fdf5ccb7} 
+\index{entt::meta\_any@{entt::meta\_any}!meta\_any@{meta\_any}}
+\index{meta\_any@{meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{meta\_any()}{meta\_any()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+any\+::meta\+\_\+any (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node \texorpdfstring{$\ast$}{*}}]{curr,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00333}{333}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a7d9eaa43621da68af96080b7f345f2b6}\label{classentt_1_1meta__any_a7d9eaa43621da68af96080b7f345f2b6} 
+\index{entt::meta\_any@{entt::meta\_any}!meta\_any@{meta\_any}}
+\index{meta\_any@{meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{meta\_any()}{meta\_any()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+any\+::meta\+\_\+any (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00342}{342}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_ab3f48ed052dfade00d8f34cb7e381990}\label{classentt_1_1meta__any_ab3f48ed052dfade00d8f34cb7e381990} 
+\index{entt::meta\_any@{entt::meta\_any}!meta\_any@{meta\_any}}
+\index{meta\_any@{meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{meta\_any()}{meta\_any()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , typename... Args$>$ \\
+entt\+::meta\+\_\+any\+::meta\+\_\+any (\begin{DoxyParamCaption}\item[{std\+::in\+\_\+place\+\_\+type\+\_\+t$<$ Type $>$}]{,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs a meta any by directly initializing the new object. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of object to use to initialize the container. \\
+\hline
+{\em Args} & Types of arguments to use to construct the new instance. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Parameters to use to construct the instance. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00358}{358}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a7c5f042e2e14803083d602d9d401c9cc}\label{classentt_1_1meta__any_a7c5f042e2e14803083d602d9d401c9cc} 
+\index{entt::meta\_any@{entt::meta\_any}!meta\_any@{meta\_any}}
+\index{meta\_any@{meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{meta\_any()}{meta\_any()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+entt\+::meta\+\_\+any\+::meta\+\_\+any (\begin{DoxyParamCaption}\item[{std\+::reference\+\_\+wrapper$<$ Type $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a meta any that holds an unmanaged object. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of object to use to initialize the container. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value} & An instance of an object to use to initialize the container. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00378}{378}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{resolve_8hpp_source_l00018}{entt\+::resolve()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classentt_1_1meta__any_a7c5f042e2e14803083d602d9d401c9cc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1meta__any_a7e1dba79e26c96a353743a327d1c7b8e}\label{classentt_1_1meta__any_a7e1dba79e26c96a353743a327d1c7b8e} 
+\index{entt::meta\_any@{entt::meta\_any}!meta\_any@{meta\_any}}
+\index{meta\_any@{meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{meta\_any()}{meta\_any()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}}  = std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+same\+\_\+v$<$std\+::remove\+\_\+cv\+\_\+t$<$std\+::remove\+\_\+reference\+\_\+t$<$\+Type$>$$>$, meta\+\_\+any$>$$>$$>$ \\
+entt\+::meta\+\_\+any\+::meta\+\_\+any (\begin{DoxyParamCaption}\item[{Type \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a meta any from a given value. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of object to use to initialize the container. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value} & An instance of an object to use to initialize the container. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00388}{388}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a8070ecc97c91d3c294d07339073e0a6a}\label{classentt_1_1meta__any_a8070ecc97c91d3c294d07339073e0a6a} 
+\index{entt::meta\_any@{entt::meta\_any}!meta\_any@{meta\_any}}
+\index{meta\_any@{meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{meta\_any()}{meta\_any()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+any\+::meta\+\_\+any (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{参数}
+{\em other} & The instance to copy from. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00396}{396}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{meta_8hpp_source_l00632}{copy\+\_\+fn}}, \mbox{\hyperlink{meta_8hpp_source_l00631}{destroy\+\_\+fn}}, \mbox{\hyperlink{meta_8hpp_source_l00629}{instance}}, \mbox{\hyperlink{meta_8hpp_source_l00630}{node}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l00633}{steal\+\_\+fn}}.
+
+\Hypertarget{classentt_1_1meta__any_afb14535cc13fc0b3c9790d150d3d7bf5}\label{classentt_1_1meta__any_afb14535cc13fc0b3c9790d150d3d7bf5} 
+\index{entt::meta\_any@{entt::meta\_any}!meta\_any@{meta\_any}}
+\index{meta\_any@{meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{meta\_any()}{meta\_any()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+any\+::meta\+\_\+any (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor. 
+
+After move construction, instances that have been moved from are placed in a valid but unspecified state.
+
+
+\begin{DoxyParams}{参数}
+{\em other} & The instance to move from. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00414}{414}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a816dae3d4ed3e41fcb376ec5ec9c38c1}\label{classentt_1_1meta__any_a816dae3d4ed3e41fcb376ec5ec9c38c1} 
+\index{entt::meta\_any@{entt::meta\_any}!````~meta\_any@{\texorpdfstring{$\sim$}{\string~}meta\_any}}
+\index{````~meta\_any@{\texorpdfstring{$\sim$}{\string~}meta\_any}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}meta\_any()}{\string~meta\_any()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+any\+::\texorpdfstring{$\sim$}{\string~}meta\+\_\+any (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Frees the internal storage, whatever it means. 
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00421}{421}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1meta__any_ab2096afa37432e6d0e7128cd6f1bedaa}\label{classentt_1_1meta__any_ab2096afa37432e6d0e7128cd6f1bedaa} 
+\index{entt::meta\_any@{entt::meta\_any}!cast@{cast}}
+\index{cast@{cast}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{cast()}{cast()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+Type \& entt\+::meta\+\_\+any\+::cast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to cast an instance to a given type.   
+
+The type of the instance must be such that the cast is possible.
+
+\begin{DoxyWarning}{警告}
+Attempting to perform a cast that isn\textquotesingle{}t viable results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode in case the cast is not feasible.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type to which to cast the instance. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A reference to the contained instance.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00514}{514}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_abd10f34b6d62e51f8e352631c7a89ff9}\label{classentt_1_1meta__any_abd10f34b6d62e51f8e352631c7a89ff9} 
+\index{entt::meta\_any@{entt::meta\_any}!cast@{cast}}
+\index{cast@{cast}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{cast()}{cast()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} Type \& entt\+::meta\+\_\+any\+::cast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to cast an instance to a given type. 
+
+The type of the instance must be such that the cast is possible.
+
+\begin{DoxyWarning}{警告}
+Attempting to perform a cast that isn\textquotesingle{}t viable results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode in case the cast is not feasible.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type to which to cast the instance. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A reference to the contained instance. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00506}{506}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__any_a7808deb0d8926b75fa173d1e193a2597}\label{classentt_1_1meta__any_a7808deb0d8926b75fa173d1e193a2597} 
+\index{entt::meta\_any@{entt::meta\_any}!convert@{convert}}
+\index{convert@{convert}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+any\+::convert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to convert an instance to a given type. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type to which to convert the instance. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+True if the conversion is possible, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00543}{543}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a3d45a3781d92493250d065ea900b8d70}\label{classentt_1_1meta__any_a3d45a3781d92493250d065ea900b8d70} 
+\index{entt::meta\_any@{entt::meta\_any}!convert@{convert}}
+\index{convert@{convert}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} entt\+::meta\+\_\+any\+::convert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to convert an instance to a given type and returns it. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type to which to convert the instance. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A valid meta any object if the conversion is possible, an invalid one otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00525}{525}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_ab5cc06fa7b3b9fb31e04d93f02c4abe6}\label{classentt_1_1meta__any_ab5cc06fa7b3b9fb31e04d93f02c4abe6} 
+\index{entt::meta\_any@{entt::meta\_any}!copy@{copy}}
+\index{copy@{copy}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::meta\+\_\+any\+::copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{to,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{from }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00323}{323}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{meta_8hpp_source_l00629}{instance}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l00628}{storage}}.
+
+\Hypertarget{classentt_1_1meta__any_ae4bd512055fcd5c08b7aa94d2d4b8b70}\label{classentt_1_1meta__any_ae4bd512055fcd5c08b7aa94d2d4b8b70} 
+\index{entt::meta\_any@{entt::meta\_any}!data@{data}}
+\index{data@{data}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an opaque pointer to the contained instance. 
+
+\begin{DoxyReturn}{返回}
+An opaque pointer the contained instance, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00458}{458}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_ab0f359e784ec94ec5c7697ca31524f61}\label{classentt_1_1meta__any_ab0f359e784ec94ec5c7697ca31524f61} 
+\index{entt::meta\_any@{entt::meta\_any}!data@{data}}
+\index{data@{data}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an opaque pointer to the contained instance.   
+
+\begin{DoxyReturn}{返回}
+An opaque pointer the contained instance, if any.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00463}{463}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a5b214afbab6c460f91fa050118bf1e86}\label{classentt_1_1meta__any_a5b214afbab6c460f91fa050118bf1e86} 
+\index{entt::meta\_any@{entt::meta\_any}!emplace@{emplace}}
+\index{emplace@{emplace}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{emplace()}{emplace()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::meta\+\_\+any\+::emplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replaces the contained object by initializing a new instance directly. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of object to use to initialize the container. \\
+\hline
+{\em Args} & Types of arguments to use to construct the new instance. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Parameters to use to construct the instance. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00564}{564}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_af739675a58aa9a41beeb49a34a09a68e}\label{classentt_1_1meta__any_af739675a58aa9a41beeb49a34a09a68e} 
+\index{entt::meta\_any@{entt::meta\_any}!invoke@{invoke}}
+\index{invoke@{invoke}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{struct}} \mbox{\hyperlink{structentt_1_1meta__any_1_1type__traits}{type\+\_\+traits}}$<$ Type, std\+::enable\+\_\+if\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(Type)$<$=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}) \&\&std\+::is\+\_\+nothrow\+\_\+move\+\_\+constructible\+\_\+v$<$ Type $>$ $>$ $>$ \{ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{template}}$<$ typename... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} $>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__any_a9691b03b83ad8d0ce3a6e323aa7aad87}{instance}}(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&any, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \{ any.\+instance=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{new}}(\&any.\+storage) Type\{std\+::forward$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} $>$(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})...\};\} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} destroy(\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&any) \{ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}{node}}=internal\+::meta\+\_\+info$<$ Type $>$\mbox{\hyperlink{namespaceentt_a2129cb8668f5dcbc11854be6a4a0b6e5}{\+::resolve}}();\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{if}}(\mbox{\hyperlink{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}{node}}-\/$>$dtor) \{ \mbox{\hyperlink{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}{node}}-\/$>$ dtor entt\+::meta\+\_\+any\+::invoke (\begin{DoxyParamCaption}\item[{any.}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l00840}{entt\+::meta\+\_\+ctor\+::invoke()}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l01104}{entt\+::meta\+\_\+func\+::invoke()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1meta__any_af739675a58aa9a41beeb49a34a09a68e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1meta__any_ad1cbe0447f1b0df45706712566f1b2a0}\label{classentt_1_1meta__any_ad1cbe0447f1b0df45706712566f1b2a0} 
+\index{entt::meta\_any@{entt::meta\_any}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+any\+::operator \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Returns false if a container is empty, true otherwise. 
+
+\begin{DoxyReturn}{返回}
+False if the container is empty, true otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00588}{588}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a1194d940c7fa56a80c5547130c4650c7}\label{classentt_1_1meta__any_a1194d940c7fa56a80c5547130c4650c7} 
+\index{entt::meta\_any@{entt::meta\_any}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} entt\+::meta\+\_\+any\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indirection operator for aliasing construction. 
+
+\begin{DoxyReturn}{返回}
+A meta any that shares a reference to an unmanaged object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00580}{580}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_abfdee38e7e969095aadbda73105347ac}\label{classentt_1_1meta__any_abfdee38e7e969095aadbda73105347ac} 
+\index{entt::meta\_any@{entt::meta\_any}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \& entt\+::meta\+\_\+any\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator. 
+
+
+\begin{DoxyParams}{参数}
+{\em other} & The instance to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+This meta any object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00443}{443}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a8fd8de742fa96263c3374f34c3cc3858}\label{classentt_1_1meta__any_a8fd8de742fa96263c3374f34c3cc3858} 
+\index{entt::meta\_any@{entt::meta\_any}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \& entt\+::meta\+\_\+any\+::operator= (\begin{DoxyParamCaption}\item[{Type \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of object to use to initialize the container. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value} & An instance of an object to use to initialize the container. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+This meta any object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00434}{434}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a1bd17bffb75be10543e85c78185d765a}\label{classentt_1_1meta__any_a1bd17bffb75be10543e85c78185d765a} 
+\index{entt::meta\_any@{entt::meta\_any}!operator==@{operator==}}
+\index{operator==@{operator==}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+any\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if two containers differ in their content. 
+
+
+\begin{DoxyParams}{参数}
+{\em other} & Container with which to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+False if the two containers differ in their content, true otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00598}{598}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{meta_8hpp_source_l00629}{instance}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l00630}{node}}.
+
+\Hypertarget{classentt_1_1meta__any_a19e4e6ced0b40d68b9e8761cde69a987}\label{classentt_1_1meta__any_a19e4e6ced0b40d68b9e8761cde69a987} 
+\index{entt::meta\_any@{entt::meta\_any}!ref@{ref}}
+\index{ref@{ref}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} entt\+::meta\+\_\+any\+::ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aliasing constructor. 
+
+\begin{DoxyReturn}{返回}
+A meta any that shares a reference to an unmanaged object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00572}{572}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_aee9555c031229f10313c02ec1b56d6a2}\label{classentt_1_1meta__any_aee9555c031229f10313c02ec1b56d6a2} 
+\index{entt::meta\_any@{entt::meta\_any}!static\_cast@{static\_cast}}
+\index{static\_cast@{static\_cast}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{static\_cast()}{static\_cast()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+any\+::static\+\_\+cast (\begin{DoxyParamCaption}\item[{any.}]{instance }\end{DoxyParamCaption}) -\/$>$  \texorpdfstring{$\sim$}{\string~}Type()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classentt_1_1meta__any_aaee4151dc5892724c6b3fa928982cd4d}\label{classentt_1_1meta__any_aaee4151dc5892724c6b3fa928982cd4d} 
+\index{entt::meta\_any@{entt::meta\_any}!steal@{steal}}
+\index{steal@{steal}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{steal()}{steal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::meta\+\_\+any\+::steal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{to,  }\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{from }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00327}{327}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{meta_8hpp_source_l00629}{instance}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l00628}{storage}}.
+
+\Hypertarget{classentt_1_1meta__any_a4b275ec91a940ffc2c67b4e0a065c693}\label{classentt_1_1meta__any_a4b275ec91a940ffc2c67b4e0a065c693} 
+\index{entt::meta\_any@{entt::meta\_any}!try\_cast@{try\_cast}}
+\index{try\_cast@{try\_cast}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{try\_cast()}{try\_cast()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+Type \texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::try\+\_\+cast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to cast an instance to a given type.   
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type to which to cast the instance. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A (possibly null) pointer to the contained instance.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00487}{487}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a36163818889d714deea373c268526b54}\label{classentt_1_1meta__any_a36163818889d714deea373c268526b54} 
+\index{entt::meta\_any@{entt::meta\_any}!try\_cast@{try\_cast}}
+\index{try\_cast@{try\_cast}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{try\_cast()}{try\_cast()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} Type \texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::try\+\_\+cast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to cast an instance to a given type. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type to which to cast the instance. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A (possibly null) pointer to the contained instance. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00473}{473}} 行定义.
+
+\Hypertarget{classentt_1_1meta__any_a406ea303f140056a30103d90afab2737}\label{classentt_1_1meta__any_a406ea303f140056a30103d90afab2737} 
+\index{entt::meta\_any@{entt::meta\_any}!type@{type}}
+\index{type@{type}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} entt\+::meta\+\_\+any\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta type of the underlying object. 
+
+\begin{DoxyReturn}{返回}
+The meta type of the underlying object, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01533}{1533}} 行定义.
+
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classentt_1_1meta__any_a939cebbfd07b49ed6365c302f838dc03}\label{classentt_1_1meta__any_a939cebbfd07b49ed6365c302f838dc03} 
+\index{entt::meta\_any@{entt::meta\_any}!swap@{swap}}
+\index{swap@{swap}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{lhs,  }\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Swaps two meta any objects. 
+
+
+\begin{DoxyParams}{参数}
+{\em lhs} & A valid meta any object. \\
+\hline
+{\em rhs} & A valid meta any object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00607}{607}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1meta__any_a29204104eca0ed5699eb3f32633087d1}\label{classentt_1_1meta__any_a29204104eca0ed5699eb3f32633087d1} 
+\index{entt::meta\_any@{entt::meta\_any}!copy\_fn@{copy\_fn}}
+\index{copy\_fn@{copy\_fn}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{copy\_fn}{copy\_fn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any_a6ed04468b7b61075b7193c219cf554b4}{copy\+\_\+fn\+\_\+type}}\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::copy\+\_\+fn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00632}{632}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l00396}{meta\+\_\+any()}}.
+
+\Hypertarget{classentt_1_1meta__any_ad7f173c330a1849310dac451f4e1a8b8}\label{classentt_1_1meta__any_ad7f173c330a1849310dac451f4e1a8b8} 
+\index{entt::meta\_any@{entt::meta\_any}!destroy\_fn@{destroy\_fn}}
+\index{destroy\_fn@{destroy\_fn}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{destroy\_fn}{destroy\_fn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any_af3d035f662b6b86edbc152d56135f1d5}{destroy\+\_\+fn\+\_\+type}}\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::destroy\+\_\+fn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00631}{631}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l00396}{meta\+\_\+any()}}.
+
+\Hypertarget{classentt_1_1meta__any_a9691b03b83ad8d0ce3a6e323aa7aad87}\label{classentt_1_1meta__any_a9691b03b83ad8d0ce3a6e323aa7aad87} 
+\index{entt::meta\_any@{entt::meta\_any}!instance@{instance}}
+\index{instance@{instance}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::instance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00629}{629}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l00298}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$\+::copy()}}, \mbox{\hyperlink{meta_8hpp_source_l00323}{copy()}}, \mbox{\hyperlink{meta_8hpp_source_l00292}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$\+::destroy()}}, \mbox{\hyperlink{meta_8hpp_source_l00287}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$\+::instance()}}, \mbox{\hyperlink{meta_8hpp_source_l00396}{meta\+\_\+any()}}, \mbox{\hyperlink{meta_8hpp_source_l00598}{operator==()}}, \mbox{\hyperlink{meta_8hpp_source_l00304}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$\+::steal()}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l00327}{steal()}}.
+
+\Hypertarget{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa}\label{classentt_1_1meta__any_a7c75617e5d9037194a43cc0417f2b7aa} 
+\index{entt::meta\_any@{entt::meta\_any}!node@{node}}
+\index{node@{node}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{node}{node}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::node\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00630}{630}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l00396}{meta\+\_\+any()}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l00598}{operator==()}}.
+
+\Hypertarget{classentt_1_1meta__any_a6b108f9342e9ad8d2c641cb370552f98}\label{classentt_1_1meta__any_a6b108f9342e9ad8d2c641cb370552f98} 
+\index{entt::meta\_any@{entt::meta\_any}!steal\_fn@{steal\_fn}}
+\index{steal\_fn@{steal\_fn}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{steal\_fn}{steal\_fn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any_aa143ce275da53c70ab33ecc307504265}{steal\+\_\+fn\+\_\+type}}\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+any\+::steal\+\_\+fn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00633}{633}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l00396}{meta\+\_\+any()}}.
+
+\Hypertarget{classentt_1_1meta__any_ac61d994ae2f3392a1ec0021b42b48ebc}\label{classentt_1_1meta__any_ac61d994ae2f3392a1ec0021b42b48ebc} 
+\index{entt::meta\_any@{entt::meta\_any}!storage@{storage}}
+\index{storage@{storage}!entt::meta\_any@{entt::meta\_any}}
+\doxysubsubsection{\texorpdfstring{storage}{storage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any_a0863cb0e94440dad3a143171ff676766}{storage\+\_\+type}} entt\+::meta\+\_\+any\+::storage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00628}{628}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l00298}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$\+::copy()}}, \mbox{\hyperlink{meta_8hpp_source_l00323}{copy()}}, \mbox{\hyperlink{meta_8hpp_source_l00287}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$\+::instance()}}, \mbox{\hyperlink{meta_8hpp_source_l00304}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$\+::steal()}} , 以及 \mbox{\hyperlink{meta_8hpp_source_l00327}{steal()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/meta/\mbox{\hyperlink{meta_8hpp}{meta.\+hpp}}\end{DoxyCompactItemize}

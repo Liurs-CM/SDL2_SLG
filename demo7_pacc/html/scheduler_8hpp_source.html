@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/process/scheduler.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_3588a37b4fe15efce9a48ca2f24989a0.html">process</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">scheduler.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="scheduler_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ENTT_PROCESS_SCHEDULER_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ENTT_PROCESS_SCHEDULER_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../config/config.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="process_8hpp.html">process.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceentt.html">entt</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Delta&gt;</div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classentt_1_1scheduler.html">scheduler</a> {</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html">   45</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">   46</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">instance_type</a> = std::unique_ptr&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(*)(<span class="keywordtype">void</span> *)&gt;;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#a18e7a5edb76ab787986d7084f9997476">   47</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a18e7a5edb76ab787986d7084f9997476">update_fn_type</a> = <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>(<a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a>, <span class="keywordtype">void</span> *);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#a410f87944d912702622443a4c5f01282">   48</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a410f87944d912702622443a4c5f01282">abort_fn_type</a> = <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#a7e14d9527379eb030856b2033dd4b83e">   49</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a7e14d9527379eb030856b2033dd4b83e">next_type</a> = std::unique_ptr&lt;process_handler&gt;;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#a31de5f80a1919306715f727341463b9e">   51</a></span>        <a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">instance_type</a> <a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a31de5f80a1919306715f727341463b9e">instance</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#a9607e02db68b5cd295139bf27965499f">   52</a></span>        <a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a18e7a5edb76ab787986d7084f9997476">update_fn_type</a> *<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a9607e02db68b5cd295139bf27965499f">update</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#ad229f08f958e22b2c2724077e7ed43d9">   53</a></span>        <a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a410f87944d912702622443a4c5f01282">abort_fn_type</a> *<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#ad229f08f958e22b2c2724077e7ed43d9">abort</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">   54</a></span>        <a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a7e14d9527379eb030856b2033dd4b83e">next_type</a> <a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">next</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    };</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1continuation.html">   57</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structentt_1_1scheduler_1_1continuation.html">continuation</a> {</div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1continuation.html#af4b2036467c055fb132b6314d7582bf1">   58</a></span>        <a class="code hl_function" href="structentt_1_1scheduler_1_1continuation.html#af4b2036467c055fb132b6314d7582bf1">continuation</a>(<a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> *ref)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            : <a class="code hl_variable" href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">handler</a>{ref}</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_define" href="config_8h.html#a8c592b57b97f4686da8ffe09beb735a8">ENTT_ASSERT</a>(<a class="code hl_variable" href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">handler</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a>, <span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;</div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1continuation.html#a1b65b262e42f4091c55009a42d5ac080">   65</a></span>        <a class="code hl_struct" href="structentt_1_1scheduler_1_1continuation.html">continuation</a> <a class="code hl_function" href="structentt_1_1scheduler_1_1continuation.html#a1b65b262e42f4091c55009a42d5ac080">then</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keyword">static_assert</span>(std::is_base_of_v&lt;process&lt;Proc, Delta&gt;, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a>&gt;);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">proc</a> = <span class="keyword">typename</span> <a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">process_handler::instance_type</a>{<span class="keyword">new</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a>{std::forward&lt;Args&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)...}, &amp;scheduler::deleter&lt;Proc&gt;};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_variable" href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">handler</a>-&gt;<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">next</a>.reset(<span class="keyword">new</span> <a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a>{std::move(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">proc</a>), &amp;scheduler::update&lt;Proc&gt;, &amp;scheduler::abort&lt;Proc&gt;, <span class="keyword">nullptr</span>});</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_variable" href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">handler</a> = <a class="code hl_variable" href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">handler</a>-&gt;<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">next</a>.get();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1continuation.html#a7ebccdc9733ef530c6eaa0bb3b2eabd6">   74</a></span>        <a class="code hl_struct" href="structentt_1_1scheduler_1_1continuation.html">continuation</a> <a class="code hl_function" href="structentt_1_1scheduler_1_1continuation.html#a7ebccdc9733ef530c6eaa0bb3b2eabd6">then</a>(Func &amp;&amp;func) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">then&lt;process_adaptor&lt;std::decay_t&lt;Func&gt;</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a>&gt;&gt;(std::forward&lt;Func&gt;(func));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">   79</a></span>        <a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> *<a class="code hl_variable" href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">handler</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    };</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Proc&gt;</div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#af00ff2ab63a59428ed333e2864a0b553">   83</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1scheduler.html#af00ff2ab63a59428ed333e2864a0b553">update</a>(<a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;handler, <span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, <span class="keywordtype">void</span> *data) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">auto</span> *<a class="code hl_class" href="classentt_1_1process.html">process</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a> *<span class="keyword">&gt;</span>(handler.<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a31de5f80a1919306715f727341463b9e">instance</a>.get());</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_class" href="classentt_1_1process.html">process</a>-&gt;<a class="code hl_function" href="classentt_1_1process.html#aacc7fe0ef3265113079c70ff8cd9478d">tick</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, data);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">auto</span> dead = <a class="code hl_class" href="classentt_1_1process.html">process</a>-&gt;<a class="code hl_function" href="classentt_1_1process.html#ad83f2550ca63e03af126a07e4ae5d9dd">dead</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">if</span>(dead) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">if</span>(handler.<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">next</a> &amp;&amp; !<a class="code hl_class" href="classentt_1_1process.html">process</a>-&gt;<a class="code hl_function" href="classentt_1_1process.html#a6ac63863bf823806d813b046769b4419">rejected</a>()) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                handler = std::move(*handler.<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">next</a>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <span class="comment">// forces the process to exit the uninitialized state</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                dead = handler.<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a9607e02db68b5cd295139bf27965499f">update</a>(handler, {}, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                handler.<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a31de5f80a1919306715f727341463b9e">instance</a>.reset();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> dead;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Proc&gt;</div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a4287ee859d2aa5180b1b57e0bec84bb4">  103</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1scheduler.html#a4287ee859d2aa5180b1b57e0bec84bb4">abort</a>(<a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;handler, <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">immediately</a>) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a> *<span class="keyword">&gt;</span>(handler.<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a31de5f80a1919306715f727341463b9e">instance</a>.get())-&gt;<a class="code hl_function" href="classentt_1_1scheduler.html#a4287ee859d2aa5180b1b57e0bec84bb4">abort</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">immediately</a>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Proc&gt;</div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#aa26dd437f486ee9fdabb27d112b09427">  108</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1scheduler.html#aa26dd437f486ee9fdabb27d112b09427">deleter</a>(<span class="keywordtype">void</span> *<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">proc</a>) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keyword">delete</span> <span class="keyword">static_cast&lt;</span><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a> *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">proc</a>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#afcec47d6ec28a994af2a7097348ce59f">  114</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1scheduler.html#afcec47d6ec28a994af2a7097348ce59f">size_type</a> = std::size_t;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a49a81e662dc26831f4a951a715705d6e">  117</a></span>    <a class="code hl_function" href="classentt_1_1scheduler.html#a49a81e662dc26831f4a951a715705d6e">scheduler</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#af582ffea72368a83ea4dd7d9e563f715">  120</a></span>    <a class="code hl_function" href="classentt_1_1scheduler.html#af582ffea72368a83ea4dd7d9e563f715">scheduler</a>(<a class="code hl_class" href="classentt_1_1scheduler.html">scheduler</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a8d55c412ecdb828550727592a787ceab">  123</a></span>    <a class="code hl_class" href="classentt_1_1scheduler.html">scheduler</a> &amp; <a class="code hl_function" href="classentt_1_1scheduler.html#a8d55c412ecdb828550727592a787ceab">operator=</a>(<a class="code hl_class" href="classentt_1_1scheduler.html">scheduler</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#ab0c473e6d4733bdb78f3dc26147de4ad">  129</a></span>    <a class="code hl_typedef" href="classentt_1_1scheduler.html#afcec47d6ec28a994af2a7097348ce59f">size_type</a> <a class="code hl_function" href="classentt_1_1scheduler.html#ab0c473e6d4733bdb78f3dc26147de4ad">size</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.size();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a817d93653aec6a479b920143bd21edbb">  137</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1scheduler.html#a817d93653aec6a479b920143bd21edbb">empty</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.empty();</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a5a0f92dbe54b58751237a567e86805e0">  147</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1scheduler.html#a5a0f92dbe54b58751237a567e86805e0">clear</a>() {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.clear();</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a>, <span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;</div>
+<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a729c83e1983123c642a08cda67e486e3">  177</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1scheduler.html#a729c83e1983123c642a08cda67e486e3">attach</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>) {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keyword">static_assert</span>(std::is_base_of_v&lt;process&lt;Proc, Delta&gt;, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a>&gt;);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keyword">auto</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">proc</a> = <span class="keyword">typename</span> <a class="code hl_typedef" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">process_handler::instance_type</a>{<span class="keyword">new</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a>{std::forward&lt;Args&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)...}, &amp;scheduler::deleter&lt;Proc&gt;};</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <a class="code hl_struct" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> handler{std::move(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">proc</a>), &amp;scheduler::update&lt;Proc&gt;, &amp;scheduler::abort&lt;Proc&gt;, <span class="keyword">nullptr</span>};</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="comment">// forces the process to exit the uninitialized state</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        handler.<a class="code hl_variable" href="structentt_1_1scheduler_1_1process__handler.html#a9607e02db68b5cd295139bf27965499f">update</a>(handler, {}, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structentt_1_1scheduler_1_1continuation.html">continuation</a>{&amp;<a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.emplace_back(std::move(handler))};</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
+<div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a871812d08af8483316d1ce5d1e9d686f">  238</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1scheduler.html#a871812d08af8483316d1ce5d1e9d686f">attach</a>(Func &amp;&amp;func) {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keyword">using </span><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Proc</a> = <a class="code hl_struct" href="structentt_1_1process__adaptor.html">process_adaptor&lt;std::decay_t&lt;Func&gt;</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a>&gt;;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">attach&lt;Proc&gt;</a>(std::forward&lt;Func&gt;(func));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    }</div>
+</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a827eae426378df9ed9190752156a4154">  254</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1scheduler.html#a827eae426378df9ed9190752156a4154">update</a>(<span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, <span class="keywordtype">void</span> *data = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">clean</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a> = <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.size(); <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>; --<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>) {</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            <span class="keyword">auto</span> &amp;handler = <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>[<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>-1];</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span> dead = handler.update(handler, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, data);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">clean</a> = <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">clean</a> || dead;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">clean</a>) {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.erase(std::remove_if(<a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.begin(), <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.end(), [](<span class="keyword">auto</span> &amp;handler) {</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                return !handler.instance;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            }), <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.end());</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
+</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="foldopen" id="foldopen00280" data-start="{" data-end="}">
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#aabc25388bff1b3b0770f913f54b915f2">  280</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1scheduler.html#aabc25388bff1b3b0770f913f54b915f2">abort</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">immediately</a> = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keyword">decltype</span>(<a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>) <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">exec</a>;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">exec</a>.swap(<a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;&amp;handler: <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">exec</a>) {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            handler.abort(handler, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">immediately</a>);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        std::move(<a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.begin(), <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.end(), std::back_inserter(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">exec</a>));</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>.swap(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">exec</a>);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    }</div>
+</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">  293</a></span>    std::vector&lt;process_handler&gt; <a class="code hl_variable" href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">handlers</a>{};</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>};</div>
+</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassentt_1_1process_html"><div class="ttname"><a href="classentt_1_1process.html">entt::process</a></div><div class="ttdoc">Base class for processes.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00074">process.hpp:74</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a6ac63863bf823806d813b046769b4419"><div class="ttname"><a href="classentt_1_1process.html#a6ac63863bf823806d813b046769b4419">entt::process::rejected</a></div><div class="ttdeci">bool rejected() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns true if a process terminated with errors.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00221">process.hpp:221</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_aacc7fe0ef3265113079c70ff8cd9478d"><div class="ttname"><a href="classentt_1_1process.html#aacc7fe0ef3265113079c70ff8cd9478d">entt::process::tick</a></div><div class="ttdeci">void tick(const Delta delta, void *data=nullptr)</div><div class="ttdoc">Updates a process and its internal state if required.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00230">process.hpp:230</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_ad83f2550ca63e03af126a07e4ae5d9dd"><div class="ttname"><a href="classentt_1_1process.html#ad83f2550ca63e03af126a07e4ae5d9dd">entt::process::dead</a></div><div class="ttdeci">bool dead() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns true if a process is already terminated.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00205">process.hpp:205</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html"><div class="ttname"><a href="classentt_1_1scheduler.html">entt::scheduler</a></div><div class="ttdoc">Cooperative scheduler for processes.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00044">scheduler.hpp:44</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a2f62804b045cb4344b6ba2333f4bcb09"><div class="ttname"><a href="classentt_1_1scheduler.html#a2f62804b045cb4344b6ba2333f4bcb09">entt::scheduler::handlers</a></div><div class="ttdeci">std::vector&lt; process_handler &gt; handlers</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00293">scheduler.hpp:293</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a4287ee859d2aa5180b1b57e0bec84bb4"><div class="ttname"><a href="classentt_1_1scheduler.html#a4287ee859d2aa5180b1b57e0bec84bb4">entt::scheduler::abort</a></div><div class="ttdeci">static void abort(process_handler &amp;handler, const bool immediately)</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00103">scheduler.hpp:103</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a49a81e662dc26831f4a951a715705d6e"><div class="ttname"><a href="classentt_1_1scheduler.html#a49a81e662dc26831f4a951a715705d6e">entt::scheduler::scheduler</a></div><div class="ttdeci">scheduler()=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a5a0f92dbe54b58751237a567e86805e0"><div class="ttname"><a href="classentt_1_1scheduler.html#a5a0f92dbe54b58751237a567e86805e0">entt::scheduler::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Discards all scheduled processes.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00147">scheduler.hpp:147</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a729c83e1983123c642a08cda67e486e3"><div class="ttname"><a href="classentt_1_1scheduler.html#a729c83e1983123c642a08cda67e486e3">entt::scheduler::attach</a></div><div class="ttdeci">auto attach(Args &amp;&amp;... args)</div><div class="ttdoc">Schedules a process for the next tick.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00177">scheduler.hpp:177</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a817d93653aec6a479b920143bd21edbb"><div class="ttname"><a href="classentt_1_1scheduler.html#a817d93653aec6a479b920143bd21edbb">entt::scheduler::empty</a></div><div class="ttdeci">bool empty() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns true if at least a process is currently scheduled.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00137">scheduler.hpp:137</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a827eae426378df9ed9190752156a4154"><div class="ttname"><a href="classentt_1_1scheduler.html#a827eae426378df9ed9190752156a4154">entt::scheduler::update</a></div><div class="ttdeci">void update(const Delta delta, void *data=nullptr)</div><div class="ttdoc">Updates all scheduled processes.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00254">scheduler.hpp:254</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a871812d08af8483316d1ce5d1e9d686f"><div class="ttname"><a href="classentt_1_1scheduler.html#a871812d08af8483316d1ce5d1e9d686f">entt::scheduler::attach</a></div><div class="ttdeci">auto attach(Func &amp;&amp;func)</div><div class="ttdoc">Schedules a process for the next tick.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00238">scheduler.hpp:238</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_a8d55c412ecdb828550727592a787ceab"><div class="ttname"><a href="classentt_1_1scheduler.html#a8d55c412ecdb828550727592a787ceab">entt::scheduler::operator=</a></div><div class="ttdeci">scheduler &amp; operator=(scheduler &amp;&amp;)=default</div><div class="ttdoc">Default move assignment operator.</div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_aa26dd437f486ee9fdabb27d112b09427"><div class="ttname"><a href="classentt_1_1scheduler.html#aa26dd437f486ee9fdabb27d112b09427">entt::scheduler::deleter</a></div><div class="ttdeci">static void deleter(void *proc)</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00108">scheduler.hpp:108</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_aabc25388bff1b3b0770f913f54b915f2"><div class="ttname"><a href="classentt_1_1scheduler.html#aabc25388bff1b3b0770f913f54b915f2">entt::scheduler::abort</a></div><div class="ttdeci">void abort(const bool immediately=false)</div><div class="ttdoc">Aborts all scheduled processes.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00280">scheduler.hpp:280</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_ab0c473e6d4733bdb78f3dc26147de4ad"><div class="ttname"><a href="classentt_1_1scheduler.html#ab0c473e6d4733bdb78f3dc26147de4ad">entt::scheduler::size</a></div><div class="ttdeci">size_type size() const ENTT_NOEXCEPT</div><div class="ttdoc">Number of processes currently scheduled.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00129">scheduler.hpp:129</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_af00ff2ab63a59428ed333e2864a0b553"><div class="ttname"><a href="classentt_1_1scheduler.html#af00ff2ab63a59428ed333e2864a0b553">entt::scheduler::update</a></div><div class="ttdeci">static bool update(process_handler &amp;handler, const Delta delta, void *data)</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00083">scheduler.hpp:83</a></div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_af582ffea72368a83ea4dd7d9e563f715"><div class="ttname"><a href="classentt_1_1scheduler.html#af582ffea72368a83ea4dd7d9e563f715">entt::scheduler::scheduler</a></div><div class="ttdeci">scheduler(scheduler &amp;&amp;)=default</div><div class="ttdoc">Default move constructor.</div></div>
+<div class="ttc" id="aclassentt_1_1scheduler_html_afcec47d6ec28a994af2a7097348ce59f"><div class="ttname"><a href="classentt_1_1scheduler.html#afcec47d6ec28a994af2a7097348ce59f">entt::scheduler::size_type</a></div><div class="ttdeci">std::size_t size_type</div><div class="ttdoc">Unsigned integer type.</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00114">scheduler.hpp:114</a></div></div>
+<div class="ttc" id="aconfig_8h_html_a8c592b57b97f4686da8ffe09beb735a8"><div class="ttname"><a href="config_8h.html#a8c592b57b97f4686da8ffe09beb735a8">ENTT_ASSERT</a></div><div class="ttdeci">#define ENTT_ASSERT(condition)</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00041">config.h:41</a></div></div>
+<div class="ttc" id="aconfig_8h_html_ad351dc3d24a47909c17878fd0e377c54"><div class="ttname"><a href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></div><div class="ttdeci">#define ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00006">config.h:6</a></div></div>
+<div class="ttc" id="anamespaceentt_html"><div class="ttname"><a href="namespaceentt.html">entt</a></div><div class="ttdef"><b>Definition</b> <a href="algorithm_8hpp_source.html#l00013">algorithm.hpp:13</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+<div class="ttc" id="aprocess_8hpp_html"><div class="ttname"><a href="process_8hpp.html">process.hpp</a></div></div>
+<div class="ttc" id="astructentt_1_1process__adaptor_html"><div class="ttname"><a href="structentt_1_1process__adaptor.html">entt::process_adaptor</a></div><div class="ttdoc">Adaptor for lambdas and functors to turn them into processes.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00312">process.hpp:312</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1continuation_html"><div class="ttname"><a href="structentt_1_1scheduler_1_1continuation.html">entt::scheduler::continuation</a></div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00057">scheduler.hpp:57</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1continuation_html_a1b65b262e42f4091c55009a42d5ac080"><div class="ttname"><a href="structentt_1_1scheduler_1_1continuation.html#a1b65b262e42f4091c55009a42d5ac080">entt::scheduler::continuation::then</a></div><div class="ttdeci">continuation then(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00065">scheduler.hpp:65</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1continuation_html_a796f2c086d76abeb65f4c3148caa4fff"><div class="ttname"><a href="structentt_1_1scheduler_1_1continuation.html#a796f2c086d76abeb65f4c3148caa4fff">entt::scheduler::continuation::handler</a></div><div class="ttdeci">process_handler * handler</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00079">scheduler.hpp:79</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1continuation_html_a7ebccdc9733ef530c6eaa0bb3b2eabd6"><div class="ttname"><a href="structentt_1_1scheduler_1_1continuation.html#a7ebccdc9733ef530c6eaa0bb3b2eabd6">entt::scheduler::continuation::then</a></div><div class="ttdeci">continuation then(Func &amp;&amp;func)</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00074">scheduler.hpp:74</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1continuation_html_af4b2036467c055fb132b6314d7582bf1"><div class="ttname"><a href="structentt_1_1scheduler_1_1continuation.html#af4b2036467c055fb132b6314d7582bf1">entt::scheduler::continuation::continuation</a></div><div class="ttdeci">continuation(process_handler *ref)</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00058">scheduler.hpp:58</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html">entt::scheduler::process_handler</a></div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00045">scheduler.hpp:45</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_a18e7a5edb76ab787986d7084f9997476"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#a18e7a5edb76ab787986d7084f9997476">entt::scheduler::process_handler::update_fn_type</a></div><div class="ttdeci">bool(process_handler &amp;, Delta, void *) update_fn_type</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00047">scheduler.hpp:47</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_a31de5f80a1919306715f727341463b9e"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#a31de5f80a1919306715f727341463b9e">entt::scheduler::process_handler::instance</a></div><div class="ttdeci">instance_type instance</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00051">scheduler.hpp:51</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_a333e92a92500eab7f7753bd2ca720601"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">entt::scheduler::process_handler::instance_type</a></div><div class="ttdeci">std::unique_ptr&lt; void, void(*)(void *)&gt; instance_type</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00046">scheduler.hpp:46</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_a410f87944d912702622443a4c5f01282"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#a410f87944d912702622443a4c5f01282">entt::scheduler::process_handler::abort_fn_type</a></div><div class="ttdeci">void(process_handler &amp;, bool) abort_fn_type</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00048">scheduler.hpp:48</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_a7599d6a393fb54a2414fbfccd0da3c2d"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">entt::scheduler::process_handler::next</a></div><div class="ttdeci">next_type next</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00054">scheduler.hpp:54</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_a7e14d9527379eb030856b2033dd4b83e"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#a7e14d9527379eb030856b2033dd4b83e">entt::scheduler::process_handler::next_type</a></div><div class="ttdeci">std::unique_ptr&lt; process_handler &gt; next_type</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00049">scheduler.hpp:49</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_a9607e02db68b5cd295139bf27965499f"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#a9607e02db68b5cd295139bf27965499f">entt::scheduler::process_handler::update</a></div><div class="ttdeci">update_fn_type * update</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00052">scheduler.hpp:52</a></div></div>
+<div class="ttc" id="astructentt_1_1scheduler_1_1process__handler_html_ad229f08f958e22b2c2724077e7ed43d9"><div class="ttname"><a href="structentt_1_1scheduler_1_1process__handler.html#ad229f08f958e22b2c2724077e7ed43d9">entt::scheduler::process_handler::abort</a></div><div class="ttdeci">abort_fn_type * abort</div><div class="ttdef"><b>Definition</b> <a href="scheduler_8hpp_source.html#l00053">scheduler.hpp:53</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

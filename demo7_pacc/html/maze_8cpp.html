@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/core/maze.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">maze.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="maze_8hpp_source.html">maze.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="constants_8hpp_source.html">constants.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+maze.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="maze_8cpp__incl.png" border="0" usemap="#asrc_2core_2maze_8cpp" alt=""/></div>
+<map name="asrc_2core_2maze_8cpp" id="asrc_2core_2maze_8cpp">
+<area shape="rect" title=" " alt="" coords="223,5,363,31"/>
+<area shape="rect" href="maze_8hpp.html" title=" " alt="" coords="188,79,275,104"/>
+<area shape="poly" title=" " alt="" coords="285,33,252,70,248,66,281,29"/>
+<area shape="rect" href="constants_8hpp.html" title=" " alt="" coords="299,79,412,104"/>
+<area shape="poly" title=" " alt="" coords="305,29,338,66,334,70,301,33"/>
+<area shape="rect" title=" " alt="" coords="369,225,435,251"/>
+<area shape="poly" title=" " alt="" coords="247,102,379,214,376,218,244,106"/>
+<area shape="rect" href="grid_8hpp.html" title=" " alt="" coords="131,152,231,177"/>
+<area shape="poly" title=" " alt="" coords="225,106,199,142,195,139,221,103"/>
+<area shape="rect" title=" " alt="" coords="5,225,68,251"/>
+<area shape="poly" title=" " alt="" coords="159,180,74,221,71,217,156,175"/>
+<area shape="rect" title=" " alt="" coords="93,225,162,251"/>
+<area shape="poly" title=" " alt="" coords="174,179,146,216,142,213,170,176"/>
+<area shape="rect" title=" " alt="" coords="187,225,247,251"/>
+<area shape="poly" title=" " alt="" coords="189,176,207,212,202,214,184,179"/>
+<area shape="rect" href="pos_8hpp.html" title=" " alt="" coords="271,225,344,251"/>
+<area shape="poly" title=" " alt="" coords="202,175,276,216,273,221,200,180"/>
+<area shape="poly" title=" " alt="" coords="354,105,318,213,313,211,349,104"/>
+<area shape="rect" href="util_2dir_8hpp.html" title=" " alt="" coords="357,152,447,177"/>
+<area shape="poly" title=" " alt="" coords="365,103,389,139,385,142,361,106"/>
+<area shape="poly" title=" " alt="" coords="405,178,405,212,399,212,399,178"/>
+</map>
+</div>
+</div>
+<p><a href="maze_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4310e269adfa22c887b2d819479e10f9" id="r_a4310e269adfa22c887b2d819479e10f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="maze_8hpp.html#a5d4a998c7ef1ab2e682be3da0c646f23">MazeState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="maze_8cpp.html#a4310e269adfa22c887b2d819479e10f9">makeMazeState</a> ()</td></tr>
+<tr class="separator:a4310e269adfa22c887b2d819479e10f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a4310e269adfa22c887b2d819479e10f9" name="a4310e269adfa22c887b2d819479e10f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4310e269adfa22c887b2d819479e10f9">&#9670;&#160;</a></span>makeMazeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="maze_8hpp.html#a5d4a998c7ef1ab2e682be3da0c646f23">MazeState</a> makeMazeState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="maze_8cpp_source.html">maze.cpp</a> 第 <a class="el" href="maze_8cpp_source.html#l00038">38</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="constants_8hpp_source.html#l00016">tiles</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00023">Game::init()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="maze_8cpp_a4310e269adfa22c887b2d819479e10f9_icgraph.png" border="0" usemap="#amaze_8cpp_a4310e269adfa22c887b2d819479e10f9_icgraph" alt=""/></div>
+<map name="amaze_8cpp_a4310e269adfa22c887b2d819479e10f9_icgraph" id="amaze_8cpp_a4310e269adfa22c887b2d819479e10f9_icgraph">
+<area shape="rect" title=" " alt="" coords="419,5,545,31"/>
+<area shape="rect" href="classGame.html#a6f3a33940524b6ba9d83f627ccb14bbf" title=" " alt="" coords="280,5,371,31"/>
+<area shape="poly" title=" " alt="" coords="405,21,371,21,371,15,405,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

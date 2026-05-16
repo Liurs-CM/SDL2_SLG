@@ -1,0 +1,201 @@
+\doxysection{src/util/dir.hpp 文件参考}
+\hypertarget{util_2dir_8hpp}{}\label{util_2dir_8hpp}\index{src/util/dir.hpp@{src/util/dir.hpp}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+dir.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{util_2dir_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util_2dir_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structDirRange}{Dir\+Range}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \+: std\+::uint8\+\_\+t \{ \newline
+\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{up}}
+, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{right}}
+, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{down}}
+, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{left}}
+, \newline
+\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}}
+, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a}{begin}} = up
+, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53}{end}} = none
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \mbox{\hyperlink{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163}{opposite}} (const \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} dir)
+\item 
+constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \mbox{\hyperlink{util_2dir_8hpp_a917850c3152487d5ee489514eb4a67eb}{rotate\+CW}} (const \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} dir)
+\item 
+constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \& \mbox{\hyperlink{util_2dir_8hpp_a7d8183e4643a098c173dae08882150ca}{operator++}} (\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \&dir)
+\item 
+constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \mbox{\hyperlink{util_2dir_8hpp_a2ca9fb1ddc715776c5afb661d1526e9a}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} dir)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structDirRange}{Dir\+Range}} \mbox{\hyperlink{util_2dir_8hpp_a663ffd7a462bf1ce2d1a2482245e789d}{dir\+\_\+range}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67} 
+\index{dir.hpp@{dir.hpp}!Dir@{Dir}}
+\index{Dir@{Dir}!dir.hpp@{dir.hpp}}
+\doxysubsubsection{\texorpdfstring{Dir}{Dir}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{up@{up}!dir.hpp@{dir.hpp}}\index{dir.hpp@{dir.hpp}!up@{up}}}\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c} 
+up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{right@{right}!dir.hpp@{dir.hpp}}\index{dir.hpp@{dir.hpp}!right@{right}}}\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d} 
+right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{down@{down}!dir.hpp@{dir.hpp}}\index{dir.hpp@{dir.hpp}!down@{down}}}\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d} 
+down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{left@{left}!dir.hpp@{dir.hpp}}\index{dir.hpp@{dir.hpp}!left@{left}}}\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254} 
+left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{none@{none}!dir.hpp@{dir.hpp}}\index{dir.hpp@{dir.hpp}!none@{none}}}\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8} 
+none&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{begin@{begin}!dir.hpp@{dir.hpp}}\index{dir.hpp@{dir.hpp}!begin@{begin}}}\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a} 
+begin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{end@{end}!dir.hpp@{dir.hpp}}\index{dir.hpp@{dir.hpp}!end@{end}}}\Hypertarget{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53}\label{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53} 
+end&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{util_2dir_8hpp_source}{dir.\+hpp}} 第 \mbox{\hyperlink{util_2dir_8hpp_source_l00015}{15}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{util_2dir_8hpp_a2ca9fb1ddc715776c5afb661d1526e9a}\label{util_2dir_8hpp_a2ca9fb1ddc715776c5afb661d1526e9a} 
+\index{dir.hpp@{dir.hpp}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!dir.hpp@{dir.hpp}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{util_2dir_8hpp_source}{dir.\+hpp}} 第 \mbox{\hyperlink{util_2dir_8hpp_source_l00070}{70}} 行定义.
+
+\Hypertarget{util_2dir_8hpp_a7d8183e4643a098c173dae08882150ca}\label{util_2dir_8hpp_a7d8183e4643a098c173dae08882150ca} 
+\index{dir.hpp@{dir.hpp}!operator++@{operator++}}
+\index{operator++@{operator++}!dir.hpp@{dir.hpp}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \& operator++ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \&}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{util_2dir_8hpp_source}{dir.\+hpp}} 第 \mbox{\hyperlink{util_2dir_8hpp_source_l00066}{66}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{view_8hpp_source_l00114}{entt\+::basic\+\_\+view$<$ Entity, exclude\+\_\+t$<$ Exclude... $>$, Component... $>$\+::view\+\_\+iterator\+::operator++()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{util_2dir_8hpp_a7d8183e4643a098c173dae08882150ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163}\label{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163} 
+\index{dir.hpp@{dir.hpp}!opposite@{opposite}}
+\index{opposite@{opposite}!dir.hpp@{dir.hpp}}
+\doxysubsubsection{\texorpdfstring{opposite()}{opposite()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} opposite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{util_2dir_8hpp_source}{dir.\+hpp}} 第 \mbox{\hyperlink{util_2dir_8hpp_source_l00026}{26}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{down}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{left}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{right}} , 以及 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{up}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{pursue__target_8cpp_source_l00021}{pursue\+Target()}} , 以及 \mbox{\hyperlink{set__target_8cpp_source_l00074}{set\+Scared\+Target()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{util_2dir_8hpp_a917850c3152487d5ee489514eb4a67eb}\label{util_2dir_8hpp_a917850c3152487d5ee489514eb4a67eb} 
+\index{dir.hpp@{dir.hpp}!rotateCW@{rotateCW}}
+\index{rotateCW@{rotateCW}!dir.hpp@{dir.hpp}}
+\doxysubsubsection{\texorpdfstring{rotateCW()}{rotateCW()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} rotate\+CW (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{util_2dir_8hpp_source}{dir.\+hpp}} 第 \mbox{\hyperlink{util_2dir_8hpp_source_l00036}{36}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{down}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{left}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{right}} , 以及 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{up}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{set__target_8cpp_source_l00074}{set\+Scared\+Target()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util_2dir_8hpp_a917850c3152487d5ee489514eb4a67eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{变量说明}
+\Hypertarget{util_2dir_8hpp_a663ffd7a462bf1ce2d1a2482245e789d}\label{util_2dir_8hpp_a663ffd7a462bf1ce2d1a2482245e789d} 
+\index{dir.hpp@{dir.hpp}!dir\_range@{dir\_range}}
+\index{dir\_range@{dir\_range}!dir.hpp@{dir.hpp}}
+\doxysubsubsection{\texorpdfstring{dir\_range}{dir\_range}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structDirRange}{Dir\+Range}} dir\+\_\+range \{\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{util_2dir_8hpp_source}{dir.\+hpp}} 第 \mbox{\hyperlink{util_2dir_8hpp_source_l00084}{84}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{pursue__target_8cpp_source_l00021}{pursue\+Target()}}.
+

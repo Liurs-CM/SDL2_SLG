@@ -1,0 +1,44 @@
+\doxysection{set\+\_\+target.\+hpp}
+\hypertarget{set__target_8hpp_source}{}\label{set__target_8hpp_source}\index{src/sys/set\_target.hpp@{src/sys/set\_target.hpp}}
+\mbox{\hyperlink{set__target_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ set\_target.hpp}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/9/18.}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ SYS\_SET\_TARGET\_HPP}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ SYS\_SET\_TARGET\_HPP}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{maze_8hpp}{core/maze.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{entity_2fwd_8hpp}{entt/entity/fwd.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00016}00016\ \textcolor{comment}{//\ These\ systems\ calculate\ the\ target\ position\ of\ ghosts.}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00017}00017\ \textcolor{comment}{//\ Each\ ghost\ has\ a\ different\ target\ depending\ on\ which\ mode\ it's\ in.}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00019}00019\ \textcolor{comment}{//\ There\ is\ a\ chase\ target\ system\ for\ each\ ghost\ because\ each\ ghost}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00020}00020\ \textcolor{comment}{//\ behaves\ differently\ in\ chase\ mode.}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00021}00021\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{set__target_8hpp_a12c136aa7757633827bdd4d69ac67277}{setBlinkyChaseTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&);}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00022}00022\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908}{setPinkyChaseTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&);}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00023}00023\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d}{setInkyChaseTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&);}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00024}00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b}{setClydeChaseTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&);}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00026}00026\ \textcolor{comment}{//\ Each\ ghost\ has\ a\ "{}home\ corner"{}\ which\ is\ stored\ in\ the\ HomePosition\ component}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00027}00027\ \textcolor{comment}{//\ Ghosts\ will\ simply\ move\ towards\ their\ home\ corner\ and\ end\ up\ going\ round}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00028}00028\ \textcolor{comment}{//\ in\ circles}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00029}00029\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5}{setScatterTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&);}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00031}00031\ \textcolor{comment}{//\ Ghosts\ move\ randomly\ in\ scared\ mode\ so\ we\ pass\ in\ a\ std::mt19937\ for}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00032}00032\ \textcolor{comment}{//\ random\ numbers}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00033}00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb}{setScaredTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&,\ std::mt19937\ \&);}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00035}00035\ \textcolor{comment}{//\ When\ a\ ghost\ is\ eaten,\ their\ eyes\ will\ return\ the\ ghost\ house\ to\ be\ revived}}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00036}00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85}{setEatenTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&);}
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{set__target_8hpp_source_l00038}00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

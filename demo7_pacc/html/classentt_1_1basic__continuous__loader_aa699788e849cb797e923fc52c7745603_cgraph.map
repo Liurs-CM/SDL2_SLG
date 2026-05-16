@@ -1,0 +1,17 @@
+<map id="entt::basic_continuous_loader::entities" name="entt::basic_continuous_loader::entities">
+<area shape="rect" id="Node000001" title="Restores entities that were in use during serialization." alt="" coords="5,93,173,133"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__continuous__loader.html#a039585b0cbba43a4791b74bbc181e6bd" title=" " alt="" coords="221,61,389,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,98,207,93,208,98,174,104"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1basic__continuous__loader.html#a42bbea6fd83799452fcd9fb001dab56c" title=" " alt="" coords="221,125,389,165"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="174,123,208,128,207,134,173,128"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a91bfd7ec05e6d718e47da581a893cdc4" title="Creates a new entity and returns it." alt="" coords="437,93,584,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,92,424,97,423,102,389,97"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#af58f3add442cfb3f1fa470402db072bd" title="Destroys an entity." alt="" coords="437,29,584,69"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="389,66,423,60,424,66,390,71"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a75f09d82b0cd6305ea7422d60162704e" title="Returns the version stored along with an entity identifier." alt="" coords="632,93,779,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="584,111,618,111,618,116,584,116"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="474,30,472,20,478,11,491,5,511,3,534,6,546,13,543,17,532,11,511,8,492,10,481,15,477,21,479,28"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="389,130,423,124,424,130,390,135"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="437,157,584,197"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="390,156,424,161,423,166,389,161"/>
+</map>

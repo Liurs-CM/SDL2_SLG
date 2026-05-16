@@ -1,0 +1,52 @@
+\doxysection{can\+\_\+move.\+cpp}
+\hypertarget{can__move_8cpp_source}{}\label{can__move_8cpp_source}\index{src/sys/can\_move.cpp@{src/sys/can\_move.cpp}}
+\mbox{\hyperlink{can__move_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ can\_move.cpp}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 27/9/18.}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{can__move_8hpp}{can\_move.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2house_8hpp}{comp/house.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dir__to__pos_8hpp}{util/dir\_to\_pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00015}\mbox{\hyperlink{can__move_8cpp_ac44feff324cce2df74e8465e4cc46b28}{00015}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{can__move_8cpp_ac44feff324cce2df74e8465e4cc46b28}{canMove}}(}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00016}00016\ \ \ \mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00017}00017\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&maze,}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00018}00018\ \ \ \textcolor{keyword}{const}\ entt::entity\ e,}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00019}00019\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pos,}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00020}00020\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ desiredDir}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00021}00021\ )\ \{}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00022}00022\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ desiredPos\ =\ pos\ +\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(desiredDir);}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00024}00024\ \ \ \textcolor{keywordflow}{if}\ (maze.outOfRange(desiredPos))\ \{}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{comment}{//\ The\ tunnel\ is\ the\ only\ place\ where\ playable\ space\ meets\ the\ edge\ of\ the\ map.}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//\ The\ movement\ system\ handles\ the\ tunnel}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{return}\ desiredDir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}}\ ||\ desiredDir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}};}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00028}00028\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00030}00030\ \ \ \textcolor{comment}{//\ just\ like\ we\ assumed\ the\ position\ of\ the\ tunnel,\ we're\ assuming\ the}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00031}00031\ \ \ \textcolor{comment}{//\ orientation\ of\ the\ door\ to\ the\ ghost\ house.\ Once\ again,\ making\ the\ door}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00032}00032\ \ \ \textcolor{comment}{//\ into\ an\ entity\ is\ probably\ a\ more\ robust\ but\ more\ complex\ solution.}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00033}00033\ \ \ \textcolor{comment}{//\ I\ guess\ this\ is\ one\ of\ those\ "{}do\ as\ I\ say,\ not\ as\ I\ do"{}\ situations!}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00034}00034\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}}\ desiredTile\ =\ maze[desiredPos];}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00035}00035\ \ \ \textcolor{keywordflow}{if}\ (desiredTile\ ==\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2feaaf89c21770ea5c21196bc33848dd}{Tile::door}})\ \{}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structEnterHouse}{EnterHouse}}>(e)\ \&\&\ desiredDir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{Dir::down}})\ \{}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00037}00037\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00038}00038\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structLeaveHouse}{LeaveHouse}}>(e)\ \&\&\ desiredDir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{Dir::up}})\ \{}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00039}00039\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00041}00041\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (desiredTile\ !=\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2d86bdac01a3315b95794ffa7360edc3}{Tile::wall}})\ \{}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00043}00043\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00045}00045\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{can__move_8cpp_source_l00046}00046\ \}}
+
+\end{DoxyCode}

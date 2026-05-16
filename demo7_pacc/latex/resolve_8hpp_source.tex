@@ -1,0 +1,58 @@
+\doxysection{resolve.\+hpp}
+\hypertarget{resolve_8hpp_source}{}\label{resolve_8hpp_source}\index{third\_party/entt/meta/resolve.hpp@{third\_party/entt/meta/resolve.hpp}}
+\mbox{\hyperlink{resolve_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_META\_RESOLVE\_HPP}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_META\_RESOLVE\_HPP}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{meta_8hpp}{meta.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00009}00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00017}00017\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00018}\mbox{\hyperlink{namespaceentt_a2129cb8668f5dcbc11854be6a4a0b6e5}{00018}}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classentt_1_1meta__type}{meta\_type}}\ \mbox{\hyperlink{namespaceentt_a2129cb8668f5dcbc11854be6a4a0b6e5}{resolve}}()\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{return}\ internal::meta\_info<Type>::resolve();}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00029}00029\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Func>}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00030}\mbox{\hyperlink{namespaceentt_ac12385bfa4c21050bfe4e3ad59c03bd2}{00030}}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classentt_1_1meta__type}{meta\_type}}\ \mbox{\hyperlink{namespaceentt_ac12385bfa4c21050bfe4e3ad59c03bd2}{resolve\_if}}(Func\ func)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{return}\ internal::find\_if([\&func](\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ *curr)\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ func(\mbox{\hyperlink{classentt_1_1meta__type}{meta\_type}}\{curr\});}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00033}00033\ \ \ \ \ \},\ *internal::meta\_context::global);}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00042}\mbox{\hyperlink{namespaceentt_a6809dd4ac1036ae87360e0936d261719}{00042}}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classentt_1_1meta__type}{meta\_type}}\ \mbox{\hyperlink{namespaceentt_a6809dd4ac1036ae87360e0936d261719}{resolve\_id}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}\ \textcolor{keywordtype}{id})\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceentt_ac12385bfa4c21050bfe4e3ad59c03bd2}{resolve\_if}}([\textcolor{keywordtype}{id}](\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ type)\ \{\ \textcolor{keywordflow}{return}\ type.id()\ ==\ \textcolor{keywordtype}{id};\ \});}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00052}\mbox{\hyperlink{namespaceentt_a38ac723645a57b02a836852f86c32981}{00052}}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classentt_1_1meta__type}{meta\_type}}\ \mbox{\hyperlink{namespaceentt_a38ac723645a57b02a836852f86c32981}{resolve\_type}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}\ \textcolor{keywordtype}{id})\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceentt_ac12385bfa4c21050bfe4e3ad59c03bd2}{resolve\_if}}([\textcolor{keywordtype}{id}](\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ type)\ \{\ \textcolor{keywordflow}{return}\ type.type\_id()\ ==\ \textcolor{keywordtype}{id};\ \});}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00054}00054\ \}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00058}00058\ [[\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{deprecated}}(\textcolor{stringliteral}{"{}use\ entt::resolve\_id\ instead"{}})]]}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00059}\mbox{\hyperlink{namespaceentt_aadad4ebab5c09590e72fbc147410ae4d}{00059}}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classentt_1_1meta__type}{meta\_type}}\ \mbox{\hyperlink{namespaceentt_a2129cb8668f5dcbc11854be6a4a0b6e5}{resolve}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}\ \textcolor{keywordtype}{id})\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceentt_a6809dd4ac1036ae87360e0936d261719}{resolve\_id}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00061}00061\ \}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00069}00069\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Op>}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00070}00070\ \textcolor{keyword}{inline}\ std::enable\_if\_t<std::is\_invocable\_v<Op,\ meta\_type>,\ \textcolor{keywordtype}{void}>}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00071}\mbox{\hyperlink{namespaceentt_a54cf3143fcf5bae3826fd39469ab0938}{00071}}\ \mbox{\hyperlink{namespaceentt_a2129cb8668f5dcbc11854be6a4a0b6e5}{resolve}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}})\ \{}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00072}00072\ \ \ \ \ internal::visit<meta\_type>(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}},\ *internal::meta\_context::global);}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00076}00076\ \}}
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{resolve_8hpp_source_l00079}00079\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

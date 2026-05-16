@@ -1,0 +1,55 @@
+\doxysection{player\+\_\+input.\+cpp}
+\hypertarget{player__input_8cpp_source}{}\label{player__input_8cpp_source}\index{src/sys/player\_input.cpp@{src/sys/player\_input.cpp}}
+\mbox{\hyperlink{player__input_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ player\_input.cpp}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 19/9/18.}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{player__input_8hpp}{player\_input.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2dir_8hpp}{comp/dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{player_8hpp}{comp/player.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{can__move_8hpp}{sys/can\_move.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00016}00016\ \textcolor{keyword}{namespace\ }\{}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00018}00018\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ readDir(\textcolor{keyword}{const}\ SDL\_Scancode\ key)\ \{}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00019}00019\ \ \ \textcolor{keywordflow}{switch}\ (key)\ \{}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_W:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_UP:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00022}00022\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{Dir::up}};}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_D:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_RIGHT:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00025}00025\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}};}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_S:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_DOWN:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00028}00028\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{Dir::down}};}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_A:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_SCANCODE\_LEFT:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00031}00031\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}};}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00033}00033\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{Dir::none}};}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00034}00034\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00037}00037\ \}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00039}\mbox{\hyperlink{player__input_8cpp_a9b09b6237dcdeab07c22d55ab6649293}{00039}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{player__input_8cpp_a9b09b6237dcdeab07c22d55ab6649293}{playerInput}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ SDL\_Scancode\ key)\ \{}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00040}00040\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ dir\ =\ readDir(key);}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00041}00041\ \ \ \textcolor{keywordflow}{if}\ (dir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{Dir::none}})\ \{}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00043}00043\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00044}00044\ \ \ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structPlayer}{Player}},\ \mbox{\hyperlink{structDesiredDir}{DesiredDir}}>();}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00045}00045\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00046}00046\ \ \ \ \ view.get<\mbox{\hyperlink{structDesiredDir}{DesiredDir}}>(e).d\ =\ dir;}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00047}00047\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00048}00048\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{player__input_8cpp_source_l00049}00049\ \}}
+
+\end{DoxyCode}

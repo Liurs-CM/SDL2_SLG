@@ -1,0 +1,20 @@
+<map id="ghostRender" name="ghostRender">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,153,109,179"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#a696e43e4d153ebfc9370d2f9b5fe3984" title="Returns references to the given components for an entity." alt="" coords="161,5,335,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,152,97,98,124,66,156,40,166,34,169,38,159,44,128,70,102,101,67,155"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258" title="Checks if an entity has all the given components." alt="" coords="159,55,337,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="71,151,107,120,156,89,172,82,174,87,159,94,111,124,74,155"/>
+<area shape="rect" id="Node000005" href="$classSDL_1_1QuadWriter.html#a120e5f080bf2bfc10a7d925b336c9cd6" title=" " alt="" coords="159,104,337,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="106,151,184,130,185,136,108,156"/>
+<area shape="rect" id="Node000006" href="$classSDL_1_1QuadWriter.html#a11220acce1e5ca1aa568ffc603a5ce13" title=" " alt="" coords="157,153,339,179"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="110,163,144,163,144,169,110,169"/>
+<area shape="rect" id="Node000007" href="$classSDL_1_1QuadWriter.html#a2e28cc04be1ed5a29fb8636c2c6c8193" title=" " alt="" coords="158,203,338,228"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="108,176,185,196,184,202,106,181"/>
+<area shape="rect" id="Node000008" href="$dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="219,252,277,277"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="74,177,111,207,158,237,206,254,204,259,156,242,108,211,71,181"/>
+<area shape="rect" id="Node000009" href="$classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="175,302,321,342"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="68,178,103,230,129,260,159,287,169,293,167,298,156,291,125,264,99,233,64,181"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="387,23,533,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,26,374,30,373,36,335,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="337,55,372,51,373,56,337,60"/>
+</map>

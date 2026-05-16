@@ -1,0 +1,57 @@
+\doxysection{src/sys/player\+\_\+input.cpp 文件参考}
+\hypertarget{player__input_8cpp}{}\label{player__input_8cpp}\index{src/sys/player\_input.cpp@{src/sys/player\_input.cpp}}
+{\ttfamily \#include "{}player\+\_\+input.\+hpp"{}}\newline
+{\ttfamily \#include "{}comp/dir.\+hpp"{}}\newline
+{\ttfamily \#include "{}comp/player.\+hpp"{}}\newline
+{\ttfamily \#include "{}sys/can\+\_\+move.\+hpp"{}}\newline
+{\ttfamily \#include $<$entt/entity/registry.\+hpp$>$}\newline
+player\+\_\+input.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__input_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{player__input_8cpp_a9b09b6237dcdeab07c22d55ab6649293}{player\+Input}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&reg, const SDL\+\_\+\+Scancode key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{player__input_8cpp_a9b09b6237dcdeab07c22d55ab6649293}\label{player__input_8cpp_a9b09b6237dcdeab07c22d55ab6649293} 
+\index{player\_input.cpp@{player\_input.cpp}!playerInput@{playerInput}}
+\index{playerInput@{playerInput}!player\_input.cpp@{player\_input.cpp}}
+\doxysubsubsection{\texorpdfstring{playerInput()}{playerInput()}}
+{\footnotesize\ttfamily bool player\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{const SDL\+\_\+\+Scancode}]{key }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{player__input_8cpp_source}{player\+\_\+input.\+cpp}} 第 \mbox{\hyperlink{player__input_8cpp_source_l00039}{39}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00034}{Game\+::input()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{player__input_8cpp_a9b09b6237dcdeab07c22d55ab6649293_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__input_8cpp_a9b09b6237dcdeab07c22d55ab6649293_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,11 @@
+<map id="makePlayer" name="makePlayer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,104,70"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#a91bfd7ec05e6d718e47da581a893cdc4" title="Creates a new entity and returns it." alt="" coords="152,5,299,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,46,138,39,139,44,105,51"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#ac138930f54716e2b31907586e45367be" title="Assigns the given component to an entity." alt="" coords="152,69,299,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="105,64,139,70,138,76,104,69"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a75f09d82b0cd6305ea7422d60162704e" title="Returns the version stored along with an entity identifier." alt="" coords="347,5,493,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,23,333,23,333,28,299,28"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="347,69,493,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="299,87,333,87,333,92,299,92"/>
+</map>

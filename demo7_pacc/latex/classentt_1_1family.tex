@@ -1,0 +1,93 @@
+\doxysection{entt\+::family\texorpdfstring{$<$}{<}... \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1family}{}\label{classentt_1_1family}\index{entt::family$<$... $>$@{entt::family$<$... $>$}}
+
+
+Dynamic identifier generator.  
+
+
+
+
+{\ttfamily \#include $<$family.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1family_ab2ede62709be8a4a63329ed2594cd181}{family\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Type$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1family_ab2ede62709be8a4a63329ed2594cd181}{family\+\_\+type}} \mbox{\hyperlink{classentt_1_1family_ad2c16ecd854f12f1aa70ceaba094e43a}{type}} = \mbox{\hyperlink{classentt_1_1identifier}{identifier}}++
+\begin{DoxyCompactList}\small\item\em Statically generated unique identifier for the given type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{classentt_1_1family_a9e26c5843e3a26a80403aa58fd85fa6f}{ENTT\+\_\+\+MAYBE\+\_\+\+ATOMIC}} (\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}) \mbox{\hyperlink{classentt_1_1identifier}{identifier}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$typename...$>$\newline
+class entt\+::family$<$... $>$}
+Dynamic identifier generator. 
+
+Utility class template that can be used to assign unique identifiers to types at runtime. Use different specializations to create separate sets of identifiers. 
+
+在文件 \mbox{\hyperlink{family_8hpp_source}{family.\+hpp}} 第 \mbox{\hyperlink{family_8hpp_source_l00020}{20}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1family_ab2ede62709be8a4a63329ed2594cd181}\label{classentt_1_1family_ab2ede62709be8a4a63329ed2594cd181} 
+\index{entt::family$<$... $>$@{entt::family$<$... $>$}!family\_type@{family\_type}}
+\index{family\_type@{family\_type}!entt::family$<$... $>$@{entt::family$<$... $>$}}
+\doxysubsubsection{\texorpdfstring{family\_type}{family\_type}}
+{\footnotesize\ttfamily template$<$typename... $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1family}{entt\+::family}}$<$... $>$\+::family\+\_\+type =  \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{family_8hpp_source}{family.\+hpp}} 第 \mbox{\hyperlink{family_8hpp_source_l00025}{25}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1family_a9e26c5843e3a26a80403aa58fd85fa6f}\label{classentt_1_1family_a9e26c5843e3a26a80403aa58fd85fa6f} 
+\index{entt::family$<$... $>$@{entt::family$<$... $>$}!ENTT\_MAYBE\_ATOMIC@{ENTT\_MAYBE\_ATOMIC}}
+\index{ENTT\_MAYBE\_ATOMIC@{ENTT\_MAYBE\_ATOMIC}!entt::family$<$... $>$@{entt::family$<$... $>$}}
+\doxysubsubsection{\texorpdfstring{ENTT\_MAYBE\_ATOMIC()}{ENTT\_MAYBE\_ATOMIC()}}
+{\footnotesize\ttfamily template$<$typename... $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{classentt_1_1family}{entt\+::family}}$<$... $>$\+::\+ENTT\+\_\+\+MAYBE\+\_\+\+ATOMIC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{family_8hpp_source}{family.\+hpp}} 第 \mbox{\hyperlink{family_8hpp_source_l00021}{21}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1family_ad2c16ecd854f12f1aa70ceaba094e43a}\label{classentt_1_1family_ad2c16ecd854f12f1aa70ceaba094e43a} 
+\index{entt::family$<$... $>$@{entt::family$<$... $>$}!type@{type}}
+\index{type@{type}!entt::family$<$... $>$@{entt::family$<$... $>$}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$typename... $>$ \\
+template$<$typename... Type$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1family_ab2ede62709be8a4a63329ed2594cd181}{family\+\_\+type}} \mbox{\hyperlink{classentt_1_1family}{entt\+::family}}$<$... $>$\+::type = \mbox{\hyperlink{classentt_1_1identifier}{identifier}}++\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Statically generated unique identifier for the given type. 
+
+
+
+在文件 \mbox{\hyperlink{family_8hpp_source}{family.\+hpp}} 第 \mbox{\hyperlink{family_8hpp_source_l00030}{30}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{family_8hpp}{family.\+hpp}}\end{DoxyCompactItemize}

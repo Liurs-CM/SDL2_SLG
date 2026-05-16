@@ -1,0 +1,187 @@
+\doxysection{entt\+::connection类 参考}
+\hypertarget{classentt_1_1connection}{}\label{classentt_1_1connection}\index{entt::connection@{entt::connection}}
+
+
+Connection class.  
+
+
+
+
+{\ttfamily \#include $<$sigh.\+hpp$>$}
+
+
+
+entt\+::connection 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classentt_1_1connection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1connection_a1d11f6b9d00a3f0e5364111438a1cee5}{connection}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1connection_a6763393665228bcf52ad41a21105d468}{operator bool}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks whether a connection is properly initialized. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1connection_ae564477ab623301169916c1992c970a8}{release}} ()
+\begin{DoxyCompactList}\small\item\em Breaks the connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1connection_aec4d48241c73bf59b3c73e3e1d791bf4}{connection}} (\mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$ fn, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}ref)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$ \mbox{\hyperlink{classentt_1_1connection_af0d57a4dfdbdef9429bb3b1c7ea228a9}{disconnect}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1connection_afd98f6ff0db4434a5ece19335fd61c63}{signal}} \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1connection_afe2b37ace8306e708a0dc76c658a4b19}{sink}}
+\begin{DoxyCompactList}\small\item\em A sink is allowed to create connection objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Connection class. 
+
+Opaque object the aim of which is to allow users to release an already estabilished connection without having to keep a reference to the signal or the sink that generated it. 
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00152}{152}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1connection_aec4d48241c73bf59b3c73e3e1d791bf4}\label{classentt_1_1connection_aec4d48241c73bf59b3c73e3e1d791bf4} 
+\index{entt::connection@{entt::connection}!connection@{connection}}
+\index{connection@{connection}!entt::connection@{entt::connection}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily entt\+::connection\+::connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$}]{fn,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00157}{157}} 行定义.
+
+\Hypertarget{classentt_1_1connection_a1d11f6b9d00a3f0e5364111438a1cee5}\label{classentt_1_1connection_a1d11f6b9d00a3f0e5364111438a1cee5} 
+\index{entt::connection@{entt::connection}!connection@{connection}}
+\index{connection@{connection}!entt::connection@{entt::connection}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily entt\+::connection\+::connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1connection_a6763393665228bcf52ad41a21105d468}\label{classentt_1_1connection_a6763393665228bcf52ad41a21105d468} 
+\index{entt::connection@{entt::connection}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!entt::connection@{entt::connection}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily entt\+::connection\+::operator \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Checks whether a connection is properly initialized. 
+
+\begin{DoxyReturn}{返回}
+True if the connection is properly initialized, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00169}{169}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sigh_8hpp_source_l00182}{disconnect}}.
+
+\Hypertarget{classentt_1_1connection_ae564477ab623301169916c1992c970a8}\label{classentt_1_1connection_ae564477ab623301169916c1992c970a8} 
+\index{entt::connection@{entt::connection}!release@{release}}
+\index{release@{release}!entt::connection@{entt::connection}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::connection\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Breaks the connection. 
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00174}{174}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sigh_8hpp_source_l00182}{disconnect}} , 以及 \mbox{\hyperlink{sigh_8hpp_source_l00183}{signal}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sigh_8hpp_source_l00241}{entt\+::scoped\+\_\+connection\+::release()}} , 以及 \mbox{\hyperlink{sigh_8hpp_source_l00212}{entt\+::scoped\+\_\+connection\+::\texorpdfstring{$\sim$}{\string~}scoped\+\_\+connection()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1connection_ae564477ab623301169916c1992c970a8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classentt_1_1connection_afe2b37ace8306e708a0dc76c658a4b19}\label{classentt_1_1connection_afe2b37ace8306e708a0dc76c658a4b19} 
+\index{entt::connection@{entt::connection}!sink@{sink}}
+\index{sink@{sink}!entt::connection@{entt::connection}}
+\doxysubsubsection{\texorpdfstring{sink}{sink}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{friend}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1sink}{sink}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A sink is allowed to create connection objects. 
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00155}{155}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1connection_af0d57a4dfdbdef9429bb3b1c7ea228a9}\label{classentt_1_1connection_af0d57a4dfdbdef9429bb3b1c7ea228a9} 
+\index{entt::connection@{entt::connection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::connection@{entt::connection}}
+\doxysubsubsection{\texorpdfstring{disconnect}{disconnect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$ entt\+::connection\+::disconnect\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00182}{182}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sigh_8hpp_source_l00169}{operator bool()}} , 以及 \mbox{\hyperlink{sigh_8hpp_source_l00174}{release()}}.
+
+\Hypertarget{classentt_1_1connection_afd98f6ff0db4434a5ece19335fd61c63}\label{classentt_1_1connection_afd98f6ff0db4434a5ece19335fd61c63} 
+\index{entt::connection@{entt::connection}!signal@{signal}}
+\index{signal@{signal}!entt::connection@{entt::connection}}
+\doxysubsubsection{\texorpdfstring{signal}{signal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}\texorpdfstring{$\ast$}{*} entt\+::connection\+::signal \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00183}{183}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sigh_8hpp_source_l00174}{release()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/signal/\mbox{\hyperlink{sigh_8hpp}{sigh.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\doxysection{scheduler.\+hpp}
+\hypertarget{scheduler_8hpp_source}{}\label{scheduler_8hpp_source}\index{third\_party/entt/process/scheduler.hpp@{third\_party/entt/process/scheduler.hpp}}
+\mbox{\hyperlink{scheduler_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_PROCESS\_SCHEDULER\_HPP}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_PROCESS\_SCHEDULER\_HPP}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}../config/config.h"{}}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{process_8hpp}{process.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00014}00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00043}00043\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Delta>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00044}\mbox{\hyperlink{classentt_1_1scheduler}{00044}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classentt_1_1scheduler}{scheduler}}\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00045}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{00045}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00046}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{00046}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{instance\_type}}\ =\ std::unique\_ptr<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(*)(\textcolor{keywordtype}{void}\ *)>;}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00047}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476}{00047}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476}{update\_fn\_type}}\ =\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ \&,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}},\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00048}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282}{00048}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282}{abort\_fn\_type}}\ =\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ \&,\ \textcolor{keywordtype}{bool});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00049}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e}{00049}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e}{next\_type}}\ =\ std::unique\_ptr<process\_handler>;}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00051}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e}{00051}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{instance\_type}}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e}{instance}};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00052}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a9607e02db68b5cd295139bf27965499f}{00052}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476}{update\_fn\_type}}\ *\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a9607e02db68b5cd295139bf27965499f}{update}};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00053}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_ad229f08f958e22b2c2724077e7ed43d9}{00053}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282}{abort\_fn\_type}}\ *\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_ad229f08f958e22b2c2724077e7ed43d9}{abort}};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00054}\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}{00054}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e}{next\_type}}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}{next}};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00055}00055\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00057}\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{00057}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}}\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00058}\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_af4b2036467c055fb132b6314d7582bf1}{00058}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_af4b2036467c055fb132b6314d7582bf1}{continuation}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ *ref)}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{handler}}\{ref\}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{config_8h_a8c592b57b97f4686da8ffe09beb735a8}{ENTT\_ASSERT}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{handler}});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}},\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00065}\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a1b65b262e42f4091c55009a42d5ac080}{00065}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a1b65b262e42f4091c55009a42d5ac080}{then}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}\ \&\&...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(std::is\_base\_of\_v<process<Proc,\ Delta>,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}>);}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{proc}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{process\_handler::instance\_type}}\{\textcolor{keyword}{new}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}\{std::forward<Args>(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})...\},\ \&scheduler::deleter<Proc>\};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{handler}}-\/>\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}{next}}.reset(\textcolor{keyword}{new}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\{std::move(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{proc}}),\ \&scheduler::update<Proc>,\ \&scheduler::abort<Proc>,\ \textcolor{keyword}{nullptr}\});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{handler}}\ =\ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{handler}}-\/>\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}{next}}.get();}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Func>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00074}\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a7ebccdc9733ef530c6eaa0bb3b2eabd6}{00074}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a7ebccdc9733ef530c6eaa0bb3b2eabd6}{then}}(Func\ \&\&func)\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{then<process\_adaptor<std::decay\_t<Func>}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}>>(std::forward<Func>(func));}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00078}00078\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00079}\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{00079}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ *\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{handler}};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00080}00080\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00082}00082\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Proc>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00083}\mbox{\hyperlink{classentt_1_1scheduler_af00ff2ab63a59428ed333e2864a0b553}{00083}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classentt_1_1scheduler_af00ff2ab63a59428ed333e2864a0b553}{update}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ \&handler,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}},\ \textcolor{keywordtype}{void}\ *data)\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00084}00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ *\mbox{\hyperlink{classentt_1_1process}{process}}\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}\ *\textcolor{keyword}{>}(handler.\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e}{instance}}.get());}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classentt_1_1process}{process}}-\/>\mbox{\hyperlink{classentt_1_1process_aacc7fe0ef3265113079c70ff8cd9478d}{tick}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}},\ data);}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ dead\ =\ \mbox{\hyperlink{classentt_1_1process}{process}}-\/>\mbox{\hyperlink{classentt_1_1process_ad83f2550ca63e03af126a07e4ae5d9dd}{dead}}();}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(dead)\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(handler.\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}{next}}\ \&\&\ !\mbox{\hyperlink{classentt_1_1process}{process}}-\/>\mbox{\hyperlink{classentt_1_1process_a6ac63863bf823806d813b046769b4419}{rejected}}())\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ handler\ =\ std::move(*handler.\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}{next}});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ forces\ the\ process\ to\ exit\ the\ uninitialized\ state}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dead\ =\ handler.\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a9607e02db68b5cd295139bf27965499f}{update}}(handler,\ \{\},\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ handler.\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e}{instance}}.reset();}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ dead;}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00102}00102\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Proc>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00103}\mbox{\hyperlink{classentt_1_1scheduler_a4287ee859d2aa5180b1b57e0bec84bb4}{00103}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classentt_1_1scheduler_a4287ee859d2aa5180b1b57e0bec84bb4}{abort}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ \&handler,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{immediately}})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}\ *\textcolor{keyword}{>}(handler.\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e}{instance}}.get())-\/>\mbox{\hyperlink{classentt_1_1scheduler_a4287ee859d2aa5180b1b57e0bec84bb4}{abort}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{immediately}});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00105}00105\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00107}00107\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Proc>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00108}\mbox{\hyperlink{classentt_1_1scheduler_aa26dd437f486ee9fdabb27d112b09427}{00108}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classentt_1_1scheduler_aa26dd437f486ee9fdabb27d112b09427}{deleter}}(\textcolor{keywordtype}{void}\ *\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{proc}})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}\ *\textcolor{keyword}{>}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{proc}});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00110}00110\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00112}00112\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00114}\mbox{\hyperlink{classentt_1_1scheduler_afcec47d6ec28a994af2a7097348ce59f}{00114}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1scheduler_afcec47d6ec28a994af2a7097348ce59f}{size\_type}}\ =\ std::size\_t;}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00117}\mbox{\hyperlink{classentt_1_1scheduler_a49a81e662dc26831f4a951a715705d6e}{00117}}\ \ \ \ \ \mbox{\hyperlink{classentt_1_1scheduler_a49a81e662dc26831f4a951a715705d6e}{scheduler}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00120}\mbox{\hyperlink{classentt_1_1scheduler_af582ffea72368a83ea4dd7d9e563f715}{00120}}\ \ \ \ \ \mbox{\hyperlink{classentt_1_1scheduler_af582ffea72368a83ea4dd7d9e563f715}{scheduler}}(\mbox{\hyperlink{classentt_1_1scheduler}{scheduler}}\ \&\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00123}\mbox{\hyperlink{classentt_1_1scheduler_a8d55c412ecdb828550727592a787ceab}{00123}}\ \ \ \ \ \mbox{\hyperlink{classentt_1_1scheduler}{scheduler}}\ \&\ \mbox{\hyperlink{classentt_1_1scheduler_a8d55c412ecdb828550727592a787ceab}{operator=}}(\mbox{\hyperlink{classentt_1_1scheduler}{scheduler}}\ \&\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00129}\mbox{\hyperlink{classentt_1_1scheduler_ab0c473e6d4733bdb78f3dc26147de4ad}{00129}}\ \ \ \ \ \mbox{\hyperlink{classentt_1_1scheduler_afcec47d6ec28a994af2a7097348ce59f}{size\_type}}\ \mbox{\hyperlink{classentt_1_1scheduler_ab0c473e6d4733bdb78f3dc26147de4ad}{size}}()\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00130}00130\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.size();}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00131}00131\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00137}\mbox{\hyperlink{classentt_1_1scheduler_a817d93653aec6a479b920143bd21edbb}{00137}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classentt_1_1scheduler_a817d93653aec6a479b920143bd21edbb}{empty}}()\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00138}00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.empty();}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00139}00139\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00147}\mbox{\hyperlink{classentt_1_1scheduler_a5a0f92dbe54b58751237a567e86805e0}{00147}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classentt_1_1scheduler_a5a0f92dbe54b58751237a567e86805e0}{clear}}()\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00148}00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.clear();}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00149}00149\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00176}00176\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}},\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00177}\mbox{\hyperlink{classentt_1_1scheduler_a729c83e1983123c642a08cda67e486e3}{00177}}\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classentt_1_1scheduler_a729c83e1983123c642a08cda67e486e3}{attach}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}\ \&\&...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00178}00178\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(std::is\_base\_of\_v<process<Proc,\ Delta>,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}>);}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00179}00179\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{proc}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{process\_handler::instance\_type}}\{\textcolor{keyword}{new}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}\{std::forward<Args>(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})...\},\ \&scheduler::deleter<Proc>\};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00180}00180\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\_handler}}\ handler\{std::move(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{proc}}),\ \&scheduler::update<Proc>,\ \&scheduler::abort<Proc>,\ \textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00181}00181\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ forces\ the\ process\ to\ exit\ the\ uninitialized\ state}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00182}00182\ \ \ \ \ \ \ \ \ handler.\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a9607e02db68b5cd295139bf27965499f}{update}}(handler,\ \{\},\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00183}00183\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}}\{\&\mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.emplace\_back(std::move(handler))\};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00184}00184\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00185}00185\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00237}00237\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Func>}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00238}\mbox{\hyperlink{classentt_1_1scheduler_a871812d08af8483316d1ce5d1e9d686f}{00238}}\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classentt_1_1scheduler_a871812d08af8483316d1ce5d1e9d686f}{attach}}(Func\ \&\&func)\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00239}00239\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}}\ =\ \mbox{\hyperlink{structentt_1_1process__adaptor}{process\_adaptor<std::decay\_t<Func>}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}>;}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00240}00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{attach<Proc>}}(std::forward<Func>(func));}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00241}00241\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00242}00242\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00254}\mbox{\hyperlink{classentt_1_1scheduler_a827eae426378df9ed9190752156a4154}{00254}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classentt_1_1scheduler_a827eae426378df9ed9190752156a4154}{update}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}},\ \textcolor{keywordtype}{void}\ *data\ =\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00255}00255\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{clean}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00256}00256\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00257}00257\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{pos}}\ =\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.size();\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{pos}};\ -\/-\/\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{pos}})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00258}00258\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \&handler\ =\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}[\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{pos}}-\/1];}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00259}00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ dead\ =\ handler.update(handler,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}},\ data);}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00260}00260\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{clean}}\ =\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{clean}}\ ||\ dead;}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00261}00261\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00262}00262\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00263}00263\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{clean}})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00264}00264\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.erase(std::remove\_if(\mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.begin(),\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.end(),\ [](\textcolor{keyword}{auto}\ \&handler)\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00265}00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ !handler.instance;}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \}),\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.end());}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00267}00267\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00268}00268\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00269}00269\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00280}\mbox{\hyperlink{classentt_1_1scheduler_aabc25388bff1b3b0770f913f54b915f2}{00280}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classentt_1_1scheduler_aabc25388bff1b3b0770f913f54b915f2}{abort}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{immediately}}\ =\ \textcolor{keyword}{false})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00281}00281\ \ \ \ \ \ \ \ \ \textcolor{keyword}{decltype}(\mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}})\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{exec}};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00282}00282\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{exec}}.swap(\mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00283}00283\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00284}00284\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ \&\&handler:\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{exec}})\ \{}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00285}00285\ \ \ \ \ \ \ \ \ \ \ \ \ handler.abort(handler,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{immediately}});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00286}00286\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00287}00287\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00288}00288\ \ \ \ \ \ \ \ \ std::move(\mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.begin(),\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.end(),\ std::back\_inserter(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{exec}}));}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00289}00289\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}.swap(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{exec}});}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00290}00290\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00291}00291\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00292}00292\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00293}\mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{00293}}\ \ \ \ \ std::vector<process\_handler>\ \mbox{\hyperlink{classentt_1_1scheduler_a2f62804b045cb4344b6ba2333f4bcb09}{handlers}}\{\};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00294}00294\ \};}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00295}00295\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00296}00296\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00297}00297\ \}}
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00298}00298\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00299}00299\ }
+\DoxyCodeLine{\Hypertarget{scheduler_8hpp_source_l00300}00300\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

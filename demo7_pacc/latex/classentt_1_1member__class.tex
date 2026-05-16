@@ -1,0 +1,91 @@
+\doxysection{entt\+::member\+\_\+class\texorpdfstring{$<$}{<} Member \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1member__class}{}\label{classentt_1_1member__class}\index{entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}}
+
+
+Extracts the class of a non-\/static member object or function.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+traits.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1member__class_aa512dd4465bfab2dc09f759ae882a08a}{type}} = std\+::remove\+\_\+pointer\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(\mbox{\hyperlink{classentt_1_1member__class_a4eb114373e0235178e0956742ef47453}{clazz}}(std\+::declval$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$()))$>$
+\begin{DoxyCompactList}\small\item\em The class of the given non-\/static member object or function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1member__class_a4eb114373e0235178e0956742ef47453}{clazz}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Class\+::\texorpdfstring{$\ast$}{*})(Args...))
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1member__class_a4c95a47536560c2d6872205a89a9090a}{clazz}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Class\+::\texorpdfstring{$\ast$}{*})(Args...) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1member__class_a37a7e7da466c9afbd42a49dcd8f2419e}{clazz}} (Type Class\+::\texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}}$>$\newline
+class entt\+::member\+\_\+class$<$ Member $>$}
+Extracts the class of a non-\/static member object or function. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Member} & A pointer to a non-\/static member object or function. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{type__traits_8hpp_source}{type\+\_\+traits.\+hpp}} 第 \mbox{\hyperlink{type__traits_8hpp_source_l00195}{195}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1member__class_aa512dd4465bfab2dc09f759ae882a08a}\label{classentt_1_1member__class_aa512dd4465bfab2dc09f759ae882a08a} 
+\index{entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}!type@{type}}
+\index{type@{type}!entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1member__class}{entt\+::member\+\_\+class}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$\+::type =  std\+::remove\+\_\+pointer\+\_\+t$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(\mbox{\hyperlink{classentt_1_1member__class_a4eb114373e0235178e0956742ef47453}{clazz}}(std\+::declval$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}}$>$()))$>$}
+
+
+
+The class of the given non-\/static member object or function. 
+
+
+
+在文件 \mbox{\hyperlink{type__traits_8hpp_source}{type\+\_\+traits.\+hpp}} 第 \mbox{\hyperlink{type__traits_8hpp_source_l00209}{209}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1member__class_a4c95a47536560c2d6872205a89a9090a}\label{classentt_1_1member__class_a4c95a47536560c2d6872205a89a9090a} 
+\index{entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}!clazz@{clazz}}
+\index{clazz@{clazz}!entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}}
+\doxysubsubsection{\texorpdfstring{clazz()}{clazz()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1member__class}{entt\+::member\+\_\+class}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$\+::clazz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Class\+::\texorpdfstring{$\ast$}{*})(Args...) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classentt_1_1member__class_a4eb114373e0235178e0956742ef47453}\label{classentt_1_1member__class_a4eb114373e0235178e0956742ef47453} 
+\index{entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}!clazz@{clazz}}
+\index{clazz@{clazz}!entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}}
+\doxysubsubsection{\texorpdfstring{clazz()}{clazz()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1member__class}{entt\+::member\+\_\+class}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$\+::clazz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Class\+::\texorpdfstring{$\ast$}{*})(Args...)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classentt_1_1member__class_a37a7e7da466c9afbd42a49dcd8f2419e}\label{classentt_1_1member__class_a37a7e7da466c9afbd42a49dcd8f2419e} 
+\index{entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}!clazz@{clazz}}
+\index{clazz@{clazz}!entt::member\_class$<$ Member $>$@{entt::member\_class$<$ Member $>$}}
+\doxysubsubsection{\texorpdfstring{clazz()}{clazz()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1member__class}{entt\+::member\+\_\+class}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$\+::clazz (\begin{DoxyParamCaption}\item[{Type Class\+::\texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{type__traits_8hpp}{type\+\_\+traits.\+hpp}}\end{DoxyCompactItemize}

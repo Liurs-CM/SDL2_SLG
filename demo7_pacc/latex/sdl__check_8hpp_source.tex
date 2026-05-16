@@ -1,0 +1,47 @@
+\doxysection{sdl\+\_\+check.\+hpp}
+\hypertarget{sdl__check_8hpp_source}{}\label{sdl__check_8hpp_source}\index{src/util/sdl\_check.hpp@{src/util/sdl\_check.hpp}}
+\mbox{\hyperlink{sdl__check_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ sdl\_check.hpp}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/4/20.}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ UTIL\_SDL\_CHECK\_HPP}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ UTIL\_SDL\_CHECK\_HPP}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <SDL\_error.h>}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00015}\mbox{\hyperlink{namespaceSDL}{00015}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceSDL}{SDL}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00017}\mbox{\hyperlink{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7}{00017}}\ [[noreturn]]\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7}{raise}}()\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00018}00018\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *error\ =\ SDL\_GetError();}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00019}00019\ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error\{error\};}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00022}00022\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Ptr>}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00023}\mbox{\hyperlink{namespaceSDL_a2fa6e75c27e8977abfaf9438cd2297a3}{00023}}\ [[nodiscard]]\ Ptr\ *\mbox{\hyperlink{namespaceSDL_a2fa6e75c27e8977abfaf9438cd2297a3}{check}}(Ptr\ *ptr)\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00024}00024\ \ \ \textcolor{keywordflow}{if}\ (ptr\ ==\ \textcolor{keyword}{nullptr})\ \mbox{\hyperlink{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7}{raise}}();}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00025}00025\ \ \ \textcolor{keywordflow}{return}\ ptr;}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00028}\mbox{\hyperlink{namespaceSDL_a939cd2d3e131381bfa4582b274657897}{00028}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceSDL_a2fa6e75c27e8977abfaf9438cd2297a3}{check}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ code)\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00029}00029\ \ \ \textcolor{keywordflow}{if}\ (code\ <\ 0)\ \mbox{\hyperlink{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7}{raise}}();}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00030}00030\ \ \ \textcolor{keywordflow}{return}\ code;}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00031}00031\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00035}00035\ \textcolor{preprocessor}{\#ifdef\ DISABLE\_SDL\_ERROR\_CHECK}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00036}00036\ \textcolor{preprocessor}{\#\ \ define\ SDL\_CHECK(EXPR)\ EXPR}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00037}00037\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00038}\mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{00038}}\ \textcolor{preprocessor}{\#\ \ define\ SDL\_CHECK(EXPR)\ ::SDL::check(EXPR)}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00039}00039\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{sdl__check_8hpp_source_l00041}00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

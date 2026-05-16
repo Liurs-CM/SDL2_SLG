@@ -1,0 +1,39 @@
+<map id="Game::render" name="Game::render">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,83,116,108"/>
+<area shape="rect" id="Node000002" href="$render_8cpp.html#abbc07497ce9d78339151da774bb48d06" title=" " alt="" coords="174,8,263,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,80,163,42,175,37,177,41,165,47,88,85"/>
+<area shape="rect" id="Node000006" href="$render_8cpp.html#ac325380f09e1521aef40a26f61625c70" title=" " alt="" coords="174,57,263,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="116,84,160,77,161,82,117,89"/>
+<area shape="rect" id="Node000007" href="$render_8cpp.html#abcb0909174def354f232ea91d6b3c2e4" title=" " alt="" coords="167,157,271,183"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="90,106,180,149,178,154,88,111"/>
+<area shape="rect" id="Node000013" href="$render_8cpp.html#a59dd32882d5a8ef5d73e77fec1d193b0" title=" " alt="" coords="164,107,273,132"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="117,101,151,106,150,112,116,106"/>
+<area shape="rect" id="Node000003" href="$classSDL_1_1QuadWriter.html#a120e5f080bf2bfc10a7d925b336c9cd6" title=" " alt="" coords="323,5,501,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,17,309,17,309,22,264,23"/>
+<area shape="rect" id="Node000004" href="$classSDL_1_1QuadWriter.html#a11220acce1e5ca1aa568ffc603a5ce13" title=" " alt="" coords="321,55,503,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="264,29,346,49,345,54,263,34"/>
+<area shape="rect" id="Node000005" href="$classSDL_1_1QuadWriter.html#a2e28cc04be1ed5a29fb8636c2c6c8193" title=" " alt="" coords="322,104,502,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="254,31,275,42,290,55,299,67,308,78,323,89,338,97,336,101,320,94,305,82,295,70,286,59,272,47,252,36"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="263,55,321,39,349,32,351,37,322,45,264,61"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="264,67,308,66,308,71,264,72"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="264,78,346,98,345,103,263,83"/>
+<area shape="poly" id="edge14_Node000007_Node000003" title=" " alt="" coords="252,155,271,142,288,116,293,91,300,65,308,52,320,40,326,35,329,39,323,44,312,56,305,67,299,92,293,118,275,145,255,159"/>
+<area shape="poly" id="edge15_Node000007_Node000004" title=" " alt="" coords="249,155,272,141,286,128,294,115,304,102,320,89,332,83,334,87,323,94,308,106,299,118,290,131,275,145,252,159"/>
+<area shape="poly" id="edge16_Node000007_Node000005" title=" " alt="" coords="265,155,351,130,353,136,266,160"/>
+<area shape="rect" id="Node000008" href="$classentt_1_1basic__registry.html#a696e43e4d153ebfc9370d2f9b5fe3984" title="Returns references to the given components for an entity." alt="" coords="325,268,499,293"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="234,181,271,217,323,253,340,261,338,266,320,258,268,221,230,185"/>
+<area shape="rect" id="Node000010" href="$classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258" title="Checks if an entity has all the given components." alt="" coords="323,317,501,343"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="228,181,263,241,290,275,323,304,333,310,330,314,320,308,286,279,258,244,224,184"/>
+<area shape="rect" id="Node000011" href="$dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="383,219,441,244"/>
+<area shape="poly" id="edge17_Node000007_Node000011" title=" " alt="" coords="255,180,322,203,370,218,368,223,321,209,253,185"/>
+<area shape="rect" id="Node000012" href="$classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="339,154,485,194"/>
+<area shape="poly" id="edge18_Node000007_Node000012" title=" " alt="" coords="271,168,325,170,325,175,271,174"/>
+<area shape="rect" id="Node000009" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="551,286,697,326"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="500,288,538,293,537,298,499,294"/>
+<area shape="poly" id="edge13_Node000010_Node000009" title=" " alt="" coords="501,317,536,313,537,319,501,323"/>
+<area shape="poly" id="edge20_Node000013_Node000003" title=" " alt="" coords="251,104,272,92,286,79,295,66,304,53,320,40,332,33,334,38,323,44,308,56,299,69,290,82,275,96,254,109"/>
+<area shape="poly" id="edge21_Node000013_Node000004" title=" " alt="" coords="265,104,321,89,349,81,351,86,322,94,267,109"/>
+<area shape="poly" id="edge22_Node000013_Node000005" title=" " alt="" coords="274,116,308,115,308,121,274,121"/>
+<area shape="poly" id="edge23_Node000013_Node000011" title=" " alt="" coords="254,130,275,143,290,159,299,175,308,190,323,204,346,215,370,223,368,228,344,220,320,208,303,193,294,178,286,162,272,147,252,134"/>
+<area shape="poly" id="edge24_Node000013_Node000012" title=" " alt="" coords="265,129,328,148,326,153,263,135"/>
+</map>

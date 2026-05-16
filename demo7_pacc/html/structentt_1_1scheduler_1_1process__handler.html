@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::scheduler&lt; Delta &gt;::process_handler结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1scheduler.html">scheduler</a></li><li class="navelem"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structentt_1_1scheduler_1_1process__handler-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::scheduler&lt; Delta &gt;::process_handler结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a333e92a92500eab7f7753bd2ca720601" id="r_a333e92a92500eab7f7753bd2ca720601"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">instance_type</a> = std::unique_ptr&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(*)(<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> *)&gt;</td></tr>
+<tr class="separator:a333e92a92500eab7f7753bd2ca720601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e7a5edb76ab787986d7084f9997476" id="r_a18e7a5edb76ab787986d7084f9997476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a18e7a5edb76ab787986d7084f9997476">update_fn_type</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>(<a class="el" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> *)</td></tr>
+<tr class="separator:a18e7a5edb76ab787986d7084f9997476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410f87944d912702622443a4c5f01282" id="r_a410f87944d912702622443a4c5f01282"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a410f87944d912702622443a4c5f01282">abort_fn_type</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<a class="el" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>)</td></tr>
+<tr class="separator:a410f87944d912702622443a4c5f01282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e14d9527379eb030856b2033dd4b83e" id="r_a7e14d9527379eb030856b2033dd4b83e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a7e14d9527379eb030856b2033dd4b83e">next_type</a> = std::unique_ptr&lt; <a class="el" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &gt;</td></tr>
+<tr class="separator:a7e14d9527379eb030856b2033dd4b83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a31de5f80a1919306715f727341463b9e" id="r_a31de5f80a1919306715f727341463b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">instance_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a31de5f80a1919306715f727341463b9e">instance</a></td></tr>
+<tr class="separator:a31de5f80a1919306715f727341463b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9607e02db68b5cd295139bf27965499f" id="r_a9607e02db68b5cd295139bf27965499f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a18e7a5edb76ab787986d7084f9997476">update_fn_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a9607e02db68b5cd295139bf27965499f">update</a></td></tr>
+<tr class="separator:a9607e02db68b5cd295139bf27965499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad229f08f958e22b2c2724077e7ed43d9" id="r_ad229f08f958e22b2c2724077e7ed43d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a410f87944d912702622443a4c5f01282">abort_fn_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#ad229f08f958e22b2c2724077e7ed43d9">abort</a></td></tr>
+<tr class="separator:ad229f08f958e22b2c2724077e7ed43d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7599d6a393fb54a2414fbfccd0da3c2d" id="r_a7599d6a393fb54a2414fbfccd0da3c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a7e14d9527379eb030856b2033dd4b83e">next_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a7599d6a393fb54a2414fbfccd0da3c2d">next</a></td></tr>
+<tr class="separator:a7599d6a393fb54a2414fbfccd0da3c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a>&gt;<br />
+struct entt::scheduler&lt; Delta &gt;::process_handler</div>
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00045">45</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a410f87944d912702622443a4c5f01282" name="a410f87944d912702622443a4c5f01282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410f87944d912702622443a4c5f01282">&#9670;&#160;</a></span>abort_fn_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::abort_fn_type =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<a class="el" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a333e92a92500eab7f7753bd2ca720601" name="a333e92a92500eab7f7753bd2ca720601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333e92a92500eab7f7753bd2ca720601">&#9670;&#160;</a></span>instance_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::instance_type =  std::unique_ptr&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(*)(<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> *)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7e14d9527379eb030856b2033dd4b83e" name="a7e14d9527379eb030856b2033dd4b83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e14d9527379eb030856b2033dd4b83e">&#9670;&#160;</a></span>next_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::next_type =  std::unique_ptr&lt;<a class="el" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18e7a5edb76ab787986d7084f9997476" name="a18e7a5edb76ab787986d7084f9997476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e7a5edb76ab787986d7084f9997476">&#9670;&#160;</a></span>update_fn_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::update_fn_type =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>(<a class="el" href="structentt_1_1scheduler_1_1process__handler.html">process_handler</a> &amp;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ad229f08f958e22b2c2724077e7ed43d9" name="ad229f08f958e22b2c2724077e7ed43d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad229f08f958e22b2c2724077e7ed43d9">&#9670;&#160;</a></span>abort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a410f87944d912702622443a4c5f01282">abort_fn_type</a>* <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::abort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a31de5f80a1919306715f727341463b9e" name="a31de5f80a1919306715f727341463b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31de5f80a1919306715f727341463b9e">&#9670;&#160;</a></span>instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a333e92a92500eab7f7753bd2ca720601">instance_type</a> <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::instance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00051">51</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="scheduler_8hpp_source.html#l00103">entt::scheduler&lt; Delta &gt;::abort()</a> , 以及 <a class="el" href="scheduler_8hpp_source.html#l00083">entt::scheduler&lt; Delta &gt;::update()</a>.</p>
+
+</div>
+</div>
+<a id="a7599d6a393fb54a2414fbfccd0da3c2d" name="a7599d6a393fb54a2414fbfccd0da3c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7599d6a393fb54a2414fbfccd0da3c2d">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a7e14d9527379eb030856b2033dd4b83e">next_type</a> <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00054">54</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="scheduler_8hpp_source.html#l00065">entt::scheduler&lt; Delta &gt;::continuation::then()</a> , 以及 <a class="el" href="scheduler_8hpp_source.html#l00083">entt::scheduler&lt; Delta &gt;::update()</a>.</p>
+
+</div>
+</div>
+<a id="a9607e02db68b5cd295139bf27965499f" name="a9607e02db68b5cd295139bf27965499f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9607e02db68b5cd295139bf27965499f">&#9670;&#160;</a></span>update</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html#a18e7a5edb76ab787986d7084f9997476">update_fn_type</a>* <a class="el" href="classentt_1_1scheduler.html">entt::scheduler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> &gt;::process_handler::update</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a> 第 <a class="el" href="scheduler_8hpp_source.html#l00052">52</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="scheduler_8hpp_source.html#l00177">entt::scheduler&lt; Delta &gt;::attach()</a> , 以及 <a class="el" href="scheduler_8hpp_source.html#l00083">entt::scheduler&lt; Delta &gt;::update()</a>.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>third_party/entt/process/<a class="el" href="scheduler_8hpp_source.html">scheduler.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

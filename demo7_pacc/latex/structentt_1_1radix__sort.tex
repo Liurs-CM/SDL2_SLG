@@ -1,0 +1,78 @@
+\doxysection{entt\+::radix\+\_\+sort\texorpdfstring{$<$}{<} Bit, N \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1radix__sort}{}\label{structentt_1_1radix__sort}\index{entt::radix\_sort$<$ Bit, N $>$@{entt::radix\_sort$<$ Bit, N $>$}}
+
+
+Function object for performing LSD radix sort.  
+
+
+
+
+{\ttfamily \#include $<$algorithm.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Getter}}  = identity$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1radix__sort_a1989f6fbe18d3d82fdea9745d6b9ee96}{operator()}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Getter}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{getter}}=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Getter}}\{\}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Sorts the elements in a range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$std\+::size\+\_\+t Bit, std\+::size\+\_\+t N$>$\newline
+struct entt\+::radix\+\_\+sort$<$ Bit, N $>$}
+Function object for performing LSD radix sort. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Bit} & Number of bits processed per pass. \\
+\hline
+{\em N} & Maximum number of bits to sort. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{algorithm_8hpp_source}{algorithm.\+hpp}} 第 \mbox{\hyperlink{algorithm_8hpp_source_l00082}{82}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1radix__sort_a1989f6fbe18d3d82fdea9745d6b9ee96}\label{structentt_1_1radix__sort_a1989f6fbe18d3d82fdea9745d6b9ee96} 
+\index{entt::radix\_sort$<$ Bit, N $>$@{entt::radix\_sort$<$ Bit, N $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!entt::radix\_sort$<$ Bit, N $>$@{entt::radix\_sort$<$ Bit, N $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$std\+::size\+\_\+t Bit, std\+::size\+\_\+t N$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Getter}}  = identity$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1radix__sort}{entt\+::radix\+\_\+sort}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Bit}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{N}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{first,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{last,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Getter}}}]{getter = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Getter}}\{\}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sorts the elements in a range. 
+
+Sorts the elements in a range using the given {\itshape getter} to access the actual data to be sorted.
+
+This implementation is inspired by the online book \href{http://www.pbr-book.org/3ed-2018/Primitives_and_Intersection_Acceleration/Bounding_Volume_Hierarchies.html\#RadixSort}{\texttt{ Physically Based Rendering}}.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em It} & Type of random access iterator. \\
+\hline
+{\em Getter} & Type of {\itshape getter} function object. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em first} & An iterator to the first element of the range to sort. \\
+\hline
+{\em last} & An iterator past the last element of the range to sort. \\
+\hline
+{\em getter} & A valid {\itshape getter} function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{algorithm_8hpp_source}{algorithm.\+hpp}} 第 \mbox{\hyperlink{algorithm_8hpp_source_l00101}{101}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{algorithm_8hpp}{algorithm.\+hpp}}\end{DoxyCompactItemize}

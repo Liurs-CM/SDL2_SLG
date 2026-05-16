@@ -1,0 +1,474 @@
+\doxysection{entt\+::basic\+\_\+runtime\+\_\+view\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1basic__runtime__view}{}\label{classentt_1_1basic__runtime__view}\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+
+
+Runtime view.  
+
+
+
+
+{\ttfamily \#include $<$runtime\+\_\+view.\+hpp$>$}
+
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classentt_1_1basic__runtime__view_1_1view__iterator}{view\+\_\+iterator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a7ede80f53e93473099819167d42bf2f1}{entity\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_aabb4450ce3d686fe05bd92e5975d11fb}{size\+\_\+type}} = std\+::size\+\_\+t
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}{iterator}} = \mbox{\hyperlink{classentt_1_1basic__runtime__view_1_1view__iterator}{view\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em Input iterator type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__runtime__view_aabb4450ce3d686fe05bd92e5975d11fb}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_ab91318abb3728adf349cd08c428c2be8}{size}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Estimates the number of entities that have the given components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a2b4be964c6e2a95073ab112693ff1fd1}{empty}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if the view is definitely empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}{iterator}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_aa1d8a9b29404f27c02ff496fb52318ec}{begin}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the first entity that has the given components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}{iterator}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a5fc38f0e738d83d81a98b65b0e45d30b}{end}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator that is past the last entity that has the given components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_ace695506c87fd0299c49ce90e816074f}{contains}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a7ede80f53e93473099819167d42bf2f1}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if a view contains an entity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a79fe059a28f768f4dc82edf48438cce0}{each}} (Func func) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates entities and applies the given function object to them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a17144590c4e5f5086b0d3b8c9ba70dc1}{underlying\+\_\+iterator}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\mbox{\hyperlink{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}{\+::iterator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__runtime__view_a6946efa47c98101857c6a7f6abdda079}{basic\+\_\+runtime\+\_\+view}} (std\+::vector$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{others}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_afef4c22c9585d5445aff71349b40f706}{valid}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classentt_1_1basic__runtime__view_aec935cf26f01b0e80d1d519cf38426f5}{pools}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a60c928831c22b7dd2216dbc469f68f24}{basic\+\_\+registry$<$ Entity $>$}}
+\begin{DoxyCompactList}\small\item\em A registry is allowed to create views. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$\newline
+class entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$}
+Runtime view. 
+
+Runtime views iterate over those entities that have at least all the given components in their bags. During initialization, a runtime view looks at the number of entities available for each component and picks up a reference to the smallest set of candidate entities in order to get a performance boost when iterate.~\newline
+ Order of elements during iterations are highly dependent on the order of the underlying data structures. See \doxylink{classentt_1_1sparse__set}{sparse\+\_\+set} and its specializations for more details.
+
+{\bfseries{Important}} 
+
+Iterators aren\textquotesingle{}t invalidated if\+:
+
+
+\begin{DoxyItemize}
+\item New instances of the given components are created and assigned to entities.
+\item The entity currently pointed is modified (as an example, if one of the given components is removed from the entity to which the iterator points).
+\item The entity currently pointed is destroyed.
+\end{DoxyItemize}
+
+In all the other cases, modifying the pools of the given components in any way invalidates all the iterators and using them results in undefined behavior.
+
+\begin{DoxyNote}{注解}
+Views share references to the underlying data structures of the registry that generated them. Therefore any change to the entities and to the components made by means of the registry are immediately reflected by the views, unless a pool was missing when the view was built (in this case, the view won\textquotesingle{}t have a valid reference and won\textquotesingle{}t be updated accordingly).
+\end{DoxyNote}
+\begin{DoxyWarning}{警告}
+Lifetime of a view must not overcome that of the registry that generated it. In any other case, attempting to use a view results in undefined behavior.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Entity} & A valid entity type (see \doxylink{structentt_1_1entt__traits}{entt\+\_\+traits} for more details). \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00057}{57}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1basic__runtime__view_a7ede80f53e93473099819167d42bf2f1}\label{classentt_1_1basic__runtime__view_a7ede80f53e93473099819167d42bf2f1} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!entity\_type@{entity\_type}}
+\index{entity\_type@{entity\_type}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_type}{entity\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::entity\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}}
+
+
+
+Underlying entity identifier. 
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00150}{150}} 行定义.
+
+\Hypertarget{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}\label{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::iterator =  \mbox{\hyperlink{classentt_1_1basic__runtime__view_1_1view__iterator}{view\+\_\+iterator}}}
+
+
+
+Input iterator type. 
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00154}{154}} 行定义.
+
+\Hypertarget{classentt_1_1basic__runtime__view_aabb4450ce3d686fe05bd92e5975d11fb}\label{classentt_1_1basic__runtime__view_aabb4450ce3d686fe05bd92e5975d11fb} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::size\+\_\+type =  std\+::size\+\_\+t}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00152}{152}} 行定义.
+
+\Hypertarget{classentt_1_1basic__runtime__view_a17144590c4e5f5086b0d3b8c9ba70dc1}\label{classentt_1_1basic__runtime__view_a17144590c4e5f5086b0d3b8c9ba70dc1} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!underlying\_iterator@{underlying\_iterator}}
+\index{underlying\_iterator@{underlying\_iterator}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{underlying\_iterator}{underlying\_iterator}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::underlying\+\_\+iterator =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$\mbox{\hyperlink{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}{\+::iterator}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00061}{61}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1basic__runtime__view_a6946efa47c98101857c6a7f6abdda079}\label{classentt_1_1basic__runtime__view_a6946efa47c98101857c6a7f6abdda079} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!basic\_runtime\_view@{basic\_runtime\_view}}
+\index{basic\_runtime\_view@{basic\_runtime\_view}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_runtime\_view()}{basic\_runtime\_view()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::basic\+\_\+runtime\+\_\+view (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \texorpdfstring{$\ast$}{*} $>$}]{others }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00133}{133}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1basic__runtime__view_aa1d8a9b29404f27c02ff496fb52318ec}\label{classentt_1_1basic__runtime__view_aa1d8a9b29404f27c02ff496fb52318ec} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!begin@{begin}}
+\index{begin@{begin}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}{iterator}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an iterator to the first entity that has the given components. 
+
+The returned iterator points to the first entity that has the given components. If the view is empty, the returned iterator will be equal to {\ttfamily \doxylink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53}{end()}}.
+
+\begin{DoxyNote}{注解}
+Input iterators stay true to the order imposed to the underlying data structures.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+An iterator to the first entity that has the given components. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00186}{186}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{runtime__view_8hpp_source_l00255}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::pools}} , 以及 \mbox{\hyperlink{runtime__view_8hpp_source_l00144}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::valid()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{runtime__view_8hpp_source_l00102}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::view\+\_\+iterator\+::operator-\/-\/()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classentt_1_1basic__runtime__view_aa1d8a9b29404f27c02ff496fb52318ec_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__runtime__view_aa1d8a9b29404f27c02ff496fb52318ec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__runtime__view_ace695506c87fd0299c49ce90e816074f}\label{classentt_1_1basic__runtime__view_ace695506c87fd0299c49ce90e816074f} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!contains@{contains}}
+\index{contains@{contains}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__runtime__view_a7ede80f53e93473099819167d42bf2f1}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a view contains an entity. 
+
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+True if the view contains the given entity, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00226}{226}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{runtime__view_8hpp_source_l00255}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::pools}} , 以及 \mbox{\hyperlink{runtime__view_8hpp_source_l00144}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::valid()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classentt_1_1basic__runtime__view_ace695506c87fd0299c49ce90e816074f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__runtime__view_a79fe059a28f768f4dc82edf48438cce0}\label{classentt_1_1basic__runtime__view_a79fe059a28f768f4dc82edf48438cce0} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!each@{each}}
+\index{each@{each}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::each (\begin{DoxyParamCaption}\item[{Func}]{func }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates entities and applies the given function object to them. 
+
+The function object is invoked for each entity. It is provided only with the entity itself. To get the components, users can use the registry with which the view was built.~\newline
+ The signature of the function should be equivalent to the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__runtime__view_a7ede80f53e93473099819167d42bf2f1}{entity\_type}});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Func} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em func} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00248}{248}} 行定义.
+
+\Hypertarget{classentt_1_1basic__runtime__view_a2b4be964c6e2a95073ab112693ff1fd1}\label{classentt_1_1basic__runtime__view_a2b4be964c6e2a95073ab112693ff1fd1} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!empty@{empty}}
+\index{empty@{empty}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the view is definitely empty. 
+
+\begin{DoxyReturn}{返回}
+True if the view is definitely empty, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00168}{168}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{runtime__view_8hpp_source_l00255}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::pools}} , 以及 \mbox{\hyperlink{runtime__view_8hpp_source_l00144}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::valid()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classentt_1_1basic__runtime__view_a2b4be964c6e2a95073ab112693ff1fd1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__runtime__view_a5fc38f0e738d83d81a98b65b0e45d30b}\label{classentt_1_1basic__runtime__view_a5fc38f0e738d83d81a98b65b0e45d30b} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!end@{end}}
+\index{end@{end}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__runtime__view_a9ae6398953c3d724227e0fb25a7b61bd}{iterator}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an iterator that is past the last entity that has the given components. 
+
+The returned iterator points to the entity following the last entity that has the given components. Attempting to dereference the returned iterator results in undefined behavior.
+
+\begin{DoxyNote}{注解}
+Input iterators stay true to the order imposed to the underlying data structures.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+An iterator to the entity following the last entity that has the given components. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00211}{211}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{runtime__view_8hpp_source_l00255}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::pools}} , 以及 \mbox{\hyperlink{runtime__view_8hpp_source_l00144}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::valid()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{runtime__view_8hpp_source_l00092}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::view\+\_\+iterator\+::operator++()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classentt_1_1basic__runtime__view_a5fc38f0e738d83d81a98b65b0e45d30b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__runtime__view_a5fc38f0e738d83d81a98b65b0e45d30b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__runtime__view_ab91318abb3728adf349cd08c428c2be8}\label{classentt_1_1basic__runtime__view_ab91318abb3728adf349cd08c428c2be8} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!size@{size}}
+\index{size@{size}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__runtime__view_aabb4450ce3d686fe05bd92e5975d11fb}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Estimates the number of entities that have the given components. 
+
+\begin{DoxyReturn}{返回}
+Estimated number of entities that have the given components. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00160}{160}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{runtime__view_8hpp_source_l00255}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::pools}} , 以及 \mbox{\hyperlink{runtime__view_8hpp_source_l00144}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::valid()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classentt_1_1basic__runtime__view_ab91318abb3728adf349cd08c428c2be8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__runtime__view_afef4c22c9585d5445aff71349b40f706}\label{classentt_1_1basic__runtime__view_afef4c22c9585d5445aff71349b40f706} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!valid@{valid}}
+\index{valid@{valid}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00144}{144}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{runtime__view_8hpp_source_l00255}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::pools}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{runtime__view_8hpp_source_l00186}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::begin()}}, \mbox{\hyperlink{runtime__view_8hpp_source_l00226}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{runtime__view_8hpp_source_l00168}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::empty()}}, \mbox{\hyperlink{runtime__view_8hpp_source_l00211}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::end()}} , 以及 \mbox{\hyperlink{runtime__view_8hpp_source_l00160}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::size()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__runtime__view_afef4c22c9585d5445aff71349b40f706_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classentt_1_1basic__runtime__view_a60c928831c22b7dd2216dbc469f68f24}\label{classentt_1_1basic__runtime__view_a60c928831c22b7dd2216dbc469f68f24} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!basic\_registry$<$ Entity $>$@{basic\_registry$<$ Entity $>$}}
+\index{basic\_registry$<$ Entity $>$@{basic\_registry$<$ Entity $>$}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_registry$<$ Entity $>$}{basic\_registry< Entity >}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{friend}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A registry is allowed to create views. 
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00001}{1}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1basic__runtime__view_aec935cf26f01b0e80d1d519cf38426f5}\label{classentt_1_1basic__runtime__view_aec935cf26f01b0e80d1d519cf38426f5} 
+\index{entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}!pools@{pools}}
+\index{pools@{pools}!entt::basic\_runtime\_view$<$ Entity $>$@{entt::basic\_runtime\_view$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{pools}{pools}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+std\+::vector$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$ \texorpdfstring{$\ast$}{*}$>$ \mbox{\hyperlink{classentt_1_1basic__runtime__view}{entt\+::basic\+\_\+runtime\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::pools\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{runtime__view_8hpp_source}{runtime\+\_\+view.\+hpp}} 第 \mbox{\hyperlink{runtime__view_8hpp_source_l00255}{255}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{runtime__view_8hpp_source_l00186}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::begin()}}, \mbox{\hyperlink{runtime__view_8hpp_source_l00226}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{runtime__view_8hpp_source_l00168}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::empty()}}, \mbox{\hyperlink{runtime__view_8hpp_source_l00211}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::end()}}, \mbox{\hyperlink{runtime__view_8hpp_source_l00160}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::size()}} , 以及 \mbox{\hyperlink{runtime__view_8hpp_source_l00144}{entt\+::basic\+\_\+runtime\+\_\+view$<$ Entity $>$\+::valid()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{entity_2fwd_8hpp}{fwd.\+hpp}}\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{runtime__view_8hpp}{runtime\+\_\+view.\+hpp}}\end{DoxyCompactItemize}

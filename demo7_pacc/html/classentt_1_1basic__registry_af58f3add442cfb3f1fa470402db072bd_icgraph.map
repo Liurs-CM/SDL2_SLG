@@ -1,0 +1,20 @@
+<map id="entt::basic_registry::destroy" name="entt::basic_registry::destroy">
+<area shape="rect" id="Node000001" title="Destroys an entity." alt="" coords="437,197,584,237"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="545,186,533,179,511,176,491,178,479,183,475,189,477,196,472,198,470,188,476,179,490,173,511,171,535,174,548,181"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#aa4b08ad282560ead88ceeeddba16f552" title="Clears a whole registry or the pools for the given components." alt="" coords="232,5,379,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="490,187,449,123,420,89,388,59,368,48,371,43,391,55,424,85,453,119,495,184"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__continuous__loader.html#a039585b0cbba43a4791b74bbc181e6bd" title=" " alt="" coords="221,69,389,109"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="477,190,436,156,388,124,364,112,366,107,391,119,439,152,480,186"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#a6c163dcc335da90e727e2f40e67973b7" title="Destroys all the entities in a range." alt="" coords="232,133,379,173"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="432,196,369,176,371,171,433,191"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1basic__continuous__loader.html#aaaa1d17e50b1bdfccb43b8cc61ff9f31" title="Destroys those entities that have no components." alt="" coords="221,197,389,237"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="424,220,390,220,390,215,424,215"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1basic__snapshot__loader.html#aff688b0c41ccf78aaf17fbec3f1cf5c0" title="Destroys those entities that have no components." alt="" coords="227,261,383,301"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="433,244,371,264,369,259,432,239"/>
+<area shape="rect" id="Node000008" href="$classentt_1_1basic__continuous__loader.html#af37bd49192609004670c02bd5d633171" title="Helps to purge entities that no longer have a conterpart." alt="" coords="221,325,389,365"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="480,249,439,283,391,316,366,328,364,323,388,311,436,279,477,244"/>
+<area shape="rect" id="Node000009" href="$structentt_1_1basic__actor.html#a46dc913885c448e059e9ca7cf3a21221" title="Default destructor." alt="" coords="236,389,375,429"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="495,251,453,315,424,350,391,379,371,392,368,387,388,375,420,346,449,312,490,248"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__continuous__loader.html#aa699788e849cb797e923fc52c7745603" title="Restores entities that were in use during serialization." alt="" coords="5,69,173,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="207,92,174,92,174,87,207,87"/>
+</map>

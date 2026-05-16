@@ -1,0 +1,125 @@
+\doxysection{entt\+::meta\+\_\+handle结构体 参考}
+\hypertarget{structentt_1_1meta__handle}{}\label{structentt_1_1meta__handle}\index{entt::meta\_handle@{entt::meta\_handle}}
+
+
+Opaque pointers to instances of any type.  
+
+
+
+
+{\ttfamily \#include $<$meta.\+hpp$>$}
+
+
+
+entt\+::meta\+\_\+handle 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{structentt_1_1meta__handle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1meta__handle_aff6d3ac75c7bba434b2ebe6f5b12139f}{meta\+\_\+handle}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{structentt_1_1meta__handle_aa94695963e070475285a7d0e2e4eff5e}{meta\+\_\+handle}} (Type \&\&value) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Creates a handle that points to an unmanaged object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{structentt_1_1meta__handle_a8ef38834d879370c9d95ee6ffb2fde15}{operator\texorpdfstring{$\ast$}{*}}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Indirection operator for aliasing construction.   \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{structentt_1_1meta__handle_a59bf1e34e84436400b14f175adcd46cb}{any}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Opaque pointers to instances of any type. 
+
+A handle doesn\textquotesingle{}t perform copies and isn\textquotesingle{}t responsible for the contained object. It doesn\textquotesingle{}t prolong the lifetime of the pointed instance.~\newline
+ Handles are used to generate meta references to actual objects when needed. 
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00644}{644}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1meta__handle_aff6d3ac75c7bba434b2ebe6f5b12139f}\label{structentt_1_1meta__handle_aff6d3ac75c7bba434b2ebe6f5b12139f} 
+\index{entt::meta\_handle@{entt::meta\_handle}!meta\_handle@{meta\_handle}}
+\index{meta\_handle@{meta\_handle}!entt::meta\_handle@{entt::meta\_handle}}
+\doxysubsubsection{\texorpdfstring{meta\_handle()}{meta\_handle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+handle\+::meta\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00646}{646}} 行定义.
+
+\Hypertarget{structentt_1_1meta__handle_aa94695963e070475285a7d0e2e4eff5e}\label{structentt_1_1meta__handle_aa94695963e070475285a7d0e2e4eff5e} 
+\index{entt::meta\_handle@{entt::meta\_handle}!meta\_handle@{meta\_handle}}
+\index{meta\_handle@{meta\_handle}!entt::meta\_handle@{entt::meta\_handle}}
+\doxysubsubsection{\texorpdfstring{meta\_handle()}{meta\_handle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+entt\+::meta\+\_\+handle\+::meta\+\_\+handle (\begin{DoxyParamCaption}\item[{Type \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a handle that points to an unmanaged object. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of object to use to initialize the container. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value} & An instance of an object to use to initialize the container. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00656}{656}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1meta__handle_a8ef38834d879370c9d95ee6ffb2fde15}\label{structentt_1_1meta__handle_a8ef38834d879370c9d95ee6ffb2fde15} 
+\index{entt::meta\_handle@{entt::meta\_handle}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!entt::meta\_handle@{entt::meta\_handle}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} entt\+::meta\+\_\+handle\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indirection operator for aliasing construction.   
+
+\begin{DoxyReturn}{返回}
+A meta any that shares a reference to an unmanaged object.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00668}{668}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1meta__handle_a59bf1e34e84436400b14f175adcd46cb}\label{structentt_1_1meta__handle_a59bf1e34e84436400b14f175adcd46cb} 
+\index{entt::meta\_handle@{entt::meta\_handle}!any@{any}}
+\index{any@{any}!entt::meta\_handle@{entt::meta\_handle}}
+\doxysubsubsection{\texorpdfstring{any}{any}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} entt\+::meta\+\_\+handle\+::any\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00673}{673}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/meta/\mbox{\hyperlink{meta_8hpp}{meta.\+hpp}}\end{DoxyCompactItemize}

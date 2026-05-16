@@ -1,0 +1,15 @@
+<map id="entt::storage::insert" name="entt::storage::insert">
+<area shape="rect" id="Node000001" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="5,81,156,107"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="204,81,375,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,91,191,91,191,97,156,97"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="429,5,606,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,79,464,33,466,38,329,84"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="423,107,612,132"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="376,101,410,105,409,110,375,106"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="660,83,831,108"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="375,91,612,91,646,92,646,97,612,97,375,96"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="662,132,829,157"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="317,104,365,125,423,142,481,150,539,153,648,151,648,156,539,159,480,155,422,147,363,130,315,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="612,107,646,103,646,108,613,112"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="613,127,649,131,648,137,612,133"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="third_party/entt/fwd.hpp" name="third_party/entt/fwd.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="163,5,341,31"/>
+<area shape="rect" id="Node000002" href="$core_2fwd_8hpp.html" title=" " alt="" coords="78,152,183,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,33,144,51,126,64,112,80,106,94,107,109,118,139,113,141,102,110,101,93,107,77,122,60,141,46,183,28"/>
+<area shape="rect" id="Node000007" href="$entity_2fwd_8hpp.html" title=" " alt="" coords="121,79,236,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="242,33,202,71,199,67,238,29"/>
+<area shape="rect" id="Node000008" href="$resource_2fwd_8hpp.html" title=" " alt="" coords="260,79,393,104"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="266,29,306,67,303,71,262,33"/>
+<area shape="rect" id="Node000009" href="$signal_2fwd_8hpp.html" title=" " alt="" coords="418,79,534,104"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="289,28,428,72,426,77,287,33"/>
+<area shape="rect" id="Node000003" href="$config_8h.html" title=" " alt="" coords="67,225,195,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,178,133,212,128,212,128,178"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,299,72,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,253,66,292,63,288,114,249"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="96,299,165,324"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="133,251,133,285,128,285,128,251"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="190,299,282,324"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="149,248,209,289,206,293,146,253"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="173,106,148,142,144,139,169,103"/>
+</map>

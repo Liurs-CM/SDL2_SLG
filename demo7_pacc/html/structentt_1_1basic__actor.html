@@ -1,0 +1,1134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::basic_actor&lt; Entity &gt; 模板结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="structentt_1_1basic__actor.html">basic_actor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="structentt_1_1basic__actor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::basic_actor&lt; Entity &gt; 模板结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Dedicated to those who aren't confident with the entity-component-system architecture.  
+ <a href="structentt_1_1basic__actor.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="actor_8hpp_source.html">actor.hpp</a>&gt;</code></p>
+<div class="dynheader">
+entt::basic_actor&lt; Entity &gt; 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor__coll__graph.png" border="0" usemap="#aentt_1_1basic__actor_3_01Entity_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aentt_1_1basic__actor_3_01Entity_01_4_coll__map" id="aentt_1_1basic__actor_3_01Entity_01_4_coll__map">
+<area shape="rect" title="Dedicated to those who aren&#39;t confident with the entity&#45;component&#45;system architecture." alt="" coords="8,108,149,148"/>
+<area shape="rect" href="classentt_1_1basic__registry.html" title="Fast and reliable entity&#45;component system." alt="" coords="5,5,152,45"/>
+<area shape="poly" title=" " alt="" coords="81,59,81,108,76,108,76,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4577b087e2fe3e76dbd4516ae9064c6a" id="r_a4577b087e2fe3e76dbd4516ae9064c6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> = <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;</td></tr>
+<tr class="memdesc:a4577b087e2fe3e76dbd4516ae9064c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of registry used internally.  <br /></td></tr>
+<tr class="separator:a4577b087e2fe3e76dbd4516ae9064c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2e10f12014f5269be0b9ab055acfca" id="r_a2c2e10f12014f5269be0b9ab055acfca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a2c2e10f12014f5269be0b9ab055acfca">entity_type</a> = <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a></td></tr>
+<tr class="memdesc:a2c2e10f12014f5269be0b9ab055acfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying entity identifier.  <br /></td></tr>
+<tr class="separator:a2c2e10f12014f5269be0b9ab055acfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa18516f167228b18608e2f166d4221bc" id="r_aa18516f167228b18608e2f166d4221bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#aa18516f167228b18608e2f166d4221bc">basic_actor</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:aa18516f167228b18608e2f166d4221bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ee04b6533cba81bda114ada62dfd32" id="r_ae7ee04b6533cba81bda114ada62dfd32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#ae7ee04b6533cba81bda114ada62dfd32">basic_actor</a> (<a class="el" href="structentt_1_1basic__actor.html">basic_actor</a> &amp;&amp;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">other</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ae7ee04b6533cba81bda114ada62dfd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <br /></td></tr>
+<tr class="separator:ae7ee04b6533cba81bda114ada62dfd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32635ae3046ebca665adef6b3ef87ef3" id="r_a32635ae3046ebca665adef6b3ef87ef3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a32635ae3046ebca665adef6b3ef87ef3">basic_actor</a> (<a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp;ref)</td></tr>
+<tr class="memdesc:a32635ae3046ebca665adef6b3ef87ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an actor from a given registry.  <br /></td></tr>
+<tr class="separator:a32635ae3046ebca665adef6b3ef87ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a485086774e27688e467f4c28a3ba7" id="r_ab4a485086774e27688e467f4c28a3ba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#ab4a485086774e27688e467f4c28a3ba7">basic_actor</a> (<a class="el" href="structentt_1_1basic__actor.html#a2c2e10f12014f5269be0b9ab055acfca">entity_type</a> <a class="el" href="classentity.html">entity</a>, <a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp;ref) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ab4a485086774e27688e467f4c28a3ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an actor from a given entity.  <br /></td></tr>
+<tr class="separator:ab4a485086774e27688e467f4c28a3ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46dc913885c448e059e9ca7cf3a21221" id="r_a46dc913885c448e059e9ca7cf3a21221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a46dc913885c448e059e9ca7cf3a21221">~basic_actor</a> ()</td></tr>
+<tr class="memdesc:a46dc913885c448e059e9ca7cf3a21221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
+<tr class="separator:a46dc913885c448e059e9ca7cf3a21221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9561c520268b95e0961f25b199b5828" id="r_ac9561c520268b95e0961f25b199b5828"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html">basic_actor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#ac9561c520268b95e0961f25b199b5828">operator=</a> (<a class="el" href="structentt_1_1basic__actor.html">basic_actor</a> &amp;&amp;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">other</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ac9561c520268b95e0961f25b199b5828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <br /></td></tr>
+<tr class="separator:ac9561c520268b95e0961f25b199b5828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf572e19a5d9625fbf80cc4f00cba032" id="r_abf572e19a5d9625fbf80cc4f00cba032"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> Component , typename... Args&gt; </td></tr>
+<tr class="memitem:abf572e19a5d9625fbf80cc4f00cba032"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">decltype</a>(<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">auto</a>)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#abf572e19a5d9625fbf80cc4f00cba032">assign</a> (<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Args</a> &amp;&amp;... <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">args</a>)</td></tr>
+<tr class="memdesc:abf572e19a5d9625fbf80cc4f00cba032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the given component to an actor.  <br /></td></tr>
+<tr class="separator:abf572e19a5d9625fbf80cc4f00cba032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab740844d18ada7ad15988f808617a1a1" id="r_ab740844d18ada7ad15988f808617a1a1"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> Component &gt; </td></tr>
+<tr class="memitem:ab740844d18ada7ad15988f808617a1a1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#ab740844d18ada7ad15988f808617a1a1">remove</a> ()</td></tr>
+<tr class="memdesc:ab740844d18ada7ad15988f808617a1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given component from an actor.  <br /></td></tr>
+<tr class="separator:ab740844d18ada7ad15988f808617a1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22a9b6b33a34328a874c96e40f3e6d2" id="r_ad22a9b6b33a34328a874c96e40f3e6d2"><td class="memTemplParams" colspan="2">template&lt;typename... Component&gt; </td></tr>
+<tr class="memitem:ad22a9b6b33a34328a874c96e40f3e6d2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#ad22a9b6b33a34328a874c96e40f3e6d2">has</a> () <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">const</a></td></tr>
+<tr class="memdesc:ad22a9b6b33a34328a874c96e40f3e6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an actor has the given components.  <br /></td></tr>
+<tr class="separator:ad22a9b6b33a34328a874c96e40f3e6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1429f1e5b4a80f13219b99addd169f7c" id="r_a1429f1e5b4a80f13219b99addd169f7c"><td class="memTemplParams" colspan="2">template&lt;typename... Component&gt; </td></tr>
+<tr class="memitem:a1429f1e5b4a80f13219b99addd169f7c"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">get</a> () const</td></tr>
+<tr class="memdesc:a1429f1e5b4a80f13219b99addd169f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns references to the given components for an actor.  <br /></td></tr>
+<tr class="separator:a1429f1e5b4a80f13219b99addd169f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa85d0d013950f57fea284784c6c7bc2" id="r_afa85d0d013950f57fea284784c6c7bc2"><td class="memTemplParams" colspan="2">template&lt;typename... Component&gt; </td></tr>
+<tr class="memitem:afa85d0d013950f57fea284784c6c7bc2"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#afa85d0d013950f57fea284784c6c7bc2">get</a> ()</td></tr>
+<tr class="memdesc:afa85d0d013950f57fea284784c6c7bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns references to the given components for an actor.    <br /></td></tr>
+<tr class="separator:afa85d0d013950f57fea284784c6c7bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2752c70a8429962b4e0c5ca240e95a" id="r_afb2752c70a8429962b4e0c5ca240e95a"><td class="memTemplParams" colspan="2">template&lt;typename... Component&gt; </td></tr>
+<tr class="memitem:afb2752c70a8429962b4e0c5ca240e95a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#afb2752c70a8429962b4e0c5ca240e95a">try_get</a> () <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">const</a></td></tr>
+<tr class="memdesc:afb2752c70a8429962b4e0c5ca240e95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointers to the given components for an actor.  <br /></td></tr>
+<tr class="separator:afb2752c70a8429962b4e0c5ca240e95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9c5fdcdc7a524a917c419a59bed405" id="r_a2c9c5fdcdc7a524a917c419a59bed405"><td class="memTemplParams" colspan="2">template&lt;typename... Component&gt; </td></tr>
+<tr class="memitem:a2c9c5fdcdc7a524a917c419a59bed405"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a2c9c5fdcdc7a524a917c419a59bed405">try_get</a> ()</td></tr>
+<tr class="memdesc:a2c9c5fdcdc7a524a917c419a59bed405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointers to the given components for an actor.    <br /></td></tr>
+<tr class="separator:a2c9c5fdcdc7a524a917c419a59bed405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3ca3ac4de8d13726b500c0cc1b655d" id="r_a8f3ca3ac4de8d13726b500c0cc1b655d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">const</a> <a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a8f3ca3ac4de8d13726b500c0cc1b655d">backend</a> () <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a8f3ca3ac4de8d13726b500c0cc1b655d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the underlying registry.  <br /></td></tr>
+<tr class="separator:a8f3ca3ac4de8d13726b500c0cc1b655d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6ba04bccef40ff9755e72b87e37335" id="r_aad6ba04bccef40ff9755e72b87e37335"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#aad6ba04bccef40ff9755e72b87e37335">backend</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:aad6ba04bccef40ff9755e72b87e37335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the underlying registry.    <br /></td></tr>
+<tr class="separator:aad6ba04bccef40ff9755e72b87e37335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92d62c39e122692addbfd6b75ea6922" id="r_af92d62c39e122692addbfd6b75ea6922"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a2c2e10f12014f5269be0b9ab055acfca">entity_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#af92d62c39e122692addbfd6b75ea6922">entity</a> () <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:af92d62c39e122692addbfd6b75ea6922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the entity associated with an actor.  <br /></td></tr>
+<tr class="separator:af92d62c39e122692addbfd6b75ea6922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04982e3b8fac20ded6159b75ec98bd0" id="r_ae04982e3b8fac20ded6159b75ec98bd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#ae04982e3b8fac20ded6159b75ec98bd0">operator bool</a> () <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">const</a></td></tr>
+<tr class="memdesc:ae04982e3b8fac20ded6159b75ec98bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an actor refers to a valid entity or not.  <br /></td></tr>
+<tr class="separator:ae04982e3b8fac20ded6159b75ec98bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a79420f25d2ae7fe9b148d02bdab2d5e4" id="r_a79420f25d2ae7fe9b148d02bdab2d5e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a2c2e10f12014f5269be0b9ab055acfca">entity_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a79420f25d2ae7fe9b148d02bdab2d5e4">entt</a></td></tr>
+<tr class="separator:a79420f25d2ae7fe9b148d02bdab2d5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f9e3507d9c3ee0cb82c2a6ef48d4de" id="r_a07f9e3507d9c3ee0cb82c2a6ef48d4de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__actor.html#a07f9e3507d9c3ee0cb82c2a6ef48d4de">reg</a></td></tr>
+<tr class="separator:a07f9e3507d9c3ee0cb82c2a6ef48d4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a>&gt;<br />
+struct entt::basic_actor&lt; Entity &gt;</div><p>Dedicated to those who aren't confident with the entity-component-system architecture. </p>
+<p>Tiny wrapper around a registry, for all those users that aren't confident with entity-component-system architecture and prefer to iterate objects directly.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Entity</td><td>A valid entity type (see <a class="el" href="structentt_1_1entt__traits.html" title="Entity traits.">entt_traits</a> for more details). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00027">27</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a2c2e10f12014f5269be0b9ab055acfca" name="a2c2e10f12014f5269be0b9ab055acfca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2e10f12014f5269be0b9ab055acfca">&#9670;&#160;</a></span>entity_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">using</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::entity_type =  <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Underlying entity identifier. </p>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4577b087e2fe3e76dbd4516ae9064c6a" name="a4577b087e2fe3e76dbd4516ae9064c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4577b087e2fe3e76dbd4516ae9064c6a">&#9670;&#160;</a></span>registry_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">using</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::registry_type =  <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of registry used internally. </p>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa18516f167228b18608e2f166d4221bc" name="aa18516f167228b18608e2f166d4221bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18516f167228b18608e2f166d4221bc">&#9670;&#160;</a></span>basic_actor() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::basic_actor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00033">33</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_8hpp_source.html#l00174">entt::null</a>.</p>
+
+</div>
+</div>
+<a id="ae7ee04b6533cba81bda114ada62dfd32" name="ae7ee04b6533cba81bda114ada62dfd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ee04b6533cba81bda114ada62dfd32">&#9670;&#160;</a></span>basic_actor() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::basic_actor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__actor.html">basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move constructor. </p>
+<p>After actor move construction, instances that have been moved from are placed in a valid but unspecified state. It's highly discouraged to continue using them.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The instance to move from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00046">46</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32_cgraph" id="astructentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32_cgraph">
+<area shape="rect" title="Move constructor." alt="" coords="5,22,144,62"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c" title="Returns references to the given components for an actor." alt="" coords="192,29,351,55"/>
+<area shape="poly" title=" " alt="" coords="144,39,179,39,179,45,144,45"/>
+<area shape="poly" title=" " alt="" coords="239,31,232,21,236,11,249,5,271,3,298,6,309,15,306,19,296,11,271,8,251,10,240,15,238,20,243,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a32635ae3046ebca665adef6b3ef87ef3" name="a32635ae3046ebca665adef6b3ef87ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32635ae3046ebca665adef6b3ef87ef3">&#9670;&#160;</a></span>basic_actor() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::basic_actor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an actor from a given registry. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>An instance of the registry class. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab4a485086774e27688e467f4c28a3ba7" name="ab4a485086774e27688e467f4c28a3ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a485086774e27688e467f4c28a3ba7">&#9670;&#160;</a></span>basic_actor() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::basic_actor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__actor.html#a2c2e10f12014f5269be0b9ab055acfca">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an actor from a given entity. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>A valid entity identifier. </td></tr>
+    <tr><td class="paramname">ref</td><td>An instance of the registry class. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a46dc913885c448e059e9ca7cf3a21221" name="a46dc913885c448e059e9ca7cf3a21221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46dc913885c448e059e9ca7cf3a21221">&#9670;&#160;</a></span>~basic_actor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">virtual</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::~<a class="el" href="structentt_1_1basic__actor.html">basic_actor</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00072">72</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="registry_8hpp_source.html#l00587">entt::basic_registry&lt; Entity &gt;::destroy()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221_cgraph" id="astructentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221_cgraph">
+<area shape="rect" title="Default destructor." alt="" coords="5,29,144,69"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#af58f3add442cfb3f1fa470402db072bd" title="Destroys an entity." alt="" coords="192,29,339,69"/>
+<area shape="poly" title=" " alt="" coords="144,47,178,47,178,52,144,52"/>
+<area shape="poly" title=" " alt="" coords="229,30,227,20,233,11,246,5,265,3,288,6,300,13,297,17,286,11,265,8,247,10,237,15,233,21,235,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="abf572e19a5d9625fbf80cc4f00cba032" name="abf572e19a5d9625fbf80cc4f00cba032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf572e19a5d9625fbf80cc4f00cba032">&#9670;&#160;</a></span>assign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> Component , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">decltype</a>(<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">auto</a>) <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::assign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Args</a> &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns the given component to an actor. </p>
+<p>A new instance of the given component is created and initialized with the arguments provided (the component must have a proper constructor or be of aggregate type). Then the component is assigned to the actor.<br  />
+ In case the actor already has a component of the given type, it's replaced with the new one.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Type of the component to create. </td></tr>
+    <tr><td class="paramname">Args</td><td>Types of arguments to use to construct the component. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Parameters to use to initialize the component. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>A reference to the newly created component. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00113">113</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032_cgraph" id="astructentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032_cgraph">
+<area shape="rect" title="Assigns the given component to an actor." alt="" coords="5,22,144,62"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c" title="Returns references to the given components for an actor." alt="" coords="192,29,351,55"/>
+<area shape="poly" title=" " alt="" coords="144,39,179,39,179,45,144,45"/>
+<area shape="poly" title=" " alt="" coords="239,31,232,21,236,11,249,5,271,3,298,6,309,15,306,19,296,11,271,8,251,10,240,15,238,20,243,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8f3ca3ac4de8d13726b500c0cc1b655d" name="a8f3ca3ac4de8d13726b500c0cc1b655d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3ca3ac4de8d13726b500c0cc1b655d">&#9670;&#160;</a></span>backend() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">const</a> <a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp; <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::backend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the underlying registry. </p>
+<dl class="section return"><dt>返回</dt><dd>A reference to the underlying registry. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00172">172</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a>.</p>
+
+</div>
+</div>
+<a id="aad6ba04bccef40ff9755e72b87e37335" name="aad6ba04bccef40ff9755e72b87e37335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad6ba04bccef40ff9755e72b87e37335">&#9670;&#160;</a></span>backend() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a> &amp; <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::backend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the underlying registry.   </p>
+<dl class="section return"><dt>返回</dt><dd>A reference to the underlying registry.   </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00177">177</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af92d62c39e122692addbfd6b75ea6922" name="af92d62c39e122692addbfd6b75ea6922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92d62c39e122692addbfd6b75ea6922">&#9670;&#160;</a></span>entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a2c2e10f12014f5269be0b9ab055acfca">entity_type</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;<a class="el" href="classentity.html">::entity</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the entity associated with an actor. </p>
+<dl class="section return"><dt>返回</dt><dd>The entity associated with the actor. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00185">185</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00198">entt::basic_actor&lt; Entity &gt;::entt</a>.</p>
+
+</div>
+</div>
+<a id="afa85d0d013950f57fea284784c6c7bc2" name="afa85d0d013950f57fea284784c6c7bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa85d0d013950f57fea284784c6c7bc2">&#9670;&#160;</a></span>get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Entity &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(auto) <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; Entity &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns references to the given components for an actor.   </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Types of components to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>References to the components owned by the actor.   </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00148">148</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00198">entt::basic_actor&lt; Entity &gt;::entt</a>, <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2_cgraph" id="astructentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2_cgraph">
+<area shape="rect" title="Returns references to the given components for an actor." alt="" coords="5,29,164,55"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c" title="Returns references to the given components for an actor." alt="" coords="212,29,371,55"/>
+<area shape="poly" title=" " alt="" coords="164,39,198,39,198,45,164,45"/>
+<area shape="poly" title=" " alt="" coords="258,31,250,21,254,11,268,5,291,3,320,6,331,15,328,20,318,11,291,8,269,10,258,15,256,20,262,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1429f1e5b4a80f13219b99addd169f7c" name="a1429f1e5b4a80f13219b99addd169f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1429f1e5b4a80f13219b99addd169f7c">&#9670;&#160;</a></span>get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Entity &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(auto) <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; Entity &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns references to the given components for an actor. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Types of components to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>References to the components owned by the actor. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00142">142</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="actor_8hpp_source.html#l00113">entt::basic_actor&lt; Entity &gt;::assign()</a>, <a class="el" href="actor_8hpp_source.html#l00046">entt::basic_actor&lt; Entity &gt;::basic_actor()</a>, <a class="el" href="actor_8hpp_source.html#l00148">entt::basic_actor&lt; Entity &gt;::get()</a>, <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a>, <a class="el" href="actor_8hpp_source.html#l00088">entt::basic_actor&lt; Entity &gt;::operator=()</a>, <a class="el" href="actor_8hpp_source.html#l00122">entt::basic_actor&lt; Entity &gt;::remove()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00158">entt::basic_actor&lt; Entity &gt;::try_get()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_cgraph" id="astructentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_cgraph">
+<area shape="rect" title="Returns references to the given components for an actor." alt="" coords="5,29,164,55"/>
+<area shape="poly" title=" " alt="" coords="58,31,53,21,56,11,67,5,85,3,106,6,116,15,112,19,104,11,85,8,68,10,60,15,58,20,63,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_icgraph.png" border="0" usemap="#astructentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_icgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_icgraph" id="astructentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_icgraph">
+<area shape="rect" title="Returns references to the given components for an actor." alt="" coords="399,163,557,189"/>
+<area shape="poly" title=" " alt="" coords="515,154,504,145,478,142,456,144,445,149,442,154,448,162,444,165,437,155,441,145,455,139,478,137,507,140,518,149"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#abf572e19a5d9625fbf80cc4f00cba032" title="Assigns the given component to an actor." alt="" coords="202,5,341,45"/>
+<area shape="poly" title=" " alt="" coords="455,155,409,108,349,60,328,48,330,43,352,55,413,104,459,151"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#ae7ee04b6533cba81bda114ada62dfd32" title="Move constructor." alt="" coords="202,69,341,109"/>
+<area shape="poly" title=" " alt="" coords="434,160,350,124,321,112,323,107,352,119,436,155"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#afa85d0d013950f57fea284784c6c7bc2" title="Returns references to the given components for an actor." alt="" coords="192,134,351,159"/>
+<area shape="poly" title=" " alt="" coords="385,165,350,161,351,155,385,160"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#ac9561c520268b95e0961f25b199b5828" title="Move assignment operator." alt="" coords="202,184,341,224"/>
+<area shape="poly" title=" " alt="" coords="385,191,341,197,341,192,385,186"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#ab740844d18ada7ad15988f808617a1a1" title="Removes the given component from an actor." alt="" coords="202,248,341,288"/>
+<area shape="poly" title=" " alt="" coords="440,197,352,238,324,250,322,245,350,234,437,192"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#afb2752c70a8429962b4e0c5ca240e95a" title="Returns pointers to the given components for an actor." alt="" coords="202,312,341,352"/>
+<area shape="poly" title=" " alt="" coords="460,201,414,251,384,278,352,302,330,314,328,310,349,298,381,274,410,247,456,198"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a2c9c5fdcdc7a524a917c419a59bed405" title="Returns pointers to the given components for an actor." alt="" coords="5,312,144,352"/>
+<area shape="poly" title=" " alt="" coords="188,335,144,335,144,329,188,329"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad22a9b6b33a34328a874c96e40f3e6d2" name="ad22a9b6b33a34328a874c96e40f3e6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22a9b6b33a34328a874c96e40f3e6d2">&#9670;&#160;</a></span>has()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">bool</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::has </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if an actor has the given components. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Components for which to perform the check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if the actor has all the components, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00132">132</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00198">entt::basic_actor&lt; Entity &gt;::entt</a>, <a class="el" href="actor_8hpp_source.html#l00132">entt::basic_actor&lt; Entity &gt;::has()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="actor_8hpp_source.html#l00132">entt::basic_actor&lt; Entity &gt;::has()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_cgraph" id="astructentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_cgraph">
+<area shape="rect" title="Checks if an actor has the given components." alt="" coords="5,29,167,55"/>
+<area shape="poly" title=" " alt="" coords="59,31,53,21,56,11,68,5,86,3,108,6,117,15,114,19,106,11,86,8,69,10,61,15,59,20,64,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_icgraph.png" border="0" usemap="#astructentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_icgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_icgraph" id="astructentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_icgraph">
+<area shape="rect" title="Checks if an actor has the given components." alt="" coords="5,29,167,55"/>
+<area shape="poly" title=" " alt="" coords="114,19,106,11,86,8,69,10,61,15,59,20,64,28,59,31,53,21,56,11,68,5,86,3,108,6,117,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae04982e3b8fac20ded6159b75ec98bd0" name="ae04982e3b8fac20ded6159b75ec98bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04982e3b8fac20ded6159b75ec98bd0">&#9670;&#160;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">::operator</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">bool</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if an actor refers to a valid entity or not. </p>
+<dl class="section return"><dt>返回</dt><dd>True if the actor refers to a valid entity, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00193">193</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a> , 以及 <a class="el" href="registry_8hpp_source.html#l00428">entt::basic_registry&lt; Entity &gt;::valid()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0_cgraph" id="astructentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0_cgraph">
+<area shape="rect" title="Checks if an actor refers to a valid entity or not." alt="" coords="5,5,144,45"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="192,5,339,45"/>
+<area shape="poly" title=" " alt="" coords="144,23,178,23,178,28,144,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9561c520268b95e0961f25b199b5828" name="ac9561c520268b95e0961f25b199b5828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9561c520268b95e0961f25b199b5828">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html">basic_actor</a> &amp; <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">::operator</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__actor.html">basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment operator. </p>
+<p>After actor move assignment, instances that have been moved from are placed in a valid but unspecified state. It's highly discouraged to continue using them.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The instance to move from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>This actor. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00088">88</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828_cgraph" id="astructentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828_cgraph">
+<area shape="rect" title="Move assignment operator." alt="" coords="5,22,144,62"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c" title="Returns references to the given components for an actor." alt="" coords="192,29,351,55"/>
+<area shape="poly" title=" " alt="" coords="144,39,179,39,179,45,144,45"/>
+<area shape="poly" title=" " alt="" coords="239,31,232,21,236,11,249,5,271,3,298,6,309,15,306,19,296,11,271,8,251,10,240,15,238,20,243,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab740844d18ada7ad15988f808617a1a1" name="ab740844d18ada7ad15988f808617a1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab740844d18ada7ad15988f808617a1a1">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">void</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::remove </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the given component from an actor. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Type of the component to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00122">122</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1_cgraph" id="astructentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1_cgraph">
+<area shape="rect" title="Removes the given component from an actor." alt="" coords="5,22,144,62"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c" title="Returns references to the given components for an actor." alt="" coords="192,29,351,55"/>
+<area shape="poly" title=" " alt="" coords="144,39,179,39,179,45,144,45"/>
+<area shape="poly" title=" " alt="" coords="239,31,232,21,236,11,249,5,271,3,298,6,309,15,306,19,296,11,271,8,251,10,240,15,238,20,243,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c9c5fdcdc7a524a917c419a59bed405" name="a2c9c5fdcdc7a524a917c419a59bed405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9c5fdcdc7a524a917c419a59bed405">&#9670;&#160;</a></span>try_get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">auto</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::try_get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns pointers to the given components for an actor.   </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Types of components to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Pointers to the components owned by the actor.   </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00164">164</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00198">entt::basic_actor&lt; Entity &gt;::entt</a>, <a class="el" href="actor_8hpp_source.html#l00199">entt::basic_actor&lt; Entity &gt;::reg</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00158">entt::basic_actor&lt; Entity &gt;::try_get()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405_cgraph" id="astructentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405_cgraph">
+<area shape="rect" title="Returns pointers to the given components for an actor." alt="" coords="5,22,144,62"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#afb2752c70a8429962b4e0c5ca240e95a" title="Returns pointers to the given components for an actor." alt="" coords="192,22,331,62"/>
+<area shape="poly" title=" " alt="" coords="145,39,178,39,178,45,145,45"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c" title="Returns references to the given components for an actor." alt="" coords="379,29,537,55"/>
+<area shape="poly" title=" " alt="" coords="331,39,365,39,365,45,331,45"/>
+<area shape="poly" title=" " alt="" coords="426,31,419,21,423,11,436,5,458,3,485,6,496,15,493,19,483,11,458,8,437,10,426,15,424,20,430,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb2752c70a8429962b4e0c5ca240e95a" name="afb2752c70a8429962b4e0c5ca240e95a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2752c70a8429962b4e0c5ca240e95a">&#9670;&#160;</a></span>try_get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">auto</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::try_get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns pointers to the given components for an actor. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Types of components to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Pointers to the components owned by the actor. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00158">158</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="actor_8hpp_source.html#l00142">entt::basic_actor&lt; Entity &gt;::get()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="actor_8hpp_source.html#l00164">entt::basic_actor&lt; Entity &gt;::try_get()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_cgraph.png" border="0" usemap="#astructentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_cgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_cgraph" id="astructentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_cgraph">
+<area shape="rect" title="Returns pointers to the given components for an actor." alt="" coords="5,22,144,62"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c" title="Returns references to the given components for an actor." alt="" coords="192,29,351,55"/>
+<area shape="poly" title=" " alt="" coords="144,39,179,39,179,45,144,45"/>
+<area shape="poly" title=" " alt="" coords="239,31,232,21,236,11,249,5,271,3,298,6,309,15,306,19,296,11,271,8,251,10,240,15,238,20,243,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_icgraph.png" border="0" usemap="#astructentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_icgraph" alt=""/></div>
+<map name="astructentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_icgraph" id="astructentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_icgraph">
+<area shape="rect" title="Returns pointers to the given components for an actor." alt="" coords="192,5,331,45"/>
+<area shape="rect" href="structentt_1_1basic__actor.html#a2c9c5fdcdc7a524a917c419a59bed405" title="Returns pointers to the given components for an actor." alt="" coords="5,5,144,45"/>
+<area shape="poly" title=" " alt="" coords="178,28,145,28,145,23,178,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a79420f25d2ae7fe9b148d02bdab2d5e4" name="a79420f25d2ae7fe9b148d02bdab2d5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79420f25d2ae7fe9b148d02bdab2d5e4">&#9670;&#160;</a></span>entt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a2c2e10f12014f5269be0b9ab055acfca">entity_type</a> <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::entt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00198">198</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="actor_8hpp_source.html#l00185">entt::basic_actor&lt; Entity &gt;::entity()</a>, <a class="el" href="actor_8hpp_source.html#l00148">entt::basic_actor&lt; Entity &gt;::get()</a>, <a class="el" href="actor_8hpp_source.html#l00132">entt::basic_actor&lt; Entity &gt;::has()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00164">entt::basic_actor&lt; Entity &gt;::try_get()</a>.</p>
+
+</div>
+</div>
+<a id="a07f9e3507d9c3ee0cb82c2a6ef48d4de" name="a07f9e3507d9c3ee0cb82c2a6ef48d4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f9e3507d9c3ee0cb82c2a6ef48d4de">&#9670;&#160;</a></span>reg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">typename</a> <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1basic__actor.html#a4577b087e2fe3e76dbd4516ae9064c6a">registry_type</a>* <a class="el" href="structentt_1_1basic__actor.html">entt::basic_actor</a>&lt; <a class="el" href="structentt_1_1basic__actor.html#a1429f1e5b4a80f13219b99addd169f7c">Entity</a> &gt;::reg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="actor_8hpp_source.html">actor.hpp</a> 第 <a class="el" href="actor_8hpp_source.html#l00199">199</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="actor_8hpp_source.html#l00113">entt::basic_actor&lt; Entity &gt;::assign()</a>, <a class="el" href="actor_8hpp_source.html#l00172">entt::basic_actor&lt; Entity &gt;::backend()</a>, <a class="el" href="actor_8hpp_source.html#l00148">entt::basic_actor&lt; Entity &gt;::get()</a>, <a class="el" href="actor_8hpp_source.html#l00132">entt::basic_actor&lt; Entity &gt;::has()</a>, <a class="el" href="actor_8hpp_source.html#l00193">entt::basic_actor&lt; Entity &gt;::operator bool()</a>, <a class="el" href="actor_8hpp_source.html#l00088">entt::basic_actor&lt; Entity &gt;::operator=()</a>, <a class="el" href="actor_8hpp_source.html#l00122">entt::basic_actor&lt; Entity &gt;::remove()</a>, <a class="el" href="actor_8hpp_source.html#l00164">entt::basic_actor&lt; Entity &gt;::try_get()</a> , 以及 <a class="el" href="actor_8hpp_source.html#l00072">entt::basic_actor&lt; Entity &gt;::~basic_actor()</a>.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>third_party/entt/entity/<a class="el" href="actor_8hpp_source.html">actor.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

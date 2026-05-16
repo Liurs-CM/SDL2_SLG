@@ -1,0 +1,63 @@
+\doxysection{pursue\+\_\+target.\+cpp}
+\hypertarget{pursue__target_8cpp_source}{}\label{pursue__target_8cpp_source}\index{src/sys/pursue\_target.cpp@{src/sys/pursue\_target.cpp}}
+\mbox{\hyperlink{pursue__target_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ pursue\_target.cpp}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 22/9/18.}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pursue__target_8hpp}{pursue\_target.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2dir_8hpp}{comp/dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{target_8hpp}{comp/target.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{can__move_8hpp}{sys/can\_move.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8hpp}{comp/position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dir__to__pos_8hpp}{util/dir\_to\_pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00019}00019\ \textcolor{comment}{//\ Pacman\ doesn't\ use\ A*}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00021}\mbox{\hyperlink{pursue__target_8cpp_a25856269fe2931ead84a24823183a480}{00021}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pursue__target_8cpp_a25856269fe2931ead84a24823183a480}{pursueTarget}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&maze)\ \{}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00022}00022\ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{float}\ inf\ =\ 1e10f;}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00023}00023\ \ \ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structTarget}{Target}},\ \mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structActualDir}{ActualDir}},\ \mbox{\hyperlink{structDesiredDir}{DesiredDir}}>();}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00024}00024\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ targetPos\ =\ view.get<\mbox{\hyperlink{structTarget}{Target}}>(e).p;}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//\ the\ position\ we\ are\ currently\ moving\ from}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pos\ =\ view.get<\mbox{\hyperlink{structPosition}{Position}}>(e).p;}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{comment}{//\ the\ direction\ we\ are\ currently\ moving\ in}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ dir\ =\ view.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e).d;}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ the\ position\ we\ are\ currently\ moving\ to}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ nextPos\ =\ pos\ +\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(dir);}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{comment}{//\ distance\ from\ the\ 4\ candiate\ directions\ to\ the\ target}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordtype}{float}\ targetDist[4]\ =\ \{inf,\ inf,\ inf,\ inf\};}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ candDir\ :\ \mbox{\hyperlink{util_2dir_8hpp_a663ffd7a462bf1ce2d1a2482245e789d}{dir\_range}})\ \{}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00035}00035\ \ \ \ \ \ \ \textcolor{comment}{//\ can't\ go\ back\ the\ way\ we\ came}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00036}00036\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (candDir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163}{opposite}}(dir))\ \{}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00038}00038\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00040}00040\ \ \ \ \ \ \ \textcolor{comment}{//\ can't\ go\ through\ walls}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00041}00041\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{can__move_8cpp_ac44feff324cce2df74e8465e4cc46b28}{canMove}}(reg,\ maze,\ e,\ nextPos,\ candDir))\ \{}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00043}00043\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00045}00045\ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ candPos\ =\ nextPos\ +\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(candDir);}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00046}00046\ \ \ \ \ \ \ targetDist[\textcolor{keyword}{static\_cast<}std::size\_t\textcolor{keyword}{>}(candDir)]\ =\ \mbox{\hyperlink{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0}{distance}}(candPos,\ targetPos);}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordtype}{float}\ *smallestDist\ =\ std::min\_element(targetDist,\ targetDist\ +\ 4);}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{if}\ (smallestDist\ ==\ targetDist\ +\ 4\ ||\ *smallestDist\ ==\ inf)\ \{}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00051}00051\ \ \ \ \ \ \ view.get<\mbox{\hyperlink{structDesiredDir}{DesiredDir}}>(e).d\ =\ dir;}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00052}00052\ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00053}00053\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00055}00055\ \ \ \ \ view.get<\mbox{\hyperlink{structDesiredDir}{DesiredDir}}>(e).d\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\textcolor{keyword}{>}(smallestDist\ -\/\ targetDist);}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00056}00056\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{pursue__target_8cpp_source_l00057}00057\ \}}
+
+\end{DoxyCode}

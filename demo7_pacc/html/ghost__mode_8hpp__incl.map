@@ -1,0 +1,13 @@
+<map id="src/comp/ghost_mode.hpp" name="src/comp/ghost_mode.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,5,210,31"/>
+<area shape="rect" id="Node000002" href="$constants_8hpp.html" title=" " alt="" coords="41,79,186,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,31,116,65,111,65,111,31"/>
+<area shape="rect" id="Node000003" href="$pos_8hpp.html" title=" " alt="" coords="5,152,104,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,106,75,143,71,140,102,103"/>
+<area shape="rect" id="Node000005" href="$util_2dir_8hpp.html" title=" " alt="" coords="128,152,219,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="125,103,157,140,153,143,121,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="23,225,86,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="57,178,57,212,52,212,52,178"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="140,225,207,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="176,178,176,212,171,212,171,178"/>
+</map>

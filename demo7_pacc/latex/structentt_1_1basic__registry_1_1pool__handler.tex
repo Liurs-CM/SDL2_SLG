@@ -1,0 +1,483 @@
+\doxysection{entt\+::basic\+\_\+registry\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>}\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Component \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1basic__registry_1_1pool__handler}{}\label{structentt_1_1basic__registry_1_1pool__handler}\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+
+
+类 entt\+::basic\+\_\+registry\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>}\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Component \texorpdfstring{$>$}{>} 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{structentt_1_1basic__registry_1_1pool__handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+entt\+::basic\+\_\+registry\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>}\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Component \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__registry_1_1pool__handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}} \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_aea5d66a7893c686261523774a693f2c9}{on\+\_\+construct}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}} \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_ab09b61b3a061f268924f3e897e0966a4}{on\+\_\+update}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}} \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_a3133d2c769fb8ebdf2acb6d5763a1d44}{on\+\_\+destroy}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{decltype}}(\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}}) \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_a3501b53ff000059aeb2958be31156c7c}{emplace}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{owner}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} entt, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Args}} \&\&... \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{args}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} , typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}} \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_a339fdc74924c29c018293a0e84da19f1}{insert}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{owner}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{first}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{last}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Args}} \&\&... \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{args}})
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}} \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_ae03c74e82035ca951073bdd783d84b2a}{remove}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{owner}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} entt)
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} $>$ }\\\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}} \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_a88ec066ec59fe60be9895370fe6c4ad2}{remove}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{owner}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{first}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{last}})
+\item 
+{\footnotesize template$<$typename... Func$>$ }\\\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{decltype}}(\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}}) \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_a6df21eadbbd9fd1b67da5a2c3741b90a}{patch}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{owner}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} entt, Func \&\&... func)
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{decltype}}(\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}}) \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_ac3073c1b5dead67ca0d0f9ae6c7829f1}{replace}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{owner}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} entt, \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} component)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage$<$ Entity, Component $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classentt_1_1storage_a41cfa5ae2ebe7bd85045c5e609b90809}{reserve}} (const \mbox{\hyperlink{classentt_1_1storage_a91479f00657aa72597c95a393833218b}{size\+\_\+type}} cap)
+\begin{DoxyCompactList}\small\item\em Increases the capacity of a storage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_a5cd0e1e611348790e093c0a87355dd95}{shrink\+\_\+to\+\_\+fit}} ()
+\begin{DoxyCompactList}\small\item\em Requests the removal of unused capacity. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1storage_aff76a10e66febd14dd05794713e00e76}{raw}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Direct access to the array of objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1storage_ae5944a0d0edb644e38bb55fdf951675c}{raw}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Direct access to the array of objects.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_a1ce01ec25f3e24f4741685ac40b4254d}{const\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_a49e58111ceecb3fa548ae580545eafb4}{cbegin}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the beginning. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_a1ce01ec25f3e24f4741685ac40b4254d}{const\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_a2565aaf805c2650613b89c3d13df9b23}{begin}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the beginning.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_aaeee41370158c681e5d04eca42054ba8}{iterator}} \mbox{\hyperlink{classentt_1_1storage_a911220ac7c4a698c98d0f3942f98b3b3}{begin}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the beginning.     \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_a1ce01ec25f3e24f4741685ac40b4254d}{const\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_afa4f208114e3d86cb795cf27db9c4e96}{cend}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the end. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_a1ce01ec25f3e24f4741685ac40b4254d}{const\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_a2ae696bd60578d13dd0b5c64d7241265}{end}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the end.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_aaeee41370158c681e5d04eca42054ba8}{iterator}} \mbox{\hyperlink{classentt_1_1storage_a4d30dbd922593711fbdd8739d23d2678}{end}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the end.     \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \& \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{get}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt) const
+\begin{DoxyCompactList}\small\item\em Returns the object associated with an entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \& \mbox{\hyperlink{classentt_1_1storage_ad1b2aa992c9b2c34cd23bade6f7dd4f1}{get}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Returns the object associated with an entity.   \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1storage_a9e1ef5f77d61360a66b4d2a2b64aafb7}{try\+\_\+get}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt) const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the object associated with an entity, if any. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1storage_a9f0a6cd697f7e227f1f6fdaf55dffdeb}{try\+\_\+get}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the object associated with an entity, if any.   \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_a666039c64bb3395dd0e4ea5a6d7939a6}{emplace}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Assigns an entity to a storage and constructs its object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_a649509ba225d8ddc583c965036327b5f}{construct}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Assigns an entity to a storage and constructs its object.   \end{DoxyCompactList}\item 
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ typename std\+::iterator\+\_\+traits$<$ It $>$\+::value\+\_\+type, \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} $>$, void $>$ \mbox{\hyperlink{classentt_1_1storage_a485f2d14a2f4bd40f45bd9a4f73df2b6}{construct}} (It first, It last, const \mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \&value=\{\})
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a storage and constructs their objects from a given instance.   \end{DoxyCompactList}\item 
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ typename std\+::iterator\+\_\+traits$<$ EIt $>$\+::value\+\_\+type, \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} $>$, void $>$ \mbox{\hyperlink{classentt_1_1storage_abe1b8e51456f18c8ed2ddb1268d52820}{construct}} (EIt first, EIt last, CIt value)
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a storage and constructs their objects from a given instance.   \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_a0d50c5b87ac94707d6c6fd6da62494ae}{insert}} (It first, It last, const \mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} \&value=\{\})
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a storage and constructs their objects from a given instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_ae775ff0becf923b711f6e3476a7cb9f6}{insert}} (EIt first, EIt last, CIt from, CIt to)
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a storage and constructs their objects from a given range. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_a3d8dcf8147ba6886aefc96d856ae7684}{erase}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Removes an entity from a storage and destroys its object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_a200938ea3867e3637c3c703f91ec0106}{destroy}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Removes an entity from a storage and destroys its object.   \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_ad98116de758a54b3b6df89f19d968e40}{swap}} (const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} lhs, const \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} rhs) override
+\begin{DoxyCompactList}\small\item\em Swaps entities and objects in the internal packed arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_a1c60cfb5693af240586dbcd22c4c40cd}{sort}} (\mbox{\hyperlink{classentt_1_1storage_aaeee41370158c681e5d04eca42054ba8}{iterator}} first, \mbox{\hyperlink{classentt_1_1storage_aaeee41370158c681e5d04eca42054ba8}{iterator}} last, Compare compare, Sort algo=Sort\{\}, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Sort elements according to the given comparison function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1storage_ae28ee0f55d7c3416e46945bd7926ab09}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears a storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set$<$ Entity $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a8ef544aaed30126797f6f0b9a9f8b9e8}{sparse\+\_\+set}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_af8f4f137b5ac0984599067d5408db5bf}{sparse\+\_\+set}} (\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{classentt_1_1sparse__set_a2ea4731d5a2e22f4bd43f8e19ca39f58}{\texorpdfstring{$\sim$}{\string~}sparse\+\_\+set}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \& \mbox{\hyperlink{classentt_1_1sparse__set_a4151494f59d34d78496f3ae0b894d9ce}{operator=}} (\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7}{reserve}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{cap}})
+\begin{DoxyCompactList}\small\item\em Increases the capacity of a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_a30267005e552fce0d2a9b4e4d70d6656}{capacity}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the number of elements that a sparse set has currently allocated space for. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda}{shrink\+\_\+to\+\_\+fit}} ()
+\begin{DoxyCompactList}\small\item\em Requests the removal of unused capacity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_af79345df59154e5ea9e58b7efa7ff8f0}{extent}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the extent of a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190}{size}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set_ae1a16cb354a9ed5ded92b6edcddce15e}{empty}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks whether a sparse set is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18}{data}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Direct access to the internal packed array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set_a6cdea3ee010c525259e68158f3a06092}{begin}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the beginning. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc}{end}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the end. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825}{find}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Finds an entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5}{contains}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if a sparse set contains an entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7}{has}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if a sparse set contains an entity.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46}{index}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the position of an entity in a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06}{emplace}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Assigns an entity to a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f}{construct}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Assigns an entity to a sparse set.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac}{insert}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}})
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a sparse set. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c}{construct}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}})
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a sparse set.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e}{erase}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Removes an entity from a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ab69719626bee1add76096046db86a170}{destroy}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Removes an entity from a sparse set.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}  = std\+\_\+sort, typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ad64875d6e1981746f853d8cb62af15d8}{sort}} (\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{compare}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{algo}}=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}\{\}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Sort elements according to the given comparison function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Apply}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}  = std\+\_\+sort, typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_adfef629658fc966c643167af7079d3c5}{arrange}} (\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Apply}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{apply}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{compare}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{algo}}=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}\{\}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Sort elements according to the given comparison function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a}{respect}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}})
+\begin{DoxyCompactList}\small\item\em Sort entities according to their order in another sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9}{clear}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Clears a sparse set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_aaffa60cdf621dda3570135353748a4a2}{super}} \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}})$>$ \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_affec7c1bcb2a53f0ea07f22f2d0cfd2d}{construction}} \{\}
+\item 
+\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}})$>$ \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_a338b93aebefb5f1cd0dd029d039207a4}{destruction}} \{\}
+\item 
+\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}})$>$ \mbox{\hyperlink{structentt_1_1basic__registry_1_1pool__handler_a012f4101ed74d0ef641ed7d3ea3c6b8b}{update}} \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Public 类型 继承自 \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage$<$ Entity, Component $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classentt_1_1storage_a631919f749405616e64372326052a285}{object\+\_\+type}} = Component
+\begin{DoxyCompactList}\small\item\em Type of the objects associated with the entities. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{classentt_1_1storage_ace2fc5e7d2c2a24e1fc5c43e49aab332}{entity\+\_\+type}} = Entity
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{classentt_1_1storage_a91479f00657aa72597c95a393833218b}{size\+\_\+type}} = std\+::size\+\_\+t
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{classentt_1_1storage_aaeee41370158c681e5d04eca42054ba8}{iterator}} = storage\+\_\+iterator$<$ false $>$
+\begin{DoxyCompactList}\small\item\em Random access iterator type. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{classentt_1_1storage_a1ce01ec25f3e24f4741685ac40b4254d}{const\+\_\+iterator}} = storage\+\_\+iterator$<$ true $>$
+\begin{DoxyCompactList}\small\item\em Constant random access iterator type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 类型 继承自 \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set$<$ Entity $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} = std\+::size\+\_\+t
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} = \mbox{\hyperlink{classentt_1_1sparse__set_1_1sparse__set__iterator}{sparse\+\_\+set\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em Random access iterator type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}$>$\newline
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}}$>$\newline
+struct entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$}
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00048}{48}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_a3501b53ff000059aeb2958be31156c7c}\label{structentt_1_1basic__registry_1_1pool__handler_a3501b53ff000059aeb2958be31156c7c} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!emplace@{emplace}}
+\index{emplace@{emplace}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{emplace()}{emplace()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{decltype}}(\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}}) \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::emplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&}]{owner,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}}]{entt,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00065}{65}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00812}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::\+Component}}, \mbox{\hyperlink{registry_8hpp_source_l00120}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::construction}}, \mbox{\hyperlink{storage_8hpp_source_l00323}{entt\+::storage$<$ Entity, Type, typename $>$\+::emplace()}}, \mbox{\hyperlink{config_8h_source_l00047}{ENTT\+\_\+\+IS\+\_\+\+EMPTY}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__registry_1_1pool__handler_a3501b53ff000059aeb2958be31156c7c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_a339fdc74924c29c018293a0e84da19f1}\label{structentt_1_1basic__registry_1_1pool__handler_a339fdc74924c29c018293a0e84da19f1} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!insert@{insert}}
+\index{insert@{insert}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&}]{owner,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}}}]{first,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}}}]{last,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00075}{75}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00120}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::construction}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00357}{entt\+::storage$<$ Entity, Type, typename $>$\+::insert()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{structentt_1_1basic__registry_1_1pool__handler_a339fdc74924c29c018293a0e84da19f1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_aea5d66a7893c686261523774a693f2c9}\label{structentt_1_1basic__registry_1_1pool__handler_aea5d66a7893c686261523774a693f2c9} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!on\_construct@{on\_construct}}
+\index{on\_construct@{on\_construct}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{on\_construct()}{on\_construct()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::on\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00052}{52}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00120}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::construction}}.
+
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_a3133d2c769fb8ebdf2acb6d5763a1d44}\label{structentt_1_1basic__registry_1_1pool__handler_a3133d2c769fb8ebdf2acb6d5763a1d44} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!on\_destroy@{on\_destroy}}
+\index{on\_destroy@{on\_destroy}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{on\_destroy()}{on\_destroy()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::on\+\_\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00060}{60}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00121}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::destruction}}.
+
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_ab09b61b3a061f268924f3e897e0966a4}\label{structentt_1_1basic__registry_1_1pool__handler_ab09b61b3a061f268924f3e897e0966a4} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!on\_update@{on\_update}}
+\index{on\_update@{on\_update}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{on\_update()}{on\_update()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::on\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00056}{56}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00122}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::update}}.
+
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_a6df21eadbbd9fd1b67da5a2c3741b90a}\label{structentt_1_1basic__registry_1_1pool__handler_a6df21eadbbd9fd1b67da5a2c3741b90a} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!patch@{patch}}
+\index{patch@{patch}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+template$<$typename... Func$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{decltype}}(\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}}) \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::patch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&}]{owner,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}}]{entt,  }\item[{Func \&\&...}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00102}{102}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00812}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::\+Component}}, \mbox{\hyperlink{config_8h_source_l00047}{ENTT\+\_\+\+IS\+\_\+\+EMPTY}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00122}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::update}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{registry_8hpp_source_l00111}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::replace()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__registry_1_1pool__handler_a6df21eadbbd9fd1b67da5a2c3741b90a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_ae03c74e82035ca951073bdd783d84b2a}\label{structentt_1_1basic__registry_1_1pool__handler_ae03c74e82035ca951073bdd783d84b2a} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!remove@{remove}}
+\index{remove@{remove}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&}]{owner,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}}]{entt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00083}{83}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00121}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::destruction}}, \mbox{\hyperlink{storage_8hpp_source_l00410}{entt\+::storage$<$ Entity, Component $>$\+::erase()}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{registry_8hpp_source_l00089}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::remove()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__registry_1_1pool__handler_ae03c74e82035ca951073bdd783d84b2a_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__registry_1_1pool__handler_ae03c74e82035ca951073bdd783d84b2a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_a88ec066ec59fe60be9895370fe6c4ad2}\label{structentt_1_1basic__registry_1_1pool__handler_a88ec066ec59fe60be9895370fe6c4ad2} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!remove@{remove}}
+\index{remove@{remove}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}} $>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&}]{owner,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}}}]{first,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{It}}}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00089}{89}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{storage_8hpp_source_l00232}{entt\+::storage$<$ Entity, Component $>$\+::begin()}}, \mbox{\hyperlink{storage_8hpp_source_l00507}{entt\+::storage$<$ Entity, Component $>$\+::clear()}}, \mbox{\hyperlink{registry_8hpp_source_l00121}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::destruction}}, \mbox{\hyperlink{storage_8hpp_source_l00261}{entt\+::storage$<$ Entity, Component $>$\+::end()}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00083}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::remove()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__registry_1_1pool__handler_a88ec066ec59fe60be9895370fe6c4ad2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_ac3073c1b5dead67ca0d0f9ae6c7829f1}\label{structentt_1_1basic__registry_1_1pool__handler_ac3073c1b5dead67ca0d0f9ae6c7829f1} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!replace@{replace}}
+\index{replace@{replace}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{decltype}}(\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{auto}}) \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&}]{owner,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}}]{entt,  }\item[{\mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}}}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00111}{111}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00812}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::\+Component}}, \mbox{\hyperlink{config_8h_source_l00047}{ENTT\+\_\+\+IS\+\_\+\+EMPTY}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00102}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::patch()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__registry_1_1pool__handler_ac3073c1b5dead67ca0d0f9ae6c7829f1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_affec7c1bcb2a53f0ea07f22f2d0cfd2d}\label{structentt_1_1basic__registry_1_1pool__handler_affec7c1bcb2a53f0ea07f22f2d0cfd2d} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!construction@{construction}}
+\index{construction@{construction}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{construction}{construction}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}})$>$ \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::construction \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00120}{120}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{registry_8hpp_source_l00065}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::emplace()}}, \mbox{\hyperlink{registry_8hpp_source_l00075}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::insert()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00052}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::on\+\_\+construct()}}.
+
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_a338b93aebefb5f1cd0dd029d039207a4}\label{structentt_1_1basic__registry_1_1pool__handler_a338b93aebefb5f1cd0dd029d039207a4} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!destruction@{destruction}}
+\index{destruction@{destruction}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{destruction}{destruction}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}})$>$ \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::destruction \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00121}{121}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{registry_8hpp_source_l00060}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::on\+\_\+destroy()}}, \mbox{\hyperlink{registry_8hpp_source_l00083}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::remove()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00089}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::remove()}}.
+
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_aaffa60cdf621dda3570135353748a4a2}\label{structentt_1_1basic__registry_1_1pool__handler_aaffa60cdf621dda3570135353748a4a2} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!super@{super}}
+\index{super@{super}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{super}{super}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::super \{\}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00050}{50}} 行定义.
+
+\Hypertarget{structentt_1_1basic__registry_1_1pool__handler_a012f4101ed74d0ef641ed7d3ea3c6b8b}\label{structentt_1_1basic__registry_1_1pool__handler_a012f4101ed74d0ef641ed7d3ea3c6b8b} 
+\index{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}!update@{update}}
+\index{update@{update}!entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$@{entt::basic\_registry$<$ Entity $>$::pool\_handler$<$ Component $>$}}
+\doxysubsubsection{\texorpdfstring{update}{update}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{void}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}} \&, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}})$>$ \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{classentt_1_1basic__registry_a1dc27d36612e8fea144a96beb9cbf52b}{Component}} $>$\+::update \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{registry_8hpp_source}{registry.\+hpp}} 第 \mbox{\hyperlink{registry_8hpp_source_l00122}{122}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{registry_8hpp_source_l00056}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::on\+\_\+update()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00102}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::pool\+\_\+handler$<$ Component $>$\+::patch()}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{registry_8hpp}{registry.\+hpp}}\end{DoxyCompactItemize}

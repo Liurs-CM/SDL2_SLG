@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/process/process.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_3588a37b4fe15efce9a48ca2f24989a0.html">process</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">process.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="process_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ENTT_PROCESS_PROCESS_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ENTT_PROCESS_PROCESS_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../config/config.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../core/type_traits.hpp&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceentt.html">entt</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Delta&gt;</div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="};">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classentt_1_1process.html">   74</a></span><span class="keyword">class </span><a class="code hl_class" href="classentt_1_1process.html">process</a> {</div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="};">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380d">   75</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380d">state</a>: <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268">UNINITIALIZED</a> = 0,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd">RUNNING</a>,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673">PAUSED</a>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85">SUCCEEDED</a>,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419">FAILED</a>,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025">ABORTED</a>,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133">FINISHED</a></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    };</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Target = Derived&gt;</div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">   86</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::UNINITIALIZED&gt;</a>)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    -&gt; <span class="keyword">decltype</span>(std::declval&lt;Target&gt;().init()) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structTarget.html">Target</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;init();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Target = Derived&gt;</div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#abf5648643c092b73a3d8af81797c4e89">   92</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1process.html#abf5648643c092b73a3d8af81797c4e89">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::RUNNING&gt;</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, <span class="keywordtype">void</span> *data)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    -&gt; <span class="keyword">decltype</span>(std::declval&lt;Target&gt;().update(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, data)) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structTarget.html">Target</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;update(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, data);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Target = Derived&gt;</div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a71ecb69f1bb271b23d788c414957a1b5">   98</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1process.html#a71ecb69f1bb271b23d788c414957a1b5">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::SUCCEEDED&gt;</a>)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    -&gt; <span class="keyword">decltype</span>(std::declval&lt;Target&gt;().succeeded()) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structTarget.html">Target</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">succeeded</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Target = Derived&gt;</div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a9a85eca5614aa69c545f4ecfc498b2a3">  104</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1process.html#a9a85eca5614aa69c545f4ecfc498b2a3">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::FAILED&gt;</a>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    -&gt; <span class="keyword">decltype</span>(std::declval&lt;Target&gt;().failed()) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structTarget.html">Target</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">failed</a>();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Target = Derived&gt;</div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a17c83a8ca7d427e527d93075bdf67277">  110</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1process.html#a17c83a8ca7d427e527d93075bdf67277">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::ABORTED&gt;</a>)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    -&gt; <span class="keyword">decltype</span>(std::declval&lt;Target&gt;().aborted()) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structTarget.html">Target</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">aborted</a>();</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#acf9e1b20e2d085674d18664be59155bd">  115</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1process.html#acf9e1b20e2d085674d18664be59155bd">next</a>(...) <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {}</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">protected</span>:</div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a43d63ba9304654f0209fc32d2c74f4ce">  124</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1process.html#a43d63ba9304654f0209fc32d2c74f4ce">succeed</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="classentt_1_1process.html#a8bc92bd0304659eb2a034fae65f1eeb9">alive</a>()) {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85">state::SUCCEEDED</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="foldopen" id="foldopen00136" data-start="{" data-end="}">
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a81816bdd06dce4058bfe3cfa5d42a64c">  136</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1process.html#a81816bdd06dce4058bfe3cfa5d42a64c">fail</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="classentt_1_1process.html#a8bc92bd0304659eb2a034fae65f1eeb9">alive</a>()) {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419">state::FAILED</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
+</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a9bf45a6c430f5e32fc7ab33a7a197abc">  148</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1process.html#a9bf45a6c430f5e32fc7ab33a7a197abc">pause</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> == <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd">state::RUNNING</a>) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673">state::PAUSED</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a91fd8adb2ea48c88c6f9fb5818890f67">  160</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1process.html#a91fd8adb2ea48c88c6f9fb5818890f67">unpause</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a>  == <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673">state::PAUSED</a>) {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a>  = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd">state::RUNNING</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
+</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a625b574ea6d83e3a4933acc3d0279295">  168</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1process.html#a625b574ea6d83e3a4933acc3d0279295">delta_type</a> = <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a2baf1b6aef37c1420a77cd3f8eadcf79">  171</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classentt_1_1process.html#a2baf1b6aef37c1420a77cd3f8eadcf79">~process</a>() {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keyword">static_assert</span>(std::is_base_of_v&lt;process, Derived&gt;);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
+</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="foldopen" id="foldopen00183" data-start="{" data-end="}">
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#af27d28af408f1dfb260b8fe976e66ea3">  183</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1process.html#af27d28af408f1dfb260b8fe976e66ea3">abort</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">immediately</a> = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="classentt_1_1process.html#a8bc92bd0304659eb2a034fae65f1eeb9">alive</a>()) {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025">state::ABORTED</a>;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">immediately</a>) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                <a class="code hl_function" href="classentt_1_1process.html#aacc7fe0ef3265113079c70ff8cd9478d">tick</a>({});</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a8bc92bd0304659eb2a034fae65f1eeb9">  197</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1process.html#a8bc92bd0304659eb2a034fae65f1eeb9">alive</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> == <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd">state::RUNNING</a> || <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> == <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673">state::PAUSED</a>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    }</div>
+</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="foldopen" id="foldopen00205" data-start="{" data-end="}">
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#ad83f2550ca63e03af126a07e4ae5d9dd">  205</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1process.html#ad83f2550ca63e03af126a07e4ae5d9dd">dead</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> == <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133">state::FINISHED</a>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
+</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="foldopen" id="foldopen00213" data-start="{" data-end="}">
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f">  213</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1process.html#a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f">paused</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> == <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673">state::PAUSED</a>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="foldopen" id="foldopen00221" data-start="{" data-end="}">
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a6ac63863bf823806d813b046769b4419">  221</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1process.html#a6ac63863bf823806d813b046769b4419">rejected</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classentt_1_1process.html#a90c179b601f23da6df3267a9384abf7c">stopped</a>;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    }</div>
+</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#aacc7fe0ef3265113079c70ff8cd9478d">  230</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1process.html#aacc7fe0ef3265113079c70ff8cd9478d">tick</a>(<span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, <span class="keywordtype">void</span> *data = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="keywordflow">switch</span> (<a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a>) {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268">state::UNINITIALIZED</a>:</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            <a class="code hl_function" href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::UNINITIALIZED&gt;</a>{});</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd">state::RUNNING</a>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd">state::RUNNING</a>:</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <a class="code hl_function" href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::RUNNING&gt;</a>{}, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, data);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="comment">// suppress warnings</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="comment">// if it&#39;s dead, it must be notified and removed immediately</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">switch</span>(<a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a>) {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85">state::SUCCEEDED</a>:</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <a class="code hl_function" href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::SUCCEEDED&gt;</a>{});</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133">state::FINISHED</a>;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419">state::FAILED</a>:</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <a class="code hl_function" href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::FAILED&gt;</a>{});</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133">state::FINISHED</a>;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <a class="code hl_variable" href="classentt_1_1process.html#a90c179b601f23da6df3267a9384abf7c">stopped</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025">state::ABORTED</a>:</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <a class="code hl_function" href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">next</a>(<a class="code hl_typedef" href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">integral_constant&lt;state::ABORTED&gt;</a>{});</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a> = <a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133">state::FINISHED</a>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            <a class="code hl_variable" href="classentt_1_1process.html#a90c179b601f23da6df3267a9384abf7c">stopped</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="comment">// suppress warnings</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    }</div>
+</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">  267</a></span>    <a class="code hl_enumeration" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380d">state</a> <a class="code hl_variable" href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">current</a>{<a class="code hl_enumvalue" href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268">state::UNINITIALIZED</a>};</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classentt_1_1process.html#a90c179b601f23da6df3267a9384abf7c">  268</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classentt_1_1process.html#a90c179b601f23da6df3267a9384abf7c">stopped</a>{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>};</div>
+</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func, <span class="keyword">typename</span> Delta&gt;</div>
+<div class="foldopen" id="foldopen00312" data-start="{" data-end="};">
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="structentt_1_1process__adaptor.html">  312</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structentt_1_1process__adaptor.html">process_adaptor</a>: <a class="code hl_class" href="classentt_1_1process.html">process</a>&lt;process_adaptor&lt;Func, Delta&gt;, Delta&gt;, <span class="keyword">private</span> Func {</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;</div>
+<div class="foldopen" id="foldopen00319" data-start="{" data-end="}">
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="structentt_1_1process__adaptor.html#ad1e2c8f3c44bf42abb05ef913b8267ce">  319</a></span>    <a class="code hl_function" href="structentt_1_1process__adaptor.html#ad1e2c8f3c44bf42abb05ef913b8267ce">process_adaptor</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        : Func{std::<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">forward</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)...}</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    {}</div>
+</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="foldopen" id="foldopen00328" data-start="{" data-end="}">
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="structentt_1_1process__adaptor.html#a7514fabbbda491742872bc0e52dde5c2">  328</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structentt_1_1process__adaptor.html#a7514fabbbda491742872bc0e52dde5c2">update</a>(<span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Delta</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, <span class="keywordtype">void</span> *data) {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        Func::operator()(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delta</a>, data, [<span class="keyword">this</span>]() { this-&gt;<a class="code hl_function" href="classentt_1_1process.html#a43d63ba9304654f0209fc32d2c74f4ce">succeed</a>(); }, [<span class="keyword">this</span>]() { this-&gt;<a class="code hl_function" href="classentt_1_1process.html#a81816bdd06dce4058bfe3cfa5d42a64c">fail</a>(); });</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    }</div>
+</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>};</div>
+</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassentt_1_1process_html"><div class="ttname"><a href="classentt_1_1process.html">entt::process</a></div><div class="ttdoc">Base class for processes.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00074">process.hpp:74</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a174b72b81e6b9a9c5cd141392315fc4d"><div class="ttname"><a href="classentt_1_1process.html#a174b72b81e6b9a9c5cd141392315fc4d">entt::process::current</a></div><div class="ttdeci">state current</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00267">process.hpp:267</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a17c83a8ca7d427e527d93075bdf67277"><div class="ttname"><a href="classentt_1_1process.html#a17c83a8ca7d427e527d93075bdf67277">entt::process::next</a></div><div class="ttdeci">auto next(integral_constant&lt; state::ABORTED &gt;) -&gt; decltype(std::declval&lt; Target &gt;().aborted())</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00110">process.hpp:110</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a2baf1b6aef37c1420a77cd3f8eadcf79"><div class="ttname"><a href="classentt_1_1process.html#a2baf1b6aef37c1420a77cd3f8eadcf79">entt::process::~process</a></div><div class="ttdeci">virtual ~process()</div><div class="ttdoc">Default destructor.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00171">process.hpp:171</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f"><div class="ttname"><a href="classentt_1_1process.html#a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f">entt::process::paused</a></div><div class="ttdeci">bool paused() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns true if a process is currently paused.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00213">process.hpp:213</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a43d63ba9304654f0209fc32d2c74f4ce"><div class="ttname"><a href="classentt_1_1process.html#a43d63ba9304654f0209fc32d2c74f4ce">entt::process::succeed</a></div><div class="ttdeci">void succeed() ENTT_NOEXCEPT</div><div class="ttdoc">Terminates a process with success if it's still alive.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00124">process.hpp:124</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a625b574ea6d83e3a4933acc3d0279295"><div class="ttname"><a href="classentt_1_1process.html#a625b574ea6d83e3a4933acc3d0279295">entt::process::delta_type</a></div><div class="ttdeci">Delta delta_type</div><div class="ttdoc">Type used to provide elapsed time.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00168">process.hpp:168</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a6ac63863bf823806d813b046769b4419"><div class="ttname"><a href="classentt_1_1process.html#a6ac63863bf823806d813b046769b4419">entt::process::rejected</a></div><div class="ttdeci">bool rejected() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns true if a process terminated with errors.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00221">process.hpp:221</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a71ecb69f1bb271b23d788c414957a1b5"><div class="ttname"><a href="classentt_1_1process.html#a71ecb69f1bb271b23d788c414957a1b5">entt::process::next</a></div><div class="ttdeci">auto next(integral_constant&lt; state::SUCCEEDED &gt;) -&gt; decltype(std::declval&lt; Target &gt;().succeeded())</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00098">process.hpp:98</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a81816bdd06dce4058bfe3cfa5d42a64c"><div class="ttname"><a href="classentt_1_1process.html#a81816bdd06dce4058bfe3cfa5d42a64c">entt::process::fail</a></div><div class="ttdeci">void fail() ENTT_NOEXCEPT</div><div class="ttdoc">Terminates a process with errors if it's still alive.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00136">process.hpp:136</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a8bc92bd0304659eb2a034fae65f1eeb9"><div class="ttname"><a href="classentt_1_1process.html#a8bc92bd0304659eb2a034fae65f1eeb9">entt::process::alive</a></div><div class="ttdeci">bool alive() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns true if a process is either running or paused.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00197">process.hpp:197</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a90c179b601f23da6df3267a9384abf7c"><div class="ttname"><a href="classentt_1_1process.html#a90c179b601f23da6df3267a9384abf7c">entt::process::stopped</a></div><div class="ttdeci">bool stopped</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00268">process.hpp:268</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a91fd8adb2ea48c88c6f9fb5818890f67"><div class="ttname"><a href="classentt_1_1process.html#a91fd8adb2ea48c88c6f9fb5818890f67">entt::process::unpause</a></div><div class="ttdeci">void unpause() ENTT_NOEXCEPT</div><div class="ttdoc">Restarts a process if it's paused.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00160">process.hpp:160</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a993a037fa84e19b5b64762ab5fb68028"><div class="ttname"><a href="classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028">entt::process::next</a></div><div class="ttdeci">auto next(integral_constant&lt; state::UNINITIALIZED &gt;) -&gt; decltype(std::declval&lt; Target &gt;().init())</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00086">process.hpp:86</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a9a85eca5614aa69c545f4ecfc498b2a3"><div class="ttname"><a href="classentt_1_1process.html#a9a85eca5614aa69c545f4ecfc498b2a3">entt::process::next</a></div><div class="ttdeci">auto next(integral_constant&lt; state::FAILED &gt;) -&gt; decltype(std::declval&lt; Target &gt;().failed())</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00104">process.hpp:104</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_a9bf45a6c430f5e32fc7ab33a7a197abc"><div class="ttname"><a href="classentt_1_1process.html#a9bf45a6c430f5e32fc7ab33a7a197abc">entt::process::pause</a></div><div class="ttdeci">void pause() ENTT_NOEXCEPT</div><div class="ttdoc">Stops a process if it's in a running state.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00148">process.hpp:148</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_aacc7fe0ef3265113079c70ff8cd9478d"><div class="ttname"><a href="classentt_1_1process.html#aacc7fe0ef3265113079c70ff8cd9478d">entt::process::tick</a></div><div class="ttdeci">void tick(const Delta delta, void *data=nullptr)</div><div class="ttdoc">Updates a process and its internal state if required.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00230">process.hpp:230</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_abf5648643c092b73a3d8af81797c4e89"><div class="ttname"><a href="classentt_1_1process.html#abf5648643c092b73a3d8af81797c4e89">entt::process::next</a></div><div class="ttdeci">auto next(integral_constant&lt; state::RUNNING &gt;, Delta delta, void *data) -&gt; decltype(std::declval&lt; Target &gt;().update(delta, data))</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00092">process.hpp:92</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_acf9e1b20e2d085674d18664be59155bd"><div class="ttname"><a href="classentt_1_1process.html#acf9e1b20e2d085674d18664be59155bd">entt::process::next</a></div><div class="ttdeci">void next(...) const ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00115">process.hpp:115</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_ad83f2550ca63e03af126a07e4ae5d9dd"><div class="ttname"><a href="classentt_1_1process.html#ad83f2550ca63e03af126a07e4ae5d9dd">entt::process::dead</a></div><div class="ttdeci">bool dead() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns true if a process is already terminated.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00205">process.hpp:205</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af27d28af408f1dfb260b8fe976e66ea3"><div class="ttname"><a href="classentt_1_1process.html#af27d28af408f1dfb260b8fe976e66ea3">entt::process::abort</a></div><div class="ttdeci">void abort(const bool immediately=false)</div><div class="ttdoc">Aborts a process if it's still alive.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00183">process.hpp:183</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380d"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380d">entt::process::state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00075">process.hpp:75</a></div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133">entt::process::state::FINISHED</a></div><div class="ttdeci">@ FINISHED</div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd">entt::process::state::RUNNING</a></div><div class="ttdeci">@ RUNNING</div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025">entt::process::state::ABORTED</a></div><div class="ttdeci">@ ABORTED</div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673">entt::process::state::PAUSED</a></div><div class="ttdeci">@ PAUSED</div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419">entt::process::state::FAILED</a></div><div class="ttdeci">@ FAILED</div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268">entt::process::state::UNINITIALIZED</a></div><div class="ttdeci">@ UNINITIALIZED</div></div>
+<div class="ttc" id="aclassentt_1_1process_html_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85"><div class="ttname"><a href="classentt_1_1process.html#af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85">entt::process::state::SUCCEEDED</a></div><div class="ttdeci">@ SUCCEEDED</div></div>
+<div class="ttc" id="aconfig_8h_html_ad351dc3d24a47909c17878fd0e377c54"><div class="ttname"><a href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></div><div class="ttdeci">#define ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00006">config.h:6</a></div></div>
+<div class="ttc" id="anamespaceentt_html"><div class="ttname"><a href="namespaceentt.html">entt</a></div><div class="ttdef"><b>Definition</b> <a href="algorithm_8hpp_source.html#l00013">algorithm.hpp:13</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a0d9fd5898acf13553bbcf14b99159f4d"><div class="ttname"><a href="namespaceentt.html#a0d9fd5898acf13553bbcf14b99159f4d">entt::integral_constant</a></div><div class="ttdeci">std::integral_constant&lt; decltype(Value), Value &gt; integral_constant</div><div class="ttdoc">Wraps a static constant.</div><div class="ttdef"><b>Definition</b> <a href="type__traits_8hpp_source.html#l00021">type_traits.hpp:21</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+<div class="ttc" id="astructTarget_html"><div class="ttname"><a href="structTarget.html">Target</a></div><div class="ttdef"><b>Definition</b> <a href="target_8hpp_source.html#l00018">target.hpp:18</a></div></div>
+<div class="ttc" id="astructentt_1_1process__adaptor_html"><div class="ttname"><a href="structentt_1_1process__adaptor.html">entt::process_adaptor</a></div><div class="ttdoc">Adaptor for lambdas and functors to turn them into processes.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00312">process.hpp:312</a></div></div>
+<div class="ttc" id="astructentt_1_1process__adaptor_html_a7514fabbbda491742872bc0e52dde5c2"><div class="ttname"><a href="structentt_1_1process__adaptor.html#a7514fabbbda491742872bc0e52dde5c2">entt::process_adaptor::update</a></div><div class="ttdeci">void update(const Delta delta, void *data)</div><div class="ttdoc">Updates a process and its internal state if required.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00328">process.hpp:328</a></div></div>
+<div class="ttc" id="astructentt_1_1process__adaptor_html_ad1e2c8f3c44bf42abb05ef913b8267ce"><div class="ttname"><a href="structentt_1_1process__adaptor.html#ad1e2c8f3c44bf42abb05ef913b8267ce">entt::process_adaptor::process_adaptor</a></div><div class="ttdeci">process_adaptor(Args &amp;&amp;... args)</div><div class="ttdoc">Constructs a process adaptor from a lambda or a functor.</div><div class="ttdef"><b>Definition</b> <a href="process_8hpp_source.html#l00319">process.hpp:319</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

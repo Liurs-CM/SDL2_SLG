@@ -1,0 +1,61 @@
+\doxysection{player\+\_\+ghost\+\_\+collide.\+cpp}
+\hypertarget{player__ghost__collide_8cpp_source}{}\label{player__ghost__collide_8cpp_source}\index{src/sys/player\_ghost\_collide.cpp@{src/sys/player\_ghost\_collide.cpp}}
+\mbox{\hyperlink{player__ghost__collide_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ player\_ghost\_collide.cpp}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 29/9/18.}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{player__ghost__collide_8hpp}{player\_ghost\_collide.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2dir_8hpp}{comp/dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost_8hpp}{comp/ghost.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{player_8hpp}{comp/player.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8hpp}{comp/position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dir__to__pos_8hpp}{util/dir\_to\_pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost__mode_8hpp}{comp/ghost\_mode.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00019}00019\ \textcolor{keyword}{namespace\ }\{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00021}00021\ \textcolor{keywordtype}{bool}\ collide(}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00022}00022\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pPos,}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00023}00023\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ gPos,}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00024}00024\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ pDir,}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00025}00025\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ gDir}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00026}00026\ )\ \{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00027}00027\ \ \ \textcolor{keywordflow}{if}\ (pPos\ ==\ gPos)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00028}00028\ \ \ \textcolor{keywordflow}{if}\ (pPos\ +\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(pDir)\ !=\ gPos)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00029}00029\ \ \ \textcolor{keywordflow}{if}\ (pDir\ !=\ \mbox{\hyperlink{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163}{opposite}}(gDir))\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00030}00030\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00031}00031\ \}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00035}\mbox{\hyperlink{player__ghost__collide_8cpp_a3d5eafa0b558bc4fcdc6704f51e7af7b}{00035}}\ \mbox{\hyperlink{structGhostCollision}{GhostCollision}}\ \mbox{\hyperlink{player__ghost__collide_8cpp_a3d5eafa0b558bc4fcdc6704f51e7af7b}{playerGhostCollide}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00036}00036\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ players\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structPlayer}{Player}},\ \mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structActualDir}{ActualDir}}>();}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00037}00037\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ ghosts\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structGhost}{Ghost}},\ \mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structActualDir}{ActualDir}}>();}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00038}00038\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ p\ :\ players)\ \{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ playerPos\ =\ players.get<\mbox{\hyperlink{structPosition}{Position}}>(p).p;}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ playerDir\ =\ players.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(p).d;}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ g\ :\ ghosts)\ \{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00042}00042\ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ ghostPos\ =\ ghosts.get<\mbox{\hyperlink{structPosition}{Position}}>(g).p;}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00043}00043\ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ ghostDir\ =\ ghosts.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(g).d;}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00044}00044\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (collide(playerPos,\ ghostPos,\ playerDir,\ ghostDir))\ \{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structScaredMode}{ScaredMode}}>(g))\ \{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{g,\ \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49ea9a97eda6d89f5c9e84560468a0679707}{GhostCollision::Type::eat}}\};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structEatenMode}{EatenMode}}>(g))\ \{}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{g,\ \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49eaf7a2e8166a663d6a5fc86c3ccd320f0b}{GhostCollision::Type::lose}}\};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00051}00051\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00052}00052\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00053}00053\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00054}00054\ \ \ \textcolor{keywordflow}{return}\ \{\mbox{\hyperlink{namespaceentt_a588326af8f6f902a6c0b57d3f9fc6c17}{entt::null}},\ \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49ea334c4a4c42fdb79d7ebc3e73b517e6f8}{GhostCollision::Type::none}}\};}
+\DoxyCodeLine{\Hypertarget{player__ghost__collide_8cpp_source_l00055}00055\ \}}
+
+\end{DoxyCode}

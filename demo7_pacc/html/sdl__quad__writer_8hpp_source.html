@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/util/sdl_quad_writer.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b7878ad5ecbf2506f4125b9d34c97e45.html">util</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">sdl_quad_writer.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="sdl__quad__writer_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  sdl_quad_writer.hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  EnTT Pacman</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by Indiana Kernick on 24/4/20.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2020 Indiana Kernick. All rights reserved.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef UTIL_SDL_QUAD_WRITER_HPP</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define UTIL_SDL_QUAD_WRITER_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="pos_8hpp.html">pos.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="sprites_8hpp.html">sprites.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;SDL_render.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceSDL.html">SDL</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classSDL_1_1QuadWriter.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classSDL_1_1QuadWriter.html">QuadWriter</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <a class="code hl_class" href="classSDL_1_1QuadWriter.html">QuadWriter</a>(SDL_Renderer *, SDL_Texture *);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSDL_1_1QuadWriter.html#a11220acce1e5ca1aa568ffc603a5ce13">tilePos</a>(<a class="code hl_struct" href="structPos.html">Pos</a>, <a class="code hl_struct" href="structPos.html">Pos</a>, <span class="keywordtype">double</span> = 0.0);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSDL_1_1QuadWriter.html#a2e28cc04be1ed5a29fb8636c2c6c8193">tileTex</a>(<a class="code hl_struct" href="structanimera_1_1SpriteRect.html">animera::SpriteRect</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSDL_1_1QuadWriter.html#a2e28cc04be1ed5a29fb8636c2c6c8193">tileTex</a>(<a class="code hl_enumeration" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">animera::SpriteID</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSDL_1_1QuadWriter.html#a120e5f080bf2bfc10a7d925b336c9cd6">render</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classSDL_1_1QuadWriter.html#af1f2110b22c1a552d75a243a746e59c6">   29</a></span>  SDL_Renderer *<a class="code hl_variable" href="classSDL_1_1QuadWriter.html#af1f2110b22c1a552d75a243a746e59c6">renderer</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classSDL_1_1QuadWriter.html#ad99ad72cad9295bfdd642975e9a0d199">   30</a></span>  SDL_Texture *<a class="code hl_variable" href="classSDL_1_1QuadWriter.html#ad99ad72cad9295bfdd642975e9a0d199">texture</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classSDL_1_1QuadWriter.html#aca02dbdcfebd3f0eb6b733bb421091f9">   32</a></span>  SDL_Rect <a class="code hl_variable" href="classSDL_1_1QuadWriter.html#aca02dbdcfebd3f0eb6b733bb421091f9">srcRect</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classSDL_1_1QuadWriter.html#afa9fcd8649271ea484d164da9bd96a41">   33</a></span>  SDL_Rect <a class="code hl_variable" href="classSDL_1_1QuadWriter.html#afa9fcd8649271ea484d164da9bd96a41">dstRect</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classSDL_1_1QuadWriter.html#acdaedd0dc9b0bfc377f3ad723f8eb351">   34</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="classSDL_1_1QuadWriter.html#acdaedd0dc9b0bfc377f3ad723f8eb351">angle</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html"><div class="ttname"><a href="classSDL_1_1QuadWriter.html">SDL::QuadWriter</a></div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8hpp_source.html#l00018">sdl_quad_writer.hpp:18</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_a11220acce1e5ca1aa568ffc603a5ce13"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#a11220acce1e5ca1aa568ffc603a5ce13">SDL::QuadWriter::tilePos</a></div><div class="ttdeci">void tilePos(Pos, Pos, double=0.0)</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8cpp_source.html#l00022">sdl_quad_writer.cpp:22</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_a120e5f080bf2bfc10a7d925b336c9cd6"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#a120e5f080bf2bfc10a7d925b336c9cd6">SDL::QuadWriter::render</a></div><div class="ttdeci">void render() const</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8cpp_source.html#l00043">sdl_quad_writer.cpp:43</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_a2e28cc04be1ed5a29fb8636c2c6c8193"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#a2e28cc04be1ed5a29fb8636c2c6c8193">SDL::QuadWriter::tileTex</a></div><div class="ttdeci">void tileTex(animera::SpriteRect)</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8cpp_source.html#l00032">sdl_quad_writer.cpp:32</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_aca02dbdcfebd3f0eb6b733bb421091f9"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#aca02dbdcfebd3f0eb6b733bb421091f9">SDL::QuadWriter::srcRect</a></div><div class="ttdeci">SDL_Rect srcRect</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8hpp_source.html#l00032">sdl_quad_writer.hpp:32</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_acdaedd0dc9b0bfc377f3ad723f8eb351"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#acdaedd0dc9b0bfc377f3ad723f8eb351">SDL::QuadWriter::angle</a></div><div class="ttdeci">double angle</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8hpp_source.html#l00034">sdl_quad_writer.hpp:34</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_ad99ad72cad9295bfdd642975e9a0d199"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#ad99ad72cad9295bfdd642975e9a0d199">SDL::QuadWriter::texture</a></div><div class="ttdeci">SDL_Texture * texture</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8hpp_source.html#l00030">sdl_quad_writer.hpp:30</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_af1f2110b22c1a552d75a243a746e59c6"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#af1f2110b22c1a552d75a243a746e59c6">SDL::QuadWriter::renderer</a></div><div class="ttdeci">SDL_Renderer * renderer</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8hpp_source.html#l00029">sdl_quad_writer.hpp:29</a></div></div>
+<div class="ttc" id="aclassSDL_1_1QuadWriter_html_afa9fcd8649271ea484d164da9bd96a41"><div class="ttname"><a href="classSDL_1_1QuadWriter.html#afa9fcd8649271ea484d164da9bd96a41">SDL::QuadWriter::dstRect</a></div><div class="ttdeci">SDL_Rect dstRect</div><div class="ttdef"><b>Definition</b> <a href="sdl__quad__writer_8hpp_source.html#l00033">sdl_quad_writer.hpp:33</a></div></div>
+<div class="ttc" id="anamespaceSDL_html"><div class="ttname"><a href="namespaceSDL.html">SDL</a></div><div class="ttdef"><b>Definition</b> <a href="sdl__check_8hpp_source.html#l00015">sdl_check.hpp:15</a></div></div>
+<div class="ttc" id="anamespaceanimera_1_1sprites_html_aaed86c1f6d53ef993b860ce004976096"><div class="ttname"><a href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">animera::sprites::SpriteID</a></div><div class="ttdeci">SpriteID</div><div class="ttdef"><b>Definition</b> <a href="sprites_8hpp_source.html#l00045">sprites.hpp:45</a></div></div>
+<div class="ttc" id="apos_8hpp_html"><div class="ttname"><a href="pos_8hpp.html">pos.hpp</a></div></div>
+<div class="ttc" id="asprites_8hpp_html"><div class="ttname"><a href="sprites_8hpp.html">sprites.hpp</a></div></div>
+<div class="ttc" id="astructPos_html"><div class="ttname"><a href="structPos.html">Pos</a></div><div class="ttdef"><b>Definition</b> <a href="pos_8hpp_source.html#l00014">pos.hpp:14</a></div></div>
+<div class="ttc" id="astructanimera_1_1SpriteRect_html"><div class="ttname"><a href="structanimera_1_1SpriteRect.html">animera::SpriteRect</a></div><div class="ttdef"><b>Definition</b> <a href="sprites_8cpp_source.html#l00008">sprites.cpp:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

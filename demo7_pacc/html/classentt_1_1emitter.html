@@ -1,0 +1,806 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::emitter&lt; Derived &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1emitter.html">emitter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classentt_1_1emitter-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::emitter&lt; Derived &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>General purpose event emitter.  
+ <a href="classentt_1_1emitter.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="emitter_8hpp_source.html">emitter.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1emitter_1_1basic__pool.html">basic_pool</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1emitter_1_1connection.html">connection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic connection type for events.  <a href="structentt_1_1emitter_1_1connection.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1emitter_1_1pool__handler.html">pool_handler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1200216d9abb1adb18db6035d99b60da" id="r_a1200216d9abb1adb18db6035d99b60da"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:a1200216d9abb1adb18db6035d99b60da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a1200216d9abb1adb18db6035d99b60da">listener</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="structentt_1_1emitter_1_1pool__handler.html">pool_handler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt;::listener_type</td></tr>
+<tr class="memdesc:a1200216d9abb1adb18db6035d99b60da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of listeners accepted for the given event.  <br /></td></tr>
+<tr class="separator:a1200216d9abb1adb18db6035d99b60da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af36907a2dc7cc0a6607533c67e072f92" id="r_af36907a2dc7cc0a6607533c67e072f92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#af36907a2dc7cc0a6607533c67e072f92">emitter</a> ()=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:af36907a2dc7cc0a6607533c67e072f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:af36907a2dc7cc0a6607533c67e072f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d352c547768be34f03f0fbfdd30b43" id="r_af3d352c547768be34f03f0fbfdd30b43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#af3d352c547768be34f03f0fbfdd30b43">~emitter</a> ()</td></tr>
+<tr class="memdesc:af3d352c547768be34f03f0fbfdd30b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
+<tr class="separator:af3d352c547768be34f03f0fbfdd30b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842fef69b914a160b0bcc211bb77b27b" id="r_a842fef69b914a160b0bcc211bb77b27b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a842fef69b914a160b0bcc211bb77b27b">emitter</a> (<a class="el" href="classentt_1_1emitter.html">emitter</a> &amp;&amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:a842fef69b914a160b0bcc211bb77b27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move constructor.  <br /></td></tr>
+<tr class="separator:a842fef69b914a160b0bcc211bb77b27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a88b488282d4073ee7b13cb042d865" id="r_ac9a88b488282d4073ee7b13cb042d865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1emitter.html">emitter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#ac9a88b488282d4073ee7b13cb042d865">operator=</a> (<a class="el" href="classentt_1_1emitter.html">emitter</a> &amp;&amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:ac9a88b488282d4073ee7b13cb042d865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move assignment operator.  <br /></td></tr>
+<tr class="separator:ac9a88b488282d4073ee7b13cb042d865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ece275ff8736bcdcfb4103087801ea2" id="r_a4ece275ff8736bcdcfb4103087801ea2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> , typename... Args&gt; </td></tr>
+<tr class="memitem:a4ece275ff8736bcdcfb4103087801ea2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a4ece275ff8736bcdcfb4103087801ea2">publish</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)</td></tr>
+<tr class="memdesc:a4ece275ff8736bcdcfb4103087801ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the given event.  <br /></td></tr>
+<tr class="separator:a4ece275ff8736bcdcfb4103087801ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646530b8137d2745f41421bf6145aa98" id="r_a646530b8137d2745f41421bf6145aa98"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:a646530b8137d2745f41421bf6145aa98"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1emitter_1_1connection.html">connection</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a646530b8137d2745f41421bf6145aa98">on</a> (<a class="el" href="classentt_1_1emitter.html#a1200216d9abb1adb18db6035d99b60da">listener</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; instance)</td></tr>
+<tr class="memdesc:a646530b8137d2745f41421bf6145aa98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a long-lived listener with the event emitter.  <br /></td></tr>
+<tr class="separator:a646530b8137d2745f41421bf6145aa98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8affd8b6c29279154ad79c4ecb4c77e4" id="r_a8affd8b6c29279154ad79c4ecb4c77e4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:a8affd8b6c29279154ad79c4ecb4c77e4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1emitter_1_1connection.html">connection</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a8affd8b6c29279154ad79c4ecb4c77e4">once</a> (<a class="el" href="classentt_1_1emitter.html#a1200216d9abb1adb18db6035d99b60da">listener</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; instance)</td></tr>
+<tr class="memdesc:a8affd8b6c29279154ad79c4ecb4c77e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a short-lived listener with the event emitter.  <br /></td></tr>
+<tr class="separator:a8affd8b6c29279154ad79c4ecb4c77e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9525364769b8daf55dd942599aa0a09c" id="r_a9525364769b8daf55dd942599aa0a09c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:a9525364769b8daf55dd942599aa0a09c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a9525364769b8daf55dd942599aa0a09c">erase</a> (<a class="el" href="structentt_1_1emitter_1_1connection.html">connection</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; conn)</td></tr>
+<tr class="memdesc:a9525364769b8daf55dd942599aa0a09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnects a listener from the event emitter.  <br /></td></tr>
+<tr class="separator:a9525364769b8daf55dd942599aa0a09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4324c59afee760ca13772eb6d2d522" id="r_a4e4324c59afee760ca13772eb6d2d522"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:a4e4324c59afee760ca13772eb6d2d522"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a4e4324c59afee760ca13772eb6d2d522">clear</a> ()</td></tr>
+<tr class="memdesc:a4e4324c59afee760ca13772eb6d2d522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnects all the listeners for the given event type.  <br /></td></tr>
+<tr class="separator:a4e4324c59afee760ca13772eb6d2d522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedafaefe2c9c91282c84e79aef26a35" id="r_acedafaefe2c9c91282c84e79aef26a35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#acedafaefe2c9c91282c84e79aef26a35">clear</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:acedafaefe2c9c91282c84e79aef26a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnects all the listeners.  <br /></td></tr>
+<tr class="separator:acedafaefe2c9c91282c84e79aef26a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c6111af231c9a82277069a3bf21b75" id="r_a08c6111af231c9a82277069a3bf21b75"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:a08c6111af231c9a82277069a3bf21b75"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a08c6111af231c9a82277069a3bf21b75">empty</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="memdesc:a08c6111af231c9a82277069a3bf21b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if there are listeners registered for the specific event.  <br /></td></tr>
+<tr class="separator:a08c6111af231c9a82277069a3bf21b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbac9d6fb49c28f06cb382715ed92ab9" id="r_afbac9d6fb49c28f06cb382715ed92ab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#afbac9d6fb49c28f06cb382715ed92ab9">empty</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:afbac9d6fb49c28f06cb382715ed92ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if there are listeners registered with the event emitter.  <br /></td></tr>
+<tr class="separator:afbac9d6fb49c28f06cb382715ed92ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:acb3426620771d08d6ae24a462c383704" id="r_acb3426620771d08d6ae24a462c383704"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:acb3426620771d08d6ae24a462c383704"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="structentt_1_1emitter_1_1pool__handler.html">pool_handler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#acb3426620771d08d6ae24a462c383704">assure</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="separator:acb3426620771d08d6ae24a462c383704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9abe759576e3d001d90dd502814c03" id="r_add9abe759576e3d001d90dd502814c03"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </td></tr>
+<tr class="memitem:add9abe759576e3d001d90dd502814c03"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structentt_1_1emitter_1_1pool__handler.html">pool_handler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#add9abe759576e3d001d90dd502814c03">assure</a> ()</td></tr>
+<tr class="separator:add9abe759576e3d001d90dd502814c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a29338a6c1d8e1e75b60f0e8aa9c8c7ea" id="r_a29338a6c1d8e1e75b60f0e8aa9c8c7ea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="structentt_1_1emitter_1_1basic__pool.html">basic_pool</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1emitter.html#a29338a6c1d8e1e75b60f0e8aa9c8c7ea">pools</a> {}</td></tr>
+<tr class="separator:a29338a6c1d8e1e75b60f0e8aa9c8c7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a>&gt;<br />
+class entt::emitter&lt; Derived &gt;</div><p>General purpose event emitter. </p>
+<p>The emitter class template follows the CRTP idiom. To create a custom emitter type, derived classes must inherit directly from the base class as:</p>
+<div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">my_emitter</a>: <a class="code hl_class" href="classentt_1_1emitter.html">emitter</a>&lt;my_emitter&gt; {</div>
+<div class="line">    <span class="comment">// ...</span></div>
+<div class="line">}</div>
+<div class="ttc" id="aclassentt_1_1emitter_html"><div class="ttname"><a href="classentt_1_1emitter.html">entt::emitter</a></div><div class="ttdoc">General purpose event emitter.</div><div class="ttdef"><b>Definition</b> <a href="emitter_8hpp_source.html#l00043">emitter.hpp:43</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+</div><!-- fragment --><p>Pools for the type of events are created internally on the fly. It's not required to specify in advance the full list of accepted types.<br  />
+ Moreover, whenever an event is published, an emitter provides the listeners with a reference to itself along with a const reference to the event. Therefore listeners have an handy way to work with it without incurring in the need of capturing a reference to the emitter.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Derived</td><td>Actual type of emitter that extends the class template. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00043">43</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a1200216d9abb1adb18db6035d99b60da" name="a1200216d9abb1adb18db6035d99b60da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1200216d9abb1adb18db6035d99b60da">&#9670;&#160;</a></span>listener</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::listener =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="structentt_1_1emitter_1_1pool__handler.html">pool_handler</a>&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a>&gt;::listener_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of listeners accepted for the given event. </p>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="af36907a2dc7cc0a6607533c67e072f92" name="af36907a2dc7cc0a6607533c67e072f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36907a2dc7cc0a6607533c67e072f92">&#9670;&#160;</a></span>emitter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::emitter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a id="af3d352c547768be34f03f0fbfdd30b43" name="af3d352c547768be34f03f0fbfdd30b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d352c547768be34f03f0fbfdd30b43">&#9670;&#160;</a></span>~emitter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">virtual</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::~<a class="el" href="classentt_1_1emitter.html">emitter</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00189">189</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a842fef69b914a160b0bcc211bb77b27b" name="a842fef69b914a160b0bcc211bb77b27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842fef69b914a160b0bcc211bb77b27b">&#9670;&#160;</a></span>emitter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::emitter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1emitter.html">emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move constructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="add9abe759576e3d001d90dd502814c03" name="add9abe759576e3d001d90dd502814c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9abe759576e3d001d90dd502814c03">&#9670;&#160;</a></span>assure() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1emitter_1_1pool__handler.html">pool_handler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; &amp; <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::assure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00150">150</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="acb3426620771d08d6ae24a462c383704" name="acb3426620771d08d6ae24a462c383704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3426620771d08d6ae24a462c383704">&#9670;&#160;</a></span>assure() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="structentt_1_1emitter_1_1pool__handler.html">pool_handler</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; &amp; <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::assure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00128">128</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="emitter_8hpp_source.html#l00327">entt::emitter&lt; Derived &gt;::pools</a> , 以及 <a class="el" href="type__info_8hpp_source.html#l00050">entt::type_index&lt; Type, typename &gt;::value()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1emitter_acb3426620771d08d6ae24a462c383704_cgraph.png" border="0" usemap="#aclassentt_1_1emitter_acb3426620771d08d6ae24a462c383704_cgraph" alt=""/></div>
+<map name="aclassentt_1_1emitter_acb3426620771d08d6ae24a462c383704_cgraph" id="aclassentt_1_1emitter_acb3426620771d08d6ae24a462c383704_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" href="structentt_1_1type__index.html#afe595aab15f065812bb2a82e1c717c2e" title="Returns the sequential identifier of a given type." alt="" coords="208,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="161,15,194,15,194,21,161,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e4324c59afee760ca13772eb6d2d522" name="a4e4324c59afee760ca13772eb6d2d522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4324c59afee760ca13772eb6d2d522">&#9670;&#160;</a></span>clear() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disconnects all the listeners for the given event type. </p>
+<p>All the connections previously returned for the given event are invalidated. Using them results in undefined behavior.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>Type of event to reset. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00288">288</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="acedafaefe2c9c91282c84e79aef26a35" name="acedafaefe2c9c91282c84e79aef26a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedafaefe2c9c91282c84e79aef26a35">&#9670;&#160;</a></span>clear() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disconnects all the listeners. </p>
+<p>All the connections previously returned are invalidated. Using them results in undefined behavior. </p>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00298">298</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="emitter_8hpp_source.html#l00327">entt::emitter&lt; Derived &gt;::pools</a>.</p>
+
+</div>
+</div>
+<a id="a08c6111af231c9a82277069a3bf21b75" name="a08c6111af231c9a82277069a3bf21b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c6111af231c9a82277069a3bf21b75">&#9670;&#160;</a></span>empty() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if there are listeners registered for the specific event. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>Type of event to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if there are no listeners registered, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00312">312</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="afbac9d6fb49c28f06cb382715ed92ab9" name="afbac9d6fb49c28f06cb382715ed92ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbac9d6fb49c28f06cb382715ed92ab9">&#9670;&#160;</a></span>empty() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if there are listeners registered with the event emitter. </p>
+<dl class="section return"><dt>返回</dt><dd>True if there are no listeners registered, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00320">320</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="emitter_8hpp_source.html#l00327">entt::emitter&lt; Derived &gt;::pools</a>.</p>
+
+</div>
+</div>
+<a id="a9525364769b8daf55dd942599aa0a09c" name="a9525364769b8daf55dd942599aa0a09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9525364769b8daf55dd942599aa0a09c">&#9670;&#160;</a></span>erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1emitter_1_1connection.html">connection</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt;&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disconnects a listener from the event emitter. </p>
+<p>Do not use twice the same connection to disconnect a listener, it results in undefined behavior. Once used, discard the connection object.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>Type of event of the connection. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conn</td><td>A valid connection. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00275">275</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a646530b8137d2745f41421bf6145aa98" name="a646530b8137d2745f41421bf6145aa98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646530b8137d2745f41421bf6145aa98">&#9670;&#160;</a></span>on()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1emitter_1_1connection.html">connection</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::on </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1emitter.html#a1200216d9abb1adb18db6035d99b60da">listener</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt;&#160;</td>
+          <td class="paramname"><em>instance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a long-lived listener with the event emitter. </p>
+<p>This method can be used to register a listener designed to be invoked more than once for the given event type.<br  />
+ The connection returned by the method can be freely discarded. It's meant to be used later to disconnect the listener if required.</p>
+<p>The listener is as a callable object that can be moved and the type of which is <code>void(const Event &amp;, Derived &amp;)</code>.</p>
+<dl class="section note"><dt>注解</dt><dd>Whenever an event is emitted, the emitter provides the listener with a reference to the derived class. Listeners don't have to capture those instances for later uses.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>Type of event to which to connect the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The listener to register. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Connection object that can be used to disconnect the listener. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00236">236</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a8affd8b6c29279154ad79c4ecb4c77e4" name="a8affd8b6c29279154ad79c4ecb4c77e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8affd8b6c29279154ad79c4ecb4c77e4">&#9670;&#160;</a></span>once()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structentt_1_1emitter_1_1connection.html">connection</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt; <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::once </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1emitter.html#a1200216d9abb1adb18db6035d99b60da">listener</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &gt;&#160;</td>
+          <td class="paramname"><em>instance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a short-lived listener with the event emitter. </p>
+<p>This method can be used to register a listener designed to be invoked only once for the given event type.<br  />
+ The connection returned by the method can be freely discarded. It's meant to be used later to disconnect the listener if required.</p>
+<p>The listener is as a callable object that can be moved and the type of which is <code>void(const Event &amp;, Derived &amp;)</code>.</p>
+<dl class="section note"><dt>注解</dt><dd>Whenever an event is emitted, the emitter provides the listener with a reference to the derived class. Listeners don't have to capture those instances for later uses.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>Type of event to which to connect the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The listener to register. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Connection object that can be used to disconnect the listener. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00261">261</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="ac9a88b488282d4073ee7b13cb042d865" name="ac9a88b488282d4073ee7b13cb042d865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a88b488282d4073ee7b13cb042d865">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1emitter.html">emitter</a> &amp; <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">::operator</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1emitter.html">emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move assignment operator. </p>
+<dl class="section return"><dt>返回</dt><dd>This emitter. </dd></dl>
+
+</div>
+</div>
+<a id="a4ece275ff8736bcdcfb4103087801ea2" name="a4ece275ff8736bcdcfb4103087801ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ece275ff8736bcdcfb4103087801ea2">&#9670;&#160;</a></span>publish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::publish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emits the given event. </p>
+<p>All the listeners registered for the specific event type are invoked with the given event. The event type must either have a proper constructor for the arguments provided or be an aggregate type.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>Type of event to publish. </td></tr>
+    <tr><td class="paramname">Args</td><td>Types of arguments to use to construct the event. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Parameters to use to initialize the event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00211">211</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a29338a6c1d8e1e75b60f0e8aa9c8c7ea" name="a29338a6c1d8e1e75b60f0e8aa9c8c7ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29338a6c1d8e1e75b60f0e8aa9c8c7ea">&#9670;&#160;</a></span>pools</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="structentt_1_1emitter_1_1basic__pool.html">basic_pool</a>&gt; &gt; <a class="el" href="classentt_1_1emitter.html">entt::emitter</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Derived</a> &gt;::pools {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="emitter_8hpp_source.html">emitter.hpp</a> 第 <a class="el" href="emitter_8hpp_source.html#l00327">327</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="emitter_8hpp_source.html#l00128">entt::emitter&lt; Derived &gt;::assure()</a>, <a class="el" href="emitter_8hpp_source.html#l00298">entt::emitter&lt; Derived &gt;::clear()</a> , 以及 <a class="el" href="emitter_8hpp_source.html#l00320">entt::emitter&lt; Derived &gt;::empty()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/signal/<a class="el" href="emitter_8hpp_source.html">emitter.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

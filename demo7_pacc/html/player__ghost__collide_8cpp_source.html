@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/sys/player_ghost_collide.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_220d2bd384b446346a1cdcf02b1b2295.html">sys</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">player_ghost_collide.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="player__ghost__collide_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  player_ghost_collide.cpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  EnTT Pacman</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by Indiana Kernick on 29/9/18.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2018 Indiana Kernick. All rights reserved.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="player__ghost__collide_8hpp.html">player_ghost_collide.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="comp_2dir_8hpp.html">comp/dir.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="ghost_8hpp.html">comp/ghost.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="player_8hpp.html">comp/player.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="position_8hpp.html">comp/position.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="dir__to__pos_8hpp.html">util/dir_to_pos.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="ghost__mode_8hpp.html">comp/ghost_mode.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="registry_8hpp.html">entt/entity/registry.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">bool</span> collide(</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structPos.html">Pos</a> pPos,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structPos.html">Pos</a> gPos,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67">Dir</a> pDir,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67">Dir</a> gDir</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">if</span> (pPos == gPos)               <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">if</span> (pPos + <a class="code hl_function" href="dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4">toPos</a>(pDir) != gPos) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordflow">if</span> (pDir != <a class="code hl_function" href="util_2dir_8hpp.html#a83356231f8b8faefbec0e467f4839163">opposite</a>(gDir))     <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="player__ghost__collide_8cpp.html#a3d5eafa0b558bc4fcdc6704f51e7af7b">   35</a></span><a class="code hl_struct" href="structGhostCollision.html">GhostCollision</a> <a class="code hl_function" href="player__ghost__collide_8cpp.html#a3d5eafa0b558bc4fcdc6704f51e7af7b">playerGhostCollide</a>(<a class="code hl_class" href="classentt_1_1basic__registry.html">entt::registry</a> &amp;reg) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">const</span> <span class="keyword">auto</span> players = reg.<a class="code hl_function" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e">view</a>&lt;<a class="code hl_struct" href="structPlayer.html">Player</a>, <a class="code hl_struct" href="structPosition.html">Position</a>, <a class="code hl_struct" href="structActualDir.html">ActualDir</a>&gt;();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">const</span> <span class="keyword">auto</span> ghosts = reg.<a class="code hl_function" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e">view</a>&lt;<a class="code hl_struct" href="structGhost.html">Ghost</a>, <a class="code hl_struct" href="structPosition.html">Position</a>, <a class="code hl_struct" href="structActualDir.html">ActualDir</a>&gt;();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> entt::entity p : players) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structPos.html">Pos</a> playerPos = players.get&lt;<a class="code hl_struct" href="structPosition.html">Position</a>&gt;(p).p;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> <a class="code hl_enumeration" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67">Dir</a> playerDir = players.get&lt;<a class="code hl_struct" href="structActualDir.html">ActualDir</a>&gt;(p).d;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> entt::entity g : ghosts) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structPos.html">Pos</a> ghostPos = ghosts.get&lt;<a class="code hl_struct" href="structPosition.html">Position</a>&gt;(g).p;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keyword">const</span> <a class="code hl_enumeration" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67">Dir</a> ghostDir = ghosts.get&lt;<a class="code hl_struct" href="structActualDir.html">ActualDir</a>&gt;(g).d;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keywordflow">if</span> (collide(playerPos, ghostPos, playerDir, ghostDir)) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">if</span> (reg.<a class="code hl_function" href="classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258">has</a>&lt;<a class="code hl_struct" href="structScaredMode.html">ScaredMode</a>&gt;(g)) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>          <span class="keywordflow">return</span> {g, <a class="code hl_enumvalue" href="structGhostCollision.html#ac43e13b49f770a4c2b5200fc6e2ce49ea9a97eda6d89f5c9e84560468a0679707">GhostCollision::Type::eat</a>};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (reg.<a class="code hl_function" href="classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258">has</a>&lt;<a class="code hl_struct" href="structEatenMode.html">EatenMode</a>&gt;(g)) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> {g, <a class="code hl_enumvalue" href="structGhostCollision.html#ac43e13b49f770a4c2b5200fc6e2ce49eaf7a2e8166a663d6a5fc86c3ccd320f0b">GhostCollision::Type::lose</a>};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">return</span> {<a class="code hl_variable" href="namespaceentt.html#a588326af8f6f902a6c0b57d3f9fc6c17">entt::null</a>, <a class="code hl_enumvalue" href="structGhostCollision.html#ac43e13b49f770a4c2b5200fc6e2ce49ea334c4a4c42fdb79d7ebc3e73b517e6f8">GhostCollision::Type::none</a>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+</div>
+<div class="ttc" id="aclassentt_1_1basic__registry_html"><div class="ttname"><a href="classentt_1_1basic__registry.html">entt::basic_registry</a></div><div class="ttdoc">Fast and reliable entity-component system.</div><div class="ttdef"><b>Definition</b> <a href="registry_8hpp_source.html#l00044">registry.hpp:44</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__registry_html_a8d0d1722bcefbdca7a78a4cdf0feca2e"><div class="ttname"><a href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e">entt::basic_registry::view</a></div><div class="ttdeci">entt::basic_view&lt; Entity, exclude_t&lt; Exclude... &gt;, Component... &gt; view(exclude_t&lt; Exclude... &gt;={})</div><div class="ttdoc">Returns a view for the given components.</div><div class="ttdef"><b>Definition</b> <a href="registry_8hpp_source.html#l01357">registry.hpp:1357</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__registry_html_ae0948bfee43711e2df12946a63a2b258"><div class="ttname"><a href="classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258">entt::basic_registry::has</a></div><div class="ttdeci">bool has(const entity_type entity) const</div><div class="ttdoc">Checks if an entity has all the given components.</div><div class="ttdef"><b>Definition</b> <a href="registry_8hpp_source.html#l00921">registry.hpp:921</a></div></div>
+<div class="ttc" id="acomp_2dir_8hpp_html"><div class="ttname"><a href="comp_2dir_8hpp.html">dir.hpp</a></div></div>
+<div class="ttc" id="adir__to__pos_8hpp_html"><div class="ttname"><a href="dir__to__pos_8hpp.html">dir_to_pos.hpp</a></div></div>
+<div class="ttc" id="adir__to__pos_8hpp_html_a3d8782c754e99767a71cc827b19d02d4"><div class="ttname"><a href="dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4">toPos</a></div><div class="ttdeci">constexpr Pos toPos(const Dir dir, const int length=1)</div><div class="ttdef"><b>Definition</b> <a href="dir__to__pos_8hpp_source.html#l00015">dir_to_pos.hpp:15</a></div></div>
+<div class="ttc" id="aghost_8hpp_html"><div class="ttname"><a href="ghost_8hpp.html">ghost.hpp</a></div></div>
+<div class="ttc" id="aghost__mode_8hpp_html"><div class="ttname"><a href="ghost__mode_8hpp.html">ghost_mode.hpp</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a588326af8f6f902a6c0b57d3f9fc6c17"><div class="ttname"><a href="namespaceentt.html#a588326af8f6f902a6c0b57d3f9fc6c17">entt::null</a></div><div class="ttdeci">constexpr auto null</div><div class="ttdoc">Compile-time constant for null entities.</div><div class="ttdef"><b>Definition</b> <a href="entity_8hpp_source.html#l00174">entity.hpp:174</a></div></div>
+<div class="ttc" id="aplayer_8hpp_html"><div class="ttname"><a href="player_8hpp.html">player.hpp</a></div></div>
+<div class="ttc" id="aplayer__ghost__collide_8cpp_html_a3d5eafa0b558bc4fcdc6704f51e7af7b"><div class="ttname"><a href="player__ghost__collide_8cpp.html#a3d5eafa0b558bc4fcdc6704f51e7af7b">playerGhostCollide</a></div><div class="ttdeci">GhostCollision playerGhostCollide(entt::registry &amp;reg)</div><div class="ttdef"><b>Definition</b> <a href="player__ghost__collide_8cpp_source.html#l00035">player_ghost_collide.cpp:35</a></div></div>
+<div class="ttc" id="aplayer__ghost__collide_8hpp_html"><div class="ttname"><a href="player__ghost__collide_8hpp.html">player_ghost_collide.hpp</a></div></div>
+<div class="ttc" id="aposition_8hpp_html"><div class="ttname"><a href="position_8hpp.html">position.hpp</a></div></div>
+<div class="ttc" id="aregistry_8hpp_html"><div class="ttname"><a href="registry_8hpp.html">registry.hpp</a></div></div>
+<div class="ttc" id="astructActualDir_html"><div class="ttname"><a href="structActualDir.html">ActualDir</a></div><div class="ttdef"><b>Definition</b> <a href="comp_2dir_8hpp_source.html#l00020">dir.hpp:20</a></div></div>
+<div class="ttc" id="astructEatenMode_html"><div class="ttname"><a href="structEatenMode.html">EatenMode</a></div><div class="ttdef"><b>Definition</b> <a href="ghost__mode_8hpp_source.html#l00028">ghost_mode.hpp:28</a></div></div>
+<div class="ttc" id="astructGhostCollision_html"><div class="ttname"><a href="structGhostCollision.html">GhostCollision</a></div><div class="ttdef"><b>Definition</b> <a href="player__ghost__collide_8hpp_source.html#l00014">player_ghost_collide.hpp:14</a></div></div>
+<div class="ttc" id="astructGhostCollision_html_ac43e13b49f770a4c2b5200fc6e2ce49ea334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="structGhostCollision.html#ac43e13b49f770a4c2b5200fc6e2ce49ea334c4a4c42fdb79d7ebc3e73b517e6f8">GhostCollision::Type::none</a></div><div class="ttdeci">@ none</div></div>
+<div class="ttc" id="astructGhostCollision_html_ac43e13b49f770a4c2b5200fc6e2ce49ea9a97eda6d89f5c9e84560468a0679707"><div class="ttname"><a href="structGhostCollision.html#ac43e13b49f770a4c2b5200fc6e2ce49ea9a97eda6d89f5c9e84560468a0679707">GhostCollision::Type::eat</a></div><div class="ttdeci">@ eat</div></div>
+<div class="ttc" id="astructGhostCollision_html_ac43e13b49f770a4c2b5200fc6e2ce49eaf7a2e8166a663d6a5fc86c3ccd320f0b"><div class="ttname"><a href="structGhostCollision.html#ac43e13b49f770a4c2b5200fc6e2ce49eaf7a2e8166a663d6a5fc86c3ccd320f0b">GhostCollision::Type::lose</a></div><div class="ttdeci">@ lose</div></div>
+<div class="ttc" id="astructGhost_html"><div class="ttname"><a href="structGhost.html">Ghost</a></div><div class="ttdef"><b>Definition</b> <a href="ghost_8hpp_source.html#l00014">ghost.hpp:14</a></div></div>
+<div class="ttc" id="astructPlayer_html"><div class="ttname"><a href="structPlayer.html">Player</a></div><div class="ttdef"><b>Definition</b> <a href="player_8hpp_source.html#l00014">player.hpp:14</a></div></div>
+<div class="ttc" id="astructPos_html"><div class="ttname"><a href="structPos.html">Pos</a></div><div class="ttdef"><b>Definition</b> <a href="pos_8hpp_source.html#l00014">pos.hpp:14</a></div></div>
+<div class="ttc" id="astructPosition_html"><div class="ttname"><a href="structPosition.html">Position</a></div><div class="ttdef"><b>Definition</b> <a href="position_8hpp_source.html#l00017">position.hpp:17</a></div></div>
+<div class="ttc" id="astructScaredMode_html"><div class="ttname"><a href="structScaredMode.html">ScaredMode</a></div><div class="ttdef"><b>Definition</b> <a href="ghost__mode_8hpp_source.html#l00022">ghost_mode.hpp:22</a></div></div>
+<div class="ttc" id="autil_2dir_8hpp_html_a551e5037453f87875fbf5933d8579d67"><div class="ttname"><a href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67">Dir</a></div><div class="ttdeci">Dir</div><div class="ttdef"><b>Definition</b> <a href="util_2dir_8hpp_source.html#l00015">dir.hpp:15</a></div></div>
+<div class="ttc" id="autil_2dir_8hpp_html_a83356231f8b8faefbec0e467f4839163"><div class="ttname"><a href="util_2dir_8hpp.html#a83356231f8b8faefbec0e467f4839163">opposite</a></div><div class="ttdeci">constexpr Dir opposite(const Dir dir)</div><div class="ttdef"><b>Definition</b> <a href="util_2dir_8hpp_source.html#l00026">dir.hpp:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

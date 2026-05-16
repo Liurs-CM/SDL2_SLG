@@ -1,0 +1,7 @@
+<map id="entt::storage::insert" name="entt::storage::insert">
+<area shape="rect" id="Node000001" title="Assigns one or more entities to a storage and constructs their objects from a given instance." alt="" coords="227,35,377,60"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#abe1b8e51456f18c8ed2ddb1268d52820" title="Assigns one or more entities to a storage and constructs their objects from a given instance." alt="" coords="5,5,179,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,38,178,33,179,27,214,32"/>
+<area shape="rect" id="Node000003" href="$structentt_1_1basic__registry_1_1pool__handler.html#a339fdc74924c29c018293a0e84da19f1" title=" " alt="" coords="13,55,171,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,62,172,67,171,62,213,57"/>
+</map>

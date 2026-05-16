@@ -1,0 +1,9 @@
+<map id="entt::process::abort" name="entt::process::abort">
+<area shape="rect" id="Node000001" title="Aborts a process if it&#39;s still alive." alt="" coords="5,31,153,56"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1process.html#a8bc92bd0304659eb2a034fae65f1eeb9" title="Returns true if a process is either running or paused." alt="" coords="201,5,348,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,31,187,27,188,32,154,36"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1process.html#aacc7fe0ef3265113079c70ff8cd9478d" title="Updates a process and its internal state if required." alt="" coords="205,55,344,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,50,192,54,191,60,153,55"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1process.html#a993a037fa84e19b5b64762ab5fb68028" title=" " alt="" coords="396,55,539,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,65,382,65,382,70,344,70"/>
+</map>

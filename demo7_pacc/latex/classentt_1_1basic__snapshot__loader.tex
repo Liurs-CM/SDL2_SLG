@@ -1,0 +1,365 @@
+\doxysection{entt\+::basic\+\_\+snapshot\+\_\+loader\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1basic__snapshot__loader}{}\label{classentt_1_1basic__snapshot__loader}\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+
+
+Utility class to restore a snapshot as a whole.  
+
+
+
+
+{\ttfamily \#include $<$snapshot.\+hpp$>$}
+
+
+
+entt\+::basic\+\_\+snapshot\+\_\+loader\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classentt_1_1basic__snapshot__loader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a73d5864a57a78d528cc0bcbe36ff5039}{entity\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot__loader_ac80fe3bb3da7384ac5e0ed07a05e8bdb}{basic\+\_\+snapshot\+\_\+loader}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a73d5864a57a78d528cc0bcbe36ff5039}{entity\+\_\+type}} $>$ \&source) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs an instance that is bound to a given registry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot__loader_acc078b2e9068ae41a2910168b40322d4}{basic\+\_\+snapshot\+\_\+loader}} (\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_ae8470d9d19a1ac997bae011b98035095}{operator=}} (\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_af3edba88e81c8ea133b3cef66fa13a99}{entities}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{archive}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Restores entities that were in use during serialization. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_adf12007546a05d2258eb491397986e56}{destroyed}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Deprecated function. Currently, it does nothing. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a0215624c56a53d83b000bd22d42145a2}{component}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{archive}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Restores components and assigns them to the right entities. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_aff688b0c41ccf78aaf17fbec3f1cf5c0}{orphans}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Destroys those entities that have no components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a0c8502520347289e177d5c48e413b986}{traits\+\_\+type}} = \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+\_\+traits}}$<$ std\+::underlying\+\_\+type\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} , typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a57a588ddf040aff4a4d38fa0326ef801}{assign}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{archive}}, Args... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a73d5864a57a78d528cc0bcbe36ff5039}{entity\+\_\+type}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a9b61012d2b88cb27a247497713f79dda}{reg}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a60c928831c22b7dd2216dbc469f68f24}{basic\+\_\+registry$<$ Entity $>$}}
+\begin{DoxyCompactList}\small\item\em A registry is allowed to create snapshot loaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$\newline
+class entt\+::basic\+\_\+snapshot\+\_\+loader$<$ Entity $>$}
+Utility class to restore a snapshot as a whole. 
+
+A snapshot loader requires that the destination registry be empty and loads all the data at once while keeping intact the identifiers that the entities originally had.~\newline
+ An example of use is the implementation of a save/restore utility.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Entity} & A valid entity type (see \doxylink{structentt_1_1entt__traits}{entt\+\_\+traits} for more details). \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00172}{172}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1basic__snapshot__loader_a73d5864a57a78d528cc0bcbe36ff5039}\label{classentt_1_1basic__snapshot__loader_a73d5864a57a78d528cc0bcbe36ff5039} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!entity\_type@{entity\_type}}
+\index{entity\_type@{entity\_type}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_type}{entity\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::entity\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}}
+
+
+
+Underlying entity identifier. 
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00203}{203}} 行定义.
+
+\Hypertarget{classentt_1_1basic__snapshot__loader_a0c8502520347289e177d5c48e413b986}\label{classentt_1_1basic__snapshot__loader_a0c8502520347289e177d5c48e413b986} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!traits\_type@{traits\_type}}
+\index{traits\_type@{traits\_type}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{traits\_type}{traits\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::traits\+\_\+type =  \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+\_\+traits}}$<$std\+::underlying\+\_\+type\+\_\+t$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$ $>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00176}{176}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1basic__snapshot__loader_ac80fe3bb3da7384ac5e0ed07a05e8bdb}\label{classentt_1_1basic__snapshot__loader_ac80fe3bb3da7384ac5e0ed07a05e8bdb} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!basic\_snapshot\_loader@{basic\_snapshot\_loader}}
+\index{basic\_snapshot\_loader@{basic\_snapshot\_loader}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_snapshot\_loader()}{basic\_snapshot\_loader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::basic\+\_\+snapshot\+\_\+loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a73d5864a57a78d528cc0bcbe36ff5039}{entity\+\_\+type}} $>$ \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an instance that is bound to a given registry. 
+
+
+\begin{DoxyParams}{参数}
+{\em source} & A valid reference to a registry. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00209}{209}} 行定义.
+
+\Hypertarget{classentt_1_1basic__snapshot__loader_acc078b2e9068ae41a2910168b40322d4}\label{classentt_1_1basic__snapshot__loader_acc078b2e9068ae41a2910168b40322d4} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!basic\_snapshot\_loader@{basic\_snapshot\_loader}}
+\index{basic\_snapshot\_loader@{basic\_snapshot\_loader}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_snapshot\_loader()}{basic\_snapshot\_loader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::basic\+\_\+snapshot\+\_\+loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move constructor. 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1basic__snapshot__loader_a57a588ddf040aff4a4d38fa0326ef801}\label{classentt_1_1basic__snapshot__loader_a57a588ddf040aff4a4d38fa0326ef801} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!assign@{assign}}
+\index{assign@{assign}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&}]{archive,  }\item[{Args...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00179}{179}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00480}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::create()}}, \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{snapshot_8hpp_source_l00295}{entt\+::basic\+\_\+snapshot\+\_\+loader$<$ Entity $>$\+::reg}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00428}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::valid()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__snapshot__loader_a57a588ddf040aff4a4d38fa0326ef801_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__snapshot__loader_a0215624c56a53d83b000bd22d42145a2}\label{classentt_1_1basic__snapshot__loader_a0215624c56a53d83b000bd22d42145a2} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!component@{component}}
+\index{component@{component}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{component()}{component()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$typename... Component, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&}]{archive }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Restores components and assigns them to the right entities. 
+
+The template parameter list must be exactly the same used during serialization. In the event that the entity to which the component is assigned doesn\textquotesingle{}t exist yet, the loader will take care to create it with the version it originally had.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Types of components to restore. \\
+\hline
+{\em Archive} & Type of input archive. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em archive} & A valid reference to an input archive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A valid loader to continue restoring data. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00271}{271}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1basic__snapshot__loader_adf12007546a05d2258eb491397986e56}\label{classentt_1_1basic__snapshot__loader_adf12007546a05d2258eb491397986e56} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{destroyed()}{destroyed()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::destroyed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deprecated function. Currently, it does nothing. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Archive} & Type of input archive. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A valid loader to continue restoring data. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00255}{255}} 行定义.
+
+\Hypertarget{classentt_1_1basic__snapshot__loader_af3edba88e81c8ea133b3cef66fa13a99}\label{classentt_1_1basic__snapshot__loader_af3edba88e81c8ea133b3cef66fa13a99} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!entities@{entities}}
+\index{entities@{entities}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entities()}{entities()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::entities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Archive}} \&}]{archive }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Restores entities that were in use during serialization. 
+
+This function restores the entities that were in use during serialization and gives them the versions they originally had.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Archive} & Type of input archive. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em archive} & A valid reference to an input archive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A valid loader to continue restoring data. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00233}{233}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00563}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::assign()}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{snapshot_8hpp_source_l00295}{entt\+::basic\+\_\+snapshot\+\_\+loader$<$ Entity $>$\+::reg}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__snapshot__loader_af3edba88e81c8ea133b3cef66fa13a99_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__snapshot__loader_ae8470d9d19a1ac997bae011b98035095}\label{classentt_1_1basic__snapshot__loader_ae8470d9d19a1ac997bae011b98035095} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move assignment operator. 
+
+\begin{DoxyReturn}{返回}
+This loader. 
+\end{DoxyReturn}
+\Hypertarget{classentt_1_1basic__snapshot__loader_aff688b0c41ccf78aaf17fbec3f1cf5c0}\label{classentt_1_1basic__snapshot__loader_aff688b0c41ccf78aaf17fbec3f1cf5c0} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!orphans@{orphans}}
+\index{orphans@{orphans}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{orphans()}{orphans()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{basic\+\_\+snapshot\+\_\+loader}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::orphans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys those entities that have no components. 
+
+In case all the entities were serialized but only part of the components was saved, it could happen that some of the entities have no components once restored.~\newline
+ This functions helps to identify and destroy those entities.
+
+\begin{DoxyReturn}{返回}
+A valid loader to continue restoring data. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00286}{286}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00587}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::destroy()}}, \mbox{\hyperlink{registry_8hpp_source_l01132}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::orphans()}} , 以及 \mbox{\hyperlink{snapshot_8hpp_source_l00295}{entt\+::basic\+\_\+snapshot\+\_\+loader$<$ Entity $>$\+::reg}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__snapshot__loader_aff688b0c41ccf78aaf17fbec3f1cf5c0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classentt_1_1basic__snapshot__loader_a60c928831c22b7dd2216dbc469f68f24}\label{classentt_1_1basic__snapshot__loader_a60c928831c22b7dd2216dbc469f68f24} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!basic\_registry$<$ Entity $>$@{basic\_registry$<$ Entity $>$}}
+\index{basic\_registry$<$ Entity $>$@{basic\_registry$<$ Entity $>$}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_registry$<$ Entity $>$}{basic\_registry< Entity >}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{friend}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A registry is allowed to create snapshot loaders. 
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00157}{157}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1basic__snapshot__loader_a9b61012d2b88cb27a247497713f79dda}\label{classentt_1_1basic__snapshot__loader_a9b61012d2b88cb27a247497713f79dda} 
+\index{entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}!reg@{reg}}
+\index{reg@{reg}!entt::basic\_snapshot\_loader$<$ Entity $>$@{entt::basic\_snapshot\_loader$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$\mbox{\hyperlink{classentt_1_1basic__snapshot__loader_a73d5864a57a78d528cc0bcbe36ff5039}{entity\+\_\+type}}$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__snapshot__loader}{entt\+::basic\+\_\+snapshot\+\_\+loader}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::reg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00295}{295}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{snapshot_8hpp_source_l00179}{entt\+::basic\+\_\+snapshot\+\_\+loader$<$ Entity $>$\+::assign()}}, \mbox{\hyperlink{snapshot_8hpp_source_l00233}{entt\+::basic\+\_\+snapshot\+\_\+loader$<$ Entity $>$\+::entities()}} , 以及 \mbox{\hyperlink{snapshot_8hpp_source_l00286}{entt\+::basic\+\_\+snapshot\+\_\+loader$<$ Entity $>$\+::orphans()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{entity_2fwd_8hpp}{fwd.\+hpp}}\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{snapshot_8hpp}{snapshot.\+hpp}}\end{DoxyCompactItemize}

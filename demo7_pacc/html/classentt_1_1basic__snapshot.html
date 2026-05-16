@@ -1,0 +1,749 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::basic_snapshot&lt; Entity &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classentt_1_1basic__snapshot-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::basic_snapshot&lt; Entity &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Utility class to create snapshots from a registry.  
+ <a href="classentt_1_1basic__snapshot.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a>&gt;</code></p>
+<div class="dynheader">
+entt::basic_snapshot&lt; Entity &gt; 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__snapshot__coll__graph.png" border="0" usemap="#aentt_1_1basic__snapshot_3_01Entity_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aentt_1_1basic__snapshot_3_01Entity_01_4_coll__map" id="aentt_1_1basic__snapshot_3_01Entity_01_4_coll__map">
+<area shape="rect" title="Utility class to create snapshots from a registry." alt="" coords="5,108,161,148"/>
+<area shape="rect" href="classentt_1_1basic__registry.html" title=" " alt="" coords="10,5,157,45"/>
+<area shape="poly" title=" " alt="" coords="86,59,86,108,81,108,81,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aeb9724b67563bf7f74440e5a8feb711c" id="r_aeb9724b67563bf7f74440e5a8feb711c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#aeb9724b67563bf7f74440e5a8feb711c">entity_type</a> = <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a></td></tr>
+<tr class="memdesc:aeb9724b67563bf7f74440e5a8feb711c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying entity identifier.  <br /></td></tr>
+<tr class="separator:aeb9724b67563bf7f74440e5a8feb711c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac0777064a8cd3109286398e2488e7111" id="r_ac0777064a8cd3109286398e2488e7111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#ac0777064a8cd3109286398e2488e7111">basic_snapshot</a> (<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#aeb9724b67563bf7f74440e5a8feb711c">entity_type</a> &gt; &amp;source) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ac0777064a8cd3109286398e2488e7111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance that is bound to a given registry.  <br /></td></tr>
+<tr class="separator:ac0777064a8cd3109286398e2488e7111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f658d8e4feb7df9da8b48119551334" id="r_a10f658d8e4feb7df9da8b48119551334"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#a10f658d8e4feb7df9da8b48119551334">basic_snapshot</a> (<a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp;&amp;)=<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">default</a></td></tr>
+<tr class="memdesc:a10f658d8e4feb7df9da8b48119551334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move constructor.  <br /></td></tr>
+<tr class="separator:a10f658d8e4feb7df9da8b48119551334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc1f40d57659e3e5915f3203b187506" id="r_a8fc1f40d57659e3e5915f3203b187506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#a8fc1f40d57659e3e5915f3203b187506">operator=</a> (<a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp;&amp;)=<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">default</a></td></tr>
+<tr class="memdesc:a8fc1f40d57659e3e5915f3203b187506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move assignment operator.  <br /></td></tr>
+<tr class="separator:a8fc1f40d57659e3e5915f3203b187506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58957ab8df1b6a7b973e9485d63c105" id="r_aa58957ab8df1b6a7b973e9485d63c105"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &gt; </td></tr>
+<tr class="memitem:aa58957ab8df1b6a7b973e9485d63c105"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#aa58957ab8df1b6a7b973e9485d63c105">entities</a> (<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">archive</a>) <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a></td></tr>
+<tr class="memdesc:aa58957ab8df1b6a7b973e9485d63c105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts aside all the entities from the underlying registry.  <br /></td></tr>
+<tr class="separator:aa58957ab8df1b6a7b973e9485d63c105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359de6f6ec4407fa902d1ead70af2896" id="r_a359de6f6ec4407fa902d1ead70af2896"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &gt; </td></tr>
+<tr class="memitem:a359de6f6ec4407fa902d1ead70af2896"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#a359de6f6ec4407fa902d1ead70af2896">destroyed</a> (<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;) <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a></td></tr>
+<tr class="memdesc:a359de6f6ec4407fa902d1ead70af2896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated function. Currently, it does nothing.  <br /></td></tr>
+<tr class="separator:a359de6f6ec4407fa902d1ead70af2896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2c4695528b3b74fca653b50cedf474" id="r_a0a2c4695528b3b74fca653b50cedf474"><td class="memTemplParams" colspan="2">template&lt;typename... Component, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &gt; </td></tr>
+<tr class="memitem:a0a2c4695528b3b74fca653b50cedf474"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#a0a2c4695528b3b74fca653b50cedf474">component</a> (<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">archive</a>) <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a></td></tr>
+<tr class="memdesc:a0a2c4695528b3b74fca653b50cedf474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts aside the given components.  <br /></td></tr>
+<tr class="separator:a0a2c4695528b3b74fca653b50cedf474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a068cbe801544905e07ef6c0998bb5" id="r_ac0a068cbe801544905e07ef6c0998bb5"><td class="memTemplParams" colspan="2">template&lt;typename... Component, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> , <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> &gt; </td></tr>
+<tr class="memitem:ac0a068cbe801544905e07ef6c0998bb5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#ac0a068cbe801544905e07ef6c0998bb5">component</a> (<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">archive</a>, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">first</a>, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">last</a>) <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a></td></tr>
+<tr class="memdesc:ac0a068cbe801544905e07ef6c0998bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts aside the given components for the entities in a range.  <br /></td></tr>
+<tr class="separator:ac0a068cbe801544905e07ef6c0998bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:ac681d0ade0cfce35d6b9d91f2ff56b9c" id="r_ac681d0ade0cfce35d6b9d91f2ff56b9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#ac681d0ade0cfce35d6b9d91f2ff56b9c">traits_type</a> = <a class="el" href="structentt_1_1entt__traits.html">entt_traits</a>&lt; std::underlying_type_t&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; &gt;</td></tr>
+<tr class="separator:ac681d0ade0cfce35d6b9d91f2ff56b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a13fa0bcebb568df2c1ecdd2d28a44695" id="r_a13fa0bcebb568df2c1ecdd2d28a44695"><td class="memTemplParams" colspan="2">template&lt;typename Component , typename Archive , typename It &gt; </td></tr>
+<tr class="memitem:a13fa0bcebb568df2c1ecdd2d28a44695"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">get</a> (Archive &amp;archive, std::size_t sz, It first, It last) const</td></tr>
+<tr class="separator:a13fa0bcebb568df2c1ecdd2d28a44695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e853004cebbfc7c03677d5ff4979377" id="r_a0e853004cebbfc7c03677d5ff4979377"><td class="memTemplParams" colspan="2">template&lt;typename... Component, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> , <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> , std::size_t... Indexes&gt; </td></tr>
+<tr class="memitem:a0e853004cebbfc7c03677d5ff4979377"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#a0e853004cebbfc7c03677d5ff4979377">component</a> (<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">archive</a>, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">first</a>, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">last</a>, std::index_sequence&lt; Indexes... &gt;) <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a></td></tr>
+<tr class="separator:a0e853004cebbfc7c03677d5ff4979377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:aeda9696dd48c9954ad4836c89aadca17" id="r_aeda9696dd48c9954ad4836c89aadca17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#aeb9724b67563bf7f74440e5a8feb711c">entity_type</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#aeda9696dd48c9954ad4836c89aadca17">reg</a></td></tr>
+<tr class="separator:aeda9696dd48c9954ad4836c89aadca17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a60c928831c22b7dd2216dbc469f68f24" id="r_a60c928831c22b7dd2216dbc469f68f24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__snapshot.html#a60c928831c22b7dd2216dbc469f68f24">basic_registry&lt; Entity &gt;</a></td></tr>
+<tr class="memdesc:a60c928831c22b7dd2216dbc469f68f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">A registry is allowed to create snapshots.  <br /></td></tr>
+<tr class="separator:a60c928831c22b7dd2216dbc469f68f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a>&gt;<br />
+class entt::basic_snapshot&lt; Entity &gt;</div><p>Utility class to create snapshots from a registry. </p>
+<p>A <em>snapshot</em> can be either a dump of the entire registry or a narrower selection of components of interest.<br  />
+ This type can be used in both cases if provided with a correctly configured output archive.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Entity</td><td>A valid entity type (see <a class="el" href="structentt_1_1entt__traits.html" title="Entity traits.">entt_traits</a> for more details). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00031">31</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="aeb9724b67563bf7f74440e5a8feb711c" name="aeb9724b67563bf7f74440e5a8feb711c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9724b67563bf7f74440e5a8feb711c">&#9670;&#160;</a></span>entity_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">using</a> <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::entity_type =  <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Underlying entity identifier. </p>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac681d0ade0cfce35d6b9d91f2ff56b9c" name="ac681d0ade0cfce35d6b9d91f2ff56b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac681d0ade0cfce35d6b9d91f2ff56b9c">&#9670;&#160;</a></span>traits_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">using</a> <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::traits_type =  <a class="el" href="structentt_1_1entt__traits.html">entt_traits</a>&lt;std::underlying_type_t&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a>&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ac0777064a8cd3109286398e2488e7111" name="ac0777064a8cd3109286398e2488e7111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0777064a8cd3109286398e2488e7111">&#9670;&#160;</a></span>basic_snapshot() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::basic_snapshot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#aeb9724b67563bf7f74440e5a8feb711c">entity_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an instance that is bound to a given registry. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>A valid reference to a registry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a10f658d8e4feb7df9da8b48119551334" name="a10f658d8e4feb7df9da8b48119551334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f658d8e4feb7df9da8b48119551334">&#9670;&#160;</a></span>basic_snapshot() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::basic_snapshot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move constructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a0a2c4695528b3b74fca653b50cedf474" name="a0a2c4695528b3b74fca653b50cedf474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2c4695528b3b74fca653b50cedf474">&#9670;&#160;</a></span>component() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp; <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::component </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puts aside the given components. </p>
+<p>Each instance is serialized together with the entity to which it belongs. Entities are serialized along with their versions.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Types of components to serialize. </td></tr>
+    <tr><td class="paramname">Archive</td><td>Type of output archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archive</td><td>A valid reference to an output archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An object of this type to continue creating the snapshot. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00131">131</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="snapshot_8hpp_source.html#l00157">entt::basic_snapshot&lt; Entity &gt;::reg</a>.</p>
+
+</div>
+</div>
+<a id="ac0a068cbe801544905e07ef6c0998bb5" name="ac0a068cbe801544905e07ef6c0998bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a068cbe801544905e07ef6c0998bb5">&#9670;&#160;</a></span>component() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> , <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp; <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::component </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;&#160;</td>
+          <td class="paramname"><em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a>&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puts aside the given components for the entities in a range. </p>
+<p>Each instance is serialized together with the entity to which it belongs. Entities are serialized along with their versions.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>Types of components to serialize. </td></tr>
+    <tr><td class="paramname">Archive</td><td>Type of output archive. </td></tr>
+    <tr><td class="paramname">It</td><td>Type of input iterator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archive</td><td>A valid reference to an output archive. </td></tr>
+    <tr><td class="paramname">first</td><td>An iterator to the first element of the range to serialize. </td></tr>
+    <tr><td class="paramname">last</td><td>An iterator past the last element of the range to serialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An object of this type to continue creating the snapshot. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00151">151</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="snapshot_8hpp_source.html#l00055">entt::basic_snapshot&lt; Entity &gt;::component()</a> , 以及 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5_cgraph.png" border="0" usemap="#aclassentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5_cgraph" id="aclassentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5_cgraph">
+<area shape="rect" title="Puts aside the given components for the entities in a range." alt="" coords="5,5,161,45"/>
+<area shape="rect" href="classentt_1_1basic__snapshot.html#a0e853004cebbfc7c03677d5ff4979377" title=" " alt="" coords="209,5,365,45"/>
+<area shape="poly" title=" " alt="" coords="161,23,196,23,196,28,161,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e853004cebbfc7c03677d5ff4979377" name="a0e853004cebbfc7c03677d5ff4979377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e853004cebbfc7c03677d5ff4979377">&#9670;&#160;</a></span>component() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Component, <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> , <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a> , std::size_t... Indexes&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">void</a> <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::component </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;&#160;</td>
+          <td class="paramname"><em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">It</a>&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::index_sequence&lt; Indexes... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00055">55</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a">begin</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="snapshot_8hpp_source.html#l00157">entt::basic_snapshot&lt; Entity &gt;::reg</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="snapshot_8hpp_source.html#l00151">entt::basic_snapshot&lt; Entity &gt;::component()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377_icgraph.png" border="0" usemap="#aclassentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377_icgraph" id="aclassentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377_icgraph">
+<area shape="rect" title=" " alt="" coords="209,5,365,45"/>
+<area shape="rect" href="classentt_1_1basic__snapshot.html#ac0a068cbe801544905e07ef6c0998bb5" title="Puts aside the given components for the entities in a range." alt="" coords="5,5,161,45"/>
+<area shape="poly" title=" " alt="" coords="196,28,161,28,161,23,196,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a359de6f6ec4407fa902d1ead70af2896" name="a359de6f6ec4407fa902d1ead70af2896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359de6f6ec4407fa902d1ead70af2896">&#9670;&#160;</a></span>destroyed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp; <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::destroyed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deprecated function. Currently, it does nothing. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>Type of output archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An object of this type to continue creating the snapshot. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa58957ab8df1b6a7b973e9485d63c105" name="aa58957ab8df1b6a7b973e9485d63c105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58957ab8df1b6a7b973e9485d63c105">&#9670;&#160;</a></span>entities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp; <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::entities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Archive</a> &amp;&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puts aside all the entities from the underlying registry. </p>
+<p>Entities are serialized along with their versions. Destroyed entities are taken in consideration as well by this function.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Archive</td><td>Type of output archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archive</td><td>A valid reference to an output archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An object of this type to continue creating the snapshot. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00096">96</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="registry_8hpp_source.html#l00403">entt::basic_registry&lt; Entity &gt;::data()</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="snapshot_8hpp_source.html#l00157">entt::basic_snapshot&lt; Entity &gt;::reg</a> , 以及 <a class="el" href="registry_8hpp_source.html#l00263">entt::basic_registry&lt; Entity &gt;::size()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105_cgraph.png" border="0" usemap="#aclassentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105_cgraph" id="aclassentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105_cgraph">
+<area shape="rect" title="Puts aside all the entities from the underlying registry." alt="" coords="5,37,161,77"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#addbe1ff19fa806f07bc7a24b4de281ce" title="Direct access to the list of entities of a given pool." alt="" coords="209,5,356,45"/>
+<area shape="poly" title=" " alt="" coords="161,42,195,37,196,42,162,47"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a747d182de87516a3445f8df77d65e815" title="Returns the number of existing components of the given type." alt="" coords="209,69,356,109"/>
+<area shape="poly" title=" " alt="" coords="162,67,196,73,195,78,161,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a13fa0bcebb568df2c1ecdd2d28a44695" name="a13fa0bcebb568df2c1ecdd2d28a44695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fa0bcebb568df2c1ecdd2d28a44695">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Entity &gt; </div>
+<div class="memtemplate">
+template&lt;typename Component , typename Archive , typename It &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; Entity &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;&#160;</td>
+          <td class="paramname"><em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00038">38</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="snapshot_8hpp_source.html#l00157">entt::basic_snapshot&lt; Entity &gt;::reg</a>.</p>
+
+</div>
+</div>
+<a id="a8fc1f40d57659e3e5915f3203b187506" name="a8fc1f40d57659e3e5915f3203b187506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc1f40d57659e3e5915f3203b187506">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a> &amp; <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">::operator</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__snapshot.html">basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move assignment operator. </p>
+<dl class="section return"><dt>返回</dt><dd>This snapshot. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a id="a60c928831c22b7dd2216dbc469f68f24" name="a60c928831c22b7dd2216dbc469f68f24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c928831c22b7dd2216dbc469f68f24">&#9670;&#160;</a></span>basic_registry&lt; Entity &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">friend</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">class</a> <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A registry is allowed to create snapshots. </p>
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00001">1</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aeda9696dd48c9954ad4836c89aadca17" name="aeda9696dd48c9954ad4836c89aadca17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda9696dd48c9954ad4836c89aadca17">&#9670;&#160;</a></span>reg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">typename</a> <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">const</a> <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt;<a class="el" href="classentt_1_1basic__snapshot.html#aeb9724b67563bf7f74440e5a8feb711c">entity_type</a>&gt;* <a class="el" href="classentt_1_1basic__snapshot.html">entt::basic_snapshot</a>&lt; <a class="el" href="classentt_1_1basic__snapshot.html#a13fa0bcebb568df2c1ecdd2d28a44695">Entity</a> &gt;::reg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a> 第 <a class="el" href="snapshot_8hpp_source.html#l00157">157</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="snapshot_8hpp_source.html#l00131">entt::basic_snapshot&lt; Entity &gt;::component()</a>, <a class="el" href="snapshot_8hpp_source.html#l00055">entt::basic_snapshot&lt; Entity &gt;::component()</a>, <a class="el" href="snapshot_8hpp_source.html#l00096">entt::basic_snapshot&lt; Entity &gt;::entities()</a> , 以及 <a class="el" href="snapshot_8hpp_source.html#l00038">entt::basic_snapshot&lt; Entity &gt;::get()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/entity/<a class="el" href="entity_2fwd_8hpp_source.html">fwd.hpp</a></li>
+<li>third_party/entt/entity/<a class="el" href="snapshot_8hpp_source.html">snapshot.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

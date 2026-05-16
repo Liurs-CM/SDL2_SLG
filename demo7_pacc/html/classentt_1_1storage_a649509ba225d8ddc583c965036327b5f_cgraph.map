@@ -1,0 +1,17 @@
+<map id="entt::storage::construct" name="entt::storage::construct">
+<area shape="rect" id="Node000001" title="Assigns an entity to a storage and constructs its object." alt="" coords="5,81,179,107"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="227,81,396,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,91,213,91,213,97,179,97"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="444,81,635,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,91,430,91,430,97,397,97"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="689,5,866,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="579,79,723,32,724,37,581,84"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="683,107,872,132"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="635,101,669,105,669,110,634,107"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="920,83,1091,108"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="635,91,872,91,906,92,906,97,872,97,635,96"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="922,132,1089,157"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="569,104,621,125,683,142,741,149,800,152,908,150,908,156,800,158,740,155,682,147,619,130,567,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="872,107,906,103,906,108,873,112"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="873,127,909,131,908,137,872,133"/>
+</map>

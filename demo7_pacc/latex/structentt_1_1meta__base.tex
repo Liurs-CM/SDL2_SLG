@@ -1,0 +1,152 @@
+\doxysection{entt\+::meta\+\_\+base结构体 参考}
+\hypertarget{structentt_1_1meta__base}{}\label{structentt_1_1meta__base}\index{entt::meta\_base@{entt::meta\_base}}
+
+
+Opaque container for meta base classes.  
+
+
+
+
+{\ttfamily \#include $<$meta.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1meta__base_a7138b13e8dc1d75ad4e47ef89780eda4}{meta\+\_\+base}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+base\+\_\+node \texorpdfstring{$\ast$}{*}curr=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs an instance from a given node.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \mbox{\hyperlink{structentt_1_1meta__base_ad05e984d2cc36f64c0a64fe951e9cdce}{parent}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the meta type to which a meta object belongs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \mbox{\hyperlink{structentt_1_1meta__base_a5e9f69b43cdc90add110654acde5e8b6}{type}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the meta type of the underlying object.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1meta__base_ab77a05d59a40726903f3b27005078d25}{cast}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}instance) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Casts an instance from a parent type to a base type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__base_ad19d5a997c91281da3674a6b17d011bd}{operator bool}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a meta object is valid, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+base\+\_\+node \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1meta__base_a8ca3b0041df5bf018eaff7daf3d2df4f}{node}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Opaque container for meta base classes. 
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00728}{728}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1meta__base_a7138b13e8dc1d75ad4e47ef89780eda4}\label{structentt_1_1meta__base_a7138b13e8dc1d75ad4e47ef89780eda4} 
+\index{entt::meta\_base@{entt::meta\_base}!meta\_base@{meta\_base}}
+\index{meta\_base@{meta\_base}!entt::meta\_base@{entt::meta\_base}}
+\doxysubsubsection{\texorpdfstring{meta\_base()}{meta\_base()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+base\+::meta\+\_\+base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+base\+\_\+node \texorpdfstring{$\ast$}{*}}]{curr = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an instance from a given node.   
+
+
+\begin{DoxyParams}{参数}
+{\em curr} & The underlying node with which to construct the instance.   \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00730}{730}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1meta__base_ab77a05d59a40726903f3b27005078d25}\label{structentt_1_1meta__base_ab77a05d59a40726903f3b27005078d25} 
+\index{entt::meta\_base@{entt::meta\_base}!cast@{cast}}
+\index{cast@{cast}!entt::meta\_base@{entt::meta\_base}}
+\doxysubsubsection{\texorpdfstring{cast()}{cast()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+base\+::cast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{instance }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Casts an instance from a parent type to a base type. 
+
+
+\begin{DoxyParams}{参数}
+{\em instance} & The instance to cast. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An opaque pointer to the base type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00748}{748}} 行定义.
+
+\Hypertarget{structentt_1_1meta__base_ad19d5a997c91281da3674a6b17d011bd}\label{structentt_1_1meta__base_ad19d5a997c91281da3674a6b17d011bd} 
+\index{entt::meta\_base@{entt::meta\_base}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!entt::meta\_base@{entt::meta\_base}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+base\+::operator \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Returns true if a meta object is valid, false otherwise. 
+
+\begin{DoxyReturn}{返回}
+True if the meta object is valid, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00756}{756}} 行定义.
+
+\Hypertarget{structentt_1_1meta__base_ad05e984d2cc36f64c0a64fe951e9cdce}\label{structentt_1_1meta__base_ad05e984d2cc36f64c0a64fe951e9cdce} 
+\index{entt::meta\_base@{entt::meta\_base}!parent@{parent}}
+\index{parent@{parent}!entt::meta\_base@{entt::meta\_base}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} entt\+::meta\+\_\+base\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta type to which a meta object belongs. 
+
+\begin{DoxyReturn}{返回}
+The meta type to which the meta object belongs. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01538}{1538}} 行定义.
+
+\Hypertarget{structentt_1_1meta__base_a5e9f69b43cdc90add110654acde5e8b6}\label{structentt_1_1meta__base_a5e9f69b43cdc90add110654acde5e8b6} 
+\index{entt::meta\_base@{entt::meta\_base}!type@{type}}
+\index{type@{type}!entt::meta\_base@{entt::meta\_base}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} entt\+::meta\+\_\+base\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta type of the underlying object.   
+
+\begin{DoxyReturn}{返回}
+The meta type of the underlying object, if any.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01543}{1543}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1meta__base_a8ca3b0041df5bf018eaff7daf3d2df4f}\label{structentt_1_1meta__base_a8ca3b0041df5bf018eaff7daf3d2df4f} 
+\index{entt::meta\_base@{entt::meta\_base}!node@{node}}
+\index{node@{node}!entt::meta\_base@{entt::meta\_base}}
+\doxysubsubsection{\texorpdfstring{node}{node}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+base\+\_\+node\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+base\+::node\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00761}{761}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/meta/\mbox{\hyperlink{meta_8hpp}{meta.\+hpp}}\end{DoxyCompactItemize}

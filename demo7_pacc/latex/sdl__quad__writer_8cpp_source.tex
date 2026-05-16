@@ -1,0 +1,53 @@
+\doxysection{sdl\+\_\+quad\+\_\+writer.\+cpp}
+\hypertarget{sdl__quad__writer_8cpp_source}{}\label{sdl__quad__writer_8cpp_source}\index{src/util/sdl\_quad\_writer.cpp@{src/util/sdl\_quad\_writer.cpp}}
+\mbox{\hyperlink{sdl__quad__writer_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ sdl\_quad\_writer.cpp}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/4/20.}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__quad__writer_8hpp}{sdl\_quad\_writer.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__check_8hpp}{sdl\_check.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00013}\mbox{\hyperlink{classSDL_1_1QuadWriter_a2855d8b16d79981543bd42a7f8d76476}{00013}}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a2855d8b16d79981543bd42a7f8d76476}{SDL::QuadWriter::QuadWriter}}(}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00014}00014\ \ \ SDL\_Renderer\ *renderer,}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00015}00015\ \ \ SDL\_Texture\ *texture}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00016}00016\ )\ :\ renderer\{renderer\},}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00017}00017\ \ \ \ \ texture\{texture\},}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00018}00018\ \ \ \ \ srcRect\{0,\ 0,\ 0,\ 0\},}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00019}00019\ \ \ \ \ dstRect\{0,\ 0,\ 0,\ 0\},}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00020}00020\ \ \ \ \ angle\{\}\ \{\}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00022}\mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{00022}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{SDL::QuadWriter::tilePos}}(}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00023}00023\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ size,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ ang}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00024}00024\ )\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00025}00025\ \ \ dstRect.x\ =\ pos.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00026}00026\ \ \ dstRect.y\ =\ pos.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00027}00027\ \ \ dstRect.w\ =\ size.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00028}00028\ \ \ dstRect.h\ =\ size.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00029}00029\ \ \ angle\ =\ ang;}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00030}00030\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00032}\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{00032}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{SDL::QuadWriter::tileTex}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structanimera_1_1SpriteRect}{animera::SpriteRect}}\ rect)\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00033}00033\ \ \ srcRect.x\ =\ rect.\mbox{\hyperlink{structanimera_1_1SpriteRect_a77b22a60f3858cbc2afb02edb3577aa7}{x}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00034}00034\ \ \ srcRect.y\ =\ rect.\mbox{\hyperlink{structanimera_1_1SpriteRect_acf0a101ca1fad3c9f7de34ee0611069b}{y}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00035}00035\ \ \ srcRect.w\ =\ rect.\mbox{\hyperlink{structanimera_1_1SpriteRect_ad550e9a7d8cd8d059dc91eb67e6c50fb}{w}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00036}00036\ \ \ srcRect.h\ =\ rect.\mbox{\hyperlink{structanimera_1_1SpriteRect_a5a74a86eff8caad3aa229f968e5d4279}{h}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00037}00037\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00039}\mbox{\hyperlink{classSDL_1_1QuadWriter_a760e1bb5d2744c45fea47941bb708403}{00039}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{SDL::QuadWriter::tileTex}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{animera::SpriteID}}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00040}00040\ \ \ tileTex(getSpriteRect(\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00043}\mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{00043}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{SDL::QuadWriter::render}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00044}00044\ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_RenderCopyEx(}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00045}00045\ \ \ \ \ renderer,\ texture,\ \&srcRect,\ \&dstRect,\ angle,\ \textcolor{keyword}{nullptr},\ SDL\_FLIP\_NONE}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00046}00046\ \ \ ));}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8cpp_source_l00047}00047\ \}}
+
+\end{DoxyCode}

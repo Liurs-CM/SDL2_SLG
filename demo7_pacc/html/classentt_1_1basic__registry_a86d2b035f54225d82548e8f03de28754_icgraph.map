@@ -1,0 +1,11 @@
+<map id="entt::basic_registry::each" name="entt::basic_registry::each">
+<area shape="rect" id="Node000001" title="Iterates all the entities that are still in use." alt="" coords="416,37,563,77"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#aa4b08ad282560ead88ceeeddba16f552" title="Clears a whole registry or the pools for the given components." alt="" coords="221,5,368,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="402,46,368,40,369,35,403,40"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#ae337ceb77e75c10c73ffa671e09bfff8" title="Iterates orphans and applies them the given function object." alt="" coords="221,69,368,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="403,74,369,80,368,75,402,69"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__continuous__loader.html#aaaa1d17e50b1bdfccb43b8cc61ff9f31" title="Destroys those entities that have no components." alt="" coords="5,37,173,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="208,79,173,73,174,68,208,73"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__snapshot__loader.html#aff688b0c41ccf78aaf17fbec3f1cf5c0" title="Destroys those entities that have no components." alt="" coords="11,101,167,141"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="208,105,168,112,167,107,208,100"/>
+</map>

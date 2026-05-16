@@ -1,0 +1,11 @@
+<map id="entt::type_info::id" name="entt::type_info::id">
+<area shape="rect" id="Node000001" title="Returns the numeric representation of a given type." alt="" coords="228,99,365,125"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#af897c0ad07cc22d382c9fada83269835" title=" " alt="" coords="19,5,166,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,96,179,60,149,48,151,43,181,55,259,91"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a9ceb9b241f105193172d29fbd26769f7" title="Binds an object to the context of the registry." alt="" coords="5,70,180,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,103,180,98,180,93,215,98"/>
+<area shape="rect" id="Node000004" href="$structentt_1_1dispatcher_1_1pool__handler.html#a697e5a00ff251af9bee3f70b1c2723e1" title=" " alt="" coords="13,120,173,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,126,173,132,173,126,214,121"/>
+<area shape="rect" id="Node000005" href="$structentt_1_1emitter_1_1pool__handler.html#a4662d73047762812c67afb18be8751ba" title=" " alt="" coords="23,184,163,224"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="262,134,181,174,152,186,150,182,179,170,260,129"/>
+</map>

@@ -1,0 +1,484 @@
+\doxysection{entt\+::meta\+\_\+factory\texorpdfstring{$<$}{<} Type \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1meta__factory_3_01Type_01_4}{}\label{classentt_1_1meta__factory_3_01Type_01_4}\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+
+
+Basic meta factory to be used for reflection purposes.  
+
+
+
+
+{\ttfamily \#include $<$factory.\+hpp$>$}
+
+
+
+类 entt\+::meta\+\_\+factory\texorpdfstring{$<$}{<} Type \texorpdfstring{$>$}{>} 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classentt_1_1meta__factory_3_01Type_01_4__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a0e0158b6908f4c3a40f81c456f8bd89c}{type}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id=\mbox{\hyperlink{structentt_1_1type__info}{type\+\_\+info}}$<$ Type $>$\+::id())
+\begin{DoxyCompactList}\small\item\em Makes a meta type {\itshape searchable}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_ab8474c7344f8743620ac3394470a961f}{alias}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Makes a meta type {\itshape searchable}.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Base}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a2387e5bc85a87e3c936d82a956805bfb}{base}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta base to a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{To}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_ad4245f8f4aa5209fbd8f48fbba195c7b}{conv}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta conversion function to a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_ad4245f8f4aa5209fbd8f48fbba195c7b}{conv}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta conversion function to a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Func, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a29514cae07fc5df16b6c73ffb5ffa73b}{ctor}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta constructor to a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_ab9206cfe67bec72e6bfce975fbf5b955}{ctor}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta constructor to a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Func$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a754b47db9b2432042d7ac23e480fdc4b}{dtor}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta destructor to a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Data, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a316763c36b85e159c5fbd1bc3de55024}{data}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta data to a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Setter, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Getter, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a90a24d407b29cecba87cccf4d96599a2}{data}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta data to a meta type by means of its setter and getter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a16107a0942811a985a3be6a7f63c681c}{func}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a meta funcion to a meta type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a2a88c270992fe8022fa3d9b9596621de}{reset}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Resets a meta type and all its parts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_af388d45810acd3d17ffa617deca5e818}{exists}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} \texorpdfstring{$\ast$}{*}candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} \texorpdfstring{$\ast$}{*}node) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__factory_3_01Type_01_4_a51d498ca307a5397a2164d5ce61e62ea}{exists}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} \texorpdfstring{$\ast$}{*}node) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type$>$\newline
+class entt\+::meta\+\_\+factory$<$ Type $>$}
+Basic meta factory to be used for reflection purposes. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Reflected type for which the factory was created. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00376}{376}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_ab8474c7344f8743620ac3394470a961f}\label{classentt_1_1meta__factory_3_01Type_01_4_ab8474c7344f8743620ac3394470a961f} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!alias@{alias}}
+\index{alias@{alias}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{alias()}{alias()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::alias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Makes a meta type {\itshape searchable}.   
+
+
+\begin{DoxyParams}{参数}
+{\em id} & Optional unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An extended meta factory for the given type.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00407}{407}} 行定义.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a2387e5bc85a87e3c936d82a956805bfb}\label{classentt_1_1meta__factory_3_01Type_01_4_a2387e5bc85a87e3c936d82a956805bfb} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!base@{base}}
+\index{base@{base}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{base()}{base()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Base}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta base to a meta type. 
+
+A reflected base class must be a real base class of the reflected type.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Base} & Type of the base class to assign to the meta type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00420}{420}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}} , 以及 \mbox{\hyperlink{config_8h_source_l00006}{ENTT\+\_\+\+NOEXCEPT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_ad4245f8f4aa5209fbd8f48fbba195c7b}\label{classentt_1_1meta__factory_3_01Type_01_4_ad4245f8f4aa5209fbd8f48fbba195c7b} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!conv@{conv}}
+\index{conv@{conv}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{conv()}{conv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{To}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::conv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta conversion function to a meta type. 
+
+The given type must be such that an instance of the reflected type can be converted to it.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em To} & Type of the conversion function to assign to the meta type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00450}{450}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_ad4245f8f4aa5209fbd8f48fbba195c7b}\label{classentt_1_1meta__factory_3_01Type_01_4_ad4245f8f4aa5209fbd8f48fbba195c7b} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!conv@{conv}}
+\index{conv@{conv}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{conv()}{conv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::conv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta conversion function to a meta type. 
+
+Conversion functions can be either free functions or member functions.~\newline
+ In case of free functions, they must accept a const reference to an instance of the parent type as an argument. In case of member functions, they should have no arguments at all.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & The actual function to use for the conversion. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00483}{483}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a29514cae07fc5df16b6c73ffb5ffa73b}\label{classentt_1_1meta__factory_3_01Type_01_4_a29514cae07fc5df16b6c73ffb5ffa73b} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!ctor@{ctor}}
+\index{ctor@{ctor}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{ctor()}{ctor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Func, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::ctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta constructor to a meta type. 
+
+Free functions can be assigned to meta types in the role of constructors. All that is required is that they return an instance of the underlying type.~\newline
+ From a client\textquotesingle{}s point of view, nothing changes if a constructor of a meta type is a built-\/in one or a free function.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Func} & The actual function to use as a constructor. \\
+\hline
+{\em Policy} & Optional policy (no policy set by default). \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+An extended meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00517}{517}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_ab9206cfe67bec72e6bfce975fbf5b955}\label{classentt_1_1meta__factory_3_01Type_01_4_ab9206cfe67bec72e6bfce975fbf5b955} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!ctor@{ctor}}
+\index{ctor@{ctor}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{ctor()}{ctor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::ctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta constructor to a meta type. 
+
+A meta constructor is uniquely identified by the types of its arguments and is such that there exists an actual constructor of the underlying type that can be invoked with parameters whose types are those given.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Args} & Types of arguments to use to construct an instance. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+An extended meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00551}{551}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a316763c36b85e159c5fbd1bc3de55024}\label{classentt_1_1meta__factory_3_01Type_01_4_a316763c36b85e159c5fbd1bc3de55024} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!data@{data}}
+\index{data@{data}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Data, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta data to a meta type. 
+
+Both data members and static and global variables, as well as constants of any kind, can be assigned to a meta type.~\newline
+ From a client\textquotesingle{}s point of view, all the variables associated with the reflected object will appear as if they were part of the type itself.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Data} & The actual variable to attach to the meta type. \\
+\hline
+{\em Policy} & Optional policy (no policy set by default). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An extended meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00623}{623}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a90a24d407b29cecba87cccf4d96599a2}\label{classentt_1_1meta__factory_3_01Type_01_4_a90a24d407b29cecba87cccf4d96599a2} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!data@{data}}
+\index{data@{data}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Setter, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Getter, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta data to a meta type by means of its setter and getter. 
+
+Setters and getters can be either free functions, member functions or a mix of them.~\newline
+ In case of free functions, setters and getters must accept a reference to an instance of the parent type as their first argument. A setter has then an extra argument of a type convertible to that of the parameter to set.~\newline
+ In case of member functions, getters have no arguments at all, while setters has an argument of a type convertible to that of the parameter to set.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Setter} & The actual function to use as a setter. \\
+\hline
+{\em Getter} & The actual function to use as a getter. \\
+\hline
+{\em Policy} & Optional policy (no policy set by default). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An extended meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00708}{708}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a754b47db9b2432042d7ac23e480fdc4b}\label{classentt_1_1meta__factory_3_01Type_01_4_a754b47db9b2432042d7ac23e480fdc4b} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!dtor@{dtor}}
+\index{dtor@{dtor}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{dtor()}{dtor()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Func$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::dtor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta destructor to a meta type. 
+
+Free functions can be assigned to meta types in the role of destructors. The signature of the function should identical to the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(Type\ \&);}
+
+\end{DoxyCode}
+
+
+The purpose is to give users the ability to free up resources that require special treatment before an object is actually destroyed.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Func} & The actual function to use as a destructor. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00590}{590}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a51d498ca307a5397a2164d5ce61e62ea}\label{classentt_1_1meta__factory_3_01Type_01_4_a51d498ca307a5397a2164d5ce61e62ea} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!exists@{exists}}
+\index{exists@{exists}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00383}{383}} 行定义.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_af388d45810acd3d17ffa617deca5e818}\label{classentt_1_1meta__factory_3_01Type_01_4_af388d45810acd3d17ffa617deca5e818} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!exists@{exists}}
+\index{exists@{exists}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} \texorpdfstring{$\ast$}{*}}]{candidate,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00378}{378}} 行定义.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a16107a0942811a985a3be6a7f63c681c}\label{classentt_1_1meta__factory_3_01Type_01_4_a16107a0942811a985a3be6a7f63c681c} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!func@{func}}
+\index{func@{func}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Policy}}  = as\+\_\+is\+\_\+t$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a meta funcion to a meta type. 
+
+Both member functions and free functions can be assigned to a meta type.~\newline
+ From a client\textquotesingle{}s point of view, all the functions associated with the reflected object will appear as if they were part of the type itself.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & The actual function to attach to the meta type. \\
+\hline
+{\em Policy} & Optional policy (no policy set by default). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An extended meta factory for the parent type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00748}{748}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a2a88c270992fe8022fa3d9b9596621de}\label{classentt_1_1meta__factory_3_01Type_01_4_a2a88c270992fe8022fa3d9b9596621de} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!reset@{reset}}
+\index{reset@{reset}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets a meta type and all its parts. 
+
+This function resets a meta type and all its data members, member functions and properties, as well as its constructors, destructors and conversion functions if any.~\newline
+ Base classes aren\textquotesingle{}t reset but the link between the two types is removed.
+
+\begin{DoxyReturn}{返回}
+An extended meta factory for the given type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00786}{786}} 行定义.
+
+\Hypertarget{classentt_1_1meta__factory_3_01Type_01_4_a0e0158b6908f4c3a40f81c456f8bd89c}\label{classentt_1_1meta__factory_3_01Type_01_4_a0e0158b6908f4c3a40f81c456f8bd89c} 
+\index{entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}!type@{type}}
+\index{type@{type}!entt::meta\_factory$<$ Type $>$@{entt::meta\_factory$<$ Type $>$}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__factory}{entt\+::meta\+\_\+factory}}$<$ Type $>$\+::type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id = {\ttfamily \mbox{\hyperlink{structentt_1_1type__info}{type\+\_\+info}}$<$Type$>$\+:\+:id()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Makes a meta type {\itshape searchable}. 
+
+
+\begin{DoxyParams}{参数}
+{\em id} & Optional unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An extended meta factory for the given type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{factory_8hpp_source}{factory.\+hpp}} 第 \mbox{\hyperlink{factory_8hpp_source_l00393}{393}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/meta/\mbox{\hyperlink{factory_8hpp}{factory.\+hpp}}\end{DoxyCompactItemize}

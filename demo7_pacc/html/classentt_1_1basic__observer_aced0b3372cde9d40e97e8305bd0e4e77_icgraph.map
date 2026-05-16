@@ -1,0 +1,5 @@
+<map id="entt::basic_observer::clear" name="entt::basic_observer::clear">
+<area shape="rect" id="Node000001" title="Clears the underlying container." alt="" coords="208,5,363,45"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__observer.html#a535f3ddf32641a54e1c8861519933c97" title="Iterates entities and applies the given function object to them, then clears the observer." alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,28,161,28,161,23,194,23"/>
+</map>

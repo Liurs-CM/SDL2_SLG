@@ -1,0 +1,199 @@
+\doxysection{entt\+::process\+\_\+adaptor\texorpdfstring{$<$}{<} Func, Delta \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1process__adaptor}{}\label{structentt_1_1process__adaptor}\index{entt::process\_adaptor$<$ Func, Delta $>$@{entt::process\_adaptor$<$ Func, Delta $>$}}
+
+
+Adaptor for lambdas and functors to turn them into processes.  
+
+
+
+
+{\ttfamily \#include $<$process.\+hpp$>$}
+
+
+
+类 entt\+::process\+\_\+adaptor\texorpdfstring{$<$}{<} Func, Delta \texorpdfstring{$>$}{>} 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{structentt_1_1process__adaptor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+entt\+::process\+\_\+adaptor\texorpdfstring{$<$}{<} Func, Delta \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{structentt_1_1process__adaptor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{structentt_1_1process__adaptor_ad1e2c8f3c44bf42abb05ef913b8267ce}{process\+\_\+adaptor}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Constructs a process adaptor from a lambda or a functor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1process__adaptor_a7514fabbbda491742872bc0e52dde5c2}{update}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Updates a process and its internal state if required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classentt_1_1process}{entt\+::process$<$ process\+\_\+adaptor$<$ Func, Delta $>$, Delta $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classentt_1_1process_a2baf1b6aef37c1420a77cd3f8eadcf79}{\texorpdfstring{$\sim$}{\string~}process}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1process_af27d28af408f1dfb260b8fe976e66ea3}{abort}} (const bool immediately=false)
+\begin{DoxyCompactList}\small\item\em Aborts a process if it\textquotesingle{}s still alive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentt_1_1process_a8bc92bd0304659eb2a034fae65f1eeb9}{alive}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process is either running or paused. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentt_1_1process_ad83f2550ca63e03af126a07e4ae5d9dd}{dead}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process is already terminated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentt_1_1process_a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f}{paused}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process is currently paused. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentt_1_1process_a6ac63863bf823806d813b046769b4419}{rejected}} () const \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process terminated with errors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1process_aacc7fe0ef3265113079c70ff8cd9478d}{tick}} (const Delta delta, void \texorpdfstring{$\ast$}{*}data=nullptr)
+\begin{DoxyCompactList}\small\item\em Updates a process and its internal state if required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Public 类型 继承自 \mbox{\hyperlink{classentt_1_1process}{entt\+::process$<$ process\+\_\+adaptor$<$ Func, Delta $>$, Delta $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classentt_1_1process_a625b574ea6d83e3a4933acc3d0279295}{delta\+\_\+type}} = Delta
+\begin{DoxyCompactList}\small\item\em Type used to provide elapsed time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classentt_1_1process}{entt\+::process$<$ process\+\_\+adaptor$<$ Func, Delta $>$, Delta $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classentt_1_1process_a43d63ba9304654f0209fc32d2c74f4ce}{succeed}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Terminates a process with success if it\textquotesingle{}s still alive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1process_a81816bdd06dce4058bfe3cfa5d42a64c}{fail}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Terminates a process with errors if it\textquotesingle{}s still alive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1process_a9bf45a6c430f5e32fc7ab33a7a197abc}{pause}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Stops a process if it\textquotesingle{}s in a running state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentt_1_1process_a91fd8adb2ea48c88c6f9fb5818890f67}{unpause}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Restarts a process if it\textquotesingle{}s paused. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}$>$\newline
+struct entt\+::process\+\_\+adaptor$<$ Func, Delta $>$}
+Adaptor for lambdas and functors to turn them into processes. 
+
+Lambdas and functors can\textquotesingle{}t be used directly with a scheduler for they are not properly defined processes with managed life cycles.~\newline
+ This class helps in filling the gap and turning lambdas and functors into full featured processes usable by a scheduler.
+
+The signature of the function call operator should be equivalent to the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}},\ \textcolor{keywordtype}{void}\ *data,\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classentt_1_1process_a43d63ba9304654f0209fc32d2c74f4ce}{succeed}},\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classentt_1_1process_a81816bdd06dce4058bfe3cfa5d42a64c}{fail}});}
+
+\end{DoxyCode}
+
+
+Where\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily delta} is the elapsed time.
+\item {\ttfamily data} is an opaque pointer to user data if any, {\ttfamily nullptr} otherwise.
+\item {\ttfamily succeed} is a function to call when a process terminates with success.
+\item {\ttfamily fail} is a function to call when a process terminates with errors.
+\end{DoxyItemize}
+
+The signature of the function call operator of both {\ttfamily succeed} and {\ttfamily fail} is equivalent to the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}();}
+
+\end{DoxyCode}
+
+
+Usually users shouldn\textquotesingle{}t worry about creating adaptors. A scheduler will create them internally each and avery time a lambda or a functor is used as a process.
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classentt_1_1process}{process} 
+
+\doxylink{classentt_1_1scheduler}{scheduler}
+\end{DoxySeeAlso}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Func} & Actual type of process. \\
+\hline
+{\em Delta} & Type to use to provide elapsed time. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00312}{312}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1process__adaptor_ad1e2c8f3c44bf42abb05ef913b8267ce}\label{structentt_1_1process__adaptor_ad1e2c8f3c44bf42abb05ef913b8267ce} 
+\index{entt::process\_adaptor$<$ Func, Delta $>$@{entt::process\_adaptor$<$ Func, Delta $>$}!process\_adaptor@{process\_adaptor}}
+\index{process\_adaptor@{process\_adaptor}!entt::process\_adaptor$<$ Func, Delta $>$@{entt::process\_adaptor$<$ Func, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{process\_adaptor()}{process\_adaptor()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{structentt_1_1process__adaptor}{entt\+::process\+\_\+adaptor}}$<$ Func, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+adaptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a process adaptor from a lambda or a functor. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Args} & Types of arguments to use to initialize the actual process. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Parameters to use to initialize the actual process. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00319}{319}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1process__adaptor_a7514fabbbda491742872bc0e52dde5c2}\label{structentt_1_1process__adaptor_a7514fabbbda491742872bc0e52dde5c2} 
+\index{entt::process\_adaptor$<$ Func, Delta $>$@{entt::process\_adaptor$<$ Func, Delta $>$}!update@{update}}
+\index{update@{update}!entt::process\_adaptor$<$ Func, Delta $>$@{entt::process\_adaptor$<$ Func, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1process__adaptor}{entt\+::process\+\_\+adaptor}}$<$ Func, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}}]{delta,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates a process and its internal state if required. 
+
+
+\begin{DoxyParams}{参数}
+{\em delta} & Elapsed time. \\
+\hline
+{\em data} & Optional data. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00328}{328}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00136}{entt\+::process$<$ process\+\_\+adaptor$<$ Func, Delta $>$, Delta $>$\+::fail()}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{process_8hpp_source_l00124}{entt\+::process$<$ process\+\_\+adaptor$<$ Func, Delta $>$, Delta $>$\+::succeed()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1process__adaptor_a7514fabbbda491742872bc0e52dde5c2_cgraph}
+\end{center}
+\end{figure}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/process/\mbox{\hyperlink{process_8hpp}{process.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="canMove" name="canMove">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,38,87,63"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258" title="Checks if an entity has all the given components." alt="" coords="135,13,312,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,42,121,37,122,43,87,48"/>
+<area shape="rect" id="Node000004" href="$dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="194,62,253,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="87,53,181,66,180,72,87,59"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="360,5,507,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,23,346,23,346,28,313,28"/>
+</map>

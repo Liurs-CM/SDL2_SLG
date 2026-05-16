@@ -1,0 +1,31 @@
+\doxysection{sdl\+\_\+load\+\_\+texture.\+cpp}
+\hypertarget{sdl__load__texture_8cpp_source}{}\label{sdl__load__texture_8cpp_source}\index{src/util/sdl\_load\_texture.cpp@{src/util/sdl\_load\_texture.cpp}}
+\mbox{\hyperlink{sdl__load__texture_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ sdl\_load\_texture.hpp}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/4/20.}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__load__texture_8hpp}{sdl\_load\_texture.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__check_8hpp}{sdl\_check.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00013}\mbox{\hyperlink{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2}{00013}}\ \mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{SDL::Texture}}\ \mbox{\hyperlink{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2}{SDL::loadTexture}}(SDL\_Renderer\ *renderer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structanimera_1_1TextureInfo}{animera::TextureInfo}}\ \&info)\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00014}00014\ \ \ \mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{SDL::Texture}}\ tex\{\mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_CreateTexture(}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00015}00015\ \ \ \ \ renderer,}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00016}00016\ \ \ \ \ SDL\_PIXELFORMAT\_ABGR8888,}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00017}00017\ \ \ \ \ SDL\_TEXTUREACCESS\_STATIC,}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00018}00018\ \ \ \ \ info.\mbox{\hyperlink{structanimera_1_1TextureInfo_a11943bba1ee9a92f4d30ef8d3d0a775f}{width}},\ info.\mbox{\hyperlink{structanimera_1_1TextureInfo_aeeb80823ce7741065e062507c6e609dd}{height}}}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00019}00019\ \ \ ))\};}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00020}00020\ \ \ std::unique\_ptr\ data\ =\ \mbox{\hyperlink{namespaceanimera_a6155ecb121d800d935955ad45372870a}{animera::decompressTexture}}(info);}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00021}00021\ \ \ assert(data);}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00022}00022\ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_UpdateTexture(tex.get(),\ \textcolor{keyword}{nullptr},\ data.get(),\ info.\mbox{\hyperlink{structanimera_1_1TextureInfo_ac5cf84c2bcfc98ee859cc4fffc6486e2}{pitch}}));}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00023}00023\ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_SetTextureBlendMode(tex.get(),\ SDL\_BLENDMODE\_BLEND));}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00024}00024\ \ \ \textcolor{keywordflow}{return}\ tex;}
+\DoxyCodeLine{\Hypertarget{sdl__load__texture_8cpp_source_l00025}00025\ \}}
+
+\end{DoxyCode}

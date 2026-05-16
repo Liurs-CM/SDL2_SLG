@@ -1,0 +1,7 @@
+<map id="Game::input" name="Game::input">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,108,38"/>
+<area shape="rect" id="Node000002" href="$player__input_8cpp.html#a9b09b6237dcdeab07c22d55ab6649293" title=" " alt="" coords="156,13,252,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,23,142,23,142,28,108,28"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="300,5,447,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,23,287,23,287,28,252,28"/>
+</map>

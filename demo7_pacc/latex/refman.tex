@@ -1,0 +1,574 @@
+  % Handle batch mode
+  % to overcome problems with too many open files
+  \let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}
+  \pdfminorversion=7
+  % Set document class depending on configuration
+  \documentclass[twoside]{book}
+  %% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
+  \usepackage{ifthen}
+  \ifx\requestedLaTeXdate\undefined
+    \usepackage{array}
+  \else
+    \usepackage{array}[=2016-10-06]
+  \fi
+  %%
+  % Packages required by doxygen
+  \makeatletter
+  \providecommand\IfFormatAtLeastTF{\@ifl@t@r\fmtversion}
+  % suppress package identification of infwarerr as it contains the word "warning"
+  \let\@@protected@wlog\protected@wlog
+  \def\protected@wlog#1{\wlog{package info suppressed}}
+  \RequirePackage{infwarerr}
+  \let\protected@wlog\@@protected@wlog
+  \makeatother
+  \IfFormatAtLeastTF{2016/01/01}{}{\usepackage{fixltx2e}} % for \textsubscript
+  \IfFormatAtLeastTF{2015/01/01}{\pdfsuppresswarningpagegroup=1}{}
+  \usepackage{doxygen}
+  \usepackage{graphicx}
+  \usepackage[utf8]{inputenc}
+  \usepackage{makeidx}
+  \PassOptionsToPackage{warn}{textcomp}
+  \usepackage{textcomp}
+  \usepackage[nointegrals]{wasysym}
+  \usepackage{ifxetex}
+  % NLS support packages
+  \usepackage{CJKutf8}
+  % Define default fonts
+  % Font selection
+  % set main and monospaced font
+  \usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+  \doxyallsectionsfont{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \renewcommand{\DoxyLabelFont}{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+   % Arguments of doxygenemoji:
+   % 1) ':<text>:' form of the emoji, already LaTeX-escaped
+   % 2) file with the name of the emoji without the .png extension
+   % in case image exist use this otherwise use the ':<text>:' form
+   \newcommand{\doxygenemoji}[2]{%
+     \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+   }
+  % Page & text layout
+  \usepackage{geometry}
+  \geometry{%
+    a4paper,%
+    top=2.5cm,%
+    bottom=2.5cm,%
+    left=2.5cm,%
+    right=2.5cm%
+  }
+  \usepackage{changepage}
+  % Allow a bit of overflow to go unnoticed by other means
+  \tolerance=750
+  \hfuzz=15pt
+  \hbadness=750
+  \setlength{\emergencystretch}{15pt}
+  \setlength{\parindent}{0cm}
+  \newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+  \newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+  \doxynormalparskip
+  % Redefine paragraph/subparagraph environments, using sectsty fonts
+  \makeatletter
+  \renewcommand{\paragraph}{%
+    \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@parafont%
+    }%
+  }
+  \renewcommand{\subparagraph}{%
+    \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@subparafont%
+    }%
+  }
+  \makeatother
+  \makeatletter
+  \newcommand\hrulefilll{\leavevmode\leaders\hrule\hskip 0pt plus 1filll\kern\z@}
+  \makeatother
+  % Headers & footers
+  \usepackage{fancyhdr}
+  \pagestyle{fancyplain}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancypagestyle{fancyplain}{
+    \fancyhf{}
+    \fancyhead[LE, RO]{\bfseries\thepage}
+    \fancyhead[LO]{\bfseries\rightmark}
+    \fancyhead[RE]{\bfseries\leftmark}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+  }
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize 制作者 Doxygen }
+    \renewcommand{\headrulewidth}{0pt}
+  }
+  \pagestyle{fancyplain}
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{#1}{}%
+  }
+  \renewcommand{\sectionmark}[1]{%
+    \markright{\thesection\ #1}%
+  }
+  % ToC, LoF, LoT, bibliography, and index
+  % Indices & bibliography
+  \usepackage{natbib}
+  \usepackage[titles]{tocloft}
+  \setcounter{tocdepth}{3}
+  \setcounter{secnumdepth}{5}
+  % creating indexes
+  \makeindex
+  \usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+  % Hyperlinks
+    % Hyperlinks (required, but should be loaded last)
+    \ifpdf
+      \usepackage[pdftex,pagebackref=true]{hyperref}
+    \else
+      \ifxetex
+        \usepackage[pagebackref=true]{hyperref}
+      \else
+        \usepackage[ps2pdf,pagebackref=true]{hyperref}
+      \fi
+    \fi
+    \hypersetup{%
+      colorlinks=true,%
+      linkcolor=blue,%
+      citecolor=blue,%
+      unicode,%
+      pdftitle={My Project},%
+      pdfsubject={}%
+    }
+  % Custom commands used by the header
+  % Custom commands
+  \newcommand{\clearemptydoublepage}{%
+    \newpage{\pagestyle{empty}\cleardoublepage}%
+  }
+  % caption style definition
+  \usepackage{caption}
+  \captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+  % in page table of contents
+  \IfFormatAtLeastTF{2023/05/01}{\usepackage[deeplevels]{etoc}}{\usepackage[deeplevels]{etoc_doxygen}}
+  \etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+  \etocsetlevel{subsubsubsection}{4}
+  \etocsetlevel{subsubsubsubsection}{5}
+  \etocsetlevel{subsubsubsubsubsection}{6}
+  \etocsetlevel{subsubsubsubsubsubsection}{7}
+  \etocsetlevel{paragraph}{8}
+  \etocsetlevel{subparagraph}{9}
+  % prevent numbers overlap the titles in toc
+  \renewcommand{\numberline}[1]{#1~}
+% End of preamble, now comes the document contents
+%===== C O N T E N T S =====
+\begin{document}
+  \raggedbottom
+  \begin{CJK}{UTF8}{gbsn}
+  % Titlepage & ToC
+    % To avoid duplicate page anchors due to reuse of same numbers for
+    % the index (be it as roman numbers)
+    \hypersetup{pageanchor=false,
+                bookmarksnumbered=true,
+                pdfencoding=unicode
+               }
+  \pagenumbering{alph}
+  \begin{titlepage}
+  \vspace*{7cm}
+  \begin{center}%
+  {\Large My Project}\\
+  \vspace*{1cm}
+  {\large 制作者 Doxygen 1.9.8}\\
+  \end{center}
+  \end{titlepage}
+  \clearemptydoublepage
+  \pagenumbering{roman}
+  \tableofcontents
+  \clearemptydoublepage
+  \pagenumbering{arabic}
+  % re-enable anchors again
+  \hypersetup{pageanchor=true}
+%--- Begin generated contents ---
+\chapter{命名空间索引}
+\input{namespaces}
+\chapter{继承关系索引}
+\input{hierarchy}
+\chapter{类索引}
+\input{annotated}
+\chapter{文件索引}
+\input{files}
+\chapter{命名空间文档}
+\input{namespaceanimera}
+\input{namespaceanimera_1_1sprites}
+\input{namespaceentt}
+\input{namespaceSDL}
+\chapter{类说明}
+\input{structActualDir}
+\input{classApplication}
+\input{structentt_1_1as__group}
+\input{structentt_1_1as__is__t}
+\input{structentt_1_1as__ref__t}
+\input{structentt_1_1as__view}
+\input{structentt_1_1as__void__t}
+\input{structentt_1_1basic__actor}
+\input{structentt_1_1basic__collector}
+\input{structentt_1_1basic__collector_3_01matcher_3_01type__list_3_01Reject_8_8_8_01_4_00_01type__list_98a79514dcad34a82f321f0796064ffb}
+\input{structentt_1_1basic__collector_3_4}
+\input{classentt_1_1basic__continuous__loader}
+\input{classentt_1_1basic__group}
+\input{classentt_1_1basic__group_3_01Entity_00_01exclude__t_3_01Exclude_8_8_8_01_4_00_01get__t_3_01Get_8_8_8_01_4_01_4}
+\input{classentt_1_1basic__group_3_01Entity_00_01exclude__t_3_01Exclude_8_8_8_01_4_00_01get__t_3_01Get_1aada3a14110654dc27700c17c9c2396}
+\input{classentt_1_1basic__hashed__string}
+\input{classentt_1_1basic__observer}
+\input{structentt_1_1dispatcher_1_1basic__pool}
+\input{structentt_1_1emitter_1_1basic__pool}
+\input{classentt_1_1basic__registry}
+\input{classentt_1_1basic__runtime__view}
+\input{classentt_1_1basic__snapshot}
+\input{classentt_1_1basic__snapshot__loader}
+\input{classentt_1_1basic__view}
+\input{classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_01Exclude_8_8_8_01_4_00_01Component_8_8_8_01_4}
+\input{classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4}
+\input{structBlinkyChaseTarget}
+\input{structentt_1_1cache}
+\input{structChaseMode}
+\input{structentt_1_1choice__t}
+\input{structentt_1_1choice__t_3_010_01_4}
+\input{structClydeChaseTarget}
+\input{structentt_1_1connect__arg__t}
+\input{classentt_1_1connection}
+\input{structentt_1_1emitter_1_1connection}
+\input{structentt_1_1basic__hashed__string_1_1const__wrapper}
+\input{structentt_1_1scheduler_1_1continuation}
+\input{classentt_1_1delegate}
+\input{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4}
+\input{structSDL_1_1DeleteRenderer}
+\input{structSDL_1_1DeleteSurface}
+\input{structSDL_1_1DeleteTexture}
+\input{structSDL_1_1DeleteWindow}
+\input{structDesiredDir}
+\input{structDirRange}
+\input{classentt_1_1dispatcher}
+\input{structEatenMode}
+\input{classentt_1_1emitter}
+\input{structEnterHouse}
+\input{classentity}
+\input{structentt_1_1entt__traits}
+\input{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4}
+\input{structentt_1_1entt__traits_3_01std_1_1uint32__t_01_4}
+\input{structentt_1_1entt__traits_3_01std_1_1uint64__t_01_4}
+\input{structentt_1_1exclude__t}
+\input{classentt_1_1family}
+\input{classFrameCap}
+\input{classGame}
+\input{structentt_1_1get__t}
+\input{structGhost}
+\input{structGhostCollision}
+\input{structGhostSprite}
+\input{classGrid}
+\input{structentt_1_1basic__registry_1_1group__data}
+\input{structentt_1_1basic__registry_1_1group__handler}
+\input{structentt_1_1basic__registry_1_1group__handler_3_01exclude__t_3_01Exclude_8_8_8_01_4_00_01get__c6e53cea11033a38c98c49aca9f3080f}
+\input{classentt_1_1handle}
+\input{structentt_1_1has__type__index}
+\input{structentt_1_1has__type__index_3_01Type_00_01std_1_1void__t_3_01decltype_07type__index_3_01Type_01_4_1_1value_07_08_08_4_01_4}
+\input{structHomePosition}
+\input{classentt_1_1identifier}
+\input{structentt_1_1identity}
+\input{structInkyChaseTarget}
+\input{structentt_1_1insertion__sort}
+\input{structentt_1_1is__equality__comparable}
+\input{structentt_1_1is__equality__comparable_3_01Type_00_01std_1_1void__t_3_01decltype_07std_1_1declva46aebf4c20f38cbd0108d1e297595736}
+\input{structLeaveHouse}
+\input{classentt_1_1loader}
+\input{structentt_1_1matcher}
+\input{structentt_1_1basic__observer_1_1matcher__handler}
+\input{structentt_1_1basic__observer_1_1matcher__handler_3_01matcher_3_01type__list_3_01Reject_8_8_8_0117cee5b47fc38592fdcd37ee7a793dd8}
+\input{structentt_1_1basic__observer_1_1matcher__handler_3_01matcher_3_01type__list_3_01Reject_8_8_8_01342ea6a3c71d46b8f95577490118491f}
+\input{classentt_1_1member__class}
+\input{classentt_1_1meta__any}
+\input{structentt_1_1meta__base}
+\input{structentt_1_1meta__conv}
+\input{structentt_1_1meta__ctor}
+\input{structentt_1_1meta__ctx}
+\input{structentt_1_1meta__data}
+\input{classentt_1_1meta__factory}
+\input{classentt_1_1meta__factory_3_01Type_01_4}
+\input{classentt_1_1meta__factory_3_01Type_00_01Spec_8_8_8_01_4}
+\input{structentt_1_1meta__func}
+\input{structentt_1_1meta__handle}
+\input{structentt_1_1meta__prop}
+\input{classentt_1_1meta__type}
+\input{structentt_1_1monostate}
+\input{structentt_1_1overloaded}
+\input{structPinkyChaseTarget}
+\input{structPlayer}
+\input{structPlayerSprite}
+\input{structentt_1_1basic__registry_1_1pool__data}
+\input{structentt_1_1basic__registry_1_1pool__handler}
+\input{structentt_1_1dispatcher_1_1pool__handler}
+\input{structentt_1_1emitter_1_1pool__handler}
+\input{structPos}
+\input{structPosition}
+\input{classentt_1_1process}
+\input{structentt_1_1process__adaptor}
+\input{structentt_1_1scheduler_1_1process__handler}
+\input{classSDL_1_1QuadWriter}
+\input{structentt_1_1radix__sort}
+\input{structScaredMode}
+\input{structScatterMode}
+\input{classentt_1_1scheduler}
+\input{structentt_1_1scoped__connection}
+\input{structentt_1_1service__locator}
+\input{classentt_1_1sigh}
+\input{classentt_1_1sigh_3_01Ret_07Args_8_8_8_08_4}
+\input{classentt_1_1sink}
+\input{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4}
+\input{classentt_1_1sparse__set}
+\input{classentt_1_1sparse__set_1_1sparse__set__iterator}
+\input{structanimera_1_1SpriteRect}
+\input{structentt_1_1std__sort}
+\input{classentt_1_1storage}
+\input{classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4}
+\input{classentt_1_1storage_1_1storage__iterator}
+\input{structTarget}
+\input{structanimera_1_1TextureInfo}
+\input{structentt_1_1type__index}
+\input{structentt_1_1type__info}
+\input{structentt_1_1type__list}
+\input{structentt_1_1type__list__cat}
+\input{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_01_4}
+\input{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_00_01type__list_3_01Other_8_8_8_01_4_00_01List_8_8_8_01_4}
+\input{structentt_1_1type__list__cat_3_4}
+\input{structentt_1_1type__list__size}
+\input{structentt_1_1type__list__size_3_01type__list_3_01Type_8_8_8_01_4_01_4}
+\input{structentt_1_1type__list__unique}
+\input{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4}
+\input{structentt_1_1type__list__unique_3_01type__list_3_4_01_4}
+\input{structentt_1_1meta__any_1_1type__traits}
+\input{structentt_1_1basic__registry_1_1variable__data}
+\input{classentt_1_1basic__runtime__view_1_1view__iterator}
+\input{classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_01Exclude_8_8_8_01_4_00_01Component_8_8_8_01_4_1_1view__iterator}
+\input{structentt_1_1y__combinator}
+\chapter{文件说明}
+\input{chase__target_8hpp}
+\input{chase__target_8hpp_source}
+\input{comp_2dir_8hpp}
+\input{comp_2dir_8hpp_source}
+\input{util_2dir_8hpp}
+\input{util_2dir_8hpp_source}
+\input{ghost_8hpp}
+\input{ghost_8hpp_source}
+\input{ghost__mode_8hpp}
+\input{ghost__mode_8hpp_source}
+\input{home__position_8hpp}
+\input{home__position_8hpp_source}
+\input{comp_2house_8hpp}
+\input{comp_2house_8hpp_source}
+\input{sys_2house_8hpp}
+\input{sys_2house_8hpp_source}
+\input{player_8hpp}
+\input{player_8hpp_source}
+\input{position_8hpp}
+\input{position_8hpp_source}
+\input{sprite_8hpp}
+\input{sprite_8hpp_source}
+\input{target_8hpp}
+\input{target_8hpp_source}
+\input{app_8cpp}
+\input{app_8cpp_source}
+\input{app_8hpp}
+\input{app_8hpp_source}
+\input{constants_8hpp}
+\input{constants_8hpp_source}
+\input{factories_8cpp}
+\input{factories_8cpp_source}
+\input{factories_8hpp}
+\input{factories_8hpp_source}
+\input{game_8cpp}
+\input{game_8cpp_source}
+\input{game_8hpp}
+\input{game_8hpp_source}
+\input{maze_8cpp}
+\input{maze_8cpp_source}
+\input{maze_8hpp}
+\input{maze_8hpp_source}
+\input{main_8cpp}
+\input{main_8cpp_source}
+\input{can__move_8cpp}
+\input{can__move_8cpp_source}
+\input{can__move_8hpp}
+\input{can__move_8hpp_source}
+\input{change__ghost__mode_8cpp}
+\input{change__ghost__mode_8cpp_source}
+\input{change__ghost__mode_8hpp}
+\input{change__ghost__mode_8hpp_source}
+\input{eat__dots_8cpp}
+\input{eat__dots_8cpp_source}
+\input{eat__dots_8hpp}
+\input{eat__dots_8hpp_source}
+\input{house_8cpp}
+\input{house_8cpp_source}
+\input{movement_8cpp}
+\input{movement_8cpp_source}
+\input{movement_8hpp}
+\input{movement_8hpp_source}
+\input{player__ghost__collide_8cpp}
+\input{player__ghost__collide_8cpp_source}
+\input{player__ghost__collide_8hpp}
+\input{player__ghost__collide_8hpp_source}
+\input{player__input_8cpp}
+\input{player__input_8cpp_source}
+\input{player__input_8hpp}
+\input{player__input_8hpp_source}
+\input{pursue__target_8cpp}
+\input{pursue__target_8cpp_source}
+\input{pursue__target_8hpp}
+\input{pursue__target_8hpp_source}
+\input{render_8cpp}
+\input{render_8cpp_source}
+\input{render_8hpp}
+\input{render_8hpp_source}
+\input{set__target_8cpp}
+\input{set__target_8cpp_source}
+\input{set__target_8hpp}
+\input{set__target_8hpp_source}
+\input{dir__to__pos_8hpp}
+\input{dir__to__pos_8hpp_source}
+\input{frame__cap_8hpp}
+\input{frame__cap_8hpp_source}
+\input{grid_8hpp}
+\input{grid_8hpp_source}
+\input{pos_8hpp}
+\input{pos_8hpp_source}
+\input{sdl__check_8hpp}
+\input{sdl__check_8hpp_source}
+\input{sdl__delete_8hpp}
+\input{sdl__delete_8hpp_source}
+\input{sdl__load__texture_8cpp}
+\input{sdl__load__texture_8cpp_source}
+\input{sdl__load__texture_8hpp}
+\input{sdl__load__texture_8hpp_source}
+\input{sdl__quad__writer_8cpp}
+\input{sdl__quad__writer_8cpp_source}
+\input{sdl__quad__writer_8hpp}
+\input{sdl__quad__writer_8hpp_source}
+\input{sprites_8cpp}
+\input{sprites_8cpp_source}
+\input{sprites_8hpp}
+\input{sprites_8hpp_source}
+\input{config_8h}
+\input{config_8h_source}
+\input{version_8h}
+\input{version_8h_source}
+\input{algorithm_8hpp}
+\input{algorithm_8hpp_source}
+\input{attribute_8h}
+\input{attribute_8h_source}
+\input{family_8hpp}
+\input{family_8hpp_source}
+\input{hashed__string_8hpp}
+\input{hashed__string_8hpp_source}
+\input{ident_8hpp}
+\input{ident_8hpp_source}
+\input{monostate_8hpp}
+\input{monostate_8hpp_source}
+\input{type__info_8hpp}
+\input{type__info_8hpp_source}
+\input{type__traits_8hpp}
+\input{type__traits_8hpp_source}
+\input{core_2utility_8hpp}
+\input{core_2utility_8hpp_source}
+\input{entity_2utility_8hpp}
+\input{entity_2utility_8hpp_source}
+\input{actor_8hpp}
+\input{actor_8hpp_source}
+\input{entity_8hpp}
+\input{entity_8hpp_source}
+\input{group_8hpp}
+\input{group_8hpp_source}
+\input{helper_8hpp}
+\input{helper_8hpp_source}
+\input{observer_8hpp}
+\input{observer_8hpp_source}
+\input{registry_8hpp}
+\input{registry_8hpp_source}
+\input{runtime__view_8hpp}
+\input{runtime__view_8hpp_source}
+\input{snapshot_8hpp}
+\input{snapshot_8hpp_source}
+\input{sparse__set_8hpp}
+\input{sparse__set_8hpp_source}
+\input{storage_8hpp}
+\input{storage_8hpp_source}
+\input{view_8hpp}
+\input{view_8hpp_source}
+\input{entt_8hpp}
+\input{entt_8hpp_source}
+\input{locator_8hpp}
+\input{locator_8hpp_source}
+\input{factory_8hpp}
+\input{factory_8hpp_source}
+\input{meta_8hpp}
+\input{meta_8hpp_source}
+\input{policy_8hpp}
+\input{policy_8hpp_source}
+\input{resolve_8hpp}
+\input{resolve_8hpp_source}
+\input{process_8hpp}
+\input{process_8hpp_source}
+\input{scheduler_8hpp}
+\input{scheduler_8hpp_source}
+\input{cache_8hpp}
+\input{cache_8hpp_source}
+\input{handle_8hpp}
+\input{handle_8hpp_source}
+\input{loader_8hpp}
+\input{loader_8hpp_source}
+\input{delegate_8hpp}
+\input{delegate_8hpp_source}
+\input{dispatcher_8hpp}
+\input{dispatcher_8hpp_source}
+\input{emitter_8hpp}
+\input{emitter_8hpp_source}
+\input{core_2fwd_8hpp}
+\input{core_2fwd_8hpp_source}
+\input{entity_2fwd_8hpp}
+\input{entity_2fwd_8hpp_source}
+\input{fwd_8hpp}
+\input{fwd_8hpp_source}
+\input{resource_2fwd_8hpp}
+\input{resource_2fwd_8hpp_source}
+\input{signal_2fwd_8hpp}
+\input{signal_2fwd_8hpp_source}
+\input{sigh_8hpp}
+\input{sigh_8hpp_source}
+%--- End generated contents ---
+% Index
+  \backmatter
+  \newpage
+  \phantomsection
+  \clearemptydoublepage
+  \addcontentsline{toc}{chapter}{\indexname}
+  \printindex
+% Required for some languages (in combination with latexdocumentpre from the header)
+\end{CJK}
+\end{document}

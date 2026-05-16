@@ -1,0 +1,17 @@
+<map id="entt::handle::get" name="entt::handle::get">
+<area shape="rect" id="Node000001" title="Gets a reference to the managed resource." alt="" coords="232,176,361,201"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1handle.html#a18a9f196a3f5a47e1d43be44633f8a37" title="Gets a reference to the managed resource." alt="" coords="30,5,159,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,165,242,104,215,72,183,44,159,32,161,28,185,40,219,68,247,101,285,162"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1handle.html#a5ef808fc614bf64184488a10ab8966a8" title=" " alt="" coords="19,55,171,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,168,233,130,183,95,153,83,155,78,185,90,236,126,276,164"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1handle.html#a5a6fe485f3d1af803a941f5dba9e444f" title="Gets a reference to the managed resource." alt="" coords="13,105,176,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="242,174,158,147,159,142,243,169"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1handle.html#a38ed3e151650b67f26339b380db76c2a" title="Gets a reference to the managed resource." alt="" coords="13,169,176,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,191,176,191,176,186,218,186"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1handle.html#afb7594e4ed68c6025b13ec0aa1a8e16a" title="Gets a reference to the managed resource." alt="" coords="9,233,180,259"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="239,208,141,236,139,231,237,203"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1handle.html#ad4f49100b408c1efa76ad97733c157d5" title="Gets a reference to the managed resource." alt="" coords="9,283,180,308"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="273,212,233,243,185,272,153,285,151,280,183,268,230,239,269,208"/>
+<area shape="rect" id="Node000008" href="$classentt_1_1handle.html#a2b7cde024ed697ec8de6c073e7e66b8a" title="Gets a pointer to the managed resource." alt="" coords="5,332,184,357"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="283,215,243,269,216,297,185,322,159,334,157,330,183,317,213,293,239,265,279,212"/>
+</map>

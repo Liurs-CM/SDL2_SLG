@@ -1,0 +1,54 @@
+\doxysection{sdl\+\_\+delete.\+hpp}
+\hypertarget{sdl__delete_8hpp_source}{}\label{sdl__delete_8hpp_source}\index{src/util/sdl\_delete.hpp@{src/util/sdl\_delete.hpp}}
+\mbox{\hyperlink{sdl__delete_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ sdl\_delete.hpp}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/4/20.}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ UTIL\_SDL\_DELETE\_HPP}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ UTIL\_SDL\_DELETE\_HPP}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <SDL\_render.h>}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00015}00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceSDL}{SDL}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00017}\mbox{\hyperlink{structSDL_1_1DeleteWindow}{00017}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSDL_1_1DeleteWindow}{DeleteWindow}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00018}\mbox{\hyperlink{structSDL_1_1DeleteWindow_a04b803eeb98a4a3f9368da67932dd59e}{00018}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSDL_1_1DeleteWindow_a04b803eeb98a4a3f9368da67932dd59e}{operator()}}(SDL\_Window\ *ptr)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00019}00019\ \ \ \ \ SDL\_DestroyWindow(ptr);}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00020}00020\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00021}00021\ \};}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00023}\mbox{\hyperlink{structSDL_1_1DeleteTexture}{00023}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSDL_1_1DeleteTexture}{DeleteTexture}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00024}\mbox{\hyperlink{structSDL_1_1DeleteTexture_a59bbf1ba636eae63f2331705839f89d1}{00024}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSDL_1_1DeleteTexture_a59bbf1ba636eae63f2331705839f89d1}{operator()}}(SDL\_Texture\ *ptr)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00025}00025\ \ \ \ \ SDL\_DestroyTexture(ptr);}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00026}00026\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00027}00027\ \};}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00029}\mbox{\hyperlink{structSDL_1_1DeleteSurface}{00029}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSDL_1_1DeleteSurface}{DeleteSurface}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00030}\mbox{\hyperlink{structSDL_1_1DeleteSurface_aa162e91ba51baa541285de251b319a85}{00030}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSDL_1_1DeleteSurface_aa162e91ba51baa541285de251b319a85}{operator()}}(SDL\_Surface\ *ptr)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00031}00031\ \ \ \ \ SDL\_FreeSurface(ptr);}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00032}00032\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00033}00033\ \};}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00035}\mbox{\hyperlink{structSDL_1_1DeleteRenderer}{00035}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSDL_1_1DeleteRenderer}{DeleteRenderer}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00036}\mbox{\hyperlink{structSDL_1_1DeleteRenderer_a7ad3b0ab73aa37a9f3ad72f1ce8ff893}{00036}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSDL_1_1DeleteRenderer_a7ad3b0ab73aa37a9f3ad72f1ce8ff893}{operator()}}(SDL\_Renderer\ *ptr)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00037}00037\ \ \ \ \ SDL\_DestroyRenderer(ptr);}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00038}00038\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00039}00039\ \};}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00041}\mbox{\hyperlink{namespaceSDL_a613a620356819580afd00fb32155a972}{00041}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceSDL_a613a620356819580afd00fb32155a972}{Window}}\ =\ std::unique\_ptr<SDL\_Window,\ DeleteWindow>;}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00042}\mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{00042}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{Texture}}\ =\ std::unique\_ptr<SDL\_Texture,\ DeleteTexture>;}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00043}\mbox{\hyperlink{namespaceSDL_a11506dcfb46d3496382f8d46b1510333}{00043}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceSDL_a11506dcfb46d3496382f8d46b1510333}{Surface}}\ =\ std::unique\_ptr<SDL\_Surface,\ DeleteSurface>;}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00044}\mbox{\hyperlink{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb}{00044}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb}{Renderer}}\ =\ std::unique\_ptr<SDL\_Renderer,\ DeleteRenderer>;}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00046}00046\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{sdl__delete_8hpp_source_l00048}00048\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

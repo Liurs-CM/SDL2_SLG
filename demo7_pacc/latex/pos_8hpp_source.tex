@@ -1,0 +1,58 @@
+\doxysection{pos.\+hpp}
+\hypertarget{pos_8hpp_source}{}\label{pos_8hpp_source}\index{src/util/pos.hpp@{src/util/pos.hpp}}
+\mbox{\hyperlink{pos_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ pos.hpp}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 8/5/20.}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ UTIL\_POS\_HPP}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ UTIL\_POS\_HPP}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00014}\mbox{\hyperlink{structPos}{00014}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPos}{Pos}}\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00015}\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{00015}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}},\ \mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00016}00016\ \};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00018}\mbox{\hyperlink{pos_8hpp_adfb8cba5382bde720316adc7554e1470}{00018}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{pos_8hpp_adfb8cba5382bde720316adc7554e1470}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ rhs)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00019}00019\ \ \ \textcolor{keywordflow}{return}\ \{lhs.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ +\ rhs.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}},\ lhs.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\ +\ rhs.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00022}\mbox{\hyperlink{pos_8hpp_a12a7db7d262878416bed95921a59f763}{00022}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \&\mbox{\hyperlink{pos_8hpp_a12a7db7d262878416bed95921a59f763}{operator+=}}(\mbox{\hyperlink{structPos}{Pos}}\ \&lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ rhs)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00023}00023\ \ \ \textcolor{keywordflow}{return}\ lhs\ =\ lhs\ +\ rhs;}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00024}00024\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00026}\mbox{\hyperlink{pos_8hpp_ad2b225851e0a4d54ee78af1ac16c5578}{00026}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{pos_8hpp_ad2b225851e0a4d54ee78af1ac16c5578}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ rhs)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00027}00027\ \ \ \textcolor{keywordflow}{return}\ \{lhs.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ -\/\ rhs.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}},\ lhs.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\ -\/\ rhs.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00030}\mbox{\hyperlink{pos_8hpp_a25771bbd5ef5cb0c4160041e65d59fd4}{00030}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{pos_8hpp_a25771bbd5ef5cb0c4160041e65d59fd4}{operator*}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ lhs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ rhs)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00031}00031\ \ \ \textcolor{keywordflow}{return}\ \{lhs.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ *\ rhs,\ lhs.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\ *\ rhs\};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00034}\mbox{\hyperlink{pos_8hpp_af8c8db18c8be3e60dcebb04bd037e880}{00034}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{pos_8hpp_af8c8db18c8be3e60dcebb04bd037e880}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ rhs)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00035}00035\ \ \ \textcolor{keywordflow}{return}\ lhs.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ ==\ rhs.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ \&\&\ lhs.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\ ==\ rhs.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00038}\mbox{\hyperlink{pos_8hpp_a83903ab917f666fc88c2d98cfcd4dc19}{00038}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{pos_8hpp_a83903ab917f666fc88c2d98cfcd4dc19}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ rhs)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00039}00039\ \ \ \textcolor{keywordflow}{return}\ !(lhs\ ==\ rhs);}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00040}00040\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00042}\mbox{\hyperlink{pos_8hpp_ac981712b50b885f6249a9a099ed0d02d}{00042}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{pos_8hpp_ac981712b50b885f6249a9a099ed0d02d}{distance2}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ b)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00043}00043\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ dx\ =\ a.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ -\/\ b.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00044}00044\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ dy\ =\ a.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\ -\/\ b.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}};}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00045}00045\ \ \ \textcolor{keywordflow}{return}\ dx\ *\ dx\ +\ dy\ *\ dy;}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00046}00046\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00048}\mbox{\hyperlink{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0}{00048}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0}{distance}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ b)\ \{}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00049}00049\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(std::sqrt(\mbox{\hyperlink{pos_8hpp_ac981712b50b885f6249a9a099ed0d02d}{distance2}}(a,\ b)));}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00050}00050\ \}}
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{pos_8hpp_source_l00052}00052\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

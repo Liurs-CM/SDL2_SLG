@@ -1,0 +1,60 @@
+\doxysection{src/sys/player\+\_\+ghost\+\_\+collide.cpp 文件参考}
+\hypertarget{player__ghost__collide_8cpp}{}\label{player__ghost__collide_8cpp}\index{src/sys/player\_ghost\_collide.cpp@{src/sys/player\_ghost\_collide.cpp}}
+{\ttfamily \#include "{}player\+\_\+ghost\+\_\+collide.\+hpp"{}}\newline
+{\ttfamily \#include "{}comp/dir.\+hpp"{}}\newline
+{\ttfamily \#include "{}comp/ghost.\+hpp"{}}\newline
+{\ttfamily \#include "{}comp/player.\+hpp"{}}\newline
+{\ttfamily \#include "{}comp/position.\+hpp"{}}\newline
+{\ttfamily \#include "{}util/dir\+\_\+to\+\_\+pos.\+hpp"{}}\newline
+{\ttfamily \#include "{}comp/ghost\+\_\+mode.\+hpp"{}}\newline
+{\ttfamily \#include $<$entt/entity/registry.\+hpp$>$}\newline
+player\+\_\+ghost\+\_\+collide.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__ghost__collide_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structGhostCollision}{Ghost\+Collision}} \mbox{\hyperlink{player__ghost__collide_8cpp_a3d5eafa0b558bc4fcdc6704f51e7af7b}{player\+Ghost\+Collide}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&reg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{player__ghost__collide_8cpp_a3d5eafa0b558bc4fcdc6704f51e7af7b}\label{player__ghost__collide_8cpp_a3d5eafa0b558bc4fcdc6704f51e7af7b} 
+\index{player\_ghost\_collide.cpp@{player\_ghost\_collide.cpp}!playerGhostCollide@{playerGhostCollide}}
+\index{playerGhostCollide@{playerGhostCollide}!player\_ghost\_collide.cpp@{player\_ghost\_collide.cpp}}
+\doxysubsubsection{\texorpdfstring{playerGhostCollide()}{playerGhostCollide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGhostCollision}{Ghost\+Collision}} player\+Ghost\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{player__ghost__collide_8cpp_source}{player\+\_\+ghost\+\_\+collide.\+cpp}} 第 \mbox{\hyperlink{player__ghost__collide_8cpp_source_l00035}{35}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49ea9a97eda6d89f5c9e84560468a0679707}{Ghost\+Collision\+::eat}}, \mbox{\hyperlink{registry_8hpp_source_l00921}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::has()}}, \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49eaf7a2e8166a663d6a5fc86c3ccd320f0b}{Ghost\+Collision\+::lose}}, \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49ea334c4a4c42fdb79d7ebc3e73b517e6f8}{Ghost\+Collision\+::none}}, \mbox{\hyperlink{entity_8hpp_source_l00174}{entt\+::null}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__ghost__collide_8cpp_a3d5eafa0b558bc4fcdc6704f51e7af7b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__ghost__collide_8cpp_a3d5eafa0b558bc4fcdc6704f51e7af7b_icgraph}
+\end{center}
+\end{figure}

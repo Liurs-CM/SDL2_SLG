@@ -1,0 +1,7 @@
+<map id="entt::storage::begin" name="entt::storage::begin">
+<area shape="rect" id="Node000001" title="Returns an iterator to the beginning." alt="" coords="5,5,155,31"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#a49e58111ceecb3fa548ae580545eafb4" title="Returns an iterator to the beginning." alt="" coords="203,5,359,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,15,189,15,189,21,155,21"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a340dff7484f1e58feff58a5f0627e190" title="Returns the number of elements in a sparse set." alt="" coords="407,5,567,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,15,393,15,393,21,359,21"/>
+</map>

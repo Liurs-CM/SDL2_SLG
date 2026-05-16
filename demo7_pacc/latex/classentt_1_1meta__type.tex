@@ -1,0 +1,886 @@
+\doxysection{entt\+::meta\+\_\+type类 参考}
+\hypertarget{classentt_1_1meta__type}{}\label{classentt_1_1meta__type}\index{entt::meta\_type@{entt::meta\_type}}
+
+
+Opaque container for meta types.  
+
+
+
+
+{\ttfamily \#include $<$meta.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__type_a7362687fc89444507cded22f57be3ff0}{size\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} internal\+::meta\+\_\+type\+\_\+node\+::size\+\_\+type
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1meta__type_a40488260af3ad41dd35c8c4267e849f8}{meta\+\_\+type}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node \texorpdfstring{$\ast$}{*}curr=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs an instance from a given node.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_afe33392dbdfe4955026b441a5da0eebd}{type\+\_\+id}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the type id of the underlying type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_aeb8e5f88ad2c503b01bdd45cd80dd34c}{id}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the identifier assigned to a given meta object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_a2d2a8959917fc2734a793cc85022af5f}{alias}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the identifier assigned to a given meta object.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a4a8aea6060bd82daf287bb6c63c1955a}{is\+\_\+void}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to void or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a222c4b6ae628f9ed6f90cd3573f788c8}{is\+\_\+integral}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to an integral type or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_acb95ab1d8952b3595b0d820cee1aa79d}{is\+\_\+floating\+\_\+point}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to a floating-\/point type or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a708c42df22be9647eca05a8c9701a7b2}{is\+\_\+array}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to an array type or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_ab2d4f56d08063128d0b4bc5cb4b1b0c9}{is\+\_\+enum}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to an enum or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_ad3503617450b2814e53362206bb6fecd}{is\+\_\+union}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to an union or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a9d1e5e6cd4c097143a3055b8e56a8641}{is\+\_\+class}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to a class or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a8eec2742984f892febcbc48a6192bdfd}{is\+\_\+pointer}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to a pointer or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a5e2c3e0856d2eff7ce2403000c67c0d6}{is\+\_\+function\+\_\+pointer}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to a function pointer or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a486ce6d737b37675403f3e719a2a51a2}{is\+\_\+member\+\_\+object\+\_\+pointer}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to a pointer to data member or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a184083298b97b476f02509fd5379bdbb}{is\+\_\+member\+\_\+function\+\_\+pointer}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Indicates whether a given meta type refers to a pointer to member function or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type_a7362687fc89444507cded22f57be3ff0}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_a4eadf479b9b7f11879a24e0e76d5cd51}{extent}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em If a given meta type refers to an array type, provides the number of elements of the array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_a89df1ddbee0b5aef2651f1fc712ada20}{remove\+\_\+pointer}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Provides the meta type for which the pointer is defined. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_a1cee84bcd77ef63480c84dba5c959f2b}{remove\+\_\+extent}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Provides the meta type for which the array is defined. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__base}{meta\+\_\+base}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ \mbox{\hyperlink{classentt_1_1meta__type_a5c4afd7da97d83fd471387cb6669b12c}{base}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all the meta bases of a meta type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__base}{meta\+\_\+base}} \mbox{\hyperlink{classentt_1_1meta__type_afbaa0317d6083f2fc99cac31026db1fe}{base}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_aeb8e5f88ad2c503b01bdd45cd80dd34c}{id}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the meta base associated with a given identifier. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__type_a53eead7c4764a943433f495210f3f495}{conv}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all the meta conversion functions of a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{structentt_1_1meta__conv}{meta\+\_\+conv}} \mbox{\hyperlink{classentt_1_1meta__type_a61617a705a71274f630f1be757244025}{conv}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the meta conversion function associated with a given type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__type_a6758e10c4fec59ca04fb0adf0de1b572}{ctor}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all the meta constructors of a meta type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{structentt_1_1meta__ctor}{meta\+\_\+ctor}} \mbox{\hyperlink{classentt_1_1meta__type_ad6fbae0fc5752d7cdb68d88d9e34de59}{ctor}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the meta constructor that accepts a given list of types of arguments. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__data}{meta\+\_\+data}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ \mbox{\hyperlink{classentt_1_1meta__type_a44963b49a3060da0271df092dd29578c}{data}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all the meta data of a meta type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__data}{meta\+\_\+data}} \mbox{\hyperlink{classentt_1_1meta__type_a68a81b038954d1727a6bb051ed1e810c}{data}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_aeb8e5f88ad2c503b01bdd45cd80dd34c}{id}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the meta data associated with a given identifier. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__func}{meta\+\_\+func}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ \mbox{\hyperlink{classentt_1_1meta__type_a36724ecb86efa3fc06d1af19d8ee7719}{func}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all the meta functions of a meta type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__func}{meta\+\_\+func}} \mbox{\hyperlink{classentt_1_1meta__type_a3e345e527b4f36c2146254e1ed9b6649}{func}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1meta__type_aeb8e5f88ad2c503b01bdd45cd80dd34c}{id}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the meta function associated with a given identifier. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{classentt_1_1meta__type_ad9c9a821b8047a5b48efadd2a045da2a}{construct}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates an instance of the underlying type, if possible. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ \mbox{\hyperlink{classentt_1_1meta__type_a696b17ce5d08ba7fb0be5115360aa2cc}{prop}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all the properties assigned to a meta type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} \mbox{\hyperlink{classentt_1_1meta__type_a4931fc02b58faf3b4c6c99e57d264691}{prop}} (\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} key) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the property associated with a given key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type_ae8101e23b4b79a4452f063736f86b3ad}{operator bool}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a meta object is valid, false otherwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1meta__type_a838362aa3598bfa4cc18041d3445bace}{operator==}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks if two meta objects refer to the same type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1meta__type_af84a5a635bccfc6ee941d9a77d190895}{detach}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Removes a meta object from the list of searchable types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args, std\+::size\+\_\+t... Indexes$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1meta__type_a2fd65079b006cae5a47e4f1f7b8d91af}{ctor}} (std\+::index\+\_\+sequence$<$ Indexes... $>$) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1meta__type_a8951f541ef03f241c2326cb90ce8d2d5}{node}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Opaque container for meta types. 
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01145}{1145}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1meta__type_a7362687fc89444507cded22f57be3ff0}\label{classentt_1_1meta__type_a7362687fc89444507cded22f57be3ff0} 
+\index{entt::meta\_type@{entt::meta\_type}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1meta__type_a7362687fc89444507cded22f57be3ff0}{entt\+::meta\+\_\+type\+::size\+\_\+type}} =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} internal\+::meta\+\_\+type\+\_\+node\+::size\+\_\+type}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01159}{1159}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1meta__type_a40488260af3ad41dd35c8c4267e849f8}\label{classentt_1_1meta__type_a40488260af3ad41dd35c8c4267e849f8} 
+\index{entt::meta\_type@{entt::meta\_type}!meta\_type@{meta\_type}}
+\index{meta\_type@{meta\_type}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{meta\_type()}{meta\_type()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+type\+::meta\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node \texorpdfstring{$\ast$}{*}}]{curr = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an instance from a given node.   
+
+
+\begin{DoxyParams}{参数}
+{\em curr} & The underlying node with which to construct the instance.   \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01162}{1162}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1meta__type_a2d2a8959917fc2734a793cc85022af5f}\label{classentt_1_1meta__type_a2d2a8959917fc2734a793cc85022af5f} 
+\index{entt::meta\_type@{entt::meta\_type}!alias@{alias}}
+\index{alias@{alias}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{alias()}{alias()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} entt\+::meta\+\_\+type\+::alias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the identifier assigned to a given meta object.   
+
+\begin{DoxyReturn}{返回}
+The identifier assigned to the meta object.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01184}{1184}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_afbaa0317d6083f2fc99cac31026db1fe}\label{classentt_1_1meta__type_afbaa0317d6083f2fc99cac31026db1fe} 
+\index{entt::meta\_type@{entt::meta\_type}!base@{base}}
+\index{base@{base}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{base()}{base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structentt_1_1meta__base}{meta\+\_\+base}} entt\+::meta\+\_\+type\+::base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta base associated with a given identifier. 
+
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The meta base associated with the given identifier, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01330}{1330}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a5c4afd7da97d83fd471387cb6669b12c}\label{classentt_1_1meta__type_a5c4afd7da97d83fd471387cb6669b12c} 
+\index{entt::meta\_type@{entt::meta\_type}!base@{base}}
+\index{base@{base}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{base()}{base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__base}{meta\+\_\+base}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ entt\+::meta\+\_\+type\+::base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all the meta bases of a meta type. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Op} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em op} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01321}{1321}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_ad9c9a821b8047a5b48efadd2a045da2a}\label{classentt_1_1meta__type_ad9c9a821b8047a5b48efadd2a045da2a} 
+\index{entt::meta\_type@{entt::meta\_type}!construct@{construct}}
+\index{construct@{construct}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} entt\+::meta\+\_\+type\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an instance of the underlying type, if possible. 
+
+To create a valid instance, the parameters must be such that a cast or conversion to the required types is possible. Otherwise, an empty and thus invalid container is returned.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Args} & Types of arguments to use to construct the instance. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Parameters to use to construct the instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A meta any containing the new instance, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01447}{1447}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a61617a705a71274f630f1be757244025}\label{classentt_1_1meta__type_a61617a705a71274f630f1be757244025} 
+\index{entt::meta\_type@{entt::meta\_type}!conv@{conv}}
+\index{conv@{conv}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{conv()}{conv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{structentt_1_1meta__conv}{meta\+\_\+conv}} entt\+::meta\+\_\+type\+::conv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta conversion function associated with a given type. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & The type to use to search for a meta conversion function. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+The meta conversion function associated with the given type, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01353}{1353}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a53eead7c4764a943433f495210f3f495}\label{classentt_1_1meta__type_a53eead7c4764a943433f495210f3f495} 
+\index{entt::meta\_type@{entt::meta\_type}!conv@{conv}}
+\index{conv@{conv}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{conv()}{conv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::meta\+\_\+type\+::conv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all the meta conversion functions of a meta type. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Op} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em op} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01342}{1342}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_ad6fbae0fc5752d7cdb68d88d9e34de59}\label{classentt_1_1meta__type_ad6fbae0fc5752d7cdb68d88d9e34de59} 
+\index{entt::meta\_type@{entt::meta\_type}!ctor@{ctor}}
+\index{ctor@{ctor}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{ctor()}{ctor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{structentt_1_1meta__ctor}{meta\+\_\+ctor}} entt\+::meta\+\_\+type\+::ctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta constructor that accepts a given list of types of arguments. 
+
+\begin{DoxyReturn}{返回}
+The requested meta constructor, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01375}{1375}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a6758e10c4fec59ca04fb0adf0de1b572}\label{classentt_1_1meta__type_a6758e10c4fec59ca04fb0adf0de1b572} 
+\index{entt::meta\_type@{entt::meta\_type}!ctor@{ctor}}
+\index{ctor@{ctor}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{ctor()}{ctor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::meta\+\_\+type\+::ctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all the meta constructors of a meta type. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Op} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em op} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01365}{1365}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a2fd65079b006cae5a47e4f1f7b8d91af}\label{classentt_1_1meta__type_a2fd65079b006cae5a47e4f1f7b8d91af} 
+\index{entt::meta\_type@{entt::meta\_type}!ctor@{ctor}}
+\index{ctor@{ctor}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{ctor()}{ctor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename... Args, std\+::size\+\_\+t... Indexes$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} entt\+::meta\+\_\+type\+::ctor (\begin{DoxyParamCaption}\item[{std\+::index\+\_\+sequence$<$ Indexes... $>$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01147}{1147}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a68a81b038954d1727a6bb051ed1e810c}\label{classentt_1_1meta__type_a68a81b038954d1727a6bb051ed1e810c} 
+\index{entt::meta\_type@{entt::meta\_type}!data@{data}}
+\index{data@{data}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structentt_1_1meta__data}{meta\+\_\+data}} entt\+::meta\+\_\+type\+::data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta data associated with a given identifier. 
+
+The meta data of the base classes will also be visited, if any.
+
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The meta data associated with the given identifier, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01401}{1401}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a44963b49a3060da0271df092dd29578c}\label{classentt_1_1meta__type_a44963b49a3060da0271df092dd29578c} 
+\index{entt::meta\_type@{entt::meta\_type}!data@{data}}
+\index{data@{data}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__data}{meta\+\_\+data}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ entt\+::meta\+\_\+type\+::data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all the meta data of a meta type. 
+
+The meta data of the base classes will also be returned, if any.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Op} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em op} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01389}{1389}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_af84a5a635bccfc6ee941d9a77d190895}\label{classentt_1_1meta__type_af84a5a635bccfc6ee941d9a77d190895} 
+\index{entt::meta\_type@{entt::meta\_type}!detach@{detach}}
+\index{detach@{detach}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::meta\+\_\+type\+::detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a meta object from the list of searchable types. 
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01513}{1513}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a4eadf479b9b7f11879a24e0e76d5cd51}\label{classentt_1_1meta__type_a4eadf479b9b7f11879a24e0e76d5cd51} 
+\index{entt::meta\_type@{entt::meta\_type}!extent@{extent}}
+\index{extent@{extent}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{extent()}{extent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type_a7362687fc89444507cded22f57be3ff0}{size\+\_\+type}} entt\+::meta\+\_\+type\+::extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+If a given meta type refers to an array type, provides the number of elements of the array. 
+
+\begin{DoxyReturn}{返回}
+The number of elements of the array if the underlying type is an array type, 0 otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01292}{1292}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a3e345e527b4f36c2146254e1ed9b6649}\label{classentt_1_1meta__type_a3e345e527b4f36c2146254e1ed9b6649} 
+\index{entt::meta\_type@{entt::meta\_type}!func@{func}}
+\index{func@{func}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structentt_1_1meta__func}{meta\+\_\+func}} entt\+::meta\+\_\+type\+::func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta function associated with a given identifier. 
+
+The meta functions of the base classes will also be visited, if any.
+
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The meta function associated with the given identifier, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01429}{1429}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a36724ecb86efa3fc06d1af19d8ee7719}\label{classentt_1_1meta__type_a36724ecb86efa3fc06d1af19d8ee7719} 
+\index{entt::meta\_type@{entt::meta\_type}!func@{func}}
+\index{func@{func}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__func}{meta\+\_\+func}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ entt\+::meta\+\_\+type\+::func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all the meta functions of a meta type. 
+
+The meta functions of the base classes will also be returned, if any.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Op} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em op} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01417}{1417}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_aeb8e5f88ad2c503b01bdd45cd80dd34c}\label{classentt_1_1meta__type_aeb8e5f88ad2c503b01bdd45cd80dd34c} 
+\index{entt::meta\_type@{entt::meta\_type}!id@{id}}
+\index{id@{id}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} entt\+::meta\+\_\+type\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the identifier assigned to a given meta object. 
+
+\begin{DoxyReturn}{返回}
+The identifier assigned to the meta object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01178}{1178}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a708c42df22be9647eca05a8c9701a7b2}\label{classentt_1_1meta__type_a708c42df22be9647eca05a8c9701a7b2} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_array@{is\_array}}
+\index{is\_array@{is\_array}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_array()}{is\_array()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to an array type or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is an array type, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01220}{1220}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a9d1e5e6cd4c097143a3055b8e56a8641}\label{classentt_1_1meta__type_a9d1e5e6cd4c097143a3055b8e56a8641} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_class@{is\_class}}
+\index{is\_class@{is\_class}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_class()}{is\_class()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to a class or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is a class, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01244}{1244}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_ab2d4f56d08063128d0b4bc5cb4b1b0c9}\label{classentt_1_1meta__type_ab2d4f56d08063128d0b4bc5cb4b1b0c9} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_enum@{is\_enum}}
+\index{is\_enum@{is\_enum}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_enum()}{is\_enum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+enum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to an enum or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is an enum, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01228}{1228}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_acb95ab1d8952b3595b0d820cee1aa79d}\label{classentt_1_1meta__type_acb95ab1d8952b3595b0d820cee1aa79d} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_floating\_point@{is\_floating\_point}}
+\index{is\_floating\_point@{is\_floating\_point}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_floating\_point()}{is\_floating\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+floating\+\_\+point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to a floating-\/point type or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is a floating-\/point type, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01211}{1211}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a5e2c3e0856d2eff7ce2403000c67c0d6}\label{classentt_1_1meta__type_a5e2c3e0856d2eff7ce2403000c67c0d6} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_function\_pointer@{is\_function\_pointer}}
+\index{is\_function\_pointer@{is\_function\_pointer}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_function\_pointer()}{is\_function\_pointer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+function\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to a function pointer or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is a function pointer, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01262}{1262}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a222c4b6ae628f9ed6f90cd3573f788c8}\label{classentt_1_1meta__type_a222c4b6ae628f9ed6f90cd3573f788c8} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_integral@{is\_integral}}
+\index{is\_integral@{is\_integral}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_integral()}{is\_integral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+integral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to an integral type or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is an integral type, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01201}{1201}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a184083298b97b476f02509fd5379bdbb}\label{classentt_1_1meta__type_a184083298b97b476f02509fd5379bdbb} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_member\_function\_pointer@{is\_member\_function\_pointer}}
+\index{is\_member\_function\_pointer@{is\_member\_function\_pointer}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_member\_function\_pointer()}{is\_member\_function\_pointer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+member\+\_\+function\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to a pointer to member function or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is a pointer to member function, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01282}{1282}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a486ce6d737b37675403f3e719a2a51a2}\label{classentt_1_1meta__type_a486ce6d737b37675403f3e719a2a51a2} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_member\_object\_pointer@{is\_member\_object\_pointer}}
+\index{is\_member\_object\_pointer@{is\_member\_object\_pointer}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_member\_object\_pointer()}{is\_member\_object\_pointer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+member\+\_\+object\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to a pointer to data member or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is a pointer to data member, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01272}{1272}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a8eec2742984f892febcbc48a6192bdfd}\label{classentt_1_1meta__type_a8eec2742984f892febcbc48a6192bdfd} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_pointer@{is\_pointer}}
+\index{is\_pointer@{is\_pointer}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_pointer()}{is\_pointer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to a pointer or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is a pointer, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01252}{1252}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_ad3503617450b2814e53362206bb6fecd}\label{classentt_1_1meta__type_ad3503617450b2814e53362206bb6fecd} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_union@{is\_union}}
+\index{is\_union@{is\_union}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_union()}{is\_union()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+union (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to an union or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is an union, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01236}{1236}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a4a8aea6060bd82daf287bb6c63c1955a}\label{classentt_1_1meta__type_a4a8aea6060bd82daf287bb6c63c1955a} 
+\index{entt::meta\_type@{entt::meta\_type}!is\_void@{is\_void}}
+\index{is\_void@{is\_void}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{is\_void()}{is\_void()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::is\+\_\+void (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether a given meta type refers to void or not. 
+
+\begin{DoxyReturn}{返回}
+True if the underlying type is void, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01192}{1192}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_ae8101e23b4b79a4452f063736f86b3ad}\label{classentt_1_1meta__type_ae8101e23b4b79a4452f063736f86b3ad} 
+\index{entt::meta\_type@{entt::meta\_type}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+type\+::operator \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Returns true if a meta object is valid, false otherwise. 
+
+\begin{DoxyReturn}{返回}
+True if the meta object is valid, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01498}{1498}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a838362aa3598bfa4cc18041d3445bace}\label{classentt_1_1meta__type_a838362aa3598bfa4cc18041d3445bace} 
+\index{entt::meta\_type@{entt::meta\_type}!operator==@{operator==}}
+\index{operator==@{operator==}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} entt\+::meta\+\_\+type\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if two meta objects refer to the same type. 
+
+
+\begin{DoxyParams}{参数}
+{\em other} & The meta object with which to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+True if the two meta objects refer to the same type, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01508}{1508}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a4931fc02b58faf3b4c6c99e57d264691}\label{classentt_1_1meta__type_a4931fc02b58faf3b4c6c99e57d264691} 
+\index{entt::meta\_type@{entt::meta\_type}!prop@{prop}}
+\index{prop@{prop}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{prop()}{prop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} entt\+::meta\+\_\+type\+::prop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}}}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the property associated with a given key. 
+
+The properties of the base classes will also be visited, if any.
+
+
+\begin{DoxyParams}{参数}
+{\em key} & The key to use to search for a property. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The property associated with the given key, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01488}{1488}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a696b17ce5d08ba7fb0be5115360aa2cc}\label{classentt_1_1meta__type_a696b17ce5d08ba7fb0be5115360aa2cc} 
+\index{entt::meta\_type@{entt::meta\_type}!prop@{prop}}
+\index{prop@{prop}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{prop()}{prop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ entt\+::meta\+\_\+type\+::prop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all the properties assigned to a meta type. 
+
+The properties of the base classes will also be returned, if any.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Op} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em op} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01476}{1476}} 行定义.
+
+\Hypertarget{classentt_1_1meta__type_a1cee84bcd77ef63480c84dba5c959f2b}\label{classentt_1_1meta__type_a1cee84bcd77ef63480c84dba5c959f2b} 
+\index{entt::meta\_type@{entt::meta\_type}!remove\_extent@{remove\_extent}}
+\index{remove\_extent@{remove\_extent}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{remove\_extent()}{remove\_extent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} entt\+::meta\+\_\+type\+::remove\+\_\+extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Provides the meta type for which the array is defined. 
+
+\begin{DoxyReturn}{返回}
+The meta type for which the array is defined or this meta type if it doesn\textquotesingle{}t refer to an array type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01310}{1310}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{meta_8hpp_source_l01310}{remove\+\_\+extent()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l01310}{remove\+\_\+extent()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classentt_1_1meta__type_a1cee84bcd77ef63480c84dba5c959f2b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classentt_1_1meta__type_a1cee84bcd77ef63480c84dba5c959f2b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1meta__type_a89df1ddbee0b5aef2651f1fc712ada20}\label{classentt_1_1meta__type_a89df1ddbee0b5aef2651f1fc712ada20} 
+\index{entt::meta\_type@{entt::meta\_type}!remove\_pointer@{remove\_pointer}}
+\index{remove\_pointer@{remove\_pointer}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{remove\_pointer()}{remove\_pointer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} entt\+::meta\+\_\+type\+::remove\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Provides the meta type for which the pointer is defined. 
+
+\begin{DoxyReturn}{返回}
+The meta type for which the pointer is defined or this meta type if it doesn\textquotesingle{}t refer to a pointer type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01301}{1301}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{meta_8hpp_source_l01301}{remove\+\_\+pointer()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{meta_8hpp_source_l01301}{remove\+\_\+pointer()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classentt_1_1meta__type_a89df1ddbee0b5aef2651f1fc712ada20_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classentt_1_1meta__type_a89df1ddbee0b5aef2651f1fc712ada20_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1meta__type_afe33392dbdfe4955026b441a5da0eebd}\label{classentt_1_1meta__type_afe33392dbdfe4955026b441a5da0eebd} 
+\index{entt::meta\_type@{entt::meta\_type}!type\_id@{type\_id}}
+\index{type\_id@{type\_id}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{type\_id()}{type\_id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} entt\+::meta\+\_\+type\+::type\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the type id of the underlying type. 
+
+\begin{DoxyReturn}{返回}
+The type id of the underlying type. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01170}{1170}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1meta__type_a8951f541ef03f241c2326cb90ce8d2d5}\label{classentt_1_1meta__type_a8951f541ef03f241c2326cb90ce8d2d5} 
+\index{entt::meta\_type@{entt::meta\_type}!node@{node}}
+\index{node@{node}!entt::meta\_type@{entt::meta\_type}}
+\doxysubsubsection{\texorpdfstring{node}{node}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+type\+\_\+node\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+type\+::node\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01518}{1518}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/meta/\mbox{\hyperlink{meta_8hpp}{meta.\+hpp}}\end{DoxyCompactItemize}

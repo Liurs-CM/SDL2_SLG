@@ -1,0 +1,63 @@
+\doxysection{third\+\_\+party/entt/meta/meta.hpp 文件参考}
+\hypertarget{meta_8hpp}{}\label{meta_8hpp}\index{third\_party/entt/meta/meta.hpp@{third\_party/entt/meta/meta.hpp}}
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include "{}../config/config.\+h"{}}\newline
+{\ttfamily \#include "{}../core/fwd.\+hpp"{}}\newline
+{\ttfamily \#include "{}../core/type\+\_\+info.\+hpp"{}}\newline
+{\ttfamily \#include "{}../core/type\+\_\+traits.\+hpp"{}}\newline
+meta.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{meta_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{meta_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1meta__ctx}{entt\+::meta\+\_\+ctx}}
+\begin{DoxyCompactList}\small\item\em Opaque container for a meta context. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classentt_1_1meta__any}{entt\+::meta\+\_\+any}}
+\begin{DoxyCompactList}\small\item\em Opaque container for values of any type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1meta__any_1_1type__traits}{entt\+::meta\+\_\+any\+::type\+\_\+traits$<$ Type, typename $>$}}
+\item 
+struct \mbox{\hyperlink{structentt_1_1meta__handle}{entt\+::meta\+\_\+handle}}
+\begin{DoxyCompactList}\small\item\em Opaque pointers to instances of any type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1meta__prop}{entt\+::meta\+\_\+prop}}
+\begin{DoxyCompactList}\small\item\em Opaque container for meta properties of any type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1meta__base}{entt\+::meta\+\_\+base}}
+\begin{DoxyCompactList}\small\item\em Opaque container for meta base classes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1meta__conv}{entt\+::meta\+\_\+conv}}
+\begin{DoxyCompactList}\small\item\em Opaque container for meta conversion functions. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1meta__ctor}{entt\+::meta\+\_\+ctor}}
+\begin{DoxyCompactList}\small\item\em Opaque container for meta constructors. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1meta__data}{entt\+::meta\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em Opaque container for meta data. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1meta__func}{entt\+::meta\+\_\+func}}
+\begin{DoxyCompactList}\small\item\em Opaque container for meta functions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classentt_1_1meta__type}{entt\+::meta\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Opaque container for meta types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceentt}{entt}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{namespaceentt_a3e7582fde7d0323ad068543d660116f4}{entt\+::operator!=}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{lhs}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{rhs}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks if two containers differ in their content. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{namespaceentt_a2feb1b10f84534d2ed32aed30c36cb61}{entt\+::operator!=}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{lhs}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{rhs}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks if two meta objects refer to the same type. \end{DoxyCompactList}\end{DoxyCompactItemize}

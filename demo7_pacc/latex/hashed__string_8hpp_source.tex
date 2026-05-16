@@ -1,0 +1,151 @@
+\doxysection{hashed\+\_\+string.\+hpp}
+\hypertarget{hashed__string_8hpp_source}{}\label{hashed__string_8hpp_source}\index{third\_party/entt/core/hashed\_string.hpp@{third\_party/entt/core/hashed\_string.hpp}}
+\mbox{\hyperlink{hashed__string_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_CORE\_HASHED\_STRING\_HPP}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_CORE\_HASHED\_STRING\_HPP}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}../config/config.h"{}}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{signal_2fwd_8hpp}{fwd.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00011}00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00020}00020\ \textcolor{keyword}{namespace\ }internal\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00023}00023\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00024}00024\ \textcolor{keyword}{struct\ }fnv1a\_traits;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00027}00027\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00028}00028\ \textcolor{keyword}{struct\ }fnv1a\_traits<std::uint32\_t>\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{using\ }type\ =\ std::uint32\_t;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00030}00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ std::uint32\_t\ offset\ =\ 2166136261;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00031}00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ std::uint32\_t\ prime\ =\ 16777619;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00032}00032\ \};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00035}00035\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00036}00036\ \textcolor{keyword}{struct\ }fnv1a\_traits<std::uint64\_t>\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{using\ }type\ =\ std::uint64\_t;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ std::uint64\_t\ offset\ =\ 14695981039346656037ull;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ std::uint64\_t\ prime\ =\ 1099511628211ull;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00040}00040\ \};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00043}00043\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00063}00063\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Char>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00064}\mbox{\hyperlink{classentt_1_1basic__hashed__string}{00064}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00065}\mbox{\hyperlink{classentt_1_1basic__hashed__string_af6f8da1a181a597a4d090c76a246e100}{00065}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1basic__hashed__string_af6f8da1a181a597a4d090c76a246e100}{traits\_type}}\ =\ internal::fnv1a\_traits<id\_type>;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00067}\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{00067}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\_wrapper}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ non-\/explicit\ constructor\ on\ purpose}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00069}\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper_adca2acaa0435dd44f3dd6a6cdc0fc28a}{00069}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper_adca2acaa0435dd44f3dd6a6cdc0fc28a}{const\_wrapper}}(\textcolor{keyword}{const}\ Char\ *curr)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}:\ \mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper_a853e16bdaaf001899d493c291230545f}{str}}\{curr\}\ \{\}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00070}\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper_a853e16bdaaf001899d493c291230545f}{00070}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ Char\ *\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper_a853e16bdaaf001899d493c291230545f}{str}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00071}00071\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00073}00073\ \ \ \ \ \textcolor{comment}{//\ Fowler–Noll–Vo\ hash\ function\ v.\ 1a\ -\/\ the\ good}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00074}\mbox{\hyperlink{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}{00074}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}{helper}}(\textcolor{keyword}{const}\ Char\ *curr)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}}\ =\ traits\_type::offset;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(*curr\ !=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}}\ =\ (\mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}}\ \string^\ \textcolor{keyword}{static\_cast<}traits\_type::type\textcolor{keyword}{>}(*(curr++)))\ *\ traits\_type::prime;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00084}00084\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00086}\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{00086}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\_type}}\ =\ Char;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00088}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{00088}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\_type}}\ =\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00105}00105\ \ \ \ \ \textcolor{keyword}{template}<std::\textcolor{keywordtype}{size\_t}\ N>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00106}\mbox{\hyperlink{classentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c}{00106}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\_type}}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c}{value}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\_type}}\ (\&\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}})[N])\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}{helper}}(\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}});}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00108}00108\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00115}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e}{00115}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\_type}}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e}{value}}(\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\_wrapper}}\ wrapper)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00116}00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}{helper}}(wrapper.str);}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00117}00117\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00125}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a7ccb9802c4f1077537df9b56e33e1f46}{00125}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\_type}}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a7ccb9802c4f1077537df9b56e33e1f46}{value}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\_type}}\ *\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}},\ std::size\_t\ size)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00126}00126\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}\ partial\{traits\_type::offset\};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(size-\/-\/)\ \{\ partial\ =\ (partial\string^(\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}}++)[0])*traits\_type::prime;\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ partial;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00129}00129\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00132}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a2c75763872c028b062701523e0314f29}{00132}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a2c75763872c028b062701523e0314f29}{basic\_hashed\_string}}()\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00133}00133\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}}\{\textcolor{keyword}{nullptr}\},\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{hash}}\{\}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00134}00134\ \ \ \ \ \{\}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00150}00150\ \ \ \ \ \textcolor{keyword}{template}<std::\textcolor{keywordtype}{size\_t}\ N>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00151}\mbox{\hyperlink{classentt_1_1basic__hashed__string_aac422f04d11c1e5573f04809c1e1c106}{00151}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_aac422f04d11c1e5573f04809c1e1c106}{basic\_hashed\_string}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\_type}}\ (\&curr)[N])\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00152}00152\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}}\{curr\},\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{hash}}\{\mbox{\hyperlink{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}{helper}}(curr)\}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00153}00153\ \ \ \ \ \{\}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00160}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a7ab5e09f3e552436872bcaaf9ca2c1ac}{00160}}\ \ \ \ \ \textcolor{keyword}{explicit}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a7ab5e09f3e552436872bcaaf9ca2c1ac}{basic\_hashed\_string}}(\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\_wrapper}}\ wrapper)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00161}00161\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}}\{wrapper.str\},\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{hash}}\{\mbox{\hyperlink{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}{helper}}(wrapper.str)\}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00162}00162\ \ \ \ \ \{\}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00168}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea}{00168}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\_type}}\ *\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea}{data}}()\ const\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00169}00169\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00170}00170\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00176}\mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{00176}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\_type}}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}}()\ const\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00177}00177\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{hash}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00178}00178\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00179}00179\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00181}\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc}{00181}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\_type}}\ *()\ \textcolor{keyword}{const}\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea}{data}}();\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00182}00182\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00187}\mbox{\hyperlink{classentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd}{00187}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{operator}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\_type}}()\ const\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}}();\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00194}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a51311d6903443296ce076536df2b46da}{00194}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a51311d6903443296ce076536df2b46da}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string}}\ \&other)\ \textcolor{keyword}{const}\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00195}00195\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{hash}}\ ==\ other.hash;}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00196}00196\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00197}00197\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00198}00198\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00199}\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{00199}}\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\_type}}\ *\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00200}\mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{00200}}\ \ \ \ \ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\_type}}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{hash}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00201}00201\ \};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00202}00202\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00214}00214\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Char,\ std::\textcolor{keywordtype}{size\_t}\ N>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00215}\mbox{\hyperlink{namespaceentt_a32ab4306d014ba95869e88be161145b0}{00215}}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string}}(\textcolor{keyword}{const}\ Char\ (\&str)[N])\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00216}00216\ -\/>\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string<Char>}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00218}00218\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00226}00226\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Char>}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00227}\mbox{\hyperlink{namespaceentt_a1a211752d12273a08015c524133e27c3}{00227}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceentt_a1a211752d12273a08015c524133e27c3}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string<Char>}}\ \&lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string<Char>}}\ \&rhs)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00228}00228\ \ \ \ \ \textcolor{keywordflow}{return}\ !(lhs\ ==\ rhs);}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00229}00229\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00230}00230\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00231}00231\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00233}\mbox{\hyperlink{namespaceentt_a8f9dd22ce26cd7913a294b3fd520649b}{00233}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1basic__hashed__string}{hashed\_string}}\ =\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string<char>}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00234}00234\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00235}00235\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00237}\mbox{\hyperlink{namespaceentt_af2768719b1f5967caf5836b2656d0ed6}{00237}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1basic__hashed__string}{hashed\_wstring}}\ =\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\_hashed\_string<wchar\_t>}};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00238}00238\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00239}00239\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00240}00240\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00241}00241\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00242}00242\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00248}\mbox{\hyperlink{hashed__string_8hpp_afc76799b43ab3c8e816b702a9b047fa0}{00248}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt::hashed\_string}}\ \textcolor{keyword}{operator}\textcolor{stringliteral}{"{}"{}}\ \mbox{\hyperlink{config_8h_a9dbd20275ca5ca60330e37432d24dab8}{ENTT\_HS\_SUFFIX}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *str,\ std::size\_t)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00249}00249\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt::hashed\_string}}\{str\};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00250}00250\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00251}00251\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00252}00252\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00258}\mbox{\hyperlink{hashed__string_8hpp_ace1078b3746d0076e6c49c9e5fa02d43}{00258}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt::hashed\_wstring}}\ \textcolor{keyword}{operator}\textcolor{stringliteral}{"{}"{}}\ \mbox{\hyperlink{config_8h_aa98d4ddc6c468009889b4f18e50c479f}{ENTT\_HWS\_SUFFIX}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{wchar\_t}\ *str,\ std::size\_t)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00259}00259\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt::hashed\_wstring}}\{str\};}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00260}00260\ \}}
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00261}00261\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00262}00262\ }
+\DoxyCodeLine{\Hypertarget{hashed__string_8hpp_source_l00263}00263\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

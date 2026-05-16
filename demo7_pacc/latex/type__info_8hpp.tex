@@ -1,0 +1,43 @@
+\doxysection{third\+\_\+party/entt/core/type\+\_\+info.hpp 文件参考}
+\hypertarget{type__info_8hpp}{}\label{type__info_8hpp}\index{third\_party/entt/core/type\_info.hpp@{third\_party/entt/core/type\_info.hpp}}
+{\ttfamily \#include "{}../config/config.\+h"{}}\newline
+{\ttfamily \#include "{}../core/attribute.\+h"{}}\newline
+{\ttfamily \#include "{}hashed\+\_\+string.\+hpp"{}}\newline
+{\ttfamily \#include "{}fwd.\+hpp"{}}\newline
+type\+\_\+info.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__info_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__info_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1type__index}{entt\+::type\+\_\+index$<$ Type, typename $>$}}
+\begin{DoxyCompactList}\small\item\em Type index. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1has__type__index}{entt\+::has\+\_\+type\+\_\+index$<$ typename, typename $>$}}
+\begin{DoxyCompactList}\small\item\em Provides the member constant {\ttfamily value} to true if a given type is indexable, false otherwise. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1has__type__index_3_01Type_00_01std_1_1void__t_3_01decltype_07type__index_3_01Type_01_4_1_1value_07_08_08_4_01_4}{entt\+::has\+\_\+type\+\_\+index$<$ Type, std\+::void\+\_\+t$<$ decltype(type\+\_\+index$<$ Type $>$\+::value())$>$ $>$}}
+\begin{DoxyCompactList}\small\item\em \doxylink{structentt_1_1has__type__index}{has\+\_\+type\+\_\+index} \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__info}{entt\+::type\+\_\+info$<$ Type, typename $>$}}
+\begin{DoxyCompactList}\small\item\em Type info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceentt}{entt}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{namespaceentt_a5c05aeb676710c15d16a78584cfb5132}{entt\+::has\+\_\+type\+\_\+index\+\_\+v}} = \mbox{\hyperlink{structentt_1_1has__type__index}{has\+\_\+type\+\_\+index}}$<$Type$>$\+::value
+\begin{DoxyCompactList}\small\item\em Helper variable template. \end{DoxyCompactList}\end{DoxyCompactItemize}

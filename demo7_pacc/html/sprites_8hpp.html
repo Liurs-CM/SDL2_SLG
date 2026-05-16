@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/util/sprites.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b7878ad5ecbf2506f4125b9d34c97e45.html">util</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">sprites.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+sprites.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="sprites_8hpp__incl.png" border="0" usemap="#asrc_2util_2sprites_8hpp" alt=""/></div>
+<map name="asrc_2util_2sprites_8hpp" id="asrc_2util_2sprites_8hpp">
+<area shape="rect" title=" " alt="" coords="117,5,259,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,83,104"/>
+<area shape="poly" title=" " alt="" coords="166,33,81,75,79,70,164,28"/>
+<area shape="rect" title=" " alt="" coords="107,79,176,104"/>
+<area shape="poly" title=" " alt="" coords="183,32,159,69,154,66,178,30"/>
+<area shape="rect" title=" " alt="" coords="201,79,271,104"/>
+<area shape="poly" title=" " alt="" coords="198,30,223,66,218,69,194,33"/>
+<area shape="rect" title=" " alt="" coords="296,79,363,104"/>
+<area shape="poly" title=" " alt="" coords="212,28,295,70,293,75,210,33"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="sprites_8hpp__dep__incl.png" border="0" usemap="#asrc_2util_2sprites_8hppdep" alt=""/></div>
+<map name="asrc_2util_2sprites_8hppdep" id="asrc_2util_2sprites_8hppdep">
+<area shape="rect" title=" " alt="" coords="321,5,464,31"/>
+<area shape="rect" href="sprite_8hpp.html" title=" " alt="" coords="129,79,280,104"/>
+<area shape="poly" title=" " alt="" coords="351,38,236,81,234,76,349,33"/>
+<area shape="rect" href="render_8hpp.html" title=" " alt="" coords="243,152,383,177"/>
+<area shape="poly" title=" " alt="" coords="380,44,358,80,320,153,316,150,353,77,375,41"/>
+<area shape="rect" href="sdl__load__texture_8hpp.html" title=" " alt="" coords="705,79,912,104"/>
+<area shape="poly" title=" " alt="" coords="473,30,742,76,741,81,472,36"/>
+<area shape="rect" href="sdl__quad__writer_8hpp.html" title=" " alt="" coords="367,79,567,104"/>
+<area shape="poly" title=" " alt="" coords="416,38,457,77,453,80,413,42"/>
+<area shape="rect" href="factories_8cpp.html" title=" " alt="" coords="5,152,167,177"/>
+<area shape="poly" title=" " alt="" coords="175,113,107,154,104,149,172,109"/>
+<area shape="rect" href="render_8cpp.html" title=" " alt="" coords="189,225,327,251"/>
+<area shape="poly" title=" " alt="" coords="214,117,232,176,254,224,249,226,228,178,209,118"/>
+<area shape="poly" title=" " alt="" coords="297,190,269,227,265,224,293,187"/>
+<area shape="rect" href="game_8cpp.html" title=" " alt="" coords="379,225,521,251"/>
+<area shape="poly" title=" " alt="" coords="348,181,429,223,426,227,345,186"/>
+<area shape="rect" href="app_8cpp.html" title=" " alt="" coords="645,225,773,251"/>
+<area shape="poly" title=" " alt="" coords="808,118,801,148,787,179,760,207,731,227,728,223,757,203,782,176,796,146,803,117"/>
+<area shape="rect" href="sdl__load__texture_8cpp.html" title=" " alt="" coords="846,152,1051,177"/>
+<area shape="poly" title=" " alt="" coords="845,108,927,149,925,154,842,113"/>
+<area shape="poly" title=" " alt="" coords="431,112,339,154,337,149,429,107"/>
+<area shape="rect" href="game_8hpp.html" title=" " alt="" coords="407,152,549,177"/>
+<area shape="poly" title=" " alt="" coords="474,117,479,151,474,152,468,118"/>
+<area shape="rect" href="sdl__quad__writer_8cpp.html" title=" " alt="" coords="573,152,772,177"/>
+<area shape="poly" title=" " alt="" coords="514,106,640,149,639,154,512,111"/>
+<area shape="poly" title=" " alt="" coords="471,191,457,226,452,224,466,189"/>
+<area shape="poly" title=" " alt="" coords="529,179,672,223,671,228,528,184"/>
+</map>
+</div>
+</div>
+<p><a href="sprites_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanimera_1_1SpriteRect.html">animera::SpriteRect</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanimera_1_1TextureInfo.html">animera::TextureInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespaceanimera" id="r_namespaceanimera"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera.html">animera</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceanimera_1_1sprites" id="r_namespaceanimera_1_1sprites"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html">animera::sprites</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aaed86c1f6d53ef993b860ce004976096" id="r_aaed86c1f6d53ef993b860ce004976096"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">animera::sprites::SpriteID</a> { <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a22d1cc376c54be531c0a569aa1492ca8">animera::sprites::null_</a> = 0
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a69eb76c88557a8211cbfc9beda5fc062">animera::sprites::dot</a> = 1
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a08b688fc3bdb66cc4c4b47a08fa34a4d">animera::sprites::energizer</a> = 2
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096af5c32db9f3b25daae18af511855e36bc">animera::sprites::pacman_beg_</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a62291e72a117990fba478c1cbe65fcc2">animera::sprites::pacman_0</a> = 3
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a9da88e99751f62e74d1e892fed7d35c6">animera::sprites::pacman_1</a> = 4
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a192a5c193100404b34e31fa63cf1339e">animera::sprites::pacman_2</a> = 5
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096adff541d97debc0201a2bd4c813d4f0b3">animera::sprites::pacman_3</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a9685089d96a6e1c86d3c33d95a72b07c">animera::sprites::pacman_4</a> = 7
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a7ff467a5490ccb4312519ccad5eb7033">animera::sprites::pacman_5</a> = 8
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a16feff458984201fde16b0998672f493">animera::sprites::pacman_6</a> = 9
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a2a0f5ea2a13fee001b5ceb9360ec42a3">animera::sprites::pacman_7</a> = 10
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096aada64a54f8fc92f13dcd7eeffc1cd722">animera::sprites::pacman_end_</a> = 11
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a9629e1ef7a6415aabc5c48f07291017f">animera::sprites::scared_beg_</a> = 11
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a040e5bcd643c78d98b5f226b5699075d">animera::sprites::scared_0</a> = 11
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a4d39989aa568b1fd0efd77eddf26a589">animera::sprites::scared_1</a> = 12
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a896790fbdd15ae4300d7d17c1b718aaa">animera::sprites::scared_end_</a> = 13
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5">animera::sprites::maze</a> = 13
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a0b08bd98d279b88859b628cd8c061ae0">animera::sprites::win</a> = 14
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096af7a2e8166a663d6a5fc86c3ccd320f0b">animera::sprites::lose</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a85434787d4f6c0dedcbb7d0b83140718">animera::sprites::blinky_beg_</a> = 16
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a9ea3badcab8a2383c19d0c72e266645d">animera::sprites::blinky_up</a> = 16
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a7c8514b5bd61d96e94297ffc7152c71f">animera::sprites::blinky_right</a> = 17
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096aa30a6a250f515ad2a1ddc78e395be2ca">animera::sprites::blinky_down</a> = 18
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a4e4d0a9b81505d4d9668a15e60fd59c5">animera::sprites::blinky_left</a> = 19
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a9f02097438d87550b51576ef19d7a4ec">animera::sprites::blinky_end_</a> = 20
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096af5f8bd0183d9406cfef6cd824187fdcc">animera::sprites::pinky_beg_</a> = 20
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a02504181dfd63efffb0c4b63584c5c2d">animera::sprites::pinky_up</a> = 20
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096acd4456d5a79bb09b4ff32e1d19d675db">animera::sprites::pinky_right</a> = 21
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ad4216a780609e3f8065e112c5128afbc">animera::sprites::pinky_down</a> = 22
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a93a64fea135ea6e331d5919a77d5f05e">animera::sprites::pinky_left</a> = 23
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a33484a6de4167b11c1d9872052b1edaf">animera::sprites::pinky_end_</a> = 24
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096aa8c1f587528fede95acd0e42b0418440">animera::sprites::inky_beg_</a> = 24
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a3d392541037a16a888e3fefcbe36f9da">animera::sprites::inky_up</a> = 24
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096adead8f0457ce68111d8e4c0b400d0b8e">animera::sprites::inky_right</a> = 25
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096afe4847cf79f1dd0128e65711795a1fde">animera::sprites::inky_down</a> = 26
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096af98ff04b39b835359c4ff772e4e91ea9">animera::sprites::inky_left</a> = 27
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a45e1d9cfb1af143b59c534d32b90be97">animera::sprites::inky_end_</a> = 28
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a19a35f60d85d4eff77093df67af3ac09">animera::sprites::clyde_beg_</a> = 28
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a75b757b36a7f723ee3741b8283f163aa">animera::sprites::clyde_up</a> = 28
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ab8b8bc6aeef7e81e2f1f30ceac12d05b">animera::sprites::clyde_right</a> = 29
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a87bc9d6b116e73c12705bd8ac2c1d9da">animera::sprites::clyde_down</a> = 30
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096afc0965cba6d825472f9c0b631de27719">animera::sprites::clyde_left</a> = 31
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a16eca72859df6ccff3c90d0410653794">animera::sprites::clyde_end_</a> = 32
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a3cdfa98e7b3d57895f9c2e2bd5c26bbc">animera::sprites::eyes_beg_</a> = 32
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a47e0c139786d2b1756429560937f932c">animera::sprites::eyes_up</a> = 32
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a8052abf85221a30c050532981aab8b3c">animera::sprites::eyes_right</a> = 33
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ae04cb35142378ff10afa0c1f8018f3e8">animera::sprites::eyes_down</a> = 34
+, <br />
+&#160;&#160;<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ae8c09d14b2f748829d3ed50f368d9cef">animera::sprites::eyes_left</a> = 35
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a1e34a6a8336a5b07eebc473745339adc">animera::sprites::eyes_end_</a> = 36
+, <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096abbd5820689286b50cb87ad86b28e3550">animera::sprites::count_</a> = 36
+<br />
+ }</td></tr>
+<tr class="separator:aaed86c1f6d53ef993b860ce004976096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a3db2f3ee561bfcfabda12bbba35d551d" id="r_a3db2f3ee561bfcfabda12bbba35d551d"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera.html#a3db2f3ee561bfcfabda12bbba35d551d">animera::operator==</a> (const <a class="el" href="structanimera_1_1SpriteRect.html">SpriteRect</a> a, const <a class="el" href="structanimera_1_1SpriteRect.html">SpriteRect</a> b) noexcept</td></tr>
+<tr class="separator:a3db2f3ee561bfcfabda12bbba35d551d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b22397561a130cd32a811b56e8c2969" id="r_a6b22397561a130cd32a811b56e8c2969"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera.html#a6b22397561a130cd32a811b56e8c2969">animera::operator!=</a> (const <a class="el" href="structanimera_1_1SpriteRect.html">SpriteRect</a> a, const <a class="el" href="structanimera_1_1SpriteRect.html">SpriteRect</a> b) noexcept</td></tr>
+<tr class="separator:a6b22397561a130cd32a811b56e8c2969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6155ecb121d800d935955ad45372870a" id="r_a6155ecb121d800d935955ad45372870a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; const unsigned char[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera.html#a6155ecb121d800d935955ad45372870a">animera::decompressTexture</a> (const <a class="el" href="structanimera_1_1TextureInfo.html">TextureInfo</a> &amp;info) noexcept</td></tr>
+<tr class="separator:a6155ecb121d800d935955ad45372870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0049f9a086d69d3358b0fb281d4b69c9" id="r_a0049f9a086d69d3358b0fb281d4b69c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structanimera_1_1SpriteRect.html">SpriteRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a0049f9a086d69d3358b0fb281d4b69c9">animera::sprites::getSpriteRect</a> (const <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> id) noexcept</td></tr>
+<tr class="separator:a0049f9a086d69d3358b0fb281d4b69c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8000eb35ac2b34196d22e59c55f0fc77" id="r_a8000eb35ac2b34196d22e59c55f0fc77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structanimera_1_1TextureInfo.html">TextureInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a8000eb35ac2b34196d22e59c55f0fc77">animera::sprites::getTextureInfo</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a>=<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096a22d1cc376c54be531c0a569aa1492ca8">SpriteID::null_</a>) noexcept</td></tr>
+<tr class="separator:a8000eb35ac2b34196d22e59c55f0fc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4b9fb9165a1705e79083ea213fa0c3" id="r_aba4b9fb9165a1705e79083ea213fa0c3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#aba4b9fb9165a1705e79083ea213fa0c3">animera::sprites::operator+</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> id, const int off) noexcept</td></tr>
+<tr class="separator:aba4b9fb9165a1705e79083ea213fa0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94cf0b51fc274b3e60dfd8bee8ed6fd7" id="r_a94cf0b51fc274b3e60dfd8bee8ed6fd7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a94cf0b51fc274b3e60dfd8bee8ed6fd7">animera::sprites::operator-</a> (const <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> id, const int off) noexcept</td></tr>
+<tr class="separator:a94cf0b51fc274b3e60dfd8bee8ed6fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87eed7ee67fd749d61927066f0c0e66" id="r_ad87eed7ee67fd749d61927066f0c0e66"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#ad87eed7ee67fd749d61927066f0c0e66">animera::sprites::operator-</a> (const <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> a, const <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> b) noexcept</td></tr>
+<tr class="separator:ad87eed7ee67fd749d61927066f0c0e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906a8a56744de197fa589cf9b763a227" id="r_a906a8a56744de197fa589cf9b763a227"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a906a8a56744de197fa589cf9b763a227">animera::sprites::operator+=</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;id, const int off) noexcept</td></tr>
+<tr class="separator:a906a8a56744de197fa589cf9b763a227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad297ad221dab24d98499b90f0fe93c83" id="r_ad297ad221dab24d98499b90f0fe93c83"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#ad297ad221dab24d98499b90f0fe93c83">animera::sprites::operator-=</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;id, const int off) noexcept</td></tr>
+<tr class="separator:ad297ad221dab24d98499b90f0fe93c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622983567cc1e63309e17984deea4b72" id="r_a622983567cc1e63309e17984deea4b72"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a622983567cc1e63309e17984deea4b72">animera::sprites::operator++</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;id) noexcept</td></tr>
+<tr class="separator:a622983567cc1e63309e17984deea4b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2af7a47c9b974ae237988667d5c2ba" id="r_a8e2af7a47c9b974ae237988667d5c2ba"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a8e2af7a47c9b974ae237988667d5c2ba">animera::sprites::operator--</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;id) noexcept</td></tr>
+<tr class="separator:a8e2af7a47c9b974ae237988667d5c2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4af889bcae876b574ea7549b5b8ea5" id="r_a1e4af889bcae876b574ea7549b5b8ea5"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a1e4af889bcae876b574ea7549b5b8ea5">animera::sprites::operator++</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;id, int) noexcept</td></tr>
+<tr class="separator:a1e4af889bcae876b574ea7549b5b8ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422f9f6a74d740d4d2f2fe94191f2af0" id="r_a422f9f6a74d740d4d2f2fe94191f2af0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanimera_1_1sprites.html#a422f9f6a74d740d4d2f2fe94191f2af0">animera::sprites::operator--</a> (<a class="el" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096">SpriteID</a> &amp;id, int) noexcept</td></tr>
+<tr class="separator:a422f9f6a74d740d4d2f2fe94191f2af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

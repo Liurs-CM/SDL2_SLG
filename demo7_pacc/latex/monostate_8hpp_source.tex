@@ -1,0 +1,43 @@
+\doxysection{monostate.\+hpp}
+\hypertarget{monostate_8hpp_source}{}\label{monostate_8hpp_source}\index{third\_party/entt/core/monostate.hpp@{third\_party/entt/core/monostate.hpp}}
+\mbox{\hyperlink{monostate_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_CORE\_MONOSTATE\_HPP}}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_CORE\_MONOSTATE\_HPP}}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}../config/config.h"{}}}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{signal_2fwd_8hpp}{fwd.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00009}00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00023}00023\ \textcolor{keyword}{template}<\textcolor{keywordtype}{id}\_type>}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00024}\mbox{\hyperlink{structentt_1_1monostate}{00024}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1monostate}{monostate}}\ \{}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00030}00030\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00031}\mbox{\hyperlink{structentt_1_1monostate_afad7f660feb6b8696208ea3f838d14b8}{00031}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structentt_1_1monostate_afad7f660feb6b8696208ea3f838d14b8}{operator=}}(Type\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{val}})\ \textcolor{keyword}{const}\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value<Type>}}\ =\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{val}};}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00041}\mbox{\hyperlink{structentt_1_1monostate_a04c5f59a09efd1d56e60fa4a736f3086}{00041}}\ \ \ \ \ \textcolor{keyword}{operator}\ Type()\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value<Type>}};}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00045}00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00047}\mbox{\hyperlink{structentt_1_1monostate_a84ebe5bfa928a706232ed4aa00d64575}{00047}}\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{structentt_1_1monostate_a84ebe5bfa928a706232ed4aa00d64575}{ENTT\_MAYBE\_ATOMIC}}(Type)\ value\{\};}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00048}00048\ \};}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00055}00055\ \textcolor{keyword}{template}<\textcolor{keywordtype}{id}\_type\ Value>}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00056}\mbox{\hyperlink{namespaceentt_ab43a13f7ee60bcb0d04a001f92b86fa2}{00056}}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structentt_1_1monostate}{monostate<Value>}}\ \mbox{\hyperlink{namespaceentt_ab43a13f7ee60bcb0d04a001f92b86fa2}{monostate\_v}}\ =\ \{\};}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00059}00059\ \}}
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{monostate_8hpp_source_l00062}00062\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

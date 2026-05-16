@@ -1,0 +1,8 @@
+<map id="entt::basic_continuous_loader::shrink" name="entt::basic_continuous_loader::shrink">
+<area shape="rect" id="Node000001" title="Helps to purge entities that no longer have a conterpart." alt="" coords="5,61,173,101"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#af58f3add442cfb3f1fa470402db072bd" title="Destroys an entity." alt="" coords="221,29,368,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,66,207,60,208,66,174,71"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="221,93,368,133"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="174,92,208,97,207,102,173,97"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="256,30,254,20,260,11,274,5,295,3,319,6,332,13,329,18,317,11,295,8,275,10,263,15,259,21,261,28"/>
+</map>

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/entity/helper.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_2ca73b37c2350629ed16e2a56f62ab53.html">entity</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">helper.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="helper_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ENTT_ENTITY_HELPER_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ENTT_ENTITY_HELPER_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;../config/config.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../core/type_traits.hpp&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../signal/delegate.hpp&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="registry_8hpp.html">registry.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="signal_2fwd_8hpp.html">fwd.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceentt.html">entt</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span>&lt;<span class="keywordtype">bool</span> Const, <span class="keyword">typename</span> Entity&gt;</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structentt_1_1as__view.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structentt_1_1as__view.html">as_view</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structentt_1_1as__view.html#a458942b049c7ef96d45600337d57a70b">   24</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structentt_1_1as__view.html#a458942b049c7ef96d45600337d57a70b">registry_type</a> = std::conditional_t&lt;Const, const entt::basic_registry&lt;Entity&gt;, <a class="code hl_class" href="classentt_1_1basic__registry.html">entt::basic_registry&lt;Entity&gt;</a>&gt;;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structentt_1_1as__view.html#a820ab4da509a0fb60c4edf8ea24b748a">   30</a></span>    <a class="code hl_function" href="structentt_1_1as__view.html#a820ab4da509a0fb60c4edf8ea24b748a">as_view</a>(<a class="code hl_typedef" href="structentt_1_1as__view.html#a458942b049c7ef96d45600337d57a70b">registry_type</a> &amp;source) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a>: <a class="code hl_variable" href="structentt_1_1as__view.html#a7e10dbf5778755387689a8c6b037d8e8">reg</a>{source} {}</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Exclude</a>, <span class="keyword">typename</span>... Component&gt;</div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structentt_1_1as__view.html#aac140def0e18cd8dc04c486f6d5813da">   39</a></span>    <span class="keyword">operator</span> <a class="code hl_class" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Exclude</a>, Component...&gt;() <span class="keyword">const</span> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structentt_1_1as__view.html#a7e10dbf5778755387689a8c6b037d8e8">reg</a>.template <a class="code hl_class" href="classentt_1_1basic__view.html">view</a>&lt;Component...&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Exclude</a>{});</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structentt_1_1as__view.html#a7e10dbf5778755387689a8c6b037d8e8">   44</a></span>    <a class="code hl_typedef" href="structentt_1_1as__view.html#a458942b049c7ef96d45600337d57a70b">registry_type</a> &amp;<a class="code hl_variable" href="structentt_1_1as__view.html#a7e10dbf5778755387689a8c6b037d8e8">reg</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Entity&gt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespaceentt.html#a3fee75741468f7807d3d48dd807ee024">   57</a></span><a class="code hl_struct" href="structentt_1_1as__view.html">as_view</a>(<a class="code hl_class" href="classentt_1_1basic__registry.html">basic_registry&lt;Entity&gt;</a> &amp;) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> -&gt; <a class="code hl_struct" href="structentt_1_1as__view.html">as_view&lt;false, Entity&gt;</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Entity&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="namespaceentt.html#aac314d83c9af1077857f01975f086bed">   62</a></span><a class="code hl_struct" href="structentt_1_1as__view.html">as_view</a>(<span class="keyword">const</span> <a class="code hl_class" href="classentt_1_1basic__registry.html">basic_registry&lt;Entity&gt;</a> &amp;) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> -&gt; <a class="code hl_struct" href="structentt_1_1as__view.html">as_view&lt;true, Entity&gt;</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">template</span>&lt;<span class="keywordtype">bool</span> Const, <span class="keyword">typename</span> Entity&gt;</div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structentt_1_1as__group.html">   71</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structentt_1_1as__group.html">as_group</a> {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structentt_1_1as__group.html#a7ede36514bf64187bc93d3d295fe0123">   73</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structentt_1_1as__group.html#a7ede36514bf64187bc93d3d295fe0123">registry_type</a> = std::conditional_t&lt;Const, const entt::basic_registry&lt;Entity&gt;, <a class="code hl_class" href="classentt_1_1basic__registry.html">entt::basic_registry&lt;Entity&gt;</a>&gt;;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structentt_1_1as__group.html#a7ebe095efa7c1e00e2f156ad7930d9a9">   79</a></span>    <a class="code hl_function" href="structentt_1_1as__group.html#a7ebe095efa7c1e00e2f156ad7930d9a9">as_group</a>(<a class="code hl_typedef" href="structentt_1_1as__group.html#a7ede36514bf64187bc93d3d295fe0123">registry_type</a> &amp;source) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a>: <a class="code hl_variable" href="structentt_1_1as__group.html#ac8372d64f7e557c1fada1f89d5590713">reg</a>{source} {}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Exclude</a>, <span class="keyword">typename</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Get</a>, <span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Owned</a>&gt;</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structentt_1_1as__group.html#a5bc540042a69aee98c28c8446152a47f">   89</a></span>    <span class="keyword">operator</span> <a class="code hl_class" href="classentt_1_1basic__group.html">entt::basic_group</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Exclude</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Get</a>, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Owned</a>...&gt;() <span class="keyword">const</span> {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structentt_1_1as__group.html#ac8372d64f7e557c1fada1f89d5590713">reg</a>.template <a class="code hl_class" href="classentt_1_1basic__group.html">group</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Owned</a>...&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Get</a>{}, <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Exclude</a>{});</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structentt_1_1as__group.html#ac8372d64f7e557c1fada1f89d5590713">   94</a></span>    <a class="code hl_typedef" href="structentt_1_1as__group.html#a7ede36514bf64187bc93d3d295fe0123">registry_type</a> &amp;<a class="code hl_variable" href="structentt_1_1as__group.html#ac8372d64f7e557c1fada1f89d5590713">reg</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Entity&gt;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespaceentt.html#a6609f31d6ab3f544ebf7d0413d007ead">  107</a></span><a class="code hl_struct" href="structentt_1_1as__group.html">as_group</a>(<a class="code hl_class" href="classentt_1_1basic__registry.html">basic_registry&lt;Entity&gt;</a> &amp;) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> -&gt; <a class="code hl_struct" href="structentt_1_1as__group.html">as_group&lt;false, Entity&gt;</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Entity&gt;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="namespaceentt.html#a8fce796266ac507c9b0c193a70f51745">  112</a></span><a class="code hl_struct" href="structentt_1_1as__group.html">as_group</a>(<span class="keyword">const</span> <a class="code hl_class" href="classentt_1_1basic__registry.html">basic_registry&lt;Entity&gt;</a> &amp;) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> -&gt; <a class="code hl_struct" href="structentt_1_1as__group.html">as_group&lt;true, Entity&gt;</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">template</span>&lt;auto Member, <span class="keyword">typename</span> Entity = entity&gt;</div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="namespaceentt.html#aa512a354fe328df6be5a92eb43cd4d69">  124</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceentt.html#aa512a354fe328df6be5a92eb43cd4d69">invoke</a>(<a class="code hl_class" href="classentt_1_1basic__registry.html">basic_registry&lt;Entity&gt;</a> &amp;reg, <span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> <a class="code hl_namespace" href="namespaceentt.html">entt</a>) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">static_assert</span>(std::is_member_function_pointer_v&lt;<span class="keyword">decltype</span>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Member</a>)&gt;);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_class" href="classentt_1_1delegate.html">delegate</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<a class="code hl_class" href="classentt_1_1basic__registry.html">basic_registry&lt;Entity&gt;</a> &amp;, <span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>)&gt; func;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    func.template <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">connect&lt;Member&gt;</a>(reg.template <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">get</a>&lt;<a class="code hl_typedef" href="namespaceentt.html#a49f19d031690e5ebfffd6c7a4f6bd364">member_class_t</a>&lt;<span class="keyword">decltype</span>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Member</a>)&gt;&gt;(<a class="code hl_namespace" href="namespaceentt.html">entt</a>));</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    func(reg, <a class="code hl_namespace" href="namespaceentt.html">entt</a>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassentt_1_1basic__group_html"><div class="ttname"><a href="classentt_1_1basic__group.html">entt::basic_group</a></div><div class="ttdoc">Group.</div><div class="ttdef"><b>Definition</b> <a href="entity_2fwd_8hpp_source.html#l00025">fwd.hpp:25</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__registry_html"><div class="ttname"><a href="classentt_1_1basic__registry.html">entt::basic_registry</a></div><div class="ttdoc">Fast and reliable entity-component system.</div><div class="ttdef"><b>Definition</b> <a href="registry_8hpp_source.html#l00044">registry.hpp:44</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__view_html"><div class="ttname"><a href="classentt_1_1basic__view.html">entt::basic_view</a></div><div class="ttdoc">View.</div><div class="ttdef"><b>Definition</b> <a href="entity_2fwd_8hpp_source.html#l00017">fwd.hpp:17</a></div></div>
+<div class="ttc" id="aclassentt_1_1delegate_html"><div class="ttname"><a href="classentt_1_1delegate.html">entt::delegate</a></div><div class="ttdoc">Basic delegate implementation.</div><div class="ttdef"><b>Definition</b> <a href="delegate_8hpp_source.html#l00081">delegate.hpp:81</a></div></div>
+<div class="ttc" id="aconfig_8h_html_ad351dc3d24a47909c17878fd0e377c54"><div class="ttname"><a href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></div><div class="ttdeci">#define ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00006">config.h:6</a></div></div>
+<div class="ttc" id="anamespaceentt_html"><div class="ttname"><a href="namespaceentt.html">entt</a></div><div class="ttdef"><b>Definition</b> <a href="algorithm_8hpp_source.html#l00013">algorithm.hpp:13</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a49f19d031690e5ebfffd6c7a4f6bd364"><div class="ttname"><a href="namespaceentt.html#a49f19d031690e5ebfffd6c7a4f6bd364">entt::member_class_t</a></div><div class="ttdeci">typename member_class&lt; Member &gt;::type member_class_t</div><div class="ttdoc">Helper type.</div><div class="ttdef"><b>Definition</b> <a href="type__traits_8hpp_source.html#l00218">type_traits.hpp:218</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+<div class="ttc" id="anamespaceentt_html_aa512a354fe328df6be5a92eb43cd4d69"><div class="ttname"><a href="namespaceentt.html#aa512a354fe328df6be5a92eb43cd4d69">entt::invoke</a></div><div class="ttdeci">void invoke(basic_registry&lt; Entity &gt; &amp;reg, const Entity entt)</div><div class="ttdoc">Helper to create a listener that directly invokes a member function.</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00124">helper.hpp:124</a></div></div>
+<div class="ttc" id="aregistry_8hpp_html"><div class="ttname"><a href="registry_8hpp.html">registry.hpp</a></div></div>
+<div class="ttc" id="asignal_2fwd_8hpp_html"><div class="ttname"><a href="signal_2fwd_8hpp.html">fwd.hpp</a></div></div>
+<div class="ttc" id="astructentt_1_1as__group_html"><div class="ttname"><a href="structentt_1_1as__group.html">entt::as_group</a></div><div class="ttdoc">Converts a registry to a group.</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00071">helper.hpp:71</a></div></div>
+<div class="ttc" id="astructentt_1_1as__group_html_a7ebe095efa7c1e00e2f156ad7930d9a9"><div class="ttname"><a href="structentt_1_1as__group.html#a7ebe095efa7c1e00e2f156ad7930d9a9">entt::as_group::as_group</a></div><div class="ttdeci">as_group(registry_type &amp;source) ENTT_NOEXCEPT</div><div class="ttdoc">Constructs a converter for a given registry.</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00079">helper.hpp:79</a></div></div>
+<div class="ttc" id="astructentt_1_1as__group_html_a7ede36514bf64187bc93d3d295fe0123"><div class="ttname"><a href="structentt_1_1as__group.html#a7ede36514bf64187bc93d3d295fe0123">entt::as_group::registry_type</a></div><div class="ttdeci">std::conditional_t&lt; Const, const entt::basic_registry&lt; Entity &gt;, entt::basic_registry&lt; Entity &gt; &gt; registry_type</div><div class="ttdoc">Type of registry to convert.</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00073">helper.hpp:73</a></div></div>
+<div class="ttc" id="astructentt_1_1as__group_html_ac8372d64f7e557c1fada1f89d5590713"><div class="ttname"><a href="structentt_1_1as__group.html#ac8372d64f7e557c1fada1f89d5590713">entt::as_group::reg</a></div><div class="ttdeci">registry_type &amp; reg</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00094">helper.hpp:94</a></div></div>
+<div class="ttc" id="astructentt_1_1as__view_html"><div class="ttname"><a href="structentt_1_1as__view.html">entt::as_view</a></div><div class="ttdoc">Converts a registry to a view.</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00022">helper.hpp:22</a></div></div>
+<div class="ttc" id="astructentt_1_1as__view_html_a458942b049c7ef96d45600337d57a70b"><div class="ttname"><a href="structentt_1_1as__view.html#a458942b049c7ef96d45600337d57a70b">entt::as_view::registry_type</a></div><div class="ttdeci">std::conditional_t&lt; Const, const entt::basic_registry&lt; Entity &gt;, entt::basic_registry&lt; Entity &gt; &gt; registry_type</div><div class="ttdoc">Type of registry to convert.</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00024">helper.hpp:24</a></div></div>
+<div class="ttc" id="astructentt_1_1as__view_html_a7e10dbf5778755387689a8c6b037d8e8"><div class="ttname"><a href="structentt_1_1as__view.html#a7e10dbf5778755387689a8c6b037d8e8">entt::as_view::reg</a></div><div class="ttdeci">registry_type &amp; reg</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00044">helper.hpp:44</a></div></div>
+<div class="ttc" id="astructentt_1_1as__view_html_a820ab4da509a0fb60c4edf8ea24b748a"><div class="ttname"><a href="structentt_1_1as__view.html#a820ab4da509a0fb60c4edf8ea24b748a">entt::as_view::as_view</a></div><div class="ttdeci">as_view(registry_type &amp;source) ENTT_NOEXCEPT</div><div class="ttdoc">Constructs a converter for a given registry.</div><div class="ttdef"><b>Definition</b> <a href="helper_8hpp_source.html#l00030">helper.hpp:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

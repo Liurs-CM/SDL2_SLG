@@ -1,0 +1,75 @@
+\doxysection{config.\+h}
+\hypertarget{config_8h_source}{}\label{config_8h_source}\index{third\_party/entt/config/config.h@{third\_party/entt/config/config.h}}
+\mbox{\hyperlink{config_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_CONFIG\_CONFIG\_H}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_CONFIG\_CONFIG\_H}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ ENTT\_NOEXCEPT}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00006}\mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{00006}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_NOEXCEPT\ noexcept}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00007}00007\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00010}00010\ \textcolor{preprocessor}{\#ifndef\ ENTT\_HS\_SUFFIX}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00011}\mbox{\hyperlink{config_8h_a9dbd20275ca5ca60330e37432d24dab8}{00011}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_HS\_SUFFIX\ \_hs}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00012}00012\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00015}00015\ \textcolor{preprocessor}{\#ifndef\ ENTT\_HWS\_SUFFIX}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00016}\mbox{\hyperlink{config_8h_aa98d4ddc6c468009889b4f18e50c479f}{00016}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_HWS\_SUFFIX\ \_hws}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00017}00017\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00020}00020\ \textcolor{preprocessor}{\#ifndef\ ENTT\_USE\_ATOMIC}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00021}\mbox{\hyperlink{config_8h_abdccd4629aacdc79d76742fe187c3be3}{00021}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_MAYBE\_ATOMIC(Type)\ Type}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00022}00022\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00023}00023\ \textcolor{preprocessor}{\#\ \ \ include\ <atomic>}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00024}00024\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_MAYBE\_ATOMIC(Type)\ std::atomic<Type>}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00025}00025\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00028}00028\ \textcolor{preprocessor}{\#ifndef\ ENTT\_ID\_TYPE}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00029}00029\ \textcolor{preprocessor}{\#\ \ \ include\ <cstdint>}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00030}\mbox{\hyperlink{config_8h_a2e66df4928b7b29aa876f9a9c40be442}{00030}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_ID\_TYPE\ std::uint32\_t}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00031}00031\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00034}00034\ \textcolor{preprocessor}{\#ifndef\ ENTT\_PAGE\_SIZE}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00035}\mbox{\hyperlink{config_8h_a27277c78b1ff633a5ade50a5138c441a}{00035}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_PAGE\_SIZE\ 32768}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00036}00036\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00039}00039\ \textcolor{preprocessor}{\#ifndef\ ENTT\_ASSERT}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00040}00040\ \textcolor{preprocessor}{\#\ \ \ include\ <cassert>}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00041}\mbox{\hyperlink{config_8h_a8c592b57b97f4686da8ffe09beb735a8}{00041}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_ASSERT(condition)\ assert(condition)}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00042}00042\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00045}00045\ \textcolor{preprocessor}{\#ifndef\ ENTT\_NO\_ETO}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00046}00046\ \textcolor{preprocessor}{\#\ \ \ include\ <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00047}\mbox{\hyperlink{config_8h_a988a4951b2db07ec5195015d7e8d28df}{00047}}\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_IS\_EMPTY(Type)\ std::is\_empty\_v<Type>}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00048}00048\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00049}00049\ \textcolor{preprocessor}{\#\ \ \ include\ <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00050}00050\ \textcolor{preprocessor}{\#\ \ \ }\textcolor{comment}{//\ sfinae-\/friendly\ definition}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00051}00051\ \textcolor{preprocessor}{\#\ \ \ define\ ENTT\_IS\_EMPTY(Type)\ (false\ \&\&\ std::is\_empty\_v<Type>)}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00052}00052\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00055}00055\ \textcolor{preprocessor}{\#ifndef\ ENTT\_STANDARD\_CPP}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00056}00056\ \textcolor{preprocessor}{\#\ \ \ if\ defined\ \_MSC\_VER}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00057}00057\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ ENTT\_PRETTY\_FUNCTION\ \_\_FUNCSIG\_\_}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00058}00058\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ ENTT\_PRETTY\_FUNCTION\_CONSTEXPR(...)\ constexpr}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00059}00059\ \textcolor{preprocessor}{\#\ \ \ elif\ defined\ \_\_clang\_\_\ ||\ (defined\ \_\_GNUC\_\_\ \&\&\ \_\_GNUC\_\_\ >\ 8)}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00060}00060\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ ENTT\_PRETTY\_FUNCTION\ \_\_PRETTY\_FUNCTION\_\_}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00061}00061\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ ENTT\_PRETTY\_FUNCTION\_CONSTEXPR(...)\ constexpr}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00062}00062\ \textcolor{preprocessor}{\#\ \ \ elif\ defined\ \_\_GNUC\_\_}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00063}00063\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ ENTT\_PRETTY\_FUNCTION\ \_\_PRETTY\_FUNCTION\_\_}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00064}00064\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ ENTT\_PRETTY\_FUNCTION\_CONSTEXPR(...)\ \_\_VA\_ARGS\_\_}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00065}00065\ \textcolor{preprocessor}{\#\ \ \ endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00066}00066\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{config_8h_source_l00069}00069\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

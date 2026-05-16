@@ -1,0 +1,61 @@
+\doxysection{movement.\+cpp}
+\hypertarget{movement_8cpp_source}{}\label{movement_8cpp_source}\index{src/sys/movement.cpp@{src/sys/movement.cpp}}
+\mbox{\hyperlink{movement_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ movement.cpp}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 18/9/18.}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{movement_8hpp}{movement.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2dir_8hpp}{comp/dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{can__move_8hpp}{sys/can\_move.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8hpp}{comp/position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dir__to__pos_8hpp}{util/dir\_to\_pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00017}\mbox{\hyperlink{movement_8cpp_aca18d58f86e20c10cf0ecbdc487bada3}{00017}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{movement_8cpp_aca18d58f86e20c10cf0ecbdc487bada3}{movement}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00018}00018\ \ \ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structActualDir}{ActualDir}}>();}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00019}00019\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{structPos}{Pos}}\ \&pos\ =\ view.get<\mbox{\hyperlink{structPosition}{Position}}>(e).p;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ dir\ =\ view.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e).d;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00022}00022\ \ \ \ \ pos\ +=\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(dir);}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{comment}{//\ The\ tunnel.}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{comment}{//\ This\ assumes\ the\ exact\ position\ of\ the\ tunnel.}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//\ It's\ good\ enough\ for\ this\ simple\ game\ but\ a\ more\ robust\ solution\ might}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//\ involve\ making\ the\ tunnel\ into\ an\ entity}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{if}\ (pos.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\ ==\ 10)\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00029}00029\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pos.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ <=\ -\/1\ \&\&\ dir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}})\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ pos.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ =\ 19;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00031}00031\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (pos.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ >=\ 19\ \&\&\ dir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}})\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ pos.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00033}00033\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00035}00035\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00038}\mbox{\hyperlink{movement_8cpp_ae72b83fad27383845f1c936f51d3a34f}{00038}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{movement_8cpp_ae72b83fad27383845f1c936f51d3a34f}{wallCollide}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&maze)\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00039}00039\ \ \ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structActualDir}{ActualDir}},\ \mbox{\hyperlink{structDesiredDir}{DesiredDir}}>();}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00040}00040\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pos\ =\ view.get<\mbox{\hyperlink{structPosition}{Position}}>(e).p;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ desiredDir\ =\ view.get<\mbox{\hyperlink{structDesiredDir}{DesiredDir}}>(e).d;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{can__move_8cpp_ac44feff324cce2df74e8465e4cc46b28}{canMove}}(reg,\ maze,\ e,\ pos,\ desiredDir))\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00044}00044\ \ \ \ \ \ \ view.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e).d\ =\ desiredDir;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00045}00045\ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00046}00046\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ prevDir\ =\ view.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e).d;}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{can__move_8cpp_ac44feff324cce2df74e8465e4cc46b28}{canMove}}(reg,\ maze,\ e,\ pos,\ prevDir))\ \{}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00050}00050\ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00053}00053\ \ \ \ \ view.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e).d\ =\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{Dir::none}};}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00054}00054\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{movement_8cpp_source_l00055}00055\ \}}
+
+\end{DoxyCode}

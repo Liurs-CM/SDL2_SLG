@@ -1,0 +1,182 @@
+\doxysection{src/util/pos.hpp 文件参考}
+\hypertarget{pos_8hpp}{}\label{pos_8hpp}\index{src/util/pos.hpp@{src/util/pos.hpp}}
+{\ttfamily \#include $<$cmath$>$}\newline
+pos.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{pos_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pos_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPos}{Pos}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{pos_8hpp_adfb8cba5382bde720316adc7554e1470}{operator+}} (const \mbox{\hyperlink{structPos}{Pos}} lhs, const \mbox{\hyperlink{structPos}{Pos}} rhs)
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \& \mbox{\hyperlink{pos_8hpp_a12a7db7d262878416bed95921a59f763}{operator+=}} (\mbox{\hyperlink{structPos}{Pos}} \&lhs, const \mbox{\hyperlink{structPos}{Pos}} rhs)
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{pos_8hpp_ad2b225851e0a4d54ee78af1ac16c5578}{operator-\/}} (const \mbox{\hyperlink{structPos}{Pos}} lhs, const \mbox{\hyperlink{structPos}{Pos}} rhs)
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{pos_8hpp_a25771bbd5ef5cb0c4160041e65d59fd4}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{structPos}{Pos}} lhs, const int rhs)
+\item 
+constexpr bool \mbox{\hyperlink{pos_8hpp_af8c8db18c8be3e60dcebb04bd037e880}{operator==}} (const \mbox{\hyperlink{structPos}{Pos}} lhs, const \mbox{\hyperlink{structPos}{Pos}} rhs)
+\item 
+constexpr bool \mbox{\hyperlink{pos_8hpp_a83903ab917f666fc88c2d98cfcd4dc19}{operator!=}} (const \mbox{\hyperlink{structPos}{Pos}} lhs, const \mbox{\hyperlink{structPos}{Pos}} rhs)
+\item 
+int \mbox{\hyperlink{pos_8hpp_ac981712b50b885f6249a9a099ed0d02d}{distance2}} (const \mbox{\hyperlink{structPos}{Pos}} a, const \mbox{\hyperlink{structPos}{Pos}} b)
+\item 
+float \mbox{\hyperlink{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0}{distance}} (const \mbox{\hyperlink{structPos}{Pos}} a, const \mbox{\hyperlink{structPos}{Pos}} b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0}\label{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0} 
+\index{pos.hpp@{pos.hpp}!distance@{distance}}
+\index{distance@{distance}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{a,  }\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00048}{48}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00042}{distance2()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{pursue__target_8cpp_source_l00021}{pursue\+Target()}} , 以及 \mbox{\hyperlink{set__target_8cpp_source_l00051}{set\+Clyde\+Chase\+Target()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pos_8hpp_ac1f9ce5d9b824aa9d834d62e9c3eedf0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pos_8hpp_ac981712b50b885f6249a9a099ed0d02d}\label{pos_8hpp_ac981712b50b885f6249a9a099ed0d02d} 
+\index{pos.hpp@{pos.hpp}!distance2@{distance2}}
+\index{distance2@{distance2}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{distance2()}{distance2()}}
+{\footnotesize\ttfamily int distance2 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{a,  }\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00042}{42}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{pos_8hpp_source_l00048}{distance()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pos_8hpp_ac981712b50b885f6249a9a099ed0d02d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pos_8hpp_a83903ab917f666fc88c2d98cfcd4dc19}\label{pos_8hpp_a83903ab917f666fc88c2d98cfcd4dc19} 
+\index{pos.hpp@{pos.hpp}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily constexpr bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{lhs,  }\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00038}{38}} 行定义.
+
+\Hypertarget{pos_8hpp_a25771bbd5ef5cb0c4160041e65d59fd4}\label{pos_8hpp_a25771bbd5ef5cb0c4160041e65d59fd4} 
+\index{pos.hpp@{pos.hpp}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{lhs,  }\item[{const int}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00030}{30}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+\Hypertarget{pos_8hpp_adfb8cba5382bde720316adc7554e1470}\label{pos_8hpp_adfb8cba5382bde720316adc7554e1470} 
+\index{pos.hpp@{pos.hpp}!operator+@{operator+}}
+\index{operator+@{operator+}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{lhs,  }\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00018}{18}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+\Hypertarget{pos_8hpp_a12a7db7d262878416bed95921a59f763}\label{pos_8hpp_a12a7db7d262878416bed95921a59f763} 
+\index{pos.hpp@{pos.hpp}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} \& operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPos}{Pos}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00022}{22}} 行定义.
+
+\Hypertarget{pos_8hpp_ad2b225851e0a4d54ee78af1ac16c5578}\label{pos_8hpp_ad2b225851e0a4d54ee78af1ac16c5578} 
+\index{pos.hpp@{pos.hpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{lhs,  }\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00026}{26}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+\Hypertarget{pos_8hpp_af8c8db18c8be3e60dcebb04bd037e880}\label{pos_8hpp_af8c8db18c8be3e60dcebb04bd037e880} 
+\index{pos.hpp@{pos.hpp}!operator==@{operator==}}
+\index{operator==@{operator==}!pos.hpp@{pos.hpp}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily constexpr bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{lhs,  }\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{pos_8hpp_source}{pos.\+hpp}} 第 \mbox{\hyperlink{pos_8hpp_source_l00034}{34}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+

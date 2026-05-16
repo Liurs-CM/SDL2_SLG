@@ -1,0 +1,709 @@
+\doxysection{entt\+::basic\+\_\+actor\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1basic__actor}{}\label{structentt_1_1basic__actor}\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+
+
+Dedicated to those who aren\textquotesingle{}t confident with the entity-\/component-\/system architecture.  
+
+
+
+
+{\ttfamily \#include $<$actor.\+hpp$>$}
+
+
+
+entt\+::basic\+\_\+actor\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{structentt_1_1basic__actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{using}} \mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} = \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$
+\begin{DoxyCompactList}\small\item\em Type of registry used internally. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{using}} \mbox{\hyperlink{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}{entity\+\_\+type}} = \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}}
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_aa18516f167228b18608e2f166d4221bc}{basic\+\_\+actor}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32}{basic\+\_\+actor}} (\mbox{\hyperlink{structentt_1_1basic__actor}{basic\+\_\+actor}} \&\&\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{other}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a32635ae3046ebca665adef6b3ef87ef3}{basic\+\_\+actor}} (\mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \&ref)
+\begin{DoxyCompactList}\small\item\em Constructs an actor from a given registry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_ab4a485086774e27688e467f4c28a3ba7}{basic\+\_\+actor}} (\mbox{\hyperlink{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}{entity\+\_\+type}} \mbox{\hyperlink{classentity}{entity}}, \mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \&ref) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs an actor from a given entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{virtual}} \mbox{\hyperlink{structentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221}{\texorpdfstring{$\sim$}{\string~}basic\+\_\+actor}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor}{basic\+\_\+actor}} \& \mbox{\hyperlink{structentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828}{operator=}} (\mbox{\hyperlink{structentt_1_1basic__actor}{basic\+\_\+actor}} \&\&\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{other}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} Component , typename... Args$>$ }\\\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{decltype}}(\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{auto}}) \mbox{\hyperlink{structentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032}{assign}} (\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Args}} \&\&... \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{args}})
+\begin{DoxyCompactList}\small\item\em Assigns the given component to an actor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} Component $>$ }\\\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{void}} \mbox{\hyperlink{structentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Removes the given component from an actor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component$>$ }\\\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{bool}} \mbox{\hyperlink{structentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2}{has}} () \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if an actor has the given components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component$>$ }\\decltype(auto) \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{get}} () const
+\begin{DoxyCompactList}\small\item\em Returns references to the given components for an actor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component$>$ }\\decltype(auto) \mbox{\hyperlink{structentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2}{get}} ()
+\begin{DoxyCompactList}\small\item\em Returns references to the given components for an actor.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component$>$ }\\\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{auto}} \mbox{\hyperlink{structentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a}{try\+\_\+get}} () \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{const}}
+\begin{DoxyCompactList}\small\item\em Returns pointers to the given components for an actor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component$>$ }\\\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{auto}} \mbox{\hyperlink{structentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405}{try\+\_\+get}} ()
+\begin{DoxyCompactList}\small\item\em Returns pointers to the given components for an actor.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{const}} \mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \& \mbox{\hyperlink{structentt_1_1basic__actor_a8f3ca3ac4de8d13726b500c0cc1b655d}{backend}} () \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns a reference to the underlying registry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \& \mbox{\hyperlink{structentt_1_1basic__actor_aad6ba04bccef40ff9755e72b87e37335}{backend}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns a reference to the underlying registry.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}{entity\+\_\+type}} \mbox{\hyperlink{structentt_1_1basic__actor_af92d62c39e122692addbfd6b75ea6922}{entity}} () \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the entity associated with an actor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0}{operator bool}} () \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if an actor refers to a valid entity or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}{entity\+\_\+type}} \mbox{\hyperlink{structentt_1_1basic__actor_a79420f25d2ae7fe9b148d02bdab2d5e4}{entt}}
+\item 
+\mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1basic__actor_a07f9e3507d9c3ee0cb82c2a6ef48d4de}{reg}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}}$>$\newline
+struct entt\+::basic\+\_\+actor$<$ Entity $>$}
+Dedicated to those who aren\textquotesingle{}t confident with the entity-\/component-\/system architecture. 
+
+Tiny wrapper around a registry, for all those users that aren\textquotesingle{}t confident with entity-\/component-\/system architecture and prefer to iterate objects directly.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Entity} & A valid entity type (see \doxylink{structentt_1_1entt__traits}{entt\+\_\+traits} for more details). \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00027}{27}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}\label{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!entity\_type@{entity\_type}}
+\index{entity\_type@{entity\_type}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_type}{entity\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{using}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::entity\+\_\+type =  \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}}}
+
+
+
+Underlying entity identifier. 
+
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00031}{31}} 行定义.
+
+\Hypertarget{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}\label{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!registry\_type@{registry\_type}}
+\index{registry\_type@{registry\_type}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{registry\_type}{registry\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{using}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::registry\+\_\+type =  \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}}$>$}
+
+
+
+Type of registry used internally. 
+
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00029}{29}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1basic__actor_aa18516f167228b18608e2f166d4221bc}\label{structentt_1_1basic__actor_aa18516f167228b18608e2f166d4221bc} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!basic\_actor@{basic\_actor}}
+\index{basic\_actor@{basic\_actor}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_actor()}{basic\_actor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::basic\+\_\+actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00033}{33}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_8hpp_source_l00174}{entt\+::null}}.
+
+\Hypertarget{structentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32}\label{structentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!basic\_actor@{basic\_actor}}
+\index{basic\_actor@{basic\_actor}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_actor()}{basic\_actor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::basic\+\_\+actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1basic__actor}{basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor. 
+
+After actor move construction, instances that have been moved from are placed in a valid but unspecified state. It\textquotesingle{}s highly discouraged to continue using them.
+
+
+\begin{DoxyParams}{参数}
+{\em other} & The instance to move from. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00046}{46}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{structentt_1_1basic__actor_ae7ee04b6533cba81bda114ada62dfd32_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_a32635ae3046ebca665adef6b3ef87ef3}\label{structentt_1_1basic__actor_a32635ae3046ebca665adef6b3ef87ef3} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!basic\_actor@{basic\_actor}}
+\index{basic\_actor@{basic\_actor}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_actor()}{basic\_actor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::basic\+\_\+actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs an actor from a given registry. 
+
+
+\begin{DoxyParams}{参数}
+{\em ref} & An instance of the registry class. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00056}{56}} 行定义.
+
+\Hypertarget{structentt_1_1basic__actor_ab4a485086774e27688e467f4c28a3ba7}\label{structentt_1_1basic__actor_ab4a485086774e27688e467f4c28a3ba7} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!basic\_actor@{basic\_actor}}
+\index{basic\_actor@{basic\_actor}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_actor()}{basic\_actor()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::basic\+\_\+actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}{entity\+\_\+type}}}]{entity,  }\item[{\mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs an actor from a given entity. 
+
+
+\begin{DoxyParams}{参数}
+{\em entity} & A valid entity identifier. \\
+\hline
+{\em ref} & An instance of the registry class. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00065}{65}} 行定义.
+
+\Hypertarget{structentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221}\label{structentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!````~basic\_actor@{\texorpdfstring{$\sim$}{\string~}basic\_actor}}
+\index{````~basic\_actor@{\texorpdfstring{$\sim$}{\string~}basic\_actor}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}basic\_actor()}{\string~basic\_actor()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{virtual}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{structentt_1_1basic__actor}{basic\+\_\+actor}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Default destructor. 
+
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00072}{72}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00587}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::destroy()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structentt_1_1basic__actor_a46dc913885c448e059e9ca7cf3a21221_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032}\label{structentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!assign@{assign}}
+\index{assign@{assign}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} Component , typename... Args$>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{decltype}}(\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{auto}}) \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns the given component to an actor. 
+
+A new instance of the given component is created and initialized with the arguments provided (the component must have a proper constructor or be of aggregate type). Then the component is assigned to the actor.~\newline
+ In case the actor already has a component of the given type, it\textquotesingle{}s replaced with the new one.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Type of the component to create. \\
+\hline
+{\em Args} & Types of arguments to use to construct the component. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Parameters to use to initialize the component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A reference to the newly created component. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00113}{113}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{structentt_1_1basic__actor_abf572e19a5d9625fbf80cc4f00cba032_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_a8f3ca3ac4de8d13726b500c0cc1b655d}\label{structentt_1_1basic__actor_a8f3ca3ac4de8d13726b500c0cc1b655d} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!backend@{backend}}
+\index{backend@{backend}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{backend()}{backend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{const}} \mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \& \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::backend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a reference to the underlying registry. 
+
+\begin{DoxyReturn}{返回}
+A reference to the underlying registry. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00172}{172}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}}.
+
+\Hypertarget{structentt_1_1basic__actor_aad6ba04bccef40ff9755e72b87e37335}\label{structentt_1_1basic__actor_aad6ba04bccef40ff9755e72b87e37335} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!backend@{backend}}
+\index{backend@{backend}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{backend()}{backend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}} \& \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::backend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a reference to the underlying registry.   
+
+\begin{DoxyReturn}{返回}
+A reference to the underlying registry.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00177}{177}} 行定义.
+
+\Hypertarget{structentt_1_1basic__actor_af92d62c39e122692addbfd6b75ea6922}\label{structentt_1_1basic__actor_af92d62c39e122692addbfd6b75ea6922} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!entity@{entity}}
+\index{entity@{entity}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entity()}{entity()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}{entity\+\_\+type}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\mbox{\hyperlink{classentity}{\+::entity}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the entity associated with an actor. 
+
+\begin{DoxyReturn}{返回}
+The entity associated with the actor. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00185}{185}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00198}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::entt}}.
+
+\Hypertarget{structentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2}\label{structentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!get@{get}}
+\index{get@{get}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Entity $>$ \\
+template$<$typename... Component$>$ \\
+decltype(auto) \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ Entity $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns references to the given components for an actor.   
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Types of components to get. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+References to the components owned by the actor.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00148}{148}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00198}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::entt}}, \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__actor_afa85d0d013950f57fea284784c6c7bc2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}\label{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!get@{get}}
+\index{get@{get}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Entity $>$ \\
+template$<$typename... Component$>$ \\
+decltype(auto) \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ Entity $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns references to the given components for an actor. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Types of components to get. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+References to the components owned by the actor. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00142}{142}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{actor_8hpp_source_l00113}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::assign()}}, \mbox{\hyperlink{actor_8hpp_source_l00046}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::basic\+\_\+actor()}}, \mbox{\hyperlink{actor_8hpp_source_l00148}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{actor_8hpp_source_l00088}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::operator=()}}, \mbox{\hyperlink{actor_8hpp_source_l00122}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::remove()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00158}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::try\+\_\+get()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2}\label{structentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!has@{has}}
+\index{has@{has}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+template$<$typename... Component$>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{bool}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::has (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if an actor has the given components. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Components for which to perform the check. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+True if the actor has all the components, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00132}{132}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00198}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::entt}}, \mbox{\hyperlink{actor_8hpp_source_l00132}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::has()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{actor_8hpp_source_l00132}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::has()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{structentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{structentt_1_1basic__actor_ad22a9b6b33a34328a874c96e40f3e6d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0}\label{structentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{\+::operator}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{bool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Checks if an actor refers to a valid entity or not. 
+
+\begin{DoxyReturn}{返回}
+True if the actor refers to a valid entity, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00193}{193}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00428}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::valid()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structentt_1_1basic__actor_ae04982e3b8fac20ded6159b75ec98bd0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828}\label{structentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor}{basic\+\_\+actor}} \& \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1basic__actor}{basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment operator. 
+
+After actor move assignment, instances that have been moved from are placed in a valid but unspecified state. It\textquotesingle{}s highly discouraged to continue using them.
+
+
+\begin{DoxyParams}{参数}
+{\em other} & The instance to move from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+This actor. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00088}{88}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{structentt_1_1basic__actor_ac9561c520268b95e0961f25b199b5828_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1}\label{structentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!remove@{remove}}
+\index{remove@{remove}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} Component $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{void}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the given component from an actor. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Type of the component to remove. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00122}{122}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{structentt_1_1basic__actor_ab740844d18ada7ad15988f808617a1a1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405}\label{structentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!try\_get@{try\_get}}
+\index{try\_get@{try\_get}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{try\_get()}{try\_get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+template$<$typename... Component$>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{auto}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::try\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns pointers to the given components for an actor.   
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Types of components to get. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+Pointers to the components owned by the actor.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00164}{164}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00198}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::entt}}, \mbox{\hyperlink{actor_8hpp_source_l00199}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::reg}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00158}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::try\+\_\+get()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1basic__actor_a2c9c5fdcdc7a524a917c419a59bed405_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a}\label{structentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!try\_get@{try\_get}}
+\index{try\_get@{try\_get}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{try\_get()}{try\_get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+template$<$typename... Component$>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{auto}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::try\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns pointers to the given components for an actor. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Types of components to get. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+Pointers to the components owned by the actor. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00158}{158}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{actor_8hpp_source_l00142}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{actor_8hpp_source_l00164}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::try\+\_\+get()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{structentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{structentt_1_1basic__actor_afb2752c70a8429962b4e0c5ca240e95a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1basic__actor_a79420f25d2ae7fe9b148d02bdab2d5e4}\label{structentt_1_1basic__actor_a79420f25d2ae7fe9b148d02bdab2d5e4} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!entt@{entt}}
+\index{entt@{entt}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entt}{entt}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a2c2e10f12014f5269be0b9ab055acfca}{entity\+\_\+type}} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::entt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00198}{198}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{actor_8hpp_source_l00185}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::entity()}}, \mbox{\hyperlink{actor_8hpp_source_l00148}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{actor_8hpp_source_l00132}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::has()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00164}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::try\+\_\+get()}}.
+
+\Hypertarget{structentt_1_1basic__actor_a07f9e3507d9c3ee0cb82c2a6ef48d4de}\label{structentt_1_1basic__actor_a07f9e3507d9c3ee0cb82c2a6ef48d4de} 
+\index{entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}!reg@{reg}}
+\index{reg@{reg}!entt::basic\_actor$<$ Entity $>$@{entt::basic\_actor$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{typename}} \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1basic__actor_a4577b087e2fe3e76dbd4516ae9064c6a}{registry\+\_\+type}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1basic__actor}{entt\+::basic\+\_\+actor}}$<$ \mbox{\hyperlink{structentt_1_1basic__actor_a1429f1e5b4a80f13219b99addd169f7c}{Entity}} $>$\+::reg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{actor_8hpp_source}{actor.\+hpp}} 第 \mbox{\hyperlink{actor_8hpp_source_l00199}{199}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{actor_8hpp_source_l00113}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::assign()}}, \mbox{\hyperlink{actor_8hpp_source_l00172}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::backend()}}, \mbox{\hyperlink{actor_8hpp_source_l00148}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{actor_8hpp_source_l00132}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::has()}}, \mbox{\hyperlink{actor_8hpp_source_l00193}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::operator bool()}}, \mbox{\hyperlink{actor_8hpp_source_l00088}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::operator=()}}, \mbox{\hyperlink{actor_8hpp_source_l00122}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::remove()}}, \mbox{\hyperlink{actor_8hpp_source_l00164}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::try\+\_\+get()}} , 以及 \mbox{\hyperlink{actor_8hpp_source_l00072}{entt\+::basic\+\_\+actor$<$ Entity $>$\+::\texorpdfstring{$\sim$}{\string~}basic\+\_\+actor()}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{actor_8hpp}{actor.\+hpp}}\end{DoxyCompactItemize}

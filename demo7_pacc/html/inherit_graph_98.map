@@ -1,0 +1,13 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classentt_1_1sparse__set.html" title="Basic sparse set implementation." alt="" coords="5,116,200,141"/>
+<area shape="rect" id="Node000001" href="$classentt_1_1storage.html" title=" " alt="" coords="276,13,439,53"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="141,108,247,62,283,50,284,55,249,67,143,112"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1storage.html" title=" " alt="" coords="273,77,442,117"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="214,112,272,105,273,110,214,117"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1storage.html" title="Basic storage implementation." alt="" coords="276,141,439,181"/>
+<area shape="poly" id="edge10_Node000000_Node000004" title=" " alt="" coords="214,140,276,148,275,153,214,145"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html" title="Basic storage implementation." alt="" coords="248,205,467,260"/>
+<area shape="poly" id="edge11_Node000000_Node000005" title=" " alt="" coords="145,145,249,190,281,203,279,208,247,195,143,150"/>
+<area shape="rect" id="Node000002" href="$structentt_1_1basic__registry_1_1pool__handler.html" title=" " alt="" coords="515,5,697,60"/>
+<area shape="poly" id="edge8_Node000001_Node000002" title=" " alt="" coords="453,30,514,30,514,35,453,35"/>
+</map>

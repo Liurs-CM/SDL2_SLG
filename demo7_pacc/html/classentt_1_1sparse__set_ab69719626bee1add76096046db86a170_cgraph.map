@@ -1,0 +1,13 @@
+<map id="entt::sparse_set::destroy" name="entt::sparse_set::destroy">
+<area shape="rect" id="Node000001" title="Removes an entity from a sparse set." alt="" coords="5,29,188,55"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="236,29,407,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,39,222,39,222,45,188,45"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="455,29,644,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,39,441,39,441,45,407,45"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="692,5,863,31"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="376,27,454,14,571,8,678,10,678,15,571,14,455,19,377,32"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="694,55,861,80"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="377,52,455,65,572,70,680,69,680,75,572,76,454,70,376,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="644,29,678,26,678,31,645,35"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="645,50,681,54,680,59,644,55"/>
+</map>

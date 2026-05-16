@@ -1,0 +1,701 @@
+\doxysection{entt\+::basic\+\_\+observer\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1basic__observer}{}\label{classentt_1_1basic__observer}\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+
+
+Observer.  
+
+
+
+
+{\ttfamily \#include $<$observer.\+hpp$>$}
+
+
+
+entt\+::basic\+\_\+observer\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classentt_1_1basic__observer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1basic__observer_1_1matcher__handler}{matcher\+\_\+handler}}
+\item 
+struct \mbox{\hyperlink{structentt_1_1basic__observer_1_1matcher__handler_3_01matcher_3_01type__list_3_01Reject_8_8_8_0117cee5b47fc38592fdcd37ee7a793dd8}{matcher\+\_\+handler$<$ matcher$<$ type\+\_\+list$<$ Reject... $>$, type\+\_\+list$<$ Require... $>$, Any\+Of $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structentt_1_1basic__observer_1_1matcher__handler_3_01matcher_3_01type__list_3_01Reject_8_8_8_01342ea6a3c71d46b8f95577490118491f}{matcher\+\_\+handler$<$ matcher$<$ type\+\_\+list$<$ Reject... $>$, type\+\_\+list$<$ Require... $>$, type\+\_\+list$<$ None\+Of... $>$, All\+Of... $>$ $>$}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer_a147a0e35035fc3c19b67b31d66d2d80b}{size\+\_\+type}} = std\+::size\+\_\+t
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer_a244ba61659af901a88710350b068c4ac}{iterator}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::iterator
+\begin{DoxyCompactList}\small\item\em Input iterator type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__observer_adfb08de0ef1c0f57fadc6f6d171b931a}{basic\+\_\+observer}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer_aa685204c94266b5631c13540012e73c2}{basic\+\_\+observer}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delete}}
+\begin{DoxyCompactList}\small\item\em Default copy constructor, deleted on purpose. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer_accbe2546b1b74de1a59e673cb6250413}{basic\+\_\+observer}} (\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delete}}
+\begin{DoxyCompactList}\small\item\em Default move constructor, deleted on purpose. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Matcher$>$ }\\\mbox{\hyperlink{classentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721}{basic\+\_\+observer}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} $>$ \&reg, \mbox{\hyperlink{structentt_1_1basic__collector}{basic\+\_\+collector}}$<$ Matcher... $>$)
+\begin{DoxyCompactList}\small\item\em Creates an observer and connects it to a given registry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer_afb6fbd2a5ce7bc57013b0bd9ad482599}{\texorpdfstring{$\sim$}{\string~}basic\+\_\+observer}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \& \mbox{\hyperlink{classentt_1_1basic__observer_a48774bb0a91b1a491228971a49904f95}{operator=}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delete}}
+\begin{DoxyCompactList}\small\item\em Default copy assignment operator, deleted on purpose. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \& \mbox{\hyperlink{classentt_1_1basic__observer_ac01ad207f6858ef841dad4bccb734205}{operator=}} (\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delete}}
+\begin{DoxyCompactList}\small\item\em Default move assignment operator, deleted on purpose. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Matcher$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209}{connect}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} $>$ \&reg, \mbox{\hyperlink{structentt_1_1basic__collector}{basic\+\_\+collector}}$<$ Matcher... $>$)
+\begin{DoxyCompactList}\small\item\em Connects an observer to a given registry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955}{disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects an observer from the registry it keeps track of. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer_a147a0e35035fc3c19b67b31d66d2d80b}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__observer_ab42aeb1e1ffb32b98bc4da4f30755ec1}{size}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in an observer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__observer_a0986b7af08f9b1bc70bd01b9bbe66cc4}{empty}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks whether an observer is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__observer_adc0f3e189f0d502a8f9a5c8467cf8ee3}{data}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Direct access to the list of entities of the observer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer_a244ba61659af901a88710350b068c4ac}{iterator}} \mbox{\hyperlink{classentt_1_1basic__observer_ab46075c93b241b07d55b4676004635f7}{begin}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the first entity of the observer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__observer_a244ba61659af901a88710350b068c4ac}{iterator}} \mbox{\hyperlink{classentt_1_1basic__observer_a467784468eb62680a13533934858b1b1}{end}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator that is past the last entity of the observer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77}{clear}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Clears the underlying container. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer_a181a6724835a3a41e33610003f738525}{each}} (Func func) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates entities and applies the given function object to them. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97}{each}} (Func func)
+\begin{DoxyCompactList}\small\item\em Iterates entities and applies the given function object to them, then clears the observer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer_aa2e8d14973b7773a2890c3c92dd91ca2}{payload\+\_\+type}} = std\+::uint32\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Matcher, std\+::size\+\_\+t... Index$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210}{connect}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&reg, std\+::index\+\_\+sequence$<$ Index... $>$)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Matcher$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer_ae2549e48eb696174c9608a2c309e080f}{disconnect}} (\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{obs}}, \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&reg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__observer_a36b561e57c1eb012f960e534ce5f9400}{target}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__observer_afbf105924283b75976a69559da17d953}{release}} )(\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \&, \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} $>$ \&)
+\item 
+\mbox{\hyperlink{classentt_1_1storage}{storage}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}}, \mbox{\hyperlink{classentt_1_1basic__observer_aa2e8d14973b7773a2890c3c92dd91ca2}{payload\+\_\+type}} $>$ \mbox{\hyperlink{classentt_1_1basic__observer_a6f0912f8449a089e451a47249f162850}{view}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$\newline
+class entt\+::basic\+\_\+observer$<$ Entity $>$}
+Observer. 
+
+An observer returns all the entities and only the entities that fit the requirements of at least one matcher. Moreover, it\textquotesingle{}s guaranteed that the entity list is tightly packed in memory for fast iterations.~\newline
+ In general, observers don\textquotesingle{}t stay true to the order of any set of components.
+
+Observers work mainly with two types of matchers, provided through a collector\+:
+
+
+\begin{DoxyItemize}
+\item Observing matcher\+: an observer will return at least all the living entities for which one or more of the given components have been updated and not yet destroyed.
+\item Grouping matcher\+: an observer will return at least all the living entities that would have entered the given group if it existed and that would have not yet left it.
+\end{DoxyItemize}
+
+If an entity respects the requirements of multiple matchers, it will be returned once and only once by the observer in any case.
+
+Matchers support also filtering by means of a {\itshape where} clause that accepts both a list of types and an exclusion list.~\newline
+ Whenever a matcher finds that an entity matches its requirements, the condition of the filter is verified before to register the entity itself. Moreover, a registered entity isn\textquotesingle{}t returned by the observer if the condition set by the filter is broken in the meantime.
+
+{\bfseries{Important}} 
+
+Iterators aren\textquotesingle{}t invalidated if\+:
+
+
+\begin{DoxyItemize}
+\item New instances of the given components are created and assigned to entities.
+\item The entity currently pointed is modified (as an example, if one of the given components is removed from the entity to which the iterator points).
+\item The entity currently pointed is destroyed.
+\end{DoxyItemize}
+
+In all the other cases, modifying the pools of the given components in any way invalidates all the iterators and using them results in undefined behavior.
+
+\begin{DoxyWarning}{警告}
+Lifetime of an observer doesn\textquotesingle{}t necessarily have to overcome that of the registry to which it is connected. However, the observer must be disconnected from the registry before being destroyed to avoid crashes due to dangling pointers.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Entity} & A valid entity type (see \doxylink{structentt_1_1entt__traits}{entt\+\_\+traits} for more details). \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00186}{186}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}\label{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!entity\_type@{entity\_type}}
+\index{entity\_type@{entity\_type}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_type}{entity\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::entity\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}}
+
+
+
+Underlying entity identifier. 
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00282}{282}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_a244ba61659af901a88710350b068c4ac}\label{classentt_1_1basic__observer_a244ba61659af901a88710350b068c4ac} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::iterator =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$\+::iterator}
+
+
+
+Input iterator type. 
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00286}{286}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_aa2e8d14973b7773a2890c3c92dd91ca2}\label{classentt_1_1basic__observer_aa2e8d14973b7773a2890c3c92dd91ca2} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!payload\_type@{payload\_type}}
+\index{payload\_type@{payload\_type}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{payload\_type}{payload\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::payload\+\_\+type =  std\+::uint32\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00187}{187}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_a147a0e35035fc3c19b67b31d66d2d80b}\label{classentt_1_1basic__observer_a147a0e35035fc3c19b67b31d66d2d80b} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::size\+\_\+type =  std\+::size\+\_\+t}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00284}{284}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1basic__observer_adfb08de0ef1c0f57fadc6f6d171b931a}\label{classentt_1_1basic__observer_adfb08de0ef1c0f57fadc6f6d171b931a} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!basic\_observer@{basic\_observer}}
+\index{basic\_observer@{basic\_observer}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_observer()}{basic\_observer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::basic\+\_\+observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00289}{289}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_aa685204c94266b5631c13540012e73c2}\label{classentt_1_1basic__observer_aa685204c94266b5631c13540012e73c2} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!basic\_observer@{basic\_observer}}
+\index{basic\_observer@{basic\_observer}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_observer()}{basic\_observer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::basic\+\_\+observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Default copy constructor, deleted on purpose. 
+
+\Hypertarget{classentt_1_1basic__observer_accbe2546b1b74de1a59e673cb6250413}\label{classentt_1_1basic__observer_accbe2546b1b74de1a59e673cb6250413} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!basic\_observer@{basic\_observer}}
+\index{basic\_observer@{basic\_observer}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_observer()}{basic\_observer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::basic\+\_\+observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Default move constructor, deleted on purpose. 
+
+\Hypertarget{classentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721}\label{classentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!basic\_observer@{basic\_observer}}
+\index{basic\_observer@{basic\_observer}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_observer()}{basic\_observer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$typename... Matcher$>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::basic\+\_\+observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} $>$ \&}]{reg,  }\item[{\mbox{\hyperlink{structentt_1_1basic__collector}{basic\+\_\+collector}}$<$ Matcher... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an observer and connects it to a given registry. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Matcher} & Types of matchers to use to initialize the observer. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em reg} & A valid reference to a registry. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00304}{304}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{observer_8hpp_source_l00274}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::connect()}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__observer_afb6fbd2a5ce7bc57013b0bd9ad482599}\label{classentt_1_1basic__observer_afb6fbd2a5ce7bc57013b0bd9ad482599} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!````~basic\_observer@{\texorpdfstring{$\sim$}{\string~}basic\_observer}}
+\index{````~basic\_observer@{\texorpdfstring{$\sim$}{\string~}basic\_observer}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}basic\_observer()}{\string~basic\_observer()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1basic__observer_ab46075c93b241b07d55b4676004635f7}\label{classentt_1_1basic__observer_ab46075c93b241b07d55b4676004635f7} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!begin@{begin}}
+\index{begin@{begin}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer_a244ba61659af901a88710350b068c4ac}{iterator}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an iterator to the first entity of the observer. 
+
+The returned iterator points to the first entity of the observer. If the container is empty, the returned iterator will be equal to {\ttfamily \doxylink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53}{end()}}.
+
+\begin{DoxyReturn}{返回}
+An iterator to the first entity of the observer. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00388}{388}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77}\label{classentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!clear@{clear}}
+\index{clear@{clear}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears the underlying container. 
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00407}{407}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{observer_8hpp_source_l00443}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::each()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210}\label{classentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!connect@{connect}}
+\index{connect@{connect}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$typename... Matcher, std\+::size\+\_\+t... Index$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&}]{reg,  }\item[{std\+::index\+\_\+sequence$<$ Index... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00274}{274}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{observer_8hpp_source_l00341}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::disconnect()}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{observer_8hpp_source_l00450}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::release}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{observer_8hpp_source_l00304}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::basic\+\_\+observer()}} , 以及 \mbox{\hyperlink{observer_8hpp_source_l00333}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::connect()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209}\label{classentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!connect@{connect}}
+\index{connect@{connect}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$typename... Matcher$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} $>$ \&}]{reg,  }\item[{\mbox{\hyperlink{structentt_1_1basic__collector}{basic\+\_\+collector}}$<$ Matcher... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Connects an observer to a given registry. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Matcher} & Types of matchers to use to initialize the observer. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em reg} & A valid reference to a registry. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00333}{333}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{observer_8hpp_source_l00274}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::connect()}}, \mbox{\hyperlink{observer_8hpp_source_l00341}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::disconnect()}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{observer_8hpp_source_l00449}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::target}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__observer_adc0f3e189f0d502a8f9a5c8467cf8ee3}\label{classentt_1_1basic__observer_adc0f3e189f0d502a8f9a5c8467cf8ee3} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!data@{data}}
+\index{data@{data}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Direct access to the list of entities of the observer. 
+
+The returned pointer is such that range {\ttfamily \mbox{[}\doxylink{classentt_1_1basic__observer_adc0f3e189f0d502a8f9a5c8467cf8ee3}{data()}, \doxylink{classentt_1_1basic__observer_adc0f3e189f0d502a8f9a5c8467cf8ee3}{data()} + \doxylink{classentt_1_1basic__observer_ab42aeb1e1ffb32b98bc4da4f30755ec1}{size()}\mbox{]}} is always a valid range, even if the container is empty.
+
+\begin{DoxyNote}{注解}
+There are no guarantees on the order of the entities. Use {\ttfamily begin} and {\ttfamily end} if you want to iterate the observer in the expected order.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+A pointer to the array of entities. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00376}{376}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955}\label{classentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disconnects an observer from the registry it keeps track of. 
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00341}{341}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{observer_8hpp_source_l00450}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::release}} , 以及 \mbox{\hyperlink{observer_8hpp_source_l00449}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::target}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{observer_8hpp_source_l00274}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::connect()}} , 以及 \mbox{\hyperlink{observer_8hpp_source_l00333}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::connect()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__observer_ae2549e48eb696174c9608a2c309e080f}\label{classentt_1_1basic__observer_ae2549e48eb696174c9608a2c309e080f} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$typename... Matcher$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&}]{obs,  }\item[{\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00269}{269}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97}\label{classentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!each@{each}}
+\index{each@{each}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::each (\begin{DoxyParamCaption}\item[{Func}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates entities and applies the given function object to them, then clears the observer. 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classentt_1_1basic__observer_a181a6724835a3a41e33610003f738525}{each}
+\end{DoxySeeAlso}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Func} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em func} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00443}{443}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{observer_8hpp_source_l00407}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::clear()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__observer_a181a6724835a3a41e33610003f738525}\label{classentt_1_1basic__observer_a181a6724835a3a41e33610003f738525} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!each@{each}}
+\index{each@{each}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::each (\begin{DoxyParamCaption}\item[{Func}]{func }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates entities and applies the given function object to them. 
+
+The function object is invoked for each entity.~\newline
+ The signature of the function must be equivalent to the following form\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\_type}});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Func} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em func} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00425}{425}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_a0986b7af08f9b1bc70bd01b9bbe66cc4}\label{classentt_1_1basic__observer_a0986b7af08f9b1bc70bd01b9bbe66cc4} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!empty@{empty}}
+\index{empty@{empty}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks whether an observer is empty. 
+
+\begin{DoxyReturn}{返回}
+True if the observer is empty, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00360}{360}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_a467784468eb62680a13533934858b1b1}\label{classentt_1_1basic__observer_a467784468eb62680a13533934858b1b1} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!end@{end}}
+\index{end@{end}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer_a244ba61659af901a88710350b068c4ac}{iterator}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an iterator that is past the last entity of the observer. 
+
+The returned iterator points to the entity following the last entity of the observer. Attempting to dereference the returned iterator results in undefined behavior.
+
+\begin{DoxyReturn}{返回}
+An iterator to the entity following the last entity of the observer. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00402}{402}} 行定义.
+
+\Hypertarget{classentt_1_1basic__observer_ac01ad207f6858ef841dad4bccb734205}\label{classentt_1_1basic__observer_ac01ad207f6858ef841dad4bccb734205} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \& \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Default move assignment operator, deleted on purpose. 
+
+\begin{DoxyReturn}{返回}
+This observer. 
+\end{DoxyReturn}
+\Hypertarget{classentt_1_1basic__observer_a48774bb0a91b1a491228971a49904f95}\label{classentt_1_1basic__observer_a48774bb0a91b1a491228971a49904f95} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \& \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Default copy assignment operator, deleted on purpose. 
+
+\begin{DoxyReturn}{返回}
+This observer. 
+\end{DoxyReturn}
+\Hypertarget{classentt_1_1basic__observer_ab42aeb1e1ffb32b98bc4da4f30755ec1}\label{classentt_1_1basic__observer_ab42aeb1e1ffb32b98bc4da4f30755ec1} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!size@{size}}
+\index{size@{size}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__observer_a147a0e35035fc3c19b67b31d66d2d80b}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of elements in an observer. 
+
+\begin{DoxyReturn}{返回}
+Number of elements. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00352}{352}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1basic__observer_afbf105924283b75976a69559da17d953}\label{classentt_1_1basic__observer_afbf105924283b75976a69559da17d953} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!release@{release}}
+\index{release@{release}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{release}{release}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::release) (\mbox{\hyperlink{classentt_1_1basic__observer}{basic\+\_\+observer}} \&, \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}} $>$ \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00450}{450}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{observer_8hpp_source_l00274}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::connect()}} , 以及 \mbox{\hyperlink{observer_8hpp_source_l00341}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::disconnect()}}.
+
+\Hypertarget{classentt_1_1basic__observer_a36b561e57c1eb012f960e534ce5f9400}\label{classentt_1_1basic__observer_a36b561e57c1eb012f960e534ce5f9400} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!target@{target}}
+\index{target@{target}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$\mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}}$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00449}{449}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{observer_8hpp_source_l00333}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::connect()}} , 以及 \mbox{\hyperlink{observer_8hpp_source_l00341}{entt\+::basic\+\_\+observer$<$ Entity $>$\+::disconnect()}}.
+
+\Hypertarget{classentt_1_1basic__observer_a6f0912f8449a089e451a47249f162850}\label{classentt_1_1basic__observer_a6f0912f8449a089e451a47249f162850} 
+\index{entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}!view@{view}}
+\index{view@{view}!entt::basic\_observer$<$ Entity $>$@{entt::basic\_observer$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1storage}{storage}}$<$\mbox{\hyperlink{classentt_1_1basic__observer_af7a57f53ed7a6c835129480ff6594f7d}{entity\+\_\+type}}, \mbox{\hyperlink{classentt_1_1basic__observer_aa2e8d14973b7773a2890c3c92dd91ca2}{payload\+\_\+type}}$>$ \mbox{\hyperlink{classentt_1_1basic__observer}{entt\+::basic\+\_\+observer}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::view\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00451}{451}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{entity_2fwd_8hpp}{fwd.\+hpp}}\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{observer_8hpp}{observer.\+hpp}}\end{DoxyCompactItemize}

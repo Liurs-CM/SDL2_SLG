@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/comp/chase_target.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9b664d0fbb2c46172046c316aff72050.html">comp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">chase_target.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="chase__target_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  chase_target.hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  EnTT Pacman</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by Indiana Kernick on 24/9/18.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2018 Indiana Kernick. All rights reserved.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef COMP_CHASE_TARGET_HPP</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define COMP_CHASE_TARGET_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="entity_2fwd_8hpp.html">entt/entity/fwd.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// These components define the chase targeting behavior for each ghost</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// This is where the beauty of ECS comes in</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Blinky doesn&#39;t have to chase the player!</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// The BlinkyChaseTarget component stores the ID of an entity that</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// has a Position component. That&#39;s it! Blinky can chase anything</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// that has a Position. We could quite easily make blinky chase inky</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structBlinkyChaseTarget.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structBlinkyChaseTarget.html">BlinkyChaseTarget</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structBlinkyChaseTarget.html#aaac96689d54e5270438a743c54bcb225">   23</a></span>  entt::entity <a class="code hl_variable" href="structBlinkyChaseTarget.html#aaac96689d54e5270438a743c54bcb225">player</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structPinkyChaseTarget.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPinkyChaseTarget.html">PinkyChaseTarget</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structPinkyChaseTarget.html#adb48d08cb550ee85b1ee2d8fe2382c8e">   27</a></span>  entt::entity <a class="code hl_variable" href="structPinkyChaseTarget.html#adb48d08cb550ee85b1ee2d8fe2382c8e">player</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structInkyChaseTarget.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structInkyChaseTarget.html">InkyChaseTarget</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structInkyChaseTarget.html#a96c329b51e13b0dde8f17a15191ea444">   31</a></span>  entt::entity <a class="code hl_variable" href="structInkyChaseTarget.html#a96c329b51e13b0dde8f17a15191ea444">player</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structInkyChaseTarget.html#a52f66619a075924d4a1d80cf0ba3e5d9">   32</a></span>  entt::entity <a class="code hl_variable" href="structInkyChaseTarget.html#a52f66619a075924d4a1d80cf0ba3e5d9">blinky</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structClydeChaseTarget.html">   35</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structClydeChaseTarget.html">ClydeChaseTarget</a> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structClydeChaseTarget.html#a8d83fcfd779490dae49474aefb42b671">   36</a></span>  entt::entity <a class="code hl_variable" href="structClydeChaseTarget.html#a8d83fcfd779490dae49474aefb42b671">player</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aentity_2fwd_8hpp_html"><div class="ttname"><a href="entity_2fwd_8hpp.html">fwd.hpp</a></div></div>
+<div class="ttc" id="astructBlinkyChaseTarget_html"><div class="ttname"><a href="structBlinkyChaseTarget.html">BlinkyChaseTarget</a></div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00022">chase_target.hpp:22</a></div></div>
+<div class="ttc" id="astructBlinkyChaseTarget_html_aaac96689d54e5270438a743c54bcb225"><div class="ttname"><a href="structBlinkyChaseTarget.html#aaac96689d54e5270438a743c54bcb225">BlinkyChaseTarget::player</a></div><div class="ttdeci">entt::entity player</div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00023">chase_target.hpp:23</a></div></div>
+<div class="ttc" id="astructClydeChaseTarget_html"><div class="ttname"><a href="structClydeChaseTarget.html">ClydeChaseTarget</a></div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00035">chase_target.hpp:35</a></div></div>
+<div class="ttc" id="astructClydeChaseTarget_html_a8d83fcfd779490dae49474aefb42b671"><div class="ttname"><a href="structClydeChaseTarget.html#a8d83fcfd779490dae49474aefb42b671">ClydeChaseTarget::player</a></div><div class="ttdeci">entt::entity player</div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00036">chase_target.hpp:36</a></div></div>
+<div class="ttc" id="astructInkyChaseTarget_html"><div class="ttname"><a href="structInkyChaseTarget.html">InkyChaseTarget</a></div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00030">chase_target.hpp:30</a></div></div>
+<div class="ttc" id="astructInkyChaseTarget_html_a52f66619a075924d4a1d80cf0ba3e5d9"><div class="ttname"><a href="structInkyChaseTarget.html#a52f66619a075924d4a1d80cf0ba3e5d9">InkyChaseTarget::blinky</a></div><div class="ttdeci">entt::entity blinky</div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00032">chase_target.hpp:32</a></div></div>
+<div class="ttc" id="astructInkyChaseTarget_html_a96c329b51e13b0dde8f17a15191ea444"><div class="ttname"><a href="structInkyChaseTarget.html#a96c329b51e13b0dde8f17a15191ea444">InkyChaseTarget::player</a></div><div class="ttdeci">entt::entity player</div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00031">chase_target.hpp:31</a></div></div>
+<div class="ttc" id="astructPinkyChaseTarget_html"><div class="ttname"><a href="structPinkyChaseTarget.html">PinkyChaseTarget</a></div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00026">chase_target.hpp:26</a></div></div>
+<div class="ttc" id="astructPinkyChaseTarget_html_adb48d08cb550ee85b1ee2d8fe2382c8e"><div class="ttname"><a href="structPinkyChaseTarget.html#adb48d08cb550ee85b1ee2d8fe2382c8e">PinkyChaseTarget::player</a></div><div class="ttdeci">entt::entity player</div><div class="ttdef"><b>Definition</b> <a href="chase__target_8hpp_source.html#l00027">chase_target.hpp:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

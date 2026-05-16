@@ -1,0 +1,7 @@
+<map id="entt::basic_registry::group_handler&lt; exclude_t&lt; Exclude... &gt;, get_t&lt; Get... &gt;, Owned... &gt;::maybe_valid_if" name="entt::basic_registry::group_handler&lt; exclude_t&lt; Exclude... &gt;, get_t&lt; Get... &gt;, Owned... &gt;::maybe_valid_if">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,225,97"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#a199babc787d6baa6f7ccce761228a5f6" title="Returns the actual version for an entity identifier." alt="" coords="281,5,428,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,39,267,33,268,39,226,44"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a5c55497115906827dd9c42648cc27d18" title="Direct access to the internal packed array." alt="" coords="273,70,436,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,65,260,69,259,74,225,70"/>
+</map>

@@ -1,0 +1,143 @@
+\doxysection{entt\+::as\+\_\+view\texorpdfstring{$<$}{<} Const, Entity \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1as__view}{}\label{structentt_1_1as__view}\index{entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}}
+
+
+Converts a registry to a view.  
+
+
+
+
+{\ttfamily \#include $<$helper.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\+\_\+type}} = std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Const}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$, \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ $>$
+\begin{DoxyCompactList}\small\item\em Type of registry to convert. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1as__view_a820ab4da509a0fb60c4edf8ea24b748a}{as\+\_\+view}} (\mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\+\_\+type}} \&source) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs a converter for a given registry. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}} , typename... Component$>$ }\\\mbox{\hyperlink{structentt_1_1as__view_aac140def0e18cd8dc04c486f6d5813da}{operator entt\+::basic\+\_\+view$<$ Entity, Exclude, Component... $>$}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Conversion function from a registry to a view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\+\_\+type}} \& \mbox{\hyperlink{structentt_1_1as__view_a7e10dbf5778755387689a8c6b037d8e8}{reg}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} Const, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$\newline
+struct entt\+::as\+\_\+view$<$ Const, Entity $>$}
+Converts a registry to a view. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Const} & Constness of the accepted registry. \\
+\hline
+{\em Entity} & A valid entity type (see \doxylink{structentt_1_1entt__traits}{entt\+\_\+traits} for more details). \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{helper_8hpp_source}{helper.\+hpp}} 第 \mbox{\hyperlink{helper_8hpp_source_l00022}{22}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}\label{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b} 
+\index{entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}!registry\_type@{registry\_type}}
+\index{registry\_type@{registry\_type}!entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}}
+\doxysubsubsection{\texorpdfstring{registry\_type}{registry\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} Const, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1as__view}{entt\+::as\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Const}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::registry\+\_\+type =  std\+::conditional\+\_\+t$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Const}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$, \mbox{\hyperlink{classentt_1_1basic__registry}{entt\+::basic\+\_\+registry}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$ $>$}
+
+
+
+Type of registry to convert. 
+
+
+
+在文件 \mbox{\hyperlink{helper_8hpp_source}{helper.\+hpp}} 第 \mbox{\hyperlink{helper_8hpp_source_l00024}{24}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1as__view_a820ab4da509a0fb60c4edf8ea24b748a}\label{structentt_1_1as__view_a820ab4da509a0fb60c4edf8ea24b748a} 
+\index{entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}!as\_view@{as\_view}}
+\index{as\_view@{as\_view}!entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}}
+\doxysubsubsection{\texorpdfstring{as\_view()}{as\_view()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} Const, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1as__view}{entt\+::as\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Const}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::as\+\_\+view (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\+\_\+type}} \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a converter for a given registry. 
+
+
+\begin{DoxyParams}{参数}
+{\em source} & A valid reference to a registry. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{helper_8hpp_source}{helper.\+hpp}} 第 \mbox{\hyperlink{helper_8hpp_source_l00030}{30}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1as__view_aac140def0e18cd8dc04c486f6d5813da}\label{structentt_1_1as__view_aac140def0e18cd8dc04c486f6d5813da} 
+\index{entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}!operator entt::basic\_view$<$ Entity, Exclude, Component... $>$@{operator entt::basic\_view$<$ Entity, Exclude, Component... $>$}}
+\index{operator entt::basic\_view$<$ Entity, Exclude, Component... $>$@{operator entt::basic\_view$<$ Entity, Exclude, Component... $>$}!entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator entt::basic\_view$<$ Entity, Exclude, Component... $>$()}{operator entt::basic\_view< Entity, Exclude, Component... >()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} Const, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}} , typename... Component$>$ \\
+\mbox{\hyperlink{structentt_1_1as__view}{entt\+::as\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Const}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}} \mbox{\hyperlink{classentt_1_1basic__view}{entt\+::basic\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}}, Component... $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Conversion function from a registry to a view. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Exclude} & Types of components used to filter the view. \\
+\hline
+{\em Component} & Type of components used to construct the view. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A newly created view. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{helper_8hpp_source}{helper.\+hpp}} 第 \mbox{\hyperlink{helper_8hpp_source_l00039}{39}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{helper_8hpp_source_l00044}{entt\+::as\+\_\+view$<$ Const, Entity $>$\+::reg}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1as__view_a7e10dbf5778755387689a8c6b037d8e8}\label{structentt_1_1as__view_a7e10dbf5778755387689a8c6b037d8e8} 
+\index{entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}!reg@{reg}}
+\index{reg@{reg}!entt::as\_view$<$ Const, Entity $>$@{entt::as\_view$<$ Const, Entity $>$}}
+\doxysubsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} Const, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\+\_\+type}}\& \mbox{\hyperlink{structentt_1_1as__view}{entt\+::as\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Const}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::reg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{helper_8hpp_source}{helper.\+hpp}} 第 \mbox{\hyperlink{helper_8hpp_source_l00044}{44}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{helper_8hpp_source_l00039}{entt\+::as\+\_\+view$<$ Const, Entity $>$\+::operator entt\+::basic\+\_\+view$<$ Entity, Exclude, Component... $>$()}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{helper_8hpp}{helper.\+hpp}}\end{DoxyCompactItemize}

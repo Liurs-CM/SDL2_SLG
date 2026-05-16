@@ -1,0 +1,17 @@
+<map id="entt::basic_registry::pool_handler::emplace" name="entt::basic_registry::pool_handler::emplace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,74,184,114"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="232,81,401,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,91,218,91,218,97,185,97"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="449,81,640,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,91,435,91,435,97,402,97"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="694,5,871,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="585,79,728,32,730,37,586,84"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="688,107,877,132"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="640,101,675,105,674,110,640,107"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="925,83,1096,108"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="640,91,877,91,912,92,912,97,877,97,640,96"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="927,132,1094,157"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="574,104,626,125,689,142,746,149,805,152,914,150,914,156,805,158,746,155,687,147,625,130,572,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="877,107,911,103,912,108,878,112"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="878,127,914,131,913,137,877,133"/>
+</map>

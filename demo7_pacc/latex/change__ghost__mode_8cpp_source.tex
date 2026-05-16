@@ -1,0 +1,67 @@
+\doxysection{change\+\_\+ghost\+\_\+mode.\+cpp}
+\hypertarget{change__ghost__mode_8cpp_source}{}\label{change__ghost__mode_8cpp_source}\index{src/sys/change\_ghost\_mode.cpp@{src/sys/change\_ghost\_mode.cpp}}
+\mbox{\hyperlink{change__ghost__mode_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ change\_ghost\_mode.cpp}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 29/9/18.}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{change__ghost__mode_8hpp}{change\_ghost\_mode.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2house_8hpp}{comp/house.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost_8hpp}{comp/ghost.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost__mode_8hpp}{comp/ghost\_mode.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00016}\mbox{\hyperlink{change__ghost__mode_8cpp_a7db74f290ffc586252413312b6e1333a}{00016}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{change__ghost__mode_8cpp_a7db74f290ffc586252413312b6e1333a}{ghostScared}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00017}00017\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structGhost}{Ghost}}>();}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00018}00018\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00019}00019\ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_af61e6b8ffc93f3490d94c5f1fefdc3e8}{remove\_if\_exists}}<\mbox{\hyperlink{structChaseMode}{ChaseMode}},\ \mbox{\hyperlink{structScatterMode}{ScatterMode}},\ \mbox{\hyperlink{structScaredMode}{ScaredMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//\ Ghosts\ in\ EatenMode\ don't\ get\ scared}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{if}\ (!reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structEatenMode}{EatenMode}}>(e))\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00022}00022\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structScaredMode}{ScaredMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00024}00024\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00025}00025\ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00027}\mbox{\hyperlink{change__ghost__mode_8cpp_a00bbb0ec64d2a59a6524161f59cd9e6d}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{change__ghost__mode_8cpp_a00bbb0ec64d2a59a6524161f59cd9e6d}{ghostScaredTimeout}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00028}00028\ \ \ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structGhost}{Ghost}},\ \mbox{\hyperlink{structScaredMode}{ScaredMode}}>();}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00029}00029\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{structScaredMode}{ScaredMode}}\ \&scared\ =\ view.get<\mbox{\hyperlink{structScaredMode}{ScaredMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00031}00031\ \ \ \ \ -\/-\/scared.\mbox{\hyperlink{structScaredMode_a6b30183fa8120377ca1cb919e42a1a94}{timer}};}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{if}\ (scared.\mbox{\hyperlink{structScaredMode_a6b30183fa8120377ca1cb919e42a1a94}{timer}}\ <=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00033}00033\ \ \ \ \ \ \ \textcolor{comment}{//\ Adding\ and\ removing\ components\ from\ the\ entity\ that\ is\ currently}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00034}00034\ \ \ \ \ \ \ \textcolor{comment}{//\ returned\ by\ the\ view\ is\ OK}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00035}00035\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a44f5eac6fa4d1999a121f55e67a36c24}{remove}}<\mbox{\hyperlink{structScaredMode}{ScaredMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00036}00036\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structChaseMode}{ChaseMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00038}00038\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00041}\mbox{\hyperlink{change__ghost__mode_8cpp_a02f47e341681b61e4699e51680402a96}{00041}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{change__ghost__mode_8cpp_a02f47e341681b61e4699e51680402a96}{ghostEaten}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ entt::entity\ ghost)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00042}00042\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a44f5eac6fa4d1999a121f55e67a36c24}{remove}}<\mbox{\hyperlink{structScaredMode}{ScaredMode}}>(ghost);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00043}00043\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structEatenMode}{EatenMode}}>(ghost);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00044}00044\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structEnterHouse}{EnterHouse}}>(ghost);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00045}00045\ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00047}\mbox{\hyperlink{change__ghost__mode_8cpp_ade3ede65ed776ae60fc6cdb47aa271d4}{00047}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{change__ghost__mode_8cpp_ade3ede65ed776ae60fc6cdb47aa271d4}{ghostScatter}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00048}00048\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structGhost}{Ghost}},\ \mbox{\hyperlink{structChaseMode}{ChaseMode}}>();}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00049}00049\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00050}00050\ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a44f5eac6fa4d1999a121f55e67a36c24}{remove}}<\mbox{\hyperlink{structChaseMode}{ChaseMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00051}00051\ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structScatterMode}{ScatterMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00052}00052\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00053}00053\ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00055}\mbox{\hyperlink{change__ghost__mode_8cpp_a126eca17140a77b77b821cfae4998587}{00055}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{change__ghost__mode_8cpp_a126eca17140a77b77b821cfae4998587}{ghostChase}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00056}00056\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structGhost}{Ghost}},\ \mbox{\hyperlink{structScatterMode}{ScatterMode}}>();}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00057}00057\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00058}00058\ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a44f5eac6fa4d1999a121f55e67a36c24}{remove}}<\mbox{\hyperlink{structScatterMode}{ScatterMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00059}00059\ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structChaseMode}{ChaseMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00060}00060\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{change__ghost__mode_8cpp_source_l00061}00061\ \}}
+
+\end{DoxyCode}

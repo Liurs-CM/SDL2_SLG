@@ -1,0 +1,18 @@
+<map id="entt::storage::erase" name="entt::storage::erase">
+<area shape="rect" id="Node000001" title="Removes an entity from a storage and destroys its object." alt="" coords="5,74,155,99"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="203,98,373,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,92,189,96,189,102,155,98"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="203,35,373,60"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="149,71,205,60,206,66,150,76"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="421,123,611,148"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="374,117,408,121,408,126,374,123"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="659,72,829,98"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="373,103,645,88,645,93,374,108"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="661,123,827,148"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="315,121,364,142,422,158,489,165,556,164,620,158,675,149,676,154,621,163,557,170,488,171,421,164,362,147,313,126"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="574,120,672,98,674,103,575,126"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="611,133,647,133,647,138,611,138"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="323,58,470,116,468,121,321,63"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="329,32,385,19,456,7,534,3,573,6,611,13,668,35,715,62,713,67,666,40,610,18,572,12,534,9,457,12,387,24,331,38"/>
+<area shape="poly" id="edge10_Node000006_Node000005" title=" " alt="" coords="355,58,664,118,663,123,354,63"/>
+</map>

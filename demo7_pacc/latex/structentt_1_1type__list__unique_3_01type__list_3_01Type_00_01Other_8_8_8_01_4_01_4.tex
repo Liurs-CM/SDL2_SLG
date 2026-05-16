@@ -1,0 +1,57 @@
+\doxysection{entt\+::type\+\_\+list\+\_\+unique\texorpdfstring{$<$}{<} type\+\_\+list\texorpdfstring{$<$}{<} Type, Other... \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4}{}\label{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4}\index{entt::type\_list\_unique$<$ type\_list$<$ Type, Other... $>$ $>$@{entt::type\_list\_unique$<$ type\_list$<$ Type, Other... $>$ $>$}}
+
+
+Removes duplicates types from a type list.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+traits.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4_a378823486aa4e4f288b1d73b2703c485}{type}} = std\+::conditional\+\_\+t$<$ std\+::disjunction\+\_\+v$<$ std\+::is\+\_\+same$<$ Type, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}} $>$... $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1type__list__unique}{type\+\_\+list\+\_\+unique}}$<$ \mbox{\hyperlink{structentt_1_1type__list}{type\+\_\+list}}$<$ Other... $>$ $>$\+::type, \mbox{\hyperlink{namespaceentt_a546467a3662e9a915d5d519ad565e801}{type\+\_\+list\+\_\+cat\+\_\+t}}$<$ \mbox{\hyperlink{structentt_1_1type__list}{type\+\_\+list}}$<$ Type $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1type__list__unique}{type\+\_\+list\+\_\+unique}}$<$ \mbox{\hyperlink{structentt_1_1type__list}{type\+\_\+list}}$<$ Other... $>$ $>$\+::type $>$ $>$
+\begin{DoxyCompactList}\small\item\em A type list without duplicate types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type, typename... Other$>$\newline
+struct entt\+::type\+\_\+list\+\_\+unique$<$ type\+\_\+list$<$ Type, Other... $>$ $>$}
+Removes duplicates types from a type list. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & One of the types provided by the given type list. \\
+\hline
+{\em Other} & The other types provided by the given type list. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{type__traits_8hpp_source}{type\+\_\+traits.\+hpp}} 第 \mbox{\hyperlink{type__traits_8hpp_source_l00142}{142}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4_a378823486aa4e4f288b1d73b2703c485}\label{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4_a378823486aa4e4f288b1d73b2703c485} 
+\index{entt::type\_list\_unique$<$ type\_list$<$ Type, Other... $>$ $>$@{entt::type\_list\_unique$<$ type\_list$<$ Type, Other... $>$ $>$}!type@{type}}
+\index{type@{type}!entt::type\_list\_unique$<$ type\_list$<$ Type, Other... $>$ $>$@{entt::type\_list\_unique$<$ type\_list$<$ Type, Other... $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , typename... Other$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1type__list__unique}{entt\+::type\+\_\+list\+\_\+unique}}$<$ \mbox{\hyperlink{structentt_1_1type__list}{type\+\_\+list}}$<$ Type, Other... $>$ $>$\+::type =  std\+::conditional\+\_\+t$<$ std\+::disjunction\+\_\+v$<$std\+::is\+\_\+same$<$Type, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}}$>$...$>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1type__list__unique}{type\+\_\+list\+\_\+unique}}$<$\mbox{\hyperlink{structentt_1_1type__list}{type\+\_\+list}}$<$Other...$>$ $>$\+::type, \mbox{\hyperlink{namespaceentt_a546467a3662e9a915d5d519ad565e801}{type\+\_\+list\+\_\+cat\+\_\+t}}$<$\mbox{\hyperlink{structentt_1_1type__list}{type\+\_\+list}}$<$Type$>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1type__list__unique}{type\+\_\+list\+\_\+unique}}$<$\mbox{\hyperlink{structentt_1_1type__list}{type\+\_\+list}}$<$Other...$>$ $>$\+::type$>$ $>$}
+
+
+
+A type list without duplicate types. 
+
+
+
+在文件 \mbox{\hyperlink{type__traits_8hpp_source}{type\+\_\+traits.\+hpp}} 第 \mbox{\hyperlink{type__traits_8hpp_source_l00144}{144}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{type__traits_8hpp}{type\+\_\+traits.\+hpp}}\end{DoxyCompactItemize}

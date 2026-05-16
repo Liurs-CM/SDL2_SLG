@@ -1,0 +1,1367 @@
+\doxysection{entt\+::sparse\+\_\+set\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1sparse__set}{}\label{classentt_1_1sparse__set}\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+
+
+Basic sparse set implementation.  
+
+
+
+
+{\ttfamily \#include $<$sparse\+\_\+set.\+hpp$>$}
+
+
+
+类 entt\+::sparse\+\_\+set\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classentt_1_1sparse__set_1_1sparse__set__iterator}{sparse\+\_\+set\+\_\+iterator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} = std\+::size\+\_\+t
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} = \mbox{\hyperlink{classentt_1_1sparse__set_1_1sparse__set__iterator}{sparse\+\_\+set\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em Random access iterator type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a8ef544aaed30126797f6f0b9a9f8b9e8}{sparse\+\_\+set}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_af8f4f137b5ac0984599067d5408db5bf}{sparse\+\_\+set}} (\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{classentt_1_1sparse__set_a2ea4731d5a2e22f4bd43f8e19ca39f58}{\texorpdfstring{$\sim$}{\string~}sparse\+\_\+set}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \& \mbox{\hyperlink{classentt_1_1sparse__set_a4151494f59d34d78496f3ae0b894d9ce}{operator=}} (\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7}{reserve}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{cap}})
+\begin{DoxyCompactList}\small\item\em Increases the capacity of a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_a30267005e552fce0d2a9b4e4d70d6656}{capacity}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the number of elements that a sparse set has currently allocated space for. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda}{shrink\+\_\+to\+\_\+fit}} ()
+\begin{DoxyCompactList}\small\item\em Requests the removal of unused capacity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_af79345df59154e5ea9e58b7efa7ff8f0}{extent}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the extent of a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190}{size}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the number of elements in a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set_ae1a16cb354a9ed5ded92b6edcddce15e}{empty}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks whether a sparse set is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18}{data}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Direct access to the internal packed array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set_a6cdea3ee010c525259e68158f3a06092}{begin}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the beginning. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc}{end}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the end. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825}{find}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Finds an entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5}{contains}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if a sparse set contains an entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7}{has}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if a sparse set contains an entity.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46}{index}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the position of an entity in a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06}{emplace}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Assigns an entity to a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f}{construct}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Assigns an entity to a sparse set.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac}{insert}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}})
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a sparse set. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c}{construct}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}})
+\begin{DoxyCompactList}\small\item\em Assigns one or more entities to a sparse set.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e}{erase}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Removes an entity from a sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ab69719626bee1add76096046db86a170}{destroy}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} entt)
+\begin{DoxyCompactList}\small\item\em Removes an entity from a sparse set.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c}{swap}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{lhs}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{rhs}})
+\begin{DoxyCompactList}\small\item\em Swaps two entities in the internal packed array. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}  = std\+\_\+sort, typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ad64875d6e1981746f853d8cb62af15d8}{sort}} (\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{compare}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{algo}}=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}\{\}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Sort elements according to the given comparison function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Apply}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}  = std\+\_\+sort, typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_adfef629658fc966c643167af7079d3c5}{arrange}} (\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Apply}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{apply}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{compare}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{algo}}=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}\{\}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Sort elements according to the given comparison function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a}{respect}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}})
+\begin{DoxyCompactList}\small\item\em Sort entities according to their order in another sparse set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9}{clear}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Clears a sparse set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a7aa7735bf27c87cfd3febc2ed99037dc}{traits\+\_\+type}} = \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+\_\+traits}}$<$ std\+::underlying\+\_\+type\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ $>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set_a20a086e4bfea5c8fe04fa7066195ed10}{page\+\_\+type}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}\mbox{[}$\,$\mbox{]}$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b}{page}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58}{offset}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} entt) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1sparse__set_a20a086e4bfea5c8fe04fa7066195ed10}{page\+\_\+type}} \& \mbox{\hyperlink{classentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd}{assure}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} std\+::size\+\_\+t \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{pos}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classentt_1_1sparse__set_a20a086e4bfea5c8fe04fa7066195ed10}{page\+\_\+type}} $>$ \mbox{\hyperlink{classentt_1_1sparse__set_ae742cfd51bda38eac667a7e5d54b6569}{sparse}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} $>$ \mbox{\hyperlink{classentt_1_1sparse__set_ab2f4f25f5ed77c50bab7b7b694d0e2cf}{packed}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1sparse__set_ad9cab790fb04692b3b40b85c81d19374}{entt\+\_\+per\+\_\+page}} = \mbox{\hyperlink{config_8h_a27277c78b1ff633a5ade50a5138c441a}{ENTT\+\_\+\+PAGE\+\_\+\+SIZE}} / \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$\newline
+class entt\+::sparse\+\_\+set$<$ Entity $>$}
+Basic sparse set implementation. 
+
+Sparse set or packed array or whatever is the name users give it.~\newline
+ Two arrays\+: an {\itshape external} one and an {\itshape internal} one; a {\itshape sparse} one and a {\itshape packed} one; one used for direct access through contiguous memory, the other one used to get the data through an extra level of indirection.~\newline
+ This is largely used by the registry to offer users the fastest access ever to the components. Views and groups in general are almost entirely designed around sparse sets.
+
+This type of data structure is widely documented in the literature and on the web. This is nothing more than a customized implementation suitable for the purpose of the framework.
+
+\begin{DoxyNote}{注解}
+There are no guarantees that entities are returned in the insertion order when iterate a sparse set. Do not make assumption on the order in any case.
+
+Internal data structures arrange elements to maximize performance. Because of that, there are no guarantees that elements have the expected order when iterate directly the internal packed array (see {\ttfamily data} and {\ttfamily size} member functions for that). Use {\ttfamily begin} and {\ttfamily end} instead.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Entity} & A valid entity type (see \doxylink{structentt_1_1entt__traits}{entt\+\_\+traits} for more details). \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00048}{48}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}\label{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!entity\_type@{entity\_type}}
+\index{entity\_type@{entity\_type}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_type}{entity\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::entity\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}}
+
+
+
+Underlying entity identifier. 
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00183}{183}} 行定义.
+
+\Hypertarget{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}\label{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::iterator =  \mbox{\hyperlink{classentt_1_1sparse__set_1_1sparse__set__iterator}{sparse\+\_\+set\+\_\+iterator}}}
+
+
+
+Random access iterator type. 
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00187}{187}} 行定义.
+
+\Hypertarget{classentt_1_1sparse__set_a20a086e4bfea5c8fe04fa7066195ed10}\label{classentt_1_1sparse__set_a20a086e4bfea5c8fe04fa7066195ed10} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!page\_type@{page\_type}}
+\index{page\_type@{page\_type}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{page\_type}{page\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::page\+\_\+type =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}\mbox{[}$\,$\mbox{]}$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00053}{53}} 行定义.
+
+\Hypertarget{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}\label{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::size\+\_\+type =  std\+::size\+\_\+t}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00185}{185}} 行定义.
+
+\Hypertarget{classentt_1_1sparse__set_a7aa7735bf27c87cfd3febc2ed99037dc}\label{classentt_1_1sparse__set_a7aa7735bf27c87cfd3febc2ed99037dc} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!traits\_type@{traits\_type}}
+\index{traits\_type@{traits\_type}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{traits\_type}{traits\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::traits\+\_\+type =  \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+\_\+traits}}$<$std\+::underlying\+\_\+type\+\_\+t$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}$>$ $>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00052}{52}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1sparse__set_a8ef544aaed30126797f6f0b9a9f8b9e8}\label{classentt_1_1sparse__set_a8ef544aaed30126797f6f0b9a9f8b9e8} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!sparse\_set@{sparse\_set}}
+\index{sparse\_set@{sparse\_set}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_set()}{sparse\_set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::sparse\+\_\+set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\Hypertarget{classentt_1_1sparse__set_af8f4f137b5ac0984599067d5408db5bf}\label{classentt_1_1sparse__set_af8f4f137b5ac0984599067d5408db5bf} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!sparse\_set@{sparse\_set}}
+\index{sparse\_set@{sparse\_set}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{sparse\_set()}{sparse\_set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::sparse\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move constructor. 
+
+\Hypertarget{classentt_1_1sparse__set_a2ea4731d5a2e22f4bd43f8e19ca39f58}\label{classentt_1_1sparse__set_a2ea4731d5a2e22f4bd43f8e19ca39f58} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!````~sparse\_set@{\texorpdfstring{$\sim$}{\string~}sparse\_set}}
+\index{````~sparse\_set@{\texorpdfstring{$\sim$}{\string~}sparse\_set}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}sparse\_set()}{\string~sparse\_set()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1sparse__set_adfef629658fc966c643167af7079d3c5}\label{classentt_1_1sparse__set_adfef629658fc966c643167af7079d3c5} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!arrange@{arrange}}
+\index{arrange@{arrange}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{arrange()}{arrange()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Apply}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}  = std\+\_\+sort, typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::arrange (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}}}]{first,  }\item[{\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}}}]{last,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Apply}}}]{apply,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}}}]{compare,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}}]{algo = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}\{\}},  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sort elements according to the given comparison function. 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classentt_1_1sparse__set_ad64875d6e1981746f853d8cb62af15d8}{sort}
+\end{DoxySeeAlso}
+This function is a slightly slower version of {\ttfamily sort} that invokes the caller to indicate which entities are swapped.~\newline
+ It\textquotesingle{}s recommended when the caller wants to sort its own data structures to align them with the order induced in the sparse set.
+
+The signature of the callback should be equivalent to the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Apply} & Type of function object to invoke to notify the caller. \\
+\hline
+{\em Compare} & Type of comparison function object. \\
+\hline
+{\em Sort} & Type of sort function object. \\
+\hline
+{\em Args} & Types of arguments to forward to the sort function object. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em first} & An iterator to the first element of the range to sort. \\
+\hline
+{\em last} & An iterator past the last element of the range to sort. \\
+\hline
+{\em apply} & A valid function object to use as a callback. \\
+\hline
+{\em compare} & A valid comparison function object. \\
+\hline
+{\em algo} & A valid sort function object. \\
+\hline
+{\em args} & Arguments to forward to the sort function object, if any. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00556}{556}} 行定义.
+
+\Hypertarget{classentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd}\label{classentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!assure@{assure}}
+\index{assure@{assure}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{assure()}{assure()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a20a086e4bfea5c8fe04fa7066195ed10}{page\+\_\+type}} \& \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::assure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00165}{165}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00050}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::entt\+\_\+per\+\_\+page}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{entity_8hpp_source_l00174}{entt\+::null}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00379}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::emplace()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00405}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::insert()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a6cdea3ee010c525259e68158f3a06092}\label{classentt_1_1sparse__set_a6cdea3ee010c525259e68158f3a06092} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!begin@{begin}}
+\index{begin@{begin}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an iterator to the beginning. 
+
+The returned iterator points to the first entity of the internal packed array. If the sparse set is empty, the returned iterator will be equal to {\ttfamily \doxylink{classentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc}{end()}}.
+
+\begin{DoxyNote}{注解}
+Random access iterators stay true to the order imposed by a call to {\ttfamily respect}.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+An iterator to the first entity of the internal packed array. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00301}{301}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}.
+
+\Hypertarget{classentt_1_1sparse__set_a30267005e552fce0d2a9b4e4d70d6656}\label{classentt_1_1sparse__set_a30267005e552fce0d2a9b4e4d70d6656} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of elements that a sparse set has currently allocated space for. 
+
+\begin{DoxyReturn}{返回}
+Capacity of the sparse set. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00218}{218}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}.
+
+\Hypertarget{classentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9}\label{classentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!clear@{clear}}
+\index{clear@{clear}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears a sparse set. 
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00623}{623}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00507}{entt\+::storage$<$ Entity, Type, typename $>$\+::clear()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f}\label{classentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!construct@{construct}}
+\index{construct@{construct}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns an entity to a sparse set.   
+
+\begin{DoxyWarning}{警告}
+Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier.   \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00387}{387}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00379}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::emplace()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c}\label{classentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!construct@{construct}}
+\index{construct@{construct}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{first,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns one or more entities to a sparse set.   
+
+\begin{DoxyWarning}{警告}
+Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em It} & Type of input iterator. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em first} & An iterator to the first element of the range of entities. \\
+\hline
+{\em last} & An iterator past the last element of the range of entities.   \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00419}{419}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00405}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::insert()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5}\label{classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!contains@{contains}}
+\index{contains@{contains}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a sparse set contains an entity. 
+
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+True if the sparse set contains the entity, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{339}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_8hpp_source_l00174}{entt\+::null}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::offset()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::page()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00379}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00434}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::erase()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00330}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::find()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00347}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::has()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00363}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::index()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00405}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::insert()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00601}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::respect()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00296}{entt\+::storage$<$ Entity, Type, typename $>$\+::try\+\_\+get()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18}\label{classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!data@{data}}
+\index{data@{data}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Direct access to the internal packed array. 
+
+The returned pointer is such that range {\ttfamily \mbox{[}\doxylink{classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18}{data()}, \doxylink{classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18}{data()} + \doxylink{classentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190}{size()}\mbox{]}} is always a valid range, even if the container is empty.
+
+\begin{DoxyNote}{注解}
+There are no guarantees on the order, even though {\ttfamily respect} has been previously invoked. Internal data structures arrange elements to maximize performance. Accessing them directly gives a performance boost but less guarantees. Use {\ttfamily begin} and {\ttfamily end} if you want to iterate the sparse set in the expected order.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+A pointer to the internal packed array. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00284}{284}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{registry_8hpp_source_l00160}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::group\+\_\+handler$<$ exclude\+\_\+t$<$ Exclude... $>$, get\+\_\+t$<$ Get... $>$, Owned... $>$\+::discard\+\_\+if()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00140}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::group\+\_\+handler$<$ exclude\+\_\+t$<$ Exclude... $>$, get\+\_\+t$<$ Get... $>$, Owned... $>$\+::maybe\+\_\+valid\+\_\+if()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_ab69719626bee1add76096046db86a170}\label{classentt_1_1sparse__set_ab69719626bee1add76096046db86a170} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!destroy@{destroy}}
+\index{destroy@{destroy}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes an entity from a sparse set.   
+
+\begin{DoxyWarning}{警告}
+Attempting to remove an entity that doesn\textquotesingle{}t belong to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn\textquotesingle{}t contain the given entity.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier.   \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00446}{446}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00434}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::erase()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_ab69719626bee1add76096046db86a170_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06}\label{classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!emplace@{emplace}}
+\index{emplace@{emplace}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{emplace()}{emplace()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::emplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns an entity to a sparse set. 
+
+\begin{DoxyWarning}{警告}
+Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00379}{379}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00165}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::assure()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::offset()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::page()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00387}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::construct()}}, \mbox{\hyperlink{storage_8hpp_source_l00323}{entt\+::storage$<$ Entity, Type, typename $>$\+::emplace()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00545}{entt\+::storage$<$ Entity, Type, std\+::enable\+\_\+if\+\_\+t$<$ ENTT\+\_\+\+IS\+\_\+\+EMPTY(\+Type)$>$ $>$\+::emplace()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_ae1a16cb354a9ed5ded92b6edcddce15e}\label{classentt_1_1sparse__set_ae1a16cb354a9ed5ded92b6edcddce15e} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!empty@{empty}}
+\index{empty@{empty}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks whether a sparse set is empty. 
+
+\begin{DoxyReturn}{返回}
+True if the sparse set is empty, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00265}{265}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}.
+
+\Hypertarget{classentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc}\label{classentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!end@{end}}
+\index{end@{end}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an iterator to the end. 
+
+The returned iterator points to the element following the last entity in the internal packed array. Attempting to dereference the returned iterator results in undefined behavior.
+
+\begin{DoxyNote}{注解}
+Random access iterators stay true to the order imposed by a call to {\ttfamily respect}.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+An iterator to the element following the last entity of the internal packed array. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00320}{320}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00330}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::find()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e}\label{classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!erase@{erase}}
+\index{erase@{erase}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes an entity from a sparse set. 
+
+\begin{DoxyWarning}{警告}
+Attempting to remove an entity that doesn\textquotesingle{}t belong to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn\textquotesingle{}t contain the given entity.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00434}{434}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{entity_8hpp_source_l00174}{entt\+::null}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::offset()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::page()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00446}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::destroy()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00410}{entt\+::storage$<$ Entity, Type, typename $>$\+::erase()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_af79345df59154e5ea9e58b7efa7ff8f0}\label{classentt_1_1sparse__set_af79345df59154e5ea9e58b7efa7ff8f0} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!extent@{extent}}
+\index{extent@{extent}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{extent()}{extent()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the extent of a sparse set. 
+
+The extent of a sparse set is also the size of the internal sparse array. There is no guarantee that the internal packed array has the same size. Usually the size of the internal sparse array is equal or greater than the one of the internal packed array.
+
+\begin{DoxyReturn}{返回}
+Extent of the sparse set. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00243}{243}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00050}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::entt\+\_\+per\+\_\+page}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+\Hypertarget{classentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825}\label{classentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!find@{find}}
+\index{find@{find}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds an entity. 
+
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An iterator to the given entity if it\textquotesingle{}s found, past the end iterator otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00330}{330}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00320}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::end()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00363}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::index()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7}\label{classentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!has@{has}}
+\index{has@{has}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a sparse set contains an entity.   
+
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+True if the sparse set contains the entity, false otherwise.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00347}{347}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46}\label{classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!index@{index}}
+\index{index@{index}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{entt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the position of an entity in a sparse set. 
+
+\begin{DoxyWarning}{警告}
+Attempting to get the position of an entity that doesn\textquotesingle{}t belong to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn\textquotesingle{}t contain the given entity.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{参数}
+{\em entt} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The position of the entity in the sparse set. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00363}{363}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::offset()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::page()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00410}{entt\+::storage$<$ Entity, Type, typename $>$\+::erase()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00330}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::find()}}, \mbox{\hyperlink{storage_8hpp_source_l00282}{entt\+::storage$<$ Entity, Type, typename $>$\+::get()}}, \mbox{\hyperlink{storage_8hpp_source_l00435}{entt\+::storage$<$ Entity, Type, typename $>$\+::swap()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00296}{entt\+::storage$<$ Entity, Type, typename $>$\+::try\+\_\+get()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac}\label{classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!insert@{insert}}
+\index{insert@{insert}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{first,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns one or more entities to a sparse set. 
+
+\begin{DoxyWarning}{警告}
+Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em It} & Type of input iterator. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em first} & An iterator to the first element of the range of entities. \\
+\hline
+{\em last} & An iterator past the last element of the range of entities. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00405}{405}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00165}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::assure()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::offset()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::page()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00419}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::construct()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00385}{entt\+::storage$<$ Entity, Type, typename $>$\+::insert()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58}\label{classentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!offset@{offset}}
+\index{offset@{offset}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{offset()}{offset()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}}]{entt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{161}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00050}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::entt\+\_\+per\+\_\+page}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00379}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00434}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::erase()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00363}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::index()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00405}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::insert()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00465}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::swap()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a4151494f59d34d78496f3ae0b894d9ce}\label{classentt_1_1sparse__set_a4151494f59d34d78496f3ae0b894d9ce} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}} \& \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move assignment operator. 
+
+\begin{DoxyReturn}{返回}
+This sparse set. 
+\end{DoxyReturn}
+\Hypertarget{classentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b}\label{classentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!page@{page}}
+\index{page@{page}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{page()}{page()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}}]{entt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{157}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00050}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::entt\+\_\+per\+\_\+page}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00379}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00434}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::erase()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00363}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::index()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00405}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::insert()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00465}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::swap()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7}\label{classentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!reserve@{reserve}}
+\index{reserve@{reserve}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::reserve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}}}]{cap }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increases the capacity of a sparse set. 
+
+If the new capacity is greater than the current capacity, new storage is allocated, otherwise the method does nothing.
+
+
+\begin{DoxyParams}{参数}
+{\em cap} & Desired capacity. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00209}{209}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00179}{entt\+::storage$<$ Entity, Type, typename $>$\+::reserve()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a}\label{classentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!respect@{respect}}
+\index{respect@{respect}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{respect()}{respect()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::respect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set}{sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sort entities according to their order in another sparse set. 
+
+Entities that are part of both the sparse sets are ordered internally according to the order they have in {\ttfamily other}. All the other entities goes to the end of the list and there are no guarantees on their order.~\newline
+ In other terms, this function can be used to impose the same order on two sets by using one of them as a master and the other one as a slave.
+
+Iterating the sparse set with a couple of iterators returns elements in the expected order after a call to {\ttfamily respect}. See {\ttfamily begin} and {\ttfamily end} for more details.
+
+\begin{DoxyNote}{注解}
+Attempting to iterate elements using a raw pointer returned by a call to {\ttfamily data} gives no guarantees on the order, even though {\ttfamily respect} has been invoked.
+\end{DoxyNote}
+
+\begin{DoxyParams}{参数}
+{\em other} & The sparse sets that imposes the order of the entities. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00601}{601}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00465}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::swap()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda}\label{classentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!shrink\_to\_fit@{shrink\_to\_fit}}
+\index{shrink\_to\_fit@{shrink\_to\_fit}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{shrink\_to\_fit()}{shrink\_to\_fit()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::shrink\+\_\+to\+\_\+fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Requests the removal of unused capacity. 
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00223}{223}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00185}{entt\+::storage$<$ Entity, Type, typename $>$\+::shrink\+\_\+to\+\_\+fit()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190}\label{classentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!size@{size}}
+\index{size@{size}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1sparse__set_a3d2138b0eb8c7ac968e9e38a9e981ec1}{size\+\_\+type}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of elements in a sparse set. 
+
+The number of elements is also the size of the internal packed array. There is no guarantee that the internal sparse array has the same size. Usually the size of the internal sparse array is equal or greater than the one of the internal packed array.
+
+\begin{DoxyReturn}{返回}
+Number of elements. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00257}{257}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00237}{entt\+::storage$<$ Entity, Type, typename $>$\+::begin()}}, \mbox{\hyperlink{view_8hpp_source_l00157}{entt\+::basic\+\_\+view$<$ Entity, exclude\+\_\+t$<$ Exclude... $>$, Component... $>$\+::candidate()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00226}{entt\+::storage$<$ Entity, Type, typename $>$\+::cbegin()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1sparse__set_ad64875d6e1981746f853d8cb62af15d8}\label{classentt_1_1sparse__set_ad64875d6e1981746f853d8cb62af15d8} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!sort@{sort}}
+\index{sort@{sort}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}  = std\+\_\+sort, typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}}}]{first,  }\item[{\mbox{\hyperlink{classentt_1_1sparse__set_a22cf39bf66b858f1d1d0f1e6fedb8fe1}{iterator}}}]{last,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}}}]{compare,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}}]{algo = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Sort}}\{\}},  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sort elements according to the given comparison function. 
+
+Sort the elements so that iterating the range with a couple of iterators returns them in the expected order. See {\ttfamily begin} and {\ttfamily end} for more details.
+
+The comparison function object must return {\ttfamily true} if the first element is {\itshape less} than the second one, {\ttfamily false} otherwise. The signature of the comparison function should be equivalent to the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}});}
+
+\end{DoxyCode}
+
+
+Moreover, the comparison function object shall induce a {\itshape strict weak ordering} on the values.
+
+The sort function oject must offer a member function template {\ttfamily \doxylink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{operator()}} that accepts three arguments\+:
+
+
+\begin{DoxyItemize}
+\item An iterator to the first element of the range to sort.
+\item An iterator past the last element of the range to sort.
+\item A comparison function to use to compare the elements.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Attempting to iterate elements using a raw pointer returned by a call to {\ttfamily data} gives no guarantees on the order, even though {\ttfamily sort} has been invoked.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Compare} & Type of comparison function object. \\
+\hline
+{\em Sort} & Type of sort function object. \\
+\hline
+{\em Args} & Types of arguments to forward to the sort function object. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em first} & An iterator to the first element of the range to sort. \\
+\hline
+{\em last} & An iterator past the last element of the range to sort. \\
+\hline
+{\em compare} & A valid comparison function object. \\
+\hline
+{\em algo} & A valid sort function object. \\
+\hline
+{\em args} & Arguments to forward to the sort function object, if any. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00512}{512}} 行定义.
+
+\Hypertarget{classentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c}\label{classentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!swap@{swap}}
+\index{swap@{swap}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{lhs,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Swaps two entities in the internal packed array. 
+
+For what it\textquotesingle{}s worth, this function affects both the internal sparse array and the internal packed array. Users should not care of that anyway.
+
+\begin{DoxyWarning}{警告}
+Attempting to swap entities that don\textquotesingle{}t belong to the sparse set results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn\textquotesingle{}t contain the given entities.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{参数}
+{\em lhs} & A valid entity identifier. \\
+\hline
+{\em rhs} & A valid entity identifier. \\
+\hline
+\end{DoxyParams}
+
+
+被 \mbox{\hyperlink{classentt_1_1storage_ad98116de758a54b3b6df89f19d968e40}{entt\+::storage$<$ Entity, Type, typename $>$}} , 以及 \mbox{\hyperlink{classentt_1_1storage_ad98116de758a54b3b6df89f19d968e40}{entt\+::storage$<$ Entity, Component $>$}} 重载.
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00465}{465}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::offset()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::packed}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::page()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::sparse}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00601}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::respect()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00435}{entt\+::storage$<$ Entity, Type, typename $>$\+::swap()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1sparse__set_ad9cab790fb04692b3b40b85c81d19374}\label{classentt_1_1sparse__set_ad9cab790fb04692b3b40b85c81d19374} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!entt\_per\_page@{entt\_per\_page}}
+\index{entt\_per\_page@{entt\_per\_page}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entt\_per\_page}{entt\_per\_page}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::entt\+\_\+per\+\_\+page = \mbox{\hyperlink{config_8h_a27277c78b1ff633a5ade50a5138c441a}{ENTT\+\_\+\+PAGE\+\_\+\+SIZE}} / \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{sizeof}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00050}{50}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00165}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::assure()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00243}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::extent()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00161}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::offset()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00157}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::page()}}.
+
+\Hypertarget{classentt_1_1sparse__set_ab2f4f25f5ed77c50bab7b7b694d0e2cf}\label{classentt_1_1sparse__set_ab2f4f25f5ed77c50bab7b7b694d0e2cf} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!packed@{packed}}
+\index{packed@{packed}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{packed}{packed}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+std\+::vector$<$\mbox{\hyperlink{classentt_1_1sparse__set_a9a1dbe5ab2dbb098beae0bff56bbf780}{entity\+\_\+type}}$>$ \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::packed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00630}{630}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00301}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::begin()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00218}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::capacity()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00623}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::clear()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00284}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::data()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00379}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00265}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::empty()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00320}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::end()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00434}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::erase()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00405}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::insert()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00209}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::reserve()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00601}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::respect()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00223}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::shrink\+\_\+to\+\_\+fit()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00257}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::size()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00465}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::swap()}}.
+
+\Hypertarget{classentt_1_1sparse__set_ae742cfd51bda38eac667a7e5d54b6569}\label{classentt_1_1sparse__set_ae742cfd51bda38eac667a7e5d54b6569} 
+\index{entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}!sparse@{sparse}}
+\index{sparse@{sparse}!entt::sparse\_set$<$ Entity $>$@{entt::sparse\_set$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{sparse}{sparse}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \\
+std\+::vector$<$\mbox{\hyperlink{classentt_1_1sparse__set_a20a086e4bfea5c8fe04fa7066195ed10}{page\+\_\+type}}$>$ \mbox{\hyperlink{classentt_1_1sparse__set}{entt\+::sparse\+\_\+set}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$\+::sparse\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sparse__set_8hpp_source}{sparse\+\_\+set.\+hpp}} 第 \mbox{\hyperlink{sparse__set_8hpp_source_l00629}{629}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sparse__set_8hpp_source_l00165}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::assure()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00623}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::clear()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00339}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::contains()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00434}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::erase()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00243}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::extent()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00363}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::index()}}, \mbox{\hyperlink{sparse__set_8hpp_source_l00223}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::shrink\+\_\+to\+\_\+fit()}} , 以及 \mbox{\hyperlink{sparse__set_8hpp_source_l00465}{entt\+::sparse\+\_\+set$<$ Entity $>$\+::swap()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{sparse__set_8hpp}{sparse\+\_\+set.\+hpp}}\end{DoxyCompactItemize}

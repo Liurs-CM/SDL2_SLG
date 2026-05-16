@@ -1,0 +1,49 @@
+\doxysection{third\+\_\+party/entt/entity/helper.hpp 文件参考}
+\hypertarget{helper_8hpp}{}\label{helper_8hpp}\index{third\_party/entt/entity/helper.hpp@{third\_party/entt/entity/helper.hpp}}
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include "{}../config/config.\+h"{}}\newline
+{\ttfamily \#include "{}../core/type\+\_\+traits.\+hpp"{}}\newline
+{\ttfamily \#include "{}../signal/delegate.\+hpp"{}}\newline
+{\ttfamily \#include "{}registry.\+hpp"{}}\newline
+{\ttfamily \#include "{}fwd.\+hpp"{}}\newline
+helper.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{helper_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{helper_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1as__view}{entt\+::as\+\_\+view$<$ Const, Entity $>$}}
+\begin{DoxyCompactList}\small\item\em Converts a registry to a view. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1as__group}{entt\+::as\+\_\+group$<$ Const, Entity $>$}}
+\begin{DoxyCompactList}\small\item\em Converts a registry to a group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceentt}{entt}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ }\\\mbox{\hyperlink{namespaceentt_a3fee75741468f7807d3d48dd807ee024}{entt\+::as\+\_\+view}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} -\/$>$ \mbox{\hyperlink{structentt_1_1as__view}{as\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ }\\\mbox{\hyperlink{namespaceentt_aac314d83c9af1077857f01975f086bed}{entt\+::as\+\_\+view}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} -\/$>$ \mbox{\hyperlink{structentt_1_1as__view}{as\+\_\+view}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{true}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$
+\begin{DoxyCompactList}\small\item\em Converts a registry to a view.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ }\\\mbox{\hyperlink{namespaceentt_a6609f31d6ab3f544ebf7d0413d007ead}{entt\+::as\+\_\+group}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} -\/$>$ \mbox{\hyperlink{structentt_1_1as__group}{as\+\_\+group}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8fce796266ac507c9b0c193a70f51745}{entt\+::as\+\_\+group}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} -\/$>$ \mbox{\hyperlink{structentt_1_1as__group}{as\+\_\+group}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{true}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$
+\begin{DoxyCompactList}\small\item\em Converts a registry to a group.   \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Member, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}  = entity$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{namespaceentt_aa512a354fe328df6be5a92eb43cd4d69}{entt\+::invoke}} (\mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} $>$ \&reg, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}} entt)
+\begin{DoxyCompactList}\small\item\em Helper to create a listener that directly invokes a member function. \end{DoxyCompactList}\end{DoxyCompactItemize}

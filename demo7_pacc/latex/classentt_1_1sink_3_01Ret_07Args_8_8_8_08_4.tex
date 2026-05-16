@@ -1,0 +1,578 @@
+\doxysection{entt\+::sink\texorpdfstring{$<$}{<} Ret(Args...)\texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4}{}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4}\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+
+
+Sink class.  
+
+
+
+
+{\ttfamily \#include $<$sigh.\+hpp$>$}
+
+
+
+entt\+::sink\texorpdfstring{$<$}{<} Ret(Args...)\texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a04540177a67694d12e9316ac0aef4e45}{sink}} (\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$ \&ref) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs a sink that is allowed to modify a given signal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a07679954660265dfbcffa34a25a6033f}{empty}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns false if at least a listener is connected to the sink. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Function$>$ }\\\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a039ae0c0999aa4e5c42620f08fe85591}{before}} ()
+\begin{DoxyCompactList}\small\item\em Returns a sink that connects before a given free function or an unbound member. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a7d761b31046aeb204a0392aa8b3fc2c1}{before}} (Type \&\&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}})
+\begin{DoxyCompactList}\small\item\em Returns a sink that connects before a free function with payload or a bound member. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aff2dec06fde148ab6f74ba8f5a4679c4}{before}} (Type \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}})
+\begin{DoxyCompactList}\small\item\em Returns a sink that connects before a given instance or specific payload. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ab8247ff409a75c0276dd003735247863}{before}} (Type \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}})
+\begin{DoxyCompactList}\small\item\em Returns a sink that connects before a given instance or specific payload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a80070f9124f7281cbaf5d01284445f9d}{before}} ()
+\begin{DoxyCompactList}\small\item\em Returns a sink that connects before anything else. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ }\\\mbox{\hyperlink{classentt_1_1connection}{connection}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_af6aaad88082bcdd3eb5788afafb6cc54}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Connects a free function or an unbound member to a signal. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1connection}{connection}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aae719e002ec4bad4aabb75d8b65007d0}{connect}} (Type \&\&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}})
+\begin{DoxyCompactList}\small\item\em Connects a free function with payload or a bound member to a signal. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ab0186e5614c746b3355119a8f1abc9d1}{disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects a free function or an unbound member from a signal. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aec3594281efafbee17ec0ba792aeb7e2}{disconnect}} (Type \&\&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}})
+\begin{DoxyCompactList}\small\item\em Disconnects a free function with payload or a bound member from a signal. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a6458671dfeb3dcc3cf30c9ffc4a580d8}{disconnect}} (Type \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}})
+\begin{DoxyCompactList}\small\item\em Disconnects free functions with payload or bound members from a signal. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ae5ee15c3d483a1bd4519d4e2398a3515}{disconnect}} (Type \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}})
+\begin{DoxyCompactList}\small\item\em Disconnects free functions with payload or bound members from a signal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a1f9b66d606a004485f535997c96c231a}{disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects all the listeners from a signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ac5ac62f2e24ad15ea7a573866192ea0d}{signal\+\_\+type}} = \mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a097e8bb9f431b4b6c482ee9a45bc60e5}{difference\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} std\+::iterator\+\_\+traits$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(\mbox{\hyperlink{classentt_1_1sigh_3_01Ret_07Args_8_8_8_08_4_a513d389c22a3229b2d20302869b1b3aa}{signal\+\_\+type\+::calls}})\+::iterator $>$\+::difference\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aa875d20e408d4e4aa660da971647d564}{release}} (Type \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a8dfd2b997ff14661a7f4a83fe8592eae}{signal}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aa3b418951b38a85110ea97c2fe184a54}{release}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a8dfd2b997ff14661a7f4a83fe8592eae}{signal}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a097e8bb9f431b4b6c482ee9a45bc60e5}{difference\+\_\+type}} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a300ba4fbbb26e710d8a0f3b5cb61582b}{offset}}
+\item 
+\mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ac5ac62f2e24ad15ea7a573866192ea0d}{signal\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a8dfd2b997ff14661a7f4a83fe8592eae}{signal}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}, typename... Args$>$\newline
+class entt\+::sink$<$ Ret(\+Args...)$>$}
+Sink class. 
+
+A sink is used to connect listeners to signals and to disconnect them.~\newline
+ The function type for a listener is the one of the signal to which it belongs.
+
+The clear separation between a signal and a sink permits to store the former as private data member without exposing the publish functionality to the users of the class.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Ret} & Return type of a function type. \\
+\hline
+{\em Args} & Types of arguments of a function type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00265}{265}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a097e8bb9f431b4b6c482ee9a45bc60e5}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a097e8bb9f431b4b6c482ee9a45bc60e5} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::difference\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} std\+::iterator\+\_\+traits$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(\mbox{\hyperlink{classentt_1_1sigh_3_01Ret_07Args_8_8_8_08_4_a513d389c22a3229b2d20302869b1b3aa}{signal\+\_\+type\+::calls}})\+::iterator$>$\+::difference\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00267}{267}} 行定义.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ac5ac62f2e24ad15ea7a573866192ea0d}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ac5ac62f2e24ad15ea7a573866192ea0d} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!signal\_type@{signal\_type}}
+\index{signal\_type@{signal\_type}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{signal\_type}{signal\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::signal\+\_\+type =  \mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00266}{266}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a04540177a67694d12e9316ac0aef4e45}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a04540177a67694d12e9316ac0aef4e45} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!sink@{sink}}
+\index{sink@{sink}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{sink()}{sink()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::sink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$ \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a sink that is allowed to modify a given signal. 
+
+
+\begin{DoxyParams}{参数}
+{\em ref} & A valid reference to a signal object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00284}{284}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a039ae0c0999aa4e5c42620f08fe85591}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a039ae0c0999aa4e5c42620f08fe85591} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!before@{before}}
+\index{before@{before}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Function$>$ \\
+\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::before (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a sink that connects before a given free function or an unbound member. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Function} & A valid free function pointer. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A properly initialized sink object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00304}{304}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a80070f9124f7281cbaf5d01284445f9d}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a80070f9124f7281cbaf5d01284445f9d} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!before@{before}}
+\index{before@{before}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::before (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a sink that connects before anything else. 
+
+\begin{DoxyReturn}{返回}
+A properly initialized sink object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00376}{376}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a7d761b31046aeb204a0392aa8b3fc2c1}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a7d761b31046aeb204a0392aa8b3fc2c1} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!before@{before}}
+\index{before@{before}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::before (\begin{DoxyParamCaption}\item[{Type \&\&}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a sink that connects before a free function with payload or a bound member. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Member or free function to look for. \\
+\hline
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid object that fits the purpose. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A properly initialized sink object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00325}{325}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aff2dec06fde148ab6f74ba8f5a4679c4}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aff2dec06fde148ab6f74ba8f5a4679c4} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!before@{before}}
+\index{before@{before}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::before (\begin{DoxyParamCaption}\item[{Type \&}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a sink that connects before a given instance or specific payload. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid object that fits the purpose. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A properly initialized sink object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00345}{345}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ab8247ff409a75c0276dd003735247863}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ab8247ff409a75c0276dd003735247863} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!before@{before}}
+\index{before@{before}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1sink}{sink}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::before (\begin{DoxyParamCaption}\item[{Type \texorpdfstring{$\ast$}{*}}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a sink that connects before a given instance or specific payload. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid pointer that fits the purpose. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A properly initialized sink object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00357}{357}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_af6aaad88082bcdd3eb5788afafb6cc54}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_af6aaad88082bcdd3eb5788afafb6cc54} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!connect@{connect}}
+\index{connect@{connect}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ \\
+\mbox{\hyperlink{classentt_1_1connection}{connection}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Connects a free function or an unbound member to a signal. 
+
+The signal handler performs checks to avoid multiple connections for the same function.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to connect to the signal. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+A properly initialized connection object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00392}{392}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aae719e002ec4bad4aabb75d8b65007d0}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aae719e002ec4bad4aabb75d8b65007d0} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!connect@{connect}}
+\index{connect@{connect}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1connection}{connection}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::connect (\begin{DoxyParamCaption}\item[{Type \&\&}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Connects a free function with payload or a bound member to a signal. 
+
+The signal isn\textquotesingle{}t responsible for the connected object or the payload. Users must always guarantee that the lifetime of the instance overcomes the one of the signal. On the other side, the signal handler performs checks to avoid multiple connections for the same function.~\newline
+ When used to connect a free function with payload, its signature must be such that the instance is the first argument before the ones used to define the signal itself.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to connect to the signal. \\
+\hline
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid object that fits the purpose. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A properly initialized connection object. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00422}{422}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ab0186e5614c746b3355119a8f1abc9d1}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ab0186e5614c746b3355119a8f1abc9d1} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disconnects a free function or an unbound member from a signal. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to disconnect from the signal. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00439}{439}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a1f9b66d606a004485f535997c96c231a}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a1f9b66d606a004485f535997c96c231a} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disconnects all the listeners from a signal. 
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00489}{489}} 行定义.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aec3594281efafbee17ec0ba792aeb7e2}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aec3594281efafbee17ec0ba792aeb7e2} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::disconnect (\begin{DoxyParamCaption}\item[{Type \&\&}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disconnects a free function with payload or a bound member from a signal. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to disconnect from the signal. \\
+\hline
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid object that fits the purpose. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00454}{454}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a6458671dfeb3dcc3cf30c9ffc4a580d8}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a6458671dfeb3dcc3cf30c9ffc4a580d8} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::disconnect (\begin{DoxyParamCaption}\item[{Type \&}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disconnects free functions with payload or bound members from a signal. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid object that fits the purpose. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00468}{468}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ae5ee15c3d483a1bd4519d4e2398a3515}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ae5ee15c3d483a1bd4519d4e2398a3515} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::disconnect (\begin{DoxyParamCaption}\item[{Type \texorpdfstring{$\ast$}{*}}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disconnects free functions with payload or bound members from a signal. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid object that fits the purpose. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00479}{479}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a07679954660265dfbcffa34a25a6033f}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a07679954660265dfbcffa34a25a6033f} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!empty@{empty}}
+\index{empty@{empty}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns false if at least a listener is connected to the sink. 
+
+\begin{DoxyReturn}{返回}
+True if the sink has no listeners connected, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00293}{293}} 行定义.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aa875d20e408d4e4aa660da971647d564}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aa875d20e408d4e4aa660da971647d564} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!release@{release}}
+\index{release@{release}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::release (\begin{DoxyParamCaption}\item[{Type}]{value\+\_\+or\+\_\+instance,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{signal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00270}{270}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aa3b418951b38a85110ea97c2fe184a54}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_aa3b418951b38a85110ea97c2fe184a54} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!release@{release}}
+\index{release@{release}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{signal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00275}{275}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a300ba4fbbb26e710d8a0f3b5cb61582b}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a300ba4fbbb26e710d8a0f3b5cb61582b} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!offset@{offset}}
+\index{offset@{offset}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a097e8bb9f431b4b6c482ee9a45bc60e5}{difference\+\_\+type}} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::offset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00494}{494}} 行定义.
+
+\Hypertarget{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a8dfd2b997ff14661a7f4a83fe8592eae}\label{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_a8dfd2b997ff14661a7f4a83fe8592eae} 
+\index{entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}!signal@{signal}}
+\index{signal@{signal}!entt::sink$<$ Ret(Args...)$>$@{entt::sink$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{signal}{signal}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1sink_3_01Ret_07Args_8_8_8_08_4_ac5ac62f2e24ad15ea7a573866192ea0d}{signal\+\_\+type}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1sink}{entt\+::sink}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::signal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{sigh_8hpp_source}{sigh.\+hpp}} 第 \mbox{\hyperlink{sigh_8hpp_source_l00495}{495}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/signal/\mbox{\hyperlink{sigh_8hpp}{sigh.\+hpp}}\end{DoxyCompactItemize}

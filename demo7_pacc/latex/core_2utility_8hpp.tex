@@ -1,0 +1,43 @@
+\doxysection{third\+\_\+party/entt/core/utility.hpp 文件参考}
+\hypertarget{core_2utility_8hpp}{}\label{core_2utility_8hpp}\index{third\_party/entt/core/utility.hpp@{third\_party/entt/core/utility.hpp}}
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include "{}../config/config.\+h"{}}\newline
+utility.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{core_2utility_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_2utility_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1identity}{entt\+::identity}}
+\begin{DoxyCompactList}\small\item\em Identity function object (waiting for C++20). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1overloaded}{entt\+::overloaded$<$ Func $>$}}
+\begin{DoxyCompactList}\small\item\em Helper type for visitors. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1y__combinator}{entt\+::y\+\_\+combinator$<$ Func $>$}}
+\begin{DoxyCompactList}\small\item\em Basic implementation of a y-\/combinator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceentt}{entt}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{namespaceentt_ae289e7f5640bb43223901039346e5ce0}{entt\+::overload}} (Type Class\+::\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{member}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constant utility to disambiguate overloaded members of a class. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{namespaceentt_a0b5d877510362b358a9e83b0222aca55}{entt\+::overload}} (Func \texorpdfstring{$\ast$}{*}func) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constant utility to disambiguate overloaded functions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class... Func$>$ }\\\mbox{\hyperlink{namespaceentt_a26eb67ac302229374c5fb623d529f5eb}{entt\+::overloaded}} (Func...) -\/$>$ \mbox{\hyperlink{structentt_1_1overloaded}{overloaded}}$<$ Func... $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+\doxysection{third\+\_\+party/entt/signal/delegate.hpp 文件参考}
+\hypertarget{delegate_8hpp}{}\label{delegate_8hpp}\index{third\_party/entt/signal/delegate.hpp@{third\_party/entt/signal/delegate.hpp}}
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include "{}../config/config.\+h"{}}\newline
+delegate.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{delegate_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{delegate_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1connect__arg__t}{entt\+::connect\+\_\+arg\+\_\+t$<$ auto $>$}}
+\begin{DoxyCompactList}\small\item\em Used to wrap a function or a member of a specified type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4}{entt\+::delegate$<$ Ret(\+Args...)$>$}}
+\begin{DoxyCompactList}\small\item\em Utility class to use to send around functions and members. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceentt}{entt}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{namespaceentt_a656b2ec80abf493ce1924b314d13fd18}{entt\+::operator!=}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$ \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{lhs}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$ \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{rhs}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Compares the contents of two delegates. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ }\\\mbox{\hyperlink{namespaceentt_afadf3d988bd61ff81745d4e105ee7698}{entt\+::delegate}} (\mbox{\hyperlink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}} $>$) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} -\/$>$ \mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ std\+::remove\+\_\+pointer\+\_\+t$<$ internal\+::function\+\_\+pointer\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}})$>$ $>$ $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_ac68d0082111ae45bbdd311cecf4f166e}{entt\+::delegate}} (\mbox{\hyperlink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}} $>$, Type \&\&) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} -\/$>$ \mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ std\+::remove\+\_\+pointer\+\_\+t$<$ internal\+::function\+\_\+pointer\+\_\+t$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}}), Type $>$ $>$ $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Func$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t}}$<$ Func $>$ \mbox{\hyperlink{namespaceentt_af1e73acd6f3d892955819677dc2664b7}{entt\+::connect\+\_\+arg}} \{\}
+\begin{DoxyCompactList}\small\item\em Constant of type \doxylink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t} used to disambiguate calls. \end{DoxyCompactList}\end{DoxyCompactItemize}

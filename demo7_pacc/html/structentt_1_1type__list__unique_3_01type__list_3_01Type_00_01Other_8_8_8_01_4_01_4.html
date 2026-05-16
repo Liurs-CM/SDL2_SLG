@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::type_list_unique&lt; type_list&lt; Type, Other... &gt; &gt; 模板结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4.html">type_list_unique&lt; type_list&lt; Type, Other... &gt; &gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::type_list_unique&lt; type_list&lt; Type, Other... &gt; &gt; 模板结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Removes duplicates types from a type list.  
+ <a href="structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="type__traits_8hpp_source.html">type_traits.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a378823486aa4e4f288b1d73b2703c485" id="r_a378823486aa4e4f288b1d73b2703c485"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4.html#a378823486aa4e4f288b1d73b2703c485">type</a> = std::conditional_t&lt; std::disjunction_v&lt; std::is_same&lt; Type, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Other</a> &gt;... &gt;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="structentt_1_1type__list__unique.html">type_list_unique</a>&lt; <a class="el" href="structentt_1_1type__list.html">type_list</a>&lt; Other... &gt; &gt;::type, <a class="el" href="namespaceentt.html#a546467a3662e9a915d5d519ad565e801">type_list_cat_t</a>&lt; <a class="el" href="structentt_1_1type__list.html">type_list</a>&lt; Type &gt;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="structentt_1_1type__list__unique.html">type_list_unique</a>&lt; <a class="el" href="structentt_1_1type__list.html">type_list</a>&lt; Other... &gt; &gt;::type &gt; &gt;</td></tr>
+<tr class="memdesc:a378823486aa4e4f288b1d73b2703c485"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type list without duplicate types.  <br /></td></tr>
+<tr class="separator:a378823486aa4e4f288b1d73b2703c485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> Type, typename... Other&gt;<br />
+struct entt::type_list_unique&lt; type_list&lt; Type, Other... &gt; &gt;</div><p>Removes duplicates types from a type list. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Type</td><td>One of the types provided by the given type list. </td></tr>
+    <tr><td class="paramname">Other</td><td>The other types provided by the given type list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="type__traits_8hpp_source.html">type_traits.hpp</a> 第 <a class="el" href="type__traits_8hpp_source.html#l00142">142</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a378823486aa4e4f288b1d73b2703c485" name="a378823486aa4e4f288b1d73b2703c485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378823486aa4e4f288b1d73b2703c485">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> Type , typename... Other&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="structentt_1_1type__list__unique.html">entt::type_list_unique</a>&lt; <a class="el" href="structentt_1_1type__list.html">type_list</a>&lt; Type, Other... &gt; &gt;::type =  std::conditional_t&lt; std::disjunction_v&lt;std::is_same&lt;Type, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Other</a>&gt;...&gt;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="structentt_1_1type__list__unique.html">type_list_unique</a>&lt;<a class="el" href="structentt_1_1type__list.html">type_list</a>&lt;Other...&gt; &gt;::type, <a class="el" href="namespaceentt.html#a546467a3662e9a915d5d519ad565e801">type_list_cat_t</a>&lt;<a class="el" href="structentt_1_1type__list.html">type_list</a>&lt;Type&gt;, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="structentt_1_1type__list__unique.html">type_list_unique</a>&lt;<a class="el" href="structentt_1_1type__list.html">type_list</a>&lt;Other...&gt; &gt;::type&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A type list without duplicate types. </p>
+
+<p class="definition">在文件 <a class="el" href="type__traits_8hpp_source.html">type_traits.hpp</a> 第 <a class="el" href="type__traits_8hpp_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>third_party/entt/core/<a class="el" href="type__traits_8hpp_source.html">type_traits.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

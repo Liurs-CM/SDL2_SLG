@@ -1,0 +1,7 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,74,117,99"/>
+<area shape="rect" id="Node000001" href="$structentt_1_1has__type__index_3_01Type_00_01std_1_1void__t_3_01decltype_07type__index_3_01Type_01_4_1_1value_07_08_08_4_01_4.html" title="has_type_index" alt="" coords="187,5,358,75"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="130,69,186,56,188,61,131,74"/>
+<area shape="rect" id="Node000002" href="$structentt_1_1is__equality__comparable_3_01Type_00_01std_1_1void__t_3_01decltype_07std_1_1declva46aebf4c20f38cbd0108d1e297595736.html" title="Provides the member constant value to true if a given type is equality comparable,..." alt="" coords="165,99,380,168"/>
+<area shape="poly" id="edge19_Node000000_Node000002" title=" " alt="" coords="131,99,166,107,165,112,130,104"/>
+</map>

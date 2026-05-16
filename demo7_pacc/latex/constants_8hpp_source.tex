@@ -1,0 +1,67 @@
+\doxysection{constants.\+hpp}
+\hypertarget{constants_8hpp_source}{}\label{constants_8hpp_source}\index{src/core/constants.hpp@{src/core/constants.hpp}}
+\mbox{\hyperlink{constants_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ constants.hpp}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 22/9/18.}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ CORE\_CONSTANTS\_HPP}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ CORE\_CONSTANTS\_HPP}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pos_8hpp}{util/pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{util_2dir_8hpp}{util/dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00015}00015\ \textcolor{comment}{//\ The\ width\ and\ height\ of\ the\ maze\ in\ tiles}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00016}\mbox{\hyperlink{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1}{00016}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1}{tiles}}\ =\ \{19,\ 22\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00017}00017\ \textcolor{comment}{//\ The\ pixel\ size\ of\ tiles}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00018}\mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{00018}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}}\ =\ 8;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00019}00019\ \textcolor{comment}{//\ The\ width\ and\ height\ of\ the\ maze\ in\ pixels}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00020}\mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{00020}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}}\ =\ \mbox{\hyperlink{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1}{tiles}}\ *\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00021}00021\ \textcolor{comment}{//\ The\ amount\ of\ ticks\ that\ ghosts\ are\ scared\ for}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00022}\mbox{\hyperlink{constants_8hpp_adcf15c7f2fac4c6a12bd6f727cfa5a5c}{00022}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_adcf15c7f2fac4c6a12bd6f727cfa5a5c}{ghostScaredTime}}\ =\ 40;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00024}00024\ \textcolor{comment}{//\ The\ amount\ of\ ticks\ left\ on\ the\ scared\ timer\ before\ scared\ ghosts}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00025}00025\ \textcolor{comment}{//\ start\ flashing}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00026}\mbox{\hyperlink{constants_8hpp_a078e1934f80be127af4262156c544545}{00026}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_a078e1934f80be127af4262156c544545}{ghostScaredFlashTime}}\ =\ 10;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00027}00027\ \textcolor{comment}{//\ Related\ to\ flash\ speed.\ Higher\ is\ slower}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00028}\mbox{\hyperlink{constants_8hpp_aca236d1d671de96e48ea984000115de8}{00028}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_aca236d1d671de96e48ea984000115de8}{ghostScaredFlashRate}}\ =\ 4;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00030}00030\ \textcolor{comment}{//\ The\ total\ number\ of\ dots\ that\ the\ player\ must\ eat\ to\ win\ the\ game}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00031}\mbox{\hyperlink{constants_8hpp_ab0bbf9a8653a208a6ef146978ee35057}{00031}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_ab0bbf9a8653a208a6ef146978ee35057}{dotsInMaze}}\ =\ 152;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00033}00033\ \textcolor{comment}{//\ Position\ where\ the\ player\ spawns}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00034}\mbox{\hyperlink{constants_8hpp_a24ac5421732571c10042af9df27e37cd}{00034}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a24ac5421732571c10042af9df27e37cd}{playerSpawnPos}}\ =\ \{9,\ 16\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00035}00035\ \textcolor{comment}{//\ Direction\ that\ the\ player\ is\ facing\ and\ moving\ when\ they\ spawn}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00036}\mbox{\hyperlink{constants_8hpp_a315277dcfbafa6fb33f2abd6b879b4eb}{00036}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \mbox{\hyperlink{constants_8hpp_a315277dcfbafa6fb33f2abd6b879b4eb}{playerSpawnDir}}\ =\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00037}00037\ \textcolor{comment}{//\ A\ position\ just\ outside\ the\ ghost\ house\ above\ the\ door}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00038}\mbox{\hyperlink{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54}{00038}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54}{outsideHouse}}\ \ =\ \{\ 9,\ \ 8\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00040}00040\ \textcolor{comment}{//\ Home\ positions\ are\ the\ places\ in\ the\ house\ where\ ghosts\ go}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00041}\mbox{\hyperlink{constants_8hpp_a596eb5de113113b529cced12e95a1375}{00041}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a596eb5de113113b529cced12e95a1375}{blinkyHome}}\ \ \ \ =\ \{\ 9,\ 10\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00042}\mbox{\hyperlink{constants_8hpp_a808fce3d296f7f0540ab50931216dbf5}{00042}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a808fce3d296f7f0540ab50931216dbf5}{pinkyHome}}\ \ \ \ \ =\ \{\ 9,\ 10\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00043}\mbox{\hyperlink{constants_8hpp_a52e8dc1f1863e7154ad2ca8fb37f9376}{00043}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a52e8dc1f1863e7154ad2ca8fb37f9376}{inkyHome}}\ \ \ \ \ \ =\ \{\ 8,\ 10\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00044}\mbox{\hyperlink{constants_8hpp_a0e4431349011a940e1926843a9f8cffa}{00044}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a0e4431349011a940e1926843a9f8cffa}{clydeHome}}\ \ \ \ \ =\ \{10,\ 10\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00045}00045\ \textcolor{comment}{//\ Scatter\ positions\ are\ targets\ that\ ghosts\ move\ towards\ (but\ never\ reach)}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00046}00046\ \textcolor{comment}{//\ when\ in\ scatter\ mode}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00047}\mbox{\hyperlink{constants_8hpp_afcd1f2a3417961405a4825bb7ef3fd6c}{00047}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_afcd1f2a3417961405a4825bb7ef3fd6c}{blinkyScatter}}\ =\ \{18,\ \ 0\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00048}\mbox{\hyperlink{constants_8hpp_ae3a15613adfdc5c0b445a432fa7105da}{00048}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_ae3a15613adfdc5c0b445a432fa7105da}{pinkyScatter}}\ \ =\ \{\ 0,\ \ 0\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00049}\mbox{\hyperlink{constants_8hpp_a65649e747ad5ba1c3afc997143285e4f}{00049}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a65649e747ad5ba1c3afc997143285e4f}{inkyScatter}}\ \ \ =\ \{18,\ 21\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00050}\mbox{\hyperlink{constants_8hpp_a3a1c70139c44f5115dc9264aa6c1dd6e}{00050}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{constants_8hpp_a3a1c70139c44f5115dc9264aa6c1dd6e}{clydeScatter}}\ \ =\ \{\ 0,\ 21\};}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00052}00052\ \textcolor{comment}{//\ The\ amount\ of\ time\ ghosts\ will\ be\ in\ scatter\ mode\ before\ switching}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00053}00053\ \textcolor{comment}{//\ to\ chase\ mode}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00054}\mbox{\hyperlink{constants_8hpp_a7a52d0f67485d0bcc62aac2f3721eee8}{00054}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_a7a52d0f67485d0bcc62aac2f3721eee8}{scatterTicks}}\ =\ 15;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00055}00055\ \textcolor{comment}{//\ The\ amount\ of\ time\ ghosts\ will\ be\ in\ chase\ mode\ before\ switching}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00056}00056\ \textcolor{comment}{//\ to\ scatter\ mode}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00057}\mbox{\hyperlink{constants_8hpp_a8535825c85225726038b2ce83174f861}{00057}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_a8535825c85225726038b2ce83174f861}{chaseTicks}}\ =\ 40;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00058}00058\ \textcolor{comment}{//\ The\ frame\ rate.\ The\ game\ speed\ in\ set\ as\ 8\ times\ slower\ than\ the\ frame\ rate}}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00059}\mbox{\hyperlink{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3}{00059}}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3}{fps}}\ =\ 20;}
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{constants_8hpp_source_l00061}00061\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

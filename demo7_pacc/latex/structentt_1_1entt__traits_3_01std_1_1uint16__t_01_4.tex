@@ -1,0 +1,139 @@
+\doxysection{entt\+::entt\+\_\+traits\texorpdfstring{$<$}{<} std\+::uint16\+\_\+t \texorpdfstring{$>$}{>}结构体 参考}
+\hypertarget{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4}{}\label{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4}\index{entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}}
+
+
+Entity traits for a 16 bits entity identifier.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a86e202c8932f341626b29c194bd47489}{entity\+\_\+type}} = std\+::uint16\+\_\+t
+\begin{DoxyCompactList}\small\item\em Underlying entity type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_ab37d10c3be3d59159a63c0bd1e9e2924}{version\+\_\+type}} = std\+::uint8\+\_\+t
+\begin{DoxyCompactList}\small\item\em Underlying version type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_ac16a602de26d43d316b497cb11b7c6b2}{difference\+\_\+type}} = std\+::int32\+\_\+t
+\begin{DoxyCompactList}\small\item\em Difference type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} std\+::uint16\+\_\+t \mbox{\hyperlink{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a3b85bff62534fc16597a391161fdc884}{entity\+\_\+mask}} = 0x\+FFF
+\begin{DoxyCompactList}\small\item\em Mask to use to get the entity number out of an identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} std\+::uint16\+\_\+t \mbox{\hyperlink{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a83bda73c5a360f5ba8f653d0f888993b}{version\+\_\+mask}} = 0xF
+\begin{DoxyCompactList}\small\item\em Mask to use to get the version out of an identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_aedc1e30160a37f69a5e6cc903a5113cc}{entity\+\_\+shift}} = 12
+\begin{DoxyCompactList}\small\item\em Extent of the entity number within an identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Entity traits for a 16 bits entity identifier. 
+
+A 16 bits entity identifier guarantees\+:
+
+
+\begin{DoxyItemize}
+\item 12 bits for the entity number (up to 4k entities).
+\item 4 bit for the version (resets in \mbox{[}0-\/15\mbox{]}). 
+\end{DoxyItemize}
+
+在文件 \mbox{\hyperlink{entity_8hpp_source}{entity.\+hpp}} 第 \mbox{\hyperlink{entity_8hpp_source_l00034}{34}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_ac16a602de26d43d316b497cb11b7c6b2}\label{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_ac16a602de26d43d316b497cb11b7c6b2} 
+\index{entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+::entt\+\_\+traits}}$<$ std\+::uint16\+\_\+t $>$\+::difference\+\_\+type =  std\+::int32\+\_\+t}
+
+
+
+Difference type. 
+
+
+
+在文件 \mbox{\hyperlink{entity_8hpp_source}{entity.\+hpp}} 第 \mbox{\hyperlink{entity_8hpp_source_l00040}{40}} 行定义.
+
+\Hypertarget{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a86e202c8932f341626b29c194bd47489}\label{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a86e202c8932f341626b29c194bd47489} 
+\index{entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}!entity\_type@{entity\_type}}
+\index{entity\_type@{entity\_type}!entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_type}{entity\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+::entt\+\_\+traits}}$<$ std\+::uint16\+\_\+t $>$\+::entity\+\_\+type =  std\+::uint16\+\_\+t}
+
+
+
+Underlying entity type. 
+
+
+
+在文件 \mbox{\hyperlink{entity_8hpp_source}{entity.\+hpp}} 第 \mbox{\hyperlink{entity_8hpp_source_l00036}{36}} 行定义.
+
+\Hypertarget{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_ab37d10c3be3d59159a63c0bd1e9e2924}\label{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_ab37d10c3be3d59159a63c0bd1e9e2924} 
+\index{entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}!version\_type@{version\_type}}
+\index{version\_type@{version\_type}!entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}}
+\doxysubsubsection{\texorpdfstring{version\_type}{version\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+::entt\+\_\+traits}}$<$ std\+::uint16\+\_\+t $>$\+::version\+\_\+type =  std\+::uint8\+\_\+t}
+
+
+
+Underlying version type. 
+
+
+
+在文件 \mbox{\hyperlink{entity_8hpp_source}{entity.\+hpp}} 第 \mbox{\hyperlink{entity_8hpp_source_l00038}{38}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a3b85bff62534fc16597a391161fdc884}\label{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a3b85bff62534fc16597a391161fdc884} 
+\index{entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}!entity\_mask@{entity\_mask}}
+\index{entity\_mask@{entity\_mask}!entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_mask}{entity\_mask}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} std\+::uint16\+\_\+t \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+::entt\+\_\+traits}}$<$ std\+::uint16\+\_\+t $>$\+::entity\+\_\+mask = 0x\+FFF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Mask to use to get the entity number out of an identifier. 
+
+
+
+在文件 \mbox{\hyperlink{entity_8hpp_source}{entity.\+hpp}} 第 \mbox{\hyperlink{entity_8hpp_source_l00043}{43}} 行定义.
+
+\Hypertarget{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_aedc1e30160a37f69a5e6cc903a5113cc}\label{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_aedc1e30160a37f69a5e6cc903a5113cc} 
+\index{entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}!entity\_shift@{entity\_shift}}
+\index{entity\_shift@{entity\_shift}!entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_shift}{entity\_shift}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+::entt\+\_\+traits}}$<$ std\+::uint16\+\_\+t $>$\+::entity\+\_\+shift = 12\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Extent of the entity number within an identifier. 
+
+
+
+在文件 \mbox{\hyperlink{entity_8hpp_source}{entity.\+hpp}} 第 \mbox{\hyperlink{entity_8hpp_source_l00047}{47}} 行定义.
+
+\Hypertarget{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a83bda73c5a360f5ba8f653d0f888993b}\label{structentt_1_1entt__traits_3_01std_1_1uint16__t_01_4_a83bda73c5a360f5ba8f653d0f888993b} 
+\index{entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}!version\_mask@{version\_mask}}
+\index{version\_mask@{version\_mask}!entt::entt\_traits$<$ std::uint16\_t $>$@{entt::entt\_traits$<$ std::uint16\_t $>$}}
+\doxysubsubsection{\texorpdfstring{version\_mask}{version\_mask}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} std\+::uint16\+\_\+t \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+::entt\+\_\+traits}}$<$ std\+::uint16\+\_\+t $>$\+::version\+\_\+mask = 0xF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Mask to use to get the version out of an identifier. 
+
+
+
+在文件 \mbox{\hyperlink{entity_8hpp_source}{entity.\+hpp}} 第 \mbox{\hyperlink{entity_8hpp_source_l00045}{45}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{entity_8hpp}{entity.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\doxysection{house.\+cpp}
+\hypertarget{house_8cpp_source}{}\label{house_8cpp_source}\index{src/sys/house.cpp@{src/sys/house.cpp}}
+\mbox{\hyperlink{house_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ house.cpp}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 29/9/18.}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sys_2house_8hpp}{house.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2house_8hpp}{comp/house.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{target_8hpp}{comp/target.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8hpp}{comp/position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{constants_8hpp}{core/constants.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost__mode_8hpp}{comp/ghost\_mode.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{home__position_8hpp}{comp/home\_position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00019}\mbox{\hyperlink{house_8cpp_a66f7a3087bebe09d0c72c6b83b8ee946}{00019}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{house_8cpp_a66f7a3087bebe09d0c72c6b83b8ee946}{enterHouse}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00020}00020\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structEnterHouse}{EnterHouse}},\ \mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structHomePosition}{HomePosition}}>();}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00021}00021\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{if}\ (view.get<\mbox{\hyperlink{structPosition}{Position}}>(e).\mbox{\hyperlink{structPosition_a25ab4ed9aa76eef9ca627dd89bd08eb6}{p}}\ ==\ view.get<\mbox{\hyperlink{structHomePosition}{HomePosition}}>(e).home)\ \{}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00023}00023\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a44f5eac6fa4d1999a121f55e67a36c24}{remove}}<\mbox{\hyperlink{structEnterHouse}{EnterHouse}}>(e);}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00024}00024\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structLeaveHouse}{LeaveHouse}}>(e);}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00025}00025\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a44f5eac6fa4d1999a121f55e67a36c24}{remove}}<\mbox{\hyperlink{structEatenMode}{EatenMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00026}00026\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structChaseMode}{ChaseMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00028}00028\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00029}00029\ \}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00031}\mbox{\hyperlink{house_8cpp_a65f7452acc93eb55ed51d07ecbc8c8f9}{00031}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{house_8cpp_a65f7452acc93eb55ed51d07ecbc8c8f9}{leaveHouse}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00032}00032\ \ \ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structLeaveHouse}{LeaveHouse}},\ \mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structTarget}{Target}}>();}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00033}00033\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordflow}{if}\ (view.get<\mbox{\hyperlink{structPosition}{Position}}>(e).\mbox{\hyperlink{structPosition_a25ab4ed9aa76eef9ca627dd89bd08eb6}{p}}\ ==\ \mbox{\hyperlink{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54}{outsideHouse}})\ \{}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00035}00035\ \ \ \ \ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a44f5eac6fa4d1999a121f55e67a36c24}{remove}}<\mbox{\hyperlink{structLeaveHouse}{LeaveHouse}}>(e);}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00036}00036\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00037}00037\ \ \ \ \ \ \ \textcolor{comment}{//\ leaveHouse\ is\ called\ after\ the\ set*Target\ systems\ so\ this\ will}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00038}00038\ \ \ \ \ \ \ \textcolor{comment}{//\ overwrite\ the\ target\ position.\ It's\ a\ little\ bit\ hacky\ but\ it}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00039}00039\ \ \ \ \ \ \ \textcolor{comment}{//\ works\ here.}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00041}00041\ \ \ \ \ \ \ \textcolor{comment}{//\ We\ actually\ need\ to\ do\ this\ because\ ghosts\ can\ sometimes\ get\ stuck}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00042}00042\ \ \ \ \ \ \ \textcolor{comment}{//\ in\ the\ house.\ If\ their\ target\ is\ towards\ the\ bottom\ of\ the\ maze,}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00043}00043\ \ \ \ \ \ \ \textcolor{comment}{//\ they\ will\ move\ left\ and\ right\ without\ going\ up\ and\ out\ of\ the\ house}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00044}00044\ \ \ \ \ \ \ view.get<\mbox{\hyperlink{structTarget}{Target}}>(e).p\ =\ \mbox{\hyperlink{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54}{outsideHouse}};}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00045}00045\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00046}00046\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{house_8cpp_source_l00047}00047\ \}}
+
+\end{DoxyCode}

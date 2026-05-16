@@ -1,0 +1,512 @@
+\doxysection{entt\+::cache\texorpdfstring{$<$}{<} Resource \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1cache}{}\label{structentt_1_1cache}\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+
+
+Simple cache for resources of a given type.  
+
+
+
+
+{\ttfamily \#include $<$cache.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1cache_aee66d7039b665d6636be29c255065aa3}{size\+\_\+type}} = std\+::size\+\_\+t
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1cache_ada5e8c7f595aed30fa4f879fe71e7baf}{resource\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}}
+\begin{DoxyCompactList}\small\item\em Type of resources managed by a cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1cache_a1325fdf2f5645b5abb68184b7927e043}{cache}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1cache_a58384e1a8f11c3055e88911893df4d73}{cache}} (\mbox{\hyperlink{structentt_1_1cache}{cache}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1cache}{cache}} \& \mbox{\hyperlink{structentt_1_1cache_ad4935aae9fa89f39786d6fdf10a19318}{operator=}} (\mbox{\hyperlink{structentt_1_1cache}{cache}} \&\&)=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\begin{DoxyCompactList}\small\item\em Default move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1cache_aee66d7039b665d6636be29c255065aa3}{size\+\_\+type}} \mbox{\hyperlink{structentt_1_1cache_afe769393054badd0f5839667a485b19d}{size}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Number of resources managed by a cache. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{structentt_1_1cache_add6b60d473f777208e1585d7318c642c}{empty}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a cache contains no resources, false otherwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1cache_a8187069bfa98f774b5109558bbd5f859}{clear}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Clears a cache and discards all its resources. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Loader}} , typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache_a8b615b09f4791d37de6a4ee659b8067b}{load}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Loads the resource that corresponds to a given identifier. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Loader}} , typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache_afd29df9d03bac59da169404decdd6dd6}{reload}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\begin{DoxyCompactList}\small\item\em Reloads a resource or loads it for the first time if not present. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Loader}} , typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache_a75d00171c5e2ea1f9dce63b2270960e6}{temp}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates a temporary handle for a resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache_aaf90db3848cc2bf2ce44a06810467604}{handle}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates a handle for a given resource identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{structentt_1_1cache_a2b65e506431974d8b6872defad4aa10c}{contains}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Checks if a cache contains a given identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1cache_aed9dfebb6f5444d88537a5865b262c23}{discard}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} id)
+\begin{DoxyCompactList}\small\item\em Discards the resource that corresponds to a given identifier. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1cache_a6581bd315d1627ab2d4bff995802fef8}{each}} (Func func) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ $>$ \mbox{\hyperlink{structentt_1_1cache_a473ace85389dc1d2b787040873fb203e}{resources}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}}$>$\newline
+struct entt\+::cache$<$ Resource $>$}
+Simple cache for resources of a given type. 
+
+Minimal implementation of a cache for resources of a given type. It doesn\textquotesingle{}t offer much functionalities but it\textquotesingle{}s suitable for small or medium sized applications and can be freely inherited to add targeted functionalities for large sized applications.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Resource} & Type of resources managed by a cache. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00030}{30}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1cache_ada5e8c7f595aed30fa4f879fe71e7baf}\label{structentt_1_1cache_ada5e8c7f595aed30fa4f879fe71e7baf} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!resource\_type@{resource\_type}}
+\index{resource\_type@{resource\_type}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{resource\_type}{resource\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::resource\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}}}
+
+
+
+Type of resources managed by a cache. 
+
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00034}{34}} 行定义.
+
+\Hypertarget{structentt_1_1cache_aee66d7039b665d6636be29c255065aa3}\label{structentt_1_1cache_aee66d7039b665d6636be29c255065aa3} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::size\+\_\+type =  std\+::size\+\_\+t}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00032}{32}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1cache_a1325fdf2f5645b5abb68184b7927e043}\label{structentt_1_1cache_a1325fdf2f5645b5abb68184b7927e043} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!cache@{cache}}
+\index{cache@{cache}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{cache()}{cache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\Hypertarget{structentt_1_1cache_a58384e1a8f11c3055e88911893df4d73}\label{structentt_1_1cache_a58384e1a8f11c3055e88911893df4d73} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!cache@{cache}}
+\index{cache@{cache}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{cache()}{cache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1cache}{cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move constructor. 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1cache_a8187069bfa98f774b5109558bbd5f859}\label{structentt_1_1cache_a8187069bfa98f774b5109558bbd5f859} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!clear@{clear}}
+\index{clear@{clear}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears a cache and discards all its resources. 
+
+Handles are not invalidated and the memory used by a resource isn\textquotesingle{}t freed as long as at least a handle keeps the resource itself alive. 
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00067}{67}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+\Hypertarget{structentt_1_1cache_a2b65e506431974d8b6872defad4aa10c}\label{structentt_1_1cache_a2b65e506431974d8b6872defad4aa10c} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!contains@{contains}}
+\index{contains@{contains}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a cache contains a given identifier. 
+
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique resource identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+True if the cache contains the resource, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00178}{178}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+\Hypertarget{structentt_1_1cache_aed9dfebb6f5444d88537a5865b262c23}\label{structentt_1_1cache_aed9dfebb6f5444d88537a5865b262c23} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!discard@{discard}}
+\index{discard@{discard}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{discard()}{discard()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::discard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Discards the resource that corresponds to a given identifier. 
+
+Handles are not invalidated and the memory used by the resource isn\textquotesingle{}t freed as long as at least a handle keeps the resource itself alive.
+
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique resource identifier. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00190}{190}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{cache_8hpp_source_l00134}{entt\+::cache$<$ Resource $>$\+::reload()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{structentt_1_1cache_aed9dfebb6f5444d88537a5865b262c23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1cache_a6581bd315d1627ab2d4bff995802fef8}\label{structentt_1_1cache_a6581bd315d1627ab2d4bff995802fef8} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!each@{each}}
+\index{each@{each}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::each (\begin{DoxyParamCaption}\item[{Func}]{func }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all resources. 
+
+The function object is invoked for each element. It is provided with either the resource identifier, the resource handle or both of them.~\newline
+ The signature of the function must be equivalent to one of the following forms\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}});}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{handle<Resource>}});}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{handle<Resource>}});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Func} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em func} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00214}{214}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a}{begin}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53}{end}} , 以及 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+\Hypertarget{structentt_1_1cache_add6b60d473f777208e1585d7318c642c}\label{structentt_1_1cache_add6b60d473f777208e1585d7318c642c} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!empty@{empty}}
+\index{empty@{empty}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if a cache contains no resources, false otherwise. 
+
+\begin{DoxyReturn}{返回}
+True if the cache contains no resources, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00057}{57}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+\Hypertarget{structentt_1_1cache_aaf90db3848cc2bf2ce44a06810467604}\label{structentt_1_1cache_aaf90db3848cc2bf2ce44a06810467604} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!handle@{handle}}
+\index{handle@{handle}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a handle for a given resource identifier. 
+
+A resource handle can be in a either valid or invalid state. In other terms, a resource handle is properly initialized with a resource if the cache contains the resource itself. Otherwise the returned handle is uninitialized and accessing it results in undefined behavior.
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classentt_1_1handle}{handle}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique resource identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A handle for the given resource. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00168}{168}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+\Hypertarget{structentt_1_1cache_a8b615b09f4791d37de6a4ee659b8067b}\label{structentt_1_1cache_a8b615b09f4791d37de6a4ee659b8067b} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!load@{load}}
+\index{load@{load}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Loader}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the resource that corresponds to a given identifier. 
+
+In case an identifier isn\textquotesingle{}t already present in the cache, it loads its resource and stores it aside for future uses. Arguments are forwarded directly to the loader in order to construct properly the requested resource.
+
+\begin{DoxyNote}{注解}
+If the identifier is already present in the cache, this function does nothing and the arguments are simply discarded.
+\end{DoxyNote}
+\begin{DoxyWarning}{警告}
+If the resource cannot be loaded correctly, the returned handle will be invalid and any use of it will result in undefined behavior.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Loader} & Type of loader to use to load the resource if required. \\
+\hline
+{\em Args} & Types of arguments to use to load the resource if required. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique resource identifier. \\
+\hline
+{\em args} & Arguments to use to load the resource if required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A handle for the given resource. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00094}{94}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+\Hypertarget{structentt_1_1cache_ad4935aae9fa89f39786d6fdf10a19318}\label{structentt_1_1cache_ad4935aae9fa89f39786d6fdf10a19318} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{structentt_1_1cache}{cache}} \& \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1cache}{cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move assignment operator. 
+
+\begin{DoxyReturn}{返回}
+This cache. 
+\end{DoxyReturn}
+\Hypertarget{structentt_1_1cache_afd29df9d03bac59da169404decdd6dd6}\label{structentt_1_1cache_afd29df9d03bac59da169404decdd6dd6} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!reload@{reload}}
+\index{reload@{reload}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Loader}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}]{id,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reloads a resource or loads it for the first time if not present. 
+
+Equivalent to the following snippet (pseudocode)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{structentt_1_1cache_a1325fdf2f5645b5abb68184b7927e043}{cache}}.discard(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\mbox{\hyperlink{structentt_1_1cache_a1325fdf2f5645b5abb68184b7927e043}{cache}}.load(\textcolor{keywordtype}{id},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}...);}
+
+\end{DoxyCode}
+
+
+Arguments are forwarded directly to the loader in order to construct properly the requested resource.
+
+\begin{DoxyWarning}{警告}
+If the resource cannot be loaded correctly, the returned handle will be invalid and any use of it will result in undefined behavior.
+\end{DoxyWarning}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Loader} & Type of loader to use to load the resource. \\
+\hline
+{\em Args} & Types of arguments to use to load the resource. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em id} & Unique resource identifier. \\
+\hline
+{\em args} & Arguments to use to load the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A handle for the given resource. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00134}{134}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{cache_8hpp_source_l00190}{entt\+::cache$<$ Resource $>$\+::discard()}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{structentt_1_1cache_afd29df9d03bac59da169404decdd6dd6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1cache_afe769393054badd0f5839667a485b19d}\label{structentt_1_1cache_afe769393054badd0f5839667a485b19d} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!size@{size}}
+\index{size@{size}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+\mbox{\hyperlink{structentt_1_1cache_aee66d7039b665d6636be29c255065aa3}{size\+\_\+type}} \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Number of resources managed by a cache. 
+
+\begin{DoxyReturn}{返回}
+Number of resources currently stored. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00049}{49}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{cache_8hpp_source_l00232}{entt\+::cache$<$ Resource $>$\+::resources}}.
+
+\Hypertarget{structentt_1_1cache_a75d00171c5e2ea1f9dce63b2270960e6}\label{structentt_1_1cache_a75d00171c5e2ea1f9dce63b2270960e6} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!temp@{temp}}
+\index{temp@{temp}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{temp()}{temp()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Loader}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1handle}{entt\+::handle}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::temp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a temporary handle for a resource. 
+
+Arguments are forwarded directly to the loader in order to construct properly the requested resource. The handle isn\textquotesingle{}t stored aside and the cache isn\textquotesingle{}t in charge of the lifetime of the resource itself.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Loader} & Type of loader to use to load the resource. \\
+\hline
+{\em Args} & Types of arguments to use to load the resource. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Arguments to use to load the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A handle for the given resource. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00151}{151}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1cache_a473ace85389dc1d2b787040873fb203e}\label{structentt_1_1cache_a473ace85389dc1d2b787040873fb203e} 
+\index{entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}!resources@{resources}}
+\index{resources@{resources}!entt::cache$<$ Resource $>$@{entt::cache$<$ Resource $>$}}
+\doxysubsubsection{\texorpdfstring{resources}{resources}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$ \\
+std\+::unordered\+\_\+map$<$\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}}$>$ $>$ \mbox{\hyperlink{structentt_1_1cache}{entt\+::cache}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Resource}} $>$\+::resources\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{cache_8hpp_source}{cache.\+hpp}} 第 \mbox{\hyperlink{cache_8hpp_source_l00232}{232}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{cache_8hpp_source_l00067}{entt\+::cache$<$ Resource $>$\+::clear()}}, \mbox{\hyperlink{cache_8hpp_source_l00178}{entt\+::cache$<$ Resource $>$\+::contains()}}, \mbox{\hyperlink{cache_8hpp_source_l00190}{entt\+::cache$<$ Resource $>$\+::discard()}}, \mbox{\hyperlink{cache_8hpp_source_l00214}{entt\+::cache$<$ Resource $>$\+::each()}}, \mbox{\hyperlink{cache_8hpp_source_l00057}{entt\+::cache$<$ Resource $>$\+::empty()}}, \mbox{\hyperlink{cache_8hpp_source_l00168}{entt\+::cache$<$ Resource $>$\+::handle()}}, \mbox{\hyperlink{cache_8hpp_source_l00094}{entt\+::cache$<$ Resource $>$\+::load()}} , 以及 \mbox{\hyperlink{cache_8hpp_source_l00049}{entt\+::cache$<$ Resource $>$\+::size()}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/resource/\mbox{\hyperlink{cache_8hpp}{cache.\+hpp}}\end{DoxyCompactItemize}

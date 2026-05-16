@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/sys/eat_dots.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_220d2bd384b446346a1cdcf02b1b2295.html">sys</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">eat_dots.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="eat__dots_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  eat_dots.cpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  EnTT Pacman</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by Indiana Kernick on 22/9/18.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2018 Indiana Kernick. All rights reserved.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="eat__dots_8hpp.html">eat_dots.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="player_8hpp.html">comp/player.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="position_8hpp.html">comp/position.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="registry_8hpp.html">entt/entity/registry.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">int</span> countConsumptions(<a class="code hl_class" href="classentt_1_1basic__registry.html">entt::registry</a> &amp;reg, <a class="code hl_class" href="classGrid.html">MazeState</a> &amp;maze, <span class="keyword">const</span> <a class="code hl_enumeration" href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617c">Tile</a> food) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_typedef" href="namespaceentt.html#af2118c00dea16193aee017d1408beb53">view</a> = reg.<a class="code hl_function" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e">view</a>&lt;<a class="code hl_struct" href="structPlayer.html">Player</a>, <a class="code hl_struct" href="structPosition.html">Position</a>&gt;();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> entt::entity e : <a class="code hl_typedef" href="namespaceentt.html#af2118c00dea16193aee017d1408beb53">view</a>) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structPos.html">Pos</a> pos = <a class="code hl_typedef" href="namespaceentt.html#af2118c00dea16193aee017d1408beb53">view</a>.get&lt;<a class="code hl_struct" href="structPosition.html">Position</a>&gt;(e).p;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5">maze</a>.outOfRange(pos)) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_enumeration" href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617c">Tile</a> &amp;tile = <a class="code hl_enumvalue" href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5">maze</a>[pos];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span> (tile == food) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      ++count;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      tile = <a class="code hl_enumvalue" href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617caa2e4822a98337283e39f7b60acf85ec9">Tile::empty</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">return</span> count;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="eat__dots_8cpp.html#a98273433608ea803b2ed4ae5a2eaa7a0">   36</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="eat__dots_8cpp.html#a98273433608ea803b2ed4ae5a2eaa7a0">eatDots</a>(<a class="code hl_class" href="classentt_1_1basic__registry.html">entt::registry</a> &amp;reg, <a class="code hl_class" href="classGrid.html">MazeState</a> &amp;maze) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">return</span> countConsumptions(reg, maze, <a class="code hl_enumvalue" href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062">Tile::dot</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="eat__dots_8cpp.html#a26605eae0ccd9a9fc7e153e2aa1bcf99">   40</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="eat__dots_8cpp.html#a26605eae0ccd9a9fc7e153e2aa1bcf99">eatEnergizer</a>(<a class="code hl_class" href="classentt_1_1basic__registry.html">entt::registry</a> &amp;reg, <a class="code hl_class" href="classGrid.html">MazeState</a> &amp;maze) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordflow">return</span> countConsumptions(reg, maze, <a class="code hl_enumvalue" href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d">Tile::energizer</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+</div>
+<div class="ttc" id="aclassGrid_html"><div class="ttname"><a href="classGrid.html">Grid&lt; Tile &gt;</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__registry_html"><div class="ttname"><a href="classentt_1_1basic__registry.html">entt::basic_registry</a></div><div class="ttdoc">Fast and reliable entity-component system.</div><div class="ttdef"><b>Definition</b> <a href="registry_8hpp_source.html#l00044">registry.hpp:44</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__registry_html_a8d0d1722bcefbdca7a78a4cdf0feca2e"><div class="ttname"><a href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e">entt::basic_registry::view</a></div><div class="ttdeci">entt::basic_view&lt; Entity, exclude_t&lt; Exclude... &gt;, Component... &gt; view(exclude_t&lt; Exclude... &gt;={})</div><div class="ttdoc">Returns a view for the given components.</div><div class="ttdef"><b>Definition</b> <a href="registry_8hpp_source.html#l01357">registry.hpp:1357</a></div></div>
+<div class="ttc" id="aeat__dots_8cpp_html_a26605eae0ccd9a9fc7e153e2aa1bcf99"><div class="ttname"><a href="eat__dots_8cpp.html#a26605eae0ccd9a9fc7e153e2aa1bcf99">eatEnergizer</a></div><div class="ttdeci">bool eatEnergizer(entt::registry &amp;reg, MazeState &amp;maze)</div><div class="ttdef"><b>Definition</b> <a href="eat__dots_8cpp_source.html#l00040">eat_dots.cpp:40</a></div></div>
+<div class="ttc" id="aeat__dots_8cpp_html_a98273433608ea803b2ed4ae5a2eaa7a0"><div class="ttname"><a href="eat__dots_8cpp.html#a98273433608ea803b2ed4ae5a2eaa7a0">eatDots</a></div><div class="ttdeci">int eatDots(entt::registry &amp;reg, MazeState &amp;maze)</div><div class="ttdef"><b>Definition</b> <a href="eat__dots_8cpp_source.html#l00036">eat_dots.cpp:36</a></div></div>
+<div class="ttc" id="aeat__dots_8hpp_html"><div class="ttname"><a href="eat__dots_8hpp.html">eat_dots.hpp</a></div></div>
+<div class="ttc" id="amaze_8hpp_html_ad30cc370e26935f9654c7330eb7c617c"><div class="ttname"><a href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617c">Tile</a></div><div class="ttdeci">Tile</div><div class="ttdef"><b>Definition</b> <a href="maze_8hpp_source.html#l00015">maze.hpp:15</a></div></div>
+<div class="ttc" id="amaze_8hpp_html_ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d"><div class="ttname"><a href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d">Tile::energizer</a></div><div class="ttdeci">@ energizer</div></div>
+<div class="ttc" id="amaze_8hpp_html_ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062"><div class="ttname"><a href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062">Tile::dot</a></div><div class="ttdeci">@ dot</div></div>
+<div class="ttc" id="amaze_8hpp_html_ad30cc370e26935f9654c7330eb7c617caa2e4822a98337283e39f7b60acf85ec9"><div class="ttname"><a href="maze_8hpp.html#ad30cc370e26935f9654c7330eb7c617caa2e4822a98337283e39f7b60acf85ec9">Tile::empty</a></div><div class="ttdeci">@ empty</div></div>
+<div class="ttc" id="anamespaceanimera_1_1sprites_html_aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5"><div class="ttname"><a href="namespaceanimera_1_1sprites.html#aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5">animera::sprites::SpriteID::maze</a></div><div class="ttdeci">@ maze</div></div>
+<div class="ttc" id="anamespaceentt_html_af2118c00dea16193aee017d1408beb53"><div class="ttname"><a href="namespaceentt.html#af2118c00dea16193aee017d1408beb53">entt::view</a></div><div class="ttdeci">basic_view&lt; entity, Types... &gt; view</div><div class="ttdoc">Alias declaration for the most common use case.</div><div class="ttdef"><b>Definition</b> <a href="entity_2fwd_8hpp_source.html#l00073">fwd.hpp:73</a></div></div>
+<div class="ttc" id="aplayer_8hpp_html"><div class="ttname"><a href="player_8hpp.html">player.hpp</a></div></div>
+<div class="ttc" id="aposition_8hpp_html"><div class="ttname"><a href="position_8hpp.html">position.hpp</a></div></div>
+<div class="ttc" id="aregistry_8hpp_html"><div class="ttname"><a href="registry_8hpp.html">registry.hpp</a></div></div>
+<div class="ttc" id="astructPlayer_html"><div class="ttname"><a href="structPlayer.html">Player</a></div><div class="ttdef"><b>Definition</b> <a href="player_8hpp_source.html#l00014">player.hpp:14</a></div></div>
+<div class="ttc" id="astructPos_html"><div class="ttname"><a href="structPos.html">Pos</a></div><div class="ttdef"><b>Definition</b> <a href="pos_8hpp_source.html#l00014">pos.hpp:14</a></div></div>
+<div class="ttc" id="astructPosition_html"><div class="ttname"><a href="structPosition.html">Position</a></div><div class="ttdef"><b>Definition</b> <a href="position_8hpp_source.html#l00017">position.hpp:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

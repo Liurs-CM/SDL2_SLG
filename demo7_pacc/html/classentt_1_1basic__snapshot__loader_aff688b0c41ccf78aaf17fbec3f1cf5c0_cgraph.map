@@ -1,0 +1,14 @@
+<map id="entt::basic_snapshot_loader::orphans" name="entt::basic_snapshot_loader::orphans">
+<area shape="rect" id="Node000001" title="Destroys those entities that have no components." alt="" coords="5,61,161,101"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#af58f3add442cfb3f1fa470402db072bd" title="Destroys an entity." alt="" coords="209,29,356,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,66,195,61,196,66,162,71"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#ae337ceb77e75c10c73ffa671e09bfff8" title="Iterates orphans and applies them the given function object." alt="" coords="209,93,356,133"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="162,91,196,97,195,102,161,97"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="246,30,244,20,250,11,263,5,283,3,306,6,318,13,315,17,304,11,283,8,264,10,253,15,249,21,251,28"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a86d2b035f54225d82548e8f03de28754" title="Iterates all the entities that are still in use." alt="" coords="404,61,551,101"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="356,99,390,93,391,98,356,104"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#a10f5e61d4cabab9e9c1e87edc30de551" title="Checks if an entity has components assigned." alt="" coords="404,125,551,165"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="356,123,391,128,390,134,356,128"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="599,125,745,165"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="551,143,585,143,585,148,551,148"/>
+</map>

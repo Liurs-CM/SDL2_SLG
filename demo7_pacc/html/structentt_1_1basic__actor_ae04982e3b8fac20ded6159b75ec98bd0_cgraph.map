@@ -1,0 +1,5 @@
+<map id="entt::basic_actor::operator bool" name="entt::basic_actor::operator bool">
+<area shape="rect" id="Node000001" title="Checks if an actor refers to a valid entity or not." alt="" coords="5,5,144,45"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="192,5,339,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,23,178,23,178,28,144,28"/>
+</map>

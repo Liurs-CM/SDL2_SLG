@@ -1,0 +1,10 @@
+<map id="src/util/sdl_delete.hpp" name="src/util/sdl_delete.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="57,5,223,31"/>
+<area shape="rect" id="Node000002" href="$app_8cpp.html" title=" " alt="" coords="5,152,133,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,43,98,80,83,119,74,153,69,151,78,117,94,77,119,40"/>
+<area shape="rect" id="Node000003" href="$sdl__load__texture_8hpp.html" title=" " alt="" coords="107,79,314,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,39,201,77,197,80,159,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="177,112,94,154,91,149,175,108"/>
+<area shape="rect" id="Node000004" href="$sdl__load__texture_8cpp.html" title=" " alt="" coords="157,152,363,177"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="229,114,254,150,250,153,224,117"/>
+</map>

@@ -1,0 +1,35 @@
+\doxysection{render.\+hpp}
+\hypertarget{render_8hpp_source}{}\label{render_8hpp_source}\index{src/sys/render.hpp@{src/sys/render.hpp}}
+\mbox{\hyperlink{render_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ render.hpp}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/9/18.}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ SYS\_RENDER\_HPP}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ SYS\_RENDER\_HPP}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{maze_8hpp}{core/maze.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprites_8hpp}{util/sprites.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{entity_2fwd_8hpp}{entt/entity/fwd.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__quad__writer_8hpp}{util/sdl\_quad\_writer.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00017}00017\ \textcolor{comment}{//\ Render\ the\ player\ (the\ yellow\ guy)}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00018}00018\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8hpp_afc3f728a7341e9f31271b4fd502be755}{playerRender}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&,\ \mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&,\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00020}00020\ \textcolor{comment}{//\ Render\ the\ ghosts}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00021}00021\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8hpp_ace37389a7725d66a97ec97d7e7498e83}{ghostRender}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&,\ \mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&,\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00023}00023\ \textcolor{comment}{//\ Render\ the\ dots\ and\ energizers}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00024}00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8hpp_a256ae3adabe1829f4ab770e449e041d5}{dotRender}}(\mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&);}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00026}00026\ \textcolor{comment}{//\ Render\ a\ sprite\ that\ covers\ the\ whole\ screen\ (maze,\ win,\ lose)}}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00027}00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8hpp_a037dfde587c515cb90aa56b69027771a}{fullRender}}(\mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&,\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{animera::SpriteID}});}
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{render_8hpp_source_l00029}00029\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

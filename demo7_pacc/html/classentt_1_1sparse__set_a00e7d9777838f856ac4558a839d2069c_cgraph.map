@@ -1,0 +1,15 @@
+<map id="entt::sparse_set::construct" name="entt::sparse_set::construct">
+<area shape="rect" id="Node000001" title="Assigns one or more entities to a sparse set." alt="" coords="5,81,200,107"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="248,81,419,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,91,234,91,234,97,200,97"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="473,5,650,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,79,508,33,510,38,373,84"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="467,107,656,132"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="420,101,454,105,453,110,419,106"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="704,83,875,108"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="419,91,656,91,690,92,690,97,656,97,419,96"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="706,132,873,157"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="361,104,409,125,467,142,525,150,583,153,692,151,692,156,583,159,524,155,466,147,407,130,359,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="656,107,690,103,690,108,657,112"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="657,127,693,131,692,137,656,133"/>
+</map>

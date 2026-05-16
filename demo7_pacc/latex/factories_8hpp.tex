@@ -1,0 +1,205 @@
+\doxysection{src/core/factories.hpp 文件参考}
+\hypertarget{factories_8hpp}{}\label{factories_8hpp}\index{src/core/factories.hpp@{src/core/factories.hpp}}
+{\ttfamily \#include $<$entt/entity/fwd.\+hpp$>$}\newline
+factories.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{factories_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{factories_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+entt\+::entity \mbox{\hyperlink{factories_8hpp_a9354357d6b524f03a3e4203a09f91d72}{make\+Player}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+entt\+::entity \mbox{\hyperlink{factories_8hpp_aa94b17b98fa3515f0bbd8dd47e5bd60b}{make\+Blinky}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&, entt\+::entity)
+\item 
+entt\+::entity \mbox{\hyperlink{factories_8hpp_aa05f7a44106709cd57f89ba441e7155b}{make\+Pinky}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&, entt\+::entity)
+\item 
+entt\+::entity \mbox{\hyperlink{factories_8hpp_a15cad6f107f4cafbfaea3c815eeaeb4c}{make\+Inky}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&, entt\+::entity, entt\+::entity)
+\item 
+entt\+::entity \mbox{\hyperlink{factories_8hpp_aa7cf3368fb34dbc148f3130e80a4150a}{make\+Clyde}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&, entt\+::entity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{factories_8hpp_aa94b17b98fa3515f0bbd8dd47e5bd60b}\label{factories_8hpp_aa94b17b98fa3515f0bbd8dd47e5bd60b} 
+\index{factories.hpp@{factories.hpp}!makeBlinky@{makeBlinky}}
+\index{makeBlinky@{makeBlinky}!factories.hpp@{factories.hpp}}
+\doxysubsubsection{\texorpdfstring{makeBlinky()}{makeBlinky()}}
+{\footnotesize\ttfamily entt\+::entity make\+Blinky (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{entt\+::entity}]{player }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{factories_8cpp_source}{factories.\+cpp}} 第 \mbox{\hyperlink{factories_8cpp_source_l00051}{51}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{constants_8hpp_source_l00041}{blinky\+Home}}, \mbox{\hyperlink{constants_8hpp_source_l00047}{blinky\+Scatter}}, \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{registry_8hpp_source_l00960}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::get()}} , 以及 \mbox{\hyperlink{constants_8hpp_source_l00038}{outside\+House}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{Game\+::init()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_aa94b17b98fa3515f0bbd8dd47e5bd60b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_aa94b17b98fa3515f0bbd8dd47e5bd60b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{factories_8hpp_aa7cf3368fb34dbc148f3130e80a4150a}\label{factories_8hpp_aa7cf3368fb34dbc148f3130e80a4150a} 
+\index{factories.hpp@{factories.hpp}!makeClyde@{makeClyde}}
+\index{makeClyde@{makeClyde}!factories.hpp@{factories.hpp}}
+\doxysubsubsection{\texorpdfstring{makeClyde()}{makeClyde()}}
+{\footnotesize\ttfamily entt\+::entity make\+Clyde (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{entt\+::entity}]{player }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{factories_8cpp_source}{factories.\+cpp}} 第 \mbox{\hyperlink{factories_8cpp_source_l00077}{77}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{constants_8hpp_source_l00044}{clyde\+Home}}, \mbox{\hyperlink{constants_8hpp_source_l00050}{clyde\+Scatter}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{Game\+::init()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_aa7cf3368fb34dbc148f3130e80a4150a_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_aa7cf3368fb34dbc148f3130e80a4150a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{factories_8hpp_a15cad6f107f4cafbfaea3c815eeaeb4c}\label{factories_8hpp_a15cad6f107f4cafbfaea3c815eeaeb4c} 
+\index{factories.hpp@{factories.hpp}!makeInky@{makeInky}}
+\index{makeInky@{makeInky}!factories.hpp@{factories.hpp}}
+\doxysubsubsection{\texorpdfstring{makeInky()}{makeInky()}}
+{\footnotesize\ttfamily entt\+::entity make\+Inky (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{entt\+::entity}]{player,  }\item[{entt\+::entity}]{blinky }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{factories_8cpp_source}{factories.\+cpp}} 第 \mbox{\hyperlink{factories_8cpp_source_l00066}{66}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{constants_8hpp_source_l00043}{inky\+Home}} , 以及 \mbox{\hyperlink{constants_8hpp_source_l00049}{inky\+Scatter}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{Game\+::init()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_a15cad6f107f4cafbfaea3c815eeaeb4c_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_a15cad6f107f4cafbfaea3c815eeaeb4c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{factories_8hpp_aa05f7a44106709cd57f89ba441e7155b}\label{factories_8hpp_aa05f7a44106709cd57f89ba441e7155b} 
+\index{factories.hpp@{factories.hpp}!makePinky@{makePinky}}
+\index{makePinky@{makePinky}!factories.hpp@{factories.hpp}}
+\doxysubsubsection{\texorpdfstring{makePinky()}{makePinky()}}
+{\footnotesize\ttfamily entt\+::entity make\+Pinky (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{entt\+::entity}]{player }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{factories_8cpp_source}{factories.\+cpp}} 第 \mbox{\hyperlink{factories_8cpp_source_l00059}{59}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{constants_8hpp_source_l00042}{pinky\+Home}} , 以及 \mbox{\hyperlink{constants_8hpp_source_l00048}{pinky\+Scatter}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{Game\+::init()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_aa05f7a44106709cd57f89ba441e7155b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_aa05f7a44106709cd57f89ba441e7155b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{factories_8hpp_a9354357d6b524f03a3e4203a09f91d72}\label{factories_8hpp_a9354357d6b524f03a3e4203a09f91d72} 
+\index{factories.hpp@{factories.hpp}!makePlayer@{makePlayer}}
+\index{makePlayer@{makePlayer}!factories.hpp@{factories.hpp}}
+\doxysubsubsection{\texorpdfstring{makePlayer()}{makePlayer()}}
+{\footnotesize\ttfamily entt\+::entity make\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{factories_8cpp_source}{factories.\+cpp}} 第 \mbox{\hyperlink{factories_8cpp_source_l00024}{24}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00480}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::create()}}, \mbox{\hyperlink{registry_8hpp_source_l00645}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::emplace()}}, \mbox{\hyperlink{constants_8hpp_source_l00036}{player\+Spawn\+Dir}} , 以及 \mbox{\hyperlink{constants_8hpp_source_l00034}{player\+Spawn\+Pos}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{Game\+::init()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_a9354357d6b524f03a3e4203a09f91d72_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{factories_8hpp_a9354357d6b524f03a3e4203a09f91d72_icgraph}
+\end{center}
+\end{figure}

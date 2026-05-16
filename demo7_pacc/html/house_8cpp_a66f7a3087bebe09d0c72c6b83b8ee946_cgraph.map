@@ -1,0 +1,12 @@
+<map id="enterHouse" name="enterHouse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,103,102"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#ac138930f54716e2b31907586e45367be" title="Assigns the given component to an entity." alt="" coords="151,5,297,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,74,156,48,158,53,90,79"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a44f5eac6fa4d1999a121f55e67a36c24" title="Removes the given components from an entity." alt="" coords="151,69,297,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="103,87,137,87,137,92,103,92"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="151,133,297,173"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="90,100,158,126,156,131,88,105"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="345,37,492,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,35,332,40,331,46,297,40"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="297,75,331,69,332,74,298,80"/>
+</map>

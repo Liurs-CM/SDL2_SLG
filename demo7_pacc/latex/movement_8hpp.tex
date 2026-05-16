@@ -1,0 +1,98 @@
+\doxysection{src/sys/movement.hpp 文件参考}
+\hypertarget{movement_8hpp}{}\label{movement_8hpp}\index{src/sys/movement.hpp@{src/sys/movement.hpp}}
+{\ttfamily \#include "{}core/maze.\+hpp"{}}\newline
+{\ttfamily \#include $<$entt/entity/fwd.\+hpp$>$}\newline
+movement.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{movement_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{movement_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{movement_8hpp_af836bcc235f4715e668d216b021315c1}{movement}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{movement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7}{wall\+Collide}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&, const \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{movement_8hpp_af836bcc235f4715e668d216b021315c1}\label{movement_8hpp_af836bcc235f4715e668d216b021315c1} 
+\index{movement.hpp@{movement.hpp}!movement@{movement}}
+\index{movement@{movement}!movement.hpp@{movement.hpp}}
+\doxysubsubsection{\texorpdfstring{movement()}{movement()}}
+{\footnotesize\ttfamily void movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{movement_8cpp_source}{movement.\+cpp}} 第 \mbox{\hyperlink{movement_8cpp_source_l00017}{17}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{left}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{right}}, \mbox{\hyperlink{dir__to__pos_8hpp_source_l00015}{to\+Pos()}}, \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}, \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{movement_8hpp_af836bcc235f4715e668d216b021315c1_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{movement_8hpp_af836bcc235f4715e668d216b021315c1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{movement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7}\label{movement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7} 
+\index{movement.hpp@{movement.hpp}!wallCollide@{wallCollide}}
+\index{wallCollide@{wallCollide}!movement.hpp@{movement.hpp}}
+\doxysubsubsection{\texorpdfstring{wallCollide()}{wallCollide()}}
+{\footnotesize\ttfamily void wall\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{const \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} \&}]{maze }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{movement_8cpp_source}{movement.\+cpp}} 第 \mbox{\hyperlink{movement_8cpp_source_l00038}{38}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{can__move_8cpp_source_l00015}{can\+Move()}}, \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{movement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{movement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_icgraph}
+\end{center}
+\end{figure}

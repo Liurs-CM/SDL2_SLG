@@ -1,0 +1,50 @@
+<map id="entt::sparse_set::page" name="entt::sparse_set::page">
+<area shape="rect" id="Node000001" title=" " alt="" coords="724,361,891,387"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="487,336,676,361"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="710,366,676,362,676,357,710,360"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="248,127,439,152"/>
+<area shape="poly" id="edge22_Node000001_Node000003" title=" " alt="" coords="781,354,734,313,675,271,599,232,522,199,390,155,392,150,523,194,602,227,677,266,737,309,785,350"/>
+<area shape="rect" id="Node000010" href="$classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="258,184,429,209"/>
+<area shape="poly" id="edge23_Node000001_Node000010" title=" " alt="" coords="760,359,675,326,377,212,379,207,677,321,762,354"/>
+<area shape="rect" id="Node000016" href="$classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="258,387,429,412"/>
+<area shape="poly" id="edge24_Node000001_Node000016" title=" " alt="" coords="710,382,429,397,429,392,710,377"/>
+<area shape="rect" id="Node000020" href="$classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="258,537,429,563"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="785,399,738,439,709,460,677,478,615,503,549,521,429,544,429,539,548,516,613,498,675,473,706,456,735,435,782,394"/>
+<area shape="rect" id="Node000024" href="$classentt_1_1sparse__set.html#a7e6b341dd385fc5802f8ab5de2a2845c" title="Swaps two entities in the internal packed array." alt="" coords="497,437,665,463"/>
+<area shape="poly" id="edge26_Node000001_Node000024" title=" " alt="" coords="757,394,621,440,619,435,755,389"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="564,325,514,251,479,209,437,174,398,155,401,150,440,169,482,205,519,247,569,322"/>
+<area shape="poly" id="edge6_Node000002_Node000010" title=" " alt="" coords="553,329,437,231,392,212,395,207,440,226,556,325"/>
+<area shape="rect" id="Node000014" href="$classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825" title="Finds an entity." alt="" coords="23,347,182,372"/>
+<area shape="poly" id="edge9_Node000002_Node000014" title=" " alt="" coords="473,354,182,360,182,355,473,348"/>
+<area shape="rect" id="Node000015" href="$classentt_1_1sparse__set.html#a45740d20df28710b87783d814abee1f7" title="Checks if a sparse set contains an entity." alt="" coords="265,285,422,311"/>
+<area shape="poly" id="edge10_Node000002_Node000015" title=" " alt="" coords="507,336,403,313,404,308,508,330"/>
+<area shape="poly" id="edge11_Node000002_Node000016" title=" " alt="" coords="508,367,404,389,403,384,507,362"/>
+<area shape="rect" id="Node000019" href="$classentt_1_1storage.html#a9e1ef5f77d61360a66b4d2a2b64aafb7" title="Returns a pointer to the object associated with an entity, if any." alt="" coords="23,297,182,323"/>
+<area shape="poly" id="edge21_Node000002_Node000019" title=" " alt="" coords="550,330,500,300,469,286,438,275,386,265,344,264,248,275,153,300,152,295,248,270,344,258,386,260,439,270,471,281,502,295,553,326"/>
+<area shape="poly" id="edge17_Node000002_Node000020" title=" " alt="" coords="555,372,488,428,440,476,363,539,360,535,437,472,485,424,551,368"/>
+<area shape="rect" id="Node000023" href="$classentt_1_1sparse__set.html#a1a683d1f8f52b1083cddd9938536a74a" title="Sort entities according to their order in another sparse set." alt="" coords="252,436,435,461"/>
+<area shape="poly" id="edge20_Node000002_Node000023" title=" " alt="" coords="550,371,499,399,440,427,404,439,403,433,438,422,497,395,547,366"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#a4f6d293b9bc7227de22c86722881083f" title="Assigns an entity to a sparse set." alt="" coords="5,5,200,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="315,120,263,81,199,44,168,33,169,28,201,40,266,77,318,116"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="18,55,187,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="292,125,199,95,154,83,155,77,201,90,293,120"/>
+<area shape="rect" id="Node000009" href="$classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#a392d8e383d270329945c8acb38469af4" title="Assigns an entity to a storage and constructs its object." alt="" coords="6,105,199,174"/>
+<area shape="poly" id="edge5_Node000003_Node000009" title=" " alt="" coords="234,142,200,142,200,137,234,137"/>
+<area shape="rect" id="Node000011" href="$classentt_1_1sparse__set.html#ab69719626bee1add76096046db86a170" title="Removes an entity from a sparse set." alt="" coords="11,199,194,224"/>
+<area shape="poly" id="edge7_Node000010_Node000011" title=" " alt="" coords="244,205,194,208,194,203,244,200"/>
+<area shape="rect" id="Node000012" href="$classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="28,248,177,273"/>
+<area shape="poly" id="edge8_Node000010_Node000012" title=" " alt="" coords="283,216,201,238,153,251,152,245,199,233,281,210"/>
+<area shape="poly" id="edge12_Node000016_Node000012" title=" " alt="" coords="314,380,199,287,170,276,172,271,201,282,318,376"/>
+<area shape="poly" id="edge13_Node000016_Node000014" title=" " alt="" coords="252,387,179,375,180,369,253,382"/>
+<area shape="rect" id="Node000017" href="$classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98" title="Returns the object associated with an entity." alt="" coords="35,396,170,421"/>
+<area shape="poly" id="edge14_Node000016_Node000017" title=" " alt="" coords="244,406,170,409,170,403,244,401"/>
+<area shape="rect" id="Node000018" href="$classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40" title="Swaps entities and objects in the internal packed arrays." alt="" coords="29,453,176,479"/>
+<area shape="poly" id="edge15_Node000016_Node000018" title=" " alt="" coords="282,418,249,427,149,456,147,451,247,422,280,413"/>
+<area shape="poly" id="edge16_Node000016_Node000019" title=" " alt="" coords="305,383,255,359,199,337,162,325,163,320,201,331,257,354,307,378"/>
+<area shape="rect" id="Node000021" href="$classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c" title="Assigns one or more entities to a sparse set." alt="" coords="5,569,200,595"/>
+<area shape="poly" id="edge18_Node000020_Node000021" title=" " alt="" coords="245,566,199,572,198,567,244,560"/>
+<area shape="rect" id="Node000022" href="$classentt_1_1storage.html#ae775ff0becf923b711f6e3476a7cb9f6" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="27,520,178,545"/>
+<area shape="poly" id="edge19_Node000020_Node000022" title=" " alt="" coords="244,546,178,541,178,535,244,540"/>
+<area shape="poly" id="edge28_Node000024_Node000018" title=" " alt="" coords="505,468,439,477,299,480,176,475,177,470,299,475,438,471,505,463"/>
+<area shape="poly" id="edge27_Node000024_Node000023" title=" " alt="" coords="484,452,435,452,435,447,484,447"/>
+</map>

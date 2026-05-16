@@ -1,0 +1,9 @@
+<map id="entt::sparse_set::erase" name="entt::sparse_set::erase">
+<area shape="rect" id="Node000001" title="Removes an entity from a sparse set." alt="" coords="447,31,617,56"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#ab69719626bee1add76096046db86a170" title="Removes an entity from a sparse set." alt="" coords="216,5,399,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,35,399,31,399,26,433,29"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="233,55,382,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="433,57,382,62,382,57,432,51"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1storage.html#a200938ea3867e3637c3c703f91ec0106" title="Removes an entity from a storage and destroys its object." alt="" coords="5,55,168,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="218,70,168,70,168,65,218,65"/>
+</map>

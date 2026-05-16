@@ -1,0 +1,15 @@
+<map id="ghostScared" name="ghostScared">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,99,108,125"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#ac138930f54716e2b31907586e45367be" title="Assigns the given component to an entity." alt="" coords="171,5,318,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,97,155,55,171,48,173,53,157,60,80,102"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258" title="Checks if an entity has all the given components." alt="" coords="156,70,333,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,101,150,95,150,100,109,107"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#af61e6b8ffc93f3490d94c5f1fefdc3e8" title="Removes the given components from an entity." alt="" coords="171,120,318,160"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="109,117,158,124,157,130,108,122"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="171,184,318,224"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="78,123,114,146,157,170,172,176,170,181,155,174,111,150,75,127"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="381,63,528,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="319,43,369,57,367,62,318,48"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="334,80,368,80,368,85,334,85"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="318,117,367,104,369,109,319,123"/>
+</map>

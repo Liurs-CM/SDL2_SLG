@@ -1,0 +1,71 @@
+\doxysection{entt\+::std\+\_\+sort结构体 参考}
+\hypertarget{structentt_1_1std__sort}{}\label{structentt_1_1std__sort}\index{entt::std\_sort@{entt::std\_sort}}
+
+
+Function object to wrap {\ttfamily std\+::sort} in a class type.  
+
+
+
+
+{\ttfamily \#include $<$algorithm.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}}  = std\+::less$<$$>$, typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1std__sort_af25b38ddb03e206a71a1f47521eaea46}{operator()}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{first}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{last}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{compare}}=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}}\{\}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Sorts the elements in a range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Function object to wrap {\ttfamily std\+::sort} in a class type. 
+
+Unfortunately, {\ttfamily std\+::sort} cannot be passed as template argument to a class template or a function template.~\newline
+ This class fills the gap by wrapping some flavors of {\ttfamily std\+::sort} in a function object. 
+
+在文件 \mbox{\hyperlink{algorithm_8hpp_source}{algorithm.\+hpp}} 第 \mbox{\hyperlink{algorithm_8hpp_source_l00024}{24}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1std__sort_af25b38ddb03e206a71a1f47521eaea46}\label{structentt_1_1std__sort_af25b38ddb03e206a71a1f47521eaea46} 
+\index{entt::std\_sort@{entt::std\_sort}!operator()@{operator()}}
+\index{operator()@{operator()}!entt::std\_sort@{entt::std\_sort}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}}  = std\+::less$<$$>$, typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} entt\+::std\+\_\+sort\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{first,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{It}}}]{last,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}}}]{compare = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Compare}}\{\}},  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sorts the elements in a range. 
+
+Sorts the elements in a range using the given binary comparison function.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em It} & Type of random access iterator. \\
+\hline
+{\em Compare} & Type of comparison function object. \\
+\hline
+{\em Args} & Types of arguments to forward to the sort function. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em first} & An iterator to the first element of the range to sort. \\
+\hline
+{\em last} & An iterator past the last element of the range to sort. \\
+\hline
+{\em compare} & A valid comparison function object. \\
+\hline
+{\em args} & Arguments to forward to the sort function, if any. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{algorithm_8hpp_source}{algorithm.\+hpp}} 第 \mbox{\hyperlink{algorithm_8hpp_source_l00039}{39}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{algorithm_8hpp}{algorithm.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="entt::basic_continuous_loader::assign" name="entt::basic_continuous_loader::assign">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,173,109"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__continuous__loader.html#ab077b1e21a817130db7401524ffc41a0" title="Returns the identifier to which an entity refers." alt="" coords="221,5,389,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,67,223,47,225,52,158,72"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__continuous__loader.html#a42bbea6fd83799452fcd9fb001dab56c" title=" " alt="" coords="221,69,389,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,87,208,87,208,92,174,92"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1basic__continuous__loader.html#a07e6dc40171a29c12c3b031bc504326c" title=" " alt="" coords="221,133,389,173"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="158,107,225,127,223,132,157,112"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a91bfd7ec05e6d718e47da581a893cdc4" title="Creates a new entity and returns it." alt="" coords="437,37,584,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="389,74,423,68,424,74,390,79"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="437,101,584,141"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="390,100,424,105,423,110,389,105"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#a75f09d82b0cd6305ea7422d60162704e" title="Returns the version stored along with an entity identifier." alt="" coords="632,37,779,77"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="584,55,618,55,618,60,584,60"/>
+</map>

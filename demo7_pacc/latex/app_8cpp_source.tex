@@ -1,0 +1,104 @@
+\doxysection{app.\+cpp}
+\hypertarget{app_8cpp_source}{}\label{app_8cpp_source}\index{src/core/app.cpp@{src/core/app.cpp}}
+\mbox{\hyperlink{app_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ app.cpp}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 17/9/18.}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{app_8hpp}{app.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{game_8hpp}{game.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{constants_8hpp}{constants.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{frame__cap_8hpp}{util/frame\_cap.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__check_8hpp}{util/sdl\_check.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__delete_8hpp}{util/sdl\_delete.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sdl__load__texture_8hpp}{util/sdl\_load\_texture.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00020}00020\ \textcolor{keyword}{namespace\ }\{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00022}00022\ \textcolor{keywordtype}{int}\ getScaleFactor()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00023}00023\ \ \ \textcolor{comment}{//\ Make\ the\ largest\ window\ possible\ with\ an\ integer\ scale\ factor}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00024}00024\ \ \ SDL\_Rect\ bounds;}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00025}00025\ \textcolor{preprocessor}{\ \ \#if\ SDL\_VERSION\_ATLEAST(2,\ 0,\ 5)}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00026}00026\ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_GetDisplayUsableBounds(0,\ \&bounds));}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00027}00027\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00028}00028\ \textcolor{preprocessor}{\ \ \#warning\ SDL\ 2.0.5\ or\ later\ is\ recommended}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00029}00029\ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_GetDisplayBounds(0,\ \&bounds));}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00030}00030\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00031}00031\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ scaleX\ =\ bounds.w\ /\ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}}.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00032}00032\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ scaleY\ =\ bounds.h\ /\ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}}.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00033}00033\ \ \ \textcolor{keywordflow}{return}\ std::max(1,\ std::min(scaleX,\ scaleY));}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00038}\mbox{\hyperlink{classApplication_afa8cc05ce6b6092be5ecdfdae44e05f8}{00038}}\ \mbox{\hyperlink{classApplication_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application::Application}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00039}00039\ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_Init(SDL\_INIT\_VIDEO));}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00040}00040\ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00042}\mbox{\hyperlink{classApplication_a748bca84fefb9c12661cfaa2f623748d}{00042}}\ \mbox{\hyperlink{classApplication_a748bca84fefb9c12661cfaa2f623748d}{Application::\string~Application}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00043}00043\ \ \ SDL\_Quit();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00046}\mbox{\hyperlink{classApplication_a68965449404743bf1add056784d6cf81}{00046}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classApplication_a68965449404743bf1add056784d6cf81}{Application::run}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00047}00047\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ scaleFactor\ =\ getScaleFactor();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00048}00048\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Using\ scale\ factor:\ "{}}\ <<\ scaleFactor\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00050}00050\ \ \ \mbox{\hyperlink{namespaceSDL_a613a620356819580afd00fb32155a972}{SDL::Window}}\ window\{\mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_CreateWindow(}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{stringliteral}{"{}Pacman"{}},}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00052}00052\ \ \ \ \ SDL\_WINDOWPOS\_CENTERED,\ SDL\_WINDOWPOS\_CENTERED,}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}}.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}}\ *\ scaleFactor,\ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}}.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}\ *\ scaleFactor,}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00054}00054\ \ \ \ \ SDL\_WINDOW\_SHOWN}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00055}00055\ \ \ ))\};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00057}00057\ \ \ \mbox{\hyperlink{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb}{SDL::Renderer}}\ renderer\{\mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_CreateRenderer(}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00058}00058\ \ \ \ \ window.get(),}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00059}00059\ \ \ \ \ -\/1,}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00060}00060\ \ \ \ \ SDL\_RENDERER\_ACCELERATED\ |\ SDL\_RENDERER\_PRESENTVSYNC}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00061}00061\ \ \ ))\};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00062}00062\ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_RenderSetLogicalSize(renderer.get(),\ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}}.\mbox{\hyperlink{structPos_a4bcafee8dc3800fb8c3792de54996496}{x}},\ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}}.\mbox{\hyperlink{structPos_a6b309684454df6615bce567e09437348}{y}}));}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00064}00064\ \ \ \mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{SDL::Texture}}\ maze\ =\ \mbox{\hyperlink{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2}{SDL::loadTexture}}(renderer.get(),\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a8000eb35ac2b34196d22e59c55f0fc77}{animera::getTextureInfo}}());}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00065}00065\ \ \ \mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ writer\{renderer.get(),\ maze.get()\};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00066}00066\ \ \ \mbox{\hyperlink{classGame}{Game}}\ game;}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00067}00067\ \ \ game.\mbox{\hyperlink{classGame_a6f3a33940524b6ba9d83f627ccb14bbf}{init}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00069}00069\ \ \ \textcolor{keywordtype}{int}\ frame\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00070}00070\ \ \ \textcolor{keywordtype}{bool}\ quit\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00071}00071\ \ \ \textcolor{keywordflow}{while}\ (!quit)\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00072}00072\ \ \ \ \ \mbox{\hyperlink{classFrameCap}{FrameCap}}\ sync\{\mbox{\hyperlink{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3}{fps}}\};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00074}00074\ \ \ \ \ SDL\_Event\ e;}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{while}\ (SDL\_PollEvent(\&e))\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00076}00076\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (e.type\ ==\ SDL\_QUIT)\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ quit\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00079}00079\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (e.type\ ==\ SDL\_KEYDOWN)\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ game.\mbox{\hyperlink{classGame_a9b1d788a6004222d0fb5d3fc6f6a1709}{input}}(e.key.keysym.scancode);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00081}00081\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{comment}{//\ Game::logic\ is\ called\ once\ for\ each\ tile}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{comment}{//\ Game::render\ is\ called\ for\ each\ pixel\ between\ tiles}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordflow}{if}\ (frame\ \%\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}}\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00087}00087\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!game.\mbox{\hyperlink{classGame_a4b4dfbeae641e2cd95cae985161d891a}{logic}}())\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ quit\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00089}00089\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00090}00090\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00092}00092\ \ \ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_SetRenderDrawColor(renderer.get(),\ 0,\ 0,\ 0,\ 255));}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00093}00093\ \ \ \ \ \mbox{\hyperlink{sdl__check_8hpp_a6b60e6b99dc4e0999222181a98b46b98}{SDL\_CHECK}}(SDL\_RenderClear(renderer.get()));}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00094}00094\ \ \ \ \ game.\mbox{\hyperlink{classGame_a754fe6f2b53a2b769aeaa34cdba6a5e6}{render}}(writer,\ frame\ \%\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00095}00095\ \ \ \ \ ++frame;}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00096}00096\ \ \ \ \ SDL\_RenderPresent(renderer.get());}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00097}00097\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00098}00098\ \}}
+
+\end{DoxyCode}

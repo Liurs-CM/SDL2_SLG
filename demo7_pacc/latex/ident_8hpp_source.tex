@@ -1,0 +1,43 @@
+\doxysection{ident.\+hpp}
+\hypertarget{ident_8hpp_source}{}\label{ident_8hpp_source}\index{third\_party/entt/core/ident.hpp@{third\_party/entt/core/ident.hpp}}
+\mbox{\hyperlink{ident_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_CORE\_IDENT\_HPP}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_CORE\_IDENT\_HPP}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}../config/config.h"{}}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{signal_2fwd_8hpp}{fwd.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00013}00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00043}00043\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}...\ Types>}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00044}\mbox{\hyperlink{classentt_1_1identifier}{00044}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classentt_1_1identifier}{identifier}}\ \{}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00045}\mbox{\hyperlink{classentt_1_1identifier_a5aee2a2d97c13adcbaed51de78f106ae}{00045}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1identifier_a5aee2a2d97c13adcbaed51de78f106ae}{tuple\_type}}\ =\ std::tuple<std::decay\_t<Types>...>;}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type,\ std::size\_t...\ Indexes>}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00048}\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{00048}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}\ \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{get}}(std::index\_sequence<Indexes...>)\ \{}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_assert}(std::disjunction\_v<std::is\_same<Type,\ Types>...>);}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (0\ +\ ...\ +\ (std::is\_same\_v<Type,\ std::tuple\_element\_t<Indexes,\ tuple\_type>>\ ?\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}(Indexes)\ :\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}}\{\}));}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00053}00053\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00055}\mbox{\hyperlink{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b}{00055}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b}{identifier\_type}}\ =\ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\_type}};}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00058}00058\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00059}\mbox{\hyperlink{classentt_1_1identifier_adb3aad553b8d57ef94581af39fc53178}{00059}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b}{identifier\_type}}\ \mbox{\hyperlink{classentt_1_1identifier_adb3aad553b8d57ef94581af39fc53178}{type}}\ =\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{get<std::decay\_t<Type>}}>(std::index\_sequence\_for<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Types}}...>\{\});}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00060}00060\ \};}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00063}00063\ \}}
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{ident_8hpp_source_l00066}00066\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

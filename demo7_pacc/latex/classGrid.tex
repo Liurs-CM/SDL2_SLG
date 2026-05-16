@@ -1,0 +1,298 @@
+\doxysection{Grid\texorpdfstring{$<$}{<} Elem \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classGrid}{}\label{classGrid}\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+
+
+{\ttfamily \#include $<$grid.\+hpp$>$}
+
+
+
+Grid\texorpdfstring{$<$}{<} Elem \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classGrid__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGrid_aff469a07cf8f1975c7b4d983568336d8}{Grid}} ()
+\item 
+\mbox{\hyperlink{classGrid_ac39c47c08c88ef6d2e8d231f0037a734}{Grid}} (const \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{classGrid_ac9f5de5a0b68c3ff236643eb4cebd29b}{size}})
+\item 
+int \mbox{\hyperlink{classGrid_acc8e1f59b67d05d0e87b7e5087246787}{area}} () const
+\item 
+int \mbox{\hyperlink{classGrid_ac58018ab408ca0a0e64b2f6573a0a7a0}{width}} () const
+\item 
+int \mbox{\hyperlink{classGrid_a7e3a744b7c4f0874f2ad7777d15c71f0}{height}} () const
+\item 
+bool \mbox{\hyperlink{classGrid_aa3550f9863417133fc645ffc3611fa93}{out\+Of\+Range}} (const std\+::size\+\_\+t i) const
+\item 
+bool \mbox{\hyperlink{classGrid_ad9fa13430c93ec213aacb486c73859f9}{out\+Of\+Range}} (const \mbox{\hyperlink{structPos}{Pos}} pos) const
+\item 
+Elem \& \mbox{\hyperlink{classGrid_aa2842fc4be5205b79cc5692edf9ce68a}{operator\mbox{[}$\,$\mbox{]}}} (const std\+::size\+\_\+t i)
+\item 
+Elem \& \mbox{\hyperlink{classGrid_ac07e3ee1272c90e146fea7feb4c24e72}{operator\mbox{[}$\,$\mbox{]}}} (const \mbox{\hyperlink{structPos}{Pos}} pos)
+\item 
+const Elem \& \mbox{\hyperlink{classGrid_afea775badbd6d834f0a8cf633c8fc068}{operator\mbox{[}$\,$\mbox{]}}} (const std\+::size\+\_\+t i) const
+\item 
+const Elem \& \mbox{\hyperlink{classGrid_aaced6254a74e7a33f308265aecabebe9}{operator\mbox{[}$\,$\mbox{]}}} (const \mbox{\hyperlink{structPos}{Pos}} pos) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{classGrid_ac9f5de5a0b68c3ff236643eb4cebd29b}{size}}
+\item 
+std\+::vector$<$ Elem $>$ \mbox{\hyperlink{classGrid_ad60d0896244518e02f4c6b7f30c7a9fd}{storage}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$typename Elem$>$\newline
+class Grid$<$ Elem $>$}
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00018}{18}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classGrid_aff469a07cf8f1975c7b4d983568336d8}\label{classGrid_aff469a07cf8f1975c7b4d983568336d8} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+\mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\mbox{\hyperlink{classGrid}{\+::\+Grid}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00020}{20}} 行定义.
+
+\Hypertarget{classGrid_ac39c47c08c88ef6d2e8d231f0037a734}\label{classGrid_ac39c47c08c88ef6d2e8d231f0037a734} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+\mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\mbox{\hyperlink{classGrid}{\+::\+Grid}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00023}{23}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classGrid_acc8e1f59b67d05d0e87b7e5087246787}\label{classGrid_acc8e1f59b67d05d0e87b7e5087246787} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!area@{area}}
+\index{area@{area}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+int \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00026}{26}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{grid_8hpp_source_l00066}{Grid$<$ Elem $>$\+::size}}, \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{grid_8hpp_source_l00038}{Grid$<$ Elem $>$\+::out\+Of\+Range()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGrid_acc8e1f59b67d05d0e87b7e5087246787_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGrid_a7e3a744b7c4f0874f2ad7777d15c71f0}\label{classGrid_a7e3a744b7c4f0874f2ad7777d15c71f0} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!height@{height}}
+\index{height@{height}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+int \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00034}{34}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{grid_8hpp_source_l00066}{Grid$<$ Elem $>$\+::size}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+\Hypertarget{classGrid_ac07e3ee1272c90e146fea7feb4c24e72}\label{classGrid_ac07e3ee1272c90e146fea7feb4c24e72} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+Elem \& \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00051}{51}} 行定义.
+
+\Hypertarget{classGrid_aaced6254a74e7a33f308265aecabebe9}\label{classGrid_aaced6254a74e7a33f308265aecabebe9} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+const Elem \& \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00060}{60}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{grid_8hpp_source_l00038}{Grid$<$ Elem $>$\+::out\+Of\+Range()}}, \mbox{\hyperlink{grid_8hpp_source_l00066}{Grid$<$ Elem $>$\+::size}}, \mbox{\hyperlink{grid_8hpp_source_l00067}{Grid$<$ Elem $>$\+::storage}}, \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGrid_aaced6254a74e7a33f308265aecabebe9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGrid_aa2842fc4be5205b79cc5692edf9ce68a}\label{classGrid_aa2842fc4be5205b79cc5692edf9ce68a} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+Elem \& \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00047}{47}} 行定义.
+
+\Hypertarget{classGrid_afea775badbd6d834f0a8cf633c8fc068}\label{classGrid_afea775badbd6d834f0a8cf633c8fc068} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+const Elem \& \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00055}{55}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{grid_8hpp_source_l00038}{Grid$<$ Elem $>$\+::out\+Of\+Range()}} , 以及 \mbox{\hyperlink{grid_8hpp_source_l00067}{Grid$<$ Elem $>$\+::storage}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGrid_afea775badbd6d834f0a8cf633c8fc068_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGrid_ad9fa13430c93ec213aacb486c73859f9}\label{classGrid_ad9fa13430c93ec213aacb486c73859f9} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!outOfRange@{outOfRange}}
+\index{outOfRange@{outOfRange}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{outOfRange()}{outOfRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+bool \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::out\+Of\+Range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPos}{Pos}}}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00042}{42}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{grid_8hpp_source_l00066}{Grid$<$ Elem $>$\+::size}}, \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::y}}.
+
+\Hypertarget{classGrid_aa3550f9863417133fc645ffc3611fa93}\label{classGrid_aa3550f9863417133fc645ffc3611fa93} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!outOfRange@{outOfRange}}
+\index{outOfRange@{outOfRange}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{outOfRange()}{outOfRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+bool \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::out\+Of\+Range (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00038}{38}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{grid_8hpp_source_l00026}{Grid$<$ Elem $>$\+::area()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{grid_8hpp_source_l00060}{Grid$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]}()}} , 以及 \mbox{\hyperlink{grid_8hpp_source_l00055}{Grid$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]}()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classGrid_aa3550f9863417133fc645ffc3611fa93_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classGrid_aa3550f9863417133fc645ffc3611fa93_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGrid_ac58018ab408ca0a0e64b2f6573a0a7a0}\label{classGrid_ac58018ab408ca0a0e64b2f6573a0a7a0} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!width@{width}}
+\index{width@{width}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+int \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00030}{30}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{grid_8hpp_source_l00066}{Grid$<$ Elem $>$\+::size}} , 以及 \mbox{\hyperlink{pos_8hpp_source_l00015}{Pos\+::x}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classGrid_ac9f5de5a0b68c3ff236643eb4cebd29b}\label{classGrid_ac9f5de5a0b68c3ff236643eb4cebd29b} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!size@{size}}
+\index{size@{size}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+\mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00066}{66}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{grid_8hpp_source_l00026}{Grid$<$ Elem $>$\+::area()}}, \mbox{\hyperlink{grid_8hpp_source_l00034}{Grid$<$ Elem $>$\+::height()}}, \mbox{\hyperlink{grid_8hpp_source_l00060}{Grid$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]}()}}, \mbox{\hyperlink{grid_8hpp_source_l00042}{Grid$<$ Elem $>$\+::out\+Of\+Range()}} , 以及 \mbox{\hyperlink{grid_8hpp_source_l00030}{Grid$<$ Elem $>$\+::width()}}.
+
+\Hypertarget{classGrid_ad60d0896244518e02f4c6b7f30c7a9fd}\label{classGrid_ad60d0896244518e02f4c6b7f30c7a9fd} 
+\index{Grid$<$ Elem $>$@{Grid$<$ Elem $>$}!storage@{storage}}
+\index{storage@{storage}!Grid$<$ Elem $>$@{Grid$<$ Elem $>$}}
+\doxysubsubsection{\texorpdfstring{storage}{storage}}
+{\footnotesize\ttfamily template$<$typename Elem $>$ \\
+std\+::vector$<$Elem$>$ \mbox{\hyperlink{classGrid}{Grid}}$<$ Elem $>$\+::storage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{grid_8hpp_source}{grid.\+hpp}} 第 \mbox{\hyperlink{grid_8hpp_source_l00067}{67}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{grid_8hpp_source_l00060}{Grid$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]}()}} , 以及 \mbox{\hyperlink{grid_8hpp_source_l00055}{Grid$<$ Elem $>$\+::operator\mbox{[}$\,$\mbox{]}()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\mbox{\hyperlink{grid_8hpp}{grid.\+hpp}}\end{DoxyCompactItemize}

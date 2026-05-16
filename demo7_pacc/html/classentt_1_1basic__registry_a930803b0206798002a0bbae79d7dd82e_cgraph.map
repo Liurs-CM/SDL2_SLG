@@ -1,0 +1,5 @@
+<map id="entt::basic_registry::insert" name="entt::basic_registry::insert">
+<area shape="rect" id="Node000001" title="Assigns each entity in a range the given components." alt="" coords="5,5,152,45"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="200,5,347,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,23,186,23,186,28,152,28"/>
+</map>

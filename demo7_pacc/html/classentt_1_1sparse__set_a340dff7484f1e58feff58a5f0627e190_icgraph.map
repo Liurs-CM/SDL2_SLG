@@ -1,0 +1,11 @@
+<map id="entt::sparse_set::size" name="entt::sparse_set::size">
+<area shape="rect" id="Node000001" title="Returns the number of elements in a sparse set." alt="" coords="469,69,629,95"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#a911220ac7c4a698c98d0f3942f98b3b3" title="Returns an iterator to the beginning." alt="" coords="237,5,387,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="497,68,421,45,375,33,376,28,422,39,498,62"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_01Exclude_8_8_8_01_4_00_01Component_8_8_8_01_4.html#ae13a252e8d496d9236e251666de53e18" title=" " alt="" coords="203,55,421,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="456,85,422,85,422,79,456,79"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1storage.html#a49e58111ceecb3fa548ae580545eafb4" title="Returns an iterator to the beginning." alt="" coords="234,133,390,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="497,101,422,123,371,136,370,131,421,118,495,96"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1storage.html#a2565aaf805c2650613b89c3d13df9b23" title="Returns an iterator to the beginning." alt="" coords="5,133,155,159"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="220,149,155,149,155,143,220,143"/>
+</map>

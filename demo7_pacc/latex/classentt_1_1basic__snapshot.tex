@@ -1,0 +1,405 @@
+\doxysection{entt\+::basic\+\_\+snapshot\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1basic__snapshot}{}\label{classentt_1_1basic__snapshot}\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+
+
+Utility class to create snapshots from a registry.  
+
+
+
+
+{\ttfamily \#include $<$snapshot.\+hpp$>$}
+
+
+
+entt\+::basic\+\_\+snapshot\texorpdfstring{$<$}{<} Entity \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classentt_1_1basic__snapshot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot_aeb9724b67563bf7f74440e5a8feb711c}{entity\+\_\+type}} = \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}}
+\begin{DoxyCompactList}\small\item\em Underlying entity identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot_ac0777064a8cd3109286398e2488e7111}{basic\+\_\+snapshot}} (\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_aeb9724b67563bf7f74440e5a8feb711c}{entity\+\_\+type}} $>$ \&source) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs an instance that is bound to a given registry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a10f658d8e4feb7df9da8b48119551334}{basic\+\_\+snapshot}} (\mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \&\&)=\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{default}}
+\begin{DoxyCompactList}\small\item\em Default move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot_a8fc1f40d57659e3e5915f3203b187506}{operator=}} (\mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \&\&)=\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{default}}
+\begin{DoxyCompactList}\small\item\em Default move assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} $>$ }\\\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105}{entities}} (\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{archive}}) \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}}
+\begin{DoxyCompactList}\small\item\em Puts aside all the entities from the underlying registry. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} $>$ }\\\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot_a359de6f6ec4407fa902d1ead70af2896}{destroyed}} (\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&) \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}}
+\begin{DoxyCompactList}\small\item\em Deprecated function. Currently, it does nothing. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} $>$ }\\\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot_a0a2c4695528b3b74fca653b50cedf474}{component}} (\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{archive}}) \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}}
+\begin{DoxyCompactList}\small\item\em Puts aside the given components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Component, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} , \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} $>$ }\\\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5}{component}} (\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{archive}}, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{first}}, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{last}}) \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}}
+\begin{DoxyCompactList}\small\item\em Puts aside the given components for the entities in a range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot_ac681d0ade0cfce35d6b9d91f2ff56b9c}{traits\+\_\+type}} = \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+\_\+traits}}$<$ std\+::underlying\+\_\+type\+\_\+t$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Component , typename Archive , typename It $>$ }\\void \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{get}} (Archive \&archive, std\+::size\+\_\+t sz, It first, It last) const
+\item 
+{\footnotesize template$<$typename... Component, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} , \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} , std\+::size\+\_\+t... Indexes$>$ }\\\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{void}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377}{component}} (\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{archive}}, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{first}}, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{last}}, std\+::index\+\_\+sequence$<$ Indexes... $>$) \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_aeb9724b67563bf7f74440e5a8feb711c}{entity\+\_\+type}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__snapshot_aeda9696dd48c9954ad4836c89aadca17}{reg}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{class}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a60c928831c22b7dd2216dbc469f68f24}{basic\+\_\+registry$<$ Entity $>$}}
+\begin{DoxyCompactList}\small\item\em A registry is allowed to create snapshots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}}$>$\newline
+class entt\+::basic\+\_\+snapshot$<$ Entity $>$}
+Utility class to create snapshots from a registry. 
+
+A {\itshape snapshot} can be either a dump of the entire registry or a narrower selection of components of interest.~\newline
+ This type can be used in both cases if provided with a correctly configured output archive.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Entity} & A valid entity type (see \doxylink{structentt_1_1entt__traits}{entt\+\_\+traits} for more details). \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00031}{31}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1basic__snapshot_aeb9724b67563bf7f74440e5a8feb711c}\label{classentt_1_1basic__snapshot_aeb9724b67563bf7f74440e5a8feb711c} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!entity\_type@{entity\_type}}
+\index{entity\_type@{entity\_type}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entity\_type}{entity\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::entity\+\_\+type =  \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}}}
+
+
+
+Underlying entity identifier. 
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00069}{69}} 行定义.
+
+\Hypertarget{classentt_1_1basic__snapshot_ac681d0ade0cfce35d6b9d91f2ff56b9c}\label{classentt_1_1basic__snapshot_ac681d0ade0cfce35d6b9d91f2ff56b9c} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!traits\_type@{traits\_type}}
+\index{traits\_type@{traits\_type}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{traits\_type}{traits\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{using}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::traits\+\_\+type =  \mbox{\hyperlink{structentt_1_1entt__traits}{entt\+\_\+traits}}$<$std\+::underlying\+\_\+type\+\_\+t$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}}$>$ $>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00035}{35}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1basic__snapshot_ac0777064a8cd3109286398e2488e7111}\label{classentt_1_1basic__snapshot_ac0777064a8cd3109286398e2488e7111} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!basic\_snapshot@{basic\_snapshot}}
+\index{basic\_snapshot@{basic\_snapshot}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_snapshot()}{basic\_snapshot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::basic\+\_\+snapshot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_aeb9724b67563bf7f74440e5a8feb711c}{entity\+\_\+type}} $>$ \&}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an instance that is bound to a given registry. 
+
+
+\begin{DoxyParams}{参数}
+{\em source} & A valid reference to a registry. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00075}{75}} 行定义.
+
+\Hypertarget{classentt_1_1basic__snapshot_a10f658d8e4feb7df9da8b48119551334}\label{classentt_1_1basic__snapshot_a10f658d8e4feb7df9da8b48119551334} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!basic\_snapshot@{basic\_snapshot}}
+\index{basic\_snapshot@{basic\_snapshot}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_snapshot()}{basic\_snapshot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::basic\+\_\+snapshot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move constructor. 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1basic__snapshot_a0a2c4695528b3b74fca653b50cedf474}\label{classentt_1_1basic__snapshot_a0a2c4695528b3b74fca653b50cedf474} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!component@{component}}
+\index{component@{component}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{component()}{component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+template$<$typename... Component, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&}]{archive }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Puts aside the given components. 
+
+Each instance is serialized together with the entity to which it belongs. Entities are serialized along with their versions.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Types of components to serialize. \\
+\hline
+{\em Archive} & Type of output archive. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em archive} & A valid reference to an output archive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An object of this type to continue creating the snapshot. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00131}{131}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{snapshot_8hpp_source_l00157}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::reg}}.
+
+\Hypertarget{classentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5}\label{classentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!component@{component}}
+\index{component@{component}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{component()}{component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+template$<$typename... Component, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} , \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&}]{archive,  }\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}}}]{first,  }\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}}}]{last }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Puts aside the given components for the entities in a range. 
+
+Each instance is serialized together with the entity to which it belongs. Entities are serialized along with their versions.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Component} & Types of components to serialize. \\
+\hline
+{\em Archive} & Type of output archive. \\
+\hline
+{\em It} & Type of input iterator. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em archive} & A valid reference to an output archive. \\
+\hline
+{\em first} & An iterator to the first element of the range to serialize. \\
+\hline
+{\em last} & An iterator past the last element of the range to serialize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An object of this type to continue creating the snapshot. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00151}{151}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{snapshot_8hpp_source_l00055}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::component()}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__snapshot_ac0a068cbe801544905e07ef6c0998bb5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377}\label{classentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!component@{component}}
+\index{component@{component}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{component()}{component()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+template$<$typename... Component, \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} , \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}} , std\+::size\+\_\+t... Indexes$>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{void}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&}]{archive,  }\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}}}]{first,  }\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{It}}}]{last,  }\item[{std\+::index\+\_\+sequence$<$ Indexes... $>$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00055}{55}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a}{begin}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{snapshot_8hpp_source_l00157}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::reg}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{snapshot_8hpp_source_l00151}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::component()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__snapshot_a0e853004cebbfc7c03677d5ff4979377_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__snapshot_a359de6f6ec4407fa902d1ead70af2896}\label{classentt_1_1basic__snapshot_a359de6f6ec4407fa902d1ead70af2896} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{destroyed()}{destroyed()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::destroyed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deprecated function. Currently, it does nothing. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Archive} & Type of output archive. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+An object of this type to continue creating the snapshot. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00117}{117}} 行定义.
+
+\Hypertarget{classentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105}\label{classentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!entities@{entities}}
+\index{entities@{entities}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{entities()}{entities()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::entities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Archive}} \&}]{archive }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Puts aside all the entities from the underlying registry. 
+
+Entities are serialized along with their versions. Destroyed entities are taken in consideration as well by this function.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Archive} & Type of output archive. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em archive} & A valid reference to an output archive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+An object of this type to continue creating the snapshot. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00096}{96}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00403}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::data()}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{snapshot_8hpp_source_l00157}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::reg}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l00263}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::size()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classentt_1_1basic__snapshot_aa58957ab8df1b6a7b973e9485d63c105_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}\label{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!get@{get}}
+\index{get@{get}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename Entity $>$ \\
+template$<$typename Component , typename Archive , typename It $>$ \\
+void \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ Entity $>$\+::get (\begin{DoxyParamCaption}\item[{Archive \&}]{archive,  }\item[{std\+::size\+\_\+t}]{sz,  }\item[{It}]{first,  }\item[{It}]{last }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00038}{38}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{snapshot_8hpp_source_l00157}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::reg}}.
+
+\Hypertarget{classentt_1_1basic__snapshot_a8fc1f40d57659e3e5915f3203b187506}\label{classentt_1_1basic__snapshot_a8fc1f40d57659e3e5915f3203b187506} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}} \& \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1basic__snapshot}{basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move assignment operator. 
+
+\begin{DoxyReturn}{返回}
+This snapshot. 
+\end{DoxyReturn}
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classentt_1_1basic__snapshot_a60c928831c22b7dd2216dbc469f68f24}\label{classentt_1_1basic__snapshot_a60c928831c22b7dd2216dbc469f68f24} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!basic\_registry$<$ Entity $>$@{basic\_registry$<$ Entity $>$}}
+\index{basic\_registry$<$ Entity $>$@{basic\_registry$<$ Entity $>$}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_registry$<$ Entity $>$}{basic\_registry< Entity >}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{friend}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{class}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A registry is allowed to create snapshots. 
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00001}{1}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1basic__snapshot_aeda9696dd48c9954ad4836c89aadca17}\label{classentt_1_1basic__snapshot_aeda9696dd48c9954ad4836c89aadca17} 
+\index{entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}!reg@{reg}}
+\index{reg@{reg}!entt::basic\_snapshot$<$ Entity $>$@{entt::basic\_snapshot$<$ Entity $>$}}
+\doxysubsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{typename}} \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{const}} \mbox{\hyperlink{classentt_1_1basic__registry}{basic\+\_\+registry}}$<$\mbox{\hyperlink{classentt_1_1basic__snapshot_aeb9724b67563bf7f74440e5a8feb711c}{entity\+\_\+type}}$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__snapshot}{entt\+::basic\+\_\+snapshot}}$<$ \mbox{\hyperlink{classentt_1_1basic__snapshot_a13fa0bcebb568df2c1ecdd2d28a44695}{Entity}} $>$\+::reg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{snapshot_8hpp_source}{snapshot.\+hpp}} 第 \mbox{\hyperlink{snapshot_8hpp_source_l00157}{157}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{snapshot_8hpp_source_l00131}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::component()}}, \mbox{\hyperlink{snapshot_8hpp_source_l00055}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::component()}}, \mbox{\hyperlink{snapshot_8hpp_source_l00096}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::entities()}} , 以及 \mbox{\hyperlink{snapshot_8hpp_source_l00038}{entt\+::basic\+\_\+snapshot$<$ Entity $>$\+::get()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{entity_2fwd_8hpp}{fwd.\+hpp}}\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{snapshot_8hpp}{snapshot.\+hpp}}\end{DoxyCompactItemize}

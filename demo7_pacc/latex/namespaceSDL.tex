@@ -1,0 +1,184 @@
+\doxysection{SDL 命名空间参考}
+\hypertarget{namespaceSDL}{}\label{namespaceSDL}\index{SDL@{SDL}}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteRenderer}{Delete\+Renderer}}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteSurface}{Delete\+Surface}}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteTexture}{Delete\+Texture}}
+\item 
+struct \mbox{\hyperlink{structSDL_1_1DeleteWindow}{Delete\+Window}}
+\item 
+class \mbox{\hyperlink{classSDL_1_1QuadWriter}{Quad\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespaceSDL_a613a620356819580afd00fb32155a972}{Window}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Window, \mbox{\hyperlink{structSDL_1_1DeleteWindow}{Delete\+Window}} $>$
+\item 
+using \mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{Texture}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Texture, \mbox{\hyperlink{structSDL_1_1DeleteTexture}{Delete\+Texture}} $>$
+\item 
+using \mbox{\hyperlink{namespaceSDL_a11506dcfb46d3496382f8d46b1510333}{Surface}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Surface, \mbox{\hyperlink{structSDL_1_1DeleteSurface}{Delete\+Surface}} $>$
+\item 
+using \mbox{\hyperlink{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb}{Renderer}} = std\+::unique\+\_\+ptr$<$ SDL\+\_\+\+Renderer, \mbox{\hyperlink{structSDL_1_1DeleteRenderer}{Delete\+Renderer}} $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7}{raise}} ()
+\item 
+{\footnotesize template$<$typename Ptr $>$ }\\Ptr \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceSDL_a2fa6e75c27e8977abfaf9438cd2297a3}{check}} (Ptr \texorpdfstring{$\ast$}{*}ptr)
+\item 
+int \mbox{\hyperlink{namespaceSDL_a939cd2d3e131381bfa4582b274657897}{check}} (const int code)
+\item 
+\mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{Texture}} \mbox{\hyperlink{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2}{load\+Texture}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}, const \mbox{\hyperlink{structanimera_1_1TextureInfo}{animera\+::\+Texture\+Info}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb}\label{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb} 
+\index{SDL@{SDL}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{Renderer}{Renderer}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceSDL_af05574d6312c7c9bac6a02672dd89ccb}{SDL\+::\+Renderer}} = typedef std\+::unique\+\_\+ptr$<$SDL\+\_\+\+Renderer, \mbox{\hyperlink{structSDL_1_1DeleteRenderer}{Delete\+Renderer}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{sdl__delete_8hpp_source}{sdl\+\_\+delete.\+hpp}} 第 \mbox{\hyperlink{sdl__delete_8hpp_source_l00044}{44}} 行定义.
+
+\Hypertarget{namespaceSDL_a11506dcfb46d3496382f8d46b1510333}\label{namespaceSDL_a11506dcfb46d3496382f8d46b1510333} 
+\index{SDL@{SDL}!Surface@{Surface}}
+\index{Surface@{Surface}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{Surface}{Surface}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceSDL_a11506dcfb46d3496382f8d46b1510333}{SDL\+::\+Surface}} = typedef std\+::unique\+\_\+ptr$<$SDL\+\_\+\+Surface, \mbox{\hyperlink{structSDL_1_1DeleteSurface}{Delete\+Surface}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{sdl__delete_8hpp_source}{sdl\+\_\+delete.\+hpp}} 第 \mbox{\hyperlink{sdl__delete_8hpp_source_l00043}{43}} 行定义.
+
+\Hypertarget{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}\label{namespaceSDL_a679acc91e863ec34d18818c56d3c9558} 
+\index{SDL@{SDL}!Texture@{Texture}}
+\index{Texture@{Texture}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{Texture}{Texture}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{SDL\+::\+Texture}} = typedef std\+::unique\+\_\+ptr$<$SDL\+\_\+\+Texture, \mbox{\hyperlink{structSDL_1_1DeleteTexture}{Delete\+Texture}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{sdl__delete_8hpp_source}{sdl\+\_\+delete.\+hpp}} 第 \mbox{\hyperlink{sdl__delete_8hpp_source_l00042}{42}} 行定义.
+
+\Hypertarget{namespaceSDL_a613a620356819580afd00fb32155a972}\label{namespaceSDL_a613a620356819580afd00fb32155a972} 
+\index{SDL@{SDL}!Window@{Window}}
+\index{Window@{Window}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{Window}{Window}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceSDL_a613a620356819580afd00fb32155a972}{SDL\+::\+Window}} = typedef std\+::unique\+\_\+ptr$<$SDL\+\_\+\+Window, \mbox{\hyperlink{structSDL_1_1DeleteWindow}{Delete\+Window}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{sdl__delete_8hpp_source}{sdl\+\_\+delete.\+hpp}} 第 \mbox{\hyperlink{sdl__delete_8hpp_source_l00041}{41}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{namespaceSDL_a939cd2d3e131381bfa4582b274657897}\label{namespaceSDL_a939cd2d3e131381bfa4582b274657897} 
+\index{SDL@{SDL}!check@{check}}
+\index{check@{check}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int SDL\+::check (\begin{DoxyParamCaption}\item[{const int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{sdl__check_8hpp_source}{sdl\+\_\+check.\+hpp}} 第 \mbox{\hyperlink{sdl__check_8hpp_source_l00028}{28}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sdl__check_8hpp_source_l00017}{raise()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{namespaceSDL_a939cd2d3e131381bfa4582b274657897_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceSDL_a2fa6e75c27e8977abfaf9438cd2297a3}\label{namespaceSDL_a2fa6e75c27e8977abfaf9438cd2297a3} 
+\index{SDL@{SDL}!check@{check}}
+\index{check@{check}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Ptr $>$ \\
+Ptr \texorpdfstring{$\ast$}{*} SDL\+::check (\begin{DoxyParamCaption}\item[{Ptr \texorpdfstring{$\ast$}{*}}]{ptr }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{sdl__check_8hpp_source}{sdl\+\_\+check.\+hpp}} 第 \mbox{\hyperlink{sdl__check_8hpp_source_l00023}{23}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sdl__check_8hpp_source_l00017}{raise()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{namespaceSDL_a2fa6e75c27e8977abfaf9438cd2297a3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2}\label{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2} 
+\index{SDL@{SDL}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceSDL_a679acc91e863ec34d18818c56d3c9558}{SDL\+::\+Texture}} SDL\+::load\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{const \mbox{\hyperlink{structanimera_1_1TextureInfo}{animera\+::\+Texture\+Info}} \&}]{info }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{sdl__load__texture_8cpp_source}{sdl\+\_\+load\+\_\+texture.\+cpp}} 第 \mbox{\hyperlink{sdl__load__texture_8cpp_source_l00013}{13}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{sprites_8cpp_source_l00824}{animera\+::decompress\+Texture()}}, \mbox{\hyperlink{sprites_8cpp_source_l00821}{animera\+::\+Texture\+Info\+::height}}, \mbox{\hyperlink{sprites_8cpp_source_l00819}{animera\+::\+Texture\+Info\+::pitch}}, \mbox{\hyperlink{sdl__check_8hpp_source_l00038}{SDL\+\_\+\+CHECK}} , 以及 \mbox{\hyperlink{sprites_8cpp_source_l00820}{animera\+::\+Texture\+Info\+::width}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceSDL_a5e5999eac71d605b7dc1be857dbda9e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7}\label{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7} 
+\index{SDL@{SDL}!raise@{raise}}
+\index{raise@{raise}!SDL@{SDL}}
+\doxysubsubsection{\texorpdfstring{raise()}{raise()}}
+{\footnotesize\ttfamily void SDL\+::raise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{sdl__check_8hpp_source}{sdl\+\_\+check.\+hpp}} 第 \mbox{\hyperlink{sdl__check_8hpp_source_l00017}{17}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{sdl__check_8hpp_source_l00028}{check()}} , 以及 \mbox{\hyperlink{sdl__check_8hpp_source_l00023}{check()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{namespaceSDL_ad04ae9f85224f170114ad02d27943bb7_icgraph}
+\end{center}
+\end{figure}

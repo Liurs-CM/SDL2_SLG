@@ -1,0 +1,8 @@
+<map id="entt::basic_registry::clear" name="entt::basic_registry::clear">
+<area shape="rect" id="Node000001" title="Clears a whole registry or the pools for the given components." alt="" coords="5,61,152,101"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#af58f3add442cfb3f1fa470402db072bd" title="Destroys an entity." alt="" coords="200,29,347,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,67,186,61,187,66,152,72"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a86d2b035f54225d82548e8f03de28754" title="Iterates all the entities that are still in use." alt="" coords="200,93,347,133"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="152,91,187,96,186,102,152,96"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="237,30,234,20,240,11,253,5,273,3,296,6,309,13,306,17,295,11,273,8,255,10,244,15,240,21,242,28"/>
+</map>

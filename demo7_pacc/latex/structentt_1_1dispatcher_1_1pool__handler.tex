@@ -1,0 +1,227 @@
+\doxysection{entt\+::dispatcher\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1dispatcher_1_1pool__handler}{}\label{structentt_1_1dispatcher_1_1pool__handler}\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+
+
+类 entt\+::dispatcher\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{structentt_1_1dispatcher_1_1pool__handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+entt\+::dispatcher\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1dispatcher_1_1pool__handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_ac64c6cdbe40efc38a76ca8de74c593ef}{signal\+\_\+type}} = \mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} \&)$>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_aa67c03653ff75e86e8416a8dad28f060}{sink\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} signal\+\_\+type\+::sink\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_a0b7a03f08081a177ee1dfd927d6dc40f}{publish}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{override}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_ac1c9b43955b88fc1912d607624973b0b}{clear}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{override}}
+\item 
+\mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_aa67c03653ff75e86e8416a8dad28f060}{sink\+\_\+type}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_ab71883ab752a04efbe64cd1b5c2fdc90}{sink}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_afb9f452c7acbb3be7b13a3395e333ca7}{trigger}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_a86a2fc73b3a7b3e60c5b806503ff8ec0}{enqueue}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\item 
+\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_a697e5a00ff251af9bee3f70b1c2723e1}{type\+\_\+id}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{override}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{structentt_1_1dispatcher_1_1basic__pool}{entt\+::dispatcher\+::basic\+\_\+pool}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1basic__pool_a184d5fe30caa8ecac81d343995aaf741}{\texorpdfstring{$\sim$}{\string~}basic\+\_\+pool}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_ac64c6cdbe40efc38a76ca8de74c593ef}{signal\+\_\+type}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_a1d8a4cc35d05e666e02d99bf6a1eabf0}{signal}} \{\}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_af5254031dde97616085110ad69fe5f8f}{events}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}}$>$\newline
+struct entt\+::dispatcher\+::pool\+\_\+handler$<$ Event $>$}
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00040}{40}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_ac64c6cdbe40efc38a76ca8de74c593ef}\label{structentt_1_1dispatcher_1_1pool__handler_ac64c6cdbe40efc38a76ca8de74c593ef} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!signal\_type@{signal\_type}}
+\index{signal\_type@{signal\_type}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{signal\_type}{signal\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::signal\+\_\+type =  \mbox{\hyperlink{classentt_1_1sigh}{sigh}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} \&)$>$}
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00041}{41}} 行定义.
+
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_aa67c03653ff75e86e8416a8dad28f060}\label{structentt_1_1dispatcher_1_1pool__handler_aa67c03653ff75e86e8416a8dad28f060} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!sink\_type@{sink\_type}}
+\index{sink\_type@{sink\_type}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{sink\_type}{sink\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::sink\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} signal\+\_\+type\+::sink\+\_\+type}
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00042}{42}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_ac1c9b43955b88fc1912d607624973b0b}\label{structentt_1_1dispatcher_1_1pool__handler_ac1c9b43955b88fc1912d607624973b0b} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!clear@{clear}}
+\index{clear@{clear}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{structentt_1_1dispatcher_1_1basic__pool_adcde480d33a88640d27b37743f7e4c3f}{entt\+::dispatcher\+::basic\+\_\+pool}}.
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00054}{54}} 行定义.
+
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_a86a2fc73b3a7b3e60c5b806503ff8ec0}\label{structentt_1_1dispatcher_1_1pool__handler_a86a2fc73b3a7b3e60c5b806503ff8ec0} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00068}{68}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_a0b7a03f08081a177ee1dfd927d6dc40f}\label{structentt_1_1dispatcher_1_1pool__handler_a0b7a03f08081a177ee1dfd927d6dc40f} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!publish@{publish}}
+\index{publish@{publish}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::publish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{structentt_1_1dispatcher_1_1basic__pool_ae14f854ca84a79cd0417d38d4f1ad4aa}{entt\+::dispatcher\+::basic\+\_\+pool}}.
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00044}{44}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_ab71883ab752a04efbe64cd1b5c2fdc90}\label{structentt_1_1dispatcher_1_1pool__handler_ab71883ab752a04efbe64cd1b5c2fdc90} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!sink@{sink}}
+\index{sink@{sink}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{sink()}{sink()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_aa67c03653ff75e86e8416a8dad28f060}{sink\+\_\+type}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00058}{58}} 行定义.
+
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_afb9f452c7acbb3be7b13a3395e333ca7}\label{structentt_1_1dispatcher_1_1pool__handler_afb9f452c7acbb3be7b13a3395e333ca7} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!trigger@{trigger}}
+\index{trigger@{trigger}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{trigger()}{trigger()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00063}{63}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_a697e5a00ff251af9bee3f70b1c2723e1}\label{structentt_1_1dispatcher_1_1pool__handler_a697e5a00ff251af9bee3f70b1c2723e1} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!type\_id@{type\_id}}
+\index{type\_id@{type\_id}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{type\_id()}{type\_id()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::type\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{structentt_1_1dispatcher_1_1basic__pool_a04abf3c344a23c163ce2542610df5a90}{entt\+::dispatcher\+::basic\+\_\+pool}}.
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00072}{72}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{type__info_8hpp_source_l00095}{entt\+::type\+\_\+info$<$ Type, typename $>$\+::id()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{structentt_1_1dispatcher_1_1pool__handler_a697e5a00ff251af9bee3f70b1c2723e1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_af5254031dde97616085110ad69fe5f8f}\label{structentt_1_1dispatcher_1_1pool__handler_af5254031dde97616085110ad69fe5f8f} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!events@{events}}
+\index{events@{events}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+std\+::vector$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}}$>$ \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::events\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00078}{78}} 行定义.
+
+\Hypertarget{structentt_1_1dispatcher_1_1pool__handler_a1d8a4cc35d05e666e02d99bf6a1eabf0}\label{structentt_1_1dispatcher_1_1pool__handler_a1d8a4cc35d05e666e02d99bf6a1eabf0} 
+\index{entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}!signal@{signal}}
+\index{signal@{signal}!entt::dispatcher::pool\_handler$<$ Event $>$@{entt::dispatcher::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{signal}{signal}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler_ac64c6cdbe40efc38a76ca8de74c593ef}{signal\+\_\+type}} \mbox{\hyperlink{structentt_1_1dispatcher_1_1pool__handler}{entt\+::dispatcher\+::pool\+\_\+handler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::signal \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{dispatcher_8hpp_source}{dispatcher.\+hpp}} 第 \mbox{\hyperlink{dispatcher_8hpp_source_l00077}{77}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/signal/\mbox{\hyperlink{dispatcher_8hpp}{dispatcher.\+hpp}}\end{DoxyCompactItemize}

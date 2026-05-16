@@ -1,0 +1,7 @@
+<map id="entt::sparse_set::insert" name="entt::sparse_set::insert">
+<area shape="rect" id="Node000001" title="Assigns one or more entities to a sparse set." alt="" coords="248,31,419,56"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c" title="Assigns one or more entities to a sparse set." alt="" coords="5,5,200,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,35,200,31,201,26,234,30"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1storage.html#ae775ff0becf923b711f6e3476a7cb9f6" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="27,55,178,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,56,178,62,178,57,234,51"/>
+</map>

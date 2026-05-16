@@ -1,0 +1,111 @@
+\doxysection{entt\+::scheduler\texorpdfstring{$<$}{<} Delta \texorpdfstring{$>$}{>}\+::continuation结构体 参考}
+\hypertarget{structentt_1_1scheduler_1_1continuation}{}\label{structentt_1_1scheduler_1_1continuation}\index{entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}}
+
+
+entt\+::scheduler\texorpdfstring{$<$}{<} Delta \texorpdfstring{$>$}{>}\+::continuation 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{structentt_1_1scheduler_1_1continuation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_af4b2036467c055fb132b6314d7582bf1}{continuation}} (\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} \texorpdfstring{$\ast$}{*}ref)
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}} , typename... Args$>$ }\\\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}} \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a1b65b262e42f4091c55009a42d5ac080}{then}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ }\\\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}} \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a7ebccdc9733ef530c6eaa0bb3b2eabd6}{then}} (Func \&\&func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}{handler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}$>$\newline
+struct entt\+::scheduler$<$ Delta $>$\+::continuation}
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00057}{57}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1scheduler_1_1continuation_af4b2036467c055fb132b6314d7582bf1}\label{structentt_1_1scheduler_1_1continuation_af4b2036467c055fb132b6314d7582bf1} 
+\index{entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}!continuation@{continuation}}
+\index{continuation@{continuation}!entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}}
+\doxysubsubsection{\texorpdfstring{continuation()}{continuation()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::continuation\+::continuation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} \texorpdfstring{$\ast$}{*}}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00058}{58}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}} , 以及 \mbox{\hyperlink{scheduler_8hpp_source_l00079}{entt\+::scheduler$<$ Delta $>$\+::continuation\+::handler}}.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1scheduler_1_1continuation_a1b65b262e42f4091c55009a42d5ac080}\label{structentt_1_1scheduler_1_1continuation_a1b65b262e42f4091c55009a42d5ac080} 
+\index{entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}!then@{then}}
+\index{then@{then}!entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}}
+\doxysubsubsection{\texorpdfstring{then()}{then()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Proc}} , typename... Args$>$ \\
+\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::continuation\+::then (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00065}{65}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{scheduler_8hpp_source_l00079}{entt\+::scheduler$<$ Delta $>$\+::continuation\+::handler}} , 以及 \mbox{\hyperlink{scheduler_8hpp_source_l00054}{entt\+::scheduler$<$ Delta $>$\+::process\+\_\+handler\+::next}}.
+
+\Hypertarget{structentt_1_1scheduler_1_1continuation_a7ebccdc9733ef530c6eaa0bb3b2eabd6}\label{structentt_1_1scheduler_1_1continuation_a7ebccdc9733ef530c6eaa0bb3b2eabd6} 
+\index{entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}!then@{then}}
+\index{then@{then}!entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}}
+\doxysubsubsection{\texorpdfstring{then()}{then()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Func $>$ \\
+\mbox{\hyperlink{structentt_1_1scheduler_1_1continuation}{continuation}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::continuation\+::then (\begin{DoxyParamCaption}\item[{Func \&\&}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00074}{74}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff}\label{structentt_1_1scheduler_1_1continuation_a796f2c086d76abeb65f4c3148caa4fff} 
+\index{entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}!handler@{handler}}
+\index{handler@{handler}!entt::scheduler$<$ Delta $>$::continuation@{entt::scheduler$<$ Delta $>$::continuation}}
+\doxysubsubsection{\texorpdfstring{handler}{handler}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::continuation\+::handler\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00079}{79}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{scheduler_8hpp_source_l00058}{entt\+::scheduler$<$ Delta $>$\+::continuation\+::continuation()}} , 以及 \mbox{\hyperlink{scheduler_8hpp_source_l00065}{entt\+::scheduler$<$ Delta $>$\+::continuation\+::then()}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/process/\mbox{\hyperlink{scheduler_8hpp}{scheduler.\+hpp}}\end{DoxyCompactItemize}

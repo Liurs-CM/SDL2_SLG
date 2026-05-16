@@ -1,0 +1,36 @@
+\doxysection{ghost\+\_\+mode.\+hpp}
+\hypertarget{ghost__mode_8hpp_source}{}\label{ghost__mode_8hpp_source}\index{src/comp/ghost\_mode.hpp@{src/comp/ghost\_mode.hpp}}
+\mbox{\hyperlink{ghost__mode_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ ghost\_mode.hpp}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 23/9/18.}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ COMP\_GHOST\_MODE\_HPP}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ COMP\_GHOST\_MODE\_HPP}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{constants_8hpp}{core/constants.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00014}00014\ \textcolor{comment}{//\ Tag\ types\ for\ the\ ghost\ modes.\ This\ is\ a\ better\ alternative\ to\ an\ enum.}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00015}00015\ \textcolor{comment}{//\ Creating\ a\ struct\ for\ each\ mode\ means\ that\ we\ store\ data\ specific\ to}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00016}00016\ \textcolor{comment}{//\ the\ mode.\ ScaredMode\ stores\ a\ timer.\ That\ timer\ only\ makes\ sense\ when}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00017}00017\ \textcolor{comment}{//\ the\ ghost\ is\ in\ ScaredMode.\ I\ could\ have\ used\ a\ std::variant\ but\ I\ think}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00018}00018\ \textcolor{comment}{//\ this\ is\ cleaner}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00020}\mbox{\hyperlink{structChaseMode}{00020}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structChaseMode}{ChaseMode}}\ \{\};}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00021}\mbox{\hyperlink{structScatterMode}{00021}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structScatterMode}{ScatterMode}}\ \{\};}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00022}\mbox{\hyperlink{structScaredMode}{00022}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structScaredMode}{ScaredMode}}\ \{}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00023}00023\ \ \ \textcolor{comment}{//\ This\ timer\ counts\ down\ the\ number\ of\ ticks\ that\ the\ ghost\ is\ scared\ for.}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00024}00024\ \ \ \textcolor{comment}{//\ Once\ the\ timer\ reaches\ zero,\ the\ ghost\ enters\ chase\ mode.\ This\ is\ handled}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00025}00025\ \ \ \textcolor{comment}{//\ by\ the\ change\_ghost\_mode\ systems}}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00026}\mbox{\hyperlink{structScaredMode_a6b30183fa8120377ca1cb919e42a1a94}{00026}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structScaredMode_a6b30183fa8120377ca1cb919e42a1a94}{timer}}\ =\ \mbox{\hyperlink{constants_8hpp_adcf15c7f2fac4c6a12bd6f727cfa5a5c}{ghostScaredTime}};}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00027}00027\ \};}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00028}\mbox{\hyperlink{structEatenMode}{00028}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structEatenMode}{EatenMode}}\ \{\};}
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{ghost__mode_8hpp_source_l00030}00030\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

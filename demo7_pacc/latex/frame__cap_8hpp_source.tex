@@ -1,0 +1,39 @@
+\doxysection{frame\+\_\+cap.\+hpp}
+\hypertarget{frame__cap_8hpp_source}{}\label{frame__cap_8hpp_source}\index{src/util/frame\_cap.hpp@{src/util/frame\_cap.hpp}}
+\mbox{\hyperlink{frame__cap_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ frame\_cap.hpp}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 8/5/20.}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ UTIL\_FRAME\_CAP\_HPP}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ UTIL\_FRAME\_CAP\_HPP}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00015}\mbox{\hyperlink{classFrameCap}{00015}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFrameCap}{FrameCap}}\ \{}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00016}00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00017}\mbox{\hyperlink{classFrameCap_abc12640ea4745c81113e449f20ce7a3f}{00017}}\ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classFrameCap_abc12640ea4745c81113e449f20ce7a3f}{Clock}}\ =\ std::chrono::steady\_clock;}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00019}\mbox{\hyperlink{classFrameCap_a71909ed18bea0220d8e7da3b17f69a18}{00019}}\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classFrameCap_a71909ed18bea0220d8e7da3b17f69a18}{FrameCap}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3}{fps}})}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00020}00020\ \ \ \ \ :\ \mbox{\hyperlink{classFrameCap_a21889e2963fdaa05e8fc15c769866e5e}{interval}}\{\mbox{\hyperlink{classFrameCap_abc12640ea4745c81113e449f20ce7a3f}{Clock}}::duration\{\mbox{\hyperlink{classFrameCap_abc12640ea4745c81113e449f20ce7a3f}{Clock}}::duration::period::den\ /\ \mbox{\hyperlink{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3}{fps}}\}\},}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00021}00021\ \ \ \ \ \ \ \mbox{\hyperlink{classFrameCap_aecbe2d0b9016b28e1cd87631e10c0db7}{start}}\{\mbox{\hyperlink{classFrameCap_abc12640ea4745c81113e449f20ce7a3f}{Clock}}::now()\}\ \{\}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00023}\mbox{\hyperlink{classFrameCap_ae3ac135cd70f0198f6f0a66fb12e4f10}{00023}}\ \ \ \mbox{\hyperlink{classFrameCap_ae3ac135cd70f0198f6f0a66fb12e4f10}{\string~FrameCap}}()\ \{}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00024}00024\ \ \ \ \ std::this\_thread::sleep\_until(\mbox{\hyperlink{classFrameCap_aecbe2d0b9016b28e1cd87631e10c0db7}{start}}\ +\ \mbox{\hyperlink{classFrameCap_a21889e2963fdaa05e8fc15c769866e5e}{interval}});}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00025}00025\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00027}00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00028}\mbox{\hyperlink{classFrameCap_a21889e2963fdaa05e8fc15c769866e5e}{00028}}\ \ \ \textcolor{keyword}{const}\ Clock::duration\ \mbox{\hyperlink{classFrameCap_a21889e2963fdaa05e8fc15c769866e5e}{interval}};}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00029}\mbox{\hyperlink{classFrameCap_aecbe2d0b9016b28e1cd87631e10c0db7}{00029}}\ \ \ \textcolor{keyword}{const}\ Clock::time\_point\ \mbox{\hyperlink{classFrameCap_aecbe2d0b9016b28e1cd87631e10c0db7}{start}};}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00030}00030\ \};}
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{frame__cap_8hpp_source_l00033}00033\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

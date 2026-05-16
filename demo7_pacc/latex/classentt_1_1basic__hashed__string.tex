@@ -1,0 +1,549 @@
+\doxysection{entt\+::basic\+\_\+hashed\+\_\+string\texorpdfstring{$<$}{<} Char \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1basic__hashed__string}{}\label{classentt_1_1basic__hashed__string}\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+
+
+Zero overhead unique identifier.  
+
+
+
+
+{\ttfamily \#include $<$hashed\+\_\+string.\+hpp$>$}
+
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\+\_\+wrapper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}}
+\begin{DoxyCompactList}\small\item\em Character type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a2c75763872c028b062701523e0314f29}{basic\+\_\+hashed\+\_\+string}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs an empty hashed string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$std\+::size\+\_\+t N$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_aac422f04d11c1e5573f04809c1e1c106}{basic\+\_\+hashed\+\_\+string}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}}(\&curr)\mbox{[}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{N}}\mbox{]}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs a hashed string from an array of const characters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a7ab5e09f3e552436872bcaaf9ca2c1ac}{basic\+\_\+hashed\+\_\+string}} (\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\+\_\+wrapper}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{wrapper}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Explicit constructor on purpose to avoid constructing a hashed string directly from a {\ttfamily const value\+\_\+type \texorpdfstring{$\ast$}{*}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea}{data}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the human-\/readable representation of a hashed string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the numeric representation of a hashed string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc}{operator const value\+\_\+type \texorpdfstring{$\ast$}{*}}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the human-\/readable representation of a hashed string.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd}{operator hash\+\_\+type}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the numeric representation of a hashed string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a51311d6903443296ce076536df2b46da}{operator==}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\+\_\+hashed\+\_\+string}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Compares two hashed strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t N$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c}{value}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}}(\&\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}})\mbox{[}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{N}}\mbox{]}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns directly the numeric representation of a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e}{value}} (\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\+\_\+wrapper}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{wrapper}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns directly the numeric representation of a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a7ccb9802c4f1077537df9b56e33e1f46}{value}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}}, std\+::size\+\_\+t size) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns directly the numeric representation of a string view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_af6f8da1a181a597a4d090c76a246e100}{traits\+\_\+type}} = internal\+::fnv1a\+\_\+traits$<$ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}{helper}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} \texorpdfstring{$\ast$}{*}curr) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}{str}}
+\item 
+\mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}{hash}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}}$>$\newline
+class entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$}
+Zero overhead unique identifier. 
+
+TURN\+\_\+\+OFF\+\_\+\+DOXYGEN 
+
+A hashed string is a compile-\/time tool that allows users to use human-\/readable identifers in the codebase while using their numeric counterparts at runtime.~\newline
+ Because of that, a hashed string can also be used in constant expressions if required.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Char} & Character type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00064}{64}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}\label{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!hash\_type@{hash\_type}}
+\index{hash\_type@{hash\_type}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{hash\_type}{hash\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::hash\+\_\+type =  \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00088}{88}} 行定义.
+
+\Hypertarget{classentt_1_1basic__hashed__string_af6f8da1a181a597a4d090c76a246e100}\label{classentt_1_1basic__hashed__string_af6f8da1a181a597a4d090c76a246e100} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!traits\_type@{traits\_type}}
+\index{traits\_type@{traits\_type}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{traits\_type}{traits\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::traits\+\_\+type =  internal\+::fnv1a\+\_\+traits$<$\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00065}{65}} 行定义.
+
+\Hypertarget{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}\label{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::value\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}}}
+
+
+
+Character type. 
+
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00086}{86}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1basic__hashed__string_a2c75763872c028b062701523e0314f29}\label{classentt_1_1basic__hashed__string_a2c75763872c028b062701523e0314f29} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!basic\_hashed\_string@{basic\_hashed\_string}}
+\index{basic\_hashed\_string@{basic\_hashed\_string}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_hashed\_string()}{basic\_hashed\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::basic\+\_\+hashed\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Constructs an empty hashed string. 
+
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00132}{132}} 行定义.
+
+\Hypertarget{classentt_1_1basic__hashed__string_aac422f04d11c1e5573f04809c1e1c106}\label{classentt_1_1basic__hashed__string_aac422f04d11c1e5573f04809c1e1c106} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!basic\_hashed\_string@{basic\_hashed\_string}}
+\index{basic\_hashed\_string@{basic\_hashed\_string}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_hashed\_string()}{basic\_hashed\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+template$<$std\+::size\+\_\+t N$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::basic\+\_\+hashed\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}}(\&)}]{curr\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Constructs a hashed string from an array of const characters. 
+
+Forcing template resolution avoids implicit conversions. An human-\/readable identifier can be anything but a plain, old bunch of characters.~\newline
+ Example of use\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{basic\_hashed\_string<char>}}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{hs}}\{\textcolor{stringliteral}{"{}my.png"{}}\};}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em N} & Number of characters of the identifier. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em curr} & Human-\/readable identifer. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00151}{151}} 行定义.
+
+\Hypertarget{classentt_1_1basic__hashed__string_a7ab5e09f3e552436872bcaaf9ca2c1ac}\label{classentt_1_1basic__hashed__string_a7ab5e09f3e552436872bcaaf9ca2c1ac} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!basic\_hashed\_string@{basic\_hashed\_string}}
+\index{basic\_hashed\_string@{basic\_hashed\_string}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{basic\_hashed\_string()}{basic\_hashed\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::basic\+\_\+hashed\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\+\_\+wrapper}}}]{wrapper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}}
+
+
+
+Explicit constructor on purpose to avoid constructing a hashed string directly from a {\ttfamily const value\+\_\+type \texorpdfstring{$\ast$}{*}}. 
+
+
+\begin{DoxyParams}{参数}
+{\em wrapper} & Helps achieving the purpose by relying on overloading. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00160}{160}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea}\label{classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!data@{data}}
+\index{data@{data}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Returns the human-\/readable representation of a hashed string. 
+
+\begin{DoxyReturn}{返回}
+The string used to initialize the instance. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00168}{168}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00199}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::str}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{hashed__string_8hpp_source_l00181}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::operator const value\+\_\+type \texorpdfstring{$\ast$}{*}()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e}\label{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!helper@{helper}}
+\index{helper@{helper}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{helper()}{helper()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} \texorpdfstring{$\ast$}{*}}]{curr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00074}{74}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00176}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::value()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{hashed__string_8hpp_source_l00106}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::value()}} , 以及 \mbox{\hyperlink{hashed__string_8hpp_source_l00115}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::value()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc}\label{classentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!operator const value\_type \texorpdfstring{$\ast$}{*}@{operator const value\_type \texorpdfstring{$\ast$}{*}}}
+\index{operator const value\_type \texorpdfstring{$\ast$}{*}@{operator const value\_type \texorpdfstring{$\ast$}{*}}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{operator const value\_type \texorpdfstring{$\ast$}{*}()}{operator const value\_type *()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}} \texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Returns the human-\/readable representation of a hashed string.   
+
+\begin{DoxyReturn}{返回}
+The string used to initialize the instance.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00181}{181}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00168}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::data()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd}\label{classentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!operator hash\_type@{operator hash\_type}}
+\index{operator hash\_type@{operator hash\_type}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{operator hash\_type()}{operator hash\_type()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Returns the numeric representation of a hashed string. 
+
+\begin{DoxyReturn}{返回}
+The numeric representation of the instance. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00187}{187}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00176}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::value()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__hashed__string_a51311d6903443296ce076536df2b46da}\label{classentt_1_1basic__hashed__string_a51311d6903443296ce076536df2b46da} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Compares two hashed strings. 
+
+
+\begin{DoxyParams}{参数}
+{\em other} & Hashed string with which to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+True if the two hashed strings are identical, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00194}{194}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00200}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::hash}}.
+
+\Hypertarget{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}\label{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!value@{value}}
+\index{value@{value}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Returns the numeric representation of a hashed string. 
+
+\begin{DoxyReturn}{返回}
+The numeric representation of the instance. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00176}{176}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00200}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::hash}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{hashed__string_8hpp_source_l00074}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::helper()}} , 以及 \mbox{\hyperlink{hashed__string_8hpp_source_l00187}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::operator hash\+\_\+type()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__hashed__string_a7ccb9802c4f1077537df9b56e33e1f46}\label{classentt_1_1basic__hashed__string_a7ccb9802c4f1077537df9b56e33e1f46} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!value@{value}}
+\index{value@{value}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}} \texorpdfstring{$\ast$}{*}}]{str,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns directly the numeric representation of a string view. 
+
+
+\begin{DoxyParams}{参数}
+{\em str} & Human-\/readable identifer. \\
+\hline
+{\em size} & Length of the string to hash. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The numeric representation of the string. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00125}{125}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00199}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::str}}.
+
+\Hypertarget{classentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c}\label{classentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!value@{value}}
+\index{value@{value}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+template$<$std\+::size\+\_\+t N$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}}(\&)}]{str\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Returns directly the numeric representation of a string. 
+
+Forcing template resolution avoids implicit conversions. An human-\/readable identifier can be anything but a plain, old bunch of characters.~\newline
+ Example of use\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c}{value}}\ =\ basic\_hashed\_string<char>::to\_value(\textcolor{stringliteral}{"{}my.png"{}});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em N} & Number of characters of the identifier. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em str} & Human-\/readable identifer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The numeric representation of the string. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00106}{106}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00074}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::helper()}} , 以及 \mbox{\hyperlink{hashed__string_8hpp_source_l00199}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::str}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e}\label{classentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!value@{value}}
+\index{value@{value}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1basic__hashed__string_1_1const__wrapper}{const\+\_\+wrapper}}}]{wrapper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns directly the numeric representation of a string. 
+
+
+\begin{DoxyParams}{参数}
+{\em wrapper} & Helps achieving the purpose by relying on overloading. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The numeric representation of the string. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00115}{115}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{hashed__string_8hpp_source_l00074}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::helper()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514}\label{classentt_1_1basic__hashed__string_a238b76c4e85d5cce8baa44bb49cb2514} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!hash@{hash}}
+\index{hash@{hash}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{hash}{hash}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{classentt_1_1basic__hashed__string_a1631b1f6ecd56a451366eeb228a6ffb9}{hash\+\_\+type}} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::hash\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00200}{200}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{hashed__string_8hpp_source_l00194}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::operator==()}} , 以及 \mbox{\hyperlink{hashed__string_8hpp_source_l00176}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::value()}}.
+
+\Hypertarget{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db}\label{classentt_1_1basic__hashed__string_ad82c80d08b5de8afdb267c77c28243db} 
+\index{entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}!str@{str}}
+\index{str@{str}!entt::basic\_hashed\_string$<$ Char $>$@{entt::basic\_hashed\_string$<$ Char $>$}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1basic__hashed__string_ad4e8f181e92b9218747ac43fe24c4cbc}{value\+\_\+type}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1basic__hashed__string}{entt\+::basic\+\_\+hashed\+\_\+string}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Char}} $>$\+::str\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{hashed__string_8hpp_source}{hashed\+\_\+string.\+hpp}} 第 \mbox{\hyperlink{hashed__string_8hpp_source_l00199}{199}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{hashed__string_8hpp_source_l00168}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::data()}}, \mbox{\hyperlink{hashed__string_8hpp_source_l00125}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::value()}} , 以及 \mbox{\hyperlink{hashed__string_8hpp_source_l00106}{entt\+::basic\+\_\+hashed\+\_\+string$<$ Char $>$\+::value()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{hashed__string_8hpp}{hashed\+\_\+string.\+hpp}}\end{DoxyCompactItemize}

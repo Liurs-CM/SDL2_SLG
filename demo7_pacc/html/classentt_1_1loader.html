@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::loader&lt; Loader, Resource &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1loader.html">loader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classentt_1_1loader-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::loader&lt; Loader, Resource &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Base class for resource loaders.  
+ <a href="classentt_1_1loader.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="loader_8hpp_source.html">loader.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a8663408822bd2e63ad512d592154fca4" id="r_a8663408822bd2e63ad512d592154fca4"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a8663408822bd2e63ad512d592154fca4"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; Resource &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">get</a> (Args &amp;&amp;... args) const</td></tr>
+<tr class="memdesc:a8663408822bd2e63ad512d592154fca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the resource and returns it.  <br /></td></tr>
+<tr class="separator:a8663408822bd2e63ad512d592154fca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:adcd47fa89dbe180ef0db46d3f0c43762" id="r_adcd47fa89dbe180ef0db46d3f0c43762"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1loader.html#adcd47fa89dbe180ef0db46d3f0c43762">cache&lt; Resource &gt;</a></td></tr>
+<tr class="memdesc:adcd47fa89dbe180ef0db46d3f0c43762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource loaders are friends of their caches.  <br /></td></tr>
+<tr class="separator:adcd47fa89dbe180ef0db46d3f0c43762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">typename</a> <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">Loader</a>, <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">typename</a> <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">Resource</a>&gt;<br />
+class entt::loader&lt; Loader, Resource &gt;</div><p>Base class for resource loaders. </p>
+<p>Resource loaders must inherit from this class and stay true to the CRTP idiom. Moreover, a resource loader must expose a public, const member function named <code>load</code> that accepts a variable number of arguments and returns a shared pointer to the resource just created.<br  />
+ As an example:</p>
+<div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">my_resource</a> {};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">struct </span><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">my_loader</a>: <a class="code hl_class" href="classentt_1_1loader.html">entt::loader</a>&lt;my_loader, my_resource&gt; {</div>
+<div class="line">    std::shared_ptr&lt;my_resource&gt; load(<span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
+<div class="line">        <span class="comment">// use the integer value somehow</span></div>
+<div class="line">        <span class="keywordflow">return</span> std::make_shared&lt;my_resource&gt;();</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="ttc" id="aclassentt_1_1loader_html"><div class="ttname"><a href="classentt_1_1loader.html">entt::loader</a></div><div class="ttdoc">Base class for resource loaders.</div><div class="ttdef"><b>Definition</b> <a href="loader_8hpp_source.html#l00045">loader.hpp:45</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+</div><!-- fragment --><p>In general, resource loaders should not have a state or retain data of any type. They should let the cache manage their resources instead.</p>
+<dl class="section note"><dt>注解</dt><dd>Base class and CRTP idiom aren't strictly required with the current implementation. One could argue that a cache can easily work with loaders of any type. However, future changes won't be breaking ones by forcing the use of a base class today and that's why the model is already in its place.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Loader</td><td>Type of the derived class. </td></tr>
+    <tr><td class="paramname">Resource</td><td>Type of resource for which to use the loader. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="loader_8hpp_source.html">loader.hpp</a> 第 <a class="el" href="loader_8hpp_source.html#l00045">45</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a8663408822bd2e63ad512d592154fca4" name="a8663408822bd2e63ad512d592154fca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8663408822bd2e63ad512d592154fca4">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Loader , typename Resource &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; Resource &gt; <a class="el" href="classentt_1_1loader.html">entt::loader</a>&lt; Loader, Resource &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the resource and returns it. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td>Types of arguments for the loader. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Arguments for the loader. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The resource just loaded or an empty pointer in case of errors. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="loader_8hpp_source.html">loader.hpp</a> 第 <a class="el" href="loader_8hpp_source.html#l00056">56</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a id="adcd47fa89dbe180ef0db46d3f0c43762" name="adcd47fa89dbe180ef0db46d3f0c43762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd47fa89dbe180ef0db46d3f0c43762">&#9670;&#160;</a></span>cache&lt; Resource &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">typename</a> <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">Loader</a> , <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">typename</a> <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">Resource</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">friend</a> <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">struct</a> <a class="el" href="structentt_1_1cache.html">cache</a>&lt; <a class="el" href="classentt_1_1loader.html#a8663408822bd2e63ad512d592154fca4">Resource</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resource loaders are friends of their caches. </p>
+
+<p class="definition">在文件 <a class="el" href="loader_8hpp_source.html">loader.hpp</a> 第 <a class="el" href="loader_8hpp_source.html#l00001">1</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/resource/<a class="el" href="resource_2fwd_8hpp_source.html">fwd.hpp</a></li>
+<li>third_party/entt/resource/<a class="el" href="loader_8hpp_source.html">loader.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

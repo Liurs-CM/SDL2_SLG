@@ -1,0 +1,170 @@
+\doxysection{sprites.\+hpp}
+\hypertarget{sprites_8hpp_source}{}\label{sprites_8hpp_source}\index{src/util/sprites.hpp@{src/util/sprites.hpp}}
+\mbox{\hyperlink{sprites_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00001}00001\ \textcolor{comment}{//\ This\ file\ was\ generated\ by\ Animera}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00003}00003\ \textcolor{preprocessor}{\#ifndef\ ANIMERA\_SPRITES\_HPP}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00004}00004\ \textcolor{preprocessor}{\#define\ ANIMERA\_SPRITES\_HPP}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <cassert>}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00011}00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceanimera}{animera}}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00013}00013\ \textcolor{keyword}{struct\ }\textcolor{keyword}{alignas}(std::uint64\_t)\ SpriteRect\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00014}00014\ \ \ std::uint16\_t\ \mbox{\hyperlink{structanimera_1_1SpriteRect_a77b22a60f3858cbc2afb02edb3577aa7}{x}}\ =\ 0,\ \mbox{\hyperlink{structanimera_1_1SpriteRect_acf0a101ca1fad3c9f7de34ee0611069b}{y}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00015}00015\ \ \ std::uint16\_t\ \mbox{\hyperlink{structanimera_1_1SpriteRect_ad550e9a7d8cd8d059dc91eb67e6c50fb}{w}}\ =\ 0,\ \mbox{\hyperlink{structanimera_1_1SpriteRect_a5a74a86eff8caad3aa229f968e5d4279}{h}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00016}00016\ \};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00018}\mbox{\hyperlink{namespaceanimera_a3db2f3ee561bfcfabda12bbba35d551d}{00018}}\ [[nodiscard]]\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceanimera_a3db2f3ee561bfcfabda12bbba35d551d}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structanimera_1_1SpriteRect}{SpriteRect}}\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structanimera_1_1SpriteRect}{SpriteRect}}\ b)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00019}00019\ \ \ \textcolor{keywordflow}{return}\ a.x\ ==\ b.x\ \&\&\ a.y\ ==\ b.y\ \&\&\ a.w\ ==\ b.w\ \&\&\ a.h\ ==\ b.h;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00022}\mbox{\hyperlink{namespaceanimera_a6b22397561a130cd32a811b56e8c2969}{00022}}\ [[nodiscard]]\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceanimera_a6b22397561a130cd32a811b56e8c2969}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structanimera_1_1SpriteRect}{SpriteRect}}\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structanimera_1_1SpriteRect}{SpriteRect}}\ b)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00023}00023\ \ \ \textcolor{keywordflow}{return}\ !(a\ ==\ b);}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00024}00024\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00026}00026\ \textcolor{keyword}{struct\ }TextureInfo\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00027}00027\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structanimera_1_1TextureInfo_a046169def7d26b789dcd2531691a5f98}{data}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00028}00028\ \ \ std::size\_t\ \mbox{\hyperlink{structanimera_1_1TextureInfo_a7882063d241ecfddea614dd0087c3c0c}{size}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00029}00029\ \ \ std::size\_t\ \mbox{\hyperlink{structanimera_1_1TextureInfo_ac5cf84c2bcfc98ee859cc4fffc6486e2}{pitch}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00030}00030\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structanimera_1_1TextureInfo_a11943bba1ee9a92f4d30ef8d3d0a775f}{width}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00031}00031\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structanimera_1_1TextureInfo_aeeb80823ce7741065e062507c6e609dd}{height}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00032}00032\ \};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00034}00034\ std::unique\_ptr<const\ unsigned\ char\ []>\ \mbox{\hyperlink{namespaceanimera_a6155ecb121d800d935955ad45372870a}{decompressTexture}}(\textcolor{keyword}{const}\ TextureInfo\ \&)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00036}00036\ \textcolor{keyword}{inline}\ \textcolor{keyword}{namespace\ }sprites\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00038}\mbox{\hyperlink{namespaceanimera_1_1sprites_a42d1986602cc28e1fb192339d7e695ae}{00038}}\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a42d1986602cc28e1fb192339d7e695ae}{texture\_width}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00039}\mbox{\hyperlink{namespaceanimera_1_1sprites_a284f192b4cdad109d39b8df46ea4c9d7}{00039}}\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a284f192b4cdad109d39b8df46ea4c9d7}{texture\_height}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00040}\mbox{\hyperlink{namespaceanimera_1_1sprites_a7fe6485317ae0fa42a017518477b9ea0}{00040}}\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ std::size\_t\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a7fe6485317ae0fa42a017518477b9ea0}{texture\_pitch}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00041}\mbox{\hyperlink{namespaceanimera_1_1sprites_ab06be4b8dfd05c1c8a1768607a8a7ed9}{00041}}\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ std::size\_t\ \mbox{\hyperlink{namespaceanimera_1_1sprites_ab06be4b8dfd05c1c8a1768607a8a7ed9}{texture\_size}};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00042}\mbox{\hyperlink{namespaceanimera_1_1sprites_ac519deccd72dba7e848d38f4315941aa}{00042}}\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_ac519deccd72dba7e848d38f4315941aa}{texture\_data}}[];}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00043}\mbox{\hyperlink{namespaceanimera_1_1sprites_a33550c03c56334a50ed376039b697f44}{00043}}\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structanimera_1_1SpriteRect}{SpriteRect}}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a33550c03c56334a50ed376039b697f44}{sprite\_rects}}[];}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00045}\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{00045}}\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00046}00046\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a22d1cc376c54be531c0a569aa1492ca8}{null\_}}\ =\ 0,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00047}00047\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a69eb76c88557a8211cbfc9beda5fc062}{dot}}\ =\ 1,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00048}00048\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a08b688fc3bdb66cc4c4b47a08fa34a4d}{energizer}}\ =\ 2,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00049}00049\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096af5c32db9f3b25daae18af511855e36bc}{pacman\_beg\_}}\ =\ 3,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00050}00050\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a62291e72a117990fba478c1cbe65fcc2}{pacman\_0}}\ =\ 3,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00051}00051\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a9da88e99751f62e74d1e892fed7d35c6}{pacman\_1}}\ =\ 4,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00052}00052\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a192a5c193100404b34e31fa63cf1339e}{pacman\_2}}\ =\ 5,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00053}00053\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096adff541d97debc0201a2bd4c813d4f0b3}{pacman\_3}}\ =\ 6,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00054}00054\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a9685089d96a6e1c86d3c33d95a72b07c}{pacman\_4}}\ =\ 7,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00055}00055\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a7ff467a5490ccb4312519ccad5eb7033}{pacman\_5}}\ =\ 8,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00056}00056\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a16feff458984201fde16b0998672f493}{pacman\_6}}\ =\ 9,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00057}00057\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a2a0f5ea2a13fee001b5ceb9360ec42a3}{pacman\_7}}\ =\ 10,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00058}00058\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096aada64a54f8fc92f13dcd7eeffc1cd722}{pacman\_end\_}}\ =\ 11,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00059}00059\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a9629e1ef7a6415aabc5c48f07291017f}{scared\_beg\_}}\ =\ 11,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00060}00060\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a040e5bcd643c78d98b5f226b5699075d}{scared\_0}}\ =\ 11,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00061}00061\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a4d39989aa568b1fd0efd77eddf26a589}{scared\_1}}\ =\ 12,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00062}00062\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a896790fbdd15ae4300d7d17c1b718aaa}{scared\_end\_}}\ =\ 13,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00063}00063\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096ad1f47e0b0089103812481452acb680f5}{maze}}\ =\ 13,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00064}00064\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a0b08bd98d279b88859b628cd8c061ae0}{win}}\ =\ 14,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00065}00065\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096af7a2e8166a663d6a5fc86c3ccd320f0b}{lose}}\ =\ 15,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00066}00066\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a85434787d4f6c0dedcbb7d0b83140718}{blinky\_beg\_}}\ =\ 16,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00067}00067\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a9ea3badcab8a2383c19d0c72e266645d}{blinky\_up}}\ =\ 16,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00068}00068\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a7c8514b5bd61d96e94297ffc7152c71f}{blinky\_right}}\ =\ 17,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00069}00069\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096aa30a6a250f515ad2a1ddc78e395be2ca}{blinky\_down}}\ =\ 18,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00070}00070\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a4e4d0a9b81505d4d9668a15e60fd59c5}{blinky\_left}}\ =\ 19,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00071}00071\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a9f02097438d87550b51576ef19d7a4ec}{blinky\_end\_}}\ =\ 20,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00072}00072\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096af5f8bd0183d9406cfef6cd824187fdcc}{pinky\_beg\_}}\ =\ 20,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00073}00073\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a02504181dfd63efffb0c4b63584c5c2d}{pinky\_up}}\ =\ 20,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00074}00074\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096acd4456d5a79bb09b4ff32e1d19d675db}{pinky\_right}}\ =\ 21,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00075}00075\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096ad4216a780609e3f8065e112c5128afbc}{pinky\_down}}\ =\ 22,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00076}00076\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a93a64fea135ea6e331d5919a77d5f05e}{pinky\_left}}\ =\ 23,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00077}00077\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a33484a6de4167b11c1d9872052b1edaf}{pinky\_end\_}}\ =\ 24,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00078}00078\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096aa8c1f587528fede95acd0e42b0418440}{inky\_beg\_}}\ =\ 24,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00079}00079\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a3d392541037a16a888e3fefcbe36f9da}{inky\_up}}\ =\ 24,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00080}00080\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096adead8f0457ce68111d8e4c0b400d0b8e}{inky\_right}}\ =\ 25,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00081}00081\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096afe4847cf79f1dd0128e65711795a1fde}{inky\_down}}\ =\ 26,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00082}00082\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096af98ff04b39b835359c4ff772e4e91ea9}{inky\_left}}\ =\ 27,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00083}00083\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a45e1d9cfb1af143b59c534d32b90be97}{inky\_end\_}}\ =\ 28,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00084}00084\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a19a35f60d85d4eff77093df67af3ac09}{clyde\_beg\_}}\ =\ 28,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00085}00085\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a75b757b36a7f723ee3741b8283f163aa}{clyde\_up}}\ =\ 28,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00086}00086\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096ab8b8bc6aeef7e81e2f1f30ceac12d05b}{clyde\_right}}\ =\ 29,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00087}00087\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a87bc9d6b116e73c12705bd8ac2c1d9da}{clyde\_down}}\ =\ 30,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00088}00088\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096afc0965cba6d825472f9c0b631de27719}{clyde\_left}}\ =\ 31,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00089}00089\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a16eca72859df6ccff3c90d0410653794}{clyde\_end\_}}\ =\ 32,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00090}00090\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a3cdfa98e7b3d57895f9c2e2bd5c26bbc}{eyes\_beg\_}}\ =\ 32,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00091}00091\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a47e0c139786d2b1756429560937f932c}{eyes\_up}}\ =\ 32,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00092}00092\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a8052abf85221a30c050532981aab8b3c}{eyes\_right}}\ =\ 33,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00093}00093\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096ae04cb35142378ff10afa0c1f8018f3e8}{eyes\_down}}\ =\ 34,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00094}00094\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096ae8c09d14b2f748829d3ed50f368d9cef}{eyes\_left}}\ =\ 35,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00095}00095\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a1e34a6a8336a5b07eebc473745339adc}{eyes\_end\_}}\ =\ 36,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00096}00096\ \ \ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096abbd5820689286b50cb87ad86b28e3550}{count\_}}\ =\ 36,}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00097}00097\ \};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00099}\mbox{\hyperlink{namespaceanimera_1_1sprites_a0049f9a086d69d3358b0fb281d4b69c9}{00099}}\ [[nodiscard]]\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structanimera_1_1SpriteRect}{SpriteRect}}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a0049f9a086d69d3358b0fb281d4b69c9}{getSpriteRect}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \textcolor{keywordtype}{id})\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00100}00100\ \ \ assert(0\ <=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00101}00101\ \ \ assert(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keywordtype}{id})\ <\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096abbd5820689286b50cb87ad86b28e3550}{SpriteID::count\_}}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00102}00102\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a33550c03c56334a50ed376039b697f44}{sprite\_rects}}[\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(id)];}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00103}00103\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00105}\mbox{\hyperlink{namespaceanimera_1_1sprites_a8000eb35ac2b34196d22e59c55f0fc77}{00105}}\ [[nodiscard]]\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structanimera_1_1TextureInfo}{TextureInfo}}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a8000eb35ac2b34196d22e59c55f0fc77}{getTextureInfo}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ =\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096a22d1cc376c54be531c0a569aa1492ca8}{SpriteID::null\_}})\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00106}00106\ \ \ \textcolor{keywordflow}{return}\ \{\mbox{\hyperlink{namespaceanimera_1_1sprites_ac519deccd72dba7e848d38f4315941aa}{texture\_data}},\ \mbox{\hyperlink{namespaceanimera_1_1sprites_ab06be4b8dfd05c1c8a1768607a8a7ed9}{texture\_size}},\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a7fe6485317ae0fa42a017518477b9ea0}{texture\_pitch}},\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a42d1986602cc28e1fb192339d7e695ae}{texture\_width}},\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a284f192b4cdad109d39b8df46ea4c9d7}{texture\_height}}\};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00107}00107\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00109}\mbox{\hyperlink{namespaceanimera_1_1sprites_aba4b9fb9165a1705e79083ea213fa0c3}{00109}}\ [[nodiscard]]\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aba4b9fb9165a1705e79083ea213fa0c3}{operator+}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ off)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00110}00110\ \ \ assert(0\ <=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00111}00111\ \ \ assert(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keywordtype}{id})\ <\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096abbd5820689286b50cb87ad86b28e3550}{SpriteID::count\_}}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00112}00112\ \ \ \textcolor{keywordtype}{id}\ =\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\{\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(id)\ +\ off\};}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00113}00113\ \ \ assert(0\ <=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00114}00114\ \ \ assert(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\textcolor{keywordtype}{id})\ <\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096abbd5820689286b50cb87ad86b28e3550}{SpriteID::count\_}}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00115}00115\ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00116}00116\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00118}\mbox{\hyperlink{namespaceanimera_1_1sprites_a94cf0b51fc274b3e60dfd8bee8ed6fd7}{00118}}\ [[nodiscard]]\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a94cf0b51fc274b3e60dfd8bee8ed6fd7}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ off)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00119}00119\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{id}\ +\ -\/off;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00120}00120\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00122}\mbox{\hyperlink{namespaceanimera_1_1sprites_ad87eed7ee67fd749d61927066f0c0e66}{00122}}\ [[nodiscard]]\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a94cf0b51fc274b3e60dfd8bee8ed6fd7}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ b)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00123}00123\ \ \ assert(0\ <=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(a));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00124}00124\ \ \ assert(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(a)\ <=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096abbd5820689286b50cb87ad86b28e3550}{SpriteID::count\_}}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00125}00125\ \ \ assert(0\ <=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(b));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00126}00126\ \ \ assert(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(b)\ <\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096abbd5820689286b50cb87ad86b28e3550}{SpriteID::count\_}}));}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00127}00127\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(a)\ -\/\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(b);}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00128}00128\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00130}\mbox{\hyperlink{namespaceanimera_1_1sprites_a906a8a56744de197fa589cf9b763a227}{00130}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\mbox{\hyperlink{namespaceanimera_1_1sprites_a906a8a56744de197fa589cf9b763a227}{operator+=}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ off)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00131}00131\ \ \ \textcolor{keywordtype}{id}\ =\ \textcolor{keywordtype}{id}\ +\ off;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00132}00132\ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00133}00133\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00135}\mbox{\hyperlink{namespaceanimera_1_1sprites_ad297ad221dab24d98499b90f0fe93c83}{00135}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\mbox{\hyperlink{namespaceanimera_1_1sprites_ad297ad221dab24d98499b90f0fe93c83}{operator-\/=}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ off)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00136}00136\ \ \ \textcolor{keywordtype}{id}\ =\ \textcolor{keywordtype}{id}\ -\/\ off;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00137}00137\ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00138}00138\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00140}\mbox{\hyperlink{namespaceanimera_1_1sprites_a622983567cc1e63309e17984deea4b72}{00140}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\mbox{\hyperlink{namespaceanimera_1_1sprites_a622983567cc1e63309e17984deea4b72}{operator++}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\textcolor{keywordtype}{id})\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00141}00141\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{id}\ +=\ 1;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00142}00142\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00144}\mbox{\hyperlink{namespaceanimera_1_1sprites_a8e2af7a47c9b974ae237988667d5c2ba}{00144}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\mbox{\hyperlink{namespaceanimera_1_1sprites_a8e2af7a47c9b974ae237988667d5c2ba}{operator-\/-\/}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\textcolor{keywordtype}{id})\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00145}00145\ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{id}\ -\/=\ 1;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00146}00146\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00148}\mbox{\hyperlink{namespaceanimera_1_1sprites_a1e4af889bcae876b574ea7549b5b8ea5}{00148}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a622983567cc1e63309e17984deea4b72}{operator++}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int})\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00149}00149\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ copy\ =\ id;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00150}00150\ \ \ \textcolor{keywordtype}{id}\ +=\ 1;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00151}00151\ \ \ \textcolor{keywordflow}{return}\ copy;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00152}00152\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00154}\mbox{\hyperlink{namespaceanimera_1_1sprites_a422f9f6a74d740d4d2f2fe94191f2af0}{00154}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_a8e2af7a47c9b974ae237988667d5c2ba}{operator-\/-\/}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ \&\textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int})\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00155}00155\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{SpriteID}}\ copy\ =\ id;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00156}00156\ \ \ \textcolor{keywordtype}{id}\ -\/=\ 1;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00157}00157\ \ \ \textcolor{keywordflow}{return}\ copy;}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00158}00158\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00159}00159\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00160}00160\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00161}00161\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00162}00162\ \}}
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{sprites_8hpp_source_l00164}00164\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

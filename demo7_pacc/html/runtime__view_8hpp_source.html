@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/entity/runtime_view.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_2ca73b37c2350629ed16e2a56f62ab53.html">entity</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">runtime_view.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="runtime__view_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a60c928831c22b7dd2216dbc469f68f24">    1</a></span><span class="preprocessor">#ifndef ENTT_ENTITY_RUNTIME_VIEW_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ENTT_ENTITY_RUNTIME_VIEW_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;iterator&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../config/config.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="sparse__set_8hpp.html">sparse_set.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="signal_2fwd_8hpp.html">fwd.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceentt.html">entt</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Entity&gt;</div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html">   57</a></span><span class="keyword">class </span><a class="code hl_class" href="classentt_1_1basic__runtime__view.html">basic_runtime_view</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classentt_1_1basic__registry.html">basic_registry</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt;;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">   61</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">underlying_iterator</a> = <span class="keyword">typename</span> <a class="code hl_class" href="classentt_1_1sparse__set_1_1sparse__set__iterator.html">sparse_set&lt;Entity&gt;::iterator</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">   63</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">final</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classentt_1_1basic__runtime__view.html">basic_runtime_view</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt;;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">   66</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a> = std::vector&lt;const sparse_set&lt;Entity&gt; *&gt;;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a598d1c6ec7cf359803f407efe08f0ebd">   68</a></span>        <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a598d1c6ec7cf359803f407efe08f0ebd">view_iterator</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a> &amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">all</a>, <a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">underlying_iterator</a> curr) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            : <a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a>{&amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">all</a>},</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>              <a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a>{curr}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a> != (*<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a>)[0]-&gt;<a class="code hl_function" href="classentt_1_1basic__runtime__view.html#a5fc38f0e738d83d81a98b65b0e45d30b">end</a>() &amp;&amp; !<a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8">valid</a>()) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                ++(*this);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8">   77</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8">valid</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">return</span> std::all_of(<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a>-&gt;begin()++, <a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a>-&gt;end(), [<a class="code hl_namespace" href="namespaceentt.html">entt</a> = *<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a>](<span class="keyword">const</span> <span class="keyword">auto</span> *curr) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                return curr-&gt;contains(entt);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            });</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a39196ebc9e0b5c66970217c2d4ce86c6">   84</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a39196ebc9e0b5c66970217c2d4ce86c6">difference_type</a> = <span class="keyword">typename</span> underlying_iterator::difference_type;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#af4fc23469ef0c80779b60ce1db901afd">   85</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#af4fc23469ef0c80779b60ce1db901afd">value_type</a> = <span class="keyword">typename</span> underlying_iterator::value_type;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#afa67e39ad5c56c51c43a0cd2617d3e3c">   86</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#afa67e39ad5c56c51c43a0cd2617d3e3c">pointer</a> = <span class="keyword">typename</span> underlying_iterator::pointer;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a068d68bd7d2f24128e4583006873ef06">   87</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a068d68bd7d2f24128e4583006873ef06">reference</a> = <span class="keyword">typename</span> underlying_iterator::reference;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#aac5402f3942b63e9ec6e38f8d0fa88a7">   88</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#aac5402f3942b63e9ec6e38f8d0fa88a7">iterator_category</a> = std::bidirectional_iterator_tag;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a7d8ec77acdb44e5a4d6551d3c5f46bdb">   90</a></span>        <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a7d8ec77acdb44e5a4d6551d3c5f46bdb">view_iterator</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> = <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#acee4151cbf47822c15b1624ab56a80f6">   92</a></span>        <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp; <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">operator</a>++() {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">while</span>(++<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a> != (*<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a>)[0]-&gt;<a class="code hl_function" href="classentt_1_1basic__runtime__view.html#a5fc38f0e738d83d81a98b65b0e45d30b">end</a>() &amp;&amp; !<a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8">valid</a>());</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#abf7728936e23f134292b5bad575780ad">   97</a></span>        <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#abf7728936e23f134292b5bad575780ad">operator++</a>(<span class="keywordtype">int</span>) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">orig</a> = *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#acee4151cbf47822c15b1624ab56a80f6">operator++</a>(), <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">orig</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3a96fa2a5acc7e7681852be597adfd40">  102</a></span>        <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp; <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3a96fa2a5acc7e7681852be597adfd40">operator--</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">while</span>(--<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a> != (*<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a>)[0]-&gt;<a class="code hl_function" href="classentt_1_1basic__runtime__view.html#aa1d8a9b29404f27c02ff496fb52318ec">begin</a>() &amp;&amp; !<a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8">valid</a>());</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a992afcca9567e89904062bf9bebe7800">  107</a></span>        <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a992afcca9567e89904062bf9bebe7800">operator--</a>(<span class="keywordtype">int</span>) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">orig</a> = *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3a96fa2a5acc7e7681852be597adfd40">operator--</a>(), <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">orig</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ae3f30e070d535d4104fd4174def90de6">  112</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ae3f30e070d535d4104fd4174def90de6">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>) <span class="keyword">const</span> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>.it == <a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a652460f326c6e165b5b09aa7eb5234ec">  116</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a652460f326c6e165b5b09aa7eb5234ec">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>) <span class="keyword">const</span> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a77c5499a781cdf71d79fdcee4a934a24">  120</a></span>        <a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#afa67e39ad5c56c51c43a0cd2617d3e3c">pointer</a> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a77c5499a781cdf71d79fdcee4a934a24">operator-&gt;</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a>.operator-&gt;();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a0345ccdd396dfecbf00f544910eec4b2">  124</a></span>        <a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a068d68bd7d2f24128e4583006873ef06">reference</a> <a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a0345ccdd396dfecbf00f544910eec4b2">operator*</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">return</span> *<a class="code hl_function" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a77c5499a781cdf71d79fdcee4a934a24">operator-&gt;</a>();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">  129</a></span>        <span class="keyword">const</span> <a class="code hl_typedef" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a> *<a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">  130</a></span>        <a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">underlying_iterator</a> <a class="code hl_variable" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    };</div>
+</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a6946efa47c98101857c6a7f6abdda079">  133</a></span>    <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#a6946efa47c98101857c6a7f6abdda079">basic_runtime_view</a>(std::vector&lt;<span class="keyword">const</span> <a class="code hl_class" href="classentt_1_1sparse__set.html">sparse_set&lt;Entity&gt;</a> *&gt; <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">others</a>) <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        : <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>{std::move(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">others</a>)}</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keyword">const</span> <span class="keyword">auto</span> it = std::min_element(<a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.begin(), <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.end(), [](<span class="keyword">const</span> <span class="keyword">auto</span> *<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">lhs</a>, <span class="keyword">const</span> <span class="keyword">auto</span> *<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">rhs</a>) {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            return (!lhs &amp;&amp; rhs) || (lhs &amp;&amp; rhs &amp;&amp; lhs-&gt;size() &lt; rhs-&gt;size());</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        });</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="comment">// brings the best candidate (if any) on front of the vector</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        std::rotate(<a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.begin(), it, <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.end());</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">  144</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">valid</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">return</span> !<a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.empty() &amp;&amp; <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.front();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a7ede80f53e93473099819167d42bf2f1">  150</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#a7ede80f53e93473099819167d42bf2f1">entity_type</a> = <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#aabb4450ce3d686fe05bd92e5975d11fb">  152</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#aabb4450ce3d686fe05bd92e5975d11fb">size_type</a> = std::size_t;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a9ae6398953c3d724227e0fb25a7b61bd">  154</a></span>    <span class="keyword">using </span><a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">iterator</a> = <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#ab91318abb3728adf349cd08c428c2be8">  160</a></span>    <a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#aabb4450ce3d686fe05bd92e5975d11fb">size_type</a> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#ab91318abb3728adf349cd08c428c2be8">size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">valid</a>() ? <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.front()-&gt;size() : <a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#aabb4450ce3d686fe05bd92e5975d11fb">size_type</a>{};</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a2b4be964c6e2a95073ab112693ff1fd1">  168</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#a2b4be964c6e2a95073ab112693ff1fd1">empty</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">return</span> !<a class="code hl_function" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">valid</a>() || <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.front()-&gt;empty();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
+</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#aa1d8a9b29404f27c02ff496fb52318ec">  186</a></span>    <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">iterator</a> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#aa1d8a9b29404f27c02ff496fb52318ec">begin</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">iterator</a> it{};</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">valid</a>()) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            it = { <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>, <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>[0]-&gt;begin() };</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">return</span> it;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a5fc38f0e738d83d81a98b65b0e45d30b">  211</a></span>    <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">iterator</a> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#a5fc38f0e738d83d81a98b65b0e45d30b">end</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <a class="code hl_class" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">iterator</a> it{};</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="keywordflow">if</span>(<a class="code hl_function" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">valid</a>()) {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            it = { <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>, <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>[0]-&gt;end() };</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keywordflow">return</span> it;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
+</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#ace695506c87fd0299c49ce90e816074f">  226</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#ace695506c87fd0299c49ce90e816074f">contains</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classentt_1_1basic__runtime__view.html#a7ede80f53e93473099819167d42bf2f1">entity_type</a> <a class="code hl_namespace" href="namespaceentt.html">entt</a>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">valid</a>() &amp;&amp; std::all_of(<a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.cbegin(), <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>.cend(), [<a class="code hl_namespace" href="namespaceentt.html">entt</a>](<span class="keyword">const</span> <span class="keyword">auto</span> *<a class="code hl_class" href="classentt_1_1basic__view.html">view</a>) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            return view-&gt;find(entt) != view-&gt;end();</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        });</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
+</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
+<div class="foldopen" id="foldopen00248" data-start="{" data-end="}">
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view.html#a79fe059a28f768f4dc82edf48438cce0">  248</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1basic__runtime__view.html#a79fe059a28f768f4dc82edf48438cce0">each</a>(Func func)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_class" href="classentity.html">entity</a>: *<span class="keyword">this</span>) {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            func(<a class="code hl_class" href="classentity.html">entity</a>);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
+</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#af818b6400f82ce3ea2f2d55b874debf1">  255</a></span>    std::vector&lt;const sparse_set&lt;Entity&gt; *&gt; <a class="code hl_variable" href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">pools</a>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>};</div>
+</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>}</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassentity_html"><div class="ttname"><a href="classentity.html">entity</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__registry_html"><div class="ttname"><a href="classentt_1_1basic__registry.html">entt::basic_registry</a></div><div class="ttdoc">Fast and reliable entity-component system.</div><div class="ttdef"><b>Definition</b> <a href="registry_8hpp_source.html#l00044">registry.hpp:44</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html">entt::basic_runtime_view::view_iterator</a></div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00063">runtime_view.hpp:63</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a0345ccdd396dfecbf00f544910eec4b2"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a0345ccdd396dfecbf00f544910eec4b2">entt::basic_runtime_view::view_iterator::operator*</a></div><div class="ttdeci">reference operator*() const</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00124">runtime_view.hpp:124</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a068d68bd7d2f24128e4583006873ef06"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a068d68bd7d2f24128e4583006873ef06">entt::basic_runtime_view::view_iterator::reference</a></div><div class="ttdeci">typename underlying_iterator::reference reference</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00087">runtime_view.hpp:87</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a3226cf6575a1711e86922d44e10e23a1"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">entt::basic_runtime_view::view_iterator::it</a></div><div class="ttdeci">underlying_iterator it</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00130">runtime_view.hpp:130</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a39196ebc9e0b5c66970217c2d4ce86c6"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a39196ebc9e0b5c66970217c2d4ce86c6">entt::basic_runtime_view::view_iterator::difference_type</a></div><div class="ttdeci">typename underlying_iterator::difference_type difference_type</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00084">runtime_view.hpp:84</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a3a96fa2a5acc7e7681852be597adfd40"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3a96fa2a5acc7e7681852be597adfd40">entt::basic_runtime_view::view_iterator::operator--</a></div><div class="ttdeci">view_iterator &amp; operator--() ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00102">runtime_view.hpp:102</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a598d1c6ec7cf359803f407efe08f0ebd"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a598d1c6ec7cf359803f407efe08f0ebd">entt::basic_runtime_view::view_iterator::view_iterator</a></div><div class="ttdeci">view_iterator(const direct_type &amp;all, underlying_iterator curr) ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00068">runtime_view.hpp:68</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a652460f326c6e165b5b09aa7eb5234ec"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a652460f326c6e165b5b09aa7eb5234ec">entt::basic_runtime_view::view_iterator::operator!=</a></div><div class="ttdeci">bool operator!=(const view_iterator &amp;other) const ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00116">runtime_view.hpp:116</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a6e4730b752a4cfcb8ccd704daea672f8"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">entt::basic_runtime_view::view_iterator::pools</a></div><div class="ttdeci">const direct_type * pools</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00129">runtime_view.hpp:129</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a77c5499a781cdf71d79fdcee4a934a24"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a77c5499a781cdf71d79fdcee4a934a24">entt::basic_runtime_view::view_iterator::operator-&gt;</a></div><div class="ttdeci">pointer operator-&gt;() const</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00120">runtime_view.hpp:120</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a7d8ec77acdb44e5a4d6551d3c5f46bdb"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a7d8ec77acdb44e5a4d6551d3c5f46bdb">entt::basic_runtime_view::view_iterator::view_iterator</a></div><div class="ttdeci">view_iterator() ENTT_NOEXCEPT=default</div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a90402cea1bf44a2241f635023092d3b8"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8">entt::basic_runtime_view::view_iterator::valid</a></div><div class="ttdeci">bool valid() const</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00077">runtime_view.hpp:77</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_a992afcca9567e89904062bf9bebe7800"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a992afcca9567e89904062bf9bebe7800">entt::basic_runtime_view::view_iterator::operator--</a></div><div class="ttdeci">view_iterator operator--(int) ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00107">runtime_view.hpp:107</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_aac5402f3942b63e9ec6e38f8d0fa88a7"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#aac5402f3942b63e9ec6e38f8d0fa88a7">entt::basic_runtime_view::view_iterator::iterator_category</a></div><div class="ttdeci">std::bidirectional_iterator_tag iterator_category</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00088">runtime_view.hpp:88</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_ab26512b2a85b3d3bd2f3d0f4208df12a"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">entt::basic_runtime_view::view_iterator::direct_type</a></div><div class="ttdeci">std::vector&lt; const sparse_set&lt; Entity &gt; * &gt; direct_type</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00066">runtime_view.hpp:66</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_abf7728936e23f134292b5bad575780ad"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#abf7728936e23f134292b5bad575780ad">entt::basic_runtime_view::view_iterator::operator++</a></div><div class="ttdeci">view_iterator operator++(int)</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00097">runtime_view.hpp:97</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_acee4151cbf47822c15b1624ab56a80f6"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#acee4151cbf47822c15b1624ab56a80f6">entt::basic_runtime_view::view_iterator::operator++</a></div><div class="ttdeci">view_iterator &amp; operator++()</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00092">runtime_view.hpp:92</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_ae3f30e070d535d4104fd4174def90de6"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ae3f30e070d535d4104fd4174def90de6">entt::basic_runtime_view::view_iterator::operator==</a></div><div class="ttdeci">bool operator==(const view_iterator &amp;other) const ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00112">runtime_view.hpp:112</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_af4fc23469ef0c80779b60ce1db901afd"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#af4fc23469ef0c80779b60ce1db901afd">entt::basic_runtime_view::view_iterator::value_type</a></div><div class="ttdeci">typename underlying_iterator::value_type value_type</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00085">runtime_view.hpp:85</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_html_afa67e39ad5c56c51c43a0cd2617d3e3c"><div class="ttname"><a href="classentt_1_1basic__runtime__view_1_1view__iterator.html#afa67e39ad5c56c51c43a0cd2617d3e3c">entt::basic_runtime_view::view_iterator::pointer</a></div><div class="ttdeci">typename underlying_iterator::pointer pointer</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00086">runtime_view.hpp:86</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a></div><div class="ttdoc">Runtime view.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00057">runtime_view.hpp:57</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_a17144590c4e5f5086b0d3b8c9ba70dc1"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">entt::basic_runtime_view::underlying_iterator</a></div><div class="ttdeci">typename sparse_set&lt; Entity &gt;::iterator underlying_iterator</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00061">runtime_view.hpp:61</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_a2b4be964c6e2a95073ab112693ff1fd1"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#a2b4be964c6e2a95073ab112693ff1fd1">entt::basic_runtime_view::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Checks if the view is definitely empty.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00168">runtime_view.hpp:168</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_a5fc38f0e738d83d81a98b65b0e45d30b"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#a5fc38f0e738d83d81a98b65b0e45d30b">entt::basic_runtime_view::end</a></div><div class="ttdeci">iterator end() const</div><div class="ttdoc">Returns an iterator that is past the last entity that has the given components.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00211">runtime_view.hpp:211</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_a6946efa47c98101857c6a7f6abdda079"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#a6946efa47c98101857c6a7f6abdda079">entt::basic_runtime_view::basic_runtime_view</a></div><div class="ttdeci">basic_runtime_view(std::vector&lt; const sparse_set&lt; Entity &gt; * &gt; others) ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00133">runtime_view.hpp:133</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_a79fe059a28f768f4dc82edf48438cce0"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#a79fe059a28f768f4dc82edf48438cce0">entt::basic_runtime_view::each</a></div><div class="ttdeci">void each(Func func) const</div><div class="ttdoc">Iterates entities and applies the given function object to them.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00248">runtime_view.hpp:248</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_a7ede80f53e93473099819167d42bf2f1"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#a7ede80f53e93473099819167d42bf2f1">entt::basic_runtime_view::entity_type</a></div><div class="ttdeci">Entity entity_type</div><div class="ttdoc">Underlying entity identifier.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00150">runtime_view.hpp:150</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_aa1d8a9b29404f27c02ff496fb52318ec"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#aa1d8a9b29404f27c02ff496fb52318ec">entt::basic_runtime_view::begin</a></div><div class="ttdeci">iterator begin() const</div><div class="ttdoc">Returns an iterator to the first entity that has the given components.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00186">runtime_view.hpp:186</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_aabb4450ce3d686fe05bd92e5975d11fb"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#aabb4450ce3d686fe05bd92e5975d11fb">entt::basic_runtime_view::size_type</a></div><div class="ttdeci">std::size_t size_type</div><div class="ttdoc">Unsigned integer type.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00152">runtime_view.hpp:152</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_ab91318abb3728adf349cd08c428c2be8"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#ab91318abb3728adf349cd08c428c2be8">entt::basic_runtime_view::size</a></div><div class="ttdeci">size_type size() const</div><div class="ttdoc">Estimates the number of entities that have the given components.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00160">runtime_view.hpp:160</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_ace695506c87fd0299c49ce90e816074f"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#ace695506c87fd0299c49ce90e816074f">entt::basic_runtime_view::contains</a></div><div class="ttdeci">bool contains(const entity_type entt) const</div><div class="ttdoc">Checks if a view contains an entity.</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00226">runtime_view.hpp:226</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_aec935cf26f01b0e80d1d519cf38426f5"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#aec935cf26f01b0e80d1d519cf38426f5">entt::basic_runtime_view::pools</a></div><div class="ttdeci">std::vector&lt; const sparse_set&lt; Entity &gt; * &gt; pools</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00255">runtime_view.hpp:255</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__runtime__view_html_afef4c22c9585d5445aff71349b40f706"><div class="ttname"><a href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706">entt::basic_runtime_view::valid</a></div><div class="ttdeci">bool valid() const</div><div class="ttdef"><b>Definition</b> <a href="runtime__view_8hpp_source.html#l00144">runtime_view.hpp:144</a></div></div>
+<div class="ttc" id="aclassentt_1_1basic__view_html"><div class="ttname"><a href="classentt_1_1basic__view.html">entt::basic_view</a></div><div class="ttdoc">View.</div><div class="ttdef"><b>Definition</b> <a href="entity_2fwd_8hpp_source.html#l00017">fwd.hpp:17</a></div></div>
+<div class="ttc" id="aclassentt_1_1sparse__set_1_1sparse__set__iterator_html"><div class="ttname"><a href="classentt_1_1sparse__set_1_1sparse__set__iterator.html">entt::sparse_set::sparse_set_iterator</a></div><div class="ttdef"><b>Definition</b> <a href="sparse__set_8hpp_source.html#l00055">sparse_set.hpp:55</a></div></div>
+<div class="ttc" id="aclassentt_1_1sparse__set_html"><div class="ttname"><a href="classentt_1_1sparse__set.html">entt::sparse_set</a></div><div class="ttdoc">Basic sparse set implementation.</div><div class="ttdef"><b>Definition</b> <a href="sparse__set_8hpp_source.html#l00048">sparse_set.hpp:48</a></div></div>
+<div class="ttc" id="aconfig_8h_html_ad351dc3d24a47909c17878fd0e377c54"><div class="ttname"><a href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></div><div class="ttdeci">#define ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00006">config.h:6</a></div></div>
+<div class="ttc" id="anamespaceentt_html"><div class="ttname"><a href="namespaceentt.html">entt</a></div><div class="ttdef"><b>Definition</b> <a href="algorithm_8hpp_source.html#l00013">algorithm.hpp:13</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+<div class="ttc" id="asignal_2fwd_8hpp_html"><div class="ttname"><a href="signal_2fwd_8hpp.html">fwd.hpp</a></div></div>
+<div class="ttc" id="asparse__set_8hpp_html"><div class="ttname"><a href="sparse__set_8hpp.html">sparse_set.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

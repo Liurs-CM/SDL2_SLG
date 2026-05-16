@@ -1,0 +1,279 @@
+\doxysection{src/sys/set\+\_\+target.hpp 文件参考}
+\hypertarget{set__target_8hpp}{}\label{set__target_8hpp}\index{src/sys/set\_target.hpp@{src/sys/set\_target.hpp}}
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include "{}core/maze.\+hpp"{}}\newline
+{\ttfamily \#include $<$entt/entity/fwd.\+hpp$>$}\newline
+set\+\_\+target.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{set__target_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{set__target_8hpp_a12c136aa7757633827bdd4d69ac67277}{set\+Blinky\+Chase\+Target}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908}{set\+Pinky\+Chase\+Target}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d}{set\+Inky\+Chase\+Target}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b}{set\+Clyde\+Chase\+Target}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5}{set\+Scatter\+Target}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\item 
+void \mbox{\hyperlink{set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb}{set\+Scared\+Target}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&, const \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} \&, std\+::mt19937 \&)
+\item 
+void \mbox{\hyperlink{set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85}{set\+Eaten\+Target}} (\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\Hypertarget{set__target_8hpp_a12c136aa7757633827bdd4d69ac67277}\label{set__target_8hpp_a12c136aa7757633827bdd4d69ac67277} 
+\index{set\_target.hpp@{set\_target.hpp}!setBlinkyChaseTarget@{setBlinkyChaseTarget}}
+\index{setBlinkyChaseTarget@{setBlinkyChaseTarget}!set\_target.hpp@{set\_target.hpp}}
+\doxysubsubsection{\texorpdfstring{setBlinkyChaseTarget()}{setBlinkyChaseTarget()}}
+{\footnotesize\ttfamily void set\+Blinky\+Chase\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{set__target_8cpp_source}{set\+\_\+target.\+cpp}} 第 \mbox{\hyperlink{set__target_8cpp_source_l00021}{21}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00960}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{position_8hpp_source_l00018}{Position\+::p}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a12c136aa7757633827bdd4d69ac67277_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a12c136aa7757633827bdd4d69ac67277_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b}\label{set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b} 
+\index{set\_target.hpp@{set\_target.hpp}!setClydeChaseTarget@{setClydeChaseTarget}}
+\index{setClydeChaseTarget@{setClydeChaseTarget}!set\_target.hpp@{set\_target.hpp}}
+\doxysubsubsection{\texorpdfstring{setClydeChaseTarget()}{setClydeChaseTarget()}}
+{\footnotesize\ttfamily void set\+Clyde\+Chase\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{set__target_8cpp_source}{set\+\_\+target.\+cpp}} 第 \mbox{\hyperlink{set__target_8cpp_source_l00051}{51}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{pos_8hpp_source_l00048}{distance()}}, \mbox{\hyperlink{registry_8hpp_source_l00960}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{position_8hpp_source_l00018}{Position\+::p}}, \mbox{\hyperlink{home__position_8hpp_source_l00016}{Home\+Position\+::scatter}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_af0274f666fba303f0c15ca3d4407e31b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85}\label{set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85} 
+\index{set\_target.hpp@{set\_target.hpp}!setEatenTarget@{setEatenTarget}}
+\index{setEatenTarget@{setEatenTarget}!set\_target.hpp@{set\_target.hpp}}
+\doxysubsubsection{\texorpdfstring{setEatenTarget()}{setEatenTarget()}}
+{\footnotesize\ttfamily void set\+Eaten\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{set__target_8cpp_source}{set\+\_\+target.\+cpp}} 第 \mbox{\hyperlink{set__target_8cpp_source_l00103}{103}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{home__position_8hpp_source_l00015}{Home\+Position\+::home}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_affc6a47b9a6d9a894704aa9cb3cf7b85_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d}\label{set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d} 
+\index{set\_target.hpp@{set\_target.hpp}!setInkyChaseTarget@{setInkyChaseTarget}}
+\index{setInkyChaseTarget@{setInkyChaseTarget}!set\_target.hpp@{set\_target.hpp}}
+\doxysubsubsection{\texorpdfstring{setInkyChaseTarget()}{setInkyChaseTarget()}}
+{\footnotesize\ttfamily void set\+Inky\+Chase\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{set__target_8cpp_source}{set\+\_\+target.\+cpp}} 第 \mbox{\hyperlink{set__target_8cpp_source_l00039}{39}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{chase__target_8hpp_source_l00032}{Inky\+Chase\+Target\+::blinky}}, \mbox{\hyperlink{registry_8hpp_source_l00960}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{chase__target_8hpp_source_l00031}{Inky\+Chase\+Target\+::player}}, \mbox{\hyperlink{dir__to__pos_8hpp_source_l00015}{to\+Pos()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a97e9e2bc47e2703c6775319295d7292d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908}\label{set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908} 
+\index{set\_target.hpp@{set\_target.hpp}!setPinkyChaseTarget@{setPinkyChaseTarget}}
+\index{setPinkyChaseTarget@{setPinkyChaseTarget}!set\_target.hpp@{set\_target.hpp}}
+\doxysubsubsection{\texorpdfstring{setPinkyChaseTarget()}{setPinkyChaseTarget()}}
+{\footnotesize\ttfamily void set\+Pinky\+Chase\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{set__target_8cpp_source}{set\+\_\+target.\+cpp}} 第 \mbox{\hyperlink{set__target_8cpp_source_l00029}{29}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{registry_8hpp_source_l00960}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::get()}}, \mbox{\hyperlink{dir__to__pos_8hpp_source_l00015}{to\+Pos()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a0ed32ed66c9b9308eb7ac8123ec93908_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb}\label{set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb} 
+\index{set\_target.hpp@{set\_target.hpp}!setScaredTarget@{setScaredTarget}}
+\index{setScaredTarget@{setScaredTarget}!set\_target.hpp@{set\_target.hpp}}
+\doxysubsubsection{\texorpdfstring{setScaredTarget()}{setScaredTarget()}}
+{\footnotesize\ttfamily void set\+Scared\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg,  }\item[{const \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} \&}]{maze,  }\item[{std\+::mt19937 \&}]{rand }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{set__target_8cpp_source}{set\+\_\+target.\+cpp}} 第 \mbox{\hyperlink{set__target_8cpp_source_l00074}{74}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{can__move_8cpp_source_l00015}{can\+Move()}}, \mbox{\hyperlink{util_2dir_8hpp_source_l00026}{opposite()}}, \mbox{\hyperlink{util_2dir_8hpp_source_l00036}{rotate\+CW()}}, \mbox{\hyperlink{dir__to__pos_8hpp_source_l00015}{to\+Pos()}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_a0c3d2a8780b15181352f8c7639d569cb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5}\label{set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5} 
+\index{set\_target.hpp@{set\_target.hpp}!setScatterTarget@{setScatterTarget}}
+\index{setScatterTarget@{setScatterTarget}!set\_target.hpp@{set\_target.hpp}}
+\doxysubsubsection{\texorpdfstring{setScatterTarget()}{setScatterTarget()}}
+{\footnotesize\ttfamily void set\+Scatter\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \&}]{reg }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{set__target_8cpp_source}{set\+\_\+target.\+cpp}} 第 \mbox{\hyperlink{set__target_8cpp_source_l00067}{67}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{home__position_8hpp_source_l00016}{Home\+Position\+::scatter}} , 以及 \mbox{\hyperlink{registry_8hpp_source_l01357}{entt\+::basic\+\_\+registry$<$ Entity $>$\+::view()}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set__target_8hpp_aff1de278eb090bd9a16ca670c1947be5_icgraph}
+\end{center}
+\end{figure}

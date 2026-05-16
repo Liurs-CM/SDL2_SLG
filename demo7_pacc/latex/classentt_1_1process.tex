@@ -1,0 +1,666 @@
+\doxysection{entt\+::process\texorpdfstring{$<$}{<} Derived, Delta \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1process}{}\label{classentt_1_1process}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+
+
+Base class for processes.  
+
+
+
+
+{\ttfamily \#include $<$process.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1process_a625b574ea6d83e3a4933acc3d0279295}{delta\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}
+\begin{DoxyCompactList}\small\item\em Type used to provide elapsed time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{classentt_1_1process_a2baf1b6aef37c1420a77cd3f8eadcf79}{\texorpdfstring{$\sim$}{\string~}process}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process_af27d28af408f1dfb260b8fe976e66ea3}{abort}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{immediately}}=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}})
+\begin{DoxyCompactList}\small\item\em Aborts a process if it\textquotesingle{}s still alive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process_a8bc92bd0304659eb2a034fae65f1eeb9}{alive}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process is either running or paused. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process_ad83f2550ca63e03af126a07e4ae5d9dd}{dead}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process is already terminated. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process_a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f}{paused}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process is currently paused. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process_a6ac63863bf823806d813b046769b4419}{rejected}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a process terminated with errors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process_aacc7fe0ef3265113079c70ff8cd9478d}{tick}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}data=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}})
+\begin{DoxyCompactList}\small\item\em Updates a process and its internal state if required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process_a43d63ba9304654f0209fc32d2c74f4ce}{succeed}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Terminates a process with success if it\textquotesingle{}s still alive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process_a81816bdd06dce4058bfe3cfa5d42a64c}{fail}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Terminates a process with errors if it\textquotesingle{}s still alive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process_a9bf45a6c430f5e32fc7ab33a7a197abc}{pause}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Stops a process if it\textquotesingle{}s in a running state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process_a91fd8adb2ea48c88c6f9fb5818890f67}{unpause}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Restarts a process if it\textquotesingle{}s paused. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380d}{state}} \+: unsigned int \{ \newline
+\mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268}{UNINITIALIZED}} = 0
+, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}{RUNNING}}
+, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673}{PAUSED}}
+, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85}{SUCCEEDED}}
+, \newline
+\mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419}{FAILED}}
+, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025}{ABORTED}}
+, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133}{FINISHED}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process_a993a037fa84e19b5b64762ab5fb68028}{next}} (\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268}{state\+::\+UNINITIALIZED}} $>$) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$ \mbox{\hyperlink{structTarget}{Target}} $>$().init())
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process_abf5648643c092b73a3d8af81797c4e89}{next}} (\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}{state\+::\+RUNNING}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}data) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$ \mbox{\hyperlink{structTarget}{Target}} $>$().update(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}}, data))
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process_a71ecb69f1bb271b23d788c414957a1b5}{next}} (\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85}{state\+::\+SUCCEEDED}} $>$) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$ \mbox{\hyperlink{structTarget}{Target}} $>$().\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{succeeded}}())
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process_a9a85eca5614aa69c545f4ecfc498b2a3}{next}} (\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419}{state\+::\+FAILED}} $>$) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$ \mbox{\hyperlink{structTarget}{Target}} $>$().\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{failed}}())
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process_a17c83a8ca7d427e527d93075bdf67277}{next}} (\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025}{state\+::\+ABORTED}} $>$) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$ \mbox{\hyperlink{structTarget}{Target}} $>$().\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{aborted}}())
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process_acf9e1b20e2d085674d18664be59155bd}{next}} (...) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380d}{state}} \mbox{\hyperlink{classentt_1_1process_a174b72b81e6b9a9c5cd141392315fc4d}{current}} \{\mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268}{state\+::\+UNINITIALIZED}}\}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process_a90c179b601f23da6df3267a9384abf7c}{stopped}} \{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}$>$\newline
+class entt\+::process$<$ Derived, Delta $>$}
+Base class for processes. 
+
+This class stays true to the CRTP idiom. Derived classes must specify what\textquotesingle{}s the intended type for elapsed times.~\newline
+ A process should expose publicly the following member functions whether required\+:
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ update(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}},\ \textcolor{keywordtype}{void}\ *);}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s invoked once per tick until a process is explicitly aborted or it terminates either with or without errors. Even though it\textquotesingle{}s not mandatory to declare this member function, as a rule of thumb each process should at least define it to work properly. The {\ttfamily void \texorpdfstring{$\ast$}{*}} parameter is an opaque pointer to user data (if any) forwarded directly to the process during an update.
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ init();}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s invoked when the process joins the running queue of a scheduler. This happens as soon as it\textquotesingle{}s attached to the scheduler if the process is a top level one, otherwise when it replaces its parent if the process is a continuation.
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{succeeded}}();}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s invoked in case of success, immediately after an update and during the same tick.
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{failed}}();}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s invoked in case of errors, immediately after an update and during the same tick.
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{aborted}}();}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s invoked only if a process is explicitly aborted. There is no guarantee that it executes in the same tick, this depends solely on whether the process is aborted immediately or not.
+\end{DoxyItemize}
+
+Derived classes can change the internal state of a process by invoking the {\ttfamily succeed} and {\ttfamily fail} protected member functions and even pause or unpause the process itself.
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classentt_1_1scheduler}{scheduler}
+\end{DoxySeeAlso}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Derived} & Actual type of process that extends the class template. \\
+\hline
+{\em Delta} & Type to use to provide elapsed time. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00074}{74}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1process_a625b574ea6d83e3a4933acc3d0279295}\label{classentt_1_1process_a625b574ea6d83e3a4933acc3d0279295} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!delta\_type@{delta\_type}}
+\index{delta\_type@{delta\_type}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{delta\_type}{delta\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::delta\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}}
+
+
+
+Type used to provide elapsed time. 
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00168}{168}} 行定义.
+
+
+
+\doxysubsection{成员枚举类型说明}
+\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380d}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380d} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!state@{state}}
+\index{state@{state}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{enum}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380d}{entt\+::process\+::state}} \+: \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{unsigned}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{int}}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNINITIALIZED@{UNINITIALIZED}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!UNINITIALIZED@{UNINITIALIZED}}}\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268} 
+UNINITIALIZED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNNING@{RUNNING}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!RUNNING@{RUNNING}}}\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd} 
+RUNNING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSED@{PAUSED}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!PAUSED@{PAUSED}}}\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673} 
+PAUSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUCCEEDED@{SUCCEEDED}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!SUCCEEDED@{SUCCEEDED}}}\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85} 
+SUCCEEDED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAILED@{FAILED}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!FAILED@{FAILED}}}\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419} 
+FAILED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABORTED@{ABORTED}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!ABORTED@{ABORTED}}}\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025} 
+ABORTED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FINISHED@{FINISHED}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!FINISHED@{FINISHED}}}\Hypertarget{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133}\label{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133} 
+FINISHED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00075}{75}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1process_a2baf1b6aef37c1420a77cd3f8eadcf79}\label{classentt_1_1process_a2baf1b6aef37c1420a77cd3f8eadcf79} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!````~process@{\texorpdfstring{$\sim$}{\string~}process}}
+\index{````~process@{\texorpdfstring{$\sim$}{\string~}process}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}process()}{\string~process()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classentt_1_1process}{process}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Default destructor. 
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00171}{171}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1process_af27d28af408f1dfb260b8fe976e66ea3}\label{classentt_1_1process_af27d28af408f1dfb260b8fe976e66ea3} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!abort@{abort}}
+\index{abort@{abort}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{abort()}{abort()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::abort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}}]{immediately = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aborts a process if it\textquotesingle{}s still alive. 
+
+The function is idempotent and it does nothing if the process isn\textquotesingle{}t alive.
+
+
+\begin{DoxyParams}{参数}
+{\em immediately} & Requests an immediate operation. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00183}{183}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025}{entt\+::process$<$ Derived, Delta $>$\+::\+ABORTED}}, \mbox{\hyperlink{process_8hpp_source_l00197}{entt\+::process$<$ Derived, Delta $>$\+::alive()}}, \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{process_8hpp_source_l00230}{entt\+::process$<$ Derived, Delta $>$\+::tick()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1process_af27d28af408f1dfb260b8fe976e66ea3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_a8bc92bd0304659eb2a034fae65f1eeb9}\label{classentt_1_1process_a8bc92bd0304659eb2a034fae65f1eeb9} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!alive@{alive}}
+\index{alive@{alive}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{alive()}{alive()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if a process is either running or paused. 
+
+\begin{DoxyReturn}{返回}
+True if the process is still alive, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00197}{197}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}}, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673}{entt\+::process$<$ Derived, Delta $>$\+::\+PAUSED}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}{entt\+::process$<$ Derived, Delta $>$\+::\+RUNNING}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{process_8hpp_source_l00183}{entt\+::process$<$ Derived, Delta $>$\+::abort()}}, \mbox{\hyperlink{process_8hpp_source_l00136}{entt\+::process$<$ Derived, Delta $>$\+::fail()}} , 以及 \mbox{\hyperlink{process_8hpp_source_l00124}{entt\+::process$<$ Derived, Delta $>$\+::succeed()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1process_a8bc92bd0304659eb2a034fae65f1eeb9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_ad83f2550ca63e03af126a07e4ae5d9dd}\label{classentt_1_1process_ad83f2550ca63e03af126a07e4ae5d9dd} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!dead@{dead}}
+\index{dead@{dead}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{dead()}{dead()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if a process is already terminated. 
+
+\begin{DoxyReturn}{返回}
+True if the process is terminated, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00205}{205}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133}{entt\+::process$<$ Derived, Delta $>$\+::\+FINISHED}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{scheduler_8hpp_source_l00083}{entt\+::scheduler$<$ Delta $>$\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1process_ad83f2550ca63e03af126a07e4ae5d9dd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_a81816bdd06dce4058bfe3cfa5d42a64c}\label{classentt_1_1process_a81816bdd06dce4058bfe3cfa5d42a64c} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!fail@{fail}}
+\index{fail@{fail}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::fail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Terminates a process with errors if it\textquotesingle{}s still alive. 
+
+The function is idempotent and it does nothing if the process isn\textquotesingle{}t alive. 
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00136}{136}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00197}{entt\+::process$<$ Derived, Delta $>$\+::alive()}}, \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419}{entt\+::process$<$ Derived, Delta $>$\+::\+FAILED}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classentt_1_1process_a81816bdd06dce4058bfe3cfa5d42a64c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_acf9e1b20e2d085674d18664be59155bd}\label{classentt_1_1process_acf9e1b20e2d085674d18664be59155bd} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!next@{next}}
+\index{next@{next}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::next (\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00115}{115}} 行定义.
+
+\Hypertarget{classentt_1_1process_a17c83a8ca7d427e527d93075bdf67277}\label{classentt_1_1process_a17c83a8ca7d427e527d93075bdf67277} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!next@{next}}
+\index{next@{next}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025}{state\+::\+ABORTED}} $>$}]{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$\mbox{\hyperlink{structTarget}{Target}}$>$().\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{aborted}}()) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00110}{110}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1process_a9a85eca5614aa69c545f4ecfc498b2a3}\label{classentt_1_1process_a9a85eca5614aa69c545f4ecfc498b2a3} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!next@{next}}
+\index{next@{next}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419}{state\+::\+FAILED}} $>$}]{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$\mbox{\hyperlink{structTarget}{Target}}$>$().\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{failed}}()) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00104}{104}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1process_abf5648643c092b73a3d8af81797c4e89}\label{classentt_1_1process_abf5648643c092b73a3d8af81797c4e89} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!next@{next}}
+\index{next@{next}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}{state\+::\+RUNNING}} $>$}]{,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}}]{delta,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$\mbox{\hyperlink{structTarget}{Target}}$>$().update(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{delta}}, data)) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00092}{92}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1process_a71ecb69f1bb271b23d788c414957a1b5}\label{classentt_1_1process_a71ecb69f1bb271b23d788c414957a1b5} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!next@{next}}
+\index{next@{next}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85}{state\+::\+SUCCEEDED}} $>$}]{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$\mbox{\hyperlink{structTarget}{Target}}$>$().\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{succeeded}}()) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00098}{98}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1process_a993a037fa84e19b5b64762ab5fb68028}\label{classentt_1_1process_a993a037fa84e19b5b64762ab5fb68028} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!next@{next}}
+\index{next@{next}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structTarget}{Target}}  = Derived$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268}{state\+::\+UNINITIALIZED}} $>$}]{ }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(std\+::declval$<$\mbox{\hyperlink{structTarget}{Target}}$>$().init()) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00086}{86}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{process_8hpp_source_l00230}{entt\+::process$<$ Derived, Delta $>$\+::tick()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1process_a993a037fa84e19b5b64762ab5fb68028_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_a9bf45a6c430f5e32fc7ab33a7a197abc}\label{classentt_1_1process_a9bf45a6c430f5e32fc7ab33a7a197abc} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!pause@{pause}}
+\index{pause@{pause}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Stops a process if it\textquotesingle{}s in a running state. 
+
+The function is idempotent and it does nothing if the process isn\textquotesingle{}t running. 
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00148}{148}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}}, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673}{entt\+::process$<$ Derived, Delta $>$\+::\+PAUSED}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}{entt\+::process$<$ Derived, Delta $>$\+::\+RUNNING}}.
+
+\Hypertarget{classentt_1_1process_a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f}\label{classentt_1_1process_a2c1c1f5ea78d3b2fc87cfcdbf7a1b40f} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!paused@{paused}}
+\index{paused@{paused}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{paused()}{paused()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if a process is currently paused. 
+
+\begin{DoxyReturn}{返回}
+True if the process is paused, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00213}{213}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673}{entt\+::process$<$ Derived, Delta $>$\+::\+PAUSED}}.
+
+\Hypertarget{classentt_1_1process_a6ac63863bf823806d813b046769b4419}\label{classentt_1_1process_a6ac63863bf823806d813b046769b4419} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!rejected@{rejected}}
+\index{rejected@{rejected}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{rejected()}{rejected()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::rejected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if a process terminated with errors. 
+
+\begin{DoxyReturn}{返回}
+True if the process terminated with errors, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00221}{221}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00268}{entt\+::process$<$ Derived, Delta $>$\+::stopped}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{scheduler_8hpp_source_l00083}{entt\+::scheduler$<$ Delta $>$\+::update()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1process_a6ac63863bf823806d813b046769b4419_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_a43d63ba9304654f0209fc32d2c74f4ce}\label{classentt_1_1process_a43d63ba9304654f0209fc32d2c74f4ce} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!succeed@{succeed}}
+\index{succeed@{succeed}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{succeed()}{succeed()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::succeed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Terminates a process with success if it\textquotesingle{}s still alive. 
+
+The function is idempotent and it does nothing if the process isn\textquotesingle{}t alive. 
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00124}{124}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00197}{entt\+::process$<$ Derived, Delta $>$\+::alive()}}, \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85}{entt\+::process$<$ Derived, Delta $>$\+::\+SUCCEEDED}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1process_a43d63ba9304654f0209fc32d2c74f4ce_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_aacc7fe0ef3265113079c70ff8cd9478d}\label{classentt_1_1process_aacc7fe0ef3265113079c70ff8cd9478d} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!tick@{tick}}
+\index{tick@{tick}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}}]{delta,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}}]{data = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates a process and its internal state if required. 
+
+
+\begin{DoxyParams}{参数}
+{\em delta} & Elapsed time. \\
+\hline
+{\em data} & Optional data. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00230}{230}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da4e6c860e5da10e31c5fd9cb76ddc2025}{entt\+::process$<$ Derived, Delta $>$\+::\+ABORTED}}, \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}}, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dab9e14d9b2886bcff408b85aefa780419}{entt\+::process$<$ Derived, Delta $>$\+::\+FAILED}}, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da2c616b2713e2e0aed04b4c4752c88133}{entt\+::process$<$ Derived, Delta $>$\+::\+FINISHED}}, \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{process_8hpp_source_l00086}{entt\+::process$<$ Derived, Delta $>$\+::next()}}, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}{entt\+::process$<$ Derived, Delta $>$\+::\+RUNNING}}, \mbox{\hyperlink{process_8hpp_source_l00268}{entt\+::process$<$ Derived, Delta $>$\+::stopped}}, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dafd9f6519d3f45276829fe74eb2c4bb85}{entt\+::process$<$ Derived, Delta $>$\+::\+SUCCEEDED}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268}{entt\+::process$<$ Derived, Delta $>$\+::\+UNINITIALIZED}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{process_8hpp_source_l00183}{entt\+::process$<$ Derived, Delta $>$\+::abort()}} , 以及 \mbox{\hyperlink{scheduler_8hpp_source_l00083}{entt\+::scheduler$<$ Delta $>$\+::update()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classentt_1_1process_aacc7fe0ef3265113079c70ff8cd9478d_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classentt_1_1process_aacc7fe0ef3265113079c70ff8cd9478d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1process_a91fd8adb2ea48c88c6f9fb5818890f67}\label{classentt_1_1process_a91fd8adb2ea48c88c6f9fb5818890f67} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!unpause@{unpause}}
+\index{unpause@{unpause}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{unpause()}{unpause()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::unpause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Restarts a process if it\textquotesingle{}s paused. 
+
+The function is idempotent and it does nothing if the process isn\textquotesingle{}t paused. 
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00160}{160}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{process_8hpp_source_l00267}{entt\+::process$<$ Derived, Delta $>$\+::current}}, \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da99b2439e63f73ad515f7ab2447a80673}{entt\+::process$<$ Derived, Delta $>$\+::\+PAUSED}} , 以及 \mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380da43491564ebcfd38568918efbd6e840fd}{entt\+::process$<$ Derived, Delta $>$\+::\+RUNNING}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1process_a174b72b81e6b9a9c5cd141392315fc4d}\label{classentt_1_1process_a174b72b81e6b9a9c5cd141392315fc4d} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!current@{current}}
+\index{current@{current}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380d}{state}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::current \{\mbox{\hyperlink{classentt_1_1process_af3de3e7e215e8a1a9285baaea2e8380dadd652546039b18970b8dcf2cff824268}{state\+::\+UNINITIALIZED}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00267}{267}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{process_8hpp_source_l00183}{entt\+::process$<$ Derived, Delta $>$\+::abort()}}, \mbox{\hyperlink{process_8hpp_source_l00197}{entt\+::process$<$ Derived, Delta $>$\+::alive()}}, \mbox{\hyperlink{process_8hpp_source_l00205}{entt\+::process$<$ Derived, Delta $>$\+::dead()}}, \mbox{\hyperlink{process_8hpp_source_l00136}{entt\+::process$<$ Derived, Delta $>$\+::fail()}}, \mbox{\hyperlink{process_8hpp_source_l00148}{entt\+::process$<$ Derived, Delta $>$\+::pause()}}, \mbox{\hyperlink{process_8hpp_source_l00213}{entt\+::process$<$ Derived, Delta $>$\+::paused()}}, \mbox{\hyperlink{process_8hpp_source_l00124}{entt\+::process$<$ Derived, Delta $>$\+::succeed()}}, \mbox{\hyperlink{process_8hpp_source_l00230}{entt\+::process$<$ Derived, Delta $>$\+::tick()}} , 以及 \mbox{\hyperlink{process_8hpp_source_l00160}{entt\+::process$<$ Derived, Delta $>$\+::unpause()}}.
+
+\Hypertarget{classentt_1_1process_a90c179b601f23da6df3267a9384abf7c}\label{classentt_1_1process_a90c179b601f23da6df3267a9384abf7c} 
+\index{entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}!stopped@{stopped}}
+\index{stopped@{stopped}!entt::process$<$ Derived, Delta $>$@{entt::process$<$ Derived, Delta $>$}}
+\doxysubsubsection{\texorpdfstring{stopped}{stopped}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} , \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1process}{entt\+::process}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::stopped \{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{process_8hpp_source}{process.\+hpp}} 第 \mbox{\hyperlink{process_8hpp_source_l00268}{268}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{process_8hpp_source_l00221}{entt\+::process$<$ Derived, Delta $>$\+::rejected()}} , 以及 \mbox{\hyperlink{process_8hpp_source_l00230}{entt\+::process$<$ Derived, Delta $>$\+::tick()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/process/\mbox{\hyperlink{process_8hpp}{process.\+hpp}}\end{DoxyCompactItemize}

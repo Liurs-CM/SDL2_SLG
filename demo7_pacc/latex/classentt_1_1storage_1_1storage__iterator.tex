@@ -1,0 +1,594 @@
+\doxysection{entt\+::storage\texorpdfstring{$<$}{<} Entity, Type, typename \texorpdfstring{$>$}{>}\+::storage\+\_\+iterator\texorpdfstring{$<$}{<} Const \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1storage_1_1storage__iterator}{}\label{classentt_1_1storage_1_1storage__iterator}\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} = \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}{index\+\_\+type}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} = Type
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05ba82cdfe0e0ce5aec0590c41f104af}{pointer}} = std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \texorpdfstring{$\ast$}{*} $>$
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ae80e5edae37500bc1a01c6e522117dc0}{reference}} = std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \&, \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \& $>$
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a9d682427941bede89e35770d20ddeec8}{iterator\+\_\+category}} = std\+::random\+\_\+access\+\_\+iterator\+\_\+tag
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a549d48ec381f76e62b809816063b506b}{storage\+\_\+iterator}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}=\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{default}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166}{operator++}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad}{operator++}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{int}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d}{operator-\/-\/}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0}{operator-\/-\/}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{int}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a499dcf40b5d7ff52ae48fd2027279888}{operator+=}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} value) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a9c4e0c86475300bb455be8e091ea25dd}{operator+}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} value) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a3a3fd0d4fc368e963bfeb172ce86a5a0}{operator-\/=}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} value) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a70593b64995119332b2a1d13b3708718}{operator-\/}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} value) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_aca051973328c660860db9cd54bb3f750}{operator-\/}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{other}}) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ae80e5edae37500bc1a01c6e522117dc0}{reference}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a715ec10295fb7dbacc2227e0dec7f07b}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} value) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_abfe720712a91e546b9f2eb542c385ad9}{operator==}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{other}}) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a03462fa2c4ef3fe3d3e5d06ce312167f}{operator!=}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{other}}) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab8f6d95462cd170727bf09d2295a1520}{operator$<$}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{other}}) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_af6cf5b2d542a5dc4240cf2d64261d9b0}{operator$>$}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{other}}) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_aaa0deb9d07a138b483b24cc59c926d0a}{operator$<$=}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{other}}) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a840fa382d249aa2f2b83416570844f08}{operator$>$=}} (\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \&\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{other}}) \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05ba82cdfe0e0ce5aec0590c41f104af}{pointer}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8}{operator-\/$>$}} () \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ae80e5edae37500bc1a01c6e522117dc0}{reference}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19}{operator\texorpdfstring{$\ast$}{*}}} () \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_afe0c82db8113e398ca514653684e1c8d}{instance\+\_\+type}} = std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} std\+::vector$<$ Type $>$, std\+::vector$<$ Type $>$ $>$
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}{index\+\_\+type}} = \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} traits\+\_\+type\+::difference\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{storage\+\_\+iterator}} (\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_afe0c82db8113e398ca514653684e1c8d}{instance\+\_\+type}} \&ref, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}{index\+\_\+type}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{idx}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_afe0c82db8113e398ca514653684e1c8d}{instance\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a9d703942babc56859e10379920b81a92}{instances}}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}{index\+\_\+type}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a61851753c400cbcd374ae886843ba49b}{index}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{class}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_acd52747850f72985bd9774e25a21e1a3}{storage$<$ Entity, Type $>$}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} = std\+::void\+\_\+t$<$$>$$>$\newline
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$\newline
+class entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$}
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00057}{57}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}\label{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::difference\+\_\+type =  \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}{index\+\_\+type}}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00068}{68}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}\label{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!index\_type@{index\_type}}
+\index{index\_type@{index\_type}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{index\_type}{index\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::index\+\_\+type =  \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} traits\+\_\+type\+::difference\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00061}{61}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_afe0c82db8113e398ca514653684e1c8d}\label{classentt_1_1storage_1_1storage__iterator_afe0c82db8113e398ca514653684e1c8d} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!instance\_type@{instance\_type}}
+\index{instance\_type@{instance\_type}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{instance\_type}{instance\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::instance\+\_\+type =  std\+::conditional\+\_\+t$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} std\+::vector$<$Type$>$, std\+::vector$<$Type$>$ $>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00060}{60}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a9d682427941bede89e35770d20ddeec8}\label{classentt_1_1storage_1_1storage__iterator_a9d682427941bede89e35770d20ddeec8} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!iterator\_category@{iterator\_category}}
+\index{iterator\_category@{iterator\_category}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{iterator\_category}{iterator\_category}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::iterator\+\_\+category =  std\+::random\+\_\+access\+\_\+iterator\+\_\+tag}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00072}{72}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a05ba82cdfe0e0ce5aec0590c41f104af}\label{classentt_1_1storage_1_1storage__iterator_a05ba82cdfe0e0ce5aec0590c41f104af} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!pointer@{pointer}}
+\index{pointer@{pointer}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::pointer =  std\+::conditional\+\_\+t$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \texorpdfstring{$\ast$}{*}$>$}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00070}{70}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_ae80e5edae37500bc1a01c6e522117dc0}\label{classentt_1_1storage_1_1storage__iterator_ae80e5edae37500bc1a01c6e522117dc0} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!reference@{reference}}
+\index{reference@{reference}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::reference =  std\+::conditional\+\_\+t$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}}, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \&, \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}{value\+\_\+type}} \&$>$}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00071}{71}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e}\label{classentt_1_1storage_1_1storage__iterator_ac07d0d97a405c1ab01210c22d590183e} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{using}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::value\+\_\+type =  Type}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00069}{69}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}\label{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!storage\_iterator@{storage\_iterator}}
+\index{storage\_iterator@{storage\_iterator}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{storage\_iterator()}{storage\_iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\+::storage\+\_\+iterator$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::storage\+\_\+iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_afe0c82db8113e398ca514653684e1c8d}{instance\+\_\+type}} \&}]{ref,  }\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}{index\+\_\+type}}}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00063}{63}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a549d48ec381f76e62b809816063b506b}\label{classentt_1_1storage_1_1storage__iterator_a549d48ec381f76e62b809816063b506b} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!storage\_iterator@{storage\_iterator}}
+\index{storage\_iterator@{storage\_iterator}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{storage\_iterator()}{storage\_iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\+::storage\+\_\+iterator$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::storage\+\_\+iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a03462fa2c4ef3fe3d3e5d06ce312167f}\label{classentt_1_1storage_1_1storage__iterator_a03462fa2c4ef3fe3d3e5d06ce312167f} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator!}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00125}{125}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19}\label{classentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ae80e5edae37500bc1a01c6e522117dc0}{reference}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00150}{150}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{storage_8hpp_source_l00145}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator-\/$>$()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a9c4e0c86475300bb455be8e091ea25dd}\label{classentt_1_1storage_1_1storage__iterator_a9c4e0c86475300bb455be8e091ea25dd} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}}}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00099}{99}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166}\label{classentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00076}{76}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00080}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator++()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad}\label{classentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}++ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{int}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00080}{80}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00076}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator++()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a499dcf40b5d7ff52ae48fd2027279888}\label{classentt_1_1storage_1_1storage__iterator_a499dcf40b5d7ff52ae48fd2027279888} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00094}{94}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a70593b64995119332b2a1d13b3708718}\label{classentt_1_1storage_1_1storage__iterator_a70593b64995119332b2a1d13b3708718} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}}}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00108}{108}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_aca051973328c660860db9cd54bb3f750}\label{classentt_1_1storage_1_1storage__iterator_aca051973328c660860db9cd54bb3f750} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00112}{112}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d}\label{classentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00085}{85}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00089}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator-\/-\/()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0}\label{classentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}-\/-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{int}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00089}{89}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00085}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator-\/-\/()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a3a3fd0d4fc368e963bfeb172ce86a5a0}\label{classentt_1_1storage_1_1storage__iterator_a3a3fd0d4fc368e963bfeb172ce86a5a0} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}} \& \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00104}{104}} 行定义.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8}\label{classentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05ba82cdfe0e0ce5aec0590c41f104af}{pointer}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00145}{145}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00150}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator\texorpdfstring{$\ast$}{*}()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_ab8f6d95462cd170727bf09d2295a1520}\label{classentt_1_1storage_1_1storage__iterator_ab8f6d95462cd170727bf09d2295a1520} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00129}{129}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_aaa0deb9d07a138b483b24cc59c926d0a}\label{classentt_1_1storage_1_1storage__iterator_aaa0deb9d07a138b483b24cc59c926d0a} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00137}{137}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_abfe720712a91e546b9f2eb542c385ad9}\label{classentt_1_1storage_1_1storage__iterator_abfe720712a91e546b9f2eb542c385ad9} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00121}{121}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_af6cf5b2d542a5dc4240cf2d64261d9b0}\label{classentt_1_1storage_1_1storage__iterator_af6cf5b2d542a5dc4240cf2d64261d9b0} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00133}{133}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a840fa382d249aa2f2b83416570844f08}\label{classentt_1_1storage_1_1storage__iterator_a840fa382d249aa2f2b83416570844f08} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator}{storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00141}{141}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a715ec10295fb7dbacc2227e0dec7f07b}\label{classentt_1_1storage_1_1storage__iterator_a715ec10295fb7dbacc2227e0dec7f07b} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ae80e5edae37500bc1a01c6e522117dc0}{reference}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{\+::operator}}\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{const}} \mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a05f7988690209175f3bc629396cd7b52}{difference\+\_\+type}}}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00116}{116}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}, \mbox{\hyperlink{storage_8hpp_source_l00156}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::index}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00155}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::instances}}.
+
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_acd52747850f72985bd9774e25a21e1a3}\label{classentt_1_1storage_1_1storage__iterator_acd52747850f72985bd9774e25a21e1a3} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!storage$<$ Entity, Type $>$@{storage$<$ Entity, Type $>$}}
+\index{storage$<$ Entity, Type $>$@{storage$<$ Entity, Type $>$}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{storage$<$ Entity, Type $>$}{storage< Entity, Type >}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{friend}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{class}} \mbox{\hyperlink{classentt_1_1storage}{storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00513}{513}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a61851753c400cbcd374ae886843ba49b}\label{classentt_1_1storage_1_1storage__iterator_a61851753c400cbcd374ae886843ba49b} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!index@{index}}
+\index{index@{index}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_a8bc2ef5b494683f307c336adbe671f65}{index\+\_\+type}} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00156}{156}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00076}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator++()}}, \mbox{\hyperlink{storage_8hpp_source_l00094}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator+=()}}, \mbox{\hyperlink{storage_8hpp_source_l00112}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator-\/()}}, \mbox{\hyperlink{storage_8hpp_source_l00085}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator-\/-\/()}}, \mbox{\hyperlink{storage_8hpp_source_l00145}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator-\/$>$()}}, \mbox{\hyperlink{storage_8hpp_source_l00129}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator$<$()}}, \mbox{\hyperlink{storage_8hpp_source_l00121}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator==()}}, \mbox{\hyperlink{storage_8hpp_source_l00133}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator$>$()}} , 以及 \mbox{\hyperlink{storage_8hpp_source_l00116}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator\mbox{[}$\,$\mbox{]}()}}.
+
+\Hypertarget{classentt_1_1storage_1_1storage__iterator_a9d703942babc56859e10379920b81a92}\label{classentt_1_1storage_1_1storage__iterator_a9d703942babc56859e10379920b81a92} 
+\index{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}!instances@{instances}}
+\index{instances@{instances}!entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$@{entt::storage$<$ Entity, Type, typename $>$::storage\_iterator$<$ Const $>$}}
+\doxysubsubsection{\texorpdfstring{instances}{instances}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}} , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} Type , \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}}  = std\+::void\+\_\+t$<$$>$$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{bool}} Const$>$ \\
+\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_afe0c82db8113e398ca514653684e1c8d}{instance\+\_\+type}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1storage}{entt\+::storage}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Entity}}, Type, \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{typename}} $>$\mbox{\hyperlink{classentt_1_1storage_1_1storage__iterator_ab1d7704a2e938a2700fb82c9a9924a95}{\+::storage\+\_\+iterator}}$<$ \mbox{\hyperlink{classentt_1_1storage_a7262635d1ee3e8b17789cdd9e83d1a98}{Const}} $>$\+::instances\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{storage_8hpp_source}{storage.\+hpp}} 第 \mbox{\hyperlink{storage_8hpp_source_l00155}{155}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{storage_8hpp_source_l00116}{entt\+::storage$<$ Entity, Type, typename $>$\+::storage\+\_\+iterator$<$ Const $>$\+::operator\mbox{[}$\,$\mbox{]}()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{storage_8hpp}{storage.\+hpp}}\end{DoxyCompactItemize}

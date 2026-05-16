@@ -1,0 +1,15 @@
+<map id="entt::sparse_set::index" name="entt::sparse_set::index">
+<area shape="rect" id="Node000001" title="Returns the position of an entity in a sparse set." alt="" coords="423,104,593,129"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="221,5,370,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="474,99,428,71,374,44,343,33,345,28,376,40,430,67,477,94"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825" title="Finds an entity." alt="" coords="216,55,375,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="439,103,350,83,352,77,440,98"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98" title="Returns the object associated with an entity." alt="" coords="228,104,363,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="409,119,363,119,363,114,409,114"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40" title="Swaps entities and objects in the internal packed arrays." alt="" coords="222,153,369,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="440,135,352,156,350,151,439,130"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1storage.html#a9e1ef5f77d61360a66b4d2a2b64aafb7" title="Returns a pointer to the object associated with an entity, if any." alt="" coords="216,203,375,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="477,139,430,166,376,192,342,205,340,200,374,188,427,161,474,134"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1storage.html#a200938ea3867e3637c3c703f91ec0106" title="Removes an entity from a storage and destroys its object." alt="" coords="5,5,168,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,21,168,21,168,15,207,15"/>
+</map>

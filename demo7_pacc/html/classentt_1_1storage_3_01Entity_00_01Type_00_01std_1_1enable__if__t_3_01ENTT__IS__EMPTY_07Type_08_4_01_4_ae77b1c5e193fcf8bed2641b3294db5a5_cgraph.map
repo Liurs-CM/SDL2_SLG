@@ -1,0 +1,17 @@
+<map id="entt::storage&lt; Entity, Type, std::enable_if_t&lt; ENTT_IS_EMPTY(Type)&gt; &gt;::construct" name="entt::storage&lt; Entity, Type, std::enable_if_t&lt; ENTT_IS_EMPTY(Type)&gt; &gt;::construct">
+<area shape="rect" id="Node000001" title="Assigns an entity to a storage and constructs its object." alt="" coords="5,59,199,129"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="247,81,416,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,91,233,91,233,97,199,97"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="464,81,655,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,91,450,91,450,97,417,97"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="709,5,886,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="599,79,743,32,744,37,601,84"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="703,107,892,132"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="655,101,689,105,689,110,654,107"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="940,83,1111,108"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="655,91,892,91,926,92,926,97,892,97,655,96"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="942,132,1109,157"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="589,104,641,125,703,142,761,149,820,152,928,150,928,156,820,158,760,155,702,147,639,130,587,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="892,107,926,103,926,108,893,112"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="893,127,929,131,928,137,892,133"/>
+</map>

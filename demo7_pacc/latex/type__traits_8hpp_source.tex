@@ -1,0 +1,158 @@
+\doxysection{type\+\_\+traits.\+hpp}
+\hypertarget{type__traits_8hpp_source}{}\label{type__traits_8hpp_source}\index{third\_party/entt/core/type\_traits.hpp@{third\_party/entt/core/type\_traits.hpp}}
+\mbox{\hyperlink{type__traits_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_CORE\_TYPE\_TRAITS\_HPP}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_CORE\_TYPE\_TRAITS\_HPP}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}../config/config.h"{}}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hashed__string_8hpp}{hashed\_string.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{signal_2fwd_8hpp}{fwd.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00013}00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00020}00020\ \textcolor{keyword}{template}<auto\ Value>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00021}\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{00021}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\_constant}}\ =\ std::integral\_constant<\textcolor{keyword}{decltype}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Value}}),\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Value}}>;}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00028}00028\ \textcolor{keyword}{template}<\textcolor{keywordtype}{id}\_type\ Value>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00029}\mbox{\hyperlink{namespaceentt_a9f7bb8c357f08a01ad9c8dab0ea40c1c}{00029}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceentt_a9f7bb8c357f08a01ad9c8dab0ea40c1c}{tag}}\ =\ \mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\_constant<Value>}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00036}00036\ \textcolor{keyword}{template}<std::\textcolor{keywordtype}{size\_t}\ N>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00037}\mbox{\hyperlink{structentt_1_1choice__t}{00037}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1choice__t}{choice\_t}}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Unfortunately,\ doxygen\ cannot\ parse\ such\ a\ construct.}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00040}00040\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{structentt_1_1choice__t}{choice\_t}}<N-\/1>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00042}00042\ \{\};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00046}00046\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00047}\mbox{\hyperlink{structentt_1_1choice__t_3_010_01_4}{00047}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1choice__t}{choice\_t}}<0>\ \{\};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00054}00054\ \textcolor{keyword}{template}<std::\textcolor{keywordtype}{size\_t}\ N>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00055}\mbox{\hyperlink{namespaceentt_a089f75043b082abca3ea144bce44e9ae}{00055}}\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structentt_1_1choice__t}{choice\_t<N>}}\ \mbox{\hyperlink{namespaceentt_a089f75043b082abca3ea144bce44e9ae}{choice}}\{\};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00059}00059\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}...>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00060}\mbox{\hyperlink{structentt_1_1type__list}{00060}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}\ \{\};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00064}00064\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00065}\mbox{\hyperlink{structentt_1_1type__list__size}{00065}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__size}{type\_list\_size}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00072}00072\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}...\ Type>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00073}\mbox{\hyperlink{structentt_1_1type__list__size_3_01type__list_3_01Type_8_8_8_01_4_01_4}{00073}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__size}{type\_list\_size}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<Type...>>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00074}00074\ \ \ \ \ \ \ \ \ :\ std::integral\_constant<std::size\_t,\ sizeof...(Type)>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00075}00075\ \{\};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00082}00082\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ List>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00083}\mbox{\hyperlink{namespaceentt_a6a9c0b65bfb15bb63c8389391be28eb5}{00083}}\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceentt_a6a9c0b65bfb15bb63c8389391be28eb5}{type\_list\_size\_v}}\ =\ \mbox{\hyperlink{structentt_1_1type__list__size}{type\_list\_size<List>::value}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00087}00087\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}...>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00088}\mbox{\hyperlink{structentt_1_1type__list__cat}{00088}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__cat}{type\_list\_cat}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00092}00092\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00093}\mbox{\hyperlink{structentt_1_1type__list__cat_3_4}{00093}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__cat_3_4}{type\_list\_cat<>}}\ \{}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00095}\mbox{\hyperlink{structentt_1_1type__list__cat_3_4_a957e88d5bc4c1cbf4a13fbddbe2e176f}{00095}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1type__list}{type}}\ =\ \mbox{\hyperlink{structentt_1_1type__list}{type\_list<>}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00096}00096\ \};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00105}00105\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}...\ Type,\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}},\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{List}}>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00106}\mbox{\hyperlink{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_00_01type__list_3_01Other_8_8_8_01_4_00_01List_8_8_8_01_4}{00106}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__cat}{type\_list\_cat}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<Type...>,\ \mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}}...>,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{List}}...>\ \{}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00108}\mbox{\hyperlink{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_00_01type__list_3_01Other_8_8_8_01_4_00_01List_8_8_8_01_4_ae17db475954ad06eba24fd1eedba5f8b}{00108}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_00_01type__list_3_01Other_8_8_8_01_4_00_01List_8_8_8_01_4_ae17db475954ad06eba24fd1eedba5f8b}{type}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1type__list__cat}{type\_list\_cat}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<Type...,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}}...>,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{List}}...>::type;}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00109}00109\ \};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00116}00116\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}...\ Type>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00117}\mbox{\hyperlink{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_01_4}{00117}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__cat}{type\_list\_cat}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<Type...>>\ \{}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00119}\mbox{\hyperlink{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_01_4_a0c40287fad9d80f0532d80bf48f219ed}{00119}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1type__list}{type}}\ =\ \mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<Type...>;}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00120}00120\ \};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00127}00127\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{List}}>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00128}\mbox{\hyperlink{namespaceentt_a546467a3662e9a915d5d519ad565e801}{00128}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceentt_a546467a3662e9a915d5d519ad565e801}{type\_list\_cat\_t}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1type__list__cat}{type\_list\_cat}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{List}}...>::type;}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00132}00132\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00133}\mbox{\hyperlink{structentt_1_1type__list__unique}{00133}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__unique}{type\_list\_unique}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00141}00141\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type,\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}}>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00142}\mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4}{00142}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__unique}{type\_list\_unique}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<Type,\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}}...>>\ \{}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00144}\mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4_a378823486aa4e4f288b1d73b2703c485}{00144}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4_a378823486aa4e4f288b1d73b2703c485}{type}}\ =\ std::conditional\_t<}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00145}00145\ \ \ \ \ \ \ \ \ std::disjunction\_v<std::is\_same<Type,\ Other>...>,}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00146}00146\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1type__list__unique}{type\_list\_unique}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}}...>>::type,}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00147}00147\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceentt_a546467a3662e9a915d5d519ad565e801}{type\_list\_cat\_t<type\_list<Type>}},\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1type__list__unique}{type\_list\_unique}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Other}}...>>::type>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00148}00148\ \ \ \ \ >;}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00149}00149\ \};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00153}00153\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00154}\mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_4_01_4}{00154}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1type__list__unique}{type\_list\_unique}}<\mbox{\hyperlink{structentt_1_1type__list}{type\_list}}<>>\ \{}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00156}\mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_4_01_4_a48245981f9818ca2601b9815cbfa5b79}{00156}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1type__list}{type}}\ =\ \mbox{\hyperlink{structentt_1_1type__list}{type\_list<>}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00157}00157\ \};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00159}00159\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00164}00164\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00165}\mbox{\hyperlink{namespaceentt_a75a277a6037279d65cd3874b46ec7166}{00165}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceentt_a75a277a6037279d65cd3874b46ec7166}{type\_list\_unique\_t}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{structentt_1_1type__list__unique}{type\_list\_unique<Type>::type}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00173}00173\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type,\ \textcolor{keyword}{typename}\ =\ std::\textcolor{keywordtype}{void}\_t<>>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00174}\mbox{\hyperlink{structentt_1_1is__equality__comparable}{00174}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1is__equality__comparable}{is\_equality\_comparable}}:\ std::false\_type\ \{\};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00176}00176\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00178}00178\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00179}\mbox{\hyperlink{structentt_1_1is__equality__comparable_3_01Type_00_01std_1_1void__t_3_01decltype_07std_1_1declva46aebf4c20f38cbd0108d1e297595736}{00179}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1is__equality__comparable}{is\_equality\_comparable}}<Type,\ std::\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void\_t}}<decltype(std::declval<Type>()\ ==\ std::declval<Type>())>>:\ std::true\_type\ \{\};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00180}00180\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00186}00186\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ Type>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00187}\mbox{\hyperlink{namespaceentt_aff2c2c940fcfd655abaa24489471dad8}{00187}}\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceentt_aff2c2c940fcfd655abaa24489471dad8}{is\_equality\_comparable\_v}}\ =\ \mbox{\hyperlink{structentt_1_1is__equality__comparable}{is\_equality\_comparable<Type>::value}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00189}00189\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00194}00194\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Member>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00195}\mbox{\hyperlink{classentt_1_1member__class}{00195}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classentt_1_1member__class}{member\_class}}\ \{}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00196}00196\ \ \ \ \ \textcolor{keyword}{static\_assert}(std::is\_member\_pointer\_v<Member>);}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00197}00197\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00198}00198\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}},\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}},\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00199}\mbox{\hyperlink{classentt_1_1member__class_a4eb114373e0235178e0956742ef47453}{00199}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}}\ *\ \mbox{\hyperlink{classentt_1_1member__class_a4eb114373e0235178e0956742ef47453}{clazz}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}}::\ *)(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}...));}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00200}00200\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00201}00201\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}},\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}},\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00202}\mbox{\hyperlink{classentt_1_1member__class_a4c95a47536560c2d6872205a89a9090a}{00202}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}}\ *\ \mbox{\hyperlink{classentt_1_1member__class_a4c95a47536560c2d6872205a89a9090a}{clazz}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}}::\ *)(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}}...)\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}});}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00204}00204\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Class,\ \textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00205}\mbox{\hyperlink{classentt_1_1member__class_a37a7e7da466c9afbd42a49dcd8f2419e}{00205}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}}\ *\ \mbox{\hyperlink{classentt_1_1member__class_a37a7e7da466c9afbd42a49dcd8f2419e}{clazz}}(Type\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Class}}::\ *);}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00206}00206\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00207}00207\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00209}\mbox{\hyperlink{classentt_1_1member__class_aa512dd4465bfab2dc09f759ae882a08a}{00209}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classentt_1_1member__class_aa512dd4465bfab2dc09f759ae882a08a}{type}}\ =\ std::remove\_pointer\_t<decltype(clazz(std::declval<Member>()))>;}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00210}00210\ \};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00212}00212\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00217}00217\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Member>}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00218}\mbox{\hyperlink{namespaceentt_a49f19d031690e5ebfffd6c7a4f6bd364}{00218}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceentt_a49f19d031690e5ebfffd6c7a4f6bd364}{member\_class\_t}}\ =\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{classentt_1_1member__class_aa512dd4465bfab2dc09f759ae882a08a}{member\_class<Member>::type}};}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00219}00219\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00220}00220\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00221}00221\ \}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00222}00222\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00223}00223\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00230}\mbox{\hyperlink{type__traits_8hpp_a4f3c90b0c6fed8193d608fffd113dca2}{00230}}\ \textcolor{preprocessor}{\#define\ ENTT\_OPAQUE\_TYPE(clazz,\ type)\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00231}00231\ \textcolor{preprocessor}{\ \ \ \ enum\ class\ clazz:\ type\ \{\};\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00232}00232\ \textcolor{preprocessor}{\ \ \ \ constexpr\ auto\ to\_integral(const\ clazz\ id)\ ENTT\_NOEXCEPT\ \{\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00233}00233\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ return\ static\_cast<std::underlying\_type\_t<clazz>>(id);\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00234}00234\ \textcolor{preprocessor}{\ \ \ \ \}\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00235}00235\ \textcolor{preprocessor}{\ \ \ \ static\_assert(true)}}
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00236}00236\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00237}00237\ }
+\DoxyCodeLine{\Hypertarget{type__traits_8hpp_source_l00238}00238\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

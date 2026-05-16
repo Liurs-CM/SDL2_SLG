@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/signal/dispatcher.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_3770b56db630d50757db22e5ccfbfe1a.html">signal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">dispatcher.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="dispatcher_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ENTT_SIGNAL_DISPATCHER_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ENTT_SIGNAL_DISPATCHER_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../config/config.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../core/fwd.hpp&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;../core/type_info.hpp&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="sigh_8hpp.html">sigh.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceentt.html">entt</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="classentt_1_1dispatcher.html">dispatcher</a> {</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1basic__pool.html">   32</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structentt_1_1dispatcher_1_1basic__pool.html">basic_pool</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1basic__pool.html#a184d5fe30caa8ecac81d343995aaf741">   33</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="structentt_1_1dispatcher_1_1basic__pool.html#a184d5fe30caa8ecac81d343995aaf741">~basic_pool</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1basic__pool.html#ae14f854ca84a79cd0417d38d4f1ad4aa">   34</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structentt_1_1dispatcher_1_1basic__pool.html#ae14f854ca84a79cd0417d38d4f1ad4aa">publish</a>() = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1basic__pool.html#adcde480d33a88640d27b37743f7e4c3f">   35</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structentt_1_1dispatcher_1_1basic__pool.html#adcde480d33a88640d27b37743f7e4c3f">clear</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1basic__pool.html#a04abf3c344a23c163ce2542610df5a90">   36</a></span>        <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">virtual</a> <a class="code hl_typedef" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a> <a class="code hl_function" href="structentt_1_1dispatcher_1_1basic__pool.html#a04abf3c344a23c163ce2542610df5a90">type_id</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    };</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">template</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a>&gt;</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html">   40</a></span>    <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">struct</a> <a class="code hl_struct" href="structentt_1_1dispatcher_1_1pool__handler.html">pool_handler</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">final</a>: <a class="code hl_struct" href="structentt_1_1dispatcher_1_1basic__pool.html">basic_pool</a> {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#ac64c6cdbe40efc38a76ca8de74c593ef">   41</a></span>        <span class="keyword">using </span><a class="code hl_class" href="classentt_1_1sigh.html">signal_type</a> = <a class="code hl_class" href="classentt_1_1sigh.html">sigh</a>&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &amp;)&gt;;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#aa67c03653ff75e86e8416a8dad28f060">   42</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="structentt_1_1dispatcher_1_1pool__handler.html#aa67c03653ff75e86e8416a8dad28f060">sink_type</a> = <span class="keyword">typename</span> signal_type::sink_type;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#a0b7a03f08081a177ee1dfd927d6dc40f">   44</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structentt_1_1dispatcher_1_1pool__handler.html#a0b7a03f08081a177ee1dfd927d6dc40f">publish</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">const</span> <span class="keyword">auto</span> length = events.size();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">for</span>(std::size_t <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>{}; <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a> &lt; length; ++<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                signal.publish(events[<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>]);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            events.erase(events.cbegin(), events.cbegin()+length);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#ac1c9b43955b88fc1912d607624973b0b">   54</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structentt_1_1dispatcher_1_1pool__handler.html#ac1c9b43955b88fc1912d607624973b0b">clear</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a><span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            events.clear();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#ab71883ab752a04efbe64cd1b5c2fdc90">   58</a></span>        <a class="code hl_typedef" href="structentt_1_1dispatcher_1_1pool__handler.html#aa67c03653ff75e86e8416a8dad28f060">sink_type</a> <a class="code hl_function" href="structentt_1_1dispatcher_1_1pool__handler.html#ab71883ab752a04efbe64cd1b5c2fdc90">sink</a>() <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classentt_1_1sink.html">entt::sink</a>{signal};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;</div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#afb9f452c7acbb3be7b13a3395e333ca7">   63</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structentt_1_1dispatcher_1_1pool__handler.html#afb9f452c7acbb3be7b13a3395e333ca7">trigger</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            signal.publish(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a>{std::forward&lt;Args&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)...});</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;</div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#a86a2fc73b3a7b3e60c5b806503ff8ec0">   68</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structentt_1_1dispatcher_1_1pool__handler.html#a86a2fc73b3a7b3e60c5b806503ff8ec0">enqueue</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            events.emplace_back(std::forward&lt;Args&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)...);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#a697e5a00ff251af9bee3f70b1c2723e1">   72</a></span>        <a class="code hl_typedef" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a> <a class="code hl_function" href="structentt_1_1dispatcher_1_1pool__handler.html#a697e5a00ff251af9bee3f70b1c2723e1">type_id</a>() <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="code hl_define" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a><span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="structentt_1_1type__info.html#ab72a8d8a5789c278cc0596aba0a2ff41">type_info&lt;Event&gt;::id</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#a1d8a4cc35d05e666e02d99bf6a1eabf0">   77</a></span>        <a class="code hl_class" href="classentt_1_1sigh.html">signal_type</a> signal{};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structentt_1_1dispatcher_1_1pool__handler.html#af5254031dde97616085110ad69fe5f8f">   78</a></span>        std::vector&lt;Event&gt; <a class="code hl_variable" href="structentt_1_1dispatcher_1_1pool__handler.html#af5254031dde97616085110ad69fe5f8f">events</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    };</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Event&gt;</div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#a80c2122d247f4273eaaf82a45cba2a34">   82</a></span>    <a class="code hl_struct" href="structentt_1_1dispatcher_1_1pool__handler.html">pool_handler&lt;Event&gt;</a> &amp; <a class="code hl_function" href="classentt_1_1dispatcher.html#a80c2122d247f4273eaaf82a45cba2a34">assure</a>() {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keyword">static_assert</span>(std::is_same_v&lt;Event, std::decay_t&lt;Event&gt;&gt;);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">has_type_index_v&lt;Event&gt;</a>) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keyword">const</span> <span class="keyword">auto</span> index = <a class="code hl_function" href="structentt_1_1type__index.html#afe595aab15f065812bb2a82e1c717c2e">type_index&lt;Event&gt;::value</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span>(!(index &lt; <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>.size())) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>.resize(index+1);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">if</span>(!<a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>[index]) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>[index].reset(<span class="keyword">new</span> <a class="code hl_struct" href="structentt_1_1dispatcher_1_1pool__handler.html">pool_handler&lt;Event&gt;</a>{});</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structentt_1_1dispatcher_1_1pool__handler.html">pool_handler&lt;Event&gt;</a> &amp;<span class="keyword">&gt;</span>(*<a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>[index]);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keyword">auto</span> it = std::find_if(<a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>.begin(), <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>.end(), [<span class="keywordtype">id</span> = <a class="code hl_struct" href="structentt_1_1type__info.html">type_info&lt;Event&gt;::id</a>()](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cpool</a>) { return id == cpool-&gt;type_id(); });</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_struct" href="structentt_1_1dispatcher_1_1pool__handler.html">pool_handler&lt;Event&gt;</a> &amp;<span class="keyword">&gt;</span>(it == <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>.cend() ? *<a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>.emplace_back(<span class="keyword">new</span> <a class="code hl_struct" href="structentt_1_1dispatcher_1_1pool__handler.html">pool_handler&lt;Event&gt;</a>{}) : **it);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Event&gt;</div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#a0fd52abaeed110ec526918c255f6fcfa">  122</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#a0fd52abaeed110ec526918c255f6fcfa">sink</a>() {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">assure&lt;Event&gt;</a>().sink();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a>, <span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;</div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#ac3d3eae7004c63f0232b09f2770c4ebd">  137</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#ac3d3eae7004c63f0232b09f2770c4ebd">trigger</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>) {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">assure&lt;Event&gt;</a>().trigger(std::forward&lt;Args&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)...);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Event&gt;</div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#a1d14234071d22c9fe09c453ebd818d2e">  151</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#a1d14234071d22c9fe09c453ebd818d2e">trigger</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &amp;&amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">event</a>) {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">assure&lt;std::decay_t&lt;Event&gt;</a>&gt;().<a class="code hl_function" href="classentt_1_1dispatcher.html#ac3d3eae7004c63f0232b09f2770c4ebd">trigger</a>(std::forward&lt;Event&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">event</a>));</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a>, <span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a>&gt;</div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#ab41d56a73b6bdc64f0862abd333ea701">  166</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#ab41d56a73b6bdc64f0862abd333ea701">enqueue</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>) {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">assure&lt;Event&gt;</a>().enqueue(std::forward&lt;Args&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)...);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Event&gt;</div>
+<div class="foldopen" id="foldopen00180" data-start="{" data-end="}">
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#a1e0a488354698cbf3cba82396ac4b76e">  180</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#a1e0a488354698cbf3cba82396ac4b76e">enqueue</a>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a> &amp;&amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">event</a>) {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">assure&lt;std::decay_t&lt;Event&gt;</a>&gt;().<a class="code hl_function" href="classentt_1_1dispatcher.html#ab41d56a73b6bdc64f0862abd333ea701">enqueue</a>(std::forward&lt;Event&gt;(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">event</a>));</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Event</a>&gt;</div>
+<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#a7aacb035fbf90406fca1ccd10f28be86">  193</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#a7aacb035fbf90406fca1ccd10f28be86">clear</a>() {</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">sizeof</span>...(Event) == 0) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;&amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cpool</a>: <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>) {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cpool</a>) {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                    <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cpool</a>-&gt;clear();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            (<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">assure&lt;Event&gt;</a>().clear(), ...);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Event&gt;</div>
+<div class="foldopen" id="foldopen00215" data-start="{" data-end="}">
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#aabed6fd7fa4027dcfa3afc7bc20f2784">  215</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#aabed6fd7fa4027dcfa3afc7bc20f2784">update</a>() {</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">assure&lt;Event&gt;</a>().publish();</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    }</div>
+</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#ae15c11634047d7718db5e2e30675c80c">  226</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classentt_1_1dispatcher.html#ae15c11634047d7718db5e2e30675c80c">update</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a> = <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>.size(); <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>; --<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">if</span>(<span class="keyword">auto</span> &amp;&amp;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cpool</a> = <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>[<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>-1]; <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cpool</a>) {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cpool</a>-&gt;publish();</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
+</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">  235</a></span>    std::vector&lt;std::unique_ptr&lt;basic_pool&gt;&gt; <a class="code hl_variable" href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">pools</a>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>};</div>
+</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html"><div class="ttname"><a href="classentt_1_1dispatcher.html">entt::dispatcher</a></div><div class="ttdoc">Basic dispatcher implementation.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00031">dispatcher.hpp:31</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_a0bcb4703db37c5b3d3b5c35a0f077d9c"><div class="ttname"><a href="classentt_1_1dispatcher.html#a0bcb4703db37c5b3d3b5c35a0f077d9c">entt::dispatcher::pools</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; basic_pool &gt; &gt; pools</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00235">dispatcher.hpp:235</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_a0fd52abaeed110ec526918c255f6fcfa"><div class="ttname"><a href="classentt_1_1dispatcher.html#a0fd52abaeed110ec526918c255f6fcfa">entt::dispatcher::sink</a></div><div class="ttdeci">auto sink()</div><div class="ttdoc">Returns a sink object for the given event.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00122">dispatcher.hpp:122</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_a1d14234071d22c9fe09c453ebd818d2e"><div class="ttname"><a href="classentt_1_1dispatcher.html#a1d14234071d22c9fe09c453ebd818d2e">entt::dispatcher::trigger</a></div><div class="ttdeci">void trigger(Event &amp;&amp;event)</div><div class="ttdoc">Triggers an immediate event of the given type.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00151">dispatcher.hpp:151</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_a1e0a488354698cbf3cba82396ac4b76e"><div class="ttname"><a href="classentt_1_1dispatcher.html#a1e0a488354698cbf3cba82396ac4b76e">entt::dispatcher::enqueue</a></div><div class="ttdeci">void enqueue(Event &amp;&amp;event)</div><div class="ttdoc">Enqueues an event of the given type.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00180">dispatcher.hpp:180</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_a7aacb035fbf90406fca1ccd10f28be86"><div class="ttname"><a href="classentt_1_1dispatcher.html#a7aacb035fbf90406fca1ccd10f28be86">entt::dispatcher::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Discards all the events queued so far.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00193">dispatcher.hpp:193</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_a80c2122d247f4273eaaf82a45cba2a34"><div class="ttname"><a href="classentt_1_1dispatcher.html#a80c2122d247f4273eaaf82a45cba2a34">entt::dispatcher::assure</a></div><div class="ttdeci">pool_handler&lt; Event &gt; &amp; assure()</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00082">dispatcher.hpp:82</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_aabed6fd7fa4027dcfa3afc7bc20f2784"><div class="ttname"><a href="classentt_1_1dispatcher.html#aabed6fd7fa4027dcfa3afc7bc20f2784">entt::dispatcher::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Delivers all the pending events of the given type.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00215">dispatcher.hpp:215</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_ab41d56a73b6bdc64f0862abd333ea701"><div class="ttname"><a href="classentt_1_1dispatcher.html#ab41d56a73b6bdc64f0862abd333ea701">entt::dispatcher::enqueue</a></div><div class="ttdeci">void enqueue(Args &amp;&amp;... args)</div><div class="ttdoc">Enqueues an event of the given type.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00166">dispatcher.hpp:166</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_ac3d3eae7004c63f0232b09f2770c4ebd"><div class="ttname"><a href="classentt_1_1dispatcher.html#ac3d3eae7004c63f0232b09f2770c4ebd">entt::dispatcher::trigger</a></div><div class="ttdeci">void trigger(Args &amp;&amp;... args)</div><div class="ttdoc">Triggers an immediate event of the given type.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00137">dispatcher.hpp:137</a></div></div>
+<div class="ttc" id="aclassentt_1_1dispatcher_html_ae15c11634047d7718db5e2e30675c80c"><div class="ttname"><a href="classentt_1_1dispatcher.html#ae15c11634047d7718db5e2e30675c80c">entt::dispatcher::update</a></div><div class="ttdeci">void update() const</div><div class="ttdoc">Delivers all the pending events.</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00226">dispatcher.hpp:226</a></div></div>
+<div class="ttc" id="aclassentt_1_1sigh_html"><div class="ttname"><a href="classentt_1_1sigh.html">entt::sigh&lt; void(const Event &amp;)&gt;</a></div></div>
+<div class="ttc" id="aclassentt_1_1sink_html"><div class="ttname"><a href="classentt_1_1sink.html">entt::sink</a></div><div class="ttdoc">Sink class.</div><div class="ttdef"><b>Definition</b> <a href="signal_2fwd_8hpp_source.html#l00027">fwd.hpp:27</a></div></div>
+<div class="ttc" id="aconfig_8h_html_ad351dc3d24a47909c17878fd0e377c54"><div class="ttname"><a href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></div><div class="ttdeci">#define ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="config_8h_source.html#l00006">config.h:6</a></div></div>
+<div class="ttc" id="anamespaceentt_html"><div class="ttname"><a href="namespaceentt.html">entt</a></div><div class="ttdef"><b>Definition</b> <a href="algorithm_8hpp_source.html#l00013">algorithm.hpp:13</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a4780f9d4e975066afb16b1309c644995"><div class="ttname"><a href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">entt::id_type</a></div><div class="ttdeci">ENTT_ID_TYPE id_type</div><div class="ttdoc">Alias declaration for type identifiers.</div><div class="ttdef"><b>Definition</b> <a href="core_2fwd_8hpp_source.html#l00012">fwd.hpp:12</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+<div class="ttc" id="asigh_8hpp_html"><div class="ttname"><a href="sigh_8hpp.html">sigh.hpp</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1basic__pool_html"><div class="ttname"><a href="structentt_1_1dispatcher_1_1basic__pool.html">entt::dispatcher::basic_pool</a></div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00032">dispatcher.hpp:32</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1basic__pool_html_a04abf3c344a23c163ce2542610df5a90"><div class="ttname"><a href="structentt_1_1dispatcher_1_1basic__pool.html#a04abf3c344a23c163ce2542610df5a90">entt::dispatcher::basic_pool::type_id</a></div><div class="ttdeci">virtual id_type type_id() const ENTT_NOEXCEPT=0</div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1basic__pool_html_a184d5fe30caa8ecac81d343995aaf741"><div class="ttname"><a href="structentt_1_1dispatcher_1_1basic__pool.html#a184d5fe30caa8ecac81d343995aaf741">entt::dispatcher::basic_pool::~basic_pool</a></div><div class="ttdeci">virtual ~basic_pool()=default</div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1basic__pool_html_adcde480d33a88640d27b37743f7e4c3f"><div class="ttname"><a href="structentt_1_1dispatcher_1_1basic__pool.html#adcde480d33a88640d27b37743f7e4c3f">entt::dispatcher::basic_pool::clear</a></div><div class="ttdeci">virtual void clear() ENTT_NOEXCEPT=0</div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1basic__pool_html_ae14f854ca84a79cd0417d38d4f1ad4aa"><div class="ttname"><a href="structentt_1_1dispatcher_1_1basic__pool.html#ae14f854ca84a79cd0417d38d4f1ad4aa">entt::dispatcher::basic_pool::publish</a></div><div class="ttdeci">virtual void publish()=0</div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html">entt::dispatcher::pool_handler</a></div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00040">dispatcher.hpp:40</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_a0b7a03f08081a177ee1dfd927d6dc40f"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#a0b7a03f08081a177ee1dfd927d6dc40f">entt::dispatcher::pool_handler::publish</a></div><div class="ttdeci">void publish() override</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00044">dispatcher.hpp:44</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_a697e5a00ff251af9bee3f70b1c2723e1"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#a697e5a00ff251af9bee3f70b1c2723e1">entt::dispatcher::pool_handler::type_id</a></div><div class="ttdeci">id_type type_id() const ENTT_NOEXCEPT override</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00072">dispatcher.hpp:72</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_a86a2fc73b3a7b3e60c5b806503ff8ec0"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#a86a2fc73b3a7b3e60c5b806503ff8ec0">entt::dispatcher::pool_handler::enqueue</a></div><div class="ttdeci">void enqueue(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00068">dispatcher.hpp:68</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_aa67c03653ff75e86e8416a8dad28f060"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#aa67c03653ff75e86e8416a8dad28f060">entt::dispatcher::pool_handler::sink_type</a></div><div class="ttdeci">typename signal_type::sink_type sink_type</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00042">dispatcher.hpp:42</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_ab71883ab752a04efbe64cd1b5c2fdc90"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#ab71883ab752a04efbe64cd1b5c2fdc90">entt::dispatcher::pool_handler::sink</a></div><div class="ttdeci">sink_type sink() ENTT_NOEXCEPT</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00058">dispatcher.hpp:58</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_ac1c9b43955b88fc1912d607624973b0b"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#ac1c9b43955b88fc1912d607624973b0b">entt::dispatcher::pool_handler::clear</a></div><div class="ttdeci">void clear() ENTT_NOEXCEPT override</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00054">dispatcher.hpp:54</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_af5254031dde97616085110ad69fe5f8f"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#af5254031dde97616085110ad69fe5f8f">entt::dispatcher::pool_handler::events</a></div><div class="ttdeci">std::vector&lt; Event &gt; events</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00078">dispatcher.hpp:78</a></div></div>
+<div class="ttc" id="astructentt_1_1dispatcher_1_1pool__handler_html_afb9f452c7acbb3be7b13a3395e333ca7"><div class="ttname"><a href="structentt_1_1dispatcher_1_1pool__handler.html#afb9f452c7acbb3be7b13a3395e333ca7">entt::dispatcher::pool_handler::trigger</a></div><div class="ttdeci">void trigger(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="dispatcher_8hpp_source.html#l00063">dispatcher.hpp:63</a></div></div>
+<div class="ttc" id="astructentt_1_1type__index_html_afe595aab15f065812bb2a82e1c717c2e"><div class="ttname"><a href="structentt_1_1type__index.html#afe595aab15f065812bb2a82e1c717c2e">entt::type_index::value</a></div><div class="ttdeci">static id_type value() ENTT_NOEXCEPT</div><div class="ttdoc">Returns the sequential identifier of a given type.</div><div class="ttdef"><b>Definition</b> <a href="type__info_8hpp_source.html#l00050">type_info.hpp:50</a></div></div>
+<div class="ttc" id="astructentt_1_1type__info_html"><div class="ttname"><a href="structentt_1_1type__info.html">entt::type_info</a></div><div class="ttdoc">Type info.</div><div class="ttdef"><b>Definition</b> <a href="type__info_8hpp_source.html#l00084">type_info.hpp:84</a></div></div>
+<div class="ttc" id="astructentt_1_1type__info_html_ab72a8d8a5789c278cc0596aba0a2ff41"><div class="ttname"><a href="structentt_1_1type__info.html#ab72a8d8a5789c278cc0596aba0a2ff41">entt::type_info::id</a></div><div class="ttdeci">static id_type id() ENTT_NOEXCEPT</div><div class="ttdoc">Returns the numeric representation of a given type.</div><div class="ttdef"><b>Definition</b> <a href="type__info_8hpp_source.html#l00095">type_info.hpp:95</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

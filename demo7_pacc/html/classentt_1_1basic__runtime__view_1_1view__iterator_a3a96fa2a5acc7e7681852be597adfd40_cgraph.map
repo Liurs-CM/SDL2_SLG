@@ -1,0 +1,9 @@
+<map id="entt::basic_runtime_view::view_iterator::operator&#45;&#45;" name="entt::basic_runtime_view::view_iterator::operator&#45;&#45;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,34,159,89"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__runtime__view.html#aa1d8a9b29404f27c02ff496fb52318ec" title="Returns an iterator to the first entity that has the given components." alt="" coords="209,5,357,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,45,195,38,196,44,159,50"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8" title=" " alt="" coords="207,70,360,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,72,194,79,193,84,159,78"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706" title=" " alt="" coords="408,5,556,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,23,394,23,394,28,358,28"/>
+</map>

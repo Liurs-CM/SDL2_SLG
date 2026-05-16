@@ -1,0 +1,49 @@
+\doxysection{src/util/sprites.cpp 文件参考}
+\hypertarget{sprites_8cpp}{}\label{sprites_8cpp}\index{src/util/sprites.cpp@{src/util/sprites.cpp}}
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+sprites.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprites_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structanimera_1_1SpriteRect}{animera\+::\+Sprite\+Rect}}
+\item 
+struct \mbox{\hyperlink{structanimera_1_1TextureInfo}{animera\+::\+Texture\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceanimera}{animera}}
+\item 
+namespace \mbox{\hyperlink{namespaceanimera_1_1sprites}{animera\+::sprites}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ const unsigned char\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{namespaceanimera_a6155ecb121d800d935955ad45372870a}{animera\+::decompress\+Texture}} (const \mbox{\hyperlink{structanimera_1_1TextureInfo}{Texture\+Info}} \&info) noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{namespaceanimera_1_1sprites_a42d1986602cc28e1fb192339d7e695ae}{animera\+::sprites\+::texture\+\_\+width}} = 512
+\item 
+const int \mbox{\hyperlink{namespaceanimera_1_1sprites_a284f192b4cdad109d39b8df46ea4c9d7}{animera\+::sprites\+::texture\+\_\+height}} = 512
+\item 
+const std\+::size\+\_\+t \mbox{\hyperlink{namespaceanimera_1_1sprites_a7fe6485317ae0fa42a017518477b9ea0}{animera\+::sprites\+::texture\+\_\+pitch}} = 2048
+\item 
+const std\+::size\+\_\+t \mbox{\hyperlink{namespaceanimera_1_1sprites_ab06be4b8dfd05c1c8a1768607a8a7ed9}{animera\+::sprites\+::texture\+\_\+size}} = 3945
+\item 
+const unsigned char \mbox{\hyperlink{namespaceanimera_1_1sprites_ac519deccd72dba7e848d38f4315941aa}{animera\+::sprites\+::texture\+\_\+data}} \mbox{[}$\,$\mbox{]}
+\item 
+const \mbox{\hyperlink{structanimera_1_1SpriteRect}{Sprite\+Rect}} \mbox{\hyperlink{namespaceanimera_1_1sprites_a33550c03c56334a50ed376039b697f44}{animera\+::sprites\+::sprite\+\_\+rects}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+\doxysection{entt\+::scheduler\texorpdfstring{$<$}{<} Delta \texorpdfstring{$>$}{>}\+::process\+\_\+handler结构体 参考}
+\hypertarget{structentt_1_1scheduler_1_1process__handler}{}\label{structentt_1_1scheduler_1_1process__handler}\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{instance\+\_\+type}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476}{update\+\_\+fn\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282}{abort\+\_\+fn\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}})
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e}{next\+\_\+type}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{instance\+\_\+type}} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e}{instance}}
+\item 
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476}{update\+\_\+fn\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a9607e02db68b5cd295139bf27965499f}{update}}
+\item 
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282}{abort\+\_\+fn\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_ad229f08f958e22b2c2724077e7ed43d9}{abort}}
+\item 
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e}{next\+\_\+type}} \mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}{next}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}$>$\newline
+struct entt\+::scheduler$<$ Delta $>$\+::process\+\_\+handler}
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00045}{45}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282}\label{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!abort\_fn\_type@{abort\_fn\_type}}
+\index{abort\_fn\_type@{abort\_fn\_type}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{abort\_fn\_type}{abort\_fn\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::abort\+\_\+fn\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}})}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00048}{48}} 行定义.
+
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}\label{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!instance\_type@{instance\_type}}
+\index{instance\_type@{instance\_type}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{instance\_type}{instance\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::instance\+\_\+type =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})$>$}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00046}{46}} 行定义.
+
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e}\label{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!next\_type@{next\_type}}
+\index{next\_type@{next\_type}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{next\_type}{next\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::next\+\_\+type =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00049}{49}} 行定义.
+
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476}\label{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!update\_fn\_type@{update\_fn\_type}}
+\index{update\_fn\_type@{update\_fn\_type}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{update\_fn\_type}{update\_fn\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::update\+\_\+fn\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}(\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler}{process\+\_\+handler}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*})}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00047}{47}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_ad229f08f958e22b2c2724077e7ed43d9}\label{structentt_1_1scheduler_1_1process__handler_ad229f08f958e22b2c2724077e7ed43d9} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!abort@{abort}}
+\index{abort@{abort}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{abort}{abort}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a410f87944d912702622443a4c5f01282}{abort\+\_\+fn\+\_\+type}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::abort}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00053}{53}} 行定义.
+
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e}\label{structentt_1_1scheduler_1_1process__handler_a31de5f80a1919306715f727341463b9e} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!instance@{instance}}
+\index{instance@{instance}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a333e92a92500eab7f7753bd2ca720601}{instance\+\_\+type}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::instance}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00051}{51}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{scheduler_8hpp_source_l00103}{entt\+::scheduler$<$ Delta $>$\+::abort()}} , 以及 \mbox{\hyperlink{scheduler_8hpp_source_l00083}{entt\+::scheduler$<$ Delta $>$\+::update()}}.
+
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d}\label{structentt_1_1scheduler_1_1process__handler_a7599d6a393fb54a2414fbfccd0da3c2d} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!next@{next}}
+\index{next@{next}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a7e14d9527379eb030856b2033dd4b83e}{next\+\_\+type}} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::next}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00054}{54}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{scheduler_8hpp_source_l00065}{entt\+::scheduler$<$ Delta $>$\+::continuation\+::then()}} , 以及 \mbox{\hyperlink{scheduler_8hpp_source_l00083}{entt\+::scheduler$<$ Delta $>$\+::update()}}.
+
+\Hypertarget{structentt_1_1scheduler_1_1process__handler_a9607e02db68b5cd295139bf27965499f}\label{structentt_1_1scheduler_1_1process__handler_a9607e02db68b5cd295139bf27965499f} 
+\index{entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}!update@{update}}
+\index{update@{update}!entt::scheduler$<$ Delta $>$::process\_handler@{entt::scheduler$<$ Delta $>$::process\_handler}}
+\doxysubsubsection{\texorpdfstring{update}{update}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$ \\
+\mbox{\hyperlink{structentt_1_1scheduler_1_1process__handler_a18e7a5edb76ab787986d7084f9997476}{update\+\_\+fn\+\_\+type}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1scheduler}{entt\+::scheduler}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Delta}} $>$\+::process\+\_\+handler\+::update}
+
+
+
+在文件 \mbox{\hyperlink{scheduler_8hpp_source}{scheduler.\+hpp}} 第 \mbox{\hyperlink{scheduler_8hpp_source_l00052}{52}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{scheduler_8hpp_source_l00177}{entt\+::scheduler$<$ Delta $>$\+::attach()}} , 以及 \mbox{\hyperlink{scheduler_8hpp_source_l00083}{entt\+::scheduler$<$ Delta $>$\+::update()}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/process/\mbox{\hyperlink{scheduler_8hpp}{scheduler.\+hpp}}\end{DoxyCompactItemize}

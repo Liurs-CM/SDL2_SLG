@@ -1,0 +1,119 @@
+\doxysection{src/core/maze.hpp 文件参考}
+\hypertarget{maze_8hpp}{}\label{maze_8hpp}\index{src/core/maze.hpp@{src/core/maze.hpp}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include "{}util/grid.\+hpp"{}}\newline
+maze.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{maze_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{maze_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} = \mbox{\hyperlink{classGrid}{Grid}}$<$ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}} $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}} \+: std\+::uint8\+\_\+t \{ \newline
+\mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617caa2e4822a98337283e39f7b60acf85ec9}{empty}}
+, \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062}{dot}}
+, \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d}{energizer}}
+, \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2d86bdac01a3315b95794ffa7360edc3}{wall}}
+, \newline
+\mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2feaaf89c21770ea5c21196bc33848dd}{door}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} \mbox{\hyperlink{maze_8hpp_a4310e269adfa22c887b2d819479e10f9}{make\+Maze\+State}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{类型定义说明}
+\Hypertarget{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}\label{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23} 
+\index{maze.hpp@{maze.hpp}!MazeState@{MazeState}}
+\index{MazeState@{MazeState}!maze.hpp@{maze.hpp}}
+\doxysubsubsection{\texorpdfstring{MazeState}{MazeState}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} =  \mbox{\hyperlink{classGrid}{Grid}}$<$\mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{maze_8hpp_source}{maze.\+hpp}} 第 \mbox{\hyperlink{maze_8hpp_source_l00023}{23}} 行定义.
+
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}\label{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c} 
+\index{maze.hpp@{maze.hpp}!Tile@{Tile}}
+\index{Tile@{Tile}!maze.hpp@{maze.hpp}}
+\doxysubsubsection{\texorpdfstring{Tile}{Tile}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{empty@{empty}!maze.hpp@{maze.hpp}}\index{maze.hpp@{maze.hpp}!empty@{empty}}}\Hypertarget{maze_8hpp_ad30cc370e26935f9654c7330eb7c617caa2e4822a98337283e39f7b60acf85ec9}\label{maze_8hpp_ad30cc370e26935f9654c7330eb7c617caa2e4822a98337283e39f7b60acf85ec9} 
+empty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{dot@{dot}!maze.hpp@{maze.hpp}}\index{maze.hpp@{maze.hpp}!dot@{dot}}}\Hypertarget{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062}\label{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062} 
+dot&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{energizer@{energizer}!maze.hpp@{maze.hpp}}\index{maze.hpp@{maze.hpp}!energizer@{energizer}}}\Hypertarget{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d}\label{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d} 
+energizer&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wall@{wall}!maze.hpp@{maze.hpp}}\index{maze.hpp@{maze.hpp}!wall@{wall}}}\Hypertarget{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2d86bdac01a3315b95794ffa7360edc3}\label{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2d86bdac01a3315b95794ffa7360edc3} 
+wall&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{door@{door}!maze.hpp@{maze.hpp}}\index{maze.hpp@{maze.hpp}!door@{door}}}\Hypertarget{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2feaaf89c21770ea5c21196bc33848dd}\label{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca2feaaf89c21770ea5c21196bc33848dd} 
+door&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{maze_8hpp_source}{maze.\+hpp}} 第 \mbox{\hyperlink{maze_8hpp_source_l00015}{15}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{maze_8hpp_a4310e269adfa22c887b2d819479e10f9}\label{maze_8hpp_a4310e269adfa22c887b2d819479e10f9} 
+\index{maze.hpp@{maze.hpp}!makeMazeState@{makeMazeState}}
+\index{makeMazeState@{makeMazeState}!maze.hpp@{maze.hpp}}
+\doxysubsubsection{\texorpdfstring{makeMazeState()}{makeMazeState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} make\+Maze\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{maze_8cpp_source}{maze.\+cpp}} 第 \mbox{\hyperlink{maze_8cpp_source_l00038}{38}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{constants_8hpp_source_l00016}{tiles}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{Game\+::init()}}.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{maze_8hpp_a4310e269adfa22c887b2d819479e10f9_icgraph}
+\end{center}
+\end{figure}

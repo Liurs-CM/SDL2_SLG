@@ -1,0 +1,30 @@
+<map id="entt::basic_registry::version" name="entt::basic_registry::version">
+<area shape="rect" id="Node000001" title="Returns the version stored along with an entity identifier." alt="" coords="632,197,779,237"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#a8fe685b0635d51619b8c60f23e016e85" title="Assigns entities to an empty registry." alt="" coords="437,69,584,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="661,192,541,112,544,107,664,188"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a91bfd7ec05e6d718e47da581a893cdc4" title="Creates a new entity and returns it." alt="" coords="437,197,584,237"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="618,220,584,220,584,215,618,215"/>
+<area shape="rect" id="Node000016" href="$classentt_1_1basic__registry.html#add41f14182d13fd3c70811dd08cdde41" title="Destroys an entity." alt="" coords="437,261,584,301"/>
+<area shape="poly" id="edge14_Node000001_Node000016" title=" " alt="" coords="631,244,573,264,571,259,630,239"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__snapshot__loader.html#af3edba88e81c8ea133b3cef66fa13a99" title="Restores entities that were in use during serialization." alt="" coords="227,5,383,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="432,68,369,48,371,43,433,63"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__snapshot__loader.html#a57a588ddf040aff4a4d38fa0326ef801" title=" " alt="" coords="227,133,383,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="432,196,369,176,371,171,433,191"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1basic__registry.html#ab04ebcb3409a5e99a3a86a2f5b48e052" title="Creates a new entity and returns it." alt="" coords="232,197,379,237"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="424,220,379,220,379,215,424,215"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1basic__registry.html#a334768416fdf6372ecfdef9ec4f03e83" title="Assigns each element in a range an entity." alt="" coords="232,261,379,301"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="433,244,371,264,369,259,432,239"/>
+<area shape="rect" id="Node000008" href="$classentt_1_1basic__continuous__loader.html#a039585b0cbba43a4791b74bbc181e6bd" title=" " alt="" coords="221,325,389,365"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="445,247,439,251,424,267,416,283,407,299,391,315,371,328,368,323,388,311,403,296,411,280,420,264,436,247,442,242"/>
+<area shape="rect" id="Node000010" href="$factories_8cpp.html#a380dcd8e49461b0f7e488e01e541b4b8" title=" " alt="" coords="256,390,355,415"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="443,248,439,251,427,267,421,283,417,315,412,347,405,363,391,379,374,391,356,398,354,393,372,386,388,375,400,360,407,345,412,314,416,281,423,265,435,248,439,244"/>
+<area shape="rect" id="Node000014" href="$classentt_1_1basic__continuous__loader.html#a42bbea6fd83799452fcd9fb001dab56c" title=" " alt="" coords="221,69,389,109"/>
+<area shape="poly" id="edge11_Node000004_Node000014" title=" " alt="" coords="477,190,436,156,388,124,364,112,366,107,391,119,439,152,480,186"/>
+<area shape="rect" id="Node000009" href="$classentt_1_1basic__continuous__loader.html#aa699788e849cb797e923fc52c7745603" title="Restores entities that were in use during serialization." alt="" coords="5,229,173,269"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="236,323,220,316,129,272,131,267,222,311,238,318"/>
+<area shape="rect" id="Node000011" href="$classGame.html#a6f3a33940524b6ba9d83f627ccb14bbf" title=" " alt="" coords="44,390,135,415"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="242,405,135,405,135,400,242,400"/>
+<area shape="poly" id="edge13_Node000014_Node000009" title=" " alt="" coords="233,118,223,124,188,149,157,178,109,231,105,227,153,174,185,145,220,119,230,113"/>
+<area shape="rect" id="Node000015" href="$classentt_1_1basic__continuous__loader.html#a14c3c22914cd43c16ff9fe1769204d67" title=" " alt="" coords="5,69,173,109"/>
+<area shape="poly" id="edge12_Node000014_Node000015" title=" " alt="" coords="207,92,174,92,174,87,207,87"/>
+</map>

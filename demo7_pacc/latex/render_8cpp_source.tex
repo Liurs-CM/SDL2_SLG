@@ -1,0 +1,83 @@
+\doxysection{render.\+cpp}
+\hypertarget{render_8cpp_source}{}\label{render_8cpp_source}\index{src/sys/render.cpp@{src/sys/render.cpp}}
+\mbox{\hyperlink{render_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ render.cpp}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/9/18.}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{render_8hpp}{render.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2dir_8hpp}{comp/dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8hpp}{comp/sprite.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8hpp}{comp/position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{constants_8hpp}{core/constants.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost__mode_8hpp}{comp/ghost\_mode.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dir__to__pos_8hpp}{util/dir\_to\_pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00019}\mbox{\hyperlink{render_8cpp_a59dd32882d5a8ef5d73e77fec1d193b0}{00019}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8cpp_a59dd32882d5a8ef5d73e77fec1d193b0}{playerRender}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&writer,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ frame)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00020}00020\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structActualDir}{ActualDir}},\ \mbox{\hyperlink{structDesiredDir}{DesiredDir}},\ \mbox{\hyperlink{structPlayerSprite}{PlayerSprite}}>();}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00021}00021\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pos\ =\ view.get<\mbox{\hyperlink{structPosition}{Position}}>(e).p\ *\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}};}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ actualDir\ =\ view.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e).d;}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ angle\ =\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(view.get<\mbox{\hyperlink{structDesiredDir}{DesiredDir}}>(e).d)\ *\ 90.0;}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00025}00025\ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{tilePos}}(pos\ +\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(actualDir,\ frame),\ \mbox{\hyperlink{structPos}{Pos}}\{\mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}},\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}}\},\ angle);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00026}00026\ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(view.get<\mbox{\hyperlink{structPlayerSprite}{PlayerSprite}}>(e).\mbox{\hyperlink{structPlayerSprite_ae926ce97bc2941981748af8b08219ab6}{id}}\ +\ frame);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00027}00027\ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{render}}();}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00028}00028\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00029}00029\ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00031}\mbox{\hyperlink{render_8cpp_abcb0909174def354f232ea91d6b3c2e4}{00031}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8cpp_abcb0909174def354f232ea91d6b3c2e4}{ghostRender}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&writer,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ frame)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00032}00032\ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ view\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a8d0d1722bcefbdca7a78a4cdf0feca2e}{view}}<\mbox{\hyperlink{structPosition}{Position}},\ \mbox{\hyperlink{structActualDir}{ActualDir}},\ \mbox{\hyperlink{structGhostSprite}{GhostSprite}}>();}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00033}00033\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ entt::entity\ e\ :\ view)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ pos\ =\ view.get<\mbox{\hyperlink{structPosition}{Position}}>(e).p\ *\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}};}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00035}00035\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ actualDir\ =\ view.get<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e).d;}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00036}00036\ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{tilePos}}(pos\ +\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(actualDir,\ frame),\ \mbox{\hyperlink{structPos}{Pos}}\{\mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}},\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}}\});}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ dirOffset\ =\ (}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00038}00038\ \ \ \ \ \ \ actualDir\ ==\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{Dir::none}}\ ?\ 0\ :\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(actualDir)}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00039}00039\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structGhostSprite}{GhostSprite}}\ sprite\ =\ view.get<\mbox{\hyperlink{structGhostSprite}{GhostSprite}}>(e);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keywordflow}{if}\ (reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structChaseMode}{ChaseMode}}>(e)\ ||\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structScatterMode}{ScatterMode}}>(e))\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00042}00042\ \ \ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(sprite.\mbox{\hyperlink{structGhostSprite_a86d6f191252e1f8e8d4bc534b3dffa86}{id}}\ +\ dirOffset);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00043}00043\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structScaredMode}{ScaredMode}}>(e))\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00044}00044\ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ scaredTimer\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a696e43e4d153ebfc9370d2f9b5fe3984}{get}}<\mbox{\hyperlink{structScaredMode}{ScaredMode}}>(e).timer;}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00045}00045\ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ flash\ =\ (}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ scaredTimer\ <=\ \mbox{\hyperlink{constants_8hpp_a078e1934f80be127af4262156c544545}{ghostScaredFlashTime}}\ ?\ (frame\ /\ \mbox{\hyperlink{constants_8hpp_aca236d1d671de96e48ea984000115de8}{ghostScaredFlashRate}})\ \%\ 2\ :\ 0}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00047}00047\ \ \ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00048}00048\ \ \ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(animera::SpriteID::scared\_beg\_\ +\ flash);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00049}00049\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (reg.\mbox{\hyperlink{classentt_1_1basic__registry_ae0948bfee43711e2df12946a63a2b258}{has}}<\mbox{\hyperlink{structEatenMode}{EatenMode}}>(e))\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00050}00050\ \ \ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(animera::SpriteID::eyes\_beg\_\ +\ dirOffset);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00052}00052\ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{render}}();}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00053}00053\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00054}00054\ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00056}\mbox{\hyperlink{render_8cpp_abbc07497ce9d78339151da774bb48d06}{00056}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8cpp_abbc07497ce9d78339151da774bb48d06}{dotRender}}(\mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&writer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classGrid}{MazeState}}\ \&maze)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00057}00057\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ y\ =\ 0;\ y\ !=\ maze.height();\ ++y)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ 0;\ x\ !=\ maze.width();\ ++x)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00059}00059\ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617c}{Tile}}\ tile\ =\ maze[\{x,\ y\}];}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00060}00060\ \ \ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{tilePos}}(\{x\ *\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}},\ y\ *\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}}\},\ \{\mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}},\ \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tileSize}}\});}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00061}00061\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tile\ ==\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca69eb76c88557a8211cbfc9beda5fc062}{Tile::dot}})\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(animera::SpriteID::dot);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00063}00063\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (tile\ ==\ \mbox{\hyperlink{maze_8hpp_ad30cc370e26935f9654c7330eb7c617ca08b688fc3bdb66cc4c4b47a08fa34a4d}{Tile::energizer}})\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(animera::SpriteID::energizer);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00065}00065\ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00067}00067\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00068}00068\ \ \ \ \ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{render}}();}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00070}00070\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00071}00071\ \}}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00073}\mbox{\hyperlink{render_8cpp_ac325380f09e1521aef40a26f61625c70}{00073}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{render_8cpp_ac325380f09e1521aef40a26f61625c70}{fullRender}}(\mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL::QuadWriter}}\ \&writer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{animera::SpriteID}}\ sprite)\ \{}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00074}00074\ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{tilePos}}(\{0,\ 0\},\ \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tilesPx}});}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00075}00075\ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(sprite);}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00076}00076\ \ \ writer.\mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{render}}();}
+\DoxyCodeLine{\Hypertarget{render_8cpp_source_l00077}00077\ \}}
+
+\end{DoxyCode}

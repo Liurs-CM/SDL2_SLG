@@ -1,0 +1,121 @@
+\doxysection{entt\+::loader\texorpdfstring{$<$}{<} Loader, Resource \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1loader}{}\label{classentt_1_1loader}\index{entt::loader$<$ Loader, Resource $>$@{entt::loader$<$ Loader, Resource $>$}}
+
+
+Base class for resource loaders.  
+
+
+
+
+{\ttfamily \#include $<$loader.\+hpp$>$}
+
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\std\+::shared\+\_\+ptr$<$ Resource $>$ \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{get}} (Args \&\&... args) const
+\begin{DoxyCompactList}\small\item\em Loads the resource and returns it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{struct}} \mbox{\hyperlink{classentt_1_1loader_adcd47fa89dbe180ef0db46d3f0c43762}{cache$<$ Resource $>$}}
+\begin{DoxyCompactList}\small\item\em Resource loaders are friends of their caches. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{typename}} \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{Loader}}, \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{typename}} \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{Resource}}$>$\newline
+class entt\+::loader$<$ Loader, Resource $>$}
+Base class for resource loaders. 
+
+Resource loaders must inherit from this class and stay true to the CRTP idiom. Moreover, a resource loader must expose a public, const member function named {\ttfamily load} that accepts a variable number of arguments and returns a shared pointer to the resource just created.~\newline
+ As an example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{my\_resource}}\ \{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{my\_loader}}:\ \mbox{\hyperlink{classentt_1_1loader}{entt::loader}}<my\_loader,\ my\_resource>\ \{}
+\DoxyCodeLine{\ \ \ \ std::shared\_ptr<my\_resource>\ load(\textcolor{keywordtype}{int})\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ use\ the\ integer\ value\ somehow}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_shared<my\_resource>();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+In general, resource loaders should not have a state or retain data of any type. They should let the cache manage their resources instead.
+
+\begin{DoxyNote}{注解}
+Base class and CRTP idiom aren\textquotesingle{}t strictly required with the current implementation. One could argue that a cache can easily work with loaders of any type. However, future changes won\textquotesingle{}t be breaking ones by forcing the use of a base class today and that\textquotesingle{}s why the model is already in its place.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Loader} & Type of the derived class. \\
+\hline
+{\em Resource} & Type of resource for which to use the loader. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{loader_8hpp_source}{loader.\+hpp}} 第 \mbox{\hyperlink{loader_8hpp_source_l00045}{45}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}\label{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4} 
+\index{entt::loader$<$ Loader, Resource $>$@{entt::loader$<$ Loader, Resource $>$}!get@{get}}
+\index{get@{get}!entt::loader$<$ Loader, Resource $>$@{entt::loader$<$ Loader, Resource $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename Loader , typename Resource $>$ \\
+template$<$typename... Args$>$ \\
+std\+::shared\+\_\+ptr$<$ Resource $>$ \mbox{\hyperlink{classentt_1_1loader}{entt\+::loader}}$<$ Loader, Resource $>$\+::get (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Loads the resource and returns it. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Args} & Types of arguments for the loader. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Arguments for the loader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The resource just loaded or an empty pointer in case of errors. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{loader_8hpp_source}{loader.\+hpp}} 第 \mbox{\hyperlink{loader_8hpp_source_l00056}{56}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+\doxysubsection{友元及相关函数文档}
+\Hypertarget{classentt_1_1loader_adcd47fa89dbe180ef0db46d3f0c43762}\label{classentt_1_1loader_adcd47fa89dbe180ef0db46d3f0c43762} 
+\index{entt::loader$<$ Loader, Resource $>$@{entt::loader$<$ Loader, Resource $>$}!cache$<$ Resource $>$@{cache$<$ Resource $>$}}
+\index{cache$<$ Resource $>$@{cache$<$ Resource $>$}!entt::loader$<$ Loader, Resource $>$@{entt::loader$<$ Loader, Resource $>$}}
+\doxysubsubsection{\texorpdfstring{cache$<$ Resource $>$}{cache< Resource >}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{typename}} \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{Loader}} , \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{typename}} \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{Resource}} $>$ \\
+\mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{friend}} \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{struct}} \mbox{\hyperlink{structentt_1_1cache}{cache}}$<$ \mbox{\hyperlink{classentt_1_1loader_a8663408822bd2e63ad512d592154fca4}{Resource}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Resource loaders are friends of their caches. 
+
+
+
+在文件 \mbox{\hyperlink{loader_8hpp_source}{loader.\+hpp}} 第 \mbox{\hyperlink{loader_8hpp_source_l00001}{1}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/resource/\mbox{\hyperlink{resource_2fwd_8hpp}{fwd.\+hpp}}\item 
+third\+\_\+party/entt/resource/\mbox{\hyperlink{loader_8hpp}{loader.\+hpp}}\end{DoxyCompactItemize}

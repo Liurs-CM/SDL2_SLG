@@ -1,0 +1,9 @@
+<map id="dotRender" name="dotRender">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,95,80"/>
+<area shape="rect" id="Node000002" href="$classSDL_1_1QuadWriter.html#a120e5f080bf2bfc10a7d925b336c9cd6" title=" " alt="" coords="144,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,53,142,39,171,32,172,37,143,45,96,58"/>
+<area shape="rect" id="Node000003" href="$classSDL_1_1QuadWriter.html#a11220acce1e5ca1aa568ffc603a5ce13" title=" " alt="" coords="143,55,324,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,65,129,65,129,70,95,70"/>
+<area shape="rect" id="Node000004" href="$classSDL_1_1QuadWriter.html#a2e28cc04be1ed5a29fb8636c2c6c8193" title=" " alt="" coords="143,104,323,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="96,77,173,98,172,103,94,82"/>
+</map>

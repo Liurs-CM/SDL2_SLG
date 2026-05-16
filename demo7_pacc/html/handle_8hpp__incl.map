@@ -1,0 +1,17 @@
+<map id="third_party/entt/resource/handle.hpp" name="third_party/entt/resource/handle.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="105,5,287,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,83,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,48,80,89,78,84,158,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="107,93,167,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,47,157,84,152,80,180,44"/>
+<area shape="rect" id="Node000004" href="$config_8h.html" title=" " alt="" coords="192,93,320,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,44,241,81,237,84,208,47"/>
+<area shape="rect" id="Node000008" href="$resource_2fwd_8hpp.html" title=" " alt="" coords="345,93,418,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="241,43,343,85,341,90,239,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="131,167,197,192"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="243,121,191,160,188,156,240,117"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="221,167,291,192"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="259,119,259,153,253,153,253,119"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="315,167,407,192"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="274,116,334,157,332,161,271,121"/>
+</map>

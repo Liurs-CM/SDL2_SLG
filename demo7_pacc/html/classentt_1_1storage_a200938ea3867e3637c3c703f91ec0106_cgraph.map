@@ -1,0 +1,20 @@
+<map id="entt::storage::destroy" name="entt::storage::destroy">
+<area shape="rect" id="Node000001" title="Removes an entity from a storage and destroys its object." alt="" coords="5,74,168,99"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="216,74,365,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,84,202,84,202,89,168,89"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="413,98,584,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,92,400,96,399,102,365,98"/>
+<area shape="rect" id="Node000007" href="$classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="413,35,584,60"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="359,71,416,60,417,66,360,76"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="632,123,821,148"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="585,117,619,121,618,126,584,123"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="869,72,1040,98"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="584,103,855,88,856,93,584,108"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="871,123,1038,148"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="526,121,575,142,633,158,699,165,767,164,831,158,886,149,886,154,831,163,767,170,699,171,631,164,573,147,524,126"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="784,120,883,98,884,103,785,126"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="822,133,858,133,858,138,822,138"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="534,58,681,116,679,121,532,63"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="540,32,596,19,667,7,745,3,784,6,822,13,879,35,926,62,923,67,876,40,821,18,783,12,744,9,667,12,597,24,541,38"/>
+<area shape="poly" id="edge11_Node000007_Node000006" title=" " alt="" coords="566,58,875,118,874,123,565,63"/>
+</map>

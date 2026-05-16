@@ -1,0 +1,116 @@
+\doxysection{third\+\_\+party/entt/core/type\+\_\+traits.hpp 文件参考}
+\hypertarget{type__traits_8hpp}{}\label{type__traits_8hpp}\index{third\_party/entt/core/type\_traits.hpp@{third\_party/entt/core/type\_traits.hpp}}
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include "{}../config/config.\+h"{}}\newline
+{\ttfamily \#include "{}hashed\+\_\+string.\+hpp"{}}\newline
+{\ttfamily \#include "{}fwd.\+hpp"{}}\newline
+type\+\_\+traits.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__traits_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__traits_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentt_1_1choice__t}{entt\+::choice\+\_\+t$<$ N $>$}}
+\begin{DoxyCompactList}\small\item\em Utility class to disambiguate overloaded functions. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1choice__t_3_010_01_4}{entt\+::choice\+\_\+t$<$ 0 $>$}}
+\begin{DoxyCompactList}\small\item\em Utility class to disambiguate overloaded functions.   \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__list}{entt\+::type\+\_\+list$<$... $>$}}
+\begin{DoxyCompactList}\small\item\em A class to use to push around lists of types, nothing more. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__list__size_3_01type__list_3_01Type_8_8_8_01_4_01_4}{entt\+::type\+\_\+list\+\_\+size$<$ type\+\_\+list$<$ Type... $>$ $>$}}
+\begin{DoxyCompactList}\small\item\em Compile-\/time number of elements in a type list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__list__cat_3_4}{entt\+::type\+\_\+list\+\_\+cat$<$$>$}}
+\begin{DoxyCompactList}\small\item\em Concatenates multiple type lists. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_00_01type__list_3_01Other_8_8_8_01_4_00_01List_8_8_8_01_4}{entt\+::type\+\_\+list\+\_\+cat$<$ type\+\_\+list$<$ Type... $>$, type\+\_\+list$<$ Other... $>$, List... $>$}}
+\begin{DoxyCompactList}\small\item\em Concatenates multiple type lists. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__list__cat_3_01type__list_3_01Type_8_8_8_01_4_01_4}{entt\+::type\+\_\+list\+\_\+cat$<$ type\+\_\+list$<$ Type... $>$ $>$}}
+\begin{DoxyCompactList}\small\item\em Concatenates multiple type lists. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_01Type_00_01Other_8_8_8_01_4_01_4}{entt\+::type\+\_\+list\+\_\+unique$<$ type\+\_\+list$<$ Type, Other... $>$ $>$}}
+\begin{DoxyCompactList}\small\item\em Removes duplicates types from a type list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1type__list__unique_3_01type__list_3_4_01_4}{entt\+::type\+\_\+list\+\_\+unique$<$ type\+\_\+list$<$$>$ $>$}}
+\begin{DoxyCompactList}\small\item\em Removes duplicates types from a type list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1is__equality__comparable}{entt\+::is\+\_\+equality\+\_\+comparable$<$ Type, typename $>$}}
+\begin{DoxyCompactList}\small\item\em Provides the member constant {\ttfamily value} to true if a given type is equality comparable, false otherwise. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structentt_1_1is__equality__comparable_3_01Type_00_01std_1_1void__t_3_01decltype_07std_1_1declva46aebf4c20f38cbd0108d1e297595736}{entt\+::is\+\_\+equality\+\_\+comparable$<$ Type, std\+::void\+\_\+t$<$ decltype(std\+::declval$<$ Type $>$()==std\+::declval$<$ Type $>$())$>$ $>$}}
+\begin{DoxyCompactList}\small\item\em Provides the member constant {\ttfamily value} to true if a given type is equality comparable, false otherwise.   \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classentt_1_1member__class}{entt\+::member\+\_\+class$<$ Member $>$}}
+\begin{DoxyCompactList}\small\item\em Extracts the class of a non-\/static member object or function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceentt}{entt}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{type__traits_8hpp_a4f3c90b0c6fed8193d608fffd113dca2}{ENTT\+\_\+\+OPAQUE\+\_\+\+TYPE}}(clazz,  type)
+\begin{DoxyCompactList}\small\item\em Defines an enum class to use for opaque identifiers and a dedicate {\ttfamily to\+\_\+integer} function to convert the identifiers to their underlying type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Value$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{entt\+::integral\+\_\+constant}} = std\+::integral\+\_\+constant$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{decltype}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Value}}), \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Value}} $>$
+\begin{DoxyCompactList}\small\item\em Wraps a static constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} Value$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{namespaceentt_a9f7bb8c357f08a01ad9c8dab0ea40c1c}{entt\+::tag}} = \mbox{\hyperlink{namespaceentt_a0d9fd5898acf13553bbcf14b99159f4d}{integral\+\_\+constant}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Value}} $>$
+\begin{DoxyCompactList}\small\item\em Alias template to ease the creation of named values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... List$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{namespaceentt_a546467a3662e9a915d5d519ad565e801}{entt\+::type\+\_\+list\+\_\+cat\+\_\+t}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1type__list__cat}{type\+\_\+list\+\_\+cat}}$<$ List... $>$\+::type
+\begin{DoxyCompactList}\small\item\em Helper type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{namespaceentt_a75a277a6037279d65cd3874b46ec7166}{entt\+::type\+\_\+list\+\_\+unique\+\_\+t}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{structentt_1_1type__list__unique}{type\+\_\+list\+\_\+unique}}$<$ Type $>$\+::type
+\begin{DoxyCompactList}\small\item\em Helper type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{namespaceentt_a49f19d031690e5ebfffd6c7a4f6bd364}{entt\+::member\+\_\+class\+\_\+t}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{classentt_1_1member__class}{member\+\_\+class}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}} $>$\+::type
+\begin{DoxyCompactList}\small\item\em Helper type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t N$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{structentt_1_1choice__t}{choice\+\_\+t}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{N}} $>$ \mbox{\hyperlink{namespaceentt_a089f75043b082abca3ea144bce44e9ae}{entt\+::choice}} \{\}
+\begin{DoxyCompactList}\small\item\em Variable template for the choice trick. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{List}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{namespaceentt_a6a9c0b65bfb15bb63c8389391be28eb5}{entt\+::type\+\_\+list\+\_\+size\+\_\+v}} = \mbox{\hyperlink{structentt_1_1type__list__size}{type\+\_\+list\+\_\+size}}$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{List}}$>$\+::value
+\begin{DoxyCompactList}\small\item\em Helper variable template. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{class}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{namespaceentt_aff2c2c940fcfd655abaa24489471dad8}{entt\+::is\+\_\+equality\+\_\+comparable\+\_\+v}} = \mbox{\hyperlink{structentt_1_1is__equality__comparable}{is\+\_\+equality\+\_\+comparable}}$<$Type$>$\+::value
+\begin{DoxyCompactList}\small\item\em Helper variable template. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{type__traits_8hpp_a4f3c90b0c6fed8193d608fffd113dca2}\label{type__traits_8hpp_a4f3c90b0c6fed8193d608fffd113dca2} 
+\index{type\_traits.hpp@{type\_traits.hpp}!ENTT\_OPAQUE\_TYPE@{ENTT\_OPAQUE\_TYPE}}
+\index{ENTT\_OPAQUE\_TYPE@{ENTT\_OPAQUE\_TYPE}!type\_traits.hpp@{type\_traits.hpp}}
+\doxysubsubsection{\texorpdfstring{ENTT\_OPAQUE\_TYPE}{ENTT\_OPAQUE\_TYPE}}
+{\footnotesize\ttfamily \#define ENTT\+\_\+\+OPAQUE\+\_\+\+TYPE(\begin{DoxyParamCaption}\item[{}]{clazz,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{enum\ class}\ clazz:\ type\ \{\};\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ to\_integral(\textcolor{keyword}{const}\ clazz\ \textcolor{keywordtype}{id})\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ \{\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}std::underlying\_type\_t<clazz>\textcolor{keyword}{>}(id);\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ static\_assert(\textcolor{keyword}{true})}
+
+\end{DoxyCode}
+
+
+Defines an enum class to use for opaque identifiers and a dedicate {\ttfamily to\+\_\+integer} function to convert the identifiers to their underlying type. 
+
+
+\begin{DoxyParams}{参数}
+{\em clazz} & The name to use for the enum class. \\
+\hline
+{\em type} & The underlying type for the enum class. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{type__traits_8hpp_source}{type\+\_\+traits.\+hpp}} 第 \mbox{\hyperlink{type__traits_8hpp_source_l00230}{230}} 行定义.
+

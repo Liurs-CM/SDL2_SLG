@@ -1,0 +1,13 @@
+<map id="wallCollide" name="wallCollide">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,66,100,91"/>
+<area shape="rect" id="Node000002" href="$can__move_8cpp.html#ac44feff324cce2df74e8465e4cc46b28" title=" " alt="" coords="181,37,262,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,68,166,56,167,61,101,73"/>
+<area shape="rect" id="Node000006" href="$classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="148,87,295,127"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="101,84,135,90,134,95,100,89"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258" title="Checks if an entity has all the given components." alt="" coords="343,13,520,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,42,328,34,329,40,262,47"/>
+<area shape="rect" id="Node000005" href="$dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="402,62,461,87"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="262,52,389,67,388,72,262,57"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="568,5,715,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="521,23,554,23,554,28,521,28"/>
+</map>

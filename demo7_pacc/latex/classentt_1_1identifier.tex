@@ -1,0 +1,136 @@
+\doxysection{entt\+::identifier\texorpdfstring{$<$}{<} Types \texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1identifier}{}\label{classentt_1_1identifier}\index{entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}}
+
+
+Types identifiers.  
+
+
+
+
+{\ttfamily \#include $<$ident.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{using}} \mbox{\hyperlink{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b}{identifier\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{static}} \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{constexpr}} \mbox{\hyperlink{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b}{identifier\+\_\+type}} \mbox{\hyperlink{classentt_1_1identifier_adb3aad553b8d57ef94581af39fc53178}{type}} = \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{get}}$<$std\+::decay\+\_\+t$<$Type$>$$>$(std\+::index\+\_\+sequence\+\_\+for$<$Types...$>$\{\})
+\begin{DoxyCompactList}\small\item\em Statically generated unique identifier for the given type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{using}} \mbox{\hyperlink{classentt_1_1identifier_a5aee2a2d97c13adcbaed51de78f106ae}{tuple\+\_\+type}} = std\+::tuple$<$ std\+::decay\+\_\+t$<$ \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{Types}} $>$... $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Type , std\+::size\+\_\+t... Indexes$>$ }\\static constexpr \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{get}} (std\+::index\+\_\+sequence$<$ Indexes... $>$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$typename... Types$>$\newline
+class entt\+::identifier$<$ Types $>$}
+Types identifiers. 
+
+Variable template used to generate identifiers at compile-\/time for the given types. Use the {\ttfamily get} member function to know what\textquotesingle{}s the identifier associated to the specific type.
+
+\begin{DoxyNote}{注解}
+Identifiers are constant expression and can be used in any context where such an expression is required. As an example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{using\ }id\ =\ \mbox{\hyperlink{classentt_1_1identifier}{entt::identifier<a\_type,\ another\_type>}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{switch}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{a\_type\_identifier}})\ \{}
+\DoxyCodeLine{\textcolor{keywordflow}{case}\ id::type<a\_type>:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\textcolor{keywordflow}{case}\ id::type<another\_type>:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Types} & List of types for which to generate identifiers. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{ident_8hpp_source}{ident.\+hpp}} 第 \mbox{\hyperlink{ident_8hpp_source_l00044}{44}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b}\label{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b} 
+\index{entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}!identifier\_type@{identifier\_type}}
+\index{identifier\_type@{identifier\_type}!entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}}
+\doxysubsubsection{\texorpdfstring{identifier\_type}{identifier\_type}}
+{\footnotesize\ttfamily template$<$typename... Types$>$ \\
+\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{using}} \mbox{\hyperlink{classentt_1_1identifier}{entt\+::identifier}}$<$ \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{Types}} $>$\+::identifier\+\_\+type =  \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{ident_8hpp_source}{ident.\+hpp}} 第 \mbox{\hyperlink{ident_8hpp_source_l00055}{55}} 行定义.
+
+\Hypertarget{classentt_1_1identifier_a5aee2a2d97c13adcbaed51de78f106ae}\label{classentt_1_1identifier_a5aee2a2d97c13adcbaed51de78f106ae} 
+\index{entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}!tuple\_type@{tuple\_type}}
+\index{tuple\_type@{tuple\_type}!entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}}
+\doxysubsubsection{\texorpdfstring{tuple\_type}{tuple\_type}}
+{\footnotesize\ttfamily template$<$typename... Types$>$ \\
+\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{using}} \mbox{\hyperlink{classentt_1_1identifier}{entt\+::identifier}}$<$ \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{Types}} $>$\+::tuple\+\_\+type =  std\+::tuple$<$std\+::decay\+\_\+t$<$\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{Types}}$>$...$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ident_8hpp_source}{ident.\+hpp}} 第 \mbox{\hyperlink{ident_8hpp_source_l00045}{45}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}\label{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf} 
+\index{entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}!get@{get}}
+\index{get@{get}!entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename... Types$>$ \\
+template$<$typename Type , std\+::size\+\_\+t... Indexes$>$ \\
+static constexpr \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1identifier}{entt\+::identifier}}$<$ Types $>$\+::get (\begin{DoxyParamCaption}\item[{std\+::index\+\_\+sequence$<$ Indexes... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{ident_8hpp_source}{ident.\+hpp}} 第 \mbox{\hyperlink{ident_8hpp_source_l00048}{48}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1identifier_adb3aad553b8d57ef94581af39fc53178}\label{classentt_1_1identifier_adb3aad553b8d57ef94581af39fc53178} 
+\index{entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}!type@{type}}
+\index{type@{type}!entt::identifier$<$ Types $>$@{entt::identifier$<$ Types $>$}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$typename... Types$>$ \\
+template$<$\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{constexpr}} \mbox{\hyperlink{classentt_1_1identifier_a5ed0559dce16ea40707502274dba382b}{identifier\+\_\+type}} \mbox{\hyperlink{classentt_1_1identifier}{entt\+::identifier}}$<$ \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{Types}} $>$\+::type = \mbox{\hyperlink{classentt_1_1identifier_a0c376f65e5fa09ed807742134a42b1cf}{get}}$<$std\+::decay\+\_\+t$<$Type$>$$>$(std\+::index\+\_\+sequence\+\_\+for$<$Types...$>$\{\})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Statically generated unique identifier for the given type. 
+
+
+
+在文件 \mbox{\hyperlink{ident_8hpp_source}{ident.\+hpp}} 第 \mbox{\hyperlink{ident_8hpp_source_l00059}{59}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{ident_8hpp}{ident.\+hpp}}\end{DoxyCompactItemize}

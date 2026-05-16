@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/core/ident.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_65fd88ae3082595dd49ebb3cb5a37478.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">ident.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="ident_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ENTT_CORE_IDENT_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ENTT_CORE_IDENT_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../config/config.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="signal_2fwd_8hpp.html">fwd.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceentt.html">entt</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Types&gt;</div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classentt_1_1identifier.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classentt_1_1identifier.html">identifier</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classentt_1_1identifier.html#a5aee2a2d97c13adcbaed51de78f106ae">   45</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1identifier.html#a5aee2a2d97c13adcbaed51de78f106ae">tuple_type</a> = std::tuple&lt;std::decay_t&lt;Types&gt;...&gt;;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type, std::size_t... Indexes&gt;</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classentt_1_1identifier.html#a0c376f65e5fa09ed807742134a42b1cf">   48</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a> <a class="code hl_function" href="classentt_1_1identifier.html#a0c376f65e5fa09ed807742134a42b1cf">get</a>(std::index_sequence&lt;Indexes...&gt;) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">static_assert</span>(std::disjunction_v&lt;std::is_same&lt;Type, Types&gt;...&gt;);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> (0 + ... + (std::is_same_v&lt;Type, std::tuple_element_t&lt;Indexes, tuple_type&gt;&gt; ? <a class="code hl_typedef" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a>(Indexes) : <a class="code hl_typedef" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a>{}));</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classentt_1_1identifier.html#a5ed0559dce16ea40707502274dba382b">   55</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classentt_1_1identifier.html#a5ed0559dce16ea40707502274dba382b">identifier_type</a> = <a class="code hl_typedef" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classentt_1_1identifier.html#adb3aad553b8d57ef94581af39fc53178">   59</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="classentt_1_1identifier.html#a5ed0559dce16ea40707502274dba382b">identifier_type</a> <a class="code hl_variable" href="classentt_1_1identifier.html#adb3aad553b8d57ef94581af39fc53178">type</a> = <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">get&lt;std::decay_t&lt;Type&gt;</a>&gt;(std::index_sequence_for&lt;<a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Types</a>...&gt;{});</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassentt_1_1identifier_html"><div class="ttname"><a href="classentt_1_1identifier.html">entt::identifier</a></div><div class="ttdoc">Types identifiers.</div><div class="ttdef"><b>Definition</b> <a href="ident_8hpp_source.html#l00044">ident.hpp:44</a></div></div>
+<div class="ttc" id="aclassentt_1_1identifier_html_a0c376f65e5fa09ed807742134a42b1cf"><div class="ttname"><a href="classentt_1_1identifier.html#a0c376f65e5fa09ed807742134a42b1cf">entt::identifier::get</a></div><div class="ttdeci">static constexpr id_type get(std::index_sequence&lt; Indexes... &gt;)</div><div class="ttdef"><b>Definition</b> <a href="ident_8hpp_source.html#l00048">ident.hpp:48</a></div></div>
+<div class="ttc" id="aclassentt_1_1identifier_html_a5aee2a2d97c13adcbaed51de78f106ae"><div class="ttname"><a href="classentt_1_1identifier.html#a5aee2a2d97c13adcbaed51de78f106ae">entt::identifier::tuple_type</a></div><div class="ttdeci">std::tuple&lt; std::decay_t&lt; Types &gt;... &gt; tuple_type</div><div class="ttdef"><b>Definition</b> <a href="ident_8hpp_source.html#l00045">ident.hpp:45</a></div></div>
+<div class="ttc" id="aclassentt_1_1identifier_html_a5ed0559dce16ea40707502274dba382b"><div class="ttname"><a href="classentt_1_1identifier.html#a5ed0559dce16ea40707502274dba382b">entt::identifier::identifier_type</a></div><div class="ttdeci">id_type identifier_type</div><div class="ttdoc">Unsigned integer type.</div><div class="ttdef"><b>Definition</b> <a href="ident_8hpp_source.html#l00055">ident.hpp:55</a></div></div>
+<div class="ttc" id="aclassentt_1_1identifier_html_adb3aad553b8d57ef94581af39fc53178"><div class="ttname"><a href="classentt_1_1identifier.html#adb3aad553b8d57ef94581af39fc53178">entt::identifier::type</a></div><div class="ttdeci">static constexpr identifier_type type</div><div class="ttdoc">Statically generated unique identifier for the given type.</div><div class="ttdef"><b>Definition</b> <a href="ident_8hpp_source.html#l00059">ident.hpp:59</a></div></div>
+<div class="ttc" id="anamespaceentt_html"><div class="ttname"><a href="namespaceentt.html">entt</a></div><div class="ttdef"><b>Definition</b> <a href="algorithm_8hpp_source.html#l00013">algorithm.hpp:13</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a4780f9d4e975066afb16b1309c644995"><div class="ttname"><a href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">entt::id_type</a></div><div class="ttdeci">ENTT_ID_TYPE id_type</div><div class="ttdoc">Alias declaration for type identifiers.</div><div class="ttdef"><b>Definition</b> <a href="core_2fwd_8hpp_source.html#l00012">fwd.hpp:12</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+<div class="ttc" id="asignal_2fwd_8hpp_html"><div class="ttname"><a href="signal_2fwd_8hpp.html">fwd.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

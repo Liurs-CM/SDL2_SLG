@@ -1,0 +1,467 @@
+\doxysection{entt\+::delegate\texorpdfstring{$<$}{<} Ret(Args...)\texorpdfstring{$>$}{>} 模板类 参考}
+\hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4}{}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4}\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+
+
+Utility class to use to send around functions and members.  
+
+
+
+
+{\ttfamily \#include $<$delegate.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a235927a00f56e4b56dbfdc4e6cf5ddb4}{function\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)
+\begin{DoxyCompactList}\small\item\em Function type of the delegate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a5c4828a5df5ed1e8fd18465ff63eb73c}{delegate}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ }\\\mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_af4f480038e4c18d1ad106af3b26574da}{delegate}} (\mbox{\hyperlink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}} $>$) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs a delegate and connects a free function or an unbound member. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a3f4b93ddb413740d3a06b223202dc7f5}{delegate}} (\mbox{\hyperlink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}} $>$, Type \&\&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs a delegate and connects a free function with payload or a bound member. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a6e732abcbc4aa9b8899c92d8f21e55a6}{connect}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Connects a free function or an unbound member to a delegate. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_aae828d209ffe33590c2bb8e4b37f47ef}{connect}} (Type \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Connects a free function with payload or a bound member to a delegate. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_afcdce5ab5ae55520cce86f3f79b38e9c}{connect}} (Type \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{value\+\_\+or\+\_\+instance}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Connects a free function with payload or a bound member to a delegate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a0d81bb1bde6abd78914cd0a07084bcd7}{reset}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Resets a delegate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a229d38d4692eecce0490a9d2369bb224}{instance}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the instance or the payload linked to a delegate, if any. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a0e53caedb53810bc96aa71bce199c990}{operator()}} (Args... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Triggers a delegate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a73e1029cbb6359d803a6cc06b82f80d7}{operator bool}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Checks whether a delegate actually stores a listener. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a54ca30c9a3f7a9662363c48db4e86aae}{operator==}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$ \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{other}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Compares the contents of two delegates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a4b10a35465209168f6e2dce63cdbdb2f}{proto\+\_\+fn\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}, Args...)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, std\+::size\+\_\+t... Index$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a6b630efb801f7c051ff6c4b6142c35c8}{wrap}} (std\+::index\+\_\+sequence$<$ Index... $>$) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , std\+::size\+\_\+t... Index$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a5e54ece4d0d5949d2f1383861b9d09c1}{wrap}} (Type \&, std\+::index\+\_\+sequence$<$ Index... $>$) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , std\+::size\+\_\+t... Index$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_abe553133888a55e422e1663c4c17c717}{wrap}} (Type \texorpdfstring{$\ast$}{*}, std\+::index\+\_\+sequence$<$ Index... $>$) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a4b10a35465209168f6e2dce63cdbdb2f}{proto\+\_\+fn\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_abacac38b3aaa34ea100a5fb6b9ceafc9}{fn}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a36c38120d87fe981e1f577a24dda663c}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}, typename... Args$>$\newline
+class entt\+::delegate$<$ Ret(\+Args...)$>$}
+Utility class to use to send around functions and members. 
+
+Unmanaged delegate for function pointers and members. Users of this class are in charge of disconnecting instances before deleting them.
+
+A delegate can be used as a general purpose invoker without memory overhead for free functions possibly with payloads and bound or unbound members.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Ret} & Return type of a function type. \\
+\hline
+{\em Args} & Types of arguments of a function type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00097}{97}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a235927a00f56e4b56dbfdc4e6cf5ddb4}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a235927a00f56e4b56dbfdc4e6cf5ddb4} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!function\_type@{function\_type}}
+\index{function\_type@{function\_type}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{function\_type}{function\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::function\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)}
+
+
+
+Function type of the delegate. 
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00128}{128}} 行定义.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a4b10a35465209168f6e2dce63cdbdb2f}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a4b10a35465209168f6e2dce63cdbdb2f} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!proto\_fn\_type@{proto\_fn\_type}}
+\index{proto\_fn\_type@{proto\_fn\_type}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{proto\_fn\_type}{proto\_fn\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::proto\+\_\+fn\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*}, Args...)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00098}{98}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a5c4828a5df5ed1e8fd18465ff63eb73c}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a5c4828a5df5ed1e8fd18465ff63eb73c} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!delegate@{delegate}}
+\index{delegate@{delegate}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{delegate()}{delegate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::delegate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00131}{131}} 行定义.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_af4f480038e4c18d1ad106af3b26574da}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_af4f480038e4c18d1ad106af3b26574da} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!delegate@{delegate}}
+\index{delegate@{delegate}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{delegate()}{delegate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ \\
+\mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}} $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a delegate and connects a free function or an unbound member. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to connect to the delegate. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00141}{141}} 行定义.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a3f4b93ddb413740d3a06b223202dc7f5}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a3f4b93ddb413740d3a06b223202dc7f5} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!delegate@{delegate}}
+\index{delegate@{delegate}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{delegate()}{delegate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1connect__arg__t}{connect\+\_\+arg\+\_\+t}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Candidate}} $>$}]{,  }\item[{Type \&\&}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a delegate and connects a free function with payload or a bound member. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to connect to the delegate. \\
+\hline
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid object that fits the purpose. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00155}{155}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a6e732abcbc4aa9b8899c92d8f21e55a6}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a6e732abcbc4aa9b8899c92d8f21e55a6} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!connect@{connect}}
+\index{connect@{connect}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Connects a free function or an unbound member to a delegate. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to connect to the delegate. \\
+\hline
+\end{DoxyTemplParams}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00166}{166}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_aae828d209ffe33590c2bb8e4b37f47ef}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_aae828d209ffe33590c2bb8e4b37f47ef} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!connect@{connect}}
+\index{connect@{connect}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::connect (\begin{DoxyParamCaption}\item[{Type \&}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Connects a free function with payload or a bound member to a delegate. 
+
+The delegate isn\textquotesingle{}t responsible for the connected object or the payload. Users must always guarantee that the lifetime of the instance overcomes the one of the delegate.~\newline
+ When used to connect a free function with payload, its signature must be such that the instance is the first argument before the ones used to define the delegate itself.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to connect to the delegate. \\
+\hline
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid reference that fits the purpose. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00196}{196}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_afcdce5ab5ae55520cce86f3f79b38e9c}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_afcdce5ab5ae55520cce86f3f79b38e9c} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!connect@{connect}}
+\index{connect@{connect}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::connect (\begin{DoxyParamCaption}\item[{Type \texorpdfstring{$\ast$}{*}}]{value\+\_\+or\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Connects a free function with payload or a bound member to a delegate. 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_aae828d209ffe33590c2bb8e4b37f47ef}{connect(\+Type \&)}
+\end{DoxySeeAlso}
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Candidate} & Function or member to connect to the delegate. \\
+\hline
+{\em Type} & Type of class or type of payload. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em value\+\_\+or\+\_\+instance} & A valid pointer that fits the purpose. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00220}{220}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a229d38d4692eecce0490a9d2369bb224}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a229d38d4692eecce0490a9d2369bb224} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!instance@{instance}}
+\index{instance@{instance}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the instance or the payload linked to a delegate, if any. 
+
+\begin{DoxyReturn}{返回}
+An opaque pointer to the underlying data. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00247}{247}} 行定义.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a73e1029cbb6359d803a6cc06b82f80d7}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a73e1029cbb6359d803a6cc06b82f80d7} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Checks whether a delegate actually stores a listener. 
+
+\begin{DoxyReturn}{返回}
+False if the delegate is empty, true otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00274}{274}} 行定义.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a0e53caedb53810bc96aa71bce199c990}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a0e53caedb53810bc96aa71bce199c990} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!operator()@{operator()}}
+\index{operator()@{operator()}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}() (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Triggers a delegate. 
+
+The delegate invokes the underlying function and returns the result.
+
+\begin{DoxyWarning}{警告}
+Attempting to trigger an invalid delegate results in undefined behavior.~\newline
+ An assertion will abort the execution at runtime in debug mode if the delegate has not yet been set.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{参数}
+{\em args} & Arguments to use to invoke the underlying function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The value returned by the underlying function. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00265}{265}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{config_8h_source_l00041}{ENTT\+\_\+\+ASSERT}} , 以及 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a54ca30c9a3f7a9662363c48db4e86aae}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a54ca30c9a3f7a9662363c48db4e86aae} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!operator==@{operator==}}
+\index{operator==@{operator==}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{classentt_1_1delegate}{delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compares the contents of two delegates. 
+
+
+\begin{DoxyParams}{参数}
+{\em other} & Delegate with which to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+False if the two contents differ, true otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00284}{284}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a0d81bb1bde6abd78914cd0a07084bcd7}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a0d81bb1bde6abd78914cd0a07084bcd7} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!reset@{reset}}
+\index{reset@{reset}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets a delegate. 
+
+After a reset, a delegate cannot be invoked anymore. 
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00238}{238}} 行定义.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a6b630efb801f7c051ff6c4b6142c35c8}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a6b630efb801f7c051ff6c4b6142c35c8} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!wrap@{wrap}}
+\index{wrap@{wrap}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, std\+::size\+\_\+t... Index$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::wrap (\begin{DoxyParamCaption}\item[{std\+::index\+\_\+sequence$<$ Index... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00101}{101}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a5e54ece4d0d5949d2f1383861b9d09c1}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a5e54ece4d0d5949d2f1383861b9d09c1} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!wrap@{wrap}}
+\index{wrap@{wrap}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , std\+::size\+\_\+t... Index$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::wrap (\begin{DoxyParamCaption}\item[{Type \&}]{,  }\item[{std\+::index\+\_\+sequence$<$ Index... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00109}{109}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_abe553133888a55e422e1663c4c17c717}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_abe553133888a55e422e1663c4c17c717} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!wrap@{wrap}}
+\index{wrap@{wrap}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} Candidate, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type , std\+::size\+\_\+t... Index$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::wrap (\begin{DoxyParamCaption}\item[{Type \texorpdfstring{$\ast$}{*}}]{,  }\item[{std\+::index\+\_\+sequence$<$ Index... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00118}{118}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a36c38120d87fe981e1f577a24dda663c}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a36c38120d87fe981e1f577a24dda663c} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!data@{data}}
+\index{data@{data}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00290}{290}} 行定义.
+
+\Hypertarget{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_abacac38b3aaa34ea100a5fb6b9ceafc9}\label{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_abacac38b3aaa34ea100a5fb6b9ceafc9} 
+\index{entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}!fn@{fn}}
+\index{fn@{fn}!entt::delegate$<$ Ret(Args...)$>$@{entt::delegate$<$ Ret(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}} , typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1delegate_3_01Ret_07Args_8_8_8_08_4_a4b10a35465209168f6e2dce63cdbdb2f}{proto\+\_\+fn\+\_\+type}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classentt_1_1delegate}{entt\+::delegate}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Ret}}(Args...)$>$\+::fn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{delegate_8hpp_source}{delegate.\+hpp}} 第 \mbox{\hyperlink{delegate_8hpp_source_l00289}{289}} 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/signal/\mbox{\hyperlink{delegate_8hpp}{delegate.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="entt::basic_registry::assure" name="entt::basic_registry::assure">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,152,95"/>
+<area shape="rect" id="Node000002" href="$structentt_1_1type__info.html#ab72a8d8a5789c278cc0596aba0a2ff41" title="Returns the numeric representation of a given type." alt="" coords="217,5,355,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,53,225,32,227,37,152,58"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a44f5eac6fa4d1999a121f55e67a36c24" title="Removes the given components from an entity." alt="" coords="213,55,359,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,73,199,73,199,78,152,78"/>
+<area shape="rect" id="Node000005" href="$structentt_1_1type__index.html#afe595aab15f065812bb2a82e1c717c2e" title="Returns the sequential identifier of a given type." alt="" coords="200,120,372,145"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="152,93,227,114,225,119,151,98"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="420,55,567,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="359,73,406,73,406,78,359,78"/>
+</map>

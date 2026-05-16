@@ -1,0 +1,1227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::basic_observer&lt; Entity &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classentt_1_1basic__observer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::basic_observer&lt; Entity &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Observer.  
+ <a href="classentt_1_1basic__observer.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="observer_8hpp_source.html">observer.hpp</a>&gt;</code></p>
+<div class="dynheader">
+entt::basic_observer&lt; Entity &gt; 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer__coll__graph.png" border="0" usemap="#aentt_1_1basic__observer_3_01Entity_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aentt_1_1basic__observer_3_01Entity_01_4_coll__map" id="aentt_1_1basic__observer_3_01Entity_01_4_coll__map">
+<area shape="rect" title="Observer." alt="" coords="39,183,193,223"/>
+<area shape="rect" href="classentt_1_1basic__registry.html" title=" " alt="" coords="5,80,152,120"/>
+<area shape="poly" title=" " alt="" coords="93,132,112,182,107,184,88,134"/>
+<area shape="rect" href="classentt_1_1storage.html" title=" " alt="" coords="177,80,346,120"/>
+<area shape="poly" title=" " alt="" coords="224,130,145,185,142,180,221,126"/>
+<area shape="rect" href="classentt_1_1sparse__set.html" title="Basic sparse set implementation." alt="" coords="164,5,359,31"/>
+<area shape="poly" title=" " alt="" coords="264,44,264,80,259,80,259,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__observer_1_1matcher__handler.html">matcher_handler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__observer_1_1matcher__handler_3_01matcher_3_01type__list_3_01Reject_8_8_8_0117cee5b47fc38592fdcd37ee7a793dd8.html">matcher_handler&lt; matcher&lt; type_list&lt; Reject... &gt;, type_list&lt; Require... &gt;, AnyOf &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__observer_1_1matcher__handler_3_01matcher_3_01type__list_3_01Reject_8_8_8_01342ea6a3c71d46b8f95577490118491f.html">matcher_handler&lt; matcher&lt; type_list&lt; Reject... &gt;, type_list&lt; Require... &gt;, type_list&lt; NoneOf... &gt;, AllOf... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:af7a57f53ed7a6c835129480ff6594f7d" id="r_af7a57f53ed7a6c835129480ff6594f7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a></td></tr>
+<tr class="memdesc:af7a57f53ed7a6c835129480ff6594f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying entity identifier.  <br /></td></tr>
+<tr class="separator:af7a57f53ed7a6c835129480ff6594f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147a0e35035fc3c19b67b31d66d2d80b" id="r_a147a0e35035fc3c19b67b31d66d2d80b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a147a0e35035fc3c19b67b31d66d2d80b">size_type</a> = std::size_t</td></tr>
+<tr class="memdesc:a147a0e35035fc3c19b67b31d66d2d80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsigned integer type.  <br /></td></tr>
+<tr class="separator:a147a0e35035fc3c19b67b31d66d2d80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244ba61659af901a88710350b068c4ac" id="r_a244ba61659af901a88710350b068c4ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a244ba61659af901a88710350b068c4ac">iterator</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::iterator</td></tr>
+<tr class="memdesc:a244ba61659af901a88710350b068c4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input iterator type.  <br /></td></tr>
+<tr class="separator:a244ba61659af901a88710350b068c4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:adfb08de0ef1c0f57fadc6f6d171b931a" id="r_adfb08de0ef1c0f57fadc6f6d171b931a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#adfb08de0ef1c0f57fadc6f6d171b931a">basic_observer</a> ()</td></tr>
+<tr class="memdesc:adfb08de0ef1c0f57fadc6f6d171b931a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:adfb08de0ef1c0f57fadc6f6d171b931a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa685204c94266b5631c13540012e73c2" id="r_aa685204c94266b5631c13540012e73c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#aa685204c94266b5631c13540012e73c2">basic_observer</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delete</a></td></tr>
+<tr class="memdesc:aa685204c94266b5631c13540012e73c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default copy constructor, deleted on purpose.  <br /></td></tr>
+<tr class="separator:aa685204c94266b5631c13540012e73c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accbe2546b1b74de1a59e673cb6250413" id="r_accbe2546b1b74de1a59e673cb6250413"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#accbe2546b1b74de1a59e673cb6250413">basic_observer</a> (<a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;&amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delete</a></td></tr>
+<tr class="memdesc:accbe2546b1b74de1a59e673cb6250413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move constructor, deleted on purpose.  <br /></td></tr>
+<tr class="separator:accbe2546b1b74de1a59e673cb6250413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef3c847acf610f1a6f856b05f0f0721" id="r_abef3c847acf610f1a6f856b05f0f0721"><td class="memTemplParams" colspan="2">template&lt;typename... Matcher&gt; </td></tr>
+<tr class="memitem:abef3c847acf610f1a6f856b05f0f0721"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#abef3c847acf610f1a6f856b05f0f0721">basic_observer</a> (<a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> &gt; &amp;reg, <a class="el" href="structentt_1_1basic__collector.html">basic_collector</a>&lt; Matcher... &gt;)</td></tr>
+<tr class="memdesc:abef3c847acf610f1a6f856b05f0f0721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an observer and connects it to a given registry.  <br /></td></tr>
+<tr class="separator:abef3c847acf610f1a6f856b05f0f0721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6fbd2a5ce7bc57013b0bd9ad482599" id="r_afb6fbd2a5ce7bc57013b0bd9ad482599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#afb6fbd2a5ce7bc57013b0bd9ad482599">~basic_observer</a> ()=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:afb6fbd2a5ce7bc57013b0bd9ad482599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
+<tr class="separator:afb6fbd2a5ce7bc57013b0bd9ad482599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48774bb0a91b1a491228971a49904f95" id="r_a48774bb0a91b1a491228971a49904f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a48774bb0a91b1a491228971a49904f95">operator=</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delete</a></td></tr>
+<tr class="memdesc:a48774bb0a91b1a491228971a49904f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default copy assignment operator, deleted on purpose.  <br /></td></tr>
+<tr class="separator:a48774bb0a91b1a491228971a49904f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01ad207f6858ef841dad4bccb734205" id="r_ac01ad207f6858ef841dad4bccb734205"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#ac01ad207f6858ef841dad4bccb734205">operator=</a> (<a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;&amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">delete</a></td></tr>
+<tr class="memdesc:ac01ad207f6858ef841dad4bccb734205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move assignment operator, deleted on purpose.  <br /></td></tr>
+<tr class="separator:ac01ad207f6858ef841dad4bccb734205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d69a8bc866b01cc677de492bc436209" id="r_a7d69a8bc866b01cc677de492bc436209"><td class="memTemplParams" colspan="2">template&lt;typename... Matcher&gt; </td></tr>
+<tr class="memitem:a7d69a8bc866b01cc677de492bc436209"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a7d69a8bc866b01cc677de492bc436209">connect</a> (<a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> &gt; &amp;reg, <a class="el" href="structentt_1_1basic__collector.html">basic_collector</a>&lt; Matcher... &gt;)</td></tr>
+<tr class="memdesc:a7d69a8bc866b01cc677de492bc436209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects an observer to a given registry.  <br /></td></tr>
+<tr class="separator:a7d69a8bc866b01cc677de492bc436209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1337e8f885ca963383e5a3ed2a354955" id="r_a1337e8f885ca963383e5a3ed2a354955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a1337e8f885ca963383e5a3ed2a354955">disconnect</a> ()</td></tr>
+<tr class="memdesc:a1337e8f885ca963383e5a3ed2a354955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnects an observer from the registry it keeps track of.  <br /></td></tr>
+<tr class="separator:a1337e8f885ca963383e5a3ed2a354955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42aeb1e1ffb32b98bc4da4f30755ec1" id="r_ab42aeb1e1ffb32b98bc4da4f30755ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__observer.html#a147a0e35035fc3c19b67b31d66d2d80b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#ab42aeb1e1ffb32b98bc4da4f30755ec1">size</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ab42aeb1e1ffb32b98bc4da4f30755ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in an observer.  <br /></td></tr>
+<tr class="separator:ab42aeb1e1ffb32b98bc4da4f30755ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0986b7af08f9b1bc70bd01b9bbe66cc4" id="r_a0986b7af08f9b1bc70bd01b9bbe66cc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a0986b7af08f9b1bc70bd01b9bbe66cc4">empty</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a0986b7af08f9b1bc70bd01b9bbe66cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an observer is empty.  <br /></td></tr>
+<tr class="separator:a0986b7af08f9b1bc70bd01b9bbe66cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0f3e189f0d502a8f9a5c8467cf8ee3" id="r_adc0f3e189f0d502a8f9a5c8467cf8ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#adc0f3e189f0d502a8f9a5c8467cf8ee3">data</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:adc0f3e189f0d502a8f9a5c8467cf8ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the list of entities of the observer.  <br /></td></tr>
+<tr class="separator:adc0f3e189f0d502a8f9a5c8467cf8ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46075c93b241b07d55b4676004635f7" id="r_ab46075c93b241b07d55b4676004635f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__observer.html#a244ba61659af901a88710350b068c4ac">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#ab46075c93b241b07d55b4676004635f7">begin</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ab46075c93b241b07d55b4676004635f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to the first entity of the observer.  <br /></td></tr>
+<tr class="separator:ab46075c93b241b07d55b4676004635f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467784468eb62680a13533934858b1b1" id="r_a467784468eb62680a13533934858b1b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__observer.html#a244ba61659af901a88710350b068c4ac">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a467784468eb62680a13533934858b1b1">end</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a467784468eb62680a13533934858b1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator that is past the last entity of the observer.  <br /></td></tr>
+<tr class="separator:a467784468eb62680a13533934858b1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced0b3372cde9d40e97e8305bd0e4e77" id="r_aced0b3372cde9d40e97e8305bd0e4e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#aced0b3372cde9d40e97e8305bd0e4e77">clear</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:aced0b3372cde9d40e97e8305bd0e4e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the underlying container.  <br /></td></tr>
+<tr class="separator:aced0b3372cde9d40e97e8305bd0e4e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181a6724835a3a41e33610003f738525" id="r_a181a6724835a3a41e33610003f738525"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> Func &gt; </td></tr>
+<tr class="memitem:a181a6724835a3a41e33610003f738525"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a181a6724835a3a41e33610003f738525">each</a> (Func func) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="memdesc:a181a6724835a3a41e33610003f738525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates entities and applies the given function object to them.  <br /></td></tr>
+<tr class="separator:a181a6724835a3a41e33610003f738525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535f3ddf32641a54e1c8861519933c97" id="r_a535f3ddf32641a54e1c8861519933c97"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> Func &gt; </td></tr>
+<tr class="memitem:a535f3ddf32641a54e1c8861519933c97"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a535f3ddf32641a54e1c8861519933c97">each</a> (Func func)</td></tr>
+<tr class="memdesc:a535f3ddf32641a54e1c8861519933c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates entities and applies the given function object to them, then clears the observer.  <br /></td></tr>
+<tr class="separator:a535f3ddf32641a54e1c8861519933c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:aa2e8d14973b7773a2890c3c92dd91ca2" id="r_aa2e8d14973b7773a2890c3c92dd91ca2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#aa2e8d14973b7773a2890c3c92dd91ca2">payload_type</a> = std::uint32_t</td></tr>
+<tr class="separator:aa2e8d14973b7773a2890c3c92dd91ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a60dee104d5bda127cb41528db488e210" id="r_a60dee104d5bda127cb41528db488e210"><td class="memTemplParams" colspan="2">template&lt;typename... Matcher, std::size_t... Index&gt; </td></tr>
+<tr class="memitem:a60dee104d5bda127cb41528db488e210"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a60dee104d5bda127cb41528db488e210">connect</a> (<a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;reg, std::index_sequence&lt; Index... &gt;)</td></tr>
+<tr class="separator:a60dee104d5bda127cb41528db488e210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静态 Private 成员函数</h2></td></tr>
+<tr class="memitem:ae2549e48eb696174c9608a2c309e080f" id="r_ae2549e48eb696174c9608a2c309e080f"><td class="memTemplParams" colspan="2">template&lt;typename... Matcher&gt; </td></tr>
+<tr class="memitem:ae2549e48eb696174c9608a2c309e080f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#ae2549e48eb696174c9608a2c309e080f">disconnect</a> (<a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">obs</a>, <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;reg)</td></tr>
+<tr class="separator:ae2549e48eb696174c9608a2c309e080f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a36b561e57c1eb012f960e534ce5f9400" id="r_a36b561e57c1eb012f960e534ce5f9400"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a36b561e57c1eb012f960e534ce5f9400">target</a></td></tr>
+<tr class="separator:a36b561e57c1eb012f960e534ce5f9400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf105924283b75976a69559da17d953" id="r_afbf105924283b75976a69559da17d953"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#afbf105924283b75976a69559da17d953">release</a> )(<a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;, <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> &gt; &amp;)</td></tr>
+<tr class="separator:afbf105924283b75976a69559da17d953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0912f8449a089e451a47249f162850" id="r_a6f0912f8449a089e451a47249f162850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html">storage</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a>, <a class="el" href="classentt_1_1basic__observer.html#aa2e8d14973b7773a2890c3c92dd91ca2">payload_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__observer.html#a6f0912f8449a089e451a47249f162850">view</a></td></tr>
+<tr class="separator:a6f0912f8449a089e451a47249f162850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt;<br />
+class entt::basic_observer&lt; Entity &gt;</div><p>Observer. </p>
+<p>An observer returns all the entities and only the entities that fit the requirements of at least one matcher. Moreover, it's guaranteed that the entity list is tightly packed in memory for fast iterations.<br  />
+ In general, observers don't stay true to the order of any set of components.</p>
+<p>Observers work mainly with two types of matchers, provided through a collector:</p>
+<ul>
+<li>Observing matcher: an observer will return at least all the living entities for which one or more of the given components have been updated and not yet destroyed.</li>
+<li>Grouping matcher: an observer will return at least all the living entities that would have entered the given group if it existed and that would have not yet left it.</li>
+</ul>
+<p>If an entity respects the requirements of multiple matchers, it will be returned once and only once by the observer in any case.</p>
+<p>Matchers support also filtering by means of a <em>where</em> clause that accepts both a list of types and an exclusion list.<br  />
+ Whenever a matcher finds that an entity matches its requirements, the condition of the filter is verified before to register the entity itself. Moreover, a registered entity isn't returned by the observer if the condition set by the filter is broken in the meantime.</p>
+<p><b>Important</b> </p>
+<p>Iterators aren't invalidated if:</p>
+<ul>
+<li>New instances of the given components are created and assigned to entities.</li>
+<li>The entity currently pointed is modified (as an example, if one of the given components is removed from the entity to which the iterator points).</li>
+<li>The entity currently pointed is destroyed.</li>
+</ul>
+<p>In all the other cases, modifying the pools of the given components in any way invalidates all the iterators and using them results in undefined behavior.</p>
+<dl class="section warning"><dt>警告</dt><dd>Lifetime of an observer doesn't necessarily have to overcome that of the registry to which it is connected. However, the observer must be disconnected from the registry before being destroyed to avoid crashes due to dangling pointers.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Entity</td><td>A valid entity type (see <a class="el" href="structentt_1_1entt__traits.html" title="Entity traits.">entt_traits</a> for more details). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00186">186</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="af7a57f53ed7a6c835129480ff6594f7d" name="af7a57f53ed7a6c835129480ff6594f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a57f53ed7a6c835129480ff6594f7d">&#9670;&#160;</a></span>entity_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::entity_type =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Underlying entity identifier. </p>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00282">282</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a244ba61659af901a88710350b068c4ac" name="a244ba61659af901a88710350b068c4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244ba61659af901a88710350b068c4ac">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::iterator =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt;::iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Input iterator type. </p>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00286">286</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa2e8d14973b7773a2890c3c92dd91ca2" name="aa2e8d14973b7773a2890c3c92dd91ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e8d14973b7773a2890c3c92dd91ca2">&#9670;&#160;</a></span>payload_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::payload_type =  std::uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00187">187</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a147a0e35035fc3c19b67b31d66d2d80b" name="a147a0e35035fc3c19b67b31d66d2d80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147a0e35035fc3c19b67b31d66d2d80b">&#9670;&#160;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::size_type =  std::size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unsigned integer type. </p>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00284">284</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="adfb08de0ef1c0f57fadc6f6d171b931a" name="adfb08de0ef1c0f57fadc6f6d171b931a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb08de0ef1c0f57fadc6f6d171b931a">&#9670;&#160;</a></span>basic_observer() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::basic_observer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00289">289</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa685204c94266b5631c13540012e73c2" name="aa685204c94266b5631c13540012e73c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa685204c94266b5631c13540012e73c2">&#9670;&#160;</a></span>basic_observer() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::basic_observer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__observer.html">basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default copy constructor, deleted on purpose. </p>
+
+</div>
+</div>
+<a id="accbe2546b1b74de1a59e673cb6250413" name="accbe2546b1b74de1a59e673cb6250413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accbe2546b1b74de1a59e673cb6250413">&#9670;&#160;</a></span>basic_observer() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::basic_observer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move constructor, deleted on purpose. </p>
+
+</div>
+</div>
+<a id="abef3c847acf610f1a6f856b05f0f0721" name="abef3c847acf610f1a6f856b05f0f0721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef3c847acf610f1a6f856b05f0f0721">&#9670;&#160;</a></span>basic_observer() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Matcher&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::basic_observer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__collector.html">basic_collector</a>&lt; Matcher... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an observer and connects it to a given registry. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Matcher</td><td>Types of matchers to use to initialize the observer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>A valid reference to a registry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00304">304</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="observer_8hpp_source.html#l00274">entt::basic_observer&lt; Entity &gt;::connect()</a> , 以及 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721_cgraph.png" border="0" usemap="#aclassentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721_cgraph" id="aclassentt_1_1basic__observer_abef3c847acf610f1a6f856b05f0f0721_cgraph">
+<area shape="rect" title="Creates an observer and connects it to a given registry." alt="" coords="5,5,160,45"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a60dee104d5bda127cb41528db488e210" title=" " alt="" coords="208,5,363,45"/>
+<area shape="poly" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a1337e8f885ca963383e5a3ed2a354955" title="Disconnects an observer from the registry it keeps track of." alt="" coords="411,5,565,45"/>
+<area shape="poly" title=" " alt="" coords="363,23,396,23,396,28,363,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb6fbd2a5ce7bc57013b0bd9ad482599" name="afb6fbd2a5ce7bc57013b0bd9ad482599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6fbd2a5ce7bc57013b0bd9ad482599">&#9670;&#160;</a></span>~basic_observer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::~<a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab46075c93b241b07d55b4676004635f7" name="ab46075c93b241b07d55b4676004635f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46075c93b241b07d55b4676004635f7">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html#a244ba61659af901a88710350b068c4ac">iterator</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator to the first entity of the observer. </p>
+<p>The returned iterator points to the first entity of the observer. If the container is empty, the returned iterator will be equal to <code><a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53">end()</a></code>.</p>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the first entity of the observer. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00388">388</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aced0b3372cde9d40e97e8305bd0e4e77" name="aced0b3372cde9d40e97e8305bd0e4e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced0b3372cde9d40e97e8305bd0e4e77">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the underlying container. </p>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00407">407</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="observer_8hpp_source.html#l00443">entt::basic_observer&lt; Entity &gt;::each()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77_icgraph.png" border="0" usemap="#aclassentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77_icgraph" id="aclassentt_1_1basic__observer_aced0b3372cde9d40e97e8305bd0e4e77_icgraph">
+<area shape="rect" title="Clears the underlying container." alt="" coords="208,5,363,45"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a535f3ddf32641a54e1c8861519933c97" title="Iterates entities and applies the given function object to them, then clears the observer." alt="" coords="5,5,160,45"/>
+<area shape="poly" title=" " alt="" coords="194,28,161,28,161,23,194,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60dee104d5bda127cb41528db488e210" name="a60dee104d5bda127cb41528db488e210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60dee104d5bda127cb41528db488e210">&#9670;&#160;</a></span>connect() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Matcher, std::size_t... Index&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::index_sequence&lt; Index... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00274">274</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="observer_8hpp_source.html#l00341">entt::basic_observer&lt; Entity &gt;::disconnect()</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="observer_8hpp_source.html#l00450">entt::basic_observer&lt; Entity &gt;::release</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="observer_8hpp_source.html#l00304">entt::basic_observer&lt; Entity &gt;::basic_observer()</a> , 以及 <a class="el" href="observer_8hpp_source.html#l00333">entt::basic_observer&lt; Entity &gt;::connect()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_cgraph.png" border="0" usemap="#aclassentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_cgraph" id="aclassentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,45"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a1337e8f885ca963383e5a3ed2a354955" title="Disconnects an observer from the registry it keeps track of." alt="" coords="208,5,363,45"/>
+<area shape="poly" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_icgraph.png" border="0" usemap="#aclassentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_icgraph" id="aclassentt_1_1basic__observer_a60dee104d5bda127cb41528db488e210_icgraph">
+<area shape="rect" title=" " alt="" coords="208,37,363,77"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#abef3c847acf610f1a6f856b05f0f0721" title="Creates an observer and connects it to a given registry." alt="" coords="5,5,160,45"/>
+<area shape="poly" title=" " alt="" coords="194,46,160,40,161,35,195,40"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a7d69a8bc866b01cc677de492bc436209" title="Connects an observer to a given registry." alt="" coords="5,69,160,109"/>
+<area shape="poly" title=" " alt="" coords="195,74,161,80,160,74,194,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7d69a8bc866b01cc677de492bc436209" name="a7d69a8bc866b01cc677de492bc436209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d69a8bc866b01cc677de492bc436209">&#9670;&#160;</a></span>connect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Matcher&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__collector.html">basic_collector</a>&lt; Matcher... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Connects an observer to a given registry. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Matcher</td><td>Types of matchers to use to initialize the observer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>A valid reference to a registry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00333">333</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="observer_8hpp_source.html#l00274">entt::basic_observer&lt; Entity &gt;::connect()</a>, <a class="el" href="observer_8hpp_source.html#l00341">entt::basic_observer&lt; Entity &gt;::disconnect()</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="observer_8hpp_source.html#l00449">entt::basic_observer&lt; Entity &gt;::target</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209_cgraph.png" border="0" usemap="#aclassentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209_cgraph" id="aclassentt_1_1basic__observer_a7d69a8bc866b01cc677de492bc436209_cgraph">
+<area shape="rect" title="Connects an observer to a given registry." alt="" coords="5,35,160,75"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a60dee104d5bda127cb41528db488e210" title=" " alt="" coords="208,5,363,45"/>
+<area shape="poly" title=" " alt="" coords="160,41,194,36,195,41,161,46"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a1337e8f885ca963383e5a3ed2a354955" title="Disconnects an observer from the registry it keeps track of." alt="" coords="411,35,565,75"/>
+<area shape="poly" title=" " alt="" coords="160,54,208,55,363,55,397,54,397,59,363,60,208,60,160,59"/>
+<area shape="poly" title=" " alt="" coords="363,34,397,39,396,44,362,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adc0f3e189f0d502a8f9a5c8467cf8ee3" name="adc0f3e189f0d502a8f9a5c8467cf8ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0f3e189f0d502a8f9a5c8467cf8ee3">&#9670;&#160;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> * <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Direct access to the list of entities of the observer. </p>
+<p>The returned pointer is such that range <code>[<a class="el" href="classentt_1_1basic__observer.html#adc0f3e189f0d502a8f9a5c8467cf8ee3" title="Direct access to the list of entities of the observer.">data()</a>, <a class="el" href="classentt_1_1basic__observer.html#adc0f3e189f0d502a8f9a5c8467cf8ee3" title="Direct access to the list of entities of the observer.">data()</a> + <a class="el" href="classentt_1_1basic__observer.html#ab42aeb1e1ffb32b98bc4da4f30755ec1" title="Returns the number of elements in an observer.">size()</a>]</code> is always a valid range, even if the container is empty.</p>
+<dl class="section note"><dt>注解</dt><dd>There are no guarantees on the order of the entities. Use <code>begin</code> and <code>end</code> if you want to iterate the observer in the expected order.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A pointer to the array of entities. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00376">376</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1337e8f885ca963383e5a3ed2a354955" name="a1337e8f885ca963383e5a3ed2a354955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1337e8f885ca963383e5a3ed2a354955">&#9670;&#160;</a></span>disconnect() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::disconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disconnects an observer from the registry it keeps track of. </p>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00341">341</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="observer_8hpp_source.html#l00450">entt::basic_observer&lt; Entity &gt;::release</a> , 以及 <a class="el" href="observer_8hpp_source.html#l00449">entt::basic_observer&lt; Entity &gt;::target</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="observer_8hpp_source.html#l00274">entt::basic_observer&lt; Entity &gt;::connect()</a> , 以及 <a class="el" href="observer_8hpp_source.html#l00333">entt::basic_observer&lt; Entity &gt;::connect()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955_icgraph.png" border="0" usemap="#aclassentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955_icgraph" id="aclassentt_1_1basic__observer_a1337e8f885ca963383e5a3ed2a354955_icgraph">
+<area shape="rect" title="Disconnects an observer from the registry it keeps track of." alt="" coords="411,41,565,81"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a60dee104d5bda127cb41528db488e210" title=" " alt="" coords="208,12,363,52"/>
+<area shape="poly" title=" " alt="" coords="397,51,363,46,364,41,398,46"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#a7d69a8bc866b01cc677de492bc436209" title="Connects an observer to a given registry." alt="" coords="5,69,160,109"/>
+<area shape="poly" title=" " alt="" coords="397,70,160,87,160,81,397,65"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#abef3c847acf610f1a6f856b05f0f0721" title="Creates an observer and connects it to a given registry." alt="" coords="5,5,160,45"/>
+<area shape="poly" title=" " alt="" coords="194,32,161,31,161,25,194,26"/>
+<area shape="poly" title=" " alt="" coords="202,58,155,72,153,67,200,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2549e48eb696174c9608a2c309e080f" name="ae2549e48eb696174c9608a2c309e080f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2549e48eb696174c9608a2c309e080f">&#9670;&#160;</a></span>disconnect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Matcher&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00269">269</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a535f3ddf32641a54e1c8861519933c97" name="a535f3ddf32641a54e1c8861519933c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535f3ddf32641a54e1c8861519933c97">&#9670;&#160;</a></span>each() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::each </td>
+          <td>(</td>
+          <td class="paramtype">Func&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Iterates entities and applies the given function object to them, then clears the observer. </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classentt_1_1basic__observer.html#a181a6724835a3a41e33610003f738525" title="Iterates entities and applies the given function object to them.">each</a></dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Func</td><td>Type of the function object to invoke. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>A valid function object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00443">443</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="observer_8hpp_source.html#l00407">entt::basic_observer&lt; Entity &gt;::clear()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97_cgraph.png" border="0" usemap="#aclassentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97_cgraph" id="aclassentt_1_1basic__observer_a535f3ddf32641a54e1c8861519933c97_cgraph">
+<area shape="rect" title="Iterates entities and applies the given function object to them, then clears the observer." alt="" coords="5,5,160,45"/>
+<area shape="rect" href="classentt_1_1basic__observer.html#aced0b3372cde9d40e97e8305bd0e4e77" title="Clears the underlying container." alt="" coords="208,5,363,45"/>
+<area shape="poly" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a181a6724835a3a41e33610003f738525" name="a181a6724835a3a41e33610003f738525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181a6724835a3a41e33610003f738525">&#9670;&#160;</a></span>each() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::each </td>
+          <td>(</td>
+          <td class="paramtype">Func&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Iterates entities and applies the given function object to them. </p>
+<p>The function object is invoked for each entity.<br  />
+ The signature of the function must be equivalent to the following form:</p>
+<div class="fragment"><div class="line"><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a>);</div>
+<div class="ttc" id="aclassentt_1_1basic__observer_html_af7a57f53ed7a6c835129480ff6594f7d"><div class="ttname"><a href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entt::basic_observer::entity_type</a></div><div class="ttdeci">Entity entity_type</div><div class="ttdoc">Underlying entity identifier.</div><div class="ttdef"><b>Definition</b> <a href="observer_8hpp_source.html#l00282">observer.hpp:282</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+</div><!-- fragment --><dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Func</td><td>Type of the function object to invoke. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>A valid function object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00425">425</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0986b7af08f9b1bc70bd01b9bbe66cc4" name="a0986b7af08f9b1bc70bd01b9bbe66cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0986b7af08f9b1bc70bd01b9bbe66cc4">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether an observer is empty. </p>
+<dl class="section return"><dt>返回</dt><dd>True if the observer is empty, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00360">360</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a467784468eb62680a13533934858b1b1" name="a467784468eb62680a13533934858b1b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a467784468eb62680a13533934858b1b1">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html#a244ba61659af901a88710350b068c4ac">iterator</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator that is past the last entity of the observer. </p>
+<p>The returned iterator points to the entity following the last entity of the observer. Attempting to dereference the returned iterator results in undefined behavior.</p>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the entity following the last entity of the observer. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00402">402</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac01ad207f6858ef841dad4bccb734205" name="ac01ad207f6858ef841dad4bccb734205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01ad207f6858ef841dad4bccb734205">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp; <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">::operator</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move assignment operator, deleted on purpose. </p>
+<dl class="section return"><dt>返回</dt><dd>This observer. </dd></dl>
+
+</div>
+</div>
+<a id="a48774bb0a91b1a491228971a49904f95" name="a48774bb0a91b1a491228971a49904f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48774bb0a91b1a491228971a49904f95">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp; <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">::operator</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__observer.html">basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default copy assignment operator, deleted on purpose. </p>
+<dl class="section return"><dt>返回</dt><dd>This observer. </dd></dl>
+
+</div>
+</div>
+<a id="ab42aeb1e1ffb32b98bc4da4f30755ec1" name="ab42aeb1e1ffb32b98bc4da4f30755ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42aeb1e1ffb32b98bc4da4f30755ec1">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__observer.html#a147a0e35035fc3c19b67b31d66d2d80b">size_type</a> <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of elements in an observer. </p>
+<dl class="section return"><dt>返回</dt><dd>Number of elements. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00352">352</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="afbf105924283b75976a69559da17d953" name="afbf105924283b75976a69559da17d953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf105924283b75976a69559da17d953">&#9670;&#160;</a></span>release</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(* <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::release) (<a class="el" href="classentt_1_1basic__observer.html">basic_observer</a> &amp;, <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a> &gt; &amp;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00450">450</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="observer_8hpp_source.html#l00274">entt::basic_observer&lt; Entity &gt;::connect()</a> , 以及 <a class="el" href="observer_8hpp_source.html#l00341">entt::basic_observer&lt; Entity &gt;::disconnect()</a>.</p>
+
+</div>
+</div>
+<a id="a36b561e57c1eb012f960e534ce5f9400" name="a36b561e57c1eb012f960e534ce5f9400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b561e57c1eb012f960e534ce5f9400">&#9670;&#160;</a></span>target</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt;<a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a>&gt;* <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::target</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00449">449</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="observer_8hpp_source.html#l00333">entt::basic_observer&lt; Entity &gt;::connect()</a> , 以及 <a class="el" href="observer_8hpp_source.html#l00341">entt::basic_observer&lt; Entity &gt;::disconnect()</a>.</p>
+
+</div>
+</div>
+<a id="a6f0912f8449a089e451a47249f162850" name="a6f0912f8449a089e451a47249f162850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0912f8449a089e451a47249f162850">&#9670;&#160;</a></span>view</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html">storage</a>&lt;<a class="el" href="classentt_1_1basic__observer.html#af7a57f53ed7a6c835129480ff6594f7d">entity_type</a>, <a class="el" href="classentt_1_1basic__observer.html#aa2e8d14973b7773a2890c3c92dd91ca2">payload_type</a>&gt; <a class="el" href="classentt_1_1basic__observer.html">entt::basic_observer</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="observer_8hpp_source.html">observer.hpp</a> 第 <a class="el" href="observer_8hpp_source.html#l00451">451</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/entity/<a class="el" href="entity_2fwd_8hpp_source.html">fwd.hpp</a></li>
+<li>third_party/entt/entity/<a class="el" href="observer_8hpp_source.html">observer.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

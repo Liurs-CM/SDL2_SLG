@@ -1,0 +1,31 @@
+\doxysection{dir\+\_\+to\+\_\+pos.\+hpp}
+\hypertarget{dir__to__pos_8hpp_source}{}\label{dir__to__pos_8hpp_source}\index{src/util/dir\_to\_pos.hpp@{src/util/dir\_to\_pos.hpp}}
+\mbox{\hyperlink{dir__to__pos_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ dir\_to\_pos.hpp}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 19/9/18.}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ UTIL\_DIR\_TO\_POS\_HPP}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ UTIL\_DIR\_TO\_POS\_HPP}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{util_2dir_8hpp}{dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pos_8hpp}{pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00015}\mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{00015}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structPos}{Pos}}\ \mbox{\hyperlink{dir__to__pos_8hpp_a3d8782c754e99767a71cc827b19d02d4}{toPos}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ dir,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ length\ =\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00016}00016\ \ \ \textcolor{keywordflow}{switch}\ (dir)\ \{}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{Dir::up}}:\ \ \ \ \textcolor{keywordflow}{return}\ \{0,\ -\/1\ *\ length\};}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00018}00018\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}}:\ \textcolor{keywordflow}{return}\ \{1\ *\ length,\ 0\};}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{Dir::down}}:\ \ \textcolor{keywordflow}{return}\ \{0,\ 1\ *\ length\};}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}}:\ \ \textcolor{keywordflow}{return}\ \{-\/1\ *\ length,\ 0\};}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{default}:\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{0,\ 0\};}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00022}00022\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00023}00023\ \}}
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{dir__to__pos_8hpp_source_l00025}00025\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

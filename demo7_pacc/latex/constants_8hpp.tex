@@ -1,0 +1,358 @@
+\doxysection{src/core/constants.hpp 文件参考}
+\hypertarget{constants_8hpp}{}\label{constants_8hpp}\index{src/core/constants.hpp@{src/core/constants.hpp}}
+{\ttfamily \#include "{}util/pos.\+hpp"{}}\newline
+{\ttfamily \#include "{}util/dir.\+hpp"{}}\newline
+constants.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{constants_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{constants_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1}{tiles}} = \{19, 22\}
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tile\+Size}} = 8
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}{tiles\+Px}} = \mbox{\hyperlink{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1}{tiles}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tile\+Size}}
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_adcf15c7f2fac4c6a12bd6f727cfa5a5c}{ghost\+Scared\+Time}} = 40
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_a078e1934f80be127af4262156c544545}{ghost\+Scared\+Flash\+Time}} = 10
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_aca236d1d671de96e48ea984000115de8}{ghost\+Scared\+Flash\+Rate}} = 4
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_ab0bbf9a8653a208a6ef146978ee35057}{dots\+In\+Maze}} = 152
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a24ac5421732571c10042af9df27e37cd}{player\+Spawn\+Pos}} = \{9, 16\}
+\item 
+constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} \mbox{\hyperlink{constants_8hpp_a315277dcfbafa6fb33f2abd6b879b4eb}{player\+Spawn\+Dir}} = \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir\+::left}}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54}{outside\+House}} = \{ 9, 8\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a596eb5de113113b529cced12e95a1375}{blinky\+Home}} = \{ 9, 10\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a808fce3d296f7f0540ab50931216dbf5}{pinky\+Home}} = \{ 9, 10\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a52e8dc1f1863e7154ad2ca8fb37f9376}{inky\+Home}} = \{ 8, 10\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a0e4431349011a940e1926843a9f8cffa}{clyde\+Home}} = \{10, 10\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_afcd1f2a3417961405a4825bb7ef3fd6c}{blinky\+Scatter}} = \{18, 0\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_ae3a15613adfdc5c0b445a432fa7105da}{pinky\+Scatter}} = \{ 0, 0\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a65649e747ad5ba1c3afc997143285e4f}{inky\+Scatter}} = \{18, 21\}
+\item 
+constexpr \mbox{\hyperlink{structPos}{Pos}} \mbox{\hyperlink{constants_8hpp_a3a1c70139c44f5115dc9264aa6c1dd6e}{clyde\+Scatter}} = \{ 0, 21\}
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_a7a52d0f67485d0bcc62aac2f3721eee8}{scatter\+Ticks}} = 15
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_a8535825c85225726038b2ce83174f861}{chase\+Ticks}} = 40
+\item 
+constexpr int \mbox{\hyperlink{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3}{fps}} = 20
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{变量说明}
+\Hypertarget{constants_8hpp_a596eb5de113113b529cced12e95a1375}\label{constants_8hpp_a596eb5de113113b529cced12e95a1375} 
+\index{constants.hpp@{constants.hpp}!blinkyHome@{blinkyHome}}
+\index{blinkyHome@{blinkyHome}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{blinkyHome}{blinkyHome}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} blinky\+Home = \{ 9, 10\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00041}{41}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00051}{make\+Blinky()}}.
+
+\Hypertarget{constants_8hpp_afcd1f2a3417961405a4825bb7ef3fd6c}\label{constants_8hpp_afcd1f2a3417961405a4825bb7ef3fd6c} 
+\index{constants.hpp@{constants.hpp}!blinkyScatter@{blinkyScatter}}
+\index{blinkyScatter@{blinkyScatter}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{blinkyScatter}{blinkyScatter}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} blinky\+Scatter = \{18, 0\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00047}{47}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00051}{make\+Blinky()}}.
+
+\Hypertarget{constants_8hpp_a8535825c85225726038b2ce83174f861}\label{constants_8hpp_a8535825c85225726038b2ce83174f861} 
+\index{constants.hpp@{constants.hpp}!chaseTicks@{chaseTicks}}
+\index{chaseTicks@{chaseTicks}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{chaseTicks}{chaseTicks}}
+{\footnotesize\ttfamily constexpr int chase\+Ticks = 40\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00057}{57}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+\Hypertarget{constants_8hpp_a0e4431349011a940e1926843a9f8cffa}\label{constants_8hpp_a0e4431349011a940e1926843a9f8cffa} 
+\index{constants.hpp@{constants.hpp}!clydeHome@{clydeHome}}
+\index{clydeHome@{clydeHome}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{clydeHome}{clydeHome}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} clyde\+Home = \{10, 10\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00044}{44}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00077}{make\+Clyde()}}.
+
+\Hypertarget{constants_8hpp_a3a1c70139c44f5115dc9264aa6c1dd6e}\label{constants_8hpp_a3a1c70139c44f5115dc9264aa6c1dd6e} 
+\index{constants.hpp@{constants.hpp}!clydeScatter@{clydeScatter}}
+\index{clydeScatter@{clydeScatter}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{clydeScatter}{clydeScatter}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} clyde\+Scatter = \{ 0, 21\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00050}{50}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00077}{make\+Clyde()}}.
+
+\Hypertarget{constants_8hpp_ab0bbf9a8653a208a6ef146978ee35057}\label{constants_8hpp_ab0bbf9a8653a208a6ef146978ee35057} 
+\index{constants.hpp@{constants.hpp}!dotsInMaze@{dotsInMaze}}
+\index{dotsInMaze@{dotsInMaze}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{dotsInMaze}{dotsInMaze}}
+{\footnotesize\ttfamily constexpr int dots\+In\+Maze = 152\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00031}{31}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+\Hypertarget{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3}\label{constants_8hpp_a76e98dc9db863a7719c285b68a61cce3} 
+\index{constants.hpp@{constants.hpp}!fps@{fps}}
+\index{fps@{fps}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{fps}{fps}}
+{\footnotesize\ttfamily constexpr int fps = 20\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00059}{59}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+
+\Hypertarget{constants_8hpp_aca236d1d671de96e48ea984000115de8}\label{constants_8hpp_aca236d1d671de96e48ea984000115de8} 
+\index{constants.hpp@{constants.hpp}!ghostScaredFlashRate@{ghostScaredFlashRate}}
+\index{ghostScaredFlashRate@{ghostScaredFlashRate}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostScaredFlashRate}{ghostScaredFlashRate}}
+{\footnotesize\ttfamily constexpr int ghost\+Scared\+Flash\+Rate = 4\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00028}{28}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{render_8cpp_source_l00031}{ghost\+Render()}}.
+
+\Hypertarget{constants_8hpp_a078e1934f80be127af4262156c544545}\label{constants_8hpp_a078e1934f80be127af4262156c544545} 
+\index{constants.hpp@{constants.hpp}!ghostScaredFlashTime@{ghostScaredFlashTime}}
+\index{ghostScaredFlashTime@{ghostScaredFlashTime}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostScaredFlashTime}{ghostScaredFlashTime}}
+{\footnotesize\ttfamily constexpr int ghost\+Scared\+Flash\+Time = 10\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00026}{26}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{render_8cpp_source_l00031}{ghost\+Render()}}.
+
+\Hypertarget{constants_8hpp_adcf15c7f2fac4c6a12bd6f727cfa5a5c}\label{constants_8hpp_adcf15c7f2fac4c6a12bd6f727cfa5a5c} 
+\index{constants.hpp@{constants.hpp}!ghostScaredTime@{ghostScaredTime}}
+\index{ghostScaredTime@{ghostScaredTime}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{ghostScaredTime}{ghostScaredTime}}
+{\footnotesize\ttfamily constexpr int ghost\+Scared\+Time = 40\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00022}{22}} 行定义.
+
+\Hypertarget{constants_8hpp_a52e8dc1f1863e7154ad2ca8fb37f9376}\label{constants_8hpp_a52e8dc1f1863e7154ad2ca8fb37f9376} 
+\index{constants.hpp@{constants.hpp}!inkyHome@{inkyHome}}
+\index{inkyHome@{inkyHome}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{inkyHome}{inkyHome}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} inky\+Home = \{ 8, 10\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00043}{43}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00066}{make\+Inky()}}.
+
+\Hypertarget{constants_8hpp_a65649e747ad5ba1c3afc997143285e4f}\label{constants_8hpp_a65649e747ad5ba1c3afc997143285e4f} 
+\index{constants.hpp@{constants.hpp}!inkyScatter@{inkyScatter}}
+\index{inkyScatter@{inkyScatter}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{inkyScatter}{inkyScatter}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} inky\+Scatter = \{18, 21\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00049}{49}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00066}{make\+Inky()}}.
+
+\Hypertarget{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54}\label{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54} 
+\index{constants.hpp@{constants.hpp}!outsideHouse@{outsideHouse}}
+\index{outsideHouse@{outsideHouse}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{outsideHouse}{outsideHouse}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} outside\+House = \{ 9, 8\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00038}{38}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{house_8cpp_source_l00031}{leave\+House()}} , 以及 \mbox{\hyperlink{factories_8cpp_source_l00051}{make\+Blinky()}}.
+
+\Hypertarget{constants_8hpp_a808fce3d296f7f0540ab50931216dbf5}\label{constants_8hpp_a808fce3d296f7f0540ab50931216dbf5} 
+\index{constants.hpp@{constants.hpp}!pinkyHome@{pinkyHome}}
+\index{pinkyHome@{pinkyHome}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{pinkyHome}{pinkyHome}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} pinky\+Home = \{ 9, 10\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00042}{42}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00059}{make\+Pinky()}}.
+
+\Hypertarget{constants_8hpp_ae3a15613adfdc5c0b445a432fa7105da}\label{constants_8hpp_ae3a15613adfdc5c0b445a432fa7105da} 
+\index{constants.hpp@{constants.hpp}!pinkyScatter@{pinkyScatter}}
+\index{pinkyScatter@{pinkyScatter}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{pinkyScatter}{pinkyScatter}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} pinky\+Scatter = \{ 0, 0\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00048}{48}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00059}{make\+Pinky()}}.
+
+\Hypertarget{constants_8hpp_a315277dcfbafa6fb33f2abd6b879b4eb}\label{constants_8hpp_a315277dcfbafa6fb33f2abd6b879b4eb} 
+\index{constants.hpp@{constants.hpp}!playerSpawnDir@{playerSpawnDir}}
+\index{playerSpawnDir@{playerSpawnDir}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{playerSpawnDir}{playerSpawnDir}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}} player\+Spawn\+Dir = \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir\+::left}}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00036}{36}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00024}{make\+Player()}}.
+
+\Hypertarget{constants_8hpp_a24ac5421732571c10042af9df27e37cd}\label{constants_8hpp_a24ac5421732571c10042af9df27e37cd} 
+\index{constants.hpp@{constants.hpp}!playerSpawnPos@{playerSpawnPos}}
+\index{playerSpawnPos@{playerSpawnPos}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{playerSpawnPos}{playerSpawnPos}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} player\+Spawn\+Pos = \{9, 16\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00034}{34}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{factories_8cpp_source_l00024}{make\+Player()}}.
+
+\Hypertarget{constants_8hpp_a7a52d0f67485d0bcc62aac2f3721eee8}\label{constants_8hpp_a7a52d0f67485d0bcc62aac2f3721eee8} 
+\index{constants.hpp@{constants.hpp}!scatterTicks@{scatterTicks}}
+\index{scatterTicks@{scatterTicks}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{scatterTicks}{scatterTicks}}
+{\footnotesize\ttfamily constexpr int scatter\+Ticks = 15\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00054}{54}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{Game\+::logic()}}.
+
+\Hypertarget{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1}\label{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1} 
+\index{constants.hpp@{constants.hpp}!tiles@{tiles}}
+\index{tiles@{tiles}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} tiles = \{19, 22\}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00016}{16}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{maze_8cpp_source_l00038}{make\+Maze\+State()}}.
+
+\Hypertarget{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}\label{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7} 
+\index{constants.hpp@{constants.hpp}!tileSize@{tileSize}}
+\index{tileSize@{tileSize}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{tileSize}{tileSize}}
+{\footnotesize\ttfamily constexpr int tile\+Size = 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00018}{18}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{render_8cpp_source_l00056}{dot\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00031}{ghost\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00019}{player\+Render()}} , 以及 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+
+\Hypertarget{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30}\label{constants_8hpp_afebd262d3b4bb23a257f6440cf1b8b30} 
+\index{constants.hpp@{constants.hpp}!tilesPx@{tilesPx}}
+\index{tilesPx@{tilesPx}!constants.hpp@{constants.hpp}}
+\doxysubsubsection{\texorpdfstring{tilesPx}{tilesPx}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structPos}{Pos}} tiles\+Px = \mbox{\hyperlink{constants_8hpp_a71eae24fe7f23eb5ff25217a5a1ee9b1}{tiles}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{constants_8hpp_a23cad1852a877fb7d9bb6c37452073c7}{tile\+Size}}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+在文件 \mbox{\hyperlink{constants_8hpp_source}{constants.\+hpp}} 第 \mbox{\hyperlink{constants_8hpp_source_l00020}{20}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{render_8cpp_source_l00073}{full\+Render()}} , 以及 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+

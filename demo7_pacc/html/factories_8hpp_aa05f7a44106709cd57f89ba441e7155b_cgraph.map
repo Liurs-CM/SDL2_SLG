@@ -1,0 +1,7 @@
+<map id="makePinky" name="makePinky">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,99,38"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#ac138930f54716e2b31907586e45367be" title="Assigns the given component to an entity." alt="" coords="147,5,293,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,23,133,23,133,28,99,28"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="341,5,488,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,23,327,23,327,28,293,28"/>
+</map>

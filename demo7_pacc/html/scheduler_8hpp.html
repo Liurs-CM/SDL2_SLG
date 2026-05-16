@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: third_party/entt/process/scheduler.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_44f42edf5dd23d4deca0321224e9ce90.html">third_party</a></li><li class="navelem"><a class="el" href="dir_abf49e4c0a5e46cdde81ebc69689e154.html">entt</a></li><li class="navelem"><a class="el" href="dir_3588a37b4fe15efce9a48ca2f24989a0.html">process</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a>  </div>
+  <div class="headertitle"><div class="title">scheduler.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">../config/config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="process_8hpp_source.html">process.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+scheduler.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="scheduler_8hpp__incl.png" border="0" usemap="#athird__party_2entt_2process_2scheduler_8hpp" alt=""/></div>
+<map name="athird__party_2entt_2process_2scheduler_8hpp" id="athird__party_2entt_2process_2scheduler_8hpp">
+<area shape="rect" title=" " alt="" coords="199,5,376,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,68,119"/>
+<area shape="poly" title=" " alt="" coords="228,48,82,93,81,88,227,43"/>
+<area shape="rect" title=" " alt="" coords="93,93,170,119"/>
+<area shape="poly" title=" " alt="" coords="251,48,168,89,165,85,249,43"/>
+<area shape="rect" title=" " alt="" coords="316,240,376,265"/>
+<area shape="poly" title=" " alt="" coords="311,44,329,65,344,92,353,128,357,164,353,226,348,226,351,164,348,129,340,94,325,69,307,47"/>
+<area shape="rect" title=" " alt="" coords="245,93,330,119"/>
+<area shape="poly" title=" " alt="" coords="290,46,290,79,285,79,285,46"/>
+<area shape="rect" title=" " alt="" coords="716,460,808,485"/>
+<area shape="poly" title=" " alt="" coords="377,30,515,45,591,57,666,72,734,91,789,115,810,128,827,143,837,160,841,178,841,328,835,364,821,398,803,428,784,451,780,448,798,425,816,395,830,362,835,327,835,178,832,162,823,147,807,133,787,120,732,96,665,77,590,62,514,50,376,35"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="401,387,529,412"/>
+<area shape="poly" title=" " alt="" coords="270,47,252,69,235,95,216,135,210,178,210,254,214,282,227,306,246,327,270,344,328,370,388,385,386,390,326,375,267,349,242,331,223,309,209,284,205,254,205,178,211,133,230,92,248,66,266,44"/>
+<area shape="rect" href="process_8hpp.html" title=" " alt="" coords="405,93,505,119"/>
+<area shape="poly" title=" " alt="" coords="329,43,419,85,417,90,326,48"/>
+<area shape="poly" title=" " alt="" coords="513,409,703,455,702,460,512,415"/>
+<area shape="rect" title=" " alt="" coords="541,460,607,485"/>
+<area shape="poly" title=" " alt="" coords="484,410,546,450,543,455,481,414"/>
+<area shape="rect" title=" " alt="" coords="430,460,499,485"/>
+<area shape="poly" title=" " alt="" coords="467,412,467,446,462,446,462,412"/>
+<area shape="poly" title=" " alt="" coords="449,121,365,230,361,227,444,118"/>
+<area shape="poly" title=" " alt="" coords="506,105,589,111,636,119,682,132,724,151,758,176,781,209,788,229,790,251,790,327,784,393,772,448,766,446,778,392,785,327,785,251,783,230,777,212,754,180,721,155,680,137,635,125,588,116,505,110"/>
+<area shape="poly" title=" " alt="" coords="429,121,384,144,337,178,318,197,306,219,302,241,307,264,331,301,363,333,397,359,429,378,427,382,394,363,360,337,327,305,302,266,296,241,301,217,314,194,334,174,381,140,427,116"/>
+<area shape="rect" href="type__traits_8hpp.html" title=" " alt="" coords="456,167,620,192"/>
+<area shape="poly" title=" " alt="" coords="470,117,516,155,512,160,467,121"/>
+<area shape="poly" title=" " alt="" coords="508,195,390,238,388,233,506,190"/>
+<area shape="poly" title=" " alt="" coords="589,190,636,208,659,221,680,238,700,262,717,289,742,346,756,402,763,446,757,447,751,403,737,348,713,291,696,265,676,242,656,226,633,213,587,195"/>
+<area shape="poly" title=" " alt="" coords="523,194,497,214,467,241,439,275,419,314,418,330,422,346,443,375,439,378,417,349,412,331,414,313,435,272,463,238,494,210,519,190"/>
+<area shape="rect" title=" " alt="" coords="628,313,699,339"/>
+<area shape="poly" title=" " alt="" coords="585,190,624,208,643,222,658,239,669,269,670,300,664,300,663,270,653,241,639,225,621,212,583,194"/>
+<area shape="rect" href="hashed__string_8hpp.html" title=" " alt="" coords="502,240,643,265"/>
+<area shape="poly" title=" " alt="" coords="546,191,563,226,559,229,541,194"/>
+<area shape="rect" href="core_2fwd_8hpp.html" title=" " alt="" coords="428,313,501,339"/>
+<area shape="poly" title=" " alt="" coords="528,194,510,215,492,241,480,271,472,300,467,299,475,270,488,239,506,212,524,191"/>
+<area shape="poly" title=" " alt="" coords="567,267,516,340,486,378,482,374,512,337,563,264"/>
+<area shape="poly" title=" " alt="" coords="575,266,577,446,571,446,570,266"/>
+<area shape="poly" title=" " alt="" coords="589,263,639,302,636,307,586,267"/>
+<area shape="poly" title=" " alt="" coords="557,268,495,308,492,303,554,263"/>
+<area shape="poly" title=" " alt="" coords="467,339,467,373,462,373,462,339"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="scheduler_8hpp__dep__incl.png" border="0" usemap="#athird__party_2entt_2process_2scheduler_8hppdep" alt=""/></div>
+<map name="athird__party_2entt_2process_2scheduler_8hppdep" id="athird__party_2entt_2process_2scheduler_8hppdep">
+<area shape="rect" title=" " alt="" coords="7,5,185,45"/>
+<area shape="rect" href="entt_8hpp.html" title=" " alt="" coords="5,93,187,119"/>
+<area shape="poly" title=" " alt="" coords="99,59,99,93,93,93,93,59"/>
+</map>
+</div>
+</div>
+<p><a href="scheduler_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1scheduler.html">entt::scheduler&lt; Delta &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooperative scheduler for processes.  <a href="classentt_1_1scheduler.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1process__handler.html">entt::scheduler&lt; Delta &gt;::process_handler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1scheduler_1_1continuation.html">entt::scheduler&lt; Delta &gt;::continuation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespaceentt" id="r_namespaceentt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html">entt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

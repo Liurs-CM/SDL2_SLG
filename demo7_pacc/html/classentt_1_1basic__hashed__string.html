@@ -1,0 +1,886 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::basic_hashed_string&lt; Char &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1basic__hashed__string.html">basic_hashed_string</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classentt_1_1basic__hashed__string-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::basic_hashed_string&lt; Char &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Zero overhead unique identifier.  
+ <a href="classentt_1_1basic__hashed__string.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1basic__hashed__string_1_1const__wrapper.html">const_wrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad4e8f181e92b9218747ac43fe24c4cbc" id="r_ad4e8f181e92b9218747ac43fe24c4cbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a></td></tr>
+<tr class="memdesc:ad4e8f181e92b9218747ac43fe24c4cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character type.  <br /></td></tr>
+<tr class="separator:ad4e8f181e92b9218747ac43fe24c4cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1631b1f6ecd56a451366eeb228a6ffb9" id="r_a1631b1f6ecd56a451366eeb228a6ffb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a> = <a class="el" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a></td></tr>
+<tr class="memdesc:a1631b1f6ecd56a451366eeb228a6ffb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsigned integer type.  <br /></td></tr>
+<tr class="separator:a1631b1f6ecd56a451366eeb228a6ffb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2c75763872c028b062701523e0314f29" id="r_a2c75763872c028b062701523e0314f29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a2c75763872c028b062701523e0314f29">basic_hashed_string</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a2c75763872c028b062701523e0314f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty hashed string.  <br /></td></tr>
+<tr class="separator:a2c75763872c028b062701523e0314f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac422f04d11c1e5573f04809c1e1c106" id="r_aac422f04d11c1e5573f04809c1e1c106"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:aac422f04d11c1e5573f04809c1e1c106"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#aac422f04d11c1e5573f04809c1e1c106">basic_hashed_string</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a>(&amp;curr)[<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">N</a>]) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:aac422f04d11c1e5573f04809c1e1c106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hashed string from an array of const characters.  <br /></td></tr>
+<tr class="separator:aac422f04d11c1e5573f04809c1e1c106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab5e09f3e552436872bcaaf9ca2c1ac" id="r_a7ab5e09f3e552436872bcaaf9ca2c1ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a7ab5e09f3e552436872bcaaf9ca2c1ac">basic_hashed_string</a> (<a class="el" href="structentt_1_1basic__hashed__string_1_1const__wrapper.html">const_wrapper</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">wrapper</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a7ab5e09f3e552436872bcaaf9ca2c1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit constructor on purpose to avoid constructing a hashed string directly from a <code>const value_type *</code>.  <br /></td></tr>
+<tr class="separator:a7ab5e09f3e552436872bcaaf9ca2c1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d91103bc16d8b2a0eb2b42b50f4a0ea" id="r_a5d91103bc16d8b2a0eb2b42b50f4a0ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a5d91103bc16d8b2a0eb2b42b50f4a0ea">data</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a5d91103bc16d8b2a0eb2b42b50f4a0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the human-readable representation of a hashed string.  <br /></td></tr>
+<tr class="separator:a5d91103bc16d8b2a0eb2b42b50f4a0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3a92282e81fb50af66953f39671f3c" id="r_afb3a92282e81fb50af66953f39671f3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#afb3a92282e81fb50af66953f39671f3c">value</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:afb3a92282e81fb50af66953f39671f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the numeric representation of a hashed string.  <br /></td></tr>
+<tr class="separator:afb3a92282e81fb50af66953f39671f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0cc0b27f0dd52a07e25f5014ba426fc" id="r_ad0cc0b27f0dd52a07e25f5014ba426fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#ad0cc0b27f0dd52a07e25f5014ba426fc">operator const value_type *</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ad0cc0b27f0dd52a07e25f5014ba426fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the human-readable representation of a hashed string.    <br /></td></tr>
+<tr class="separator:ad0cc0b27f0dd52a07e25f5014ba426fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2009a1ac648d8bdaeac642a6476f2bd" id="r_aa2009a1ac648d8bdaeac642a6476f2bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#aa2009a1ac648d8bdaeac642a6476f2bd">operator hash_type</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:aa2009a1ac648d8bdaeac642a6476f2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the numeric representation of a hashed string.  <br /></td></tr>
+<tr class="separator:aa2009a1ac648d8bdaeac642a6476f2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51311d6903443296ce076536df2b46da" id="r_a51311d6903443296ce076536df2b46da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a51311d6903443296ce076536df2b46da">operator==</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html">basic_hashed_string</a> &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a51311d6903443296ce076536df2b46da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two hashed strings.  <br /></td></tr>
+<tr class="separator:a51311d6903443296ce076536df2b46da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:abbd837edf6b152c7b46bfd619241264c" id="r_abbd837edf6b152c7b46bfd619241264c"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:abbd837edf6b152c7b46bfd619241264c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#abbd837edf6b152c7b46bfd619241264c">value</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a>(&amp;<a class="el" href="classentt_1_1basic__hashed__string.html#ad82c80d08b5de8afdb267c77c28243db">str</a>)[<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">N</a>]) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:abbd837edf6b152c7b46bfd619241264c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns directly the numeric representation of a string.  <br /></td></tr>
+<tr class="separator:abbd837edf6b152c7b46bfd619241264c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c29491d20b14d8815229604d3580d3e" id="r_a9c29491d20b14d8815229604d3580d3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a9c29491d20b14d8815229604d3580d3e">value</a> (<a class="el" href="structentt_1_1basic__hashed__string_1_1const__wrapper.html">const_wrapper</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">wrapper</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a9c29491d20b14d8815229604d3580d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns directly the numeric representation of a string.  <br /></td></tr>
+<tr class="separator:a9c29491d20b14d8815229604d3580d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccb9802c4f1077537df9b56e33e1f46" id="r_a7ccb9802c4f1077537df9b56e33e1f46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a7ccb9802c4f1077537df9b56e33e1f46">value</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a> *<a class="el" href="classentt_1_1basic__hashed__string.html#ad82c80d08b5de8afdb267c77c28243db">str</a>, std::size_t size) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a7ccb9802c4f1077537df9b56e33e1f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns directly the numeric representation of a string view.  <br /></td></tr>
+<tr class="separator:a7ccb9802c4f1077537df9b56e33e1f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:af6f8da1a181a597a4d090c76a246e100" id="r_af6f8da1a181a597a4d090c76a246e100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#af6f8da1a181a597a4d090c76a246e100">traits_type</a> = internal::fnv1a_traits&lt; <a class="el" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a> &gt;</td></tr>
+<tr class="separator:af6f8da1a181a597a4d090c76a246e100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静态 Private 成员函数</h2></td></tr>
+<tr class="memitem:afae4f908a9600e746c548d7c1f97758e" id="r_afae4f908a9600e746c548d7c1f97758e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#afae4f908a9600e746c548d7c1f97758e">helper</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> *curr) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:afae4f908a9600e746c548d7c1f97758e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ad82c80d08b5de8afdb267c77c28243db" id="r_ad82c80d08b5de8afdb267c77c28243db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#ad82c80d08b5de8afdb267c77c28243db">str</a></td></tr>
+<tr class="separator:ad82c80d08b5de8afdb267c77c28243db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238b76c4e85d5cce8baa44bb49cb2514" id="r_a238b76c4e85d5cce8baa44bb49cb2514"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__hashed__string.html#a238b76c4e85d5cce8baa44bb49cb2514">hash</a></td></tr>
+<tr class="separator:a238b76c4e85d5cce8baa44bb49cb2514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a>&gt;<br />
+class entt::basic_hashed_string&lt; Char &gt;</div><p>Zero overhead unique identifier. </p>
+<p>TURN_OFF_DOXYGEN </p>
+<p>A hashed string is a compile-time tool that allows users to use human-readable identifers in the codebase while using their numeric counterparts at runtime.<br  />
+ Because of that, a hashed string can also be used in constant expressions if required.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Char</td><td>Character type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00064">64</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a1631b1f6ecd56a451366eeb228a6ffb9" name="a1631b1f6ecd56a451366eeb228a6ffb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1631b1f6ecd56a451366eeb228a6ffb9">&#9670;&#160;</a></span>hash_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::hash_type =  <a class="el" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unsigned integer type. </p>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af6f8da1a181a597a4d090c76a246e100" name="af6f8da1a181a597a4d090c76a246e100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f8da1a181a597a4d090c76a246e100">&#9670;&#160;</a></span>traits_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::traits_type =  internal::fnv1a_traits&lt;<a class="el" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad4e8f181e92b9218747ac43fe24c4cbc" name="ad4e8f181e92b9218747ac43fe24c4cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e8f181e92b9218747ac43fe24c4cbc">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::value_type =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Character type. </p>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2c75763872c028b062701523e0314f29" name="a2c75763872c028b062701523e0314f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c75763872c028b062701523e0314f29">&#9670;&#160;</a></span>basic_hashed_string() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::basic_hashed_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an empty hashed string. </p>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00132">132</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aac422f04d11c1e5573f04809c1e1c106" name="aac422f04d11c1e5573f04809c1e1c106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac422f04d11c1e5573f04809c1e1c106">&#9670;&#160;</a></span>basic_hashed_string() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::basic_hashed_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a>(&amp;)&#160;</td>
+          <td class="paramname"><em>curr</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a hashed string from an array of const characters. </p>
+<p>Forcing template resolution avoids implicit conversions. An human-readable identifier can be anything but a plain, old bunch of characters.<br  />
+ Example of use: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classentt_1_1basic__hashed__string.html">basic_hashed_string&lt;char&gt;</a> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">hs</a>{<span class="stringliteral">&quot;my.png&quot;</span>};</div>
+<div class="ttc" id="aclassentt_1_1basic__hashed__string_html"><div class="ttname"><a href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a></div><div class="ttdoc">Zero overhead unique identifier.</div><div class="ttdef"><b>Definition</b> <a href="hashed__string_8hpp_source.html#l00064">hashed_string.hpp:64</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+</div><!-- fragment --><dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>Number of characters of the identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curr</td><td>Human-readable identifer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00151">151</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7ab5e09f3e552436872bcaaf9ca2c1ac" name="a7ab5e09f3e552436872bcaaf9ca2c1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab5e09f3e552436872bcaaf9ca2c1ac">&#9670;&#160;</a></span>basic_hashed_string() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::basic_hashed_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__hashed__string_1_1const__wrapper.html">const_wrapper</a>&#160;</td>
+          <td class="paramname"><em>wrapper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Explicit constructor on purpose to avoid constructing a hashed string directly from a <code>const value_type *</code>. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wrapper</td><td>Helps achieving the purpose by relying on overloading. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00160">160</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a5d91103bc16d8b2a0eb2b42b50f4a0ea" name="a5d91103bc16d8b2a0eb2b42b50f4a0ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d91103bc16d8b2a0eb2b42b50f4a0ea">&#9670;&#160;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a> * <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the human-readable representation of a hashed string. </p>
+<dl class="section return"><dt>返回</dt><dd>The string used to initialize the instance. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00168">168</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00199">entt::basic_hashed_string&lt; Char &gt;::str</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="hashed__string_8hpp_source.html#l00181">entt::basic_hashed_string&lt; Char &gt;::operator const value_type *()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea_icgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea_icgraph" id="aclassentt_1_1basic__hashed__string_a5d91103bc16d8b2a0eb2b42b50f4a0ea_icgraph">
+<area shape="rect" title="Returns the human&#45;readable representation of a hashed string." alt="" coords="221,13,365,53"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#ad0cc0b27f0dd52a07e25f5014ba426fc" title="Returns the human&#45;readable representation of a hashed string." alt="" coords="5,5,173,60"/>
+<area shape="poly" title=" " alt="" coords="207,35,173,35,173,30,207,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afae4f908a9600e746c548d7c1f97758e" name="afae4f908a9600e746c548d7c1f97758e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae4f908a9600e746c548d7c1f97758e">&#9670;&#160;</a></span>helper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a4780f9d4e975066afb16b1309c644995">id_type</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::helper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> *&#160;</td>
+          <td class="paramname"><em>curr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00074">74</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00176">entt::basic_hashed_string&lt; Char &gt;::value()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="hashed__string_8hpp_source.html#l00106">entt::basic_hashed_string&lt; Char &gt;::value()</a> , 以及 <a class="el" href="hashed__string_8hpp_source.html#l00115">entt::basic_hashed_string&lt; Char &gt;::value()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_cgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_cgraph" id="aclassentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,149,45"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#afb3a92282e81fb50af66953f39671f3c" title="Returns the numeric representation of a hashed string." alt="" coords="197,5,341,45"/>
+<area shape="poly" title=" " alt="" coords="150,23,184,23,184,28,150,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_icgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_icgraph" id="aclassentt_1_1basic__hashed__string_afae4f908a9600e746c548d7c1f97758e_icgraph">
+<area shape="rect" title=" " alt="" coords="197,37,341,77"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#abbd837edf6b152c7b46bfd619241264c" title="Returns directly the numeric representation of a string." alt="" coords="5,5,149,45"/>
+<area shape="poly" title=" " alt="" coords="183,46,149,40,150,35,184,40"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#a9c29491d20b14d8815229604d3580d3e" title="Returns directly the numeric representation of a string." alt="" coords="5,69,149,109"/>
+<area shape="poly" title=" " alt="" coords="184,74,150,80,149,75,183,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0cc0b27f0dd52a07e25f5014ba426fc" name="ad0cc0b27f0dd52a07e25f5014ba426fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0cc0b27f0dd52a07e25f5014ba426fc">&#9670;&#160;</a></span>operator const value_type *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">::operator</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a> * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the human-readable representation of a hashed string.   </p>
+<dl class="section return"><dt>返回</dt><dd>The string used to initialize the instance.   </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00181">181</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00168">entt::basic_hashed_string&lt; Char &gt;::data()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc_cgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc_cgraph" id="aclassentt_1_1basic__hashed__string_ad0cc0b27f0dd52a07e25f5014ba426fc_cgraph">
+<area shape="rect" title="Returns the human&#45;readable representation of a hashed string." alt="" coords="5,5,173,60"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#a5d91103bc16d8b2a0eb2b42b50f4a0ea" title="Returns the human&#45;readable representation of a hashed string." alt="" coords="221,13,365,53"/>
+<area shape="poly" title=" " alt="" coords="174,30,208,30,208,35,174,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa2009a1ac648d8bdaeac642a6476f2bd" name="aa2009a1ac648d8bdaeac642a6476f2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2009a1ac648d8bdaeac642a6476f2bd">&#9670;&#160;</a></span>operator hash_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">::operator</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the numeric representation of a hashed string. </p>
+<dl class="section return"><dt>返回</dt><dd>The numeric representation of the instance. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00187">187</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00176">entt::basic_hashed_string&lt; Char &gt;::value()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd_cgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd_cgraph" id="aclassentt_1_1basic__hashed__string_aa2009a1ac648d8bdaeac642a6476f2bd_cgraph">
+<area shape="rect" title="Returns the numeric representation of a hashed string." alt="" coords="5,5,205,45"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#afb3a92282e81fb50af66953f39671f3c" title="Returns the numeric representation of a hashed string." alt="" coords="253,5,397,45"/>
+<area shape="poly" title=" " alt="" coords="206,23,239,23,239,28,206,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51311d6903443296ce076536df2b46da" name="a51311d6903443296ce076536df2b46da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51311d6903443296ce076536df2b46da">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">::operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html">basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares two hashed strings. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Hashed string with which to compare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if the two hashed strings are identical, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00194">194</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00200">entt::basic_hashed_string&lt; Char &gt;::hash</a>.</p>
+
+</div>
+</div>
+<a id="afb3a92282e81fb50af66953f39671f3c" name="afb3a92282e81fb50af66953f39671f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3a92282e81fb50af66953f39671f3c">&#9670;&#160;</a></span>value() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the numeric representation of a hashed string. </p>
+<dl class="section return"><dt>返回</dt><dd>The numeric representation of the instance. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00176">176</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00200">entt::basic_hashed_string&lt; Char &gt;::hash</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="hashed__string_8hpp_source.html#l00074">entt::basic_hashed_string&lt; Char &gt;::helper()</a> , 以及 <a class="el" href="hashed__string_8hpp_source.html#l00187">entt::basic_hashed_string&lt; Char &gt;::operator hash_type()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c_icgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c_icgraph" id="aclassentt_1_1basic__hashed__string_afb3a92282e81fb50af66953f39671f3c_icgraph">
+<area shape="rect" title="Returns the numeric representation of a hashed string." alt="" coords="445,69,589,109"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#afae4f908a9600e746c548d7c1f97758e" title=" " alt="" coords="225,37,369,77"/>
+<area shape="poly" title=" " alt="" coords="431,80,369,70,370,65,432,74"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#aa2009a1ac648d8bdaeac642a6476f2bd" title="Returns the numeric representation of a hashed string." alt="" coords="197,101,397,141"/>
+<area shape="poly" title=" " alt="" coords="432,104,398,109,397,104,431,99"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#abbd837edf6b152c7b46bfd619241264c" title="Returns directly the numeric representation of a string." alt="" coords="5,5,149,45"/>
+<area shape="poly" title=" " alt="" coords="211,48,149,38,150,33,212,42"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#a9c29491d20b14d8815229604d3580d3e" title="Returns directly the numeric representation of a string." alt="" coords="5,69,149,109"/>
+<area shape="poly" title=" " alt="" coords="212,72,150,82,149,76,211,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7ccb9802c4f1077537df9b56e33e1f46" name="a7ccb9802c4f1077537df9b56e33e1f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccb9802c4f1077537df9b56e33e1f46">&#9670;&#160;</a></span>value() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a> *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns directly the numeric representation of a string view. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Human-readable identifer. </td></tr>
+    <tr><td class="paramname">size</td><td>Length of the string to hash. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The numeric representation of the string. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00125">125</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00199">entt::basic_hashed_string&lt; Char &gt;::str</a>.</p>
+
+</div>
+</div>
+<a id="abbd837edf6b152c7b46bfd619241264c" name="abbd837edf6b152c7b46bfd619241264c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd837edf6b152c7b46bfd619241264c">&#9670;&#160;</a></span>value() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a>(&amp;)&#160;</td>
+          <td class="paramname"><em>str</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns directly the numeric representation of a string. </p>
+<p>Forcing template resolution avoids implicit conversions. An human-readable identifier can be anything but a plain, old bunch of characters.<br  />
+ Example of use: </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="classentt_1_1basic__hashed__string.html#afb3a92282e81fb50af66953f39671f3c">value</a> = <a class="code hl_class" href="classentt_1_1basic__hashed__string.html">basic_hashed_string&lt;char&gt;::to_value</a>(<span class="stringliteral">&quot;my.png&quot;</span>);</div>
+<div class="ttc" id="aclassentt_1_1basic__hashed__string_html_afb3a92282e81fb50af66953f39671f3c"><div class="ttname"><a href="classentt_1_1basic__hashed__string.html#afb3a92282e81fb50af66953f39671f3c">entt::basic_hashed_string::value</a></div><div class="ttdeci">constexpr hash_type value() const ENTT_NOEXCEPT</div><div class="ttdoc">Returns the numeric representation of a hashed string.</div><div class="ttdef"><b>Definition</b> <a href="hashed__string_8hpp_source.html#l00176">hashed_string.hpp:176</a></div></div>
+</div><!-- fragment --><dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>Number of characters of the identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Human-readable identifer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The numeric representation of the string. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00106">106</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00074">entt::basic_hashed_string&lt; Char &gt;::helper()</a> , 以及 <a class="el" href="hashed__string_8hpp_source.html#l00199">entt::basic_hashed_string&lt; Char &gt;::str</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c_cgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c_cgraph" id="aclassentt_1_1basic__hashed__string_abbd837edf6b152c7b46bfd619241264c_cgraph">
+<area shape="rect" title="Returns directly the numeric representation of a string." alt="" coords="5,5,149,45"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#afae4f908a9600e746c548d7c1f97758e" title=" " alt="" coords="197,5,341,45"/>
+<area shape="poly" title=" " alt="" coords="150,23,184,23,184,28,150,28"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#afb3a92282e81fb50af66953f39671f3c" title="Returns the numeric representation of a hashed string." alt="" coords="389,5,533,45"/>
+<area shape="poly" title=" " alt="" coords="342,23,376,23,376,28,342,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9c29491d20b14d8815229604d3580d3e" name="a9c29491d20b14d8815229604d3580d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c29491d20b14d8815229604d3580d3e">&#9670;&#160;</a></span>value() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structentt_1_1basic__hashed__string_1_1const__wrapper.html">const_wrapper</a>&#160;</td>
+          <td class="paramname"><em>wrapper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns directly the numeric representation of a string. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wrapper</td><td>Helps achieving the purpose by relying on overloading. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The numeric representation of the string. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00115">115</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="hashed__string_8hpp_source.html#l00074">entt::basic_hashed_string&lt; Char &gt;::helper()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e_cgraph.png" border="0" usemap="#aclassentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e_cgraph" id="aclassentt_1_1basic__hashed__string_a9c29491d20b14d8815229604d3580d3e_cgraph">
+<area shape="rect" title="Returns directly the numeric representation of a string." alt="" coords="5,5,149,45"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#afae4f908a9600e746c548d7c1f97758e" title=" " alt="" coords="197,5,341,45"/>
+<area shape="poly" title=" " alt="" coords="150,23,184,23,184,28,150,28"/>
+<area shape="rect" href="classentt_1_1basic__hashed__string.html#afb3a92282e81fb50af66953f39671f3c" title="Returns the numeric representation of a hashed string." alt="" coords="389,5,533,45"/>
+<area shape="poly" title=" " alt="" coords="342,23,376,23,376,28,342,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a238b76c4e85d5cce8baa44bb49cb2514" name="a238b76c4e85d5cce8baa44bb49cb2514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238b76c4e85d5cce8baa44bb49cb2514">&#9670;&#160;</a></span>hash</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__hashed__string.html#a1631b1f6ecd56a451366eeb228a6ffb9">hash_type</a> <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::hash</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00200">200</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="hashed__string_8hpp_source.html#l00194">entt::basic_hashed_string&lt; Char &gt;::operator==()</a> , 以及 <a class="el" href="hashed__string_8hpp_source.html#l00176">entt::basic_hashed_string&lt; Char &gt;::value()</a>.</p>
+
+</div>
+</div>
+<a id="ad82c80d08b5de8afdb267c77c28243db" name="ad82c80d08b5de8afdb267c77c28243db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82c80d08b5de8afdb267c77c28243db">&#9670;&#160;</a></span>str</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__hashed__string.html#ad4e8f181e92b9218747ac43fe24c4cbc">value_type</a>* <a class="el" href="classentt_1_1basic__hashed__string.html">entt::basic_hashed_string</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Char</a> &gt;::str</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a> 第 <a class="el" href="hashed__string_8hpp_source.html#l00199">199</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="hashed__string_8hpp_source.html#l00168">entt::basic_hashed_string&lt; Char &gt;::data()</a>, <a class="el" href="hashed__string_8hpp_source.html#l00125">entt::basic_hashed_string&lt; Char &gt;::value()</a> , 以及 <a class="el" href="hashed__string_8hpp_source.html#l00106">entt::basic_hashed_string&lt; Char &gt;::value()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/core/<a class="el" href="hashed__string_8hpp_source.html">hashed_string.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

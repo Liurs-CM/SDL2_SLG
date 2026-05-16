@@ -1,0 +1,15 @@
+<map id="src/comp/ghost_mode.hpp" name="src/comp/ghost_mode.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="433,5,627,31"/>
+<area shape="rect" id="Node000002" href="$factories_8cpp.html" title=" " alt="" coords="5,86,167,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,35,178,81,141,89,140,83,178,76,445,30"/>
+<area shape="rect" id="Node000003" href="$change__ghost__mode_8cpp.html" title=" " alt="" coords="191,79,352,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="480,37,334,81,333,76,479,32"/>
+<area shape="rect" id="Node000004" href="$house_8cpp.html" title=" " alt="" coords="376,86,513,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="509,42,459,88,456,84,505,38"/>
+<area shape="rect" id="Node000005" href="$player__ghost__collide_8cpp.html" title=" " alt="" coords="538,79,693,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="554,38,597,77,593,80,551,42"/>
+<area shape="rect" id="Node000006" href="$render_8cpp.html" title=" " alt="" coords="717,86,855,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="581,32,750,83,748,89,580,37"/>
+<area shape="rect" id="Node000007" href="$set__target_8cpp.html" title=" " alt="" coords="880,86,1044,111"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="611,30,868,76,906,83,905,89,867,81,610,36"/>
+</map>

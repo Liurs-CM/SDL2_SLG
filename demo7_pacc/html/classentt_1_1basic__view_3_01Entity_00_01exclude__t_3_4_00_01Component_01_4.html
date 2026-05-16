@@ -1,0 +1,945 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::basic_view&lt; Entity, exclude_t&lt;&gt;, Component &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html">basic_view&lt; Entity, exclude_t&lt;&gt;, Component &gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::basic_view&lt; Entity, exclude_t&lt;&gt;, Component &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Single component view specialization.  
+ <a href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="view_8hpp_source.html">view.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a8bd979c3e567bccfbc7a598442092d81" id="r_a8bd979c3e567bccfbc7a598442092d81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8bd979c3e567bccfbc7a598442092d81">raw_type</a> = Component</td></tr>
+<tr class="memdesc:a8bd979c3e567bccfbc7a598442092d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of component iterated by the view.  <br /></td></tr>
+<tr class="separator:a8bd979c3e567bccfbc7a598442092d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0494ae46c922ce0c897aef9d7bd18533" id="r_a0494ae46c922ce0c897aef9d7bd18533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> = <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a></td></tr>
+<tr class="memdesc:a0494ae46c922ce0c897aef9d7bd18533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying entity identifier.  <br /></td></tr>
+<tr class="separator:a0494ae46c922ce0c897aef9d7bd18533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df04cc90dcce96291a88546aa287ca7" id="r_a6df04cc90dcce96291a88546aa287ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a6df04cc90dcce96291a88546aa287ca7">size_type</a> = std::size_t</td></tr>
+<tr class="memdesc:a6df04cc90dcce96291a88546aa287ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsigned integer type.  <br /></td></tr>
+<tr class="separator:a6df04cc90dcce96291a88546aa287ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ee05ab3fd5d8f4304810c65ab9b830" id="r_aa6ee05ab3fd5d8f4304810c65ab9b830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aa6ee05ab3fd5d8f4304810c65ab9b830">iterator</a> = <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> &gt;::iterator</td></tr>
+<tr class="memdesc:aa6ee05ab3fd5d8f4304810c65ab9b830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input iterator type.  <br /></td></tr>
+<tr class="separator:aa6ee05ab3fd5d8f4304810c65ab9b830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8648cc860a64d9adcfc261679b8a174e" id="r_a8648cc860a64d9adcfc261679b8a174e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a6df04cc90dcce96291a88546aa287ca7">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8648cc860a64d9adcfc261679b8a174e">size</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a8648cc860a64d9adcfc261679b8a174e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of entities that have the given component.  <br /></td></tr>
+<tr class="separator:a8648cc860a64d9adcfc261679b8a174e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155822d1b039f427ef7577547ea06783" id="r_a155822d1b039f427ef7577547ea06783"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a155822d1b039f427ef7577547ea06783">empty</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a155822d1b039f427ef7577547ea06783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a view is empty.  <br /></td></tr>
+<tr class="separator:a155822d1b039f427ef7577547ea06783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb807023effeb196bb98145707c5f63" id="r_aeeb807023effeb196bb98145707c5f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8bd979c3e567bccfbc7a598442092d81">raw_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aeeb807023effeb196bb98145707c5f63">raw</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:aeeb807023effeb196bb98145707c5f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the list of components.  <br /></td></tr>
+<tr class="separator:aeeb807023effeb196bb98145707c5f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f5fcb8881f3913549d3042a60c5de7" id="r_a47f5fcb8881f3913549d3042a60c5de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a47f5fcb8881f3913549d3042a60c5de7">data</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a47f5fcb8881f3913549d3042a60c5de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the list of entities.  <br /></td></tr>
+<tr class="separator:a47f5fcb8881f3913549d3042a60c5de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea757bf271fd1b6887ab3aab82cc177a" id="r_aea757bf271fd1b6887ab3aab82cc177a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aa6ee05ab3fd5d8f4304810c65ab9b830">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aea757bf271fd1b6887ab3aab82cc177a">begin</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:aea757bf271fd1b6887ab3aab82cc177a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to the first entity that has the given component.  <br /></td></tr>
+<tr class="separator:aea757bf271fd1b6887ab3aab82cc177a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5cdc02d9acb5840147fe48bae7ca82" id="r_a9d5cdc02d9acb5840147fe48bae7ca82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aa6ee05ab3fd5d8f4304810c65ab9b830">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a9d5cdc02d9acb5840147fe48bae7ca82">end</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a9d5cdc02d9acb5840147fe48bae7ca82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator that is past the last entity that has the given component.  <br /></td></tr>
+<tr class="separator:a9d5cdc02d9acb5840147fe48bae7ca82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af725dc018cfa7e82fbc399cbb90cf058" id="r_af725dc018cfa7e82fbc399cbb90cf058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#af725dc018cfa7e82fbc399cbb90cf058">front</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a></td></tr>
+<tr class="memdesc:af725dc018cfa7e82fbc399cbb90cf058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first entity that has the given component, if any.  <br /></td></tr>
+<tr class="separator:af725dc018cfa7e82fbc399cbb90cf058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b20bc36216f6cfc53422d6893fbda0" id="r_ae9b20bc36216f6cfc53422d6893fbda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#ae9b20bc36216f6cfc53422d6893fbda0">back</a> () <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a></td></tr>
+<tr class="memdesc:ae9b20bc36216f6cfc53422d6893fbda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last entity that has the given component, if any.  <br /></td></tr>
+<tr class="separator:ae9b20bc36216f6cfc53422d6893fbda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf629e07ec0f9d2d4e7708be10a4f6ca" id="r_abf629e07ec0f9d2d4e7708be10a4f6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aa6ee05ab3fd5d8f4304810c65ab9b830">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#abf629e07ec0f9d2d4e7708be10a4f6ca">find</a> (<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> entt) <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a></td></tr>
+<tr class="memdesc:abf629e07ec0f9d2d4e7708be10a4f6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an entity.  <br /></td></tr>
+<tr class="separator:abf629e07ec0f9d2d4e7708be10a4f6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5a394814faea3fcee93545da1e6a39" id="r_adf5a394814faea3fcee93545da1e6a39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#adf5a394814faea3fcee93545da1e6a39">operator[]</a> (<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a6df04cc90dcce96291a88546aa287ca7">size_type</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">pos</a>) <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a></td></tr>
+<tr class="memdesc:adf5a394814faea3fcee93545da1e6a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the identifier that occupies the given position.  <br /></td></tr>
+<tr class="separator:adf5a394814faea3fcee93545da1e6a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef29186802313e0e92ede3963324d14" id="r_a0ef29186802313e0e92ede3963324d14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0ef29186802313e0e92ede3963324d14">contains</a> (<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> entt) <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a></td></tr>
+<tr class="memdesc:a0ef29186802313e0e92ede3963324d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a view contains an entity.  <br /></td></tr>
+<tr class="separator:a0ef29186802313e0e92ede3963324d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c17c82e34d8d77a2358afa5c97832f2" id="r_a8c17c82e34d8d77a2358afa5c97832f2"><td class="memTemplParams" colspan="2">template&lt;typename Comp  = Component&gt; </td></tr>
+<tr class="memitem:a8c17c82e34d8d77a2358afa5c97832f2"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">get</a> (const <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> entt) const</td></tr>
+<tr class="memdesc:a8c17c82e34d8d77a2358afa5c97832f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component assigned to the given entity.  <br /></td></tr>
+<tr class="separator:a8c17c82e34d8d77a2358afa5c97832f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e899f8d7e4a58bba6abc9c5b9b83c2" id="r_ae0e899f8d7e4a58bba6abc9c5b9b83c2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Func &gt; </td></tr>
+<tr class="memitem:ae0e899f8d7e4a58bba6abc9c5b9b83c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#ae0e899f8d7e4a58bba6abc9c5b9b83c2">each</a> (Func func) <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a></td></tr>
+<tr class="memdesc:ae0e899f8d7e4a58bba6abc9c5b9b83c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates entities and components and applies the given function object to them.  <br /></td></tr>
+<tr class="separator:ae0e899f8d7e4a58bba6abc9c5b9b83c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b4522b3905af57fc30063f706553a8" id="r_a84b4522b3905af57fc30063f706553a8"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Func &gt; </td></tr>
+<tr class="memitem:a84b4522b3905af57fc30063f706553a8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a84b4522b3905af57fc30063f706553a8">less</a> (Func func) <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a></td></tr>
+<tr class="memdesc:a84b4522b3905af57fc30063f706553a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates entities and components and applies the given function object to them.    <br /></td></tr>
+<tr class="separator:a84b4522b3905af57fc30063f706553a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:a3058ee212dff194a6c117ba9627b8109" id="r_a3058ee212dff194a6c117ba9627b8109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a3058ee212dff194a6c117ba9627b8109">pool_type</a> = std::conditional_t&lt; std::is_const_v&lt; Component &gt;, <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1storage.html">storage</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, std::remove_const_t&lt; Component &gt; &gt;, <a class="el" href="classentt_1_1storage.html">storage</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, Component &gt; &gt;</td></tr>
+<tr class="separator:a3058ee212dff194a6c117ba9627b8109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ad949535d7cfbe937007e63114f6197c0" id="r_ad949535d7cfbe937007e63114f6197c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#ad949535d7cfbe937007e63114f6197c0">basic_view</a> (<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a3058ee212dff194a6c117ba9627b8109">pool_type</a> &amp;ref) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:ad949535d7cfbe937007e63114f6197c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ad1474ff069a1f86245025a03f3314af2" id="r_ad1474ff069a1f86245025a03f3314af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a3058ee212dff194a6c117ba9627b8109">pool_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#ad1474ff069a1f86245025a03f3314af2">pool</a></td></tr>
+<tr class="separator:ad1474ff069a1f86245025a03f3314af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a60c928831c22b7dd2216dbc469f68f24" id="r_a60c928831c22b7dd2216dbc469f68f24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a60c928831c22b7dd2216dbc469f68f24">basic_registry&lt; Entity &gt;</a></td></tr>
+<tr class="memdesc:a60c928831c22b7dd2216dbc469f68f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">A registry is allowed to create views.  <br /></td></tr>
+<tr class="separator:a60c928831c22b7dd2216dbc469f68f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component&gt;<br />
+class entt::basic_view&lt; Entity, exclude_t&lt;&gt;, Component &gt;</div><p>Single component view specialization. </p>
+<p>Single component views are specialized in order to get a boost in terms of performance. This kind of views can access the underlying data structure directly and avoid superfluous checks.</p>
+<p><b>Important</b> </p>
+<p>Iterators aren't invalidated if:</p>
+<ul>
+<li>New instances of the given component are created and assigned to entities.</li>
+<li>The entity currently pointed is modified (as an example, the given component is removed from the entity to which the iterator points).</li>
+<li>The entity currently pointed is destroyed.</li>
+</ul>
+<p>In all other cases, modifying the pool iterated by the view in any way invalidates all the iterators and using them results in undefined behavior.</p>
+<dl class="section note"><dt>注解</dt><dd>Views share a reference to the underlying data structure of the registry that generated them. Therefore any change to the entities and to the components made by means of the registry are immediately reflected by views.</dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>Lifetime of a view must not overcome that of the registry that generated it. In any other case, attempting to use a view results in undefined behavior.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Entity</td><td>A valid entity type (see <a class="el" href="structentt_1_1entt__traits.html" title="Entity traits.">entt_traits</a> for more details). </td></tr>
+    <tr><td class="paramname">Component</td><td>Type of component iterated by the view. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00546">546</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a0494ae46c922ce0c897aef9d7bd18533" name="a0494ae46c922ce0c897aef9d7bd18533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0494ae46c922ce0c897aef9d7bd18533">&#9670;&#160;</a></span>entity_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::entity_type =  <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Underlying entity identifier. </p>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00560">560</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa6ee05ab3fd5d8f4304810c65ab9b830" name="aa6ee05ab3fd5d8f4304810c65ab9b830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ee05ab3fd5d8f4304810c65ab9b830">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::iterator =  <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>&gt;::iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Input iterator type. </p>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00564">564</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3058ee212dff194a6c117ba9627b8109" name="a3058ee212dff194a6c117ba9627b8109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3058ee212dff194a6c117ba9627b8109">&#9670;&#160;</a></span>pool_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::pool_type =  std::conditional_t&lt;std::is_const_v&lt;Component&gt;, <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1storage.html">storage</a>&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, std::remove_const_t&lt;Component&gt; &gt;, <a class="el" href="classentt_1_1storage.html">storage</a>&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, Component&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00550">550</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8bd979c3e567bccfbc7a598442092d81" name="a8bd979c3e567bccfbc7a598442092d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd979c3e567bccfbc7a598442092d81">&#9670;&#160;</a></span>raw_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::raw_type =  Component</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of component iterated by the view. </p>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00558">558</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6df04cc90dcce96291a88546aa287ca7" name="a6df04cc90dcce96291a88546aa287ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df04cc90dcce96291a88546aa287ca7">&#9670;&#160;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">using</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::size_type =  std::size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unsigned integer type. </p>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00562">562</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ad949535d7cfbe937007e63114f6197c0" name="ad949535d7cfbe937007e63114f6197c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad949535d7cfbe937007e63114f6197c0">&#9670;&#160;</a></span>basic_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::basic_view </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a3058ee212dff194a6c117ba9627b8109">pool_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00552">552</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae9b20bc36216f6cfc53422d6893fbda0" name="ae9b20bc36216f6cfc53422d6893fbda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b20bc36216f6cfc53422d6893fbda0">&#9670;&#160;</a></span>back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the last entity that has the given component, if any. </p>
+<dl class="section return"><dt>返回</dt><dd>The last entity that has the given component if one exists, the null entity otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00666">666</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a">begin</a>, <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53">end</a> , 以及 <a class="el" href="entity_8hpp_source.html#l00174">entt::null</a>.</p>
+
+</div>
+</div>
+<a id="aea757bf271fd1b6887ab3aab82cc177a" name="aea757bf271fd1b6887ab3aab82cc177a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea757bf271fd1b6887ab3aab82cc177a">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aa6ee05ab3fd5d8f4304810c65ab9b830">iterator</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator to the first entity that has the given component. </p>
+<p>The returned iterator points to the first entity that has the given component. If the view is empty, the returned iterator will be equal to <code><a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53">end()</a></code>.</p>
+<dl class="section note"><dt>注解</dt><dd>Input iterators stay true to the order imposed to the underlying data structures.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the first entity that has the given component. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00628">628</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0ef29186802313e0e92ede3963324d14" name="a0ef29186802313e0e92ede3963324d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef29186802313e0e92ede3963324d14">&#9670;&#160;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">bool</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a view contains an entity. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if the view contains the given entity, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00696">696</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a47f5fcb8881f3913549d3042a60c5de7" name="a47f5fcb8881f3913549d3042a60c5de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f5fcb8881f3913549d3042a60c5de7">&#9670;&#160;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> * <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Direct access to the list of entities. </p>
+<p>The returned pointer is such that range <code>[<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a47f5fcb8881f3913549d3042a60c5de7" title="Direct access to the list of entities.">data()</a>, <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a47f5fcb8881f3913549d3042a60c5de7" title="Direct access to the list of entities.">data()</a> + <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8648cc860a64d9adcfc261679b8a174e" title="Returns the number of entities that have the given component.">size()</a>]</code> is always a valid range, even if the container is empty.</p>
+<dl class="section note"><dt>注解</dt><dd>There are no guarantees on the order of the entities. Use <code>begin</code> and <code>end</code> if you want to iterate the view in the expected order.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A pointer to the array of entities. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00610">610</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae0e899f8d7e4a58bba6abc9c5b9b83c2" name="ae0e899f8d7e4a58bba6abc9c5b9b83c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e899f8d7e4a58bba6abc9c5b9b83c2">&#9670;&#160;</a></span>each()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">void</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::each </td>
+          <td>(</td>
+          <td class="paramtype">Func&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Iterates entities and components and applies the given function object to them. </p>
+<p>The function object is invoked for each entity. It is provided with the entity itself and a reference to the component if it's a non-empty one. The <em>constness</em> of the component is as requested.<br  />
+ The signature of the function must be equivalent to one of the following forms:</p>
+<div class="fragment"><div class="line"><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>, Component &amp;);</div>
+<div class="line"><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(Component &amp;);</div>
+<div class="ttc" id="aclassentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4_html_a0494ae46c922ce0c897aef9d7bd18533"><div class="ttname"><a href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entt::basic_view&lt; Entity, exclude_t&lt;&gt;, Component &gt;::entity_type</a></div><div class="ttdeci">Entity entity_type</div><div class="ttdoc">Underlying entity identifier.</div><div class="ttdef"><b>Definition</b> <a href="view_8hpp_source.html#l00560">view.hpp:560</a></div></div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+</div><!-- fragment --><dl class="section note"><dt>注解</dt><dd>Empty types aren't explicitly instantiated and therefore they are never returned during iterations.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Func</td><td>Type of the function object to invoke. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>A valid function object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00745">745</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="config_8h_source.html#l00047">ENTT_IS_EMPTY</a> , 以及 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a155822d1b039f427ef7577547ea06783" name="a155822d1b039f427ef7577547ea06783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a155822d1b039f427ef7577547ea06783">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">bool</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a view is empty. </p>
+<dl class="section return"><dt>返回</dt><dd>True if the view is empty, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00578">578</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9d5cdc02d9acb5840147fe48bae7ca82" name="a9d5cdc02d9acb5840147fe48bae7ca82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5cdc02d9acb5840147fe48bae7ca82">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aa6ee05ab3fd5d8f4304810c65ab9b830">iterator</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator that is past the last entity that has the given component. </p>
+<p>The returned iterator points to the entity following the last entity that has the given component. Attempting to dereference the returned iterator results in undefined behavior.</p>
+<dl class="section note"><dt>注解</dt><dd>Input iterators stay true to the order imposed to the underlying data structures.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the entity following the last entity that has the given component. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00647">647</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abf629e07ec0f9d2d4e7708be10a4f6ca" name="abf629e07ec0f9d2d4e7708be10a4f6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf629e07ec0f9d2d4e7708be10a4f6ca">&#9670;&#160;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aa6ee05ab3fd5d8f4304810c65ab9b830">iterator</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds an entity. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the given entity if it's found, past the end iterator otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00677">677</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53">end</a>.</p>
+
+</div>
+</div>
+<a id="af725dc018cfa7e82fbc399cbb90cf058" name="af725dc018cfa7e82fbc399cbb90cf058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af725dc018cfa7e82fbc399cbb90cf058">&#9670;&#160;</a></span>front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the first entity that has the given component, if any. </p>
+<dl class="section return"><dt>返回</dt><dd>The first entity that has the given component if one exists, the null entity otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00656">656</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a">begin</a>, <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53">end</a> , 以及 <a class="el" href="entity_8hpp_source.html#l00174">entt::null</a>.</p>
+
+</div>
+</div>
+<a id="a8c17c82e34d8d77a2358afa5c97832f2" name="a8c17c82e34d8d77a2358afa5c97832f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c17c82e34d8d77a2358afa5c97832f2">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Entity , typename Component &gt; </div>
+<div class="memtemplate">
+template&lt;typename Comp  = Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(auto) <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; Entity, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the component assigned to the given entity. </p>
+<p>Prefer this function instead of <code><a class="el" href="classentt_1_1basic__registry.html#a696e43e4d153ebfc9370d2f9b5fe3984" title="Returns references to the given components for an entity.">registry::get</a></code> during iterations. It has far better performance than its counterpart.</p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to use an entity that doesn't belong to the view results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the view doesn't contain the given entity.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The component assigned to the entity. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00716">716</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="config_8h_source.html#l00041">ENTT_ASSERT</a>.</p>
+
+</div>
+</div>
+<a id="a84b4522b3905af57fc30063f706553a8" name="a84b4522b3905af57fc30063f706553a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84b4522b3905af57fc30063f706553a8">&#9670;&#160;</a></span>less()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">void</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::less </td>
+          <td>(</td>
+          <td class="paramtype">Func&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Iterates entities and components and applies the given function object to them.   </p>
+<p>The function object is invoked for each entity. It is provided with the entity itself and a reference to the component if it's a non-empty one. The <em>constness</em> of the component is as requested.<br  />
+ The signature of the function must be equivalent to one of the following forms:</p>
+<div class="fragment"><div class="line"><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a>, Component &amp;);</div>
+<div class="line"><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>(Component &amp;);</div>
+</div><!-- fragment --><dl class="section note"><dt>注解</dt><dd>Empty types aren't explicitly instantiated and therefore they are never returned during iterations.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Func</td><td>Type of the function object to invoke. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>A valid function object.   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00774">774</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adf5a394814faea3fcee93545da1e6a39" name="adf5a394814faea3fcee93545da1e6a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5a394814faea3fcee93545da1e6a39">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a0494ae46c922ce0c897aef9d7bd18533">entity_type</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">::operator</a>[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">const</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a6df04cc90dcce96291a88546aa287ca7">size_type</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the identifier that occupies the given position. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="structPosition.html">Position</a> of the element to return. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The identifier that occupies the given position. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00687">687</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a">begin</a> , 以及 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="aeeb807023effeb196bb98145707c5f63" name="aeeb807023effeb196bb98145707c5f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb807023effeb196bb98145707c5f63">&#9670;&#160;</a></span>raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8bd979c3e567bccfbc7a598442092d81">raw_type</a> * <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::raw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Direct access to the list of components. </p>
+<p>The returned pointer is such that range <code>[<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aeeb807023effeb196bb98145707c5f63" title="Direct access to the list of components.">raw()</a>, <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#aeeb807023effeb196bb98145707c5f63" title="Direct access to the list of components.">raw()</a> + <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8648cc860a64d9adcfc261679b8a174e" title="Returns the number of entities that have the given component.">size()</a>]</code> is always a valid range, even if the container is empty.</p>
+<dl class="section note"><dt>注解</dt><dd>There are no guarantees on the order of the components. Use <code>begin</code> and <code>end</code> if you want to iterate the view in the expected order.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A pointer to the array of components. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00594">594</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8648cc860a64d9adcfc261679b8a174e" name="a8648cc860a64d9adcfc261679b8a174e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8648cc860a64d9adcfc261679b8a174e">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a6df04cc90dcce96291a88546aa287ca7">size_type</a> <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of entities that have the given component. </p>
+<dl class="section return"><dt>返回</dt><dd>Number of entities that have the given component. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00570">570</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a id="a60c928831c22b7dd2216dbc469f68f24" name="a60c928831c22b7dd2216dbc469f68f24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c928831c22b7dd2216dbc469f68f24">&#9670;&#160;</a></span>basic_registry&lt; Entity &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">friend</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">class</a> <a class="el" href="classentt_1_1basic__registry.html">basic_registry</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A registry is allowed to create views. </p>
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00149">149</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ad1474ff069a1f86245025a03f3314af2" name="ad1474ff069a1f86245025a03f3314af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1474ff069a1f86245025a03f3314af2">&#9670;&#160;</a></span>pool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a> , <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">typename</a> Component &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a3058ee212dff194a6c117ba9627b8109">pool_type</a>* <a class="el" href="classentt_1_1basic__view.html">entt::basic_view</a>&lt; <a class="el" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_4_00_01Component_01_4.html#a8c17c82e34d8d77a2358afa5c97832f2">Entity</a>, <a class="el" href="structentt_1_1exclude__t.html">exclude_t</a>&lt;&gt;, Component &gt;::pool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="view_8hpp_source.html">view.hpp</a> 第 <a class="el" href="view_8hpp_source.html#l00779">779</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/entity/<a class="el" href="view_8hpp_source.html">view.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

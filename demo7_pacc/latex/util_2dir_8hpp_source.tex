@@ -1,0 +1,92 @@
+\doxysection{dir.\+hpp}
+\hypertarget{util_2dir_8hpp_source}{}\label{util_2dir_8hpp_source}\index{src/util/dir.hpp@{src/util/dir.hpp}}
+\mbox{\hyperlink{util_2dir_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ dir.hpp}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 8/5/20.}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ UTIL\_DIR\_HPP}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ UTIL\_DIR\_HPP}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00014}00014\ \textcolor{comment}{//\ An\ orthogonal\ direction}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00015}\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{00015}}\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ :\ std::uint8\_t\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00016}00016\ \ \ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{up}},}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00017}00017\ \ \ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{right}},}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00018}00018\ \ \ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{down}},}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00019}00019\ \ \ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{left}},}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00020}00020\ \ \ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}},}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00022}00022\ \ \ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a}{begin}}\ =\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{up}},}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00023}00023\ \ \ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53}{end}}\ =\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{none}}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00024}00024\ \};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00026}\mbox{\hyperlink{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163}{00026}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \mbox{\hyperlink{util_2dir_8hpp_a83356231f8b8faefbec0e467f4839163}{opposite}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ dir)\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00027}00027\ \ \ \textcolor{keywordflow}{switch}\ (dir)\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{Dir::up}}:\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{Dir::down}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}}:\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{Dir::down}}:\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{Dir::up}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}}:\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{default}:\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{Dir::none}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00033}00033\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00036}\mbox{\hyperlink{util_2dir_8hpp_a917850c3152487d5ee489514eb4a67eb}{00036}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \mbox{\hyperlink{util_2dir_8hpp_a917850c3152487d5ee489514eb4a67eb}{rotateCW}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ dir)\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00037}00037\ \ \ \textcolor{keywordflow}{switch}\ (dir)\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{Dir::up}}:\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d}{Dir::right}}:\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{Dir::down}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a74e8333ad11685ff3bdae589c8f6e34d}{Dir::down}}:\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00041}00041\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254}{Dir::left}}:\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a46c48bec0d282018b9d167eef7711b2c}{Dir::up}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{default}:\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8}{Dir::none}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00043}00043\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00046}00046\ \textcolor{comment}{//\ Overloading\ increment\ and\ dereference\ operators\ to\ make\ Dir\ work\ as\ an}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00047}00047\ \textcolor{comment}{//\ iterator\ in\ range-\/for\ loops.\ Dir\ is\ an\ iterator\ for\ itself.\ This\ isn't\ a}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00048}00048\ \textcolor{comment}{//\ proper\ iterator.\ It's\ just\ the\ bare\ minimum\ to\ work\ with\ a\ range\ for\ loop.}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00049}00049\ \textcolor{comment}{//\ Take\ the\ following\ snippet:}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00050}00050\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00051}00051\ \textcolor{comment}{//\ for\ (const\ Dir\ dir\ :\ dir\_range)\ \{}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00052}00052\ \textcolor{comment}{//\ \ \ \ ...}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00053}00053\ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00054}00054\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00055}00055\ \textcolor{comment}{//\ This\ is\ de-\/sugared\ by\ the\ compiler\ into\ something\ like\ this:}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00056}00056\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00057}00057\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00058}00058\ \textcolor{comment}{//\ \ \ auto\ begin\ =\ dir\_range.begin();}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00059}00059\ \textcolor{comment}{//\ \ \ auto\ end\ =\ dir\_range.end();}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00060}00060\ \textcolor{comment}{//\ \ \ for\ (;\ begin\ !=\ end;\ ++begin)\ \{}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00061}00061\ \textcolor{comment}{//\ \ \ \ \ const\ Dir\ dir\ =\ *begin;}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00062}00062\ \textcolor{comment}{//\ \ \ \ \ ...}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00063}00063\ \textcolor{comment}{//\ \ \ \}}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00064}00064\ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00066}\mbox{\hyperlink{util_2dir_8hpp_a7d8183e4643a098c173dae08882150ca}{00066}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \&\mbox{\hyperlink{util_2dir_8hpp_a7d8183e4643a098c173dae08882150ca}{operator++}}(\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \&dir)\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00067}00067\ \ \ \textcolor{keywordflow}{return}\ dir\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\textcolor{keyword}{>}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(dir)\ +\ 1);}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00068}00068\ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00070}\mbox{\hyperlink{util_2dir_8hpp_a2ca9fb1ddc715776c5afb661d1526e9a}{00070}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \mbox{\hyperlink{util_2dir_8hpp_a2ca9fb1ddc715776c5afb661d1526e9a}{operator*}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ dir)\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00071}00071\ \ \ \textcolor{keywordflow}{return}\ dir;}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00074}\mbox{\hyperlink{structDirRange}{00074}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structDirRange}{DirRange}}\ \{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00075}\mbox{\hyperlink{structDirRange_a608ed127539e4ec1c0a27db3af4d553a}{00075}}\ \ \ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \mbox{\hyperlink{structDirRange_a608ed127539e4ec1c0a27db3af4d553a}{begin}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a8d589afa4dfaeeed85fff5aa78e5ff6a}{Dir::begin}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00077}00077\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00079}\mbox{\hyperlink{structDirRange_af6edbf491b98ca1336b3b281aec0e89e}{00079}}\ \ \ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67}{Dir}}\ \mbox{\hyperlink{structDirRange_af6edbf491b98ca1336b3b281aec0e89e}{end}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00080}00080\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{util_2dir_8hpp_a551e5037453f87875fbf5933d8579d67a7f021a1415b86f2d013b2618fb31ae53}{Dir::end}};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00081}00081\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00082}00082\ \};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00084}\mbox{\hyperlink{util_2dir_8hpp_a663ffd7a462bf1ce2d1a2482245e789d}{00084}}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{structDirRange}{DirRange}}\ \mbox{\hyperlink{util_2dir_8hpp_a663ffd7a462bf1ce2d1a2482245e789d}{dir\_range}}\{\};}
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{util_2dir_8hpp_source_l00086}00086\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

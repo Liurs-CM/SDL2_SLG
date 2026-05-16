@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: src/sys/movement.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_220d2bd384b446346a1cdcf02b1b2295.html">sys</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">movement.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="maze_8hpp_source.html">core/maze.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="entity_2fwd_8hpp_source.html">entt/entity/fwd.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+movement.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="movement_8hpp__incl.png" border="0" usemap="#asrc_2sys_2movement_8hpp" alt=""/></div>
+<map name="asrc_2sys_2movement_8hpp" id="asrc_2sys_2movement_8hpp">
+<area shape="rect" title=" " alt="" coords="49,5,219,31"/>
+<area shape="rect" href="maze_8hpp.html" title=" " alt="" coords="5,152,124,177"/>
+<area shape="poly" title=" " alt="" coords="131,32,79,141,74,138,126,30"/>
+<area shape="rect" href="entity_2fwd_8hpp.html" title=" " alt="" coords="125,79,271,104"/>
+<area shape="poly" title=" " alt="" coords="147,29,181,67,177,70,143,33"/>
+<area shape="rect" title=" " alt="" coords="37,299,103,324"/>
+<area shape="poly" title=" " alt="" coords="68,178,72,285,66,285,62,178"/>
+<area shape="rect" href="grid_8hpp.html" title=" " alt="" coords="255,225,355,251"/>
+<area shape="poly" title=" " alt="" coords="104,175,253,219,252,224,102,180"/>
+<area shape="rect" title=" " alt="" coords="225,299,288,324"/>
+<area shape="poly" title=" " alt="" coords="299,253,274,289,270,286,295,250"/>
+<area shape="rect" title=" " alt="" coords="131,299,201,324"/>
+<area shape="poly" title=" " alt="" coords="284,253,202,295,200,290,281,248"/>
+<area shape="rect" title=" " alt="" coords="312,299,372,324"/>
+<area shape="poly" title=" " alt="" coords="313,250,332,285,327,288,308,252"/>
+<area shape="rect" href="pos_8hpp.html" title=" " alt="" coords="396,299,469,324"/>
+<area shape="poly" title=" " alt="" coords="327,248,401,289,398,294,324,253"/>
+<area shape="rect" href="core_2fwd_8hpp.html" title=" " alt="" coords="147,152,265,177"/>
+<area shape="poly" title=" " alt="" coords="202,104,206,138,201,139,197,105"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="102,225,230,251"/>
+<area shape="poly" title=" " alt="" coords="202,179,182,215,177,212,197,176"/>
+<area shape="poly" title=" " alt="" coords="152,253,98,292,95,288,149,249"/>
+<area shape="poly" title=" " alt="" coords="169,251,169,285,163,285,163,251"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="movement_8hpp__dep__incl.png" border="0" usemap="#asrc_2sys_2movement_8hppdep" alt=""/></div>
+<map name="asrc_2sys_2movement_8hppdep" id="asrc_2sys_2movement_8hppdep">
+<area shape="rect" title=" " alt="" coords="80,5,251,31"/>
+<area shape="rect" href="game_8cpp.html" title=" " alt="" coords="5,79,147,104"/>
+<area shape="poly" title=" " alt="" coords="142,41,92,81,89,76,139,37"/>
+<area shape="rect" href="movement_8cpp.html" title=" " alt="" coords="171,79,341,104"/>
+<area shape="poly" title=" " alt="" coords="192,37,243,76,240,81,189,41"/>
+</map>
+</div>
+</div>
+<p><a href="movement_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af836bcc235f4715e668d216b021315c1" id="r_af836bcc235f4715e668d216b021315c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="movement_8hpp.html#af836bcc235f4715e668d216b021315c1">movement</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;)</td></tr>
+<tr class="separator:af836bcc235f4715e668d216b021315c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83f97a6269a6dbe51073ccd7b1d8eb7" id="r_ab83f97a6269a6dbe51073ccd7b1d8eb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="movement_8hpp.html#ab83f97a6269a6dbe51073ccd7b1d8eb7">wallCollide</a> (<a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;, const <a class="el" href="maze_8hpp.html#a5d4a998c7ef1ab2e682be3da0c646f23">MazeState</a> &amp;)</td></tr>
+<tr class="separator:ab83f97a6269a6dbe51073ccd7b1d8eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="af836bcc235f4715e668d216b021315c1" name="af836bcc235f4715e668d216b021315c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af836bcc235f4715e668d216b021315c1">&#9670;&#160;</a></span>movement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void movement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="movement_8cpp_source.html">movement.cpp</a> 第 <a class="el" href="movement_8cpp_source.html#l00017">17</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a811882fecd5c7618d7099ebbd39ea254">left</a>, <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a7c4f29407893c334a6cb7a87bf045c0d">right</a>, <a class="el" href="dir__to__pos_8hpp_source.html#l00015">toPos()</a>, <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>, <a class="el" href="pos_8hpp_source.html#l00015">Pos::x</a> , 以及 <a class="el" href="pos_8hpp_source.html#l00015">Pos::y</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="movement_8hpp_af836bcc235f4715e668d216b021315c1_cgraph.png" border="0" usemap="#amovement_8hpp_af836bcc235f4715e668d216b021315c1_cgraph" alt=""/></div>
+<map name="amovement_8hpp_af836bcc235f4715e668d216b021315c1_cgraph" id="amovement_8hpp_af836bcc235f4715e668d216b021315c1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,99,60"/>
+<area shape="rect" href="dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="191,5,249,31"/>
+<area shape="poly" title=" " alt="" coords="98,37,177,23,178,28,99,42"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="147,55,293,95"/>
+<area shape="poly" title=" " alt="" coords="99,52,134,58,133,63,99,58"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="movement_8hpp_af836bcc235f4715e668d216b021315c1_icgraph.png" border="0" usemap="#amovement_8hpp_af836bcc235f4715e668d216b021315c1_icgraph" alt=""/></div>
+<map name="amovement_8hpp_af836bcc235f4715e668d216b021315c1_icgraph" id="amovement_8hpp_af836bcc235f4715e668d216b021315c1_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,521,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab83f97a6269a6dbe51073ccd7b1d8eb7" name="ab83f97a6269a6dbe51073ccd7b1d8eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83f97a6269a6dbe51073ccd7b1d8eb7">&#9670;&#160;</a></span>wallCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wallCollide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a292643317d1dbb13e45824f757bd1086">entt::registry</a> &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="maze_8hpp.html#a5d4a998c7ef1ab2e682be3da0c646f23">MazeState</a> &amp;&#160;</td>
+          <td class="paramname"><em>maze</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="movement_8cpp_source.html">movement.cpp</a> 第 <a class="el" href="movement_8cpp_source.html#l00038">38</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="can__move_8cpp_source.html#l00015">canMove()</a>, <a class="el" href="util_2dir_8hpp.html#a551e5037453f87875fbf5933d8579d67a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a> , 以及 <a class="el" href="registry_8hpp_source.html#l01357">entt::basic_registry&lt; Entity &gt;::view()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="game_8cpp_source.html#l00040">Game::logic()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="movement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_cgraph.png" border="0" usemap="#amovement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_cgraph" alt=""/></div>
+<map name="amovement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_cgraph" id="amovement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,66,100,91"/>
+<area shape="rect" href="can__move_8cpp.html#ac44feff324cce2df74e8465e4cc46b28" title=" " alt="" coords="181,37,262,62"/>
+<area shape="poly" title=" " alt="" coords="100,68,166,56,167,61,101,73"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="148,87,295,127"/>
+<area shape="poly" title=" " alt="" coords="101,84,135,90,134,95,100,89"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#ae0948bfee43711e2df12946a63a2b258" title="Checks if an entity has all the given components." alt="" coords="343,13,520,38"/>
+<area shape="poly" title=" " alt="" coords="262,42,328,34,329,40,262,47"/>
+<area shape="rect" href="dir__to__pos_8hpp.html#a3d8782c754e99767a71cc827b19d02d4" title=" " alt="" coords="402,62,461,87"/>
+<area shape="poly" title=" " alt="" coords="262,52,389,67,388,72,262,57"/>
+<area shape="rect" href="classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="568,5,715,45"/>
+<area shape="poly" title=" " alt="" coords="521,23,554,23,554,28,521,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="movement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_icgraph.png" border="0" usemap="#amovement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_icgraph" alt=""/></div>
+<map name="amovement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_icgraph" id="amovement_8hpp_ab83f97a6269a6dbe51073ccd7b1d8eb7_icgraph">
+<area shape="rect" title=" " alt="" coords="428,5,523,31"/>
+<area shape="rect" href="classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="280,5,380,31"/>
+<area shape="poly" title=" " alt="" coords="414,21,380,21,380,15,414,15"/>
+<area shape="rect" href="classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="108,5,232,31"/>
+<area shape="poly" title=" " alt="" coords="266,21,232,21,232,15,266,15"/>
+<area shape="rect" href="main_8cpp.html#a81ce304348a420752ee080480d2b3095" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

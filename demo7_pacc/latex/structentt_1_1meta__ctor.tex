@@ -1,0 +1,269 @@
+\doxysection{entt\+::meta\+\_\+ctor结构体 参考}
+\hypertarget{structentt_1_1meta__ctor}{}\label{structentt_1_1meta__ctor}\index{entt::meta\_ctor@{entt::meta\_ctor}}
+
+
+Opaque container for meta constructors.  
+
+
+
+
+{\ttfamily \#include $<$meta.\+hpp$>$}
+
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18}{size\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} internal\+::meta\+\_\+ctor\+\_\+node\+::size\+\_\+type
+\begin{DoxyCompactList}\small\item\em Unsigned integer type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structentt_1_1meta__ctor_a2bead30533fe42d44d184cf852b3b3c0}{meta\+\_\+ctor}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+ctor\+\_\+node \texorpdfstring{$\ast$}{*}curr=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Constructs an instance from a given node.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \mbox{\hyperlink{structentt_1_1meta__ctor_a776c2812dd8724523fc881defb1116f2}{parent}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the meta type to which a meta object belongs.   \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18}{size\+\_\+type}} \mbox{\hyperlink{structentt_1_1meta__ctor_ad0ac4a64b630462768a3f12f6389b6e7}{size}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the number of arguments accepted by a meta constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} \mbox{\hyperlink{structentt_1_1meta__ctor_a3faab3b8c49ee1b803f337435c8d54ce}{arg}} (\mbox{\hyperlink{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18}{size\+\_\+type}} index) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns the meta type of the i-\/th argument of a meta constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} \mbox{\hyperlink{structentt_1_1meta__ctor_a2402980d8233e20480e0732df86f4d11}{invoke}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&... \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{args}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Creates an instance of the underlying type, if possible. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ \mbox{\hyperlink{structentt_1_1meta__ctor_ab68f08631dcb59014bfdd01f149ef783}{prop}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{op}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Iterates all the properties assigned to a meta constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} \mbox{\hyperlink{structentt_1_1meta__ctor_ae2866b2417b5edd00a5a5eb1c2722de2}{prop}} (\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} key) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the property associated with a given key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structentt_1_1meta__ctor_ac34d2ccb2c3ff0549775ed5c4c617ba2}{operator bool}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Returns true if a meta object is valid, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+ctor\+\_\+node \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structentt_1_1meta__ctor_a38f43ca2367d32e0cafe542dac7f62ab}{node}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Opaque container for meta constructors. 
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00801}{801}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18}\label{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18}{entt\+::meta\+\_\+ctor\+::size\+\_\+type}} =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} internal\+::meta\+\_\+ctor\+\_\+node\+::size\+\_\+type}
+
+
+
+Unsigned integer type. 
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00803}{803}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{structentt_1_1meta__ctor_a2bead30533fe42d44d184cf852b3b3c0}\label{structentt_1_1meta__ctor_a2bead30533fe42d44d184cf852b3b3c0} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!meta\_ctor@{meta\_ctor}}
+\index{meta\_ctor@{meta\_ctor}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{meta\_ctor()}{meta\_ctor()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+ctor\+::meta\+\_\+ctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+ctor\+\_\+node \texorpdfstring{$\ast$}{*}}]{curr = {\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{nullptr}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an instance from a given node.   
+
+
+\begin{DoxyParams}{参数}
+{\em curr} & The underlying node with which to construct the instance.   \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00806}{806}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1meta__ctor_a3faab3b8c49ee1b803f337435c8d54ce}\label{structentt_1_1meta__ctor_a3faab3b8c49ee1b803f337435c8d54ce} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!arg@{arg}}
+\index{arg@{arg}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{arg()}{arg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} entt\+::meta\+\_\+ctor\+::arg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18}{size\+\_\+type}}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta type of the i-\/th argument of a meta constructor. 
+
+
+\begin{DoxyParams}{参数}
+{\em index} & The index of the argument of which to return the meta type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The meta type of the i-\/th argument of a meta constructor, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01563}{1563}} 行定义.
+
+\Hypertarget{structentt_1_1meta__ctor_a2402980d8233e20480e0732df86f4d11}\label{structentt_1_1meta__ctor_a2402980d8233e20480e0732df86f4d11} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!invoke@{invoke}}
+\index{invoke@{invoke}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}} entt\+::meta\+\_\+ctor\+::invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Args}} \&\&...}]{args }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an instance of the underlying type, if possible. 
+
+To create a valid instance, the parameters must be such that a cast or conversion to the required types is possible. Otherwise, an empty and thus invalid container is returned.
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Args} & Types of arguments to use to construct the instance. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em args} & Parameters to use to construct the instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+A meta any containing the new instance, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00840}{840}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{classentt_1_1meta__any_af739675a58aa9a41beeb49a34a09a68e}{entt\+::meta\+\_\+any\+::invoke()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structentt_1_1meta__ctor_a2402980d8233e20480e0732df86f4d11_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structentt_1_1meta__ctor_ac34d2ccb2c3ff0549775ed5c4c617ba2}\label{structentt_1_1meta__ctor_ac34d2ccb2c3ff0549775ed5c4c617ba2} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily entt\+::meta\+\_\+ctor\+::operator \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Returns true if a meta object is valid, false otherwise. 
+
+\begin{DoxyReturn}{返回}
+True if the meta object is valid, false otherwise. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00875}{875}} 行定义.
+
+\Hypertarget{structentt_1_1meta__ctor_a776c2812dd8724523fc881defb1116f2}\label{structentt_1_1meta__ctor_a776c2812dd8724523fc881defb1116f2} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!parent@{parent}}
+\index{parent@{parent}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classentt_1_1meta__type}{meta\+\_\+type}} entt\+::meta\+\_\+ctor\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the meta type to which a meta object belongs.   
+
+\begin{DoxyReturn}{返回}
+The meta type to which the meta object belongs.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l01558}{1558}} 行定义.
+
+\Hypertarget{structentt_1_1meta__ctor_ae2866b2417b5edd00a5a5eb1c2722de2}\label{structentt_1_1meta__ctor_ae2866b2417b5edd00a5a5eb1c2722de2} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!prop@{prop}}
+\index{prop@{prop}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{prop()}{prop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} entt\+::meta\+\_\+ctor\+::prop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classentt_1_1meta__any}{meta\+\_\+any}}}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the property associated with a given key. 
+
+
+\begin{DoxyParams}{参数}
+{\em key} & The key to use to search for a property. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+The property associated with the given key, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00865}{865}} 行定义.
+
+\Hypertarget{structentt_1_1meta__ctor_ab68f08631dcb59014bfdd01f149ef783}\label{structentt_1_1meta__ctor_ab68f08631dcb59014bfdd01f149ef783} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!prop@{prop}}
+\index{prop@{prop}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{prop()}{prop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}} $>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+invocable\+\_\+v$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}, \mbox{\hyperlink{structentt_1_1meta__prop}{meta\+\_\+prop}} $>$, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} $>$ entt\+::meta\+\_\+ctor\+::prop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Op}}}]{op }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterates all the properties assigned to a meta constructor. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Op} & Type of the function object to invoke. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em op} & A valid function object. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00856}{856}} 行定义.
+
+\Hypertarget{structentt_1_1meta__ctor_ad0ac4a64b630462768a3f12f6389b6e7}\label{structentt_1_1meta__ctor_ad0ac4a64b630462768a3f12f6389b6e7} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!size@{size}}
+\index{size@{size}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structentt_1_1meta__ctor_a7a267e333222dab22e7a965137538f18}{size\+\_\+type}} entt\+::meta\+\_\+ctor\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of arguments accepted by a meta constructor. 
+
+\begin{DoxyReturn}{返回}
+The number of arguments accepted by the meta constructor. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00817}{817}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1meta__ctor_a38f43ca2367d32e0cafe542dac7f62ab}\label{structentt_1_1meta__ctor_a38f43ca2367d32e0cafe542dac7f62ab} 
+\index{entt::meta\_ctor@{entt::meta\_ctor}!node@{node}}
+\index{node@{node}!entt::meta\_ctor@{entt::meta\_ctor}}
+\doxysubsubsection{\texorpdfstring{node}{node}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} internal\+::meta\+\_\+ctor\+\_\+node\texorpdfstring{$\ast$}{*} entt\+::meta\+\_\+ctor\+::node\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{meta_8hpp_source}{meta.\+hpp}} 第 \mbox{\hyperlink{meta_8hpp_source_l00880}{880}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/meta/\mbox{\hyperlink{meta_8hpp}{meta.\+hpp}}\end{DoxyCompactItemize}

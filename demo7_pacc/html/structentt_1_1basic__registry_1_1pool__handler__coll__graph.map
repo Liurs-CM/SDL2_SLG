@@ -1,0 +1,9 @@
+<map id="entt::basic_registry&lt; Entity &gt;::pool_handler&lt; Component &gt;" name="entt::basic_registry&lt; Entity &gt;::pool_handler&lt; Component &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="561,38,744,93"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1storage.html" title=" " alt="" coords="257,5,420,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,33,538,45,562,49,561,54,537,51,433,38"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1sparse__set.html" title="Basic sparse set implementation." alt="" coords="5,13,200,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,23,257,23,257,28,214,28"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1sigh.html" title=" " alt="" coords="249,70,428,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="441,96,537,89,560,86,561,91,538,95,442,101"/>
+</map>

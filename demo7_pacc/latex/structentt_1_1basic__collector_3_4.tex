@@ -1,0 +1,117 @@
+\doxysection{entt\+::basic\+\_\+collector\texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}结构体 参考}
+\hypertarget{structentt_1_1basic__collector_3_4}{}\label{structentt_1_1basic__collector_3_4}\index{entt::basic\_collector$<$$>$@{entt::basic\_collector$<$$>$}}
+
+
+Collector.  
+
+
+
+
+{\ttfamily \#include $<$observer.\+hpp$>$}
+
+\doxysubsubsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... All\+Of, typename... None\+Of$>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1basic__collector_3_4_a0d5a3c7d8d96f79585930f93939136f0}{group}} (\mbox{\hyperlink{structentt_1_1exclude__t}{exclude\+\_\+t}}$<$ None\+Of... $>$=\{\}) \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Adds a grouping matcher to the collector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Any\+Of}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1basic__collector_3_4_a21e0f9aa34941dd983c52fd6a9893de2}{update}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Adds an observing matcher to the collector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Any\+Of}} $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1basic__collector_3_4_a634ac3a53ee686d7fb7121404b14c17e}{replace}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Adds an observing matcher to the collector.   \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+Collector. 
+
+A collector contains a set of rules (literally, matchers) to use to track entities.~\newline
+ Its main purpose is to generate a descriptor that allows an observer to know how to connect to a registry. 
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00046}{46}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1basic__collector_3_4_a0d5a3c7d8d96f79585930f93939136f0}\label{structentt_1_1basic__collector_3_4_a0d5a3c7d8d96f79585930f93939136f0} 
+\index{entt::basic\_collector$<$$>$@{entt::basic\_collector$<$$>$}!group@{group}}
+\index{group@{group}!entt::basic\_collector$<$$>$@{entt::basic\_collector$<$$>$}}
+\doxysubsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily template$<$typename... All\+Of, typename... None\+Of$>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1basic__collector}{entt\+::basic\+\_\+collector}}$<$$>$\+::group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1exclude__t}{exclude\+\_\+t}}$<$ None\+Of... $>$}]{ = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Adds a grouping matcher to the collector. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em All\+Of} & Types of components tracked by the matcher. \\
+\hline
+{\em None\+Of} & Types of components used to filter out entities. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+The updated collector. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00054}{54}} 行定义.
+
+\Hypertarget{structentt_1_1basic__collector_3_4_a634ac3a53ee686d7fb7121404b14c17e}\label{structentt_1_1basic__collector_3_4_a634ac3a53ee686d7fb7121404b14c17e} 
+\index{entt::basic\_collector$<$$>$@{entt::basic\_collector$<$$>$}!replace@{replace}}
+\index{replace@{replace}!entt::basic\_collector$<$$>$@{entt::basic\_collector$<$$>$}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Any\+Of}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1basic__collector}{entt\+::basic\+\_\+collector}}$<$$>$\+::replace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Adds an observing matcher to the collector.   
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Any\+Of} & Type of component for which changes should be detected. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+The updated collector.   
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00071}{71}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1basic__collector_3_4_a21e0f9aa34941dd983c52fd6a9893de2}\label{structentt_1_1basic__collector_3_4_a21e0f9aa34941dd983c52fd6a9893de2} 
+\index{entt::basic\_collector$<$$>$@{entt::basic\_collector$<$$>$}!update@{update}}
+\index{update@{update}!entt::basic\_collector$<$$>$@{entt::basic\_collector$<$$>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Any\+Of}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{constexpr}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{auto}} \mbox{\hyperlink{structentt_1_1basic__collector}{entt\+::basic\+\_\+collector}}$<$$>$\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Adds an observing matcher to the collector. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Any\+Of} & Type of component for which changes should be detected. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+The updated collector. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{observer_8hpp_source}{observer.\+hpp}} 第 \mbox{\hyperlink{observer_8hpp_source_l00064}{64}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/entity/\mbox{\hyperlink{observer_8hpp}{observer.\+hpp}}\end{DoxyCompactItemize}

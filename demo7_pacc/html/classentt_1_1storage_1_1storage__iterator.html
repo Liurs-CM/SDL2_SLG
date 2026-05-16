@@ -1,0 +1,1168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1storage.html">storage</a></li><li class="navelem"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classentt_1_1storage_1_1storage__iterator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt; 模板类 参考<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a05f7988690209175f3bc629396cd7b52" id="r_a05f7988690209175f3bc629396cd7b52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a> = <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a8bc2ef5b494683f307c336adbe671f65">index_type</a></td></tr>
+<tr class="separator:a05f7988690209175f3bc629396cd7b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07d0d97a405c1ab01210c22d590183e" id="r_ac07d0d97a405c1ab01210c22d590183e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> = Type</td></tr>
+<tr class="separator:ac07d0d97a405c1ab01210c22d590183e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ba82cdfe0e0ce5aec0590c41f104af" id="r_a05ba82cdfe0e0ce5aec0590c41f104af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05ba82cdfe0e0ce5aec0590c41f104af">pointer</a> = std::conditional_t&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a>, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> *, <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> * &gt;</td></tr>
+<tr class="separator:a05ba82cdfe0e0ce5aec0590c41f104af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80e5edae37500bc1a01c6e522117dc0" id="r_ae80e5edae37500bc1a01c6e522117dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ae80e5edae37500bc1a01c6e522117dc0">reference</a> = std::conditional_t&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a>, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> &amp;, <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> &amp; &gt;</td></tr>
+<tr class="separator:ae80e5edae37500bc1a01c6e522117dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d682427941bede89e35770d20ddeec8" id="r_a9d682427941bede89e35770d20ddeec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a9d682427941bede89e35770d20ddeec8">iterator_category</a> = std::random_access_iterator_tag</td></tr>
+<tr class="separator:a9d682427941bede89e35770d20ddeec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a549d48ec381f76e62b809816063b506b" id="r_a549d48ec381f76e62b809816063b506b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a549d48ec381f76e62b809816063b506b">storage_iterator</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a>=<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">default</a></td></tr>
+<tr class="separator:a549d48ec381f76e62b809816063b506b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ede6ab6ab1ad5ea0f1511aed51f166" id="r_a25ede6ab6ab1ad5ea0f1511aed51f166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a25ede6ab6ab1ad5ea0f1511aed51f166">operator++</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a25ede6ab6ab1ad5ea0f1511aed51f166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2514c367dd64c859cd06d8d66a566ad" id="r_ab2514c367dd64c859cd06d8d66a566ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab2514c367dd64c859cd06d8d66a566ad">operator++</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">int</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:ab2514c367dd64c859cd06d8d66a566ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db92e8cbcc1d70b2817a497ea8c6e7d" id="r_a4db92e8cbcc1d70b2817a497ea8c6e7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a4db92e8cbcc1d70b2817a497ea8c6e7d">operator--</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a4db92e8cbcc1d70b2817a497ea8c6e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767b920904af21dae7ad8a4578e933a0" id="r_a767b920904af21dae7ad8a4578e933a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a767b920904af21dae7ad8a4578e933a0">operator--</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">int</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a767b920904af21dae7ad8a4578e933a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499dcf40b5d7ff52ae48fd2027279888" id="r_a499dcf40b5d7ff52ae48fd2027279888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a499dcf40b5d7ff52ae48fd2027279888">operator+=</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a> value) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a499dcf40b5d7ff52ae48fd2027279888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4e0c86475300bb455be8e091ea25dd" id="r_a9c4e0c86475300bb455be8e091ea25dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a9c4e0c86475300bb455be8e091ea25dd">operator+</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a> value) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a9c4e0c86475300bb455be8e091ea25dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3fd0d4fc368e963bfeb172ce86a5a0" id="r_a3a3fd0d4fc368e963bfeb172ce86a5a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a3a3fd0d4fc368e963bfeb172ce86a5a0">operator-=</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a> value) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a3a3fd0d4fc368e963bfeb172ce86a5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70593b64995119332b2a1d13b3708718" id="r_a70593b64995119332b2a1d13b3708718"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a70593b64995119332b2a1d13b3708718">operator-</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a> value) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a70593b64995119332b2a1d13b3708718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca051973328c660860db9cd54bb3f750" id="r_aca051973328c660860db9cd54bb3f750"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#aca051973328c660860db9cd54bb3f750">operator-</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">other</a>) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:aca051973328c660860db9cd54bb3f750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715ec10295fb7dbacc2227e0dec7f07b" id="r_a715ec10295fb7dbacc2227e0dec7f07b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ae80e5edae37500bc1a01c6e522117dc0">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a715ec10295fb7dbacc2227e0dec7f07b">operator[]</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a> value) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a715ec10295fb7dbacc2227e0dec7f07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe720712a91e546b9f2eb542c385ad9" id="r_abfe720712a91e546b9f2eb542c385ad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#abfe720712a91e546b9f2eb542c385ad9">operator==</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">other</a>) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:abfe720712a91e546b9f2eb542c385ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03462fa2c4ef3fe3d3e5d06ce312167f" id="r_a03462fa2c4ef3fe3d3e5d06ce312167f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a03462fa2c4ef3fe3d3e5d06ce312167f">operator!=</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">other</a>) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a03462fa2c4ef3fe3d3e5d06ce312167f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f6d95462cd170727bf09d2295a1520" id="r_ab8f6d95462cd170727bf09d2295a1520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab8f6d95462cd170727bf09d2295a1520">operator&lt;</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">other</a>) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:ab8f6d95462cd170727bf09d2295a1520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cf5b2d542a5dc4240cf2d64261d9b0" id="r_af6cf5b2d542a5dc4240cf2d64261d9b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#af6cf5b2d542a5dc4240cf2d64261d9b0">operator&gt;</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">other</a>) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:af6cf5b2d542a5dc4240cf2d64261d9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0deb9d07a138b483b24cc59c926d0a" id="r_aaa0deb9d07a138b483b24cc59c926d0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#aaa0deb9d07a138b483b24cc59c926d0a">operator&lt;=</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">other</a>) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:aaa0deb9d07a138b483b24cc59c926d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840fa382d249aa2f2b83416570844f08" id="r_a840fa382d249aa2f2b83416570844f08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a840fa382d249aa2f2b83416570844f08">operator&gt;=</a> (<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">other</a>) <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a840fa382d249aa2f2b83416570844f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2599abaeb189d43c5f85b50b965946e8" id="r_a2599abaeb189d43c5f85b50b965946e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05ba82cdfe0e0ce5aec0590c41f104af">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a2599abaeb189d43c5f85b50b965946e8">operator-&gt;</a> () <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a2599abaeb189d43c5f85b50b965946e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50fb02d8929190a5165821e9b6edf19" id="r_ad50fb02d8929190a5165821e9b6edf19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ae80e5edae37500bc1a01c6e522117dc0">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ad50fb02d8929190a5165821e9b6edf19">operator*</a> () <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:ad50fb02d8929190a5165821e9b6edf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:afe0c82db8113e398ca514653684e1c8d" id="r_afe0c82db8113e398ca514653684e1c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#afe0c82db8113e398ca514653684e1c8d">instance_type</a> = std::conditional_t&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a>, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> std::vector&lt; Type &gt;, std::vector&lt; Type &gt; &gt;</td></tr>
+<tr class="separator:afe0c82db8113e398ca514653684e1c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc2ef5b494683f307c336adbe671f65" id="r_a8bc2ef5b494683f307c336adbe671f65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a8bc2ef5b494683f307c336adbe671f65">index_type</a> = <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> traits_type::difference_type</td></tr>
+<tr class="separator:a8bc2ef5b494683f307c336adbe671f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ab1d7704a2e938a2700fb82c9a9924a95" id="r_ab1d7704a2e938a2700fb82c9a9924a95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">storage_iterator</a> (<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#afe0c82db8113e398ca514653684e1c8d">instance_type</a> &amp;ref, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a8bc2ef5b494683f307c336adbe671f65">index_type</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">idx</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:ab1d7704a2e938a2700fb82c9a9924a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a9d703942babc56859e10379920b81a92" id="r_a9d703942babc56859e10379920b81a92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#afe0c82db8113e398ca514653684e1c8d">instance_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a9d703942babc56859e10379920b81a92">instances</a></td></tr>
+<tr class="separator:a9d703942babc56859e10379920b81a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61851753c400cbcd374ae886843ba49b" id="r_a61851753c400cbcd374ae886843ba49b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a8bc2ef5b494683f307c336adbe671f65">index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a61851753c400cbcd374ae886843ba49b">index</a></td></tr>
+<tr class="separator:a61851753c400cbcd374ae886843ba49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:acd52747850f72985bd9774e25a21e1a3" id="r_acd52747850f72985bd9774e25a21e1a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#acd52747850f72985bd9774e25a21e1a3">storage&lt; Entity, Type &gt;</a></td></tr>
+<tr class="separator:acd52747850f72985bd9774e25a21e1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> = std::void_t&lt;&gt;&gt;<br />
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt;<br />
+class entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;</div>
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00057">57</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a05f7988690209175f3bc629396cd7b52" name="a05f7988690209175f3bc629396cd7b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f7988690209175f3bc629396cd7b52">&#9670;&#160;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::difference_type =  <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a8bc2ef5b494683f307c336adbe671f65">index_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00068">68</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8bc2ef5b494683f307c336adbe671f65" name="a8bc2ef5b494683f307c336adbe671f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bc2ef5b494683f307c336adbe671f65">&#9670;&#160;</a></span>index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::index_type =  <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> traits_type::difference_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afe0c82db8113e398ca514653684e1c8d" name="afe0c82db8113e398ca514653684e1c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe0c82db8113e398ca514653684e1c8d">&#9670;&#160;</a></span>instance_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::instance_type =  std::conditional_t&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a>, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> std::vector&lt;Type&gt;, std::vector&lt;Type&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9d682427941bede89e35770d20ddeec8" name="a9d682427941bede89e35770d20ddeec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d682427941bede89e35770d20ddeec8">&#9670;&#160;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::iterator_category =  std::random_access_iterator_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a05ba82cdfe0e0ce5aec0590c41f104af" name="a05ba82cdfe0e0ce5aec0590c41f104af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ba82cdfe0e0ce5aec0590c41f104af">&#9670;&#160;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::pointer =  std::conditional_t&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a>, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> *, <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> *&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00070">70</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae80e5edae37500bc1a01c6e522117dc0" name="ae80e5edae37500bc1a01c6e522117dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80e5edae37500bc1a01c6e522117dc0">&#9670;&#160;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::reference =  std::conditional_t&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a>, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> &amp;, <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ac07d0d97a405c1ab01210c22d590183e">value_type</a> &amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac07d0d97a405c1ab01210c22d590183e" name="ac07d0d97a405c1ab01210c22d590183e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07d0d97a405c1ab01210c22d590183e">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">using</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::value_type =  Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ab1d7704a2e938a2700fb82c9a9924a95" name="ab1d7704a2e938a2700fb82c9a9924a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d7704a2e938a2700fb82c9a9924a95">&#9670;&#160;</a></span>storage_iterator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;::storage_iterator&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::storage_iterator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#afe0c82db8113e398ca514653684e1c8d">instance_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a8bc2ef5b494683f307c336adbe671f65">index_type</a>&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a549d48ec381f76e62b809816063b506b" name="a549d48ec381f76e62b809816063b506b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549d48ec381f76e62b809816063b506b">&#9670;&#160;</a></span>storage_iterator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;::storage_iterator&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::storage_iterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a03462fa2c4ef3fe3d3e5d06ce312167f" name="a03462fa2c4ef3fe3d3e5d06ce312167f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03462fa2c4ef3fe3d3e5d06ce312167f">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00125">125</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="ad50fb02d8929190a5165821e9b6edf19" name="ad50fb02d8929190a5165821e9b6edf19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50fb02d8929190a5165821e9b6edf19">&#9670;&#160;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ae80e5edae37500bc1a01c6e522117dc0">reference</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00150">150</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="storage_8hpp_source.html#l00145">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator-&gt;()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19_cgraph.png" border="0" usemap="#aclassentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19_cgraph" alt=""/></div>
+<map name="aclassentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19_cgraph" id="aclassentt_1_1storage_1_1storage__iterator_ad50fb02d8929190a5165821e9b6edf19_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,45"/>
+<area shape="rect" href="classentt_1_1storage_1_1storage__iterator.html#a2599abaeb189d43c5f85b50b965946e8" title=" " alt="" coords="216,5,379,45"/>
+<area shape="poly" title=" " alt="" coords="168,23,202,23,202,28,168,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9c4e0c86475300bb455be8e091ea25dd" name="a9c4e0c86475300bb455be8e091ea25dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4e0c86475300bb455be8e091ea25dd">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00099">99</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a25ede6ab6ab1ad5ea0f1511aed51f166" name="a25ede6ab6ab1ad5ea0f1511aed51f166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ede6ab6ab1ad5ea0f1511aed51f166">&#9670;&#160;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp; <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00076">76</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00080">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator++()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166_icgraph.png" border="0" usemap="#aclassentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166_icgraph" alt=""/></div>
+<map name="aclassentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166_icgraph" id="aclassentt_1_1storage_1_1storage__iterator_a25ede6ab6ab1ad5ea0f1511aed51f166_icgraph">
+<area shape="rect" title=" " alt="" coords="216,5,379,45"/>
+<area shape="rect" href="classentt_1_1storage_1_1storage__iterator.html#ab2514c367dd64c859cd06d8d66a566ad" title=" " alt="" coords="5,5,168,45"/>
+<area shape="poly" title=" " alt="" coords="202,28,168,28,168,23,202,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab2514c367dd64c859cd06d8d66a566ad" name="ab2514c367dd64c859cd06d8d66a566ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2514c367dd64c859cd06d8d66a566ad">&#9670;&#160;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>++ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00080">80</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00076">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator++()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad_cgraph.png" border="0" usemap="#aclassentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad_cgraph" alt=""/></div>
+<map name="aclassentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad_cgraph" id="aclassentt_1_1storage_1_1storage__iterator_ab2514c367dd64c859cd06d8d66a566ad_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,45"/>
+<area shape="rect" href="classentt_1_1storage_1_1storage__iterator.html#a25ede6ab6ab1ad5ea0f1511aed51f166" title=" " alt="" coords="216,5,379,45"/>
+<area shape="poly" title=" " alt="" coords="168,23,202,23,202,28,168,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a499dcf40b5d7ff52ae48fd2027279888" name="a499dcf40b5d7ff52ae48fd2027279888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a499dcf40b5d7ff52ae48fd2027279888">&#9670;&#160;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp; <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00094">94</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+</div>
+</div>
+<a id="a70593b64995119332b2a1d13b3708718" name="a70593b64995119332b2a1d13b3708718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70593b64995119332b2a1d13b3708718">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aca051973328c660860db9cd54bb3f750" name="aca051973328c660860db9cd54bb3f750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca051973328c660860db9cd54bb3f750">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00112">112</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+</div>
+</div>
+<a id="a4db92e8cbcc1d70b2817a497ea8c6e7d" name="a4db92e8cbcc1d70b2817a497ea8c6e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db92e8cbcc1d70b2817a497ea8c6e7d">&#9670;&#160;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp; <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00085">85</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00089">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator--()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d_icgraph.png" border="0" usemap="#aclassentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d_icgraph" alt=""/></div>
+<map name="aclassentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d_icgraph" id="aclassentt_1_1storage_1_1storage__iterator_a4db92e8cbcc1d70b2817a497ea8c6e7d_icgraph">
+<area shape="rect" title=" " alt="" coords="216,5,379,45"/>
+<area shape="rect" href="classentt_1_1storage_1_1storage__iterator.html#a767b920904af21dae7ad8a4578e933a0" title=" " alt="" coords="5,5,168,45"/>
+<area shape="poly" title=" " alt="" coords="202,28,168,28,168,23,202,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a767b920904af21dae7ad8a4578e933a0" name="a767b920904af21dae7ad8a4578e933a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767b920904af21dae7ad8a4578e933a0">&#9670;&#160;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>-- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00089">89</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00085">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator--()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0_cgraph.png" border="0" usemap="#aclassentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0_cgraph" alt=""/></div>
+<map name="aclassentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0_cgraph" id="aclassentt_1_1storage_1_1storage__iterator_a767b920904af21dae7ad8a4578e933a0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,45"/>
+<area shape="rect" href="classentt_1_1storage_1_1storage__iterator.html#a4db92e8cbcc1d70b2817a497ea8c6e7d" title=" " alt="" coords="216,5,379,45"/>
+<area shape="poly" title=" " alt="" coords="168,23,202,23,202,28,168,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3a3fd0d4fc368e963bfeb172ce86a5a0" name="a3a3fd0d4fc368e963bfeb172ce86a5a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3fd0d4fc368e963bfeb172ce86a5a0">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a> &amp; <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2599abaeb189d43c5f85b50b965946e8" name="a2599abaeb189d43c5f85b50b965946e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2599abaeb189d43c5f85b50b965946e8">&#9670;&#160;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05ba82cdfe0e0ce5aec0590c41f104af">pointer</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00145">145</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00150">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator*()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8_icgraph.png" border="0" usemap="#aclassentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8_icgraph" alt=""/></div>
+<map name="aclassentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8_icgraph" id="aclassentt_1_1storage_1_1storage__iterator_a2599abaeb189d43c5f85b50b965946e8_icgraph">
+<area shape="rect" title=" " alt="" coords="216,5,379,45"/>
+<area shape="rect" href="classentt_1_1storage_1_1storage__iterator.html#ad50fb02d8929190a5165821e9b6edf19" title=" " alt="" coords="5,5,168,45"/>
+<area shape="poly" title=" " alt="" coords="202,28,168,28,168,23,202,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8f6d95462cd170727bf09d2295a1520" name="ab8f6d95462cd170727bf09d2295a1520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f6d95462cd170727bf09d2295a1520">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00129">129</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+</div>
+</div>
+<a id="aaa0deb9d07a138b483b24cc59c926d0a" name="aaa0deb9d07a138b483b24cc59c926d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0deb9d07a138b483b24cc59c926d0a">&#9670;&#160;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00137">137</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="abfe720712a91e546b9f2eb542c385ad9" name="abfe720712a91e546b9f2eb542c385ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe720712a91e546b9f2eb542c385ad9">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00121">121</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+</div>
+</div>
+<a id="af6cf5b2d542a5dc4240cf2d64261d9b0" name="af6cf5b2d542a5dc4240cf2d64261d9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cf5b2d542a5dc4240cf2d64261d9b0">&#9670;&#160;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00133">133</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a>.</p>
+
+</div>
+</div>
+<a id="a840fa382d249aa2f2b83416570844f08" name="a840fa382d249aa2f2b83416570844f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840fa382d249aa2f2b83416570844f08">&#9670;&#160;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html">storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00141">141</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a715ec10295fb7dbacc2227e0dec7f07b" name="a715ec10295fb7dbacc2227e0dec7f07b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715ec10295fb7dbacc2227e0dec7f07b">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ae80e5edae37500bc1a01c6e522117dc0">reference</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">::operator</a>[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">const</a> <a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a05f7988690209175f3bc629396cd7b52">difference_type</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00116">116</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="storage_8hpp_source.html#l00156">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::index</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00155">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::instances</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a id="acd52747850f72985bd9774e25a21e1a3" name="acd52747850f72985bd9774e25a21e1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd52747850f72985bd9774e25a21e1a3">&#9670;&#160;</a></span>storage&lt; Entity, Type &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">friend</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">class</a> <a class="el" href="classentt_1_1storage.html">storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00513">513</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a61851753c400cbcd374ae886843ba49b" name="a61851753c400cbcd374ae886843ba49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61851753c400cbcd374ae886843ba49b">&#9670;&#160;</a></span>index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#a8bc2ef5b494683f307c336adbe671f65">index_type</a> <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::index</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00156">156</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00076">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator++()</a>, <a class="el" href="storage_8hpp_source.html#l00094">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator+=()</a>, <a class="el" href="storage_8hpp_source.html#l00112">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator-()</a>, <a class="el" href="storage_8hpp_source.html#l00085">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator--()</a>, <a class="el" href="storage_8hpp_source.html#l00145">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator-&gt;()</a>, <a class="el" href="storage_8hpp_source.html#l00129">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator&lt;()</a>, <a class="el" href="storage_8hpp_source.html#l00121">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator==()</a>, <a class="el" href="storage_8hpp_source.html#l00133">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator&gt;()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00116">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator[]()</a>.</p>
+
+</div>
+</div>
+<a id="a9d703942babc56859e10379920b81a92" name="a9d703942babc56859e10379920b81a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d703942babc56859e10379920b81a92">&#9670;&#160;</a></span>instances</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a> , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> Type , <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a>  = std::void_t&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">bool</a> Const&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1storage_1_1storage__iterator.html#afe0c82db8113e398ca514653684e1c8d">instance_type</a>* <a class="el" href="classentt_1_1storage.html">entt::storage</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Entity</a>, Type, <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">typename</a> &gt;<a class="el" href="classentt_1_1storage_1_1storage__iterator.html#ab1d7704a2e938a2700fb82c9a9924a95">::storage_iterator</a>&lt; <a class="el" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98">Const</a> &gt;::instances</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="storage_8hpp_source.html">storage.hpp</a> 第 <a class="el" href="storage_8hpp_source.html#l00155">155</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00116">entt::storage&lt; Entity, Type, typename &gt;::storage_iterator&lt; Const &gt;::operator[]()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/entity/<a class="el" href="storage_8hpp_source.html">storage.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

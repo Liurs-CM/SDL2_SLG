@@ -1,0 +1,2354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::sparse_set&lt; Entity &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1sparse__set.html">sparse_set</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classentt_1_1sparse__set-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::sparse_set&lt; Entity &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Basic sparse set implementation.  
+ <a href="classentt_1_1sparse__set.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a>&gt;</code></p>
+<div class="dynheader">
+类 entt::sparse_set&lt; Entity &gt; 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set__inherit__graph.png" border="0" usemap="#aentt_1_1sparse__set_3_01Entity_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="aentt_1_1sparse__set_3_01Entity_01_4_inherit__map" id="aentt_1_1sparse__set_3_01Entity_01_4_inherit__map">
+<area shape="rect" title="Basic sparse set implementation." alt="" coords="5,116,200,141"/>
+<area shape="rect" href="classentt_1_1storage.html" title=" " alt="" coords="276,13,439,53"/>
+<area shape="poly" title=" " alt="" coords="141,108,247,62,283,50,284,55,249,67,143,112"/>
+<area shape="rect" href="classentt_1_1storage.html" title=" " alt="" coords="273,77,442,117"/>
+<area shape="poly" title=" " alt="" coords="214,112,272,105,273,110,214,117"/>
+<area shape="rect" href="classentt_1_1storage.html" title="Basic storage implementation." alt="" coords="276,141,439,181"/>
+<area shape="poly" title=" " alt="" coords="214,140,276,148,275,153,214,145"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html" title="Basic storage implementation." alt="" coords="248,205,467,260"/>
+<area shape="poly" title=" " alt="" coords="145,145,249,190,281,203,279,208,247,195,143,150"/>
+<area shape="rect" href="structentt_1_1basic__registry_1_1pool__handler.html" title=" " alt="" coords="515,5,697,60"/>
+<area shape="poly" title=" " alt="" coords="453,30,514,30,514,35,453,35"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set_1_1sparse__set__iterator.html">sparse_set_iterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a9a1dbe5ab2dbb098beae0bff56bbf780" id="r_a9a1dbe5ab2dbb098beae0bff56bbf780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a></td></tr>
+<tr class="memdesc:a9a1dbe5ab2dbb098beae0bff56bbf780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying entity identifier.  <br /></td></tr>
+<tr class="separator:a9a1dbe5ab2dbb098beae0bff56bbf780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2138b0eb8c7ac968e9e38a9e981ec1" id="r_a3d2138b0eb8c7ac968e9e38a9e981ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a> = std::size_t</td></tr>
+<tr class="memdesc:a3d2138b0eb8c7ac968e9e38a9e981ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsigned integer type.  <br /></td></tr>
+<tr class="separator:a3d2138b0eb8c7ac968e9e38a9e981ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cf39bf66b858f1d1d0f1e6fedb8fe1" id="r_a22cf39bf66b858f1d1d0f1e6fedb8fe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> = <a class="el" href="classentt_1_1sparse__set_1_1sparse__set__iterator.html">sparse_set_iterator</a></td></tr>
+<tr class="memdesc:a22cf39bf66b858f1d1d0f1e6fedb8fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random access iterator type.  <br /></td></tr>
+<tr class="separator:a22cf39bf66b858f1d1d0f1e6fedb8fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8ef544aaed30126797f6f0b9a9f8b9e8" id="r_a8ef544aaed30126797f6f0b9a9f8b9e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a8ef544aaed30126797f6f0b9a9f8b9e8">sparse_set</a> ()=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:a8ef544aaed30126797f6f0b9a9f8b9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:a8ef544aaed30126797f6f0b9a9f8b9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f4f137b5ac0984599067d5408db5bf" id="r_af8f4f137b5ac0984599067d5408db5bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#af8f4f137b5ac0984599067d5408db5bf">sparse_set</a> (<a class="el" href="classentt_1_1sparse__set.html">sparse_set</a> &amp;&amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:af8f4f137b5ac0984599067d5408db5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move constructor.  <br /></td></tr>
+<tr class="separator:af8f4f137b5ac0984599067d5408db5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea4731d5a2e22f4bd43f8e19ca39f58" id="r_a2ea4731d5a2e22f4bd43f8e19ca39f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a2ea4731d5a2e22f4bd43f8e19ca39f58">~sparse_set</a> ()=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:a2ea4731d5a2e22f4bd43f8e19ca39f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
+<tr class="separator:a2ea4731d5a2e22f4bd43f8e19ca39f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4151494f59d34d78496f3ae0b894d9ce" id="r_a4151494f59d34d78496f3ae0b894d9ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html">sparse_set</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a4151494f59d34d78496f3ae0b894d9ce">operator=</a> (<a class="el" href="classentt_1_1sparse__set.html">sparse_set</a> &amp;&amp;)=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="memdesc:a4151494f59d34d78496f3ae0b894d9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move assignment operator.  <br /></td></tr>
+<tr class="separator:a4151494f59d34d78496f3ae0b894d9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4b9dd989877bc333fdc455fcd068d7" id="r_a8b4b9dd989877bc333fdc455fcd068d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a8b4b9dd989877bc333fdc455fcd068d7">reserve</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">cap</a>)</td></tr>
+<tr class="memdesc:a8b4b9dd989877bc333fdc455fcd068d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the capacity of a sparse set.  <br /></td></tr>
+<tr class="separator:a8b4b9dd989877bc333fdc455fcd068d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30267005e552fce0d2a9b4e4d70d6656" id="r_a30267005e552fce0d2a9b4e4d70d6656"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a30267005e552fce0d2a9b4e4d70d6656">capacity</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a30267005e552fce0d2a9b4e4d70d6656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements that a sparse set has currently allocated space for.  <br /></td></tr>
+<tr class="separator:a30267005e552fce0d2a9b4e4d70d6656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f5d70148a149e4cbc485c7a7b00dda" id="r_a75f5d70148a149e4cbc485c7a7b00dda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a75f5d70148a149e4cbc485c7a7b00dda">shrink_to_fit</a> ()</td></tr>
+<tr class="memdesc:a75f5d70148a149e4cbc485c7a7b00dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the removal of unused capacity.  <br /></td></tr>
+<tr class="separator:a75f5d70148a149e4cbc485c7a7b00dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79345df59154e5ea9e58b7efa7ff8f0" id="r_af79345df59154e5ea9e58b7efa7ff8f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#af79345df59154e5ea9e58b7efa7ff8f0">extent</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:af79345df59154e5ea9e58b7efa7ff8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the extent of a sparse set.  <br /></td></tr>
+<tr class="separator:af79345df59154e5ea9e58b7efa7ff8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340dff7484f1e58feff58a5f0627e190" id="r_a340dff7484f1e58feff58a5f0627e190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a340dff7484f1e58feff58a5f0627e190">size</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a340dff7484f1e58feff58a5f0627e190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in a sparse set.  <br /></td></tr>
+<tr class="separator:a340dff7484f1e58feff58a5f0627e190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a16cb354a9ed5ded92b6edcddce15e" id="r_ae1a16cb354a9ed5ded92b6edcddce15e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ae1a16cb354a9ed5ded92b6edcddce15e">empty</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ae1a16cb354a9ed5ded92b6edcddce15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a sparse set is empty.  <br /></td></tr>
+<tr class="separator:ae1a16cb354a9ed5ded92b6edcddce15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c55497115906827dd9c42648cc27d18" id="r_a5c55497115906827dd9c42648cc27d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a5c55497115906827dd9c42648cc27d18">data</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a5c55497115906827dd9c42648cc27d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the internal packed array.  <br /></td></tr>
+<tr class="separator:a5c55497115906827dd9c42648cc27d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cdea3ee010c525259e68158f3a06092" id="r_a6cdea3ee010c525259e68158f3a06092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a6cdea3ee010c525259e68158f3a06092">begin</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a6cdea3ee010c525259e68158f3a06092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to the beginning.  <br /></td></tr>
+<tr class="separator:a6cdea3ee010c525259e68158f3a06092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8521517b6cac85e0e14827cb4459e8cc" id="r_a8521517b6cac85e0e14827cb4459e8cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a8521517b6cac85e0e14827cb4459e8cc">end</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:a8521517b6cac85e0e14827cb4459e8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to the end.  <br /></td></tr>
+<tr class="separator:a8521517b6cac85e0e14827cb4459e8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8687d89acbd898f3c54fc655fa09825" id="r_ae8687d89acbd898f3c54fc655fa09825"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825">find</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="memdesc:ae8687d89acbd898f3c54fc655fa09825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an entity.  <br /></td></tr>
+<tr class="separator:ae8687d89acbd898f3c54fc655fa09825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade11e6ef782602dd3ce2272718acbcd5" id="r_ade11e6ef782602dd3ce2272718acbcd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5">contains</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="memdesc:ade11e6ef782602dd3ce2272718acbcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a sparse set contains an entity.  <br /></td></tr>
+<tr class="separator:ade11e6ef782602dd3ce2272718acbcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45740d20df28710b87783d814abee1f7" id="r_a45740d20df28710b87783d814abee1f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a45740d20df28710b87783d814abee1f7">has</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="memdesc:a45740d20df28710b87783d814abee1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a sparse set contains an entity.    <br /></td></tr>
+<tr class="separator:a45740d20df28710b87783d814abee1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17386e505ea87ccc100e23360c93aa46" id="r_a17386e505ea87ccc100e23360c93aa46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46">index</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="memdesc:a17386e505ea87ccc100e23360c93aa46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of an entity in a sparse set.  <br /></td></tr>
+<tr class="separator:a17386e505ea87ccc100e23360c93aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2912e032eec6f1ea78dddf0b0f1d0e06" id="r_a2912e032eec6f1ea78dddf0b0f1d0e06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06">emplace</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt)</td></tr>
+<tr class="memdesc:a2912e032eec6f1ea78dddf0b0f1d0e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns an entity to a sparse set.  <br /></td></tr>
+<tr class="separator:a2912e032eec6f1ea78dddf0b0f1d0e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6d293b9bc7227de22c86722881083f" id="r_a4f6d293b9bc7227de22c86722881083f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a4f6d293b9bc7227de22c86722881083f">construct</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt)</td></tr>
+<tr class="memdesc:a4f6d293b9bc7227de22c86722881083f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns an entity to a sparse set.    <br /></td></tr>
+<tr class="separator:a4f6d293b9bc7227de22c86722881083f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef87aec55a74c0418fe21fb368a0f2ac" id="r_aef87aec55a74c0418fe21fb368a0f2ac"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> &gt; </td></tr>
+<tr class="memitem:aef87aec55a74c0418fe21fb368a0f2ac"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac">insert</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">first</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">last</a>)</td></tr>
+<tr class="memdesc:aef87aec55a74c0418fe21fb368a0f2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns one or more entities to a sparse set.  <br /></td></tr>
+<tr class="separator:aef87aec55a74c0418fe21fb368a0f2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e7d9777838f856ac4558a839d2069c" id="r_a00e7d9777838f856ac4558a839d2069c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> &gt; </td></tr>
+<tr class="memitem:a00e7d9777838f856ac4558a839d2069c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c">construct</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">first</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">last</a>)</td></tr>
+<tr class="memdesc:a00e7d9777838f856ac4558a839d2069c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns one or more entities to a sparse set.    <br /></td></tr>
+<tr class="separator:a00e7d9777838f856ac4558a839d2069c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a40f93eef20024979097d9fe14261e" id="r_ae5a40f93eef20024979097d9fe14261e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e">erase</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt)</td></tr>
+<tr class="memdesc:ae5a40f93eef20024979097d9fe14261e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an entity from a sparse set.  <br /></td></tr>
+<tr class="separator:ae5a40f93eef20024979097d9fe14261e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69719626bee1add76096046db86a170" id="r_ab69719626bee1add76096046db86a170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ab69719626bee1add76096046db86a170">destroy</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> entt)</td></tr>
+<tr class="memdesc:ab69719626bee1add76096046db86a170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an entity from a sparse set.    <br /></td></tr>
+<tr class="separator:ab69719626bee1add76096046db86a170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6b341dd385fc5802f8ab5de2a2845c" id="r_a7e6b341dd385fc5802f8ab5de2a2845c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">virtual</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a7e6b341dd385fc5802f8ab5de2a2845c">swap</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">lhs</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">rhs</a>)</td></tr>
+<tr class="memdesc:a7e6b341dd385fc5802f8ab5de2a2845c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps two entities in the internal packed array.  <br /></td></tr>
+<tr class="separator:a7e6b341dd385fc5802f8ab5de2a2845c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64875d6e1981746f853d8cb62af15d8" id="r_ad64875d6e1981746f853d8cb62af15d8"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a> , <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>  = std_sort, typename... Args&gt; </td></tr>
+<tr class="memitem:ad64875d6e1981746f853d8cb62af15d8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ad64875d6e1981746f853d8cb62af15d8">sort</a> (<a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">first</a>, <a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">last</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">compare</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">algo</a>=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>{}, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)</td></tr>
+<tr class="memdesc:ad64875d6e1981746f853d8cb62af15d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort elements according to the given comparison function.  <br /></td></tr>
+<tr class="separator:ad64875d6e1981746f853d8cb62af15d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfef629658fc966c643167af7079d3c5" id="r_adfef629658fc966c643167af7079d3c5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Apply</a> , <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a> , <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>  = std_sort, typename... Args&gt; </td></tr>
+<tr class="memitem:adfef629658fc966c643167af7079d3c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#adfef629658fc966c643167af7079d3c5">arrange</a> (<a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">first</a>, <a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">last</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Apply</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">apply</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">compare</a>, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">algo</a>=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>{}, <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;... <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">args</a>)</td></tr>
+<tr class="memdesc:adfef629658fc966c643167af7079d3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort elements according to the given comparison function.  <br /></td></tr>
+<tr class="separator:adfef629658fc966c643167af7079d3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a683d1f8f52b1083cddd9938536a74a" id="r_a1a683d1f8f52b1083cddd9938536a74a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a1a683d1f8f52b1083cddd9938536a74a">respect</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a> &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>)</td></tr>
+<tr class="memdesc:a1a683d1f8f52b1083cddd9938536a74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort entities according to their order in another sparse set.  <br /></td></tr>
+<tr class="separator:a1a683d1f8f52b1083cddd9938536a74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a691245be8914b0a2d3756a0fc02d9" id="r_ad9a691245be8914b0a2d3756a0fc02d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ad9a691245be8914b0a2d3756a0fc02d9">clear</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="memdesc:ad9a691245be8914b0a2d3756a0fc02d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears a sparse set.  <br /></td></tr>
+<tr class="separator:ad9a691245be8914b0a2d3756a0fc02d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:a7aa7735bf27c87cfd3febc2ed99037dc" id="r_a7aa7735bf27c87cfd3febc2ed99037dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a7aa7735bf27c87cfd3febc2ed99037dc">traits_type</a> = <a class="el" href="structentt_1_1entt__traits.html">entt_traits</a>&lt; std::underlying_type_t&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &gt;</td></tr>
+<tr class="separator:a7aa7735bf27c87cfd3febc2ed99037dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a086e4bfea5c8fe04fa7066195ed10" id="r_a20a086e4bfea5c8fe04fa7066195ed10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a20a086e4bfea5c8fe04fa7066195ed10">page_type</a> = std::unique_ptr&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>[]&gt;</td></tr>
+<tr class="separator:a20a086e4bfea5c8fe04fa7066195ed10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a7125ad21e521dc5077afa27ce1394a0b" id="r_a7125ad21e521dc5077afa27ce1394a0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b">page</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> entt) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a7125ad21e521dc5077afa27ce1394a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94306ce6028851d5fb0add3c9721b58" id="r_aa94306ce6028851d5fb0add3c9721b58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58">offset</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> entt) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:aa94306ce6028851d5fb0add3c9721b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75edf11bea4943d0ac243be108c3c9fd" id="r_a75edf11bea4943d0ac243be108c3c9fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1sparse__set.html#a20a086e4bfea5c8fe04fa7066195ed10">page_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd">assure</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> std::size_t <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">pos</a>)</td></tr>
+<tr class="separator:a75edf11bea4943d0ac243be108c3c9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ae742cfd51bda38eac667a7e5d54b6569" id="r_ae742cfd51bda38eac667a7e5d54b6569"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classentt_1_1sparse__set.html#a20a086e4bfea5c8fe04fa7066195ed10">page_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ae742cfd51bda38eac667a7e5d54b6569">sparse</a></td></tr>
+<tr class="separator:ae742cfd51bda38eac667a7e5d54b6569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f4f25f5ed77c50bab7b7b694d0e2cf" id="r_ab2f4f25f5ed77c50bab7b7b694d0e2cf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ab2f4f25f5ed77c50bab7b7b694d0e2cf">packed</a></td></tr>
+<tr class="separator:ab2f4f25f5ed77c50bab7b7b694d0e2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:ad9cab790fb04692b3b40b85c81d19374" id="r_ad9cab790fb04692b3b40b85c81d19374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">static</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1sparse__set.html#ad9cab790fb04692b3b40b85c81d19374">entt_per_page</a> = <a class="el" href="config_8h.html#a27277c78b1ff633a5ade50a5138c441a">ENTT_PAGE_SIZE</a> / <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">sizeof</a>(<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>)</td></tr>
+<tr class="separator:ad9cab790fb04692b3b40b85c81d19374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt;<br />
+class entt::sparse_set&lt; Entity &gt;</div><p>Basic sparse set implementation. </p>
+<p>Sparse set or packed array or whatever is the name users give it.<br  />
+ Two arrays: an <em>external</em> one and an <em>internal</em> one; a <em>sparse</em> one and a <em>packed</em> one; one used for direct access through contiguous memory, the other one used to get the data through an extra level of indirection.<br  />
+ This is largely used by the registry to offer users the fastest access ever to the components. Views and groups in general are almost entirely designed around sparse sets.</p>
+<p>This type of data structure is widely documented in the literature and on the web. This is nothing more than a customized implementation suitable for the purpose of the framework.</p>
+<dl class="section note"><dt>注解</dt><dd>There are no guarantees that entities are returned in the insertion order when iterate a sparse set. Do not make assumption on the order in any case.</dd>
+<dd>
+Internal data structures arrange elements to maximize performance. Because of that, there are no guarantees that elements have the expected order when iterate directly the internal packed array (see <code>data</code> and <code>size</code> member functions for that). Use <code>begin</code> and <code>end</code> instead.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Entity</td><td>A valid entity type (see <a class="el" href="structentt_1_1entt__traits.html" title="Entity traits.">entt_traits</a> for more details). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00048">48</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a9a1dbe5ab2dbb098beae0bff56bbf780" name="a9a1dbe5ab2dbb098beae0bff56bbf780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1dbe5ab2dbb098beae0bff56bbf780">&#9670;&#160;</a></span>entity_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::entity_type =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Underlying entity identifier. </p>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00183">183</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a22cf39bf66b858f1d1d0f1e6fedb8fe1" name="a22cf39bf66b858f1d1d0f1e6fedb8fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cf39bf66b858f1d1d0f1e6fedb8fe1">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::iterator =  <a class="el" href="classentt_1_1sparse__set_1_1sparse__set__iterator.html">sparse_set_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Random access iterator type. </p>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00187">187</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a20a086e4bfea5c8fe04fa7066195ed10" name="a20a086e4bfea5c8fe04fa7066195ed10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a086e4bfea5c8fe04fa7066195ed10">&#9670;&#160;</a></span>page_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::page_type =  std::unique_ptr&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>[]&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3d2138b0eb8c7ac968e9e38a9e981ec1" name="a3d2138b0eb8c7ac968e9e38a9e981ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2138b0eb8c7ac968e9e38a9e981ec1">&#9670;&#160;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::size_type =  std::size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unsigned integer type. </p>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00185">185</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7aa7735bf27c87cfd3febc2ed99037dc" name="a7aa7735bf27c87cfd3febc2ed99037dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa7735bf27c87cfd3febc2ed99037dc">&#9670;&#160;</a></span>traits_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::traits_type =  <a class="el" href="structentt_1_1entt__traits.html">entt_traits</a>&lt;std::underlying_type_t&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8ef544aaed30126797f6f0b9a9f8b9e8" name="a8ef544aaed30126797f6f0b9a9f8b9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef544aaed30126797f6f0b9a9f8b9e8">&#9670;&#160;</a></span>sparse_set() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::sparse_set </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a id="af8f4f137b5ac0984599067d5408db5bf" name="af8f4f137b5ac0984599067d5408db5bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f4f137b5ac0984599067d5408db5bf">&#9670;&#160;</a></span>sparse_set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::sparse_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move constructor. </p>
+
+</div>
+</div>
+<a id="a2ea4731d5a2e22f4bd43f8e19ca39f58" name="a2ea4731d5a2e22f4bd43f8e19ca39f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea4731d5a2e22f4bd43f8e19ca39f58">&#9670;&#160;</a></span>~sparse_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">virtual</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::~<a class="el" href="classentt_1_1sparse__set.html">sparse_set</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="adfef629658fc966c643167af7079d3c5" name="adfef629658fc966c643167af7079d3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfef629658fc966c643167af7079d3c5">&#9670;&#160;</a></span>arrange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Apply</a> , <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a> , <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>  = std_sort, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::arrange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a>&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Apply</a>&#160;</td>
+          <td class="paramname"><em>apply</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a>&#160;</td>
+          <td class="paramname"><em>compare</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>&#160;</td>
+          <td class="paramname"><em>algo</em> = <code><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort elements according to the given comparison function. </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classentt_1_1sparse__set.html#ad64875d6e1981746f853d8cb62af15d8" title="Sort elements according to the given comparison function.">sort</a></dd></dl>
+<p>This function is a slightly slower version of <code>sort</code> that invokes the caller to indicate which entities are swapped.<br  />
+ It's recommended when the caller wants to sort its own data structures to align them with the order induced in the sparse set.</p>
+<p>The signature of the callback should be equivalent to the following:</p>
+<div class="fragment"><div class="line"><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>(<span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>, <span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>);</div>
+<div class="ttc" id="anamespaceentt_html_a8c24ecc5ab0055f9f2a4725c95afb29e"><div class="ttname"><a href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">entt::get</a></div><div class="ttdeci">constexpr get_t&lt; Type... &gt; get</div><div class="ttdoc">Variable template for lists of observed components.</div><div class="ttdef"><b>Definition</b> <a href="entity_2utility_8hpp_source.html#l00040">utility.hpp:40</a></div></div>
+</div><!-- fragment --><dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Apply</td><td>Type of function object to invoke to notify the caller. </td></tr>
+    <tr><td class="paramname">Compare</td><td>Type of comparison function object. </td></tr>
+    <tr><td class="paramname">Sort</td><td>Type of sort function object. </td></tr>
+    <tr><td class="paramname">Args</td><td>Types of arguments to forward to the sort function object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>An iterator to the first element of the range to sort. </td></tr>
+    <tr><td class="paramname">last</td><td>An iterator past the last element of the range to sort. </td></tr>
+    <tr><td class="paramname">apply</td><td>A valid function object to use as a callback. </td></tr>
+    <tr><td class="paramname">compare</td><td>A valid comparison function object. </td></tr>
+    <tr><td class="paramname">algo</td><td>A valid sort function object. </td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to forward to the sort function object, if any. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00556">556</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a75edf11bea4943d0ac243be108c3c9fd" name="a75edf11bea4943d0ac243be108c3c9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75edf11bea4943d0ac243be108c3c9fd">&#9670;&#160;</a></span>assure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a20a086e4bfea5c8fe04fa7066195ed10">page_type</a> &amp; <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::assure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> std::size_t&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00165">165</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00050">entt::sparse_set&lt; Entity &gt;::entt_per_page</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="entity_8hpp_source.html#l00174">entt::null</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00379">entt::sparse_set&lt; Entity &gt;::emplace()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00405">entt::sparse_set&lt; Entity &gt;::insert()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd_icgraph" id="aclassentt_1_1sparse__set_a75edf11bea4943d0ac243be108c3c9fd_icgraph">
+<area shape="rect" title=" " alt="" coords="728,185,905,211"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="489,113,680,139"/>
+<area shape="poly" title=" " alt="" coords="761,184,626,141,627,136,763,179"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="499,221,670,247"/>
+<area shape="poly" title=" " alt="" coords="721,215,667,224,666,219,721,210"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a4f6d293b9bc7227de22c86722881083f" title="Assigns an entity to a sparse set." alt="" coords="247,28,441,53"/>
+<area shape="poly" title=" " alt="" coords="544,110,440,67,402,56,403,51,442,62,546,105"/>
+<area shape="rect" href="classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="259,77,429,103"/>
+<area shape="poly" title=" " alt="" coords="485,114,428,105,429,100,486,109"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#a392d8e383d270329945c8acb38469af4" title="Assigns an entity to a storage and constructs its object." alt="" coords="247,127,441,197"/>
+<area shape="poly" title=" " alt="" coords="486,143,441,150,440,145,485,138"/>
+<area shape="rect" href="classentt_1_1storage.html#a649509ba225d8ddc583c965036327b5f" title="Assigns an entity to a storage and constructs its object." alt="" coords="15,5,189,31"/>
+<area shape="poly" title=" " alt="" coords="275,76,246,67,198,46,156,33,158,28,200,41,248,62,276,71"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#ae77b1c5e193fcf8bed2641b3294db5a5" title="Assigns an entity to a storage and constructs its object." alt="" coords="5,55,199,125"/>
+<area shape="poly" title=" " alt="" coords="246,93,199,93,199,87,246,87"/>
+<area shape="rect" href="structentt_1_1basic__registry_1_1pool__handler.html#a3501b53ff000059aeb2958be31156c7c" title=" " alt="" coords="13,149,191,189"/>
+<area shape="poly" title=" " alt="" coords="276,109,248,118,200,139,167,151,165,146,198,134,246,113,275,104"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c" title="Assigns one or more entities to a sparse set." alt="" coords="247,221,441,247"/>
+<area shape="poly" title=" " alt="" coords="485,237,442,237,442,231,485,231"/>
+<area shape="rect" href="classentt_1_1storage.html#ae775ff0becf923b711f6e3476a7cb9f6" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="269,271,419,296"/>
+<area shape="poly" title=" " alt="" coords="509,252,407,273,406,268,508,247"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6cdea3ee010c525259e68158f3a06092" name="a6cdea3ee010c525259e68158f3a06092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cdea3ee010c525259e68158f3a06092">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator to the beginning. </p>
+<p>The returned iterator points to the first entity of the internal packed array. If the sparse set is empty, the returned iterator will be equal to <code><a class="el" href="classentt_1_1sparse__set.html#a8521517b6cac85e0e14827cb4459e8cc" title="Returns an iterator to the end.">end()</a></code>.</p>
+<dl class="section note"><dt>注解</dt><dd>Random access iterators stay true to the order imposed by a call to <code>respect</code>.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the first entity of the internal packed array. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00301">301</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>.</p>
+
+</div>
+</div>
+<a id="a30267005e552fce0d2a9b4e4d70d6656" name="a30267005e552fce0d2a9b4e4d70d6656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30267005e552fce0d2a9b4e4d70d6656">&#9670;&#160;</a></span>capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of elements that a sparse set has currently allocated space for. </p>
+<dl class="section return"><dt>返回</dt><dd>Capacity of the sparse set. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00218">218</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>.</p>
+
+</div>
+</div>
+<a id="ad9a691245be8914b0a2d3756a0fc02d9" name="ad9a691245be8914b0a2d3756a0fc02d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a691245be8914b0a2d3756a0fc02d9">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears a sparse set. </p>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00623">623</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00507">entt::storage&lt; Entity, Type, typename &gt;::clear()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9_icgraph" id="aclassentt_1_1sparse__set_ad9a691245be8914b0a2d3756a0fc02d9_icgraph">
+<area shape="rect" title="Clears a sparse set." alt="" coords="199,5,365,31"/>
+<area shape="rect" href="classentt_1_1storage.html#ae28ee0f55d7c3416e46945bd7926ab09" title="Clears a storage." alt="" coords="5,5,151,31"/>
+<area shape="poly" title=" " alt="" coords="185,21,151,21,151,15,185,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4f6d293b9bc7227de22c86722881083f" name="a4f6d293b9bc7227de22c86722881083f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6d293b9bc7227de22c86722881083f">&#9670;&#160;</a></span>construct() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::construct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns an entity to a sparse set.   </p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier.   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00387">387</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00379">entt::sparse_set&lt; Entity &gt;::emplace()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f_cgraph" id="aclassentt_1_1sparse__set_a4f6d293b9bc7227de22c86722881083f_cgraph">
+<area shape="rect" title="Assigns an entity to a sparse set." alt="" coords="5,81,200,107"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="248,81,439,107"/>
+<area shape="poly" title=" " alt="" coords="200,91,234,91,234,97,200,97"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="493,5,670,31"/>
+<area shape="poly" title=" " alt="" coords="383,79,527,32,528,37,385,84"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="487,107,676,132"/>
+<area shape="poly" title=" " alt="" coords="439,101,473,105,473,110,438,107"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="724,83,895,108"/>
+<area shape="poly" title=" " alt="" coords="439,91,676,91,710,92,710,97,676,97,439,96"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="726,132,893,157"/>
+<area shape="poly" title=" " alt="" coords="373,104,425,125,487,142,545,149,604,152,712,150,712,156,604,158,544,155,486,147,423,130,371,109"/>
+<area shape="poly" title=" " alt="" coords="676,107,710,103,710,108,677,112"/>
+<area shape="poly" title=" " alt="" coords="677,127,713,131,712,137,676,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a00e7d9777838f856ac4558a839d2069c" name="a00e7d9777838f856ac4558a839d2069c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e7d9777838f856ac4558a839d2069c">&#9670;&#160;</a></span>construct() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::construct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a>&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns one or more entities to a sparse set.   </p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">It</td><td>Type of input iterator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>An iterator to the first element of the range of entities. </td></tr>
+    <tr><td class="paramname">last</td><td>An iterator past the last element of the range of entities.   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00419">419</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00405">entt::sparse_set&lt; Entity &gt;::insert()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c_cgraph" id="aclassentt_1_1sparse__set_a00e7d9777838f856ac4558a839d2069c_cgraph">
+<area shape="rect" title="Assigns one or more entities to a sparse set." alt="" coords="5,81,200,107"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="248,81,419,107"/>
+<area shape="poly" title=" " alt="" coords="200,91,234,91,234,97,200,97"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="473,5,650,31"/>
+<area shape="poly" title=" " alt="" coords="372,79,508,33,510,38,373,84"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="467,107,656,132"/>
+<area shape="poly" title=" " alt="" coords="420,101,454,105,453,110,419,106"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="704,83,875,108"/>
+<area shape="poly" title=" " alt="" coords="419,91,656,91,690,92,690,97,656,97,419,96"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="706,132,873,157"/>
+<area shape="poly" title=" " alt="" coords="361,104,409,125,467,142,525,150,583,153,692,151,692,156,583,159,524,155,466,147,407,130,359,109"/>
+<area shape="poly" title=" " alt="" coords="656,107,690,103,690,108,657,112"/>
+<area shape="poly" title=" " alt="" coords="657,127,693,131,692,137,656,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ade11e6ef782602dd3ce2272718acbcd5" name="ade11e6ef782602dd3ce2272718acbcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade11e6ef782602dd3ce2272718acbcd5">&#9670;&#160;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a sparse set contains an entity. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if the sparse set contains the entity, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00339">339</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_8hpp_source.html#l00174">entt::null</a>, <a class="el" href="sparse__set_8hpp_source.html#l00161">entt::sparse_set&lt; Entity &gt;::offset()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00157">entt::sparse_set&lt; Entity &gt;::page()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00379">entt::sparse_set&lt; Entity &gt;::emplace()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00434">entt::sparse_set&lt; Entity &gt;::erase()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00330">entt::sparse_set&lt; Entity &gt;::find()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00347">entt::sparse_set&lt; Entity &gt;::has()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00363">entt::sparse_set&lt; Entity &gt;::index()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00405">entt::sparse_set&lt; Entity &gt;::insert()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00601">entt::sparse_set&lt; Entity &gt;::respect()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00296">entt::storage&lt; Entity, Type, typename &gt;::try_get()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_cgraph" id="aclassentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_cgraph">
+<area shape="rect" title="Checks if a sparse set contains an entity." alt="" coords="5,31,195,56"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="243,5,413,31"/>
+<area shape="poly" title=" " alt="" coords="195,30,228,26,229,32,195,35"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="245,55,411,80"/>
+<area shape="poly" title=" " alt="" coords="195,51,231,55,231,60,195,56"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_icgraph" id="aclassentt_1_1sparse__set_ade11e6ef782602dd3ce2272718acbcd5_icgraph">
+<area shape="rect" title="Checks if a sparse set contains an entity." alt="" coords="728,395,917,420"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="489,113,680,139"/>
+<area shape="poly" title=" " alt="" coords="800,386,595,141,599,137,804,382"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="499,268,670,293"/>
+<area shape="poly" title=" " alt="" coords="793,388,741,352,679,315,630,296,632,291,681,310,744,347,796,384"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825" title="Finds an entity." alt="" coords="265,320,423,345"/>
+<area shape="poly" title=" " alt="" coords="779,392,732,374,679,359,613,348,545,341,423,335,424,330,545,335,613,343,681,354,734,369,781,387"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a45740d20df28710b87783d814abee1f7" title="Checks if a sparse set contains an entity." alt="" coords="506,471,663,496"/>
+<area shape="poly" title=" " alt="" coords="770,427,626,473,625,468,768,422"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="499,369,670,395"/>
+<area shape="poly" title=" " alt="" coords="714,398,670,394,670,388,715,393"/>
+<area shape="rect" href="classentt_1_1storage.html#a9e1ef5f77d61360a66b4d2a2b64aafb7" title="Returns a pointer to the object associated with an entity, if any." alt="" coords="265,468,423,493"/>
+<area shape="poly" title=" " alt="" coords="724,425,490,461,424,471,423,466,489,455,724,419"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="499,520,670,545"/>
+<area shape="poly" title=" " alt="" coords="798,431,746,471,681,510,647,522,645,517,679,505,743,467,795,427"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a1a683d1f8f52b1083cddd9938536a74a" title="Sort entities according to their order in another sparse set." alt="" coords="493,569,676,595"/>
+<area shape="poly" title=" " alt="" coords="807,433,756,496,721,530,681,559,653,572,651,567,679,554,717,526,752,493,803,430"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a4f6d293b9bc7227de22c86722881083f" title="Assigns an entity to a sparse set." alt="" coords="247,28,441,53"/>
+<area shape="poly" title=" " alt="" coords="544,110,440,67,402,56,403,51,442,62,546,105"/>
+<area shape="rect" href="classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="259,77,429,103"/>
+<area shape="poly" title=" " alt="" coords="485,114,428,105,429,100,486,109"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#a392d8e383d270329945c8acb38469af4" title="Assigns an entity to a storage and constructs its object." alt="" coords="247,127,441,197"/>
+<area shape="poly" title=" " alt="" coords="486,143,441,150,440,145,485,138"/>
+<area shape="rect" href="classentt_1_1storage.html#a649509ba225d8ddc583c965036327b5f" title="Assigns an entity to a storage and constructs its object." alt="" coords="15,5,189,31"/>
+<area shape="poly" title=" " alt="" coords="275,76,246,67,198,46,156,33,158,28,200,41,248,62,276,71"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#ae77b1c5e193fcf8bed2641b3294db5a5" title="Assigns an entity to a storage and constructs its object." alt="" coords="5,55,199,125"/>
+<area shape="poly" title=" " alt="" coords="246,93,199,93,199,87,246,87"/>
+<area shape="rect" href="structentt_1_1basic__registry_1_1pool__handler.html#a3501b53ff000059aeb2958be31156c7c" title=" " alt="" coords="13,149,191,189"/>
+<area shape="poly" title=" " alt="" coords="276,109,248,118,200,139,167,151,165,146,198,134,246,113,275,104"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ab69719626bee1add76096046db86a170" title="Removes an entity from a sparse set." alt="" coords="253,221,435,247"/>
+<area shape="poly" title=" " alt="" coords="504,268,410,249,411,244,505,263"/>
+<area shape="rect" href="classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="269,271,419,296"/>
+<area shape="poly" title=" " alt="" coords="485,284,419,285,419,280,485,279"/>
+<area shape="rect" href="classentt_1_1storage.html#a200938ea3867e3637c3c703f91ec0106" title="Removes an entity from a storage and destroys its object." alt="" coords="21,271,183,296"/>
+<area shape="poly" title=" " alt="" coords="255,286,184,286,184,281,255,281"/>
+<area shape="poly" title=" " alt="" coords="550,365,499,337,440,310,405,299,406,293,442,305,502,332,553,360"/>
+<area shape="poly" title=" " alt="" coords="508,369,406,348,407,343,509,364"/>
+<area shape="rect" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98" title="Returns the object associated with an entity." alt="" coords="277,419,411,444"/>
+<area shape="poly" title=" " alt="" coords="509,400,407,421,406,416,508,395"/>
+<area shape="rect" href="classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40" title="Swaps entities and objects in the internal packed arrays." alt="" coords="271,369,417,395"/>
+<area shape="poly" title=" " alt="" coords="485,385,418,385,418,379,485,379"/>
+<area shape="poly" title=" " alt="" coords="523,402,491,416,477,426,467,437,458,447,443,458,411,470,409,465,440,453,454,443,464,433,473,423,488,412,520,397"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c" title="Assigns one or more entities to a sparse set." alt="" coords="247,568,441,593"/>
+<area shape="poly" title=" " alt="" coords="507,551,409,571,408,565,506,545"/>
+<area shape="rect" href="classentt_1_1storage.html#ae775ff0becf923b711f6e3476a7cb9f6" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="269,519,419,544"/>
+<area shape="poly" title=" " alt="" coords="486,535,420,534,420,529,486,529"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5c55497115906827dd9c42648cc27d18" name="a5c55497115906827dd9c42648cc27d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c55497115906827dd9c42648cc27d18">&#9670;&#160;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a> * <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Direct access to the internal packed array. </p>
+<p>The returned pointer is such that range <code>[<a class="el" href="classentt_1_1sparse__set.html#a5c55497115906827dd9c42648cc27d18" title="Direct access to the internal packed array.">data()</a>, <a class="el" href="classentt_1_1sparse__set.html#a5c55497115906827dd9c42648cc27d18" title="Direct access to the internal packed array.">data()</a> + <a class="el" href="classentt_1_1sparse__set.html#a340dff7484f1e58feff58a5f0627e190" title="Returns the number of elements in a sparse set.">size()</a>]</code> is always a valid range, even if the container is empty.</p>
+<dl class="section note"><dt>注解</dt><dd>There are no guarantees on the order, even though <code>respect</code> has been previously invoked. Internal data structures arrange elements to maximize performance. Accessing them directly gives a performance boost but less guarantees. Use <code>begin</code> and <code>end</code> if you want to iterate the sparse set in the expected order.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A pointer to the internal packed array. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00284">284</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="registry_8hpp_source.html#l00160">entt::basic_registry&lt; Entity &gt;::group_handler&lt; exclude_t&lt; Exclude... &gt;, get_t&lt; Get... &gt;, Owned... &gt;::discard_if()</a> , 以及 <a class="el" href="registry_8hpp_source.html#l00140">entt::basic_registry&lt; Entity &gt;::group_handler&lt; exclude_t&lt; Exclude... &gt;, get_t&lt; Get... &gt;, Owned... &gt;::maybe_valid_if()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18_icgraph" id="aclassentt_1_1sparse__set_a5c55497115906827dd9c42648cc27d18_icgraph">
+<area shape="rect" title="Direct access to the internal packed array." alt="" coords="292,78,455,103"/>
+<area shape="rect" href="structentt_1_1basic__registry_1_1group__handler_3_01exclude__t_3_01Exclude_8_8_8_01_4_00_01get__c6e53cea11033a38c98c49aca9f3080f.html#aa41091bc3721bf6917aafc087f475ed9" title=" " alt="" coords="5,5,244,75"/>
+<area shape="poly" title=" " alt="" coords="296,78,244,67,245,62,297,72"/>
+<area shape="rect" href="structentt_1_1basic__registry_1_1group__handler_3_01exclude__t_3_01Exclude_8_8_8_01_4_00_01get__c6e53cea11033a38c98c49aca9f3080f.html#ac2071721b59d3f04dc8976bacda8f2ce" title=" " alt="" coords="15,99,235,183"/>
+<area shape="poly" title=" " alt="" coords="297,109,236,122,234,116,296,104"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab69719626bee1add76096046db86a170" name="ab69719626bee1add76096046db86a170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69719626bee1add76096046db86a170">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes an entity from a sparse set.   </p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to remove an entity that doesn't belong to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn't contain the given entity.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier.   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00446">446</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00434">entt::sparse_set&lt; Entity &gt;::erase()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_ab69719626bee1add76096046db86a170_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_ab69719626bee1add76096046db86a170_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_ab69719626bee1add76096046db86a170_cgraph" id="aclassentt_1_1sparse__set_ab69719626bee1add76096046db86a170_cgraph">
+<area shape="rect" title="Removes an entity from a sparse set." alt="" coords="5,29,188,55"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="236,29,407,55"/>
+<area shape="poly" title=" " alt="" coords="188,39,222,39,222,45,188,45"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="455,29,644,55"/>
+<area shape="poly" title=" " alt="" coords="407,39,441,39,441,45,407,45"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="692,5,863,31"/>
+<area shape="poly" title=" " alt="" coords="376,27,454,14,571,8,678,10,678,15,571,14,455,19,377,32"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="694,55,861,80"/>
+<area shape="poly" title=" " alt="" coords="377,52,455,65,572,70,680,69,680,75,572,76,454,70,376,57"/>
+<area shape="poly" title=" " alt="" coords="644,29,678,26,678,31,645,35"/>
+<area shape="poly" title=" " alt="" coords="645,50,681,54,680,59,644,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2912e032eec6f1ea78dddf0b0f1d0e06" name="a2912e032eec6f1ea78dddf0b0f1d0e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2912e032eec6f1ea78dddf0b0f1d0e06">&#9670;&#160;</a></span>emplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::emplace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns an entity to a sparse set. </p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00379">379</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00165">entt::sparse_set&lt; Entity &gt;::assure()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="config_8h_source.html#l00041">ENTT_ASSERT</a>, <a class="el" href="sparse__set_8hpp_source.html#l00161">entt::sparse_set&lt; Entity &gt;::offset()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00157">entt::sparse_set&lt; Entity &gt;::page()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00387">entt::sparse_set&lt; Entity &gt;::construct()</a>, <a class="el" href="storage_8hpp_source.html#l00323">entt::storage&lt; Entity, Type, typename &gt;::emplace()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00545">entt::storage&lt; Entity, Type, std::enable_if_t&lt; ENTT_IS_EMPTY(Type)&gt; &gt;::emplace()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_cgraph" id="aclassentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_cgraph">
+<area shape="rect" title="Assigns an entity to a sparse set." alt="" coords="5,81,196,107"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="250,5,427,31"/>
+<area shape="poly" title=" " alt="" coords="141,79,284,32,286,37,142,84"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="244,107,433,132"/>
+<area shape="poly" title=" " alt="" coords="196,101,231,105,230,110,196,107"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="481,83,652,108"/>
+<area shape="poly" title=" " alt="" coords="196,91,433,91,468,92,468,97,433,97,196,96"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="483,132,650,157"/>
+<area shape="poly" title=" " alt="" coords="130,104,182,125,245,142,302,149,361,152,470,150,470,156,361,158,302,155,243,147,181,130,128,109"/>
+<area shape="poly" title=" " alt="" coords="433,107,467,103,468,108,434,112"/>
+<area shape="poly" title=" " alt="" coords="434,127,470,131,469,137,433,133"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_icgraph" id="aclassentt_1_1sparse__set_a2912e032eec6f1ea78dddf0b0f1d0e06_icgraph">
+<area shape="rect" title="Assigns an entity to a sparse set." alt="" coords="489,77,680,103"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a4f6d293b9bc7227de22c86722881083f" title="Assigns an entity to a sparse set." alt="" coords="247,28,441,53"/>
+<area shape="poly" title=" " alt="" coords="508,77,406,56,407,51,509,72"/>
+<area shape="rect" href="classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="259,77,429,103"/>
+<area shape="poly" title=" " alt="" coords="476,93,429,93,429,87,476,87"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#a392d8e383d270329945c8acb38469af4" title="Assigns an entity to a storage and constructs its object." alt="" coords="247,127,441,197"/>
+<area shape="poly" title=" " alt="" coords="529,109,441,136,440,131,528,104"/>
+<area shape="rect" href="classentt_1_1storage.html#a649509ba225d8ddc583c965036327b5f" title="Assigns an entity to a storage and constructs its object." alt="" coords="15,5,189,31"/>
+<area shape="poly" title=" " alt="" coords="275,76,246,67,198,46,156,33,158,28,200,41,248,62,276,71"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#ae77b1c5e193fcf8bed2641b3294db5a5" title="Assigns an entity to a storage and constructs its object." alt="" coords="5,55,199,125"/>
+<area shape="poly" title=" " alt="" coords="246,93,199,93,199,87,246,87"/>
+<area shape="rect" href="structentt_1_1basic__registry_1_1pool__handler.html#a3501b53ff000059aeb2958be31156c7c" title=" " alt="" coords="13,149,191,189"/>
+<area shape="poly" title=" " alt="" coords="276,109,248,118,200,139,167,151,165,146,198,134,246,113,275,104"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae1a16cb354a9ed5ded92b6edcddce15e" name="ae1a16cb354a9ed5ded92b6edcddce15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a16cb354a9ed5ded92b6edcddce15e">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a sparse set is empty. </p>
+<dl class="section return"><dt>返回</dt><dd>True if the sparse set is empty, false otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00265">265</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>.</p>
+
+</div>
+</div>
+<a id="a8521517b6cac85e0e14827cb4459e8cc" name="a8521517b6cac85e0e14827cb4459e8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8521517b6cac85e0e14827cb4459e8cc">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator to the end. </p>
+<p>The returned iterator points to the element following the last entity in the internal packed array. Attempting to dereference the returned iterator results in undefined behavior.</p>
+<dl class="section note"><dt>注解</dt><dd>Random access iterators stay true to the order imposed by a call to <code>respect</code>.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the element following the last entity of the internal packed array. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00320">320</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00330">entt::sparse_set&lt; Entity &gt;::find()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc_icgraph" id="aclassentt_1_1sparse__set_a8521517b6cac85e0e14827cb4459e8cc_icgraph">
+<area shape="rect" title="Returns an iterator to the end." alt="" coords="212,5,371,31"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825" title="Finds an entity." alt="" coords="5,5,164,31"/>
+<area shape="poly" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae5a40f93eef20024979097d9fe14261e" name="ae5a40f93eef20024979097d9fe14261e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5a40f93eef20024979097d9fe14261e">&#9670;&#160;</a></span>erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes an entity from a sparse set. </p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to remove an entity that doesn't belong to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn't contain the given entity.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00434">434</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="config_8h_source.html#l00041">ENTT_ASSERT</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="entity_8hpp_source.html#l00174">entt::null</a>, <a class="el" href="sparse__set_8hpp_source.html#l00161">entt::sparse_set&lt; Entity &gt;::offset()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>, <a class="el" href="sparse__set_8hpp_source.html#l00157">entt::sparse_set&lt; Entity &gt;::page()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00446">entt::sparse_set&lt; Entity &gt;::destroy()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00410">entt::storage&lt; Entity, Type, typename &gt;::erase()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_cgraph" id="aclassentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_cgraph">
+<area shape="rect" title="Removes an entity from a sparse set." alt="" coords="5,29,176,55"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="224,29,413,55"/>
+<area shape="poly" title=" " alt="" coords="177,39,211,39,211,45,177,45"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="461,5,632,31"/>
+<area shape="poly" title=" " alt="" coords="145,27,224,14,340,8,448,10,448,15,340,14,224,19,146,32"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="463,55,630,80"/>
+<area shape="poly" title=" " alt="" coords="146,52,224,65,341,70,449,69,450,75,341,76,224,70,145,57"/>
+<area shape="poly" title=" " alt="" coords="413,29,447,26,448,31,414,35"/>
+<area shape="poly" title=" " alt="" coords="414,50,450,54,449,59,413,55"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_icgraph" id="aclassentt_1_1sparse__set_ae5a40f93eef20024979097d9fe14261e_icgraph">
+<area shape="rect" title="Removes an entity from a sparse set." alt="" coords="447,31,617,56"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ab69719626bee1add76096046db86a170" title="Removes an entity from a sparse set." alt="" coords="216,5,399,31"/>
+<area shape="poly" title=" " alt="" coords="432,35,399,31,399,26,433,29"/>
+<area shape="rect" href="classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="233,55,382,80"/>
+<area shape="poly" title=" " alt="" coords="433,57,382,62,382,57,432,51"/>
+<area shape="rect" href="classentt_1_1storage.html#a200938ea3867e3637c3c703f91ec0106" title="Removes an entity from a storage and destroys its object." alt="" coords="5,55,168,80"/>
+<area shape="poly" title=" " alt="" coords="218,70,168,70,168,65,218,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af79345df59154e5ea9e58b7efa7ff8f0" name="af79345df59154e5ea9e58b7efa7ff8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79345df59154e5ea9e58b7efa7ff8f0">&#9670;&#160;</a></span>extent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::extent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the extent of a sparse set. </p>
+<p>The extent of a sparse set is also the size of the internal sparse array. There is no guarantee that the internal packed array has the same size. Usually the size of the internal sparse array is equal or greater than the one of the internal packed array.</p>
+<dl class="section return"><dt>返回</dt><dd>Extent of the sparse set. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00243">243</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00050">entt::sparse_set&lt; Entity &gt;::entt_per_page</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+</div>
+</div>
+<a id="ae8687d89acbd898f3c54fc655fa09825" name="ae8687d89acbd898f3c54fc655fa09825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8687d89acbd898f3c54fc655fa09825">&#9670;&#160;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds an entity. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An iterator to the given entity if it's found, past the end iterator otherwise. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00330">330</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00320">entt::sparse_set&lt; Entity &gt;::end()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00363">entt::sparse_set&lt; Entity &gt;::index()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825_cgraph" id="aclassentt_1_1sparse__set_ae8687d89acbd898f3c54fc655fa09825_cgraph">
+<area shape="rect" title="Finds an entity." alt="" coords="5,56,164,81"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="431,5,620,31"/>
+<area shape="poly" title=" " alt="" coords="142,53,212,41,317,29,417,21,417,26,318,34,212,46,143,59"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a8521517b6cac85e0e14827cb4459e8cc" title="Returns an iterator to the end." alt="" coords="218,105,377,131"/>
+<area shape="poly" title=" " alt="" coords="141,79,229,100,228,105,139,84"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="212,56,383,81"/>
+<area shape="poly" title=" " alt="" coords="164,66,198,66,198,71,164,71"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="668,80,839,105"/>
+<area shape="poly" title=" " alt="" coords="563,28,669,65,696,73,694,78,667,70,561,33"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="670,31,837,56"/>
+<area shape="poly" title=" " alt="" coords="621,26,657,30,656,35,620,31"/>
+<area shape="poly" title=" " alt="" coords="355,53,454,31,455,36,356,58"/>
+<area shape="poly" title=" " alt="" coords="377,79,431,85,547,90,654,92,654,97,547,96,430,90,377,84"/>
+<area shape="poly" title=" " alt="" coords="383,61,656,46,656,51,383,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a45740d20df28710b87783d814abee1f7" name="a45740d20df28710b87783d814abee1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45740d20df28710b87783d814abee1f7">&#9670;&#160;</a></span>has()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::has </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a sparse set contains an entity.   </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if the sparse set contains the entity, false otherwise.   </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00347">347</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7_cgraph" id="aclassentt_1_1sparse__set_a45740d20df28710b87783d814abee1f7_cgraph">
+<area shape="rect" title="Checks if a sparse set contains an entity." alt="" coords="5,31,163,56"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="211,31,400,56"/>
+<area shape="poly" title=" " alt="" coords="163,41,197,41,197,46,163,46"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="448,5,619,31"/>
+<area shape="poly" title=" " alt="" coords="400,30,434,26,434,32,401,35"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="450,55,617,80"/>
+<area shape="poly" title=" " alt="" coords="401,51,437,55,436,60,400,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a17386e505ea87ccc100e23360c93aa46" name="a17386e505ea87ccc100e23360c93aa46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17386e505ea87ccc100e23360c93aa46">&#9670;&#160;</a></span>index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the position of an entity in a sparse set. </p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to get the position of an entity that doesn't belong to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn't contain the given entity.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entt</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The position of the entity in the sparse set. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00363">363</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="config_8h_source.html#l00041">ENTT_ASSERT</a>, <a class="el" href="sparse__set_8hpp_source.html#l00161">entt::sparse_set&lt; Entity &gt;::offset()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00157">entt::sparse_set&lt; Entity &gt;::page()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00410">entt::storage&lt; Entity, Type, typename &gt;::erase()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00330">entt::sparse_set&lt; Entity &gt;::find()</a>, <a class="el" href="storage_8hpp_source.html#l00282">entt::storage&lt; Entity, Type, typename &gt;::get()</a>, <a class="el" href="storage_8hpp_source.html#l00435">entt::storage&lt; Entity, Type, typename &gt;::swap()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00296">entt::storage&lt; Entity, Type, typename &gt;::try_get()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_cgraph" id="aclassentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_cgraph">
+<area shape="rect" title="Returns the position of an entity in a sparse set." alt="" coords="5,29,176,55"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="224,29,413,55"/>
+<area shape="poly" title=" " alt="" coords="177,39,211,39,211,45,177,45"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="461,5,632,31"/>
+<area shape="poly" title=" " alt="" coords="145,27,224,14,340,8,448,10,448,15,340,14,224,19,146,32"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="463,55,630,80"/>
+<area shape="poly" title=" " alt="" coords="146,52,224,65,341,70,449,69,450,75,341,76,224,70,145,57"/>
+<area shape="poly" title=" " alt="" coords="413,29,447,26,448,31,414,35"/>
+<area shape="poly" title=" " alt="" coords="414,50,450,54,449,59,413,55"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_icgraph" id="aclassentt_1_1sparse__set_a17386e505ea87ccc100e23360c93aa46_icgraph">
+<area shape="rect" title="Returns the position of an entity in a sparse set." alt="" coords="423,104,593,129"/>
+<area shape="rect" href="classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="221,5,370,31"/>
+<area shape="poly" title=" " alt="" coords="474,99,428,71,374,44,343,33,345,28,376,40,430,67,477,94"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825" title="Finds an entity." alt="" coords="216,55,375,80"/>
+<area shape="poly" title=" " alt="" coords="439,103,350,83,352,77,440,98"/>
+<area shape="rect" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98" title="Returns the object associated with an entity." alt="" coords="228,104,363,129"/>
+<area shape="poly" title=" " alt="" coords="409,119,363,119,363,114,409,114"/>
+<area shape="rect" href="classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40" title="Swaps entities and objects in the internal packed arrays." alt="" coords="222,153,369,179"/>
+<area shape="poly" title=" " alt="" coords="440,135,352,156,350,151,439,130"/>
+<area shape="rect" href="classentt_1_1storage.html#a9e1ef5f77d61360a66b4d2a2b64aafb7" title="Returns a pointer to the object associated with an entity, if any." alt="" coords="216,203,375,228"/>
+<area shape="poly" title=" " alt="" coords="477,139,430,166,376,192,342,205,340,200,374,188,427,161,474,134"/>
+<area shape="rect" href="classentt_1_1storage.html#a200938ea3867e3637c3c703f91ec0106" title="Removes an entity from a storage and destroys its object." alt="" coords="5,5,168,31"/>
+<area shape="poly" title=" " alt="" coords="207,21,168,21,168,15,207,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef87aec55a74c0418fe21fb368a0f2ac" name="aef87aec55a74c0418fe21fb368a0f2ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef87aec55a74c0418fe21fb368a0f2ac">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">It</a>&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns one or more entities to a sparse set. </p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to assign an entity that already belongs to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set already contains the given entity.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">It</td><td>Type of input iterator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>An iterator to the first element of the range of entities. </td></tr>
+    <tr><td class="paramname">last</td><td>An iterator past the last element of the range of entities. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00405">405</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00165">entt::sparse_set&lt; Entity &gt;::assure()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="config_8h_source.html#l00041">ENTT_ASSERT</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="sparse__set_8hpp_source.html#l00161">entt::sparse_set&lt; Entity &gt;::offset()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00157">entt::sparse_set&lt; Entity &gt;::page()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00419">entt::sparse_set&lt; Entity &gt;::construct()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00385">entt::storage&lt; Entity, Type, typename &gt;::insert()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_cgraph" id="aclassentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_cgraph">
+<area shape="rect" title="Assigns one or more entities to a sparse set." alt="" coords="5,81,176,107"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a75edf11bea4943d0ac243be108c3c9fd" title=" " alt="" coords="230,5,407,31"/>
+<area shape="poly" title=" " alt="" coords="129,79,266,33,267,38,131,84"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="224,107,413,132"/>
+<area shape="poly" title=" " alt="" coords="177,101,211,105,210,110,176,106"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="461,83,632,108"/>
+<area shape="poly" title=" " alt="" coords="176,91,413,91,448,92,448,97,413,97,176,96"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="463,132,630,157"/>
+<area shape="poly" title=" " alt="" coords="118,104,167,125,225,142,282,150,341,153,450,151,450,156,341,159,282,155,223,147,165,130,116,109"/>
+<area shape="poly" title=" " alt="" coords="413,107,447,103,448,108,414,112"/>
+<area shape="poly" title=" " alt="" coords="414,127,450,131,449,137,413,133"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_icgraph" id="aclassentt_1_1sparse__set_aef87aec55a74c0418fe21fb368a0f2ac_icgraph">
+<area shape="rect" title="Assigns one or more entities to a sparse set." alt="" coords="248,31,419,56"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c" title="Assigns one or more entities to a sparse set." alt="" coords="5,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="234,35,200,31,201,26,234,30"/>
+<area shape="rect" href="classentt_1_1storage.html#ae775ff0becf923b711f6e3476a7cb9f6" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="27,55,178,80"/>
+<area shape="poly" title=" " alt="" coords="234,56,178,62,178,57,234,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa94306ce6028851d5fb0add3c9721b58" name="aa94306ce6028851d5fb0add3c9721b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94306ce6028851d5fb0add3c9721b58">&#9670;&#160;</a></span>offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00161">161</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00050">entt::sparse_set&lt; Entity &gt;::entt_per_page</a> , 以及 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00379">entt::sparse_set&lt; Entity &gt;::emplace()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00434">entt::sparse_set&lt; Entity &gt;::erase()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00363">entt::sparse_set&lt; Entity &gt;::index()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00405">entt::sparse_set&lt; Entity &gt;::insert()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00465">entt::sparse_set&lt; Entity &gt;::swap()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58_icgraph" id="aclassentt_1_1sparse__set_aa94306ce6028851d5fb0add3c9721b58_icgraph">
+<area shape="rect" title=" " alt="" coords="724,361,895,387"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="487,336,676,361"/>
+<area shape="poly" title=" " alt="" coords="710,366,676,362,676,357,710,360"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="248,127,439,152"/>
+<area shape="poly" title=" " alt="" coords="783,354,735,313,675,271,599,232,521,199,389,155,391,150,523,194,601,227,677,266,738,309,786,350"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="258,184,429,209"/>
+<area shape="poly" title=" " alt="" coords="761,359,675,326,377,212,379,207,677,321,763,354"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="258,387,429,412"/>
+<area shape="poly" title=" " alt="" coords="710,382,429,397,429,392,710,377"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="258,537,429,563"/>
+<area shape="poly" title=" " alt="" coords="787,398,739,439,709,460,677,478,615,502,549,521,429,544,428,539,548,516,613,497,675,473,706,455,736,435,784,394"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7e6b341dd385fc5802f8ab5de2a2845c" title="Swaps two entities in the internal packed array." alt="" coords="497,437,665,463"/>
+<area shape="poly" title=" " alt="" coords="758,394,621,440,620,435,757,389"/>
+<area shape="poly" title=" " alt="" coords="564,325,514,251,479,209,437,174,398,155,401,150,440,169,482,205,519,247,569,322"/>
+<area shape="poly" title=" " alt="" coords="553,329,437,231,392,212,395,207,440,226,556,325"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825" title="Finds an entity." alt="" coords="23,347,182,372"/>
+<area shape="poly" title=" " alt="" coords="473,354,182,360,182,355,473,348"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a45740d20df28710b87783d814abee1f7" title="Checks if a sparse set contains an entity." alt="" coords="265,285,422,311"/>
+<area shape="poly" title=" " alt="" coords="507,336,403,313,404,308,508,330"/>
+<area shape="poly" title=" " alt="" coords="508,367,404,389,403,384,507,362"/>
+<area shape="rect" href="classentt_1_1storage.html#a9e1ef5f77d61360a66b4d2a2b64aafb7" title="Returns a pointer to the object associated with an entity, if any." alt="" coords="23,297,182,323"/>
+<area shape="poly" title=" " alt="" coords="550,330,500,300,469,286,438,275,386,265,344,264,248,275,153,300,152,295,248,270,344,258,386,260,439,270,471,281,502,295,553,326"/>
+<area shape="poly" title=" " alt="" coords="555,372,488,428,440,476,363,539,360,535,437,472,485,424,551,368"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a1a683d1f8f52b1083cddd9938536a74a" title="Sort entities according to their order in another sparse set." alt="" coords="252,436,435,461"/>
+<area shape="poly" title=" " alt="" coords="550,371,499,399,440,427,404,439,403,433,438,422,497,395,547,366"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a4f6d293b9bc7227de22c86722881083f" title="Assigns an entity to a sparse set." alt="" coords="5,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="315,120,263,81,199,44,168,33,169,28,201,40,266,77,318,116"/>
+<area shape="rect" href="classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="18,55,187,80"/>
+<area shape="poly" title=" " alt="" coords="292,125,199,95,154,83,155,77,201,90,293,120"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#a392d8e383d270329945c8acb38469af4" title="Assigns an entity to a storage and constructs its object." alt="" coords="6,105,199,174"/>
+<area shape="poly" title=" " alt="" coords="234,142,200,142,200,137,234,137"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ab69719626bee1add76096046db86a170" title="Removes an entity from a sparse set." alt="" coords="11,199,194,224"/>
+<area shape="poly" title=" " alt="" coords="244,205,194,208,194,203,244,200"/>
+<area shape="rect" href="classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="28,248,177,273"/>
+<area shape="poly" title=" " alt="" coords="283,216,201,238,153,251,152,245,199,233,281,210"/>
+<area shape="poly" title=" " alt="" coords="314,380,199,287,170,276,172,271,201,282,318,376"/>
+<area shape="poly" title=" " alt="" coords="252,387,179,375,180,369,253,382"/>
+<area shape="rect" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98" title="Returns the object associated with an entity." alt="" coords="35,396,170,421"/>
+<area shape="poly" title=" " alt="" coords="244,406,170,409,170,403,244,401"/>
+<area shape="rect" href="classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40" title="Swaps entities and objects in the internal packed arrays." alt="" coords="29,453,176,479"/>
+<area shape="poly" title=" " alt="" coords="282,418,249,427,149,456,147,451,247,422,280,413"/>
+<area shape="poly" title=" " alt="" coords="305,383,255,359,199,337,162,325,163,320,201,331,257,354,307,378"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c" title="Assigns one or more entities to a sparse set." alt="" coords="5,569,200,595"/>
+<area shape="poly" title=" " alt="" coords="245,566,199,572,198,567,244,560"/>
+<area shape="rect" href="classentt_1_1storage.html#ae775ff0becf923b711f6e3476a7cb9f6" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="27,520,178,545"/>
+<area shape="poly" title=" " alt="" coords="244,546,178,541,178,535,244,540"/>
+<area shape="poly" title=" " alt="" coords="505,468,439,477,299,480,176,475,177,470,299,475,438,471,505,463"/>
+<area shape="poly" title=" " alt="" coords="484,452,435,452,435,447,484,447"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4151494f59d34d78496f3ae0b894d9ce" name="a4151494f59d34d78496f3ae0b894d9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4151494f59d34d78496f3ae0b894d9ce">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html">sparse_set</a> &amp; <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">::operator</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default move assignment operator. </p>
+<dl class="section return"><dt>返回</dt><dd>This sparse set. </dd></dl>
+
+</div>
+</div>
+<a id="a7125ad21e521dc5077afa27ce1394a0b" name="a7125ad21e521dc5077afa27ce1394a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7125ad21e521dc5077afa27ce1394a0b">&#9670;&#160;</a></span>page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::page </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&#160;</td>
+          <td class="paramname"><em>entt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00157">157</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00050">entt::sparse_set&lt; Entity &gt;::entt_per_page</a> , 以及 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00379">entt::sparse_set&lt; Entity &gt;::emplace()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00434">entt::sparse_set&lt; Entity &gt;::erase()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00363">entt::sparse_set&lt; Entity &gt;::index()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00405">entt::sparse_set&lt; Entity &gt;::insert()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00465">entt::sparse_set&lt; Entity &gt;::swap()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b_icgraph" id="aclassentt_1_1sparse__set_a7125ad21e521dc5077afa27ce1394a0b_icgraph">
+<area shape="rect" title=" " alt="" coords="724,361,891,387"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="487,336,676,361"/>
+<area shape="poly" title=" " alt="" coords="710,366,676,362,676,357,710,360"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a2912e032eec6f1ea78dddf0b0f1d0e06" title="Assigns an entity to a sparse set." alt="" coords="248,127,439,152"/>
+<area shape="poly" title=" " alt="" coords="781,354,734,313,675,271,599,232,522,199,390,155,392,150,523,194,602,227,677,266,737,309,785,350"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae5a40f93eef20024979097d9fe14261e" title="Removes an entity from a sparse set." alt="" coords="258,184,429,209"/>
+<area shape="poly" title=" " alt="" coords="760,359,675,326,377,212,379,207,677,321,762,354"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a17386e505ea87ccc100e23360c93aa46" title="Returns the position of an entity in a sparse set." alt="" coords="258,387,429,412"/>
+<area shape="poly" title=" " alt="" coords="710,382,429,397,429,392,710,377"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aef87aec55a74c0418fe21fb368a0f2ac" title="Assigns one or more entities to a sparse set." alt="" coords="258,537,429,563"/>
+<area shape="poly" title=" " alt="" coords="785,399,738,439,709,460,677,478,615,503,549,521,429,544,429,539,548,516,613,498,675,473,706,456,735,435,782,394"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7e6b341dd385fc5802f8ab5de2a2845c" title="Swaps two entities in the internal packed array." alt="" coords="497,437,665,463"/>
+<area shape="poly" title=" " alt="" coords="757,394,621,440,619,435,755,389"/>
+<area shape="poly" title=" " alt="" coords="564,325,514,251,479,209,437,174,398,155,401,150,440,169,482,205,519,247,569,322"/>
+<area shape="poly" title=" " alt="" coords="553,329,437,231,392,212,395,207,440,226,556,325"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ae8687d89acbd898f3c54fc655fa09825" title="Finds an entity." alt="" coords="23,347,182,372"/>
+<area shape="poly" title=" " alt="" coords="473,354,182,360,182,355,473,348"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a45740d20df28710b87783d814abee1f7" title="Checks if a sparse set contains an entity." alt="" coords="265,285,422,311"/>
+<area shape="poly" title=" " alt="" coords="507,336,403,313,404,308,508,330"/>
+<area shape="poly" title=" " alt="" coords="508,367,404,389,403,384,507,362"/>
+<area shape="rect" href="classentt_1_1storage.html#a9e1ef5f77d61360a66b4d2a2b64aafb7" title="Returns a pointer to the object associated with an entity, if any." alt="" coords="23,297,182,323"/>
+<area shape="poly" title=" " alt="" coords="550,330,500,300,469,286,438,275,386,265,344,264,248,275,153,300,152,295,248,270,344,258,386,260,439,270,471,281,502,295,553,326"/>
+<area shape="poly" title=" " alt="" coords="555,372,488,428,440,476,363,539,360,535,437,472,485,424,551,368"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a1a683d1f8f52b1083cddd9938536a74a" title="Sort entities according to their order in another sparse set." alt="" coords="252,436,435,461"/>
+<area shape="poly" title=" " alt="" coords="550,371,499,399,440,427,404,439,403,433,438,422,497,395,547,366"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a4f6d293b9bc7227de22c86722881083f" title="Assigns an entity to a sparse set." alt="" coords="5,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="315,120,263,81,199,44,168,33,169,28,201,40,266,77,318,116"/>
+<area shape="rect" href="classentt_1_1storage.html#a666039c64bb3395dd0e4ea5a6d7939a6" title="Assigns an entity to a storage and constructs its object." alt="" coords="18,55,187,80"/>
+<area shape="poly" title=" " alt="" coords="292,125,199,95,154,83,155,77,201,90,293,120"/>
+<area shape="rect" href="classentt_1_1storage_3_01Entity_00_01Type_00_01std_1_1enable__if__t_3_01ENTT__IS__EMPTY_07Type_08_4_01_4.html#a392d8e383d270329945c8acb38469af4" title="Assigns an entity to a storage and constructs its object." alt="" coords="6,105,199,174"/>
+<area shape="poly" title=" " alt="" coords="234,142,200,142,200,137,234,137"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ab69719626bee1add76096046db86a170" title="Removes an entity from a sparse set." alt="" coords="11,199,194,224"/>
+<area shape="poly" title=" " alt="" coords="244,205,194,208,194,203,244,200"/>
+<area shape="rect" href="classentt_1_1storage.html#a3d8dcf8147ba6886aefc96d856ae7684" title="Removes an entity from a storage and destroys its object." alt="" coords="28,248,177,273"/>
+<area shape="poly" title=" " alt="" coords="283,216,201,238,153,251,152,245,199,233,281,210"/>
+<area shape="poly" title=" " alt="" coords="314,380,199,287,170,276,172,271,201,282,318,376"/>
+<area shape="poly" title=" " alt="" coords="252,387,179,375,180,369,253,382"/>
+<area shape="rect" href="classentt_1_1storage.html#a7262635d1ee3e8b17789cdd9e83d1a98" title="Returns the object associated with an entity." alt="" coords="35,396,170,421"/>
+<area shape="poly" title=" " alt="" coords="244,406,170,409,170,403,244,401"/>
+<area shape="rect" href="classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40" title="Swaps entities and objects in the internal packed arrays." alt="" coords="29,453,176,479"/>
+<area shape="poly" title=" " alt="" coords="282,418,249,427,149,456,147,451,247,422,280,413"/>
+<area shape="poly" title=" " alt="" coords="305,383,255,359,199,337,162,325,163,320,201,331,257,354,307,378"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a00e7d9777838f856ac4558a839d2069c" title="Assigns one or more entities to a sparse set." alt="" coords="5,569,200,595"/>
+<area shape="poly" title=" " alt="" coords="245,566,199,572,198,567,244,560"/>
+<area shape="rect" href="classentt_1_1storage.html#ae775ff0becf923b711f6e3476a7cb9f6" title="Assigns one or more entities to a storage and constructs their objects from a given range." alt="" coords="27,520,178,545"/>
+<area shape="poly" title=" " alt="" coords="244,546,178,541,178,535,244,540"/>
+<area shape="poly" title=" " alt="" coords="505,468,439,477,299,480,176,475,177,470,299,475,438,471,505,463"/>
+<area shape="poly" title=" " alt="" coords="484,452,435,452,435,447,484,447"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8b4b9dd989877bc333fdc455fcd068d7" name="a8b4b9dd989877bc333fdc455fcd068d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4b9dd989877bc333fdc455fcd068d7">&#9670;&#160;</a></span>reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::reserve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a>&#160;</td>
+          <td class="paramname"><em>cap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increases the capacity of a sparse set. </p>
+<p>If the new capacity is greater than the current capacity, new storage is allocated, otherwise the method does nothing.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cap</td><td>Desired capacity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00209">209</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00179">entt::storage&lt; Entity, Type, typename &gt;::reserve()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7_icgraph" id="aclassentt_1_1sparse__set_a8b4b9dd989877bc333fdc455fcd068d7_icgraph">
+<area shape="rect" title="Increases the capacity of a sparse set." alt="" coords="216,5,399,31"/>
+<area shape="rect" href="classentt_1_1storage.html#a41cfa5ae2ebe7bd85045c5e609b90809" title="Increases the capacity of a storage." alt="" coords="5,5,168,31"/>
+<area shape="poly" title=" " alt="" coords="202,21,168,21,168,15,202,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1a683d1f8f52b1083cddd9938536a74a" name="a1a683d1f8f52b1083cddd9938536a74a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a683d1f8f52b1083cddd9938536a74a">&#9670;&#160;</a></span>respect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::respect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort entities according to their order in another sparse set. </p>
+<p>Entities that are part of both the sparse sets are ordered internally according to the order they have in <code>other</code>. All the other entities goes to the end of the list and there are no guarantees on their order.<br  />
+ In other terms, this function can be used to impose the same order on two sets by using one of them as a master and the other one as a slave.</p>
+<p>Iterating the sparse set with a couple of iterators returns elements in the expected order after a call to <code>respect</code>. See <code>begin</code> and <code>end</code> for more details.</p>
+<dl class="section note"><dt>注解</dt><dd>Attempting to iterate elements using a raw pointer returned by a call to <code>data</code> gives no guarantees on the order, even though <code>respect</code> has been invoked.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The sparse sets that imposes the order of the entities. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00601">601</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00465">entt::sparse_set&lt; Entity &gt;::swap()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a_cgraph" id="aclassentt_1_1sparse__set_a1a683d1f8f52b1083cddd9938536a74a_cgraph">
+<area shape="rect" title="Sort entities according to their order in another sparse set." alt="" coords="5,31,188,56"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#ade11e6ef782602dd3ce2272718acbcd5" title="Checks if a sparse set contains an entity." alt="" coords="236,5,425,31"/>
+<area shape="poly" title=" " alt="" coords="188,31,222,27,223,32,188,36"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7e6b341dd385fc5802f8ab5de2a2845c" title="Swaps two entities in the internal packed array." alt="" coords="247,55,415,80"/>
+<area shape="poly" title=" " alt="" coords="188,50,233,55,233,60,188,55"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="473,5,644,31"/>
+<area shape="poly" title=" " alt="" coords="426,15,459,15,459,21,426,21"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="475,55,642,80"/>
+<area shape="poly" title=" " alt="" coords="391,28,486,49,485,54,389,33"/>
+<area shape="poly" title=" " alt="" coords="389,52,485,31,486,36,391,57"/>
+<area shape="poly" title=" " alt="" coords="415,65,462,65,462,70,415,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75f5d70148a149e4cbc485c7a7b00dda" name="a75f5d70148a149e4cbc485c7a7b00dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f5d70148a149e4cbc485c7a7b00dda">&#9670;&#160;</a></span>shrink_to_fit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::shrink_to_fit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests the removal of unused capacity. </p>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00223">223</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00185">entt::storage&lt; Entity, Type, typename &gt;::shrink_to_fit()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda_icgraph" id="aclassentt_1_1sparse__set_a75f5d70148a149e4cbc485c7a7b00dda_icgraph">
+<area shape="rect" title="Requests the removal of unused capacity." alt="" coords="207,5,381,45"/>
+<area shape="rect" href="classentt_1_1storage.html#a5cd0e1e611348790e093c0a87355dd95" title="Requests the removal of unused capacity." alt="" coords="5,5,159,45"/>
+<area shape="poly" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a340dff7484f1e58feff58a5f0627e190" name="a340dff7484f1e58feff58a5f0627e190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340dff7484f1e58feff58a5f0627e190">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1sparse__set.html#a3d2138b0eb8c7ac968e9e38a9e981ec1">size_type</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of elements in a sparse set. </p>
+<p>The number of elements is also the size of the internal packed array. There is no guarantee that the internal sparse array has the same size. Usually the size of the internal sparse array is equal or greater than the one of the internal packed array.</p>
+<dl class="section return"><dt>返回</dt><dd>Number of elements. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00257">257</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="storage_8hpp_source.html#l00237">entt::storage&lt; Entity, Type, typename &gt;::begin()</a>, <a class="el" href="view_8hpp_source.html#l00157">entt::basic_view&lt; Entity, exclude_t&lt; Exclude... &gt;, Component... &gt;::candidate()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00226">entt::storage&lt; Entity, Type, typename &gt;::cbegin()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190_icgraph" id="aclassentt_1_1sparse__set_a340dff7484f1e58feff58a5f0627e190_icgraph">
+<area shape="rect" title="Returns the number of elements in a sparse set." alt="" coords="469,69,629,95"/>
+<area shape="rect" href="classentt_1_1storage.html#a911220ac7c4a698c98d0f3942f98b3b3" title="Returns an iterator to the beginning." alt="" coords="237,5,387,31"/>
+<area shape="poly" title=" " alt="" coords="497,68,421,45,375,33,376,28,422,39,498,62"/>
+<area shape="rect" href="classentt_1_1basic__view_3_01Entity_00_01exclude__t_3_01Exclude_8_8_8_01_4_00_01Component_8_8_8_01_4.html#ae13a252e8d496d9236e251666de53e18" title=" " alt="" coords="203,55,421,109"/>
+<area shape="poly" title=" " alt="" coords="456,85,422,85,422,79,456,79"/>
+<area shape="rect" href="classentt_1_1storage.html#a49e58111ceecb3fa548ae580545eafb4" title="Returns an iterator to the beginning." alt="" coords="234,133,390,159"/>
+<area shape="poly" title=" " alt="" coords="497,101,422,123,371,136,370,131,421,118,495,96"/>
+<area shape="rect" href="classentt_1_1storage.html#a2565aaf805c2650613b89c3d13df9b23" title="Returns an iterator to the beginning." alt="" coords="5,133,155,159"/>
+<area shape="poly" title=" " alt="" coords="220,149,155,149,155,143,220,143"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad64875d6e1981746f853d8cb62af15d8" name="ad64875d6e1981746f853d8cb62af15d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64875d6e1981746f853d8cb62af15d8">&#9670;&#160;</a></span>sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a> , <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>  = std_sort, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::sort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1sparse__set.html#a22cf39bf66b858f1d1d0f1e6fedb8fe1">iterator</a>&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Compare</a>&#160;</td>
+          <td class="paramname"><em>compare</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>&#160;</td>
+          <td class="paramname"><em>algo</em> = <code><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Sort</a>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Args</a> &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort elements according to the given comparison function. </p>
+<p>Sort the elements so that iterating the range with a couple of iterators returns them in the expected order. See <code>begin</code> and <code>end</code> for more details.</p>
+<p>The comparison function object must return <code>true</code> if the first element is <em>less</em> than the second one, <code>false</code> otherwise. The signature of the comparison function should be equivalent to the following:</p>
+<div class="fragment"><div class="line"><a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>(<span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>, <span class="keyword">const</span> <a class="code hl_variable" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>);</div>
+</div><!-- fragment --><p>Moreover, the comparison function object shall induce a <em>strict weak ordering</em> on the values.</p>
+<p>The sort function oject must offer a member function template <code><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e" title="Variable template for lists of observed components.">operator()</a></code> that accepts three arguments:</p>
+<ul>
+<li>An iterator to the first element of the range to sort.</li>
+<li>An iterator past the last element of the range to sort.</li>
+<li>A comparison function to use to compare the elements.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Attempting to iterate elements using a raw pointer returned by a call to <code>data</code> gives no guarantees on the order, even though <code>sort</code> has been invoked.</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Compare</td><td>Type of comparison function object. </td></tr>
+    <tr><td class="paramname">Sort</td><td>Type of sort function object. </td></tr>
+    <tr><td class="paramname">Args</td><td>Types of arguments to forward to the sort function object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>An iterator to the first element of the range to sort. </td></tr>
+    <tr><td class="paramname">last</td><td>An iterator past the last element of the range to sort. </td></tr>
+    <tr><td class="paramname">compare</td><td>A valid comparison function object. </td></tr>
+    <tr><td class="paramname">algo</td><td>A valid sort function object. </td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to forward to the sort function object, if any. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00512">512</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7e6b341dd385fc5802f8ab5de2a2845c" name="a7e6b341dd385fc5802f8ab5de2a2845c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6b341dd385fc5802f8ab5de2a2845c">&#9670;&#160;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">virtual</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">void</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Swaps two entities in the internal packed array. </p>
+<p>For what it's worth, this function affects both the internal sparse array and the internal packed array. Users should not care of that anyway.</p>
+<dl class="section warning"><dt>警告</dt><dd>Attempting to swap entities that don't belong to the sparse set results in undefined behavior.<br  />
+ An assertion will abort the execution at runtime in debug mode if the sparse set doesn't contain the given entities.</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>A valid entity identifier. </td></tr>
+    <tr><td class="paramname">rhs</td><td>A valid entity identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>被 <a class="el" href="classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40">entt::storage&lt; Entity, Type, typename &gt;</a> , 以及 <a class="el" href="classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40">entt::storage&lt; Entity, Component &gt;</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00465">465</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>, <a class="el" href="sparse__set_8hpp_source.html#l00161">entt::sparse_set&lt; Entity &gt;::offset()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00630">entt::sparse_set&lt; Entity &gt;::packed</a>, <a class="el" href="sparse__set_8hpp_source.html#l00157">entt::sparse_set&lt; Entity &gt;::page()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00629">entt::sparse_set&lt; Entity &gt;::sparse</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00601">entt::sparse_set&lt; Entity &gt;::respect()</a> , 以及 <a class="el" href="storage_8hpp_source.html#l00435">entt::storage&lt; Entity, Type, typename &gt;::swap()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_cgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_cgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_cgraph" id="aclassentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_cgraph">
+<area shape="rect" title="Swaps two entities in the internal packed array." alt="" coords="5,31,173,56"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#aa94306ce6028851d5fb0add3c9721b58" title=" " alt="" coords="221,5,392,31"/>
+<area shape="poly" title=" " alt="" coords="173,31,208,27,208,32,174,36"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a7125ad21e521dc5077afa27ce1394a0b" title=" " alt="" coords="223,55,390,80"/>
+<area shape="poly" title=" " alt="" coords="174,50,210,54,209,59,173,55"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_icgraph.png" border="0" usemap="#aclassentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_icgraph" alt=""/></div>
+<map name="aclassentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_icgraph" id="aclassentt_1_1sparse__set_a7e6b341dd385fc5802f8ab5de2a2845c_icgraph">
+<area shape="rect" title="Swaps two entities in the internal packed array." alt="" coords="236,31,404,56"/>
+<area shape="rect" href="classentt_1_1sparse__set.html#a1a683d1f8f52b1083cddd9938536a74a" title="Sort entities according to their order in another sparse set." alt="" coords="5,5,188,31"/>
+<area shape="poly" title=" " alt="" coords="222,35,188,31,189,26,223,30"/>
+<area shape="rect" href="classentt_1_1storage.html#ad98116de758a54b3b6df89f19d968e40" title="Swaps entities and objects in the internal packed arrays." alt="" coords="23,55,170,80"/>
+<area shape="poly" title=" " alt="" coords="223,56,170,62,170,57,222,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ad9cab790fb04692b3b40b85c81d19374" name="ad9cab790fb04692b3b40b85c81d19374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cab790fb04692b3b40b85c81d19374">&#9670;&#160;</a></span>entt_per_page</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">constexpr</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">auto</a> <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::entt_per_page = <a class="el" href="config_8h.html#a27277c78b1ff633a5ade50a5138c441a">ENTT_PAGE_SIZE</a> / <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">sizeof</a>(<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00050">50</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00165">entt::sparse_set&lt; Entity &gt;::assure()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00243">entt::sparse_set&lt; Entity &gt;::extent()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00161">entt::sparse_set&lt; Entity &gt;::offset()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00157">entt::sparse_set&lt; Entity &gt;::page()</a>.</p>
+
+</div>
+</div>
+<a id="ab2f4f25f5ed77c50bab7b7b694d0e2cf" name="ab2f4f25f5ed77c50bab7b7b694d0e2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f4f25f5ed77c50bab7b7b694d0e2cf">&#9670;&#160;</a></span>packed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classentt_1_1sparse__set.html#a9a1dbe5ab2dbb098beae0bff56bbf780">entity_type</a>&gt; <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::packed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00630">630</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00301">entt::sparse_set&lt; Entity &gt;::begin()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00218">entt::sparse_set&lt; Entity &gt;::capacity()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00623">entt::sparse_set&lt; Entity &gt;::clear()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00284">entt::sparse_set&lt; Entity &gt;::data()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00379">entt::sparse_set&lt; Entity &gt;::emplace()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00265">entt::sparse_set&lt; Entity &gt;::empty()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00320">entt::sparse_set&lt; Entity &gt;::end()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00434">entt::sparse_set&lt; Entity &gt;::erase()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00405">entt::sparse_set&lt; Entity &gt;::insert()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00209">entt::sparse_set&lt; Entity &gt;::reserve()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00601">entt::sparse_set&lt; Entity &gt;::respect()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00223">entt::sparse_set&lt; Entity &gt;::shrink_to_fit()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00257">entt::sparse_set&lt; Entity &gt;::size()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00465">entt::sparse_set&lt; Entity &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<a id="ae742cfd51bda38eac667a7e5d54b6569" name="ae742cfd51bda38eac667a7e5d54b6569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae742cfd51bda38eac667a7e5d54b6569">&#9670;&#160;</a></span>sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classentt_1_1sparse__set.html#a20a086e4bfea5c8fe04fa7066195ed10">page_type</a>&gt; <a class="el" href="classentt_1_1sparse__set.html">entt::sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::sparse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a> 第 <a class="el" href="sparse__set_8hpp_source.html#l00629">629</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="sparse__set_8hpp_source.html#l00165">entt::sparse_set&lt; Entity &gt;::assure()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00623">entt::sparse_set&lt; Entity &gt;::clear()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00339">entt::sparse_set&lt; Entity &gt;::contains()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00434">entt::sparse_set&lt; Entity &gt;::erase()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00243">entt::sparse_set&lt; Entity &gt;::extent()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00363">entt::sparse_set&lt; Entity &gt;::index()</a>, <a class="el" href="sparse__set_8hpp_source.html#l00223">entt::sparse_set&lt; Entity &gt;::shrink_to_fit()</a> , 以及 <a class="el" href="sparse__set_8hpp_source.html#l00465">entt::sparse_set&lt; Entity &gt;::swap()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/entity/<a class="el" href="sparse__set_8hpp_source.html">sparse_set.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

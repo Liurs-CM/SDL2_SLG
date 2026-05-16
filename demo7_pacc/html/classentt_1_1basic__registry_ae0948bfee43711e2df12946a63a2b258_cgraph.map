@@ -1,0 +1,5 @@
+<map id="entt::basic_registry::has" name="entt::basic_registry::has">
+<area shape="rect" id="Node000001" title="Checks if an entity has all the given components." alt="" coords="5,13,183,38"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="231,5,377,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,23,217,23,217,28,183,28"/>
+</map>

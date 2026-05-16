@@ -1,0 +1,45 @@
+\doxysection{sdl\+\_\+quad\+\_\+writer.\+hpp}
+\hypertarget{sdl__quad__writer_8hpp_source}{}\label{sdl__quad__writer_8hpp_source}\index{src/util/sdl\_quad\_writer.hpp@{src/util/sdl\_quad\_writer.hpp}}
+\mbox{\hyperlink{sdl__quad__writer_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ sdl\_quad\_writer.hpp}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/4/20.}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2020\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ UTIL\_SDL\_QUAD\_WRITER\_HPP}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ UTIL\_SDL\_QUAD\_WRITER\_HPP}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pos_8hpp}{pos.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprites_8hpp}{sprites.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <SDL\_render.h>}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00016}00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceSDL}{SDL}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00018}\mbox{\hyperlink{classSDL_1_1QuadWriter}{00018}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSDL_1_1QuadWriter}{QuadWriter}}\ \{}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00019}00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00020}00020\ \ \ \mbox{\hyperlink{classSDL_1_1QuadWriter}{QuadWriter}}(SDL\_Renderer\ *,\ SDL\_Texture\ *);}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00022}00022\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a11220acce1e5ca1aa568ffc603a5ce13}{tilePos}}(\mbox{\hyperlink{structPos}{Pos}},\ \mbox{\hyperlink{structPos}{Pos}},\ \textcolor{keywordtype}{double}\ =\ 0.0);}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00023}00023\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(\mbox{\hyperlink{structanimera_1_1SpriteRect}{animera::SpriteRect}});}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00024}00024\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a2e28cc04be1ed5a29fb8636c2c6c8193}{tileTex}}(\mbox{\hyperlink{namespaceanimera_1_1sprites_aaed86c1f6d53ef993b860ce004976096}{animera::SpriteID}});}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00026}00026\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_a120e5f080bf2bfc10a7d925b336c9cd6}{render}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00028}00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00029}\mbox{\hyperlink{classSDL_1_1QuadWriter_af1f2110b22c1a552d75a243a746e59c6}{00029}}\ \ \ SDL\_Renderer\ *\mbox{\hyperlink{classSDL_1_1QuadWriter_af1f2110b22c1a552d75a243a746e59c6}{renderer}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00030}\mbox{\hyperlink{classSDL_1_1QuadWriter_ad99ad72cad9295bfdd642975e9a0d199}{00030}}\ \ \ SDL\_Texture\ *\mbox{\hyperlink{classSDL_1_1QuadWriter_ad99ad72cad9295bfdd642975e9a0d199}{texture}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00032}\mbox{\hyperlink{classSDL_1_1QuadWriter_aca02dbdcfebd3f0eb6b733bb421091f9}{00032}}\ \ \ SDL\_Rect\ \mbox{\hyperlink{classSDL_1_1QuadWriter_aca02dbdcfebd3f0eb6b733bb421091f9}{srcRect}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00033}\mbox{\hyperlink{classSDL_1_1QuadWriter_afa9fcd8649271ea484d164da9bd96a41}{00033}}\ \ \ SDL\_Rect\ \mbox{\hyperlink{classSDL_1_1QuadWriter_afa9fcd8649271ea484d164da9bd96a41}{dstRect}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00034}\mbox{\hyperlink{classSDL_1_1QuadWriter_acdaedd0dc9b0bfc377f3ad723f8eb351}{00034}}\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSDL_1_1QuadWriter_acdaedd0dc9b0bfc377f3ad723f8eb351}{angle}};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00035}00035\ \};}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00037}00037\ \}}
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{sdl__quad__writer_8hpp_source_l00039}00039\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

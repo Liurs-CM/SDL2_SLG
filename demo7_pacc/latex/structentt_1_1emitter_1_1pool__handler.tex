@@ -1,0 +1,296 @@
+\doxysection{entt\+::emitter\texorpdfstring{$<$}{<} Derived \texorpdfstring{$>$}{>}\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1emitter_1_1pool__handler}{}\label{structentt_1_1emitter_1_1pool__handler}\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+
+
+类 entt\+::emitter\texorpdfstring{$<$}{<} Derived \texorpdfstring{$>$}{>}\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{structentt_1_1emitter_1_1pool__handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+entt\+::emitter\texorpdfstring{$<$}{<} Derived \texorpdfstring{$>$}{>}\+::pool\+\_\+handler\texorpdfstring{$<$}{<} Event \texorpdfstring{$>$}{>} 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{structentt_1_1emitter_1_1pool__handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}{listener\+\_\+type}} = std\+::function$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} \&)$>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa15579e0718d5a9e7d20f5fd4d6f5877}{element\+\_\+type}} = std\+::pair$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}, \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}{listener\+\_\+type}} $>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a999aae336e58c9f904be59920b70ec53}{container\+\_\+type}} = std\+::list$<$ \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa15579e0718d5a9e7d20f5fd4d6f5877}{element\+\_\+type}} $>$
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}{connection\+\_\+type}} = \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} container\+\_\+type\+::iterator
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a5b927cc1a737ed16b6f328dd91fb8e2c}{empty}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{override}}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a1f5ac9d9cb0be6a2c419d635e34620d2}{clear}} () \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{override}}
+\item 
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}{connection\+\_\+type}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_ad71f4a22c1752d5fd1f64eb356a86898}{once}} (\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}{listener\+\_\+type}} \mbox{\hyperlink{classentt_1_1emitter_a1200216d9abb1adb18db6035d99b60da}{listener}})
+\item 
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}{connection\+\_\+type}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa8bbb2c43aafcbb56ea62845f4a9d69c}{on}} (\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}{listener\+\_\+type}} \mbox{\hyperlink{classentt_1_1emitter_a1200216d9abb1adb18db6035d99b60da}{listener}})
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_ac472e1f2d05ed3bb85c96236d4b80d21}{erase}} (\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}{connection\+\_\+type}} conn)
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a78809773296119b9561c324395645257}{publish}} (\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} \&\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{event}}, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} \&ref)
+\item 
+\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4662d73047762812c67afb18be8751ba}{type\+\_\+id}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{override}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{structentt_1_1emitter_1_1basic__pool}{entt\+::emitter$<$ Derived $>$\+::basic\+\_\+pool}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{virtual}} \mbox{\hyperlink{structentt_1_1emitter_1_1basic__pool_a485506c7655f05951ed5aa419443039e}{\texorpdfstring{$\sim$}{\string~}basic\+\_\+pool}} ()=\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{default}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a1930807ad6fd2f55e51812b7ee0eefe4}{publishing}} \{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}}\}
+\item 
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a999aae336e58c9f904be59920b70ec53}{container\+\_\+type}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aefb59555366196a12642578700cdbb27}{once\+\_\+list}} \{\}
+\item 
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a999aae336e58c9f904be59920b70ec53}{container\+\_\+type}} \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_ac6562c3e1e8a934062d9853e3e38b72f}{on\+\_\+list}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}}$>$\newline
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}}$>$\newline
+struct entt\+::emitter$<$ Derived $>$\+::pool\+\_\+handler$<$ Event $>$}
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00052}{52}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}\label{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!connection\_type@{connection\_type}}
+\index{connection\_type@{connection\_type}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{connection\_type}{connection\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::connection\+\_\+type =  \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} container\+\_\+type\+::iterator}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00056}{56}} 行定义.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_a999aae336e58c9f904be59920b70ec53}\label{structentt_1_1emitter_1_1pool__handler_a999aae336e58c9f904be59920b70ec53} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!container\_type@{container\_type}}
+\index{container\_type@{container\_type}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{container\_type}{container\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::container\+\_\+type =  std\+::list$<$\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa15579e0718d5a9e7d20f5fd4d6f5877}{element\+\_\+type}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00055}{55}} 行定义.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_aa15579e0718d5a9e7d20f5fd4d6f5877}\label{structentt_1_1emitter_1_1pool__handler_aa15579e0718d5a9e7d20f5fd4d6f5877} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!element\_type@{element\_type}}
+\index{element\_type@{element\_type}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{element\_type}{element\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::element\+\_\+type =  std\+::pair$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}}, \mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}{listener\+\_\+type}}$>$}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00054}{54}} 行定义.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}\label{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!listener\_type@{listener\_type}}
+\index{listener\_type@{listener\_type}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{listener\_type}{listener\_type}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{using}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::listener\+\_\+type =  std\+::function$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} \&, \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} \&)$>$}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00053}{53}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_a1f5ac9d9cb0be6a2c419d635e34620d2}\label{structentt_1_1emitter_1_1pool__handler_a1f5ac9d9cb0be6a2c419d635e34620d2} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!clear@{clear}}
+\index{clear@{clear}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{structentt_1_1emitter_1_1basic__pool_aba55aed76a4dfd536c0eae8ebfae6ea4}{entt\+::emitter$<$ Derived $>$\+::basic\+\_\+pool}}.
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00065}{65}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_a5b927cc1a737ed16b6f328dd91fb8e2c}\label{structentt_1_1emitter_1_1pool__handler_a5b927cc1a737ed16b6f328dd91fb8e2c} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!empty@{empty}}
+\index{empty@{empty}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{structentt_1_1emitter_1_1basic__pool_a7f97b1869557fb4bb2494c48f4e49103}{entt\+::emitter$<$ Derived $>$\+::basic\+\_\+pool}}.
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00058}{58}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_ac472e1f2d05ed3bb85c96236d4b80d21}\label{structentt_1_1emitter_1_1pool__handler_ac472e1f2d05ed3bb85c96236d4b80d21} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!erase@{erase}}
+\index{erase@{erase}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}{connection\+\_\+type}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00088}{88}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_aa8bbb2c43aafcbb56ea62845f4a9d69c}\label{structentt_1_1emitter_1_1pool__handler_aa8bbb2c43aafcbb56ea62845f4a9d69c} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!on@{on}}
+\index{on@{on}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}{connection\+\_\+type}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::on (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}{listener\+\_\+type}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00084}{84}} 行定义.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_ad71f4a22c1752d5fd1f64eb356a86898}\label{structentt_1_1emitter_1_1pool__handler_ad71f4a22c1752d5fd1f64eb356a86898} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!once@{once}}
+\index{once@{once}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{once()}{once()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a4e57fd135913b0a62231402085e116a4}{connection\+\_\+type}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::once (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_aa207157f26c317509b810c289b552684}{listener\+\_\+type}}}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00080}{80}} 行定义.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_a78809773296119b9561c324395645257}\label{structentt_1_1emitter_1_1pool__handler_a78809773296119b9561c324395645257} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!publish@{publish}}
+\index{publish@{publish}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::publish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} \&}]{event,  }\item[{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00098}{98}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_a4662d73047762812c67afb18be8751ba}\label{structentt_1_1emitter_1_1pool__handler_a4662d73047762812c67afb18be8751ba} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!type\_id@{type\_id}}
+\index{type\_id@{type\_id}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{type\_id()}{type\_id()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::type\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+实现了 \mbox{\hyperlink{structentt_1_1emitter_1_1basic__pool_a7342b1e3ef75cf4df0928c53ed09fad1}{entt\+::emitter$<$ Derived $>$\+::basic\+\_\+pool}}.
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00117}{117}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{type__info_8hpp_source_l00095}{entt\+::type\+\_\+info$<$ Type, typename $>$\+::id()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{structentt_1_1emitter_1_1pool__handler_a4662d73047762812c67afb18be8751ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_ac6562c3e1e8a934062d9853e3e38b72f}\label{structentt_1_1emitter_1_1pool__handler_ac6562c3e1e8a934062d9853e3e38b72f} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!on\_list@{on\_list}}
+\index{on\_list@{on\_list}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{on\_list}{on\_list}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a999aae336e58c9f904be59920b70ec53}{container\+\_\+type}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::on\+\_\+list \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00124}{124}} 行定义.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_aefb59555366196a12642578700cdbb27}\label{structentt_1_1emitter_1_1pool__handler_aefb59555366196a12642578700cdbb27} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!once\_list@{once\_list}}
+\index{once\_list@{once\_list}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{once\_list}{once\_list}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{structentt_1_1emitter_1_1pool__handler_a999aae336e58c9f904be59920b70ec53}{container\+\_\+type}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::once\+\_\+list \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00123}{123}} 行定义.
+
+\Hypertarget{structentt_1_1emitter_1_1pool__handler_a1930807ad6fd2f55e51812b7ee0eefe4}\label{structentt_1_1emitter_1_1pool__handler_a1930807ad6fd2f55e51812b7ee0eefe4} 
+\index{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}!publishing@{publishing}}
+\index{publishing@{publishing}!entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$@{entt::emitter$<$ Derived $>$::pool\_handler$<$ Event $>$}}
+\doxysubsubsection{\texorpdfstring{publishing}{publishing}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{bool}} \mbox{\hyperlink{classentt_1_1emitter}{entt\+::emitter}}$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Derived}} $>$\+::pool\+\_\+handler$<$ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Event}} $>$\+::publishing \{\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{false}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{emitter_8hpp_source}{emitter.\+hpp}} 第 \mbox{\hyperlink{emitter_8hpp_source_l00122}{122}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/signal/\mbox{\hyperlink{emitter_8hpp}{emitter.\+hpp}}\end{DoxyCompactItemize}

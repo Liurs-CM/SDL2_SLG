@@ -1,0 +1,849 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: entt::basic_runtime_view&lt; Entity &gt;::view_iterator类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceentt.html">entt</a></li><li class="navelem"><a class="el" href="classentt_1_1basic__runtime__view.html">basic_runtime_view</a></li><li class="navelem"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classentt_1_1basic__runtime__view_1_1view__iterator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">entt::basic_runtime_view&lt; Entity &gt;::view_iterator类 参考<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+entt::basic_runtime_view&lt; Entity &gt;::view_iterator 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator__coll__graph.png" border="0" usemap="#aentt_1_1basic__runtime__view_3_01Entity_01_4_1_1view__iterator_coll__map" alt="Collaboration graph"/></div>
+<map name="aentt_1_1basic__runtime__view_3_01Entity_01_4_1_1view__iterator_coll__map" id="aentt_1_1basic__runtime__view_3_01Entity_01_4_1_1view__iterator_coll__map">
+<area shape="rect" title=" " alt="" coords="5,123,172,177"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html" title=" " alt="" coords="5,5,172,60"/>
+<area shape="poly" title=" " alt="" coords="91,74,91,122,86,122,86,74"/>
+<area shape="poly" title=" " alt="" coords="187,22,195,26,199,33,191,42,173,45,172,40,188,37,193,32,191,30,184,27"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a39196ebc9e0b5c66970217c2d4ce86c6" id="r_a39196ebc9e0b5c66970217c2d4ce86c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a39196ebc9e0b5c66970217c2d4ce86c6">difference_type</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::difference_type</td></tr>
+<tr class="separator:a39196ebc9e0b5c66970217c2d4ce86c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fc23469ef0c80779b60ce1db901afd" id="r_af4fc23469ef0c80779b60ce1db901afd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#af4fc23469ef0c80779b60ce1db901afd">value_type</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::value_type</td></tr>
+<tr class="separator:af4fc23469ef0c80779b60ce1db901afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa67e39ad5c56c51c43a0cd2617d3e3c" id="r_afa67e39ad5c56c51c43a0cd2617d3e3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#afa67e39ad5c56c51c43a0cd2617d3e3c">pointer</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::pointer</td></tr>
+<tr class="separator:afa67e39ad5c56c51c43a0cd2617d3e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068d68bd7d2f24128e4583006873ef06" id="r_a068d68bd7d2f24128e4583006873ef06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a068d68bd7d2f24128e4583006873ef06">reference</a> = <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::reference</td></tr>
+<tr class="separator:a068d68bd7d2f24128e4583006873ef06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5402f3942b63e9ec6e38f8d0fa88a7" id="r_aac5402f3942b63e9ec6e38f8d0fa88a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#aac5402f3942b63e9ec6e38f8d0fa88a7">iterator_category</a> = std::bidirectional_iterator_tag</td></tr>
+<tr class="separator:aac5402f3942b63e9ec6e38f8d0fa88a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7d8ec77acdb44e5a4d6551d3c5f46bdb" id="r_a7d8ec77acdb44e5a4d6551d3c5f46bdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a7d8ec77acdb44e5a4d6551d3c5f46bdb">view_iterator</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a>=<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">default</a></td></tr>
+<tr class="separator:a7d8ec77acdb44e5a4d6551d3c5f46bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee4151cbf47822c15b1624ab56a80f6" id="r_acee4151cbf47822c15b1624ab56a80f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#acee4151cbf47822c15b1624ab56a80f6">operator++</a> ()</td></tr>
+<tr class="separator:acee4151cbf47822c15b1624ab56a80f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7728936e23f134292b5bad575780ad" id="r_abf7728936e23f134292b5bad575780ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#abf7728936e23f134292b5bad575780ad">operator++</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">int</a>)</td></tr>
+<tr class="separator:abf7728936e23f134292b5bad575780ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a96fa2a5acc7e7681852be597adfd40" id="r_a3a96fa2a5acc7e7681852be597adfd40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3a96fa2a5acc7e7681852be597adfd40">operator--</a> () <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a3a96fa2a5acc7e7681852be597adfd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992afcca9567e89904062bf9bebe7800" id="r_a992afcca9567e89904062bf9bebe7800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a992afcca9567e89904062bf9bebe7800">operator--</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">int</a>) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a992afcca9567e89904062bf9bebe7800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f30e070d535d4104fd4174def90de6" id="r_ae3f30e070d535d4104fd4174def90de6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ae3f30e070d535d4104fd4174def90de6">operator==</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:ae3f30e070d535d4104fd4174def90de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652460f326c6e165b5b09aa7eb5234ec" id="r_a652460f326c6e165b5b09aa7eb5234ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a652460f326c6e165b5b09aa7eb5234ec">operator!=</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">other</a>) <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a652460f326c6e165b5b09aa7eb5234ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c5499a781cdf71d79fdcee4a934a24" id="r_a77c5499a781cdf71d79fdcee4a934a24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#afa67e39ad5c56c51c43a0cd2617d3e3c">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a77c5499a781cdf71d79fdcee4a934a24">operator-&gt;</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="separator:a77c5499a781cdf71d79fdcee4a934a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0345ccdd396dfecbf00f544910eec4b2" id="r_a0345ccdd396dfecbf00f544910eec4b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a068d68bd7d2f24128e4583006873ef06">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a0345ccdd396dfecbf00f544910eec4b2">operator*</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="separator:a0345ccdd396dfecbf00f544910eec4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:ab26512b2a85b3d3bd2f3d0f4208df12a" id="r_ab26512b2a85b3d3bd2f3d0f4208df12a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a> = std::vector&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; * &gt;</td></tr>
+<tr class="separator:ab26512b2a85b3d3bd2f3d0f4208df12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a598d1c6ec7cf359803f407efe08f0ebd" id="r_a598d1c6ec7cf359803f407efe08f0ebd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a598d1c6ec7cf359803f407efe08f0ebd">view_iterator</a> (<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a> &amp;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">all</a>, <a class="el" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">underlying_iterator</a> curr) <a class="el" href="config_8h.html#ad351dc3d24a47909c17878fd0e377c54">ENTT_NOEXCEPT</a></td></tr>
+<tr class="separator:a598d1c6ec7cf359803f407efe08f0ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90402cea1bf44a2241f635023092d3b8" id="r_a90402cea1bf44a2241f635023092d3b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8">valid</a> () <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a></td></tr>
+<tr class="separator:a90402cea1bf44a2241f635023092d3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a6e4730b752a4cfcb8ccd704daea672f8" id="r_a6e4730b752a4cfcb8ccd704daea672f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a6e4730b752a4cfcb8ccd704daea672f8">pools</a></td></tr>
+<tr class="separator:a6e4730b752a4cfcb8ccd704daea672f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3226cf6575a1711e86922d44e10e23a1" id="r_a3226cf6575a1711e86922d44e10e23a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">underlying_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3226cf6575a1711e86922d44e10e23a1">it</a></td></tr>
+<tr class="separator:a3226cf6575a1711e86922d44e10e23a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:af818b6400f82ce3ea2f2d55b874debf1" id="r_af818b6400f82ce3ea2f2d55b874debf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#af818b6400f82ce3ea2f2d55b874debf1">basic_runtime_view&lt; Entity &gt;</a></td></tr>
+<tr class="separator:af818b6400f82ce3ea2f2d55b874debf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt;<br />
+class entt::basic_runtime_view&lt; Entity &gt;::view_iterator</div>
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00063">63</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a39196ebc9e0b5c66970217c2d4ce86c6" name="a39196ebc9e0b5c66970217c2d4ce86c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39196ebc9e0b5c66970217c2d4ce86c6">&#9670;&#160;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::difference_type =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::difference_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab26512b2a85b3d3bd2f3d0f4208df12a" name="ab26512b2a85b3d3bd2f3d0f4208df12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26512b2a85b3d3bd2f3d0f4208df12a">&#9670;&#160;</a></span>direct_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::direct_type =  std::vector&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1sparse__set.html">sparse_set</a>&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a>&gt; *&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aac5402f3942b63e9ec6e38f8d0fa88a7" name="aac5402f3942b63e9ec6e38f8d0fa88a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5402f3942b63e9ec6e38f8d0fa88a7">&#9670;&#160;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::iterator_category =  std::bidirectional_iterator_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afa67e39ad5c56c51c43a0cd2617d3e3c" name="afa67e39ad5c56c51c43a0cd2617d3e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa67e39ad5c56c51c43a0cd2617d3e3c">&#9670;&#160;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::pointer =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::pointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a068d68bd7d2f24128e4583006873ef06" name="a068d68bd7d2f24128e4583006873ef06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068d68bd7d2f24128e4583006873ef06">&#9670;&#160;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::reference =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af4fc23469ef0c80779b60ce1db901afd" name="af4fc23469ef0c80779b60ce1db901afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4fc23469ef0c80779b60ce1db901afd">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">using</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::value_type =  <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> underlying_iterator::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a598d1c6ec7cf359803f407efe08f0ebd" name="a598d1c6ec7cf359803f407efe08f0ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598d1c6ec7cf359803f407efe08f0ebd">&#9670;&#160;</a></span>view_iterator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::view_iterator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">underlying_iterator</a>&#160;</td>
+          <td class="paramname"><em>curr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00068">68</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a7d8ec77acdb44e5a4d6551d3c5f46bdb" name="a7d8ec77acdb44e5a4d6551d3c5f46bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8ec77acdb44e5a4d6551d3c5f46bdb">&#9670;&#160;</a></span>view_iterator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::view_iterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a652460f326c6e165b5b09aa7eb5234ec" name="a652460f326c6e165b5b09aa7eb5234ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a652460f326c6e165b5b09aa7eb5234ec">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00116">116</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a>.</p>
+
+</div>
+</div>
+<a id="a0345ccdd396dfecbf00f544910eec4b2" name="a0345ccdd396dfecbf00f544910eec4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0345ccdd396dfecbf00f544910eec4b2">&#9670;&#160;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a068d68bd7d2f24128e4583006873ef06">reference</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00124">124</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="runtime__view_8hpp_source.html#l00120">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator-&gt;()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_a0345ccdd396dfecbf00f544910eec4b2_cgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_a0345ccdd396dfecbf00f544910eec4b2_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_a0345ccdd396dfecbf00f544910eec4b2_cgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_a0345ccdd396dfecbf00f544910eec4b2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,159,60"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a77c5499a781cdf71d79fdcee4a934a24" title=" " alt="" coords="207,5,360,60"/>
+<area shape="poly" title=" " alt="" coords="159,30,193,30,193,35,159,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acee4151cbf47822c15b1624ab56a80f6" name="acee4151cbf47822c15b1624ab56a80f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee4151cbf47822c15b1624ab56a80f6">&#9670;&#160;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp; <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00092">92</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="runtime__view_8hpp_source.html#l00211">entt::basic_runtime_view&lt; Entity &gt;::end()</a>, <a class="el" href="runtime__view_8hpp_source.html#l00130">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::it</a>, <a class="el" href="runtime__view_8hpp_source.html#l00129">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::pools</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00077">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::valid()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="runtime__view_8hpp_source.html#l00097">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator++()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_cgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_cgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,34,159,89"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#a5fc38f0e738d83d81a98b65b0e45d30b" title="Returns an iterator that is past the last entity that has the given components." alt="" coords="209,5,357,45"/>
+<area shape="poly" title=" " alt="" coords="159,45,195,38,196,44,159,50"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8" title=" " alt="" coords="207,70,360,125"/>
+<area shape="poly" title=" " alt="" coords="159,72,194,79,193,84,159,78"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706" title=" " alt="" coords="408,5,556,45"/>
+<area shape="poly" title=" " alt="" coords="358,23,394,23,394,28,358,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_icgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_icgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_acee4151cbf47822c15b1624ab56a80f6_icgraph">
+<area shape="rect" title=" " alt="" coords="207,5,360,60"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#abf7728936e23f134292b5bad575780ad" title=" " alt="" coords="5,5,159,60"/>
+<area shape="poly" title=" " alt="" coords="193,35,159,35,159,30,193,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abf7728936e23f134292b5bad575780ad" name="abf7728936e23f134292b5bad575780ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7728936e23f134292b5bad575780ad">&#9670;&#160;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator++ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00097">97</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00092">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator++()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_abf7728936e23f134292b5bad575780ad_cgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_abf7728936e23f134292b5bad575780ad_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_abf7728936e23f134292b5bad575780ad_cgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_abf7728936e23f134292b5bad575780ad_cgraph">
+<area shape="rect" title=" " alt="" coords="5,34,159,89"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#acee4151cbf47822c15b1624ab56a80f6" title=" " alt="" coords="207,34,360,89"/>
+<area shape="poly" title=" " alt="" coords="159,59,193,59,193,64,159,64"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#a5fc38f0e738d83d81a98b65b0e45d30b" title="Returns an iterator that is past the last entity that has the given components." alt="" coords="411,5,559,45"/>
+<area shape="poly" title=" " alt="" coords="360,45,397,38,398,44,361,50"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8" title=" " alt="" coords="408,70,561,125"/>
+<area shape="poly" title=" " alt="" coords="361,72,395,79,394,84,360,78"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706" title=" " alt="" coords="609,5,757,45"/>
+<area shape="poly" title=" " alt="" coords="559,23,595,23,595,28,559,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3a96fa2a5acc7e7681852be597adfd40" name="a3a96fa2a5acc7e7681852be597adfd40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a96fa2a5acc7e7681852be597adfd40">&#9670;&#160;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp; <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00102">102</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="runtime__view_8hpp_source.html#l00186">entt::basic_runtime_view&lt; Entity &gt;::begin()</a>, <a class="el" href="runtime__view_8hpp_source.html#l00130">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::it</a>, <a class="el" href="runtime__view_8hpp_source.html#l00129">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::pools</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00077">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::valid()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="runtime__view_8hpp_source.html#l00107">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator--()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_cgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_cgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_cgraph">
+<area shape="rect" title=" " alt="" coords="5,34,159,89"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#aa1d8a9b29404f27c02ff496fb52318ec" title="Returns an iterator to the first entity that has the given components." alt="" coords="209,5,357,45"/>
+<area shape="poly" title=" " alt="" coords="159,45,195,38,196,44,159,50"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8" title=" " alt="" coords="207,70,360,125"/>
+<area shape="poly" title=" " alt="" coords="159,72,194,79,193,84,159,78"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706" title=" " alt="" coords="408,5,556,45"/>
+<area shape="poly" title=" " alt="" coords="358,23,394,23,394,28,358,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_icgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_icgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_a3a96fa2a5acc7e7681852be597adfd40_icgraph">
+<area shape="rect" title=" " alt="" coords="207,5,360,60"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a992afcca9567e89904062bf9bebe7800" title=" " alt="" coords="5,5,159,60"/>
+<area shape="poly" title=" " alt="" coords="193,35,159,35,159,30,193,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a992afcca9567e89904062bf9bebe7800" name="a992afcca9567e89904062bf9bebe7800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992afcca9567e89904062bf9bebe7800">&#9670;&#160;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator-- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00107">107</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00102">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator--()</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_a992afcca9567e89904062bf9bebe7800_cgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_a992afcca9567e89904062bf9bebe7800_cgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_a992afcca9567e89904062bf9bebe7800_cgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_a992afcca9567e89904062bf9bebe7800_cgraph">
+<area shape="rect" title=" " alt="" coords="5,34,159,89"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3a96fa2a5acc7e7681852be597adfd40" title=" " alt="" coords="207,34,360,89"/>
+<area shape="poly" title=" " alt="" coords="159,59,193,59,193,64,159,64"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#aa1d8a9b29404f27c02ff496fb52318ec" title="Returns an iterator to the first entity that has the given components." alt="" coords="411,5,559,45"/>
+<area shape="poly" title=" " alt="" coords="360,45,397,38,398,44,361,50"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a90402cea1bf44a2241f635023092d3b8" title=" " alt="" coords="408,70,561,125"/>
+<area shape="poly" title=" " alt="" coords="361,72,395,79,394,84,360,78"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view.html#afef4c22c9585d5445aff71349b40f706" title=" " alt="" coords="609,5,757,45"/>
+<area shape="poly" title=" " alt="" coords="559,23,595,23,595,28,559,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77c5499a781cdf71d79fdcee4a934a24" name="a77c5499a781cdf71d79fdcee4a934a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c5499a781cdf71d79fdcee4a934a24">&#9670;&#160;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#afa67e39ad5c56c51c43a0cd2617d3e3c">pointer</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00120">120</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="runtime__view_8hpp_source.html#l00130">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::it</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="runtime__view_8hpp_source.html#l00124">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator*()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_a77c5499a781cdf71d79fdcee4a934a24_icgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_a77c5499a781cdf71d79fdcee4a934a24_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_a77c5499a781cdf71d79fdcee4a934a24_icgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_a77c5499a781cdf71d79fdcee4a934a24_icgraph">
+<area shape="rect" title=" " alt="" coords="207,5,360,60"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a0345ccdd396dfecbf00f544910eec4b2" title=" " alt="" coords="5,5,159,60"/>
+<area shape="poly" title=" " alt="" coords="193,35,159,35,159,30,193,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae3f30e070d535d4104fd4174def90de6" name="ae3f30e070d535d4104fd4174def90de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f30e070d535d4104fd4174def90de6">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html">view_iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00112">112</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="entity_2utility_8hpp_source.html#l00040">entt::get</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00130">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::it</a>.</p>
+
+</div>
+</div>
+<a id="a90402cea1bf44a2241f635023092d3b8" name="a90402cea1bf44a2241f635023092d3b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90402cea1bf44a2241f635023092d3b8">&#9670;&#160;</a></span>valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">bool</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::valid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00077">77</a> 行定义.</p>
+
+<p class="reference">引用了 <a class="el" href="runtime__view_8hpp_source.html#l00130">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::it</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00129">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::pools</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="runtime__view_8hpp_source.html#l00092">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator++()</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00102">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator--()</a>.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classentt_1_1basic__runtime__view_1_1view__iterator_a90402cea1bf44a2241f635023092d3b8_icgraph.png" border="0" usemap="#aclassentt_1_1basic__runtime__view_1_1view__iterator_a90402cea1bf44a2241f635023092d3b8_icgraph" alt=""/></div>
+<map name="aclassentt_1_1basic__runtime__view_1_1view__iterator_a90402cea1bf44a2241f635023092d3b8_icgraph" id="aclassentt_1_1basic__runtime__view_1_1view__iterator_a90402cea1bf44a2241f635023092d3b8_icgraph">
+<area shape="rect" title=" " alt="" coords="408,45,561,100"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#acee4151cbf47822c15b1624ab56a80f6" title=" " alt="" coords="207,5,360,60"/>
+<area shape="poly" title=" " alt="" coords="394,57,360,50,361,45,395,52"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a3a96fa2a5acc7e7681852be597adfd40" title=" " alt="" coords="207,84,360,139"/>
+<area shape="poly" title=" " alt="" coords="395,93,361,99,360,94,394,87"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#abf7728936e23f134292b5bad575780ad" title=" " alt="" coords="5,5,159,60"/>
+<area shape="poly" title=" " alt="" coords="193,35,159,35,159,30,193,30"/>
+<area shape="rect" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#a992afcca9567e89904062bf9bebe7800" title=" " alt="" coords="5,84,159,139"/>
+<area shape="poly" title=" " alt="" coords="193,114,159,114,159,109,193,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a id="af818b6400f82ce3ea2f2d55b874debf1" name="af818b6400f82ce3ea2f2d55b874debf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af818b6400f82ce3ea2f2d55b874debf1">&#9670;&#160;</a></span>basic_runtime_view&lt; Entity &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">friend</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">class</a> <a class="el" href="classentt_1_1basic__runtime__view.html">basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00255">255</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a3226cf6575a1711e86922d44e10e23a1" name="a3226cf6575a1711e86922d44e10e23a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3226cf6575a1711e86922d44e10e23a1">&#9670;&#160;</a></span>it</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classentt_1_1basic__runtime__view.html#a17144590c4e5f5086b0d3b8c9ba70dc1">underlying_iterator</a> <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::it</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00130">130</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="runtime__view_8hpp_source.html#l00092">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator++()</a>, <a class="el" href="runtime__view_8hpp_source.html#l00102">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator--()</a>, <a class="el" href="runtime__view_8hpp_source.html#l00120">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator-&gt;()</a>, <a class="el" href="runtime__view_8hpp_source.html#l00112">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator==()</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00077">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::valid()</a>.</p>
+
+</div>
+</div>
+<a id="a6e4730b752a4cfcb8ccd704daea672f8" name="a6e4730b752a4cfcb8ccd704daea672f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4730b752a4cfcb8ccd704daea672f8">&#9670;&#160;</a></span>pools</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">typename</a> <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">const</a> <a class="el" href="classentt_1_1basic__runtime__view_1_1view__iterator.html#ab26512b2a85b3d3bd2f3d0f4208df12a">direct_type</a>* <a class="el" href="classentt_1_1basic__runtime__view.html">entt::basic_runtime_view</a>&lt; <a class="el" href="namespaceentt.html#a8c24ecc5ab0055f9f2a4725c95afb29e">Entity</a> &gt;::view_iterator::pools</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a> 第 <a class="el" href="runtime__view_8hpp_source.html#l00129">129</a> 行定义.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="runtime__view_8hpp_source.html#l00092">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator++()</a>, <a class="el" href="runtime__view_8hpp_source.html#l00102">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::operator--()</a> , 以及 <a class="el" href="runtime__view_8hpp_source.html#l00077">entt::basic_runtime_view&lt; Entity &gt;::view_iterator::valid()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>third_party/entt/entity/<a class="el" href="runtime__view_8hpp_source.html">runtime_view.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

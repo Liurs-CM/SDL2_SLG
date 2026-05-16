@@ -1,0 +1,113 @@
+\doxysection{entt\+::monostate\texorpdfstring{$<$}{<} id\+\_\+type \texorpdfstring{$>$}{>} 模板结构体 参考}
+\hypertarget{structentt_1_1monostate}{}\label{structentt_1_1monostate}\index{entt::monostate$<$ id\_type $>$@{entt::monostate$<$ id\_type $>$}}
+
+
+Minimal implementation of the monostate pattern.  
+
+
+
+
+{\ttfamily \#include $<$monostate.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1monostate_afad7f660feb6b8696208ea3f838d14b8}{operator=}} (Type \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{val}}) \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Assigns a value of a specific type to a given key. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{structentt_1_1monostate_a04c5f59a09efd1d56e60fa4a736f3086}{operator Type}} () \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{const}} \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\+\_\+\+NOEXCEPT}}
+\begin{DoxyCompactList}\small\item\em Gets a value of a specific type for a given key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ }\\\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{structentt_1_1monostate_a84ebe5bfa928a706232ed4aa00d64575}{ENTT\+\_\+\+MAYBE\+\_\+\+ATOMIC}} (Type) value
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\subsubsection*{template$<$\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}}$>$\newline
+struct entt\+::monostate$<$ id\+\_\+type $>$}
+Minimal implementation of the monostate pattern. 
+
+A minimal, yet complete configuration system built on top of the monostate pattern. Thread safe by design, it works only with basic types like {\ttfamily int}s or {\ttfamily bool}s.~\newline
+ Multiple types and therefore more than one value can be associated with a single key. Because of this, users must pay attention to use the same type both during an assignment and when they try to read back their data. Otherwise, they can incur in unexpected results. 
+
+在文件 \mbox{\hyperlink{monostate_8hpp_source}{monostate.\+hpp}} 第 \mbox{\hyperlink{monostate_8hpp_source_l00024}{24}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{structentt_1_1monostate_a84ebe5bfa928a706232ed4aa00d64575}\label{structentt_1_1monostate_a84ebe5bfa928a706232ed4aa00d64575} 
+\index{entt::monostate$<$ id\_type $>$@{entt::monostate$<$ id\_type $>$}!ENTT\_MAYBE\_ATOMIC@{ENTT\_MAYBE\_ATOMIC}}
+\index{ENTT\_MAYBE\_ATOMIC@{ENTT\_MAYBE\_ATOMIC}!entt::monostate$<$ id\_type $>$@{entt::monostate$<$ id\_type $>$}}
+\doxysubsubsection{\texorpdfstring{ENTT\_MAYBE\_ATOMIC()}{ENTT\_MAYBE\_ATOMIC()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{static}} \mbox{\hyperlink{structentt_1_1monostate}{entt\+::monostate}}$<$ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} $>$\+::\+ENTT\+\_\+\+MAYBE\+\_\+\+ATOMIC (\begin{DoxyParamCaption}\item[{Type}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{monostate_8hpp_source}{monostate.\+hpp}} 第 \mbox{\hyperlink{monostate_8hpp_source_l00047}{47}} 行定义.
+
+\Hypertarget{structentt_1_1monostate_a04c5f59a09efd1d56e60fa4a736f3086}\label{structentt_1_1monostate_a04c5f59a09efd1d56e60fa4a736f3086} 
+\index{entt::monostate$<$ id\_type $>$@{entt::monostate$<$ id\_type $>$}!operator Type@{operator Type}}
+\index{operator Type@{operator Type}!entt::monostate$<$ id\_type $>$@{entt::monostate$<$ id\_type $>$}}
+\doxysubsubsection{\texorpdfstring{operator Type()}{operator Type()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{structentt_1_1monostate}{entt\+::monostate}}$<$ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}} Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a value of a specific type for a given key. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of the value to get. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{返回}
+Stored value, if any. 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{monostate_8hpp_source}{monostate.\+hpp}} 第 \mbox{\hyperlink{monostate_8hpp_source_l00041}{41}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+\Hypertarget{structentt_1_1monostate_afad7f660feb6b8696208ea3f838d14b8}\label{structentt_1_1monostate_afad7f660feb6b8696208ea3f838d14b8} 
+\index{entt::monostate$<$ id\_type $>$@{entt::monostate$<$ id\_type $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!entt::monostate$<$ id\_type $>$@{entt::monostate$<$ id\_type $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} $>$ \\
+template$<$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{typename}} Type $>$ \\
+\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}} \mbox{\hyperlink{structentt_1_1monostate}{entt\+::monostate}}$<$ \mbox{\hyperlink{namespaceentt_a4780f9d4e975066afb16b1309c644995}{id\+\_\+type}} $>$\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{\+::operator}}= (\begin{DoxyParamCaption}\item[{Type}]{val }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigns a value of a specific type to a given key. 
+
+
+\begin{DoxyTemplParams}{模板参数}
+{\em Type} & Type of the value to assign. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{参数}
+{\em val} & User data to assign to the given key. \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{monostate_8hpp_source}{monostate.\+hpp}} 第 \mbox{\hyperlink{monostate_8hpp_source_l00031}{31}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{entity_2utility_8hpp_source_l00040}{entt\+::get}}.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/entt/core/\mbox{\hyperlink{monostate_8hpp}{monostate.\+hpp}}\end{DoxyCompactItemize}

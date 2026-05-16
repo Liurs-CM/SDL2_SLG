@@ -1,0 +1,26 @@
+<map id="entt::basic_registry::remove" name="entt::basic_registry::remove">
+<area shape="rect" id="Node000001" title="Removes the given components from an entity." alt="" coords="529,161,676,201"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#af897c0ad07cc22d382c9fada83269835" title=" " alt="" coords="330,5,477,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="576,152,534,105,480,60,459,48,462,43,483,55,537,102,580,149"/>
+<area shape="rect" id="Node000003" href="$house_8cpp.html#a66f7a3087bebe09d0c72c6b83b8ee946" title=" " alt="" coords="355,70,452,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="561,156,522,131,480,109,451,98,453,93,482,104,525,127,564,151"/>
+<area shape="rect" id="Node000007" href="$change__ghost__mode_8cpp.html#a126eca17140a77b77b821cfae4998587" title=" " alt="" coords="354,119,453,145"/>
+<area shape="poly" id="edge5_Node000001_Node000007" title=" " alt="" coords="515,162,452,147,454,142,517,157"/>
+<area shape="rect" id="Node000008" href="$change__ghost__mode_8cpp.html#a02f47e341681b61e4699e51680402a96" title=" " alt="" coords="356,169,451,194"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="516,184,451,184,451,179,516,179"/>
+<area shape="rect" id="Node000009" href="$change__ghost__mode_8cpp.html#a00bbb0ec64d2a59a6524161f59cd9e6d" title=" " alt="" coords="325,218,481,243"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="516,205,456,221,455,215,515,200"/>
+<area shape="rect" id="Node000010" href="$change__ghost__mode_8cpp.html#ade3ede65ed776ae60fc6cdb47aa271d4" title=" " alt="" coords="351,267,455,293"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="563,211,482,257,450,270,448,265,480,252,560,207"/>
+<area shape="rect" id="Node000011" href="$house_8cpp.html#a65f7452acc93eb55ed51d07ecbc8c8f9" title=" " alt="" coords="354,317,453,342"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="580,214,538,261,512,285,483,306,454,320,452,315,480,302,508,281,534,257,576,211"/>
+<area shape="rect" id="Node000004" href="$classGame.html#a4b4dfbeae641e2cd95cae985161d891a" title=" " alt="" coords="177,194,277,219"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="343,101,327,109,299,129,275,153,240,196,236,192,271,149,296,125,324,104,341,96"/>
+<area shape="rect" id="Node000005" href="$classApplication.html#a68965449404743bf1add056784d6cf81" title=" " alt="" coords="5,194,129,219"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="164,209,130,209,130,204,164,204"/>
+<area shape="poly" id="edge6_Node000007_Node000004" title=" " alt="" coords="345,152,326,158,252,196,249,191,324,154,343,147"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="343,193,278,202,277,197,342,187"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="311,221,277,216,278,211,312,216"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="346,265,324,257,251,222,253,217,326,252,348,260"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="340,315,324,306,297,286,272,263,236,222,240,218,276,259,300,282,327,302,342,310"/>
+</map>

@@ -1,0 +1,332 @@
+\doxysection{Game类 参考}
+\hypertarget{classGame}{}\label{classGame}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+
+
+Game 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGame_a6f3a33940524b6ba9d83f627ccb14bbf}{init}} ()
+\item 
+void \mbox{\hyperlink{classGame_a9b1d788a6004222d0fb5d3fc6f6a1709}{input}} (SDL\+\_\+\+Scancode)
+\item 
+bool \mbox{\hyperlink{classGame_a4b4dfbeae641e2cd95cae985161d891a}{logic}} ()
+\item 
+void \mbox{\hyperlink{classGame_a754fe6f2b53a2b769aeaa34cdba6a5e6}{render}} (\mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL\+::\+Quad\+Writer}} \&, int)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559e}{State}} \{ \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc}{playing}}
+, \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7b63d1cafe15e5edab88a8e81de794b5}{won}}
+, \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea1c9a44eb2e8eaf3da1eb551da310cce7}{lost}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} \mbox{\hyperlink{classGame_a3bce052968cf95aff1cf7884ba547379}{reg}}
+\item 
+\mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} \mbox{\hyperlink{classGame_a7434bb6c46225f69609781cc29651d8c}{maze}}
+\item 
+int \mbox{\hyperlink{classGame_aa66821dd4f79a3f475af178b043aef2d}{dots}} = 0
+\item 
+std\+::mt19937 \mbox{\hyperlink{classGame_a1994b98123f05986f4bbfa27ff6c70fc}{rand}}
+\item 
+\mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559e}{State}} \mbox{\hyperlink{classGame_a5791ba44fba153d53e2ded354e927c34}{state}} = \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc}{State\+::playing}}
+\item 
+int \mbox{\hyperlink{classGame_ac659c26fba32ae383ed4d8809db4b684}{ticks}} = 0
+\item 
+bool \mbox{\hyperlink{classGame_a9a9b9609af769abb3d7073ab587c601e}{scattering}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00018}{18}} 行定义.
+
+
+
+\doxysubsection{成员枚举类型说明}
+\Hypertarget{classGame_addc0d11b008aeca49c8bd8d5ed80559e}\label{classGame_addc0d11b008aeca49c8bd8d5ed80559e} 
+\index{Game@{Game}!State@{State}}
+\index{State@{State}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559e}{Game\+::\+State}}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{playing@{playing}!Game@{Game}}\index{Game@{Game}!playing@{playing}}}\Hypertarget{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc}\label{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc} 
+playing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{won@{won}!Game@{Game}}\index{Game@{Game}!won@{won}}}\Hypertarget{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7b63d1cafe15e5edab88a8e81de794b5}\label{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7b63d1cafe15e5edab88a8e81de794b5} 
+won&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lost@{lost}!Game@{Game}}\index{Game@{Game}!lost@{lost}}}\Hypertarget{classGame_addc0d11b008aeca49c8bd8d5ed80559ea1c9a44eb2e8eaf3da1eb551da310cce7}\label{classGame_addc0d11b008aeca49c8bd8d5ed80559ea1c9a44eb2e8eaf3da1eb551da310cce7} 
+lost&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00026}{26}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classGame_a6f3a33940524b6ba9d83f627ccb14bbf}\label{classGame_a6f3a33940524b6ba9d83f627ccb14bbf} 
+\index{Game@{Game}!init@{init}}
+\index{init@{init}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Game\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{game_8cpp_source}{game.\+cpp}} 第 \mbox{\hyperlink{game_8cpp_source_l00023}{23}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{factories_8cpp_source_l00051}{make\+Blinky()}}, \mbox{\hyperlink{factories_8cpp_source_l00077}{make\+Clyde()}}, \mbox{\hyperlink{factories_8cpp_source_l00066}{make\+Inky()}}, \mbox{\hyperlink{maze_8cpp_source_l00038}{make\+Maze\+State()}}, \mbox{\hyperlink{factories_8cpp_source_l00059}{make\+Pinky()}}, \mbox{\hyperlink{factories_8cpp_source_l00024}{make\+Player()}}, \mbox{\hyperlink{game_8hpp_source_l00033}{maze}}, \mbox{\hyperlink{game_8hpp_source_l00035}{rand}} , 以及 \mbox{\hyperlink{game_8hpp_source_l00032}{reg}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a6f3a33940524b6ba9d83f627ccb14bbf_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a6f3a33940524b6ba9d83f627ccb14bbf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a9b1d788a6004222d0fb5d3fc6f6a1709}\label{classGame_a9b1d788a6004222d0fb5d3fc6f6a1709} 
+\index{Game@{Game}!input@{input}}
+\index{input@{input}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void Game\+::input (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{key }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{game_8cpp_source}{game.\+cpp}} 第 \mbox{\hyperlink{game_8cpp_source_l00034}{34}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{player__input_8cpp_source_l00039}{player\+Input()}}, \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc}{playing}}, \mbox{\hyperlink{game_8hpp_source_l00032}{reg}} , 以及 \mbox{\hyperlink{game_8hpp_source_l00036}{state}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a9b1d788a6004222d0fb5d3fc6f6a1709_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a9b1d788a6004222d0fb5d3fc6f6a1709_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a4b4dfbeae641e2cd95cae985161d891a}\label{classGame_a4b4dfbeae641e2cd95cae985161d891a} 
+\index{Game@{Game}!logic@{logic}}
+\index{logic@{logic}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{logic()}{logic()}}
+{\footnotesize\ttfamily bool Game\+::logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{game_8cpp_source}{game.\+cpp}} 第 \mbox{\hyperlink{game_8cpp_source_l00040}{40}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{constants_8hpp_source_l00057}{chase\+Ticks}}, \mbox{\hyperlink{game_8hpp_source_l00034}{dots}}, \mbox{\hyperlink{constants_8hpp_source_l00031}{dots\+In\+Maze}}, \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49ea9a97eda6d89f5c9e84560468a0679707}{Ghost\+Collision\+::eat}}, \mbox{\hyperlink{eat__dots_8cpp_source_l00036}{eat\+Dots()}}, \mbox{\hyperlink{eat__dots_8cpp_source_l00040}{eat\+Energizer()}}, \mbox{\hyperlink{house_8cpp_source_l00019}{enter\+House()}}, \mbox{\hyperlink{player__ghost__collide_8hpp_source_l00015}{Ghost\+Collision\+::ghost}}, \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00055}{ghost\+Chase()}}, \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00041}{ghost\+Eaten()}}, \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00016}{ghost\+Scared()}}, \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00027}{ghost\+Scared\+Timeout()}}, \mbox{\hyperlink{change__ghost__mode_8cpp_source_l00047}{ghost\+Scatter()}}, \mbox{\hyperlink{house_8cpp_source_l00031}{leave\+House()}}, \mbox{\hyperlink{structGhostCollision_ac43e13b49f770a4c2b5200fc6e2ce49eaf7a2e8166a663d6a5fc86c3ccd320f0b}{Ghost\+Collision\+::lose}}, \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea1c9a44eb2e8eaf3da1eb551da310cce7}{lost}}, \mbox{\hyperlink{game_8hpp_source_l00033}{maze}}, \mbox{\hyperlink{movement_8cpp_source_l00017}{movement()}}, \mbox{\hyperlink{player__ghost__collide_8cpp_source_l00035}{player\+Ghost\+Collide()}}, \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc}{playing}}, \mbox{\hyperlink{pursue__target_8cpp_source_l00021}{pursue\+Target()}}, \mbox{\hyperlink{game_8hpp_source_l00035}{rand}}, \mbox{\hyperlink{game_8hpp_source_l00032}{reg}}, \mbox{\hyperlink{game_8hpp_source_l00038}{scattering}}, \mbox{\hyperlink{constants_8hpp_source_l00054}{scatter\+Ticks}}, \mbox{\hyperlink{set__target_8cpp_source_l00021}{set\+Blinky\+Chase\+Target()}}, \mbox{\hyperlink{set__target_8cpp_source_l00051}{set\+Clyde\+Chase\+Target()}}, \mbox{\hyperlink{set__target_8cpp_source_l00103}{set\+Eaten\+Target()}}, \mbox{\hyperlink{set__target_8cpp_source_l00039}{set\+Inky\+Chase\+Target()}}, \mbox{\hyperlink{set__target_8cpp_source_l00029}{set\+Pinky\+Chase\+Target()}}, \mbox{\hyperlink{set__target_8cpp_source_l00074}{set\+Scared\+Target()}}, \mbox{\hyperlink{set__target_8cpp_source_l00067}{set\+Scatter\+Target()}}, \mbox{\hyperlink{game_8hpp_source_l00036}{state}}, \mbox{\hyperlink{game_8hpp_source_l00037}{ticks}}, \mbox{\hyperlink{structGhostCollision_abad824182f76ab4cd45842c35528dcfa}{Ghost\+Collision\+::type}}, \mbox{\hyperlink{movement_8cpp_source_l00038}{wall\+Collide()}} , 以及 \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7b63d1cafe15e5edab88a8e81de794b5}{won}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a4b4dfbeae641e2cd95cae985161d891a_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a4b4dfbeae641e2cd95cae985161d891a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a754fe6f2b53a2b769aeaa34cdba6a5e6}\label{classGame_a754fe6f2b53a2b769aeaa34cdba6a5e6} 
+\index{Game@{Game}!render@{render}}
+\index{render@{render}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSDL_1_1QuadWriter}{SDL\+::\+Quad\+Writer}} \&}]{writer,  }\item[{int}]{frame }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{game_8cpp_source}{game.\+cpp}} 第 \mbox{\hyperlink{game_8cpp_source_l00103}{103}} 行定义.
+
+
+
+引用了 \mbox{\hyperlink{render_8cpp_source_l00056}{dot\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00073}{full\+Render()}}, \mbox{\hyperlink{render_8cpp_source_l00031}{ghost\+Render()}}, \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea1c9a44eb2e8eaf3da1eb551da310cce7}{lost}}, \mbox{\hyperlink{game_8hpp_source_l00033}{maze}}, \mbox{\hyperlink{render_8cpp_source_l00019}{player\+Render()}}, \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc}{playing}}, \mbox{\hyperlink{game_8hpp_source_l00032}{reg}}, \mbox{\hyperlink{game_8hpp_source_l00036}{state}} , 以及 \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7b63d1cafe15e5edab88a8e81de794b5}{won}}.
+
+
+
+被这些函数引用 \mbox{\hyperlink{app_8cpp_source_l00046}{Application\+::run()}}.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a754fe6f2b53a2b769aeaa34cdba6a5e6_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a754fe6f2b53a2b769aeaa34cdba6a5e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classGame_aa66821dd4f79a3f475af178b043aef2d}\label{classGame_aa66821dd4f79a3f475af178b043aef2d} 
+\index{Game@{Game}!dots@{dots}}
+\index{dots@{dots}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{dots}{dots}}
+{\footnotesize\ttfamily int Game\+::dots = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00034}{34}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{logic()}}.
+
+\Hypertarget{classGame_a7434bb6c46225f69609781cc29651d8c}\label{classGame_a7434bb6c46225f69609781cc29651d8c} 
+\index{Game@{Game}!maze@{maze}}
+\index{maze@{maze}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{maze}{maze}}
+{\footnotesize\ttfamily \mbox{\hyperlink{maze_8hpp_a5d4a998c7ef1ab2e682be3da0c646f23}{Maze\+State}} Game\+::maze\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00033}{33}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{init()}}, \mbox{\hyperlink{game_8cpp_source_l00040}{logic()}} , 以及 \mbox{\hyperlink{game_8cpp_source_l00103}{render()}}.
+
+\Hypertarget{classGame_a1994b98123f05986f4bbfa27ff6c70fc}\label{classGame_a1994b98123f05986f4bbfa27ff6c70fc} 
+\index{Game@{Game}!rand@{rand}}
+\index{rand@{rand}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{rand}{rand}}
+{\footnotesize\ttfamily std\+::mt19937 Game\+::rand\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00035}{35}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{init()}} , 以及 \mbox{\hyperlink{game_8cpp_source_l00040}{logic()}}.
+
+\Hypertarget{classGame_a3bce052968cf95aff1cf7884ba547379}\label{classGame_a3bce052968cf95aff1cf7884ba547379} 
+\index{Game@{Game}!reg@{reg}}
+\index{reg@{reg}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceentt_a292643317d1dbb13e45824f757bd1086}{entt\+::registry}} Game\+::reg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00032}{32}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00023}{init()}}, \mbox{\hyperlink{game_8cpp_source_l00034}{input()}}, \mbox{\hyperlink{game_8cpp_source_l00040}{logic()}} , 以及 \mbox{\hyperlink{game_8cpp_source_l00103}{render()}}.
+
+\Hypertarget{classGame_a9a9b9609af769abb3d7073ab587c601e}\label{classGame_a9a9b9609af769abb3d7073ab587c601e} 
+\index{Game@{Game}!scattering@{scattering}}
+\index{scattering@{scattering}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{scattering}{scattering}}
+{\footnotesize\ttfamily bool Game\+::scattering = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00038}{38}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{logic()}}.
+
+\Hypertarget{classGame_a5791ba44fba153d53e2ded354e927c34}\label{classGame_a5791ba44fba153d53e2ded354e927c34} 
+\index{Game@{Game}!state@{state}}
+\index{state@{state}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559e}{State}} Game\+::state = \mbox{\hyperlink{classGame_addc0d11b008aeca49c8bd8d5ed80559ea7ed501a93c1205e3a23f7f0313ea65dc}{State\+::playing}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00036}{36}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00034}{input()}}, \mbox{\hyperlink{game_8cpp_source_l00040}{logic()}} , 以及 \mbox{\hyperlink{game_8cpp_source_l00103}{render()}}.
+
+\Hypertarget{classGame_ac659c26fba32ae383ed4d8809db4b684}\label{classGame_ac659c26fba32ae383ed4d8809db4b684} 
+\index{Game@{Game}!ticks@{ticks}}
+\index{ticks@{ticks}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ticks}{ticks}}
+{\footnotesize\ttfamily int Game\+::ticks = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{game_8hpp_source}{game.\+hpp}} 第 \mbox{\hyperlink{game_8hpp_source_l00037}{37}} 行定义.
+
+
+
+被这些函数引用 \mbox{\hyperlink{game_8cpp_source_l00040}{logic()}}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{game_8hpp}{game.\+hpp}}\item 
+src/core/\mbox{\hyperlink{game_8cpp}{game.\+cpp}}\end{DoxyCompactItemize}

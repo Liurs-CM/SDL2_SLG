@@ -1,0 +1,12 @@
+<map id="ghostScatter" name="ghostScatter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,109,102"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__registry.html#ac138930f54716e2b31907586e45367be" title="Assigns the given component to an entity." alt="" coords="157,5,304,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,74,162,48,164,53,94,79"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__registry.html#a44f5eac6fa4d1999a121f55e67a36c24" title="Removes the given components from an entity." alt="" coords="157,69,304,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,87,143,87,143,92,109,92"/>
+<area shape="rect" id="Node000005" href="$classentt_1_1basic__registry.html#a8d0d1722bcefbdca7a78a4cdf0feca2e" title="Returns a view for the given components." alt="" coords="157,133,304,173"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="94,100,164,126,162,131,92,105"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__registry.html#a1795b1221d728f806319a685930f520d" title="Checks if an entity identifier refers to a valid entity." alt="" coords="352,37,499,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,35,339,40,338,46,304,40"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="304,75,338,69,339,74,304,80"/>
+</map>

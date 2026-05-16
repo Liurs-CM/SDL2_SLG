@@ -1,0 +1,7 @@
+<map id="entt::basic_continuous_loader::restore" name="entt::basic_continuous_loader::restore">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,37,389,77"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__continuous__loader.html#a14c3c22914cd43c16ff9fe1769204d67" title=" " alt="" coords="5,5,173,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,46,173,40,174,35,208,40"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__continuous__loader.html#aa699788e849cb797e923fc52c7745603" title="Restores entities that were in use during serialization." alt="" coords="5,69,173,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,74,174,80,173,74,207,69"/>
+</map>

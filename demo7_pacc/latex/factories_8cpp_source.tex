@@ -1,0 +1,88 @@
+\doxysection{factories.\+cpp}
+\hypertarget{factories_8cpp_source}{}\label{factories_8cpp_source}\index{src/core/factories.cpp@{src/core/factories.cpp}}
+\mbox{\hyperlink{factories_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00002}00002\ \textcolor{comment}{//\ \ factories.cpp}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 18/9/18.}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{factories_8hpp}{factories.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2dir_8hpp}{comp/dir.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{constants_8hpp}{constants.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{comp_2house_8hpp}{comp/house.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost_8hpp}{comp/ghost.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8hpp}{comp/sprite.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{target_8hpp}{comp/target.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{player_8hpp}{comp/player.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{position_8hpp}{comp/position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ghost__mode_8hpp}{comp/ghost\_mode.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{chase__target_8hpp}{comp/chase\_target.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00021}00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{home__position_8hpp}{comp/home\_position.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{registry_8hpp}{entt/entity/registry.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00024}\mbox{\hyperlink{factories_8cpp_a380dcd8e49461b0f7e488e01e541b4b8}{00024}}\ entt::entity\ \mbox{\hyperlink{factories_8cpp_a380dcd8e49461b0f7e488e01e541b4b8}{makePlayer}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg)\ \{}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00025}00025\ \ \ \textcolor{keyword}{const}\ entt::entity\ e\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a91bfd7ec05e6d718e47da581a893cdc4}{create}}();}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00026}00026\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structPlayer}{Player}}>(e);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00027}00027\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structDesiredDir}{DesiredDir}}>(e,\ \mbox{\hyperlink{constants_8hpp_a315277dcfbafa6fb33f2abd6b879b4eb}{playerSpawnDir}});}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00028}00028\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e,\ \mbox{\hyperlink{constants_8hpp_a315277dcfbafa6fb33f2abd6b879b4eb}{playerSpawnDir}});}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00029}00029\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structPosition}{Position}}>(e,\ \mbox{\hyperlink{constants_8hpp_a24ac5421732571c10042af9df27e37cd}{playerSpawnPos}});}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00030}00030\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structPlayerSprite}{PlayerSprite}}>(e,\ animera::SpriteID::pacman\_beg\_);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00031}00031\ \ \ \textcolor{keywordflow}{return}\ e;}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00034}00034\ \textcolor{keyword}{namespace\ }\{}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00036}00036\ entt::entity\ makeGhost(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ home,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPos}{Pos}}\ scatter)\ \{}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00037}00037\ \ \ \textcolor{keyword}{const}\ entt::entity\ e\ =\ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a91bfd7ec05e6d718e47da581a893cdc4}{create}}();}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00038}00038\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structPosition}{Position}}>(e,\ home);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00039}00039\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structHomePosition}{HomePosition}}>(e,\ home,\ scatter);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00040}00040\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structLeaveHouse}{LeaveHouse}}>(e);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00041}00041\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structScatterMode}{ScatterMode}}>(e);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00042}00042\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structDesiredDir}{DesiredDir}}>(e);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00043}00043\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structActualDir}{ActualDir}}>(e);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00044}00044\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structTarget}{Target}}>(e);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00045}00045\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structGhost}{Ghost}}>(e);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00046}00046\ \ \ \textcolor{keywordflow}{return}\ e;}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00047}00047\ \}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00049}00049\ \}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00051}\mbox{\hyperlink{factories_8cpp_a006e61b1c3a30bcb25f4bd33cec3014b}{00051}}\ entt::entity\ \mbox{\hyperlink{factories_8cpp_a006e61b1c3a30bcb25f4bd33cec3014b}{makeBlinky}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ entt::entity\ player)\ \{}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00052}00052\ \ \ \textcolor{keyword}{const}\ entt::entity\ e\ =\ makeGhost(reg,\ \mbox{\hyperlink{constants_8hpp_a596eb5de113113b529cced12e95a1375}{blinkyHome}},\ \mbox{\hyperlink{constants_8hpp_afcd1f2a3417961405a4825bb7ef3fd6c}{blinkyScatter}});}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00053}00053\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_a696e43e4d153ebfc9370d2f9b5fe3984}{get}}<\mbox{\hyperlink{structPosition}{Position}}>(e).p\ =\ \mbox{\hyperlink{constants_8hpp_af6eeea1bb02ccf6732c1dfd169ff5f54}{outsideHouse}};}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00054}00054\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structBlinkyChaseTarget}{BlinkyChaseTarget}}>(e,\ player);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00055}00055\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structGhostSprite}{GhostSprite}}>(e,\ animera::SpriteID::blinky\_beg\_);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00056}00056\ \ \ \textcolor{keywordflow}{return}\ e;}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00059}\mbox{\hyperlink{factories_8cpp_a3f62dd9da96faf66a761ab1e02ce945a}{00059}}\ entt::entity\ \mbox{\hyperlink{factories_8cpp_a3f62dd9da96faf66a761ab1e02ce945a}{makePinky}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ entt::entity\ player)\ \{}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00060}00060\ \ \ \textcolor{keyword}{const}\ entt::entity\ e\ =\ makeGhost(reg,\ \mbox{\hyperlink{constants_8hpp_a808fce3d296f7f0540ab50931216dbf5}{pinkyHome}},\ \mbox{\hyperlink{constants_8hpp_ae3a15613adfdc5c0b445a432fa7105da}{pinkyScatter}});}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00061}00061\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structPinkyChaseTarget}{PinkyChaseTarget}}>(e,\ player);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00062}00062\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structGhostSprite}{GhostSprite}}>(e,\ animera::SpriteID::pinky\_beg\_);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00063}00063\ \ \ \textcolor{keywordflow}{return}\ e;}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00064}00064\ \}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00066}\mbox{\hyperlink{factories_8cpp_a68ae3c0aa2f453b617ac7a1ddfdc357c}{00066}}\ entt::entity\ \mbox{\hyperlink{factories_8cpp_a68ae3c0aa2f453b617ac7a1ddfdc357c}{makeInky}}(}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00067}00067\ \ \ \mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00068}00068\ \ \ \textcolor{keyword}{const}\ entt::entity\ player,}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00069}00069\ \ \ \textcolor{keyword}{const}\ entt::entity\ blinky}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00070}00070\ )\ \{}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00071}00071\ \ \ \textcolor{keyword}{const}\ entt::entity\ e\ =\ makeGhost(reg,\ \mbox{\hyperlink{constants_8hpp_a52e8dc1f1863e7154ad2ca8fb37f9376}{inkyHome}},\ \mbox{\hyperlink{constants_8hpp_a65649e747ad5ba1c3afc997143285e4f}{inkyScatter}});}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00072}00072\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structInkyChaseTarget}{InkyChaseTarget}}>(e,\ player,\ blinky);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00073}00073\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structGhostSprite}{GhostSprite}}>(e,\ animera::SpriteID::inky\_beg\_);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00074}00074\ \ \ \textcolor{keywordflow}{return}\ e;}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00077}\mbox{\hyperlink{factories_8cpp_a8630b9e59448e5e86d311ba3640df714}{00077}}\ entt::entity\ \mbox{\hyperlink{factories_8cpp_a8630b9e59448e5e86d311ba3640df714}{makeClyde}}(\mbox{\hyperlink{classentt_1_1basic__registry}{entt::registry}}\ \&reg,\ \textcolor{keyword}{const}\ entt::entity\ player)\ \{}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00078}00078\ \ \ \textcolor{keyword}{const}\ entt::entity\ e\ =\ makeGhost(reg,\ \mbox{\hyperlink{constants_8hpp_a0e4431349011a940e1926843a9f8cffa}{clydeHome}},\ \mbox{\hyperlink{constants_8hpp_a3a1c70139c44f5115dc9264aa6c1dd6e}{clydeScatter}});}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00079}00079\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structClydeChaseTarget}{ClydeChaseTarget}}>(e,\ player);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00080}00080\ \ \ reg.\mbox{\hyperlink{classentt_1_1basic__registry_ac138930f54716e2b31907586e45367be}{emplace}}<\mbox{\hyperlink{structGhostSprite}{GhostSprite}}>(e,\ animera::SpriteID::clyde\_beg\_);}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00081}00081\ \ \ \textcolor{keywordflow}{return}\ e;}
+\DoxyCodeLine{\Hypertarget{factories_8cpp_source_l00082}00082\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,45 @@
+\doxysection{chase\+\_\+target.\+hpp}
+\hypertarget{chase__target_8hpp_source}{}\label{chase__target_8hpp_source}\index{src/comp/chase\_target.hpp@{src/comp/chase\_target.hpp}}
+\mbox{\hyperlink{chase__target_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00002}00002\ \textcolor{comment}{//\ \ chase\_target.hpp}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00003}00003\ \textcolor{comment}{//\ \ EnTT\ Pacman}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00005}00005\ \textcolor{comment}{//\ \ Created\ by\ Indiana\ Kernick\ on\ 24/9/18.}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00006}00006\ \textcolor{comment}{//\ \ Copyright\ ©\ 2018\ Indiana\ Kernick.\ All\ rights\ reserved.}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00007}00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ COMP\_CHASE\_TARGET\_HPP}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#define\ COMP\_CHASE\_TARGET\_HPP}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{entity_2fwd_8hpp}{entt/entity/fwd.hpp}}>}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00014}00014\ \textcolor{comment}{//\ These\ components\ define\ the\ chase\ targeting\ behavior\ for\ each\ ghost}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00016}00016\ \textcolor{comment}{//\ This\ is\ where\ the\ beauty\ of\ ECS\ comes\ in}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00017}00017\ \textcolor{comment}{//\ Blinky\ doesn't\ have\ to\ chase\ the\ player!}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00018}00018\ \textcolor{comment}{//\ The\ BlinkyChaseTarget\ component\ stores\ the\ ID\ of\ an\ entity\ that}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00019}00019\ \textcolor{comment}{//\ has\ a\ Position\ component.\ That's\ it!\ Blinky\ can\ chase\ anything}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00020}00020\ \textcolor{comment}{//\ that\ has\ a\ Position.\ We\ could\ quite\ easily\ make\ blinky\ chase\ inky}}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00022}\mbox{\hyperlink{structBlinkyChaseTarget}{00022}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structBlinkyChaseTarget}{BlinkyChaseTarget}}\ \{}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00023}\mbox{\hyperlink{structBlinkyChaseTarget_aaac96689d54e5270438a743c54bcb225}{00023}}\ \ \ entt::entity\ \mbox{\hyperlink{structBlinkyChaseTarget_aaac96689d54e5270438a743c54bcb225}{player}};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00024}00024\ \};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00026}\mbox{\hyperlink{structPinkyChaseTarget}{00026}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPinkyChaseTarget}{PinkyChaseTarget}}\ \{}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00027}\mbox{\hyperlink{structPinkyChaseTarget_adb48d08cb550ee85b1ee2d8fe2382c8e}{00027}}\ \ \ entt::entity\ \mbox{\hyperlink{structPinkyChaseTarget_adb48d08cb550ee85b1ee2d8fe2382c8e}{player}};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00028}00028\ \};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00030}\mbox{\hyperlink{structInkyChaseTarget}{00030}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structInkyChaseTarget}{InkyChaseTarget}}\ \{}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00031}\mbox{\hyperlink{structInkyChaseTarget_a96c329b51e13b0dde8f17a15191ea444}{00031}}\ \ \ entt::entity\ \mbox{\hyperlink{structInkyChaseTarget_a96c329b51e13b0dde8f17a15191ea444}{player}};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00032}\mbox{\hyperlink{structInkyChaseTarget_a52f66619a075924d4a1d80cf0ba3e5d9}{00032}}\ \ \ entt::entity\ \mbox{\hyperlink{structInkyChaseTarget_a52f66619a075924d4a1d80cf0ba3e5d9}{blinky}};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00033}00033\ \};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00035}\mbox{\hyperlink{structClydeChaseTarget}{00035}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structClydeChaseTarget}{ClydeChaseTarget}}\ \{}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00036}\mbox{\hyperlink{structClydeChaseTarget_a8d83fcfd779490dae49474aefb42b671}{00036}}\ \ \ entt::entity\ \mbox{\hyperlink{structClydeChaseTarget_a8d83fcfd779490dae49474aefb42b671}{player}};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00037}00037\ \};}
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{chase__target_8hpp_source_l00039}00039\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

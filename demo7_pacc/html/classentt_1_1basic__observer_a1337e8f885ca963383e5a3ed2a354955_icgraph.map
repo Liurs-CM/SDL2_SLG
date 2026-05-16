@@ -1,0 +1,10 @@
+<map id="entt::basic_observer::disconnect" name="entt::basic_observer::disconnect">
+<area shape="rect" id="Node000001" title="Disconnects an observer from the registry it keeps track of." alt="" coords="411,41,565,81"/>
+<area shape="rect" id="Node000002" href="$classentt_1_1basic__observer.html#a60dee104d5bda127cb41528db488e210" title=" " alt="" coords="208,12,363,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,51,363,46,364,41,398,46"/>
+<area shape="rect" id="Node000004" href="$classentt_1_1basic__observer.html#a7d69a8bc866b01cc677de492bc436209" title="Connects an observer to a given registry." alt="" coords="5,69,160,109"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="397,70,160,87,160,81,397,65"/>
+<area shape="rect" id="Node000003" href="$classentt_1_1basic__observer.html#abef3c847acf610f1a6f856b05f0f0721" title="Creates an observer and connects it to a given registry." alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,32,161,31,161,25,194,26"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="202,58,155,72,153,67,200,53"/>
+</map>

@@ -1,0 +1,83 @@
+\doxysection{helper.\+hpp}
+\hypertarget{helper_8hpp_source}{}\label{helper_8hpp_source}\index{third\_party/entt/entity/helper.hpp@{third\_party/entt/entity/helper.hpp}}
+\mbox{\hyperlink{helper_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ENTT\_ENTITY\_HELPER\_HPP}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ENTT\_ENTITY\_HELPER\_HPP}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}../config/config.h"{}}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}../core/type\_traits.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}../signal/delegate.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{registry_8hpp}{registry.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{signal_2fwd_8hpp}{fwd.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00013}00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceentt}{entt}}\ \{}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00021}00021\ \textcolor{keyword}{template}<\textcolor{keywordtype}{bool}\ Const,\ \textcolor{keyword}{typename}\ Entity>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00022}\mbox{\hyperlink{structentt_1_1as__view}{00022}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1as__view}{as\_view}}\ \{}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00024}\mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{00024}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\_type}}\ =\ std::conditional\_t<Const,\ const\ entt::basic\_registry<Entity>,\ \mbox{\hyperlink{classentt_1_1basic__registry}{entt::basic\_registry<Entity>}}>;}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00030}\mbox{\hyperlink{structentt_1_1as__view_a820ab4da509a0fb60c4edf8ea24b748a}{00030}}\ \ \ \ \ \mbox{\hyperlink{structentt_1_1as__view_a820ab4da509a0fb60c4edf8ea24b748a}{as\_view}}(\mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\_type}}\ \&source)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}:\ \mbox{\hyperlink{structentt_1_1as__view_a7e10dbf5778755387689a8c6b037d8e8}{reg}}\{source\}\ \{\}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}},\ \textcolor{keyword}{typename}...\ Component>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00039}\mbox{\hyperlink{structentt_1_1as__view_aac140def0e18cd8dc04c486f6d5813da}{00039}}\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{classentt_1_1basic__view}{entt::basic\_view}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}},\ Component...>()\ \textcolor{keyword}{const}\ \{}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structentt_1_1as__view_a7e10dbf5778755387689a8c6b037d8e8}{reg}}.template\ \mbox{\hyperlink{classentt_1_1basic__view}{view}}<Component...>(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}}\{\});}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00043}00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00044}\mbox{\hyperlink{structentt_1_1as__view_a7e10dbf5778755387689a8c6b037d8e8}{00044}}\ \ \ \ \ \mbox{\hyperlink{structentt_1_1as__view_a458942b049c7ef96d45600337d57a70b}{registry\_type}}\ \&\mbox{\hyperlink{structentt_1_1as__view_a7e10dbf5778755387689a8c6b037d8e8}{reg}};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00045}00045\ \};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00056}00056\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Entity>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00057}\mbox{\hyperlink{namespaceentt_a3fee75741468f7807d3d48dd807ee024}{00057}}\ \mbox{\hyperlink{structentt_1_1as__view}{as\_view}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\_registry<Entity>}}\ \&)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ -\/>\ \mbox{\hyperlink{structentt_1_1as__view}{as\_view<false,\ Entity>}};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00061}00061\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Entity>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00062}\mbox{\hyperlink{namespaceentt_aac314d83c9af1077857f01975f086bed}{00062}}\ \mbox{\hyperlink{structentt_1_1as__view}{as\_view}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__registry}{basic\_registry<Entity>}}\ \&)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ -\/>\ \mbox{\hyperlink{structentt_1_1as__view}{as\_view<true,\ Entity>}};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00070}00070\ \textcolor{keyword}{template}<\textcolor{keywordtype}{bool}\ Const,\ \textcolor{keyword}{typename}\ Entity>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00071}\mbox{\hyperlink{structentt_1_1as__group}{00071}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structentt_1_1as__group}{as\_group}}\ \{}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00073}\mbox{\hyperlink{structentt_1_1as__group_a7ede36514bf64187bc93d3d295fe0123}{00073}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structentt_1_1as__group_a7ede36514bf64187bc93d3d295fe0123}{registry\_type}}\ =\ std::conditional\_t<Const,\ const\ entt::basic\_registry<Entity>,\ \mbox{\hyperlink{classentt_1_1basic__registry}{entt::basic\_registry<Entity>}}>;}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00079}\mbox{\hyperlink{structentt_1_1as__group_a7ebe095efa7c1e00e2f156ad7930d9a9}{00079}}\ \ \ \ \ \mbox{\hyperlink{structentt_1_1as__group_a7ebe095efa7c1e00e2f156ad7930d9a9}{as\_group}}(\mbox{\hyperlink{structentt_1_1as__group_a7ede36514bf64187bc93d3d295fe0123}{registry\_type}}\ \&source)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}:\ \mbox{\hyperlink{structentt_1_1as__group_ac8372d64f7e557c1fada1f89d5590713}{reg}}\{source\}\ \{\}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00088}00088\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}},\ \textcolor{keyword}{typename}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Get}},\ \textcolor{keyword}{typename}...\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Owned}}>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00089}\mbox{\hyperlink{structentt_1_1as__group_a5bc540042a69aee98c28c8446152a47f}{00089}}\ \ \ \ \ \textcolor{keyword}{operator}\ \mbox{\hyperlink{classentt_1_1basic__group}{entt::basic\_group}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Get}},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Owned}}...>()\ \textcolor{keyword}{const}\ \{}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structentt_1_1as__group_ac8372d64f7e557c1fada1f89d5590713}{reg}}.template\ \mbox{\hyperlink{classentt_1_1basic__group}{group}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Owned}}...>(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Get}}\{\},\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Exclude}}\{\});}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00091}00091\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00093}00093\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00094}\mbox{\hyperlink{structentt_1_1as__group_ac8372d64f7e557c1fada1f89d5590713}{00094}}\ \ \ \ \ \mbox{\hyperlink{structentt_1_1as__group_a7ede36514bf64187bc93d3d295fe0123}{registry\_type}}\ \&\mbox{\hyperlink{structentt_1_1as__group_ac8372d64f7e557c1fada1f89d5590713}{reg}};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00095}00095\ \};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00106}00106\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Entity>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00107}\mbox{\hyperlink{namespaceentt_a6609f31d6ab3f544ebf7d0413d007ead}{00107}}\ \mbox{\hyperlink{structentt_1_1as__group}{as\_group}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\_registry<Entity>}}\ \&)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ -\/>\ \mbox{\hyperlink{structentt_1_1as__group}{as\_group<false,\ Entity>}};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00111}00111\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Entity>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00112}\mbox{\hyperlink{namespaceentt_a8fce796266ac507c9b0c193a70f51745}{00112}}\ \mbox{\hyperlink{structentt_1_1as__group}{as\_group}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classentt_1_1basic__registry}{basic\_registry<Entity>}}\ \&)\ \mbox{\hyperlink{config_8h_ad351dc3d24a47909c17878fd0e377c54}{ENTT\_NOEXCEPT}}\ -\/>\ \mbox{\hyperlink{structentt_1_1as__group}{as\_group<true,\ Entity>}};}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00123}00123\ \textcolor{keyword}{template}<auto\ Member,\ \textcolor{keyword}{typename}\ Entity\ =\ entity>}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00124}\mbox{\hyperlink{namespaceentt_aa512a354fe328df6be5a92eb43cd4d69}{00124}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceentt_aa512a354fe328df6be5a92eb43cd4d69}{invoke}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\_registry<Entity>}}\ \&reg,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}}\ \mbox{\hyperlink{namespaceentt}{entt}})\ \{}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00125}00125\ \ \ \ \ \textcolor{keyword}{static\_assert}(std::is\_member\_function\_pointer\_v<\textcolor{keyword}{decltype}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}})>);}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00126}00126\ \ \ \ \ \mbox{\hyperlink{classentt_1_1delegate}{delegate}}<\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{void}}(\mbox{\hyperlink{classentt_1_1basic__registry}{basic\_registry<Entity>}}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Entity}})>\ func;}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00127}00127\ \ \ \ \ func.template\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{connect<Member>}}(reg.template\ \mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{get}}<\mbox{\hyperlink{namespaceentt_a49f19d031690e5ebfffd6c7a4f6bd364}{member\_class\_t}}<\textcolor{keyword}{decltype}(\mbox{\hyperlink{namespaceentt_a8c24ecc5ab0055f9f2a4725c95afb29e}{Member}})>>(\mbox{\hyperlink{namespaceentt}{entt}}));}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00128}00128\ \ \ \ \ func(reg,\ \mbox{\hyperlink{namespaceentt}{entt}});}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00129}00129\ \}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00132}00132\ \}}
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{helper_8hpp_source_l00135}00135\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
