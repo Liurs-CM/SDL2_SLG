@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="6">
+ <properties>
+  <property name="boss" value="assets/boss1.png"/>
+  <property name="bossexplosion" value="assets/bossexplosion.png"/>
+  <property name="cat" value="assets/cat.png"/>
+  <property name="clouds" value="assets/clouds.png"/>
+  <property name="explosion" value="assets/explosion.png"/>
+  <property name="largeexplosion" value="assets/largeexplosion.png"/>
+  <property name="player" value="assets/hunter.png"/>
+  <property name="smallexplosion" value="assets/smallexplosion.png"/>
+ </properties>
+ <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198" columns="18">
+  <image source="blocks1.png" width="614" height="376"/>
+ </tileset>
+ <tileset firstgid="199" name="blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198" columns="18">
+  <image source="blocks2.png" width="614" height="376"/>
+ </tileset>
+ <objectgroup id="1" name="Object Layer 2">
+  <object id="1" name="Background" type="ScrollingBackground" x="0" y="0" width="32" height="32">
+   <properties>
+    <property name="animSpeed" value="4"/>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="480"/>
+    <property name="textureID" value="clouds"/>
+    <property name="textureWidth" value="640"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Collision" width="64" height="64" visible="0">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <objectgroup color="#00ff00" id="3" name="Object Layer 1" visible="0">
+  <object id="2" name="Player1" type="Player" x="32" y="192" width="32" height="32">
+   <properties>
+    <property name="animSpeed" value="4"/>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="32"/>
+    <property name="textureID" value="player"/>
+    <property name="textureWidth" value="32"/>
+   </properties>
+  </object>
+  <object id="3" name="Cat" type="Cat" x="481" y="256" width="36" height="36">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureID" value="cat"/>
+    <property name="textureWidth" value="36"/>
+   </properties>
+  </object>
+  <object id="4" name="Boss" type="Level1Boss" x="2000" y="186" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="230"/>
+    <property name="textureID" value="boss"/>
+    <property name="textureWidth" value="183"/>
+   </properties>
+  </object>
+  <object id="5" name="Cat" type="Cat" x="385" y="96" width="36" height="36">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureID" value="cat"/>
+    <property name="textureWidth" value="36"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="6" name="Tile Layer 2" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAIA7DhAP9qORDBQZs0AQAA4KuuDQAAAAAAAAAAAAAAwL0B4WwAIw==
+  </data>
+ </layer>
+</map>

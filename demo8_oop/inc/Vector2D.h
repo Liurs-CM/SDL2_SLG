@@ -1,0 +1,106 @@
+#ifndef __Vector2D__
+#define __Vector2D__
+#include <cmath>
+#include <iostream>
+
+class Vector2D
+{
+    public:
+        Vector2D(): m_x(0.0f), m_y(0.0f) {}
+        Vector2D(float x, float y): m_x(x), m_y(y) {}
+        float getX() { return m_x; }
+        float getY() { return m_y; }
+        void setX(float x) { m_x = x; }
+        void setY(float y) { m_y = y; }
+        float length() { return sqrt(m_x * m_x + m_y * m_y); }
+        Vector2D& operator=(const Vector2D& v2)
+        {
+            m_x = v2.m_x;
+            m_y = v2.m_y;
+            return *this;
+        }
+        Vector2D operator+(const Vector2D& v2) const
+        {
+            return Vector2D(m_x + v2.m_x, m_y + v2.m_y);
+        }
+
+        Vector2D& operator+=(const Vector2D& v2)
+        {
+            m_x += v2.m_x;
+            m_y += v2.m_y;
+            return *this;
+        }
+
+        Vector2D operator-(const Vector2D& v2) const
+        {
+            return Vector2D(m_x - v2.m_x, m_y - v2.m_y);
+        }
+
+        Vector2D& operator-=(const Vector2D& v2)
+        {
+            m_x -= v2.m_x;
+            m_y -= v2.m_y;
+            return *this;
+        }
+
+        Vector2D operator*(float scalar)
+        {
+            return Vector2D(m_x * scalar, m_y * scalar);
+        }
+
+        Vector2D& operator*=(float scalar)
+        {
+            m_x *= scalar;
+            m_y *= scalar;
+            return *this;
+        }
+
+        Vector2D operator/(float scalar)
+        {
+            return Vector2D(m_x / scalar, m_y / scalar);
+        }
+
+        Vector2D& operator/=(float scalar)
+        {
+            m_x /= scalar;
+            m_y /= scalar;
+            return *this;
+        }
+
+        bool operator==(const Vector2D& v2) const {
+            return (m_x == v2.m_x && m_y == v2.m_y);
+        }
+
+        bool operator!=(const Vector2D& v2) const {
+            return !(*this == v2);
+        }
+
+        Vector2D get_normalize()
+        {
+            float l = length();
+            if(l > 0) {
+                return Vector2D(m_x / l, m_y / l);
+            }
+            return Vector2D(0, 0);
+        }
+
+        void normalize()
+        {
+            float l = length();
+            if(l > 0)
+            {
+                (*this) *= 1 / l;
+            }
+        }
+
+        friend std::ostream& operator<<(std::ostream& os, const Vector2D& vec)
+        {
+            os << "(" << vec.m_x << ", " << vec.m_y << ")";
+            return os;
+        }
+    private:
+        float m_x;
+        float m_y;
+};
+
+#endif /* defined(__Vector2D__) */
