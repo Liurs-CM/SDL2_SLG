@@ -19,8 +19,8 @@ namespace {
 #warning SDL 2.0.5 or later is recommended
         SDL_CHECK(SDL_GetDisplayBounds(0, &bounds));
 #endif
-        const int scaleX = bounds.w / tilesPx.x;
-        const int scaleY = bounds.h / tilesPx.y;
+        //const int scaleX = bounds.w / tilesPx.x;
+        //const int scaleY = bounds.h / tilesPx.y;
         //return std::max(1, std::min(scaleX, scaleY));
         return 1;
     }
