@@ -1,1 +1,1 @@
-g++ main.cpp astar.cpp -o astar_demo -lSDL2 -std=c++17
+g++ main.cpp astar.cpp -o demo -lSDL2 -std=c++17

@@ -51,6 +51,15 @@ void renderMap(SDL_Renderer* renderer, const std::vector<std::vector<bool>>& obs
     SDL_SetRenderDrawColor(renderer, COLOR_GOAL.r, COLOR_GOAL.g, COLOR_GOAL.b, COLOR_GOAL.a);
     SDL_RenderFillRect(renderer, &goalRect);
 
+    std::cout << "(" << start.x << ", " << start.y << ") -> ";
+    std::cout << "(" << goal.x << ", " << goal.y << "); ";
+    int vec_x = start.x - goal.x;
+    int vec_y = start.y - goal.y;
+    int vec_1_0 = std::abs(vec_x - vec_y);
+    int vec_1_1 = std::abs(vec_y);
+    int distance = 2 * vec_1_0 + 3 * vec_1_1;
+    std::cout << vec_1_0 << "(1,0)+" << vec_1_1 << "(1,1) " << "d: " << distance << ".\n";
+
     SDL_RenderPresent(renderer);
 }
 

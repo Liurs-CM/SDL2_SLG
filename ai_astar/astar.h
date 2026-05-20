@@ -63,6 +63,9 @@ class AStar {
         // 计算启发式代价 H (使用对角线距离)
         float heuristic(const Point& a, const Point& b) const;
 
+        // 自定义计算启发式代价 H (使用[1,0], [1,1]向量距离)
+        float oldHeuristic(const Point& a, const Point& b) const;
+
         // 检查点是否在地图范围内
         bool isInBounds(const Point& p) const;
 

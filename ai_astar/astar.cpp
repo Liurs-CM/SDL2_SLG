@@ -9,6 +9,15 @@ float AStar::heuristic(const Point& a, const Point& b) const {
     return static_cast<float>(std::max(std::abs(a.x - b.x), std::abs(a.y - b.y)));
 }
 
+float AStar::oldHeuristic(const Point& a, const Point& b) const {
+    int vec_x = a.x - b.x;
+    int vec_y = a.y - b.y;
+    int vec_1_0 = std::abs(vec_x - vec_y);
+    int vec_1_1 = std::abs(vec_y);
+    float distance = 2 * vec_1_0 + 3 * vec_1_1;
+    return distance;
+}
+
 bool AStar::isInBounds(const Point& p) const {
     return p.x >= 0 && p.x < width_ && p.y >= 0 && p.y < height_;
 }
