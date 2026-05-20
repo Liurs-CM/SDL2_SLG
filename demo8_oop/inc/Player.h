@@ -12,6 +12,7 @@ class Player : public SDLGameObject
         void update();
         void clean();
         virtual std::string type() { return "Player"; }
+        bool handleInput();
     private:
         enum class Direction { NORMAL = 0, UP = 1, DOWN = 2, LEFT = 3, RIGHT = 4 };
         Direction m_currentDirection = Direction::RIGHT;
@@ -23,7 +24,6 @@ class Player : public SDLGameObject
         Vector2D to_position;
         Vector2D at_position;
         Vector2D at_positionScreen;
-        void handleInput();
         void handleAnimation();
 };
 

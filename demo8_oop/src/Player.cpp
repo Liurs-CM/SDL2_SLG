@@ -32,7 +32,7 @@ void Player::draw()
 
 void Player::update()
 {
-    handleInput();
+    //handleInput();
     //SDLGameObject::update();
     handleAnimation();
     TheCamera::Instance()->follow(at_position);
@@ -42,7 +42,7 @@ void Player::update()
 
 void Player::clean() { }
 
-void Player::handleInput()
+bool Player::handleInput()
 {
     if (TheInputHandler::Instance()->getMouseButtonState(LEFT))
     {
@@ -97,7 +97,9 @@ void Player::handleInput()
         else {
             at_position += dist.get_normalize() * shift_speed;
         }
+        return true;
     }
+    return false;
 }
 
 void Player::handleAnimation()

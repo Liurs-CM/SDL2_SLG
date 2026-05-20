@@ -1,11 +1,6 @@
 #include "Level.h"
-#include "TextureManager.h"
 #include "Layer.h"
-#include "TileLayer.h"
-#include "Game.h"
-#include "GameLib.h"
 #include <math.h>
-#include <iostream>
 
 Level::Level() { }
 
@@ -29,8 +24,10 @@ void Level::render()
 
 void Level::update()
 {
-    for(auto* obj : m_layers)
-    {
-        obj->update(this);
+    if(m_pPlayer->handleInput()){
+        for(auto* obj : m_layers)
+        {
+            obj->update(this);
+        }
     }
 }
