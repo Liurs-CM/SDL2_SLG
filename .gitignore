@@ -56,4 +56,4 @@ Makefile
 demo
 .cache
 .clangd
-build/
+build
