@@ -1,5 +1,4 @@
-#ifndef __ObjectLayer__
-#define __ObjectLayer__
+#pragma once
 #include "Layer.h"
 #include "GameObject.h"
 #include <memory>
@@ -16,4 +15,3 @@ class ObjectLayer : public Layer
         std::vector<std::unique_ptr<GameObject>> m_gameObjects;
 };
 
-#endif // __ObjectLayer__

@@ -1,5 +1,4 @@
-#ifndef __Vector2D__
-#define __Vector2D__
+#pragma once
 #include <cmath>
 #include <iostream>
 
@@ -103,4 +102,3 @@ class Vector2D
         float m_y;
 };
 
-#endif /* defined(__Vector2D__) */

@@ -1,7 +1,6 @@
-#ifndef __GameStateMachine__
-#define __GameStateMachine__
-#include <vector>
+#pragma once
 #include "GameState.h"
+#include <vector>
 
 class GameStateMachine
 {
@@ -23,4 +22,3 @@ class GameStateMachine
         bool changeStateFlag;
 };
 
-#endif // __GameStateMachine__

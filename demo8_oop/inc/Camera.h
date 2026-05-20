@@ -1,5 +1,4 @@
-#ifndef __Camera__
-#define __Camera__
+#pragma once
 #include "Vector2D.h"
 #include <cstdint>
 
@@ -31,4 +30,3 @@ class Camera
 
 typedef Camera TheCamera;
 
-#endif // __Camera__

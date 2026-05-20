@@ -1,6 +1,7 @@
-#ifndef __InputHandler__
-#define __InputHandler__
-#include "SDL.h"
+#pragma once
+#include "SDL2/SDL_events.h"
+#include "SDL2/SDL_scancode.h"
+#include "SDL2/SDL_joystick.h"
 #include "Vector2D.h"
 #include <array>
 #include <vector>
@@ -79,4 +80,3 @@ class InputHandler
 
 typedef InputHandler TheInputHandler;
 
-#endif /* defined(__InputHandler__) */

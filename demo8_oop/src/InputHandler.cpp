@@ -1,5 +1,6 @@
 #include "InputHandler.h"
 #include "Game.h"
+#include "SDL.h"
 #include <iostream>
 #include <vector>
 

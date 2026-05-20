@@ -1,9 +1,7 @@
-#ifndef __ScrollingBackground__
-#define __ScrollingBackground__
+#pragma once
 #include "GameObjectFactory.h"
 #include "SDLGameObject.h"
-#include "SDL.h"
-#include <iostream>
+#include "SDL2/SDL_rect.h"
 
 class ScrollingBackground : public SDLGameObject
 {
@@ -37,4 +35,3 @@ class ScrollingBackgroundCreator : public BaseCreator
         }
 };
 
-#endif // __ScrollingBackground__

@@ -1,5 +1,4 @@
-#ifndef __SDLGameObject__
-#define __SDLGameObject__
+#pragma once
 #include "GameObject.h"
 #include "LoaderParams.h"
 #include "AnimatedGraphic.h"
@@ -39,4 +38,3 @@ class SDLGameObject : public GameObject
         AnimatedGraphic m_currentAnim;
 };
 
-#endif /* defined(__SDLGameObject__) */

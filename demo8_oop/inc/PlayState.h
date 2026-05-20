@@ -1,8 +1,6 @@
-#ifndef __PlayState__
-#define __PlayState__
+#pragma once
 #include "GameState.h"
 #include "Level.h"
-#include <memory>
 #include <vector>
 
 class GameObject;
@@ -24,4 +22,3 @@ class PlayState : public GameState
         Level* pLevel;
 };
 
-#endif // __PlayState__

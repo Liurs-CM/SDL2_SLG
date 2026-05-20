@@ -1,5 +1,4 @@
-#ifndef __GameLib__
-#define __GameLib__
+#pragma once
 #include <cstdint>
 #include <cstdlib>
 #include <functional>
@@ -179,4 +178,3 @@ class GameLib
         GameLib &operator=(const GameLib &);
 };
 
-#endif // __GameLib__

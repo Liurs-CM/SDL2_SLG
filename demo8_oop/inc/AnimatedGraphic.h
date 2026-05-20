@@ -1,7 +1,5 @@
-#ifndef __AnimatedGraphic__
-#define __AnimatedGraphic__
+#pragma once
 #include "GameLib.h"
-#include "SDL.h"
 
 class AnimatedGraphic
 {
@@ -15,4 +13,3 @@ class AnimatedGraphic
         }
 };
 
-#endif // __AnimatedGraphic__

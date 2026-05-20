@@ -1,9 +1,6 @@
-#ifndef __Game__
-#define __Game__
-#include "SDL.h"
-#include "GameLib.h"
-#include "Vector2D.h"
-#include "TextureManager.h"
+#pragma once
+#include "SDL2/SDL_timer.h"
+#include "SDL2/SDL_render.h"
 #include "GameStateMachine.h"
 
 class Game
@@ -67,4 +64,4 @@ class Game
 
 typedef Game TheGame;
 
-#endif // __Game__
+

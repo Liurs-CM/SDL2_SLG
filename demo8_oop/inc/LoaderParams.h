@@ -1,5 +1,4 @@
-#ifndef __LoaderParams__
-#define __LoaderParams__
+#pragma once
 #include <cstdint>
 #include <string>
 
@@ -35,4 +34,3 @@ class LoaderParams
         uint8_t m_animSpeed;
 };
 
-#endif /* defined(__LoaderParams__) */

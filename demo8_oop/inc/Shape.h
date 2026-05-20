@@ -1,5 +1,4 @@
-#ifndef __Shape__
-#define __Shape__
+#pragma once
 #include "RenderContext.h"
 #include "AnimatedGraphic.h"
 
@@ -27,4 +26,3 @@ class Shape
 
 typedef Shape TheShape;
 
-#endif /* defined(__Shape__) */

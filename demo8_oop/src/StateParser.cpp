@@ -1,6 +1,6 @@
 #include "StateParser.h"
 #include "GameObjectFactory.h"
-#include "Game.h"
+#include "TextureManager.h"
 #include <string>
 #include <iostream>
 

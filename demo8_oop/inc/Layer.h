@@ -1,5 +1,5 @@
-#ifndef __Layer__
-#define __Layer__
+#pragma once
+
 class Level;
 
 class Layer
@@ -10,4 +10,3 @@ class Layer
         virtual ~Layer() {}
 };
 
-#endif // __Layer__

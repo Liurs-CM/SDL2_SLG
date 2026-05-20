@@ -1,4 +1,5 @@
 #include "SoundManager.h"
+#include <iostream>
 
 SoundManager* SoundManager::s_pInstance;
 

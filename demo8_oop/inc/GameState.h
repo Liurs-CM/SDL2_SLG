@@ -1,5 +1,4 @@
-#ifndef __GameState__
-#define __GameState__
+#pragma once
 #include <vector>
 #include <string>
 
@@ -19,5 +18,3 @@ class GameState
         std::vector<std::string> m_textureIDList;
 };
 
-
-#endif // __GameState__

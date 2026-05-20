@@ -1,5 +1,5 @@
-#ifndef __LevelParser__
-#define __LevelParser__
+#pragma once
+
 #include "lib/tinyxml2.h"
 #include <iostream>
 #include <vector>
@@ -25,4 +25,4 @@ class LevelParser
         int m_height;
 };
 
-#endif // __LevelParser__
+

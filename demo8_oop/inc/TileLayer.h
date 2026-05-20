@@ -1,9 +1,7 @@
-#ifndef __TileLayer__
-#define __TileLayer__
+#pragma once
 #include "Layer.h"
 #include "Level.h"
 #include "Vector2D.h"
-#include <iostream>
 #include <vector>
 
 class TileLayer : public Layer
@@ -33,4 +31,4 @@ class TileLayer : public Layer
         Vector2D m_velocity;
         std::vector<std::vector<int>> m_tileIDs;
 };
-#endif // __TileLayer__
+

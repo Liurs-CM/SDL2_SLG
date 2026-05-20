@@ -1,9 +1,8 @@
-#ifndef __GameObjectFactory__
-#define __GameObjectFactory__
+#pragma once
+#include "GameObject.h"
 #include <string>
 #include <map>
 #include <iostream>
-#include "GameObject.h"
 
 class BaseCreator
 {
@@ -57,4 +56,3 @@ class GameObjectFactory
 
 typedef GameObjectFactory TheGameObjectFactory;
 
-#endif // __GameObjectFactory__

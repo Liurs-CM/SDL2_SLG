@@ -1,7 +1,5 @@
-#ifndef __GameObject__
-#define __GameObject__
+#pragma once
 #include "LoaderParams.h"
-#include "Vector2D.h"
 #include <string>
 #include <memory>
 
@@ -19,4 +17,3 @@ class GameObject
         std::string m_textureID;
 };
 
-#endif // __GameObject__

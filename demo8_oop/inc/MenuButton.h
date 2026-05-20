@@ -1,5 +1,4 @@
-#ifndef __MenuObject__
-#define __MenuObject__
+#pragma once
 #include "SDLGameObject.h"
 #include "GameObjectFactory.h"
 
@@ -35,5 +34,3 @@ class MenuButtonCreator : public BaseCreator
         }
 };
 
-
-#endif // __MenuObject__

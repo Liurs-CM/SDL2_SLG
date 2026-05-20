@@ -1,5 +1,4 @@
-#ifndef __Level1Boss__
-#define __Level1Boss__
+#pragma once
 #include "Enemy.h"
 #include "GameObjectFactory.h"
 
@@ -30,5 +29,3 @@ class Level1BossCreator : public BaseCreator
     }
 };
 
-
-#endif // __Level1Boss__

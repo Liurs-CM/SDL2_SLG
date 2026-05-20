@@ -1,5 +1,4 @@
-#ifndef __Cat__
-#define __Cat__
+#pragma once
 #include "Enemy.h"
 
 class Cat : public Enemy
@@ -34,4 +33,3 @@ class CatCreator : public BaseCreator
     }
 };
 
-#endif // __Cat__

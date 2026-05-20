@@ -1,9 +1,7 @@
-#ifndef __Level__
-#define __Level__
+#pragma once
 #include "Layer.h"
 #include "LevelParser.h"
 #include "Player.h"
-#include <iostream>
 #include <vector>
 
 class TileLayer;
@@ -42,4 +40,3 @@ class Level
         Player* m_pPlayer;
 };
 
-#endif // __Level__

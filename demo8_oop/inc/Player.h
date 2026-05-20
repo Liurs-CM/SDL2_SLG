@@ -1,5 +1,4 @@
-#ifndef __Player__
-#define __Player__
+#pragma once
 #include "SDLGameObject.h"
 #include "GameObjectFactory.h"
 
@@ -37,4 +36,3 @@ class PlayerCreator : public BaseCreator
         }
 };
 
-#endif /* defined(__Player__) */

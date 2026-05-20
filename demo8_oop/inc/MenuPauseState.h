@@ -1,5 +1,4 @@
-#ifndef __MenuPauseState__
-#define __MenuPauseState__
+#pragma once
 #include "MenuState.h"
 #include "GameObject.h"
 #include <memory>
@@ -22,4 +21,3 @@ class MenuPauseState : public MenuState
         std::vector<std::unique_ptr<GameObject>> m_gameObjects;
 };
 
-#endif // __MenuPauseState__

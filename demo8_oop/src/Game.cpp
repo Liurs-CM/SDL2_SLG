@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "TextureManager.h"
 #include "Shape.h"
 #include "RenderContext.h"
 #include "InputHandler.h"
@@ -12,9 +13,7 @@
 #include "SoundManager.h"
 #include "Cat.h"
 #include "Level1Boss.h"
-//#include "ShotGlider.h"
-//#include "RoofTurret.h"
-//#include "Eskeletor.h"
+#include "SDL.h"
 #include <iostream>
 
 Game* Game::s_pInstance = 0;

@@ -1,7 +1,5 @@
-#ifndef __StateParser__
-#define __StateParser__
+#pragma once
 #include "lib/tinyxml2.h"
-#include <iostream>
 #include <memory>
 #include <vector>
 using namespace tinyxml2;
@@ -17,6 +15,4 @@ class StateParser
         void parseObjects(XMLElement* pStateRoot, std::vector<std::unique_ptr<GameObject>> *pObjects);
         void parseTextures(XMLElement* psStateRoot, std::vector<std::string> *pTextureIDs);
 };
-
-#endif /* defined(__StateParser__) */
 

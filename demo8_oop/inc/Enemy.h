@@ -1,5 +1,4 @@
-#ifndef __Enemy__
-#define __Enemy__
+#pragma once
 #include "SDLGameObject.h"
 
 class Enemy : public SDLGameObject
@@ -13,4 +12,3 @@ class Enemy : public SDLGameObject
         int m_health;
 };
 
-#endif // __Enemy__

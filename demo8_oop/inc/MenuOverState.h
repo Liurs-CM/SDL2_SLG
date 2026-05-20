@@ -1,5 +1,4 @@
-#ifndef __MenuOverState__
-#define __MenuOverState__
+#pragma once
 #include "MenuState.h"
 #include "GameObject.h"
 #include <memory>
@@ -22,4 +21,4 @@ class MenuOverState : public MenuState
         std::vector<std::unique_ptr<GameObject>> m_gameObjects;
 };
 
-#endif // __MenuOverState__
+

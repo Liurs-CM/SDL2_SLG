@@ -1,5 +1,4 @@
-#ifndef __MenuState__
-#define __MenuState__
+#pragma once
 #include "GameState.h"
 
 class MenuState : public GameState
@@ -12,4 +11,3 @@ class MenuState : public GameState
         std::vector<Callback> m_callbacks;
 };
 
-#endif // __MenuState__

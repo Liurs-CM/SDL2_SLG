@@ -4,9 +4,9 @@
 #include "MenuOverState.h"
 #include "LevelParser.h"
 #include "Level.h"
+#include "TextureManager.h"
 #include "Game.h"
 #include <string>
-#include <algorithm>
 #include <iostream>
 
 const std::string PlayState::s_playID = "PLAY";

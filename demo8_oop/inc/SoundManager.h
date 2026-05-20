@@ -1,7 +1,5 @@
-#ifndef __SoundManager__
-#define __SoundManager__
+#pragma once
 #include "SDL_mixer.h"
-#include <iostream>
 #include <map>
 #include <string>
 
@@ -38,4 +36,3 @@ class SoundManager
 
 typedef SoundManager TheSoundManager;
 
-#endif // __SoundManager__

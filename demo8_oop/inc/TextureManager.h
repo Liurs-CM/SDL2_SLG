@@ -1,12 +1,10 @@
-#ifndef __TextureManager__
-#define __TextureManager__
+#pragma once
 #include "Vector2D.h"
 #include "GameLib.h"
-#include "SDL.h"
+#include "SDL2/SDL_render.h"
 #include <map>
 #include <string>
 #include <cmath>
-#include <algorithm>
 
 class TextureManager
 {
@@ -45,4 +43,3 @@ class TextureManager
 
 typedef TextureManager TheTextureManager;
 
-#endif /* defined(__TextureManager__) */
