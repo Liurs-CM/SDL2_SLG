@@ -12,7 +12,8 @@ const char* Player::dirNames[4] = {"Up", "Down", "Left", "Right"};
 void Player::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     SDLGameObject::load(std::move(pParams));
-    m_position = Vector2D(GRID_X + CELL_SIZE * 5, GRID_Y + CELL_SIZE * 5);
+    m_position = Vector2D(CELL_SIZE * 5, CELL_SIZE * 5);
+    //m_position = Vector2D(GRID_X + CELL_SIZE * 5, GRID_Y + CELL_SIZE * 5);
     m_delayFrame = FPS / m_animSpeed;
 }
 
@@ -21,11 +22,12 @@ void Player::draw()
     //SDLGameObject::draw();
     //TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dire[%s],Frame[%d/%d]%d,dlyFrame[%d/%d]%d", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames, m_animSpeed, m_animTimer, m_delayFrame, m_currentAnim.globalFrame_);
     TheTextureManager::Instance()->drawPrintf(10, 220, COLOR_GREEN, "hi,move[%d],Dir[%s],Frame[%d/%d],(%.0f,%.0f)", moving, dirNames[m_currentRow-1], m_currentFrame, m_numFrames-1, m_position.getX(), m_position.getY());
-    TextureManager::Instance()->drawFrame(m_textureID,  at_positionScreen - Vector2D(5,5), m_width, m_height, m_currentRow, m_currentFrame);
+    TextureManager::Instance()->drawFrame(m_textureID,  at_positionScreen, m_width, m_height, m_currentRow, m_currentFrame);
     // m_position delay frame
     if(moving){
-        TextureManager::Instance()->drawFrame(m_textureID, m_positionScreen - Vector2D(5,5), m_width, m_height, m_currentRow, 0, 32);
+        TextureManager::Instance()->drawFrame(m_textureID, m_positionScreen, m_width, m_height, m_currentRow, 0, 32);
     }
+    TextureManager::Instance()->drawHealthBar(at_positionScreen + Vector2D(4,  -1), CELL_SIZE - 8, 4, 5 * m_currentAnim.globalFrame_, 1000);
 }
 
 void Player::update()

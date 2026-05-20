@@ -32,6 +32,10 @@ void SDLGameObject::draw()
     } else {
         TextureManager::Instance()->drawFrame(m_textureID, m_positionScreen, m_width, m_height, m_currentRow, m_currentFrame, 255, SDL_FLIP_HORIZONTAL);
     }
+    TextureManager::Instance()->drawHealthBar(m_positionScreen + Vector2D(4,  -1 ), CELL_SIZE - 8, 4, 5 * m_currentAnim.globalFrame_, 1000);
+    //drawHealthBar(204, 104, 20, 4, 500, 1000);
+    //drawHealthBar(204, 128, 50, 5, 5 * m_currentAnim.globalFrame_, 1000);
+    //drawHealthBar(204, 152, 80, 8, 1000 - 5 * m_currentAnim.globalFrame_, 1000);
 }
 
 void SDLGameObject::update()

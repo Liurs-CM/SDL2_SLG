@@ -6,11 +6,6 @@
 class Shape
 {
     public:
-        void initHealthBarSystem();
-        void drawHealthBar(
-                int x, int y,               // 屏幕位置
-                int width, int height,      // 血条尺寸
-                int currentHP, int maxHP);   // 绝对血量值
         void Shape_genrate();
         static Shape* Instance()
         {

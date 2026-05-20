@@ -6,7 +6,7 @@
 TileLayer::TileLayer(int tileSize, const std::vector<Tileset>& tilesets) : m_tileSize(tileSize), m_tilesets(tilesets), m_position(0,0), m_velocity(0,0)
 {
     m_numColumns = (SCR_W / m_tileSize) + 1;
-    m_numRows = (SCR_H / m_tileSize);
+    m_numRows = (SCR_H / m_tileSize) + 1;
 }
 
 void TileLayer::update(Level* pLevel)

@@ -34,6 +34,8 @@ class TextureManager
             }
             return s_pInstance;
         }
+        void initHealthBarTexture();
+        void drawHealthBar(Vector2D pos, int width, int height, int currentHP, int maxHP);
 
     private:
         TextureManager() {}

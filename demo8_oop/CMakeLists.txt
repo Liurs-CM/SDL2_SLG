@@ -42,6 +42,7 @@ set_property(TARGET ${CMAKE_PROJECT_NAME} PROPERTY CXX_STANDARD 20)
 target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE
     -Wall -Wempty-body -Werror -Warray-bounds -g
     $<$<COMPILE_LANG_AND_ID:CXX,GNU>:-Werror=maybe-uninitialized>
+    -fsanitize=address -fno-omit-frame-pointer
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
@@ -57,7 +58,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 # 链接库
-Target_Link_Libraries (
+target_link_libraries (
  	${CMAKE_PROJECT_NAME}
  	${SDL2_LIBRARIES}
  	${SDL2_MIXER_LIBRARIES}
@@ -65,6 +66,7 @@ Target_Link_Libraries (
  	${SDL2_TTF_LIBRARIES}
     ${SDL2GFX_LIBRARIES}
     ${ZLIB_LIBRARIES}
+    -fsanitize=address
 )
 
 # === 1. 自动生成 .clang-format（仅首次或手动调用）===

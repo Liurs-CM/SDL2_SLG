@@ -246,3 +246,68 @@ void TextureManager::drawGrid(int x, int y, int rows, int cols, int cellSize, ui
     }
 }
 
+void TextureManager::initHealthBarTexture()
+{ 
+    // 创建 256x1 渐变纹理（红→黄→绿）
+    SDL_Surface* s = SDL_CreateRGBSurface(0, 256, 1, 32, 0, 0, 0, 0);
+    for (int x = 0; x < 256; ++x) {
+        float t = x / 255.0f;
+        Uint8 r = (t < 0.5f) ? 255 : (Uint8)(255 * (1 - (t - 0.5f) * 2));
+        Uint8 g = (t < 0.5f) ? (Uint8)(255 * t * 2) : 255;
+        Uint8 b = 0;
+        ((Uint32*)s->pixels)[x] = SDL_MapRGB(s->format, r, g, b);
+    }
+    m_textureMap["HealthGradient"] = SDL_CreateTextureFromSurface(RenderContext::get(), s);
+    SDL_FreeSurface(s);
+}
+
+void TextureManager::drawHealthBar(
+        Vector2D pos,               // 屏幕位置
+        int width, int height,      // 血条尺寸
+        int currentHP, int maxHP)   // 绝对血量值
+{
+    SDL_Renderer* pRenderer = RenderContext::get();
+    int x = (Uint32)pos.getX();
+    int y = (Uint32)pos.getY();
+    const int SEG_SIZE = 100;
+    const int MAX_SEG = 10;
+
+    // 1. 计算段数（按绝对值）
+    int curSeg = std::min(currentHP / SEG_SIZE, MAX_SEG);
+    int maxSeg = std::min(maxHP / SEG_SIZE, MAX_SEG);
+    if (maxSeg == 0) maxSeg = 1;
+    if (currentHP > 0 && curSeg == 0) curSeg = 1;
+
+    float ratio = (float)curSeg / maxSeg;
+
+    // 2. 背景（可选）
+    SDL_SetRenderDrawColor(pRenderer, 127, 127, 127, 255);
+    SDL_Rect rect = {x, y, width, height};
+    SDL_RenderFillRect(pRenderer, &rect);
+
+    // 3. 渐变前景
+    if (ratio > 0.0f) {
+        SDL_Rect src = {0, 0, (int)(256 * ratio), 1};
+        SDL_Rect dst = {x, y, (int)(width * ratio), height};
+        SDL_RenderCopy(pRenderer, m_textureMap["HealthGradient"], &src, &dst);
+    }
+
+    // 4. ★ 1像素黑边框 ★
+    SDL_SetRenderDrawColor(pRenderer, 0, 0, 0, 255);
+    SDL_RenderDrawRect(pRenderer, &rect);
+
+    // 5. ★ >1000 高亮（白边）★
+    if (maxHP >= 1000) {
+        SDL_SetRenderDrawColor(pRenderer, 255, 255, 255, 255);
+        rect = {x - 1, y - 1, width + 2, height + 2};
+        SDL_RenderDrawRect(pRenderer, &rect);
+    }
+    
+    // 6. ★ 1像素黑点倒角 ★
+    SDL_SetRenderDrawColor(pRenderer, 127, 127, 127, 255);
+    SDL_RenderDrawPoint(pRenderer, x - 1, y - 1);
+    SDL_RenderDrawPoint(pRenderer, x - 1, y + height);
+    SDL_RenderDrawPoint(pRenderer, x + width, y - 1);
+    SDL_RenderDrawPoint(pRenderer, x + width, y + height);
+}
+
