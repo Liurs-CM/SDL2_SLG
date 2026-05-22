@@ -1,7 +1,7 @@
 #include "TextureManager.h"
 #include "RenderContext.h"
 #include "SDL_image.h"
-#include "SDL_ttf.h"
+//#include "SDL_ttf.h"
 #include <SDL2_gfxPrimitives.h>
 #include <vector>
 #include <iostream>
@@ -26,24 +26,24 @@ bool TextureManager::load(std::string fileName,std::string id)
     return false;
 }
 
-void TextureManager::draw(std::string id, Vector2D pos, uint16_t width, uint16_t height, SDL_RendererFlip flip)
+void TextureManager::draw(std::string id, vec pos, uint16_t width, uint16_t height, SDL_RendererFlip flip)
 {
     SDL_Rect srcRect;
     SDL_Rect dstRect;
-    int x = (Uint32)pos.getX();
-    int y = (Uint32)pos.getY();
+    int x = (Uint32)pos.x;
+    int y = (Uint32)pos.y;
     srcRect = {0, 0, width, height};
     dstRect = {x, y, width, height};
     SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, 0, 0, flip);
 }
 
-void TextureManager::drawRotat(std::string id, Vector2D pos, int width, int height, int currentRow, int currentFrame, double angle, SDL_RendererFlip flip)
+void TextureManager::drawRotat(std::string id, vec pos, int width, int height, int currentRow, int currentFrame, double angle, SDL_RendererFlip flip)
 {
     SDL_Rect srcRect;
     SDL_Rect dstRect;
     SDL_Point center;
-    int x = (Uint32)pos.getX();
-    int y = (Uint32)pos.getY();
+    int x = (Uint32)pos.x;
+    int y = (Uint32)pos.y;
     srcRect = {width * currentFrame, height * (currentRow - 1), width, height};
     dstRect = {x, y, width, height};
     //center = {x, y};
@@ -52,12 +52,12 @@ void TextureManager::drawRotat(std::string id, Vector2D pos, int width, int heig
     SDL_RenderCopyEx(RenderContext::get(), m_textureMap[id], &srcRect, &dstRect, angle, &center, flip);
 }
 
-void TextureManager::drawFrame(std::string id, Vector2D pos, uint16_t width, uint16_t height, uint8_t currentRow, uint8_t currentFrame, int alpha, SDL_RendererFlip flip)
+void TextureManager::drawFrame(std::string id, vec pos, uint16_t width, uint16_t height, uint8_t currentRow, uint8_t currentFrame, int alpha, SDL_RendererFlip flip)
 {
     SDL_Rect srcRect;
     SDL_Rect dstRect;
-    int x = (Uint32)pos.getX();
-    int y = (Uint32)pos.getY();
+    int x = (Uint32)pos.x;
+    int y = (Uint32)pos.y;
     srcRect = {width * currentFrame, height * (currentRow - 1), width, height};
     dstRect = {x, y, width, height};
     SDL_SetTextureAlphaMod(m_textureMap[id], alpha);
@@ -262,13 +262,13 @@ void TextureManager::initHealthBarTexture()
 }
 
 void TextureManager::drawHealthBar(
-        Vector2D pos,               // 屏幕位置
+        vec pos,               // 屏幕位置
         int width, int height,      // 血条尺寸
         int currentHP, int maxHP)   // 绝对血量值
 {
     SDL_Renderer* pRenderer = RenderContext::get();
-    int x = (Uint32)pos.getX();
-    int y = (Uint32)pos.getY();
+    int x = (Uint32)pos.x;
+    int y = (Uint32)pos.y;
     const int SEG_SIZE = 100;
     const int MAX_SEG = 10;
 

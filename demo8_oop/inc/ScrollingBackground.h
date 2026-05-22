@@ -13,6 +13,7 @@ class ScrollingBackground : public SDLGameObject
         virtual void clean();
         virtual void load(std::unique_ptr<LoaderParams> const &pParams);
     private:
+        vec m_position;
         int m_scrollSpeed;
         int count;
         int maxcount;

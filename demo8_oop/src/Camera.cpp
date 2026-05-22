@@ -1,6 +1,5 @@
 #include "Camera.h"
 #include "GameLib.h"
-#include <iostream>
 
 Camera* Camera::s_pInstance = 0;
 
@@ -10,11 +9,11 @@ Camera::Camera() :
     m_height(SCR_H)
 { }
 
-void Camera::follow(Vector2D target)
+void Camera::follow(vec target)
 {
-    m_position = Vector2D(target.getX() - m_width / 2, target.getY() - m_height / 2);
-    m_position.setX(std::max(0.0f, std::min(m_position.getX(), float(MAP_W - m_width))));
-    m_position.setY(std::max(0.0f, std::min(m_position.getY(), float(MAP_H - m_height))));
+    m_position = vec2(target.x - float(m_width) / 2, target.y - float(m_height) / 2);
+    m_position.x = std::max(0.0f, std::min(m_position.x, float(MAP_W - m_width)));
+    m_position.y = std::max(0.0f, std::min(m_position.y, float(MAP_H - m_height)));
 
     //// 计算理想位置（让目标居中）
     //Vector2D to_position = Vector2D(target.getX() - m_width / 2, target.getY() - m_height / 2);

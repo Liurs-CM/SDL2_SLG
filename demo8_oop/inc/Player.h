@@ -14,16 +14,15 @@ class Player : public SDLGameObject
         virtual std::string type() { return "Player"; }
         bool handleInput();
     private:
-        enum class Direction { NORMAL = 0, UP = 1, DOWN = 2, LEFT = 3, RIGHT = 4 };
         Direction m_currentDirection = Direction::RIGHT;
         static const char* dirNames[4];
         float shift_speed = 0.5;
         bool moving = false;
         int8_t m_animTimer = 0;
         uint8_t m_delayFrame;
-        Vector2D to_position;
-        Vector2D at_position;
-        Vector2D at_positionScreen;
+        vec to_position;
+        vec2 at_position;
+        vec at_positionScreen;
         void handleAnimation();
 };
 

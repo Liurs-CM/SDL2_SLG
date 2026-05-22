@@ -15,21 +15,21 @@ class SDLGameObject : public GameObject
         virtual void update();
         virtual void clean() {}
         virtual std::string type() { return "SDLGameObject"; }
-        Vector2D& getPosition() { return m_position; }
-        Vector2D& getVelocity() { return m_velocity; }
+        vec2& getPosition() { return m_position; }
+        vec2& getVelocity() { return m_velocity; }
         const uint16_t getWidth() { return m_width; }
         const uint16_t getHeight() { return m_height; }
         virtual std::unique_ptr<SDLGameObject> clone() { return nullptr; }
     protected:
         SDLGameObject();
-        Vector2D m_position;
-        Vector2D m_velocity;
-        Vector2D m_acceleration;
+        vec2 m_position;
+        vec2 m_velocity;
+        vec2 m_acceleration;
         uint8_t m_currentRow;
         uint8_t m_currentFrame;
         double m_angle;
         int m_alpha;
-        Vector2D m_positionScreen;
+        vec m_positionScreen;
         uint16_t m_width;
         uint16_t m_height;
         uint8_t m_numFrames;

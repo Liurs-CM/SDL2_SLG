@@ -1,104 +1,147 @@
 #pragma once
 #include <cmath>
+#include <type_traits>
 #include <iostream>
 
-class Vector2D
-{
-    public:
-        Vector2D(): m_x(0.0f), m_y(0.0f) {}
-        Vector2D(float x, float y): m_x(x), m_y(y) {}
-        float getX() { return m_x; }
-        float getY() { return m_y; }
-        void setX(float x) { m_x = x; }
-        void setY(float y) { m_y = y; }
-        float length() { return sqrt(m_x * m_x + m_y * m_y); }
-        Vector2D& operator=(const Vector2D& v2)
-        {
-            m_x = v2.m_x;
-            m_y = v2.m_y;
-            return *this;
-        }
-        Vector2D operator+(const Vector2D& v2) const
-        {
-            return Vector2D(m_x + v2.m_x, m_y + v2.m_y);
-        }
-
-        Vector2D& operator+=(const Vector2D& v2)
-        {
-            m_x += v2.m_x;
-            m_y += v2.m_y;
-            return *this;
-        }
-
-        Vector2D operator-(const Vector2D& v2) const
-        {
-            return Vector2D(m_x - v2.m_x, m_y - v2.m_y);
-        }
-
-        Vector2D& operator-=(const Vector2D& v2)
-        {
-            m_x -= v2.m_x;
-            m_y -= v2.m_y;
-            return *this;
-        }
-
-        Vector2D operator*(float scalar)
-        {
-            return Vector2D(m_x * scalar, m_y * scalar);
-        }
-
-        Vector2D& operator*=(float scalar)
-        {
-            m_x *= scalar;
-            m_y *= scalar;
-            return *this;
-        }
-
-        Vector2D operator/(float scalar)
-        {
-            return Vector2D(m_x / scalar, m_y / scalar);
-        }
-
-        Vector2D& operator/=(float scalar)
-        {
-            m_x /= scalar;
-            m_y /= scalar;
-            return *this;
-        }
-
-        bool operator==(const Vector2D& v2) const {
-            return (m_x == v2.m_x && m_y == v2.m_y);
-        }
-
-        bool operator!=(const Vector2D& v2) const {
-            return !(*this == v2);
-        }
-
-        Vector2D get_normalize()
-        {
-            float l = length();
-            if(l > 0) {
-                return Vector2D(m_x / l, m_y / l);
-            }
-            return Vector2D(0, 0);
-        }
-
-        void normalize()
-        {
-            float l = length();
-            if(l > 0)
-            {
-                (*this) *= 1 / l;
-            }
-        }
-
-        friend std::ostream& operator<<(std::ostream& os, const Vector2D& vec)
-        {
-            os << "(" << vec.m_x << ", " << vec.m_y << ")";
-            return os;
-        }
-    private:
-        float m_x;
-        float m_y;
+enum class Direction 
+{ 
+    NORMAL = 0, 
+    UP = 1, 
+    DOWN = 2, 
+    LEFT = 3, 
+    RIGHT = 4,
 };
 
+/// @brief 2D vector template for arithmetic types (int, float, etc.)
+template<typename T = int>
+struct vec2d {
+    static_assert(std::is_arithmetic_v<T>, 
+            "vec2d<T> requires an arithmetic type (e.g., int, float).");
+    T x{}, y{};
+    constexpr vec2d() = default;
+    constexpr vec2d(T x, T y) : x{x}, y{y} {}
+    inline static const vec2d<T> zero      = {0, 0};
+    inline static const vec2d<T> unit_x    = {1, 0};
+    inline static const vec2d<T> unit_y    = {0, 1};
+    inline static const vec2d<T> up        = {0, -1};
+    inline static const vec2d<T> down      = unit_y;
+    inline static const vec2d<T> left      = {-1, 0};
+    inline static const vec2d<T> right     = unit_x;
+    inline static const vec2d<T> leftUp    = {-1, -1};
+    inline static const vec2d<T> rightUp   = {1, -1};
+    inline static const vec2d<T> leftDown  = {-1, 1};
+    inline static const vec2d<T> rightDown = {1, 1};
+    template<typename U>
+        constexpr vec2d(const vec2d<U>& other)
+        : x(static_cast<T>(other.x)), y(static_cast<T>(other.y)) {}
+    template<typename U>
+        constexpr vec2d& operator=(const vec2d<U>& other) {
+            x = static_cast<T>(other.x);
+            y = static_cast<T>(other.y);
+            return *this;
+        }
+
+    // --- Arithmetic operators ---
+    [[nodiscard]] friend constexpr vec2d operator-(const vec2d& v) {
+        return {-v.x, -v.y};
+    }
+
+    [[nodiscard]] friend constexpr vec2d operator+(const vec2d& v1, const vec2d& v2) {
+        return {v1.x + v2.x, v1.y + v2.y};
+    }
+
+    friend constexpr vec2d& operator+=(vec2d& v1, const vec2d& v2) {
+        v1.x += v2.x;
+        v1.y += v2.y;
+        return v1;
+    }
+
+    [[nodiscard]] friend constexpr vec2d operator-(const vec2d& v1, const vec2d& v2) {
+        return {v1.x - v2.x, v1.y - v2.y};
+    }
+
+    friend constexpr vec2d& operator-=(vec2d& v1, const vec2d& v2) {
+        v1.x -= v2.x;
+        v1.y -= v2.y;
+        return v1;
+    }
+
+    [[nodiscard]] friend constexpr vec2d operator*(const vec2d& v, T scalar) {
+        return {v.x * scalar, v.y * scalar};
+    }
+
+    [[nodiscard]] friend constexpr vec2d operator*(T scalar, const vec2d& v) {
+        return v * scalar;
+    }
+
+    friend constexpr vec2d& operator*=(vec2d& v, T scalar) {
+        v.x *= scalar;
+        v.y *= scalar;
+        return v;
+    }
+
+    [[nodiscard]] friend constexpr vec2d operator/(const vec2d& v, T scalar) {
+        return {v.x / scalar, v.y / scalar};
+    }
+
+    friend constexpr vec2d& operator/=(vec2d& v, T scalar) {
+        v.x /= scalar;
+        v.y /= scalar;
+        return v;
+    }
+
+    // --- Comparisons ---
+    [[nodiscard]] friend constexpr bool operator==(const vec2d& v1, const vec2d& v2) {
+        return v1.x == v2.x && v1.y == v2.y;
+    }
+
+    [[nodiscard]] friend constexpr bool operator!=(const vec2d& v1, const vec2d& v2) {
+        return !(v1 == v2);
+    }
+
+    // --- Utility functions ---
+    /// @brief Squared Euclidean distance (avoids sqrt, efficient)
+    [[nodiscard]] friend constexpr T distance2(const vec2d& v) noexcept {
+        return v.x * v.x + v.y * v.y;
+    }
+    [[nodiscard]] friend constexpr T distance2(const vec2d& v1, const vec2d& v2) noexcept {
+        return distance2(v1 - v2);
+    }
+
+    [[nodiscard]] constexpr float distance() const noexcept {
+        return std::sqrt(static_cast<float>(distance2(*this)));
+    }
+    [[nodiscard]] constexpr float distance(const vec2d& v) const noexcept {
+        return std::sqrt(static_cast<float>(distance2(v - *this)));
+    }
+    friend float distance(const vec2d& v) noexcept {
+        return std::sqrt(static_cast<float>(distance2(v)));
+    }
+    friend float distance(const vec2d& v1, const vec2d& v2) noexcept {
+        return std::sqrt(static_cast<float>(distance2(v1, v2)));
+    }
+
+    // 2D vector normalized
+    [[nodiscard]] constexpr vec2d<float> normalize() const noexcept{
+        if(*this == vec2d{})  return {};
+        return *this / distance(*this);
+    }
+    [[nodiscard]] friend vec2d<float> normalize(const vec2d& v){
+        if(v == vec2d{})  return {};
+        return vec2d<float>(v) / v.distance();
+    }
+
+    /// @brief Linear interpolation between a and b with parameter t in [0,1]
+    [[nodiscard]] friend constexpr vec2d lerp(const vec2d &v1, const vec2d &v2, T t) {
+        if (t <= T{0}) return v1;
+        if (t >= T{1}) return v2;
+        return v1 + t * (v2 - v1);
+    }
+
+    friend std::ostream& operator<<(std::ostream& os, const vec2d& v) {
+        return os << '{' << v.x << ", " << v.y << '}';
+    }
+};
+
+using vec  = vec2d<int>;
+using vec2 = vec2d<float>;

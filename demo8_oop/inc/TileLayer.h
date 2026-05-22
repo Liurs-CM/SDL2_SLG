@@ -15,11 +15,11 @@ class TileLayer : public Layer
         void setTileSize(int tileSize) { m_tileSize = tileSize; }
         void setMapWidth(int mapWidth) { m_mapWidth = mapWidth; }
         void setMapHeight(int mapHeight) { m_mapHeight = mapHeight; }
-        void setPosition(const Vector2D& position) { m_position = position; }
+        void setPosition(const vec& position) { m_position = position; }
         int getTileSize() { return m_tileSize; }
         const std::vector<std::vector<int>>& getTileIDs() { return m_tileIDs; }
         Tileset getTilesetByID(int tileID);
-        const Vector2D getPosition() { return m_position; }
+        const vec getPosition() { return m_position; }
     private:
         int m_numColumns;
         int m_numRows;
@@ -27,8 +27,8 @@ class TileLayer : public Layer
         int m_mapWidth;
         int m_tileSize;
         const std::vector<Tileset>& m_tilesets;
-        Vector2D m_position;
-        Vector2D m_velocity;
+        vec m_position;
+        vec m_velocity;
         std::vector<std::vector<int>> m_tileIDs;
 };
 

@@ -6,8 +6,8 @@ class Camera
 {
     public:
         void update(); // 更新相机逻辑
-        Vector2D getPosition() const { return m_position; }
-        void follow(Vector2D target); // 跟随某个目标点
+        vec2 getPosition() const { return m_position; }
+        void follow(vec target); // 跟随某个目标点
         // ... 其他方法，如设置边界、震动效果等 ...
         static Camera* Instance()
         {
@@ -21,8 +21,8 @@ class Camera
     private:
         Camera();
         ~Camera();
-        Vector2D m_position; // 相机的世界坐标（即视口左上角）
-        Vector2D to_position;
+        vec2 m_position; // 相机的世界坐标（即视口左上角）
+        vec2 to_position;
         float shift_speed = 0.5;
         uint16_t m_width, m_height; // 相机的视口尺寸
         static Camera* s_pInstance;

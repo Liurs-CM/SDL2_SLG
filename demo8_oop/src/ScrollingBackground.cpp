@@ -1,7 +1,6 @@
 #include "ScrollingBackground.h"
 #include "TextureManager.h"
 #include "RenderContext.h"
-#include "Game.h"
 
 ScrollingBackground::ScrollingBackground() : SDLGameObject()
 {
@@ -15,9 +14,9 @@ void ScrollingBackground::load(std::unique_ptr<LoaderParams> const &pParams)
     m_scrollSpeed = pParams->getAnimSpeed();
     m_scrollSpeed = 1;
     m_srcRect1 = {0, 0, m_width, m_height};
-    m_dstRect1 = {int(m_position.getX()), int(m_position.getY()), m_width, m_height};
+    m_dstRect1 = {m_position.x, m_position.y, m_width, m_height};
     m_srcRect2 = {0, 0, 0, m_height};
-    m_dstRect2 = {int(m_position.getX()) + m_width, int(m_position.getY()), 0, m_height};
+    m_dstRect2 = {m_position.x + m_width, m_position.y, 0, m_height};
     m_srcRect1Width = m_dstRect1Width = m_width;
     m_srcRect2Width = m_dstRect2Width = 0;
 }
@@ -49,9 +48,9 @@ void ScrollingBackground::update()
         if(m_dstRect2.w >= m_width)
         {
             m_srcRect1 = {0, 0, m_width, m_height};
-            m_dstRect1 = {int(m_position.getX()), int(m_position.getY()), m_width, m_height};
+            m_dstRect1 = {m_position.x, m_position.y, m_width, m_height};
             m_srcRect2 = {0, 0, 0, m_height};
-            m_dstRect2 = {int(m_position.getX()) + m_width, int(m_position.getY()), 0, m_height};
+            m_dstRect2 = {m_position.x + m_width, m_position.y, 0, m_height};
             m_srcRect1Width = m_dstRect1Width = m_width;
             m_srcRect2Width = m_dstRect2Width = 0;
         }

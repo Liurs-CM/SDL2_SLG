@@ -13,7 +13,7 @@ class Level1Boss : public Enemy
         virtual void load(std::unique_ptr<LoaderParams> const &pParams)
         {
             SDLGameObject::load(std::move(pParams));
-            m_velocity.setY(-1);
+            m_velocity.y = -1;
         }
         void update();
     private:
