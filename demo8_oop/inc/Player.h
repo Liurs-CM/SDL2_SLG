@@ -19,7 +19,7 @@ class Player : public SDLGameObject
     private:
         Direction m_currentDirection = Direction::RIGHT;
         static const char* dirNames[4];
-        float shift_speed = 0.5;
+        float shift_speed = 0.2;
         bool moving = false;
         vec to_position;
         vec2 at_position;

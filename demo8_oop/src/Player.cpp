@@ -52,7 +52,7 @@ void Player::set2Pos(vec Pos, bool to)
         m_currentDirection = Pos.getVecDir();
     }
     m_animClip.m_currentRow = static_cast<int>(m_currentDirection);
-    m_animClip.setAction(UnitAction::MOVING);
+    setAction(UnitAction::MOVING);
 }
 
 void Player::move() 
@@ -61,7 +61,7 @@ void Player::move()
     if(dist.distance() < m_animClip.m_animSpeed) {
         at_position = to_position;
         m_position = to_position;
-        m_animClip.setAction(UnitAction::IDLE);
+        setAction(UnitAction::IDLE);
     }
     else {
         at_position += normalize(dist) * m_animClip.m_animSpeed * shift_speed;

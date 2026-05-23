@@ -2,7 +2,6 @@
 #include "Layer.h"
 #include "LevelParser.h"
 #include "Player.h"
-#include "SDL2/SDL_scancode.h"
 #include <vector>
 
 class TileLayer;

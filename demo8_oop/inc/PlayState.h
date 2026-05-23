@@ -21,17 +21,20 @@ class PlayState : public GameState
         std::vector<GameObject*> m_gameObjects;
         Level* pLevel;
         // PlayPhase
+        uint16_t m_turnNum = 0;
         enum class Phase { INPUT, EXECUTION } m_currentPhase = Phase::INPUT;
         struct InputData {
              uint8_t selectedUnit = -1;
              bool commandConfirmed = false;
         } m_inputData;
         struct ExecutionData {
-             int8_t m_animTimer = 0;
+             uint16_t m_animTimer = 0;
              bool finished = false;
         } m_execData;
         void handleInputPhase();
         void handleExecutionPhase();
+        void enterInputPhase();
+        void enterExecutionPhase();
         void resetInputData();
         void resetExecData();
 };

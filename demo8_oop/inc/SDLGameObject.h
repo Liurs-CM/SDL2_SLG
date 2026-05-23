@@ -6,14 +6,6 @@
 #include <string>
 #include <memory>
 
-// UnitAction.h
-enum class UnitAction {
-    IDLE,
-    MOVING,
-    ATTACKING,
-    DEAD
-};
-
 struct AnimationClip {
     std::string textureID;      // 纹理名（如 "player_walk"）
     bool loop = false;          // 是否循环（idle 循环，attack 不循环）
@@ -26,7 +18,6 @@ struct AnimationClip {
     UnitAction m_currentAction = UnitAction::IDLE;
     AnimatedGraphic m_currentAnim;
     void handleAnimation();
-    void setAction(UnitAction act) { m_currentAction = act; }
     UnitAction getCurrentAction() const { return m_currentAction; }
     // 自定义构造函数（可选）
 };
@@ -45,6 +36,7 @@ class SDLGameObject : public GameObject
         const uint16_t getWidth() { return m_width; }
         const uint16_t getHeight() { return m_height; }
         virtual std::unique_ptr<SDLGameObject> clone() { return nullptr; }
+        void setAction(UnitAction act) { m_animClip.m_currentAction = act; }
     protected:
         SDLGameObject();
         vec2 m_position;
