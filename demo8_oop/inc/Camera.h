@@ -21,9 +21,9 @@ class Camera
     private:
         Camera();
         ~Camera();
-        vec2 m_position; // 相机的世界坐标（即视口左上角）
-        vec2 to_position;
-        float shift_speed = 0.5;
+        vec m_position; // 相机的世界坐标（即视口左上角）
+        vec to_position;
+        float shift_speed = 1;
         uint16_t m_width, m_height; // 相机的视口尺寸
         static Camera* s_pInstance;
 };

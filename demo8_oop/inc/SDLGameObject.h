@@ -6,6 +6,31 @@
 #include <string>
 #include <memory>
 
+// UnitAction.h
+enum class UnitAction {
+    IDLE,
+    MOVING,
+    ATTACKING,
+    DEAD
+};
+
+struct AnimationClip {
+    std::string textureID;      // 纹理名（如 "player_walk"）
+    bool loop = false;          // 是否循环（idle 循环，attack 不循环）
+    uint8_t m_currentRow = 1;
+    uint8_t m_currentFrame = 0;
+    uint8_t m_numFrames = 1;
+    uint8_t m_animSpeed = 1;
+    uint8_t m_delayFrame;
+    int8_t m_animTimer = 0;
+    UnitAction m_currentAction = UnitAction::IDLE;
+    AnimatedGraphic m_currentAnim;
+    void handleAnimation();
+    void setAction(UnitAction act) { m_currentAction = act; }
+    UnitAction getCurrentAction() const { return m_currentAction; }
+    // 自定义构造函数（可选）
+};
+
 class SDLGameObject : public GameObject
 {
     public:
@@ -25,16 +50,12 @@ class SDLGameObject : public GameObject
         vec2 m_position;
         vec2 m_velocity;
         vec2 m_acceleration;
-        uint8_t m_currentRow;
-        uint8_t m_currentFrame;
         double m_angle;
         int m_alpha;
         vec m_positionScreen;
         uint16_t m_width;
         uint16_t m_height;
-        uint8_t m_numFrames;
-        uint8_t m_animSpeed;
         bool m_bPlayedDeathSound;
-        AnimatedGraphic m_currentAnim;
+        AnimationClip m_animClip;
 };
 

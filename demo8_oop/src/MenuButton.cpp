@@ -8,13 +8,13 @@ void MenuButton::load(std::unique_ptr<LoaderParams> const &pParams)
 {
     SDLGameObject::load(std::move(pParams));
     m_callbackID = pParams->getCallbackID();
-    m_currentFrame = MOUSE_OUT;
+    m_animClip.m_currentFrame = MOUSE_OUT;
 }
 
 void MenuButton::draw()
 {
     //SDLGameObject::draw();
-    TextureManager::Instance()->drawFrame(m_textureID, m_position, m_width, m_height, m_currentRow, m_currentFrame);
+    TextureManager::Instance()->drawFrame(m_textureID, m_position, m_width, m_height, m_animClip.m_currentRow, m_animClip.m_currentFrame);
 }
 
 void MenuButton::update()
@@ -27,7 +27,7 @@ void MenuButton::update()
     {
         if(TheInputHandler::Instance()->getMouseButtonState(LEFT) && m_bReleased)
         {
-            m_currentFrame = CLICKED;
+            m_animClip.m_currentFrame = CLICKED;
             if(m_callback != 0) {
                 m_callback();
             }
@@ -36,12 +36,12 @@ void MenuButton::update()
         else if(!TheInputHandler::Instance()->getMouseButtonState(LEFT))
         {
             m_bReleased = true;
-            m_currentFrame = MOUSE_OVER;
+            m_animClip.m_currentFrame = MOUSE_OVER;
         }
     }
     else
     {
-        m_currentFrame = MOUSE_OUT;
+        m_animClip.m_currentFrame = MOUSE_OUT;
     }
 }
 

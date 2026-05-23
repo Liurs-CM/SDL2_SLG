@@ -20,5 +20,19 @@ class PlayState : public GameState
         static const std::string s_playID;
         std::vector<GameObject*> m_gameObjects;
         Level* pLevel;
+        // PlayPhase
+        enum class Phase { INPUT, EXECUTION } m_currentPhase = Phase::INPUT;
+        struct InputData {
+             uint8_t selectedUnit = -1;
+             bool commandConfirmed = false;
+        } m_inputData;
+        struct ExecutionData {
+             int8_t m_animTimer = 0;
+             bool finished = false;
+        } m_execData;
+        void handleInputPhase();
+        void handleExecutionPhase();
+        void resetInputData();
+        void resetExecData();
 };
 

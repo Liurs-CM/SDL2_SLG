@@ -12,18 +12,18 @@ class Player : public SDLGameObject
         void update();
         void clean();
         virtual std::string type() { return "Player"; }
-        bool handleInput();
+        void set2Pos(vec Pos, bool to = true);
+        void move();
+        //void setToPos(vec Pos) { to_position = Pos; }
+        //void setDir(Direction Dir) { m_currentDirection = Dir; }
     private:
         Direction m_currentDirection = Direction::RIGHT;
         static const char* dirNames[4];
         float shift_speed = 0.5;
         bool moving = false;
-        int8_t m_animTimer = 0;
-        uint8_t m_delayFrame;
         vec to_position;
         vec2 at_position;
         vec at_positionScreen;
-        void handleAnimation();
 };
 
 class PlayerCreator : public BaseCreator

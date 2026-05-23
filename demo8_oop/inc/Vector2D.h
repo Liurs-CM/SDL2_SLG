@@ -141,7 +141,29 @@ struct vec2d {
     friend std::ostream& operator<<(std::ostream& os, const vec2d& v) {
         return os << '{' << v.x << ", " << v.y << '}';
     }
+
+    [[nodiscard]] constexpr vec2d<int> sign() const noexcept{
+        int dx = (x > 0) ? 1 : (x < 0 ? -1 : 0);
+        int dy = (y > 0) ? 1 : (y < 0 ? -1 : 0);
+        return {dx, dy};
+    }
+
+    [[nodiscard]] constexpr Direction getVecDir() noexcept {
+        switch(this->sign().x + 3*this->sign().y + 4) {
+            case(0 + 3*0): return Direction::UP;
+            case(1 + 3*0): return Direction::UP;
+            case(2 + 3*0): return Direction::UP;
+            case(0 + 3*1): return Direction::LEFT;
+            case(1 + 3*1): return Direction::DOWN;
+            case(2 + 3*1): return Direction::RIGHT;
+            case(0 + 3*2): return Direction::DOWN;
+            case(1 + 3*2): return Direction::DOWN;
+            case(2 + 3*2): return Direction::DOWN;
+            default: return Direction::DOWN;
+        }
+    }
 };
 
 using vec  = vec2d<int>;
 using vec2 = vec2d<float>;
+

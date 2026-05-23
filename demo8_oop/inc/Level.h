@@ -2,6 +2,7 @@
 #include "Layer.h"
 #include "LevelParser.h"
 #include "Player.h"
+#include "SDL2/SDL_scancode.h"
 #include <vector>
 
 class TileLayer;
@@ -31,6 +32,8 @@ class Level
         const std::vector<TileLayer*>& getCollidableLayers() { return m_collisionLayers; }
         Player* getPlayer() { return m_pPlayer; }
         void setPlayer(Player* pPlayer) { m_pPlayer = pPlayer; }
+        void setPlayer2Pos(vec Pos, bool to = true);
+        void movePlayer();
     private:
         friend class LevelParser;
         Level();

@@ -15,25 +15,20 @@ enum mouse_buttons
 	RIGHT = 2
 };
 
-struct DirVec {
-    Direction dir;
-    vec2d<> vec;
-};
-
 // 按键映射：SDL_Keycode -> 方向矢量
-static const std::unordered_map<SDL_Scancode, DirVec> key2DirVec = {
-    { SDL_SCANCODE_W, {Direction::UP       , vec2d<>::up }}, // 上
-    { SDL_SCANCODE_S, {Direction::DOWN     , vec2d<>::down}}, // 下
-    { SDL_SCANCODE_A, {Direction::LEFT     , vec2d<>::left}}, // 左
-    { SDL_SCANCODE_D, {Direction::RIGHT    , vec2d<>::right}}, // 右
-    { SDL_SCANCODE_H, {Direction::LEFT     , vec2d<>::left}}, // 左
-    { SDL_SCANCODE_J, {Direction::DOWN     , vec2d<>::down}}, // 下
-    { SDL_SCANCODE_K, {Direction::UP       , vec2d<>::up}}, // 上
-    { SDL_SCANCODE_L, {Direction::RIGHT    , vec2d<>::right}}, // 右
-    { SDL_SCANCODE_Y, {Direction::UP  , vec2d<>::leftUp}}, // 左上
-    { SDL_SCANCODE_U, {Direction::UP , vec2d<>::rightUp}}, // 右上
-    { SDL_SCANCODE_B, {Direction::DOWN, vec2d<>::leftDown}}, // 左下
-    { SDL_SCANCODE_N, {Direction::DOWN, vec2d<>::rightDown}}  // 右下
+static const std::unordered_map<SDL_Scancode, vec2d<>> key2Vec = {
+    { SDL_SCANCODE_W, vec2d<>::up }, // 上
+    { SDL_SCANCODE_S, vec2d<>::down}, // 下
+    { SDL_SCANCODE_A, vec2d<>::left}, // 左
+    { SDL_SCANCODE_D, vec2d<>::right}, // 右
+    { SDL_SCANCODE_H, vec2d<>::left}, // 左
+    { SDL_SCANCODE_J, vec2d<>::down}, // 下
+    { SDL_SCANCODE_K, vec2d<>::up}, // 上
+    { SDL_SCANCODE_L, vec2d<>::right}, // 右
+    { SDL_SCANCODE_Y, vec2d<>::leftUp}, // 左上
+    { SDL_SCANCODE_U, vec2d<>::rightUp}, // 右上
+    { SDL_SCANCODE_B, vec2d<>::leftDown}, // 左下
+    { SDL_SCANCODE_N, vec2d<>::rightDown}  // 右下
 };
 
 

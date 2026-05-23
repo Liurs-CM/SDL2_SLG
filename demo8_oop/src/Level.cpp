@@ -24,10 +24,19 @@ void Level::render()
 
 void Level::update()
 {
-    if(m_pPlayer->handleInput()){
-        for(auto* obj : m_layers)
-        {
-            obj->update(this);
-        }
+    for(auto* obj : m_layers)
+    {
+        obj->update(this);
     }
+}
+
+void Level::setPlayer2Pos(vec Pos, bool to)
+{
+    getPlayer()->set2Pos(Pos, to);
+    std::cout << "set Pos: " << Pos << "\n";
+}
+
+void Level::movePlayer()
+{
+    getPlayer()->move();
 }

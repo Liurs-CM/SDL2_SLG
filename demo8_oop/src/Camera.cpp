@@ -11,9 +11,9 @@ Camera::Camera() :
 
 void Camera::follow(vec target)
 {
-    m_position = vec2(target.x - float(m_width) / 2, target.y - float(m_height) / 2);
-    m_position.x = std::max(0.0f, std::min(m_position.x, float(MAP_W - m_width)));
-    m_position.y = std::max(0.0f, std::min(m_position.y, float(MAP_H - m_height)));
+    m_position = {target.x - m_width / 2, target.y - m_height / 2};
+    m_position.x = std::max(0, std::min(m_position.x, (MAP_W - m_width)));
+    m_position.y = std::max(0, std::min(m_position.y, (MAP_H - m_height)));
 
     //// 计算理想位置（让目标居中）
     //Vector2D to_position = Vector2D(target.getX() - m_width / 2, target.getY() - m_height / 2);
