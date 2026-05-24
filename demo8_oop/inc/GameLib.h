@@ -5,6 +5,7 @@
 
 constexpr uint8_t FPS = 165;
 constexpr uint16_t DELAY_TIME_MS = 1000 / FPS;
+constexpr uint16_t TURN_CNT = 2*FPS;
 
 constexpr uint16_t SCR_W = 640;
 constexpr uint16_t SCR_H = 480;

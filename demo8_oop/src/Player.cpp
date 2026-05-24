@@ -55,28 +55,17 @@ void Player::set2Pos(vec Pos, bool to)
     setAction(UnitAction::MOVING);
 }
 
-void Player::move() 
+bool Player::move() 
 {
     vec2 dist = vec2(to_position) - at_position;
     if(dist.distance() < m_animClip.m_animSpeed) {
         at_position = to_position;
         m_position = to_position;
         setAction(UnitAction::IDLE);
+        return false;
     }
     else {
         at_position += normalize(dist) * m_animClip.m_animSpeed * shift_speed;
     }
-
-    //vec2 dist = vec2(to_position) - at_position;
-    ////std::cout << "dist: " << dist << "\n";
-    //if(dist.distance() < 1.0f) {
-    //    at_position = to_position;
-    //    m_position = to_position;
-    //    moving = false;
-    //    m_animClip.setAction(UnitAction::IDLE);
-    //}
-    //else {
-    //    at_position += normalize(dist) * m_animClip.m_animSpeed;
-    //    //std::cout << "at_position: " << at_position << "\n";
-    //}
+    return true;
 }

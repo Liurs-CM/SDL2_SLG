@@ -23,7 +23,7 @@ void PlayState::update()
             TheGame::Instance()->getStateMachine()->changeState(new MenuOverState());
         }
         if(pLevel != 0) {
-            switch (m_currentPhase) {
+            switch (AnimatedGraphic::m_currentPhase) {
                 case Phase::INPUT:  
                     handleInputPhase(); 
                     if(m_inputData.commandConfirmed) { enterExecutionPhase(); }
@@ -72,6 +72,22 @@ bool PlayState::onExit()
     return true;
 }
 
+void PlayState::enterInputPhase()
+{
+    resetInputData();
+    AnimatedGraphic::setPhase(Phase::INPUT);
+    std::cout << "enter INPUT turn [" << m_turnNum++ << "]\n";
+}
+
+void PlayState::enterExecutionPhase()
+{
+    resetExecData();
+    AnimatedGraphic::setPhase(Phase::EXECUTION);
+    m_execData.m_animTimer = TURN_CNT;
+    //AnimatedGraphic::setSceneAnim(UnitAction::MOVING);
+    std::cout << "enter EXECUTION\n";
+}
+
 void PlayState::handleInputPhase()
 {
     if (TheInputHandler::Instance()->getMouseButtonState(LEFT)) {
@@ -87,23 +103,6 @@ void PlayState::handleInputPhase()
     if(TheInputHandler::Instance()->isKeyPressed(SDL_SCANCODE_SPACE)) {
         TheSoundManager::Instance()->playSound("shoot", 0);
     }
-}
-
-void PlayState::enterInputPhase()
-{
-    resetInputData();
-    m_currentPhase = Phase::INPUT;
-    //AnimatedGraphic::setSceneAnim(UnitAction::IDLE);
-    std::cout << "enter INPUT turn [" << m_turnNum++ << "]\n";
-}
-
-void PlayState::enterExecutionPhase()
-{
-    resetExecData();
-    m_currentPhase = Phase::EXECUTION;
-    m_execData.m_animTimer = 2*FPS;
-    //AnimatedGraphic::setSceneAnim(UnitAction::MOVING);
-    std::cout << "enter EXECUTION\n";
 }
 
 void PlayState::handleExecutionPhase()

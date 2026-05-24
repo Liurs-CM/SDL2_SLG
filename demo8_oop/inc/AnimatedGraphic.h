@@ -1,6 +1,11 @@
 #pragma once
 #include "GameLib.h"
 
+enum class Phase { 
+    INPUT, 
+    EXECUTION 
+};
+
 // UnitAction.h
 enum class UnitAction {
     IDLE,
@@ -22,5 +27,8 @@ class AnimatedGraphic
         static inline UnitAction m_currentAction = UnitAction::IDLE;
         static void setSceneAnim(UnitAction act) { m_currentAction = act; }
         UnitAction getSceneAnim() { return m_currentAction ; }
+        static inline Phase m_currentPhase = Phase::INPUT;
+        static void setPhase(Phase phase) { m_currentPhase = phase; }
+        Phase getPhase() { return m_currentPhase ; }
 };
 

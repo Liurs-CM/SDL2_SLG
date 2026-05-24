@@ -13,7 +13,7 @@ class Player : public SDLGameObject
         void clean();
         virtual std::string type() { return "Player"; }
         void set2Pos(vec Pos, bool to = true);
-        void move();
+        bool move();
         //void setToPos(vec Pos) { to_position = Pos; }
         //void setDir(Direction Dir) { m_currentDirection = Dir; }
     private:

@@ -36,8 +36,8 @@ void Level::setPlayer2Pos(vec Pos, bool to)
     //std::cout << "set Pos: " << Pos << "\n";
 }
 
-void Level::movePlayer()
+bool Level::movePlayer()
 {
-    getPlayer()->move();
+    return getPlayer()->move();
 }
 

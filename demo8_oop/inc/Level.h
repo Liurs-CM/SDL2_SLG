@@ -32,7 +32,7 @@ class Level
         Player* getPlayer() { return m_pPlayer; }
         void setPlayer(Player* pPlayer) { m_pPlayer = pPlayer; }
         void setPlayer2Pos(vec Pos, bool to = true);
-        void movePlayer();
+        bool movePlayer();
     private:
         friend class LevelParser;
         Level();

@@ -22,11 +22,14 @@ class PlayState : public GameState
         Level* pLevel;
         // PlayPhase
         uint16_t m_turnNum = 0;
-        enum class Phase { INPUT, EXECUTION } m_currentPhase = Phase::INPUT;
         struct InputData {
              uint8_t selectedUnit = -1;
              bool commandConfirmed = false;
         } m_inputData;
+        struct AIData {
+             uint8_t selectedUnit = -1;
+             bool commandConfirmed = false;
+        } m_AIData;
         struct ExecutionData {
              uint16_t m_animTimer = 0;
              bool finished = false;
