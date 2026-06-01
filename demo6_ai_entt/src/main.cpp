@@ -968,7 +968,7 @@ class Game {
             m_registry.emplace<HealthComponent>(playerEntity, 100);
 
             // 加载玩家纹理
-            TextureManager::Instance()->load("assets/player.png", "player");
+            TextureManager::Instance()->load("assets/warrior.png", "player");
         }
 
         void createEnemies() {
