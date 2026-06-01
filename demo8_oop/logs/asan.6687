@@ -1,0 +1,463 @@
+
+=================================================================
+==6687==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 65536 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce726246 in aligned_alloc (/home/liurs/github/GameLib/demo8_oop/demo+0xd4246) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x7261eadcd1df  (<unknown module>)
+
+Direct leak of 604 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce7258c3 in malloc (/home/liurs/github/GameLib/demo8_oop/demo+0xd38c3) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x7261f883ec73  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x37c73) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #2 0x7261f883c173  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x35173) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #3 0x7261f8836e98  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x2fe98) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #4 0x7261f883b718  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34718) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #5 0x7261f883c78c  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x3578c) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #6 0x7261f8838068  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x31068) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #7 0x72621003ecfb  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x110cfb) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #8 0x726210040086  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x112086) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #9 0x726210014302  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe6302) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #10 0x726210012550  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe4550) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #11 0x72620ffa60a6  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x780a6) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #12 0x72620ff9b70f  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x6d70f) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #13 0x59e9ce7679a0 in Game::init(char const*, int, int, int, int, bool) /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:58:27
+    #14 0x59e9ce7e3e3b in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:8:29
+    #15 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #16 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #17 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Direct leak of 512 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce7258c3 in malloc (/home/liurs/github/GameLib/demo8_oop/demo+0xd38c3) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x7261e6e9e5e4  (/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so+0x21785e4)
+    #2 0x726210121823 in call_init elf/dl-init.c:120:14
+    #3 0x726210121823 in _dl_init elf/dl-init.c:121:5
+    #4 0x72621011d5b1 in _dl_catch_exception elf/dl-catch.c:211:7
+    #5 0x726210128d7b in dl_open_worker elf/dl-open.c:829:5
+    #6 0x726210128d7b in dl_open_worker elf/dl-open.c:792:1
+    #7 0x72621011d51b in _dl_catch_exception elf/dl-catch.c:237:8
+    #8 0x726210129163 in _dl_open elf/dl-open.c:905:17
+    #9 0x72620f8981a3 in dlopen_doit dlfcn/dlopen.c:56:15
+    #10 0x72621011d51b in _dl_catch_exception elf/dl-catch.c:237:8
+    #11 0x72621011d668 in _dl_catch_error elf/dl-catch.c:256:19
+    #12 0x72620f897c82 in _dlerror_run dlfcn/dlerror.c:138:17
+    #13 0x72620f89825e in dlopen_implementation dlfcn/dlopen.c:71:10
+    #14 0x72620f89825e in dlopen dlfcn/dlopen.c:81:12
+    #15 0x59e9ce6eb2e3 in dlopen (/home/liurs/github/GameLib/demo8_oop/demo+0x992e3) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #16 0x7261eacb4b05  (<unknown module>)
+    #17 0x516000013e7f  (<unknown module>)
+
+Direct leak of 264 byte(s) in 3 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce7aa324 in PlayState::update() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:20:63
+    #2 0x59e9ce772b0f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:62:30
+    #3 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #4 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #5 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #6 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #7 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce725aad in calloc (/home/liurs/github/GameLib/demo8_oop/demo+0xd3aad) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x7261f883ac0e  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x33c0e) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #2 0x7261f883bf1f  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34f1f) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #3 0x7261f883c134  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x35134) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #4 0x7261f8836e98  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x2fe98) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #5 0x7261f883b718  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34718) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #6 0x7261f883c78c  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x3578c) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #7 0x7261f8838068  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x31068) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #8 0x72621003ecfb  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x110cfb) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #9 0x726210040086  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x112086) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #10 0x726210014302  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe6302) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #11 0x726210012550  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe4550) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #12 0x72620ffa60a6  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x780a6) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #13 0x72620ff9b70f  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x6d70f) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #14 0x59e9ce7679a0 in Game::init(char const*, int, int, int, int, bool) /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:58:27
+    #15 0x59e9ce7e3e3b in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:8:29
+    #16 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #17 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #18 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce725aad in calloc (/home/liurs/github/GameLib/demo8_oop/demo+0xd3aad) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x7261f883ac0e  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x33c0e) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #2 0x7261f883bf1f  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34f1f) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #3 0x7261f883c1e6  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x351e6) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #4 0x7261f8836e98  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x2fe98) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #5 0x7261f883b718  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34718) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #6 0x7261f883c78c  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x3578c) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #7 0x7261f8838068  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x31068) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #8 0x72621003ecfb  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x110cfb) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #9 0x726210040086  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x112086) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #10 0x726210014302  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe6302) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #11 0x726210012550  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe4550) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #12 0x72620ffa60a6  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x780a6) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #13 0x72620ff9b70f  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x6d70f) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #14 0x59e9ce7679a0 in Game::init(char const*, int, int, int, int, bool) /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:58:27
+    #15 0x59e9ce7e3e3b in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:8:29
+    #16 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #17 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #18 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Direct leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce7682f2 in Game::init(char const*, int, int, int, int, bool) /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:101:24
+    #2 0x59e9ce7e3e3b in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:8:29
+    #3 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #4 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #5 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 166432 byte(s) in 743 object(s) allocated from:
+    #0 0x59e9ce725aad in calloc (/home/liurs/github/GameLib/demo8_oop/demo+0xd3aad) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x7261f883ac0e  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x33c0e) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #2 0x7261f883bf1f  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34f1f) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #3 0x7261f883c1e6  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x351e6) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #4 0x7261f8836e98  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x2fe98) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #5 0x7261f883b718  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34718) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #6 0x7261f883c78c  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x3578c) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #7 0x7261f8838068  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x31068) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #8 0x72621003ecfb  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x110cfb) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #9 0x726210040086  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x112086) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #10 0x726210014302  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe6302) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #11 0x726210012550  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe4550) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #12 0x72620ffa60a6  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x780a6) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #13 0x72620ff9b70f  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x6d70f) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #14 0x59e9ce7679a0 in Game::init(char const*, int, int, int, int, bool) /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:58:27
+    #15 0x59e9ce7e3e3b in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:8:29
+    #16 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #17 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #18 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 101920 byte(s) in 455 object(s) allocated from:
+    #0 0x59e9ce725aad in calloc (/home/liurs/github/GameLib/demo8_oop/demo+0xd3aad) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x7261f883ac0e  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x33c0e) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #2 0x7261f883bf1f  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34f1f) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #3 0x7261f883c134  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x35134) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #4 0x7261f8836e98  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x2fe98) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #5 0x7261f883b718  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x34718) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #6 0x7261f883c78c  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x3578c) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #7 0x7261f8838068  (/lib/x86_64-linux-gnu/libGLX_mesa.so.0+0x31068) (BuildId: 4eefd8c0a28a2e83e9c5869b4bb58c78334c4b26)
+    #8 0x72621003ecfb  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x110cfb) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #9 0x726210040086  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x112086) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #10 0x726210014302  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe6302) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #11 0x726210012550  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0xe4550) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #12 0x72620ffa60a6  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x780a6) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #13 0x72620ff9b70f  (/lib/x86_64-linux-gnu/libSDL2-2.0.so.0+0x6d70f) (BuildId: 832936b3309cbf275a4c7cb4f642c4fea4cbf33f)
+    #14 0x59e9ce7679a0 in Game::init(char const*, int, int, int, int, bool) /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:58:27
+    #15 0x59e9ce7e3e3b in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:8:29
+    #16 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #17 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #18 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 24064 byte(s) in 94 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce798d27 in std::__new_allocator<int>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce798c93 in std::allocator<int>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce798c93 in std::allocator_traits<std::allocator<int>>::allocate(std::allocator<int>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce798c93 in std::_Vector_base<int, std::allocator<int>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce798a90 in std::_Vector_base<int, std::allocator<int>>::_M_create_storage(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:398:33
+    #6 0x59e9ce7986f1 in std::_Vector_base<int, std::allocator<int>>::_Vector_base(unsigned long, std::allocator<int> const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:335:9
+    #7 0x59e9ce799b77 in std::vector<int, std::allocator<int>>::vector(std::vector<int, std::allocator<int>> const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:602:9
+    #8 0x59e9ce79c3ec in void std::_Construct<std::vector<int, std::allocator<int>>, std::vector<int, std::allocator<int>> const&>(std::vector<int, std::allocator<int>>*, std::vector<int, std::allocator<int>> const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h:119:25
+    #9 0x59e9ce79c1b7 in std::vector<int, std::allocator<int>>* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*>(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h:120:6
+    #10 0x59e9ce79c068 in std::vector<int, std::allocator<int>>* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*>(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h:137:11
+    #11 0x59e9ce79c010 in std::vector<int, std::allocator<int>>* std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*>(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h:184:14
+    #12 0x59e9ce79bfac in std::vector<int, std::allocator<int>>* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*, std::vector<int, std::allocator<int>>>(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, std::vector<int, std::allocator<int>>*, std::allocator<std::vector<int, std::allocator<int>>>&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h:373:14
+    #13 0x59e9ce79bb98 in std::vector<int, std::allocator<int>>* std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>>(unsigned long, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1622:8
+    #14 0x59e9ce79b54e in std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>::operator=(std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>> const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:238:24
+    #15 0x59e9ce7914a0 in TileLayer::setTileIDs(std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>> const&) /home/liurs/github/GameLib/demo8_oop/inc/TileLayer.h:16:80
+    #16 0x59e9ce78d514 in LevelParser::parseTileLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, std::vector<Tileset, std::allocator<Tileset>> const*, std::vector<TileLayer*, std::allocator<TileLayer*>>*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:234:17
+    #17 0x59e9ce78a6a0 in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:73:17
+    #18 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #19 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #20 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #21 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #22 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #23 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #24 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #25 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 3072 byte(s) in 2 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce79afd4 in std::__new_allocator<std::vector<int, std::allocator<int>>>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce79ab93 in std::allocator<std::vector<int, std::allocator<int>>>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce79ab93 in std::allocator_traits<std::allocator<std::vector<int, std::allocator<int>>>>::allocate(std::allocator<std::vector<int, std::allocator<int>>>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce79ab93 in std::_Vector_base<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce79bb48 in std::vector<int, std::allocator<int>>* std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>>(unsigned long, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>, __gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int>> const*, std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>>) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1619:29
+    #6 0x59e9ce79b54e in std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>>::operator=(std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>> const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:238:24
+    #7 0x59e9ce7914a0 in TileLayer::setTileIDs(std::vector<std::vector<int, std::allocator<int>>, std::allocator<std::vector<int, std::allocator<int>>>> const&) /home/liurs/github/GameLib/demo8_oop/inc/TileLayer.h:16:80
+    #8 0x59e9ce78d514 in LevelParser::parseTileLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, std::vector<Tileset, std::allocator<Tileset>> const*, std::vector<TileLayer*, std::allocator<TileLayer*>>*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:234:17
+    #9 0x59e9ce78a6a0 in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:73:17
+    #10 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #11 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #12 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #13 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #14 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #15 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #16 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #17 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 208 byte(s) in 2 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce770685 in CatCreator::createGameObject() const /home/liurs/github/GameLib/demo8_oop/inc/Cat.h:33:16
+    #2 0x59e9ce78f512 in GameObjectFactory::create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) /home/liurs/github/GameLib/demo8_oop/inc/GameObjectFactory.h:50:30
+    #3 0x59e9ce78ba2a in LevelParser::parseObjectLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, Level*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:127:69
+    #4 0x59e9ce78a41c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:68:17
+    #5 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #6 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #7 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #8 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #9 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #10 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #11 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #12 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 192 byte(s) in 3 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce76b8f7 in std::__new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce76b373 in std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce76b373 in std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>::allocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce76b373 in std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce7be2b6 in void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce7be020 in std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>::push_back(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1292:4
+    #7 0x59e9ce7bd3c3 in StateParser::parseTextures(tinyxml2::XMLElement*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>*) /home/liurs/github/GameLib/demo8_oop/src/StateParser.cpp:59:22
+    #8 0x59e9ce7bce32 in StateParser::parseState(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>*) /home/liurs/github/GameLib/demo8_oop/src/StateParser.cpp:37:5
+    #9 0x59e9ce7a9196 in MenuPauseState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/MenuPauseState.cpp:46:17
+    #10 0x59e9ce771e26 in GameStateMachine::pushState(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:8:26
+    #11 0x59e9ce7aa358 in PlayState::update() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:20:53
+    #12 0x59e9ce772b0f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:62:30
+    #13 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #14 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #15 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #16 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #17 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 192 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce770525 in ScrollingBackgroundCreator::createGameObject() const /home/liurs/github/GameLib/demo8_oop/inc/ScrollingBackground.h:36:20
+    #2 0x59e9ce78f512 in GameObjectFactory::create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) /home/liurs/github/GameLib/demo8_oop/inc/GameObjectFactory.h:50:30
+    #3 0x59e9ce78ba2a in LevelParser::parseObjectLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, Level*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:127:69
+    #4 0x59e9ce78a41c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:68:17
+    #5 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #6 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #7 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #8 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #9 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #10 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #11 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #12 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 160 byte(s) in 2 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce78c3e4 in LevelParser::parseTileLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, std::vector<Tileset, std::allocator<Tileset>> const*, std::vector<TileLayer*, std::allocator<TileLayer*>>*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:175:29
+    #2 0x59e9ce78a6a0 in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:73:17
+    #3 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #4 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #5 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #6 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #7 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #8 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #9 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #10 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 136 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce7705d5 in PlayerCreator::createGameObject() const /home/liurs/github/GameLib/demo8_oop/inc/Player.h:36:20
+    #2 0x59e9ce78f512 in GameObjectFactory::create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) /home/liurs/github/GameLib/demo8_oop/inc/GameObjectFactory.h:50:30
+    #3 0x59e9ce78ba2a in LevelParser::parseObjectLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, Level*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:127:69
+    #4 0x59e9ce78a41c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:68:17
+    #5 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #6 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #7 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #8 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #9 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #10 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #11 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #12 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 128 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce7932c7 in std::__new_allocator<Tileset>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce792ee3 in std::allocator<Tileset>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce792ee3 in std::allocator_traits<std::allocator<Tileset>>::allocate(std::allocator<Tileset>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce792ee3 in std::_Vector_base<Tileset, std::allocator<Tileset>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce7923c6 in void std::vector<Tileset, std::allocator<Tileset>>::_M_realloc_insert<Tileset const&>(__gnu_cxx::__normal_iterator<Tileset*, std::vector<Tileset, std::allocator<Tileset>>>, Tileset const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce78edc0 in std::vector<Tileset, std::allocator<Tileset>>::push_back(Tileset const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1292:4
+    #7 0x59e9ce78b2b1 in LevelParser::parseTilesets(tinyxml2::XMLElement*, std::vector<Tileset, std::allocator<Tileset>>*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:104:16
+    #8 0x59e9ce78a31c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:63:13
+    #9 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #10 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #11 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #12 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #13 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #14 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #15 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #16 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 112 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce770e25 in Level1BossCreator::createGameObject() const /home/liurs/github/GameLib/demo8_oop/inc/Level1Boss.h:29:16
+    #2 0x59e9ce78f512 in GameObjectFactory::create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) /home/liurs/github/GameLib/demo8_oop/inc/GameObjectFactory.h:50:30
+    #3 0x59e9ce78ba2a in LevelParser::parseObjectLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, Level*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:127:69
+    #4 0x59e9ce78a41c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:68:17
+    #5 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #6 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #7 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #8 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #9 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #10 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #11 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #12 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 96 byte(s) in 3 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce7a7327 in std::__new_allocator<void (*)()>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce7a6f43 in std::allocator<void (*)()>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce7a6f43 in std::allocator_traits<std::allocator<void (*)()>>::allocate(std::allocator<void (*)()>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce7a6f43 in std::_Vector_base<void (*)(), std::allocator<void (*)()>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce7a6466 in void std::vector<void (*)(), std::allocator<void (*)()>>::_M_realloc_insert<void (*)()>(__gnu_cxx::__normal_iterator<void (**)(), std::vector<void (*)(), std::allocator<void (*)()>>>, void (*&&)()) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce7a6240 in void (*&std::vector<void (*)(), std::allocator<void (*)()>>::emplace_back<void (*)()>(void (*&&)()))() /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:123:4
+    #7 0x59e9ce7a5e0c in std::vector<void (*)(), std::allocator<void (*)()>>::push_back(void (*&&)()) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1299:9
+    #8 0x59e9ce7a9212 in MenuPauseState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/MenuPauseState.cpp:49:17
+    #9 0x59e9ce771e26 in GameStateMachine::pushState(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:8:26
+    #10 0x59e9ce7aa358 in PlayState::update() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:20:53
+    #11 0x59e9ce772b0f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:62:30
+    #12 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #13 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #14 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #15 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #16 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 80 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce789f44 in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:51:21
+    #2 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #3 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #4 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #5 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #6 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #7 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #8 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #9 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 72 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce7a4c96 in MenuMainState::s_menuToPlay() /home/liurs/github/GameLib/demo8_oop/src/MenuMainState.cpp:16:57
+    #2 0x59e9ce7a4e39 in MenuMainState::update() /home/liurs/github/GameLib/demo8_oop/src/MenuMainState.cpp:31:9
+    #3 0x59e9ce772b0f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:62:30
+    #4 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #5 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #6 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #7 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #8 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 64 byte(s) in 2 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce78b770 in LevelParser::parseObjectLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, Level*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:109:33
+    #2 0x59e9ce78a41c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:68:17
+    #3 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #4 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #5 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #6 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #7 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #8 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #9 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #10 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 48 byte(s) in 3 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce794907 in std::__new_allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce7944c3 in std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce7944c3 in std::allocator_traits<std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::allocate(std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce7944c3 in std::_Vector_base<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce793866 in void std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::_M_realloc_insert<std::unique_ptr<GameObject, std::default_delete<GameObject>>>(__gnu_cxx::__normal_iterator<std::unique_ptr<GameObject, std::default_delete<GameObject>>*, std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>>, std::unique_ptr<GameObject, std::default_delete<GameObject>>&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce793640 in std::unique_ptr<GameObject, std::default_delete<GameObject>>& std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::emplace_back<std::unique_ptr<GameObject, std::default_delete<GameObject>>>(std::unique_ptr<GameObject, std::default_delete<GameObject>>&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:123:4
+    #7 0x59e9ce78fc2c in std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::push_back(std::unique_ptr<GameObject, std::default_delete<GameObject>>&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1299:9
+    #8 0x59e9ce7bdbef in StateParser::parseObjects(tinyxml2::XMLElement*, std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>*) /home/liurs/github/GameLib/demo8_oop/src/StateParser.cpp:83:19
+    #9 0x59e9ce7bd02c in StateParser::parseState(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>*) /home/liurs/github/GameLib/demo8_oop/src/StateParser.cpp:48:5
+    #10 0x59e9ce7a9196 in MenuPauseState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/MenuPauseState.cpp:46:17
+    #11 0x59e9ce771e26 in GameStateMachine::pushState(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:8:26
+    #12 0x59e9ce7aa358 in PlayState::update() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:20:53
+    #13 0x59e9ce772b0f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:62:30
+    #14 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #15 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #16 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #17 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #18 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 40 byte(s) in 2 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce794907 in std::__new_allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce7944c3 in std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce7944c3 in std::allocator_traits<std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::allocate(std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce7944c3 in std::_Vector_base<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce793866 in void std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::_M_realloc_insert<std::unique_ptr<GameObject, std::default_delete<GameObject>>>(__gnu_cxx::__normal_iterator<std::unique_ptr<GameObject, std::default_delete<GameObject>>*, std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>>, std::unique_ptr<GameObject, std::default_delete<GameObject>>&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce793640 in std::unique_ptr<GameObject, std::default_delete<GameObject>>& std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::emplace_back<std::unique_ptr<GameObject, std::default_delete<GameObject>>>(std::unique_ptr<GameObject, std::default_delete<GameObject>>&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:123:4
+    #7 0x59e9ce78fc2c in std::vector<std::unique_ptr<GameObject, std::default_delete<GameObject>>, std::allocator<std::unique_ptr<GameObject, std::default_delete<GameObject>>>>::push_back(std::unique_ptr<GameObject, std::default_delete<GameObject>>&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1299:9
+    #8 0x59e9ce78bd6a in LevelParser::parseObjectLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, Level*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:140:41
+    #9 0x59e9ce78a41c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:68:17
+    #10 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #11 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #12 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #13 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #14 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #15 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #16 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #17 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce795ba7 in std::__new_allocator<Layer*>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce795873 in std::allocator<Layer*>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce795873 in std::allocator_traits<std::allocator<Layer*>>::allocate(std::allocator<Layer*>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce795873 in std::_Vector_base<Layer*, std::allocator<Layer*>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce794fd6 in void std::vector<Layer*, std::allocator<Layer*>>::_M_realloc_insert<Layer*>(__gnu_cxx::__normal_iterator<Layer**, std::vector<Layer*, std::allocator<Layer*>>>, Layer*&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce794db0 in Layer*& std::vector<Layer*, std::allocator<Layer*>>::emplace_back<Layer*>(Layer*&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:123:4
+    #7 0x59e9ce78fd7c in std::vector<Layer*, std::allocator<Layer*>>::push_back(Layer*&&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1299:9
+    #8 0x59e9ce78be2c in LevelParser::parseObjectLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, Level*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:142:14
+    #9 0x59e9ce78a41c in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:68:17
+    #10 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #11 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #12 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #13 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #14 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #15 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #16 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #17 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce7747e7 in std::__new_allocator<GameState*>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce774483 in std::allocator<GameState*>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce774483 in std::allocator_traits<std::allocator<GameState*>>::allocate(std::allocator<GameState*>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce774483 in std::_Vector_base<GameState*, std::allocator<GameState*>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce773d86 in void std::vector<GameState*, std::allocator<GameState*>>::_M_realloc_insert<GameState* const&>(__gnu_cxx::__normal_iterator<GameState**, std::vector<GameState*, std::allocator<GameState*>>>, GameState* const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce773090 in std::vector<GameState*, std::allocator<GameState*>>::push_back(GameState* const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1292:4
+    #7 0x59e9ce771da7 in GameStateMachine::pushState(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:7:18
+    #8 0x59e9ce7aa358 in PlayState::update() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:20:53
+    #9 0x59e9ce772b0f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:62:30
+    #10 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #11 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #12 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #13 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #14 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+Indirect leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x59e9ce763ee1 in operator new(unsigned long) (/home/liurs/github/GameLib/demo8_oop/demo+0x111ee1) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+    #1 0x59e9ce79f6e7 in std::__new_allocator<TileLayer*>::allocate(unsigned long, void const*) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x59e9ce79f323 in std::allocator<TileLayer*>::allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h:198:32
+    #3 0x59e9ce79f323 in std::allocator_traits<std::allocator<TileLayer*>>::allocate(std::allocator<TileLayer*>&, unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #4 0x59e9ce79f323 in std::_Vector_base<TileLayer*, std::allocator<TileLayer*>>::_M_allocate(unsigned long) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #5 0x59e9ce79e9e6 in void std::vector<TileLayer*, std::allocator<TileLayer*>>::_M_realloc_insert<TileLayer* const&>(__gnu_cxx::__normal_iterator<TileLayer**, std::vector<TileLayer*, std::allocator<TileLayer*>>>, TileLayer* const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:459:33
+    #6 0x59e9ce7916b0 in std::vector<TileLayer*, std::allocator<TileLayer*>>::push_back(TileLayer* const&) /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:1292:4
+    #7 0x59e9ce78d605 in LevelParser::parseTileLayer(tinyxml2::XMLElement*, std::vector<Layer*, std::allocator<Layer*>>*, std::vector<Tileset, std::allocator<Tileset>> const*, std::vector<TileLayer*, std::allocator<TileLayer*>>*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:240:27
+    #8 0x59e9ce78a6a0 in LevelParser::parseLevel(char const*) /home/liurs/github/GameLib/demo8_oop/src/LevelParser.cpp:73:17
+    #9 0x59e9ce7aa6f0 in PlayState::onEnter() /home/liurs/github/GameLib/demo8_oop/src/PlayState.cpp:48:26
+    #10 0x59e9ce772938 in GameStateMachine::changeStatePrivate(GameState*) /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:55:26
+    #11 0x59e9ce772b8f in GameStateMachine::update() /home/liurs/github/GameLib/demo8_oop/src/GameStateMachine.cpp:67:9
+    #12 0x59e9ce768c0d in Game::update() /home/liurs/github/GameLib/demo8_oop/src/Game.cpp:129:26
+    #13 0x59e9ce7e3e81 in main /home/liurs/github/GameLib/demo8_oop/src/main.cpp:11:34
+    #14 0x72620f82a1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #15 0x72620f82a28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #16 0x59e9ce68aa74 in _start (/home/liurs/github/GameLib/demo8_oop/demo+0x38a74) (BuildId: b0f4a2549e1937953d4ae15cbce03720f5684d27)
+
+SUMMARY: AddressSanitizer: 364476 byte(s) leaked in 1329 allocation(s).

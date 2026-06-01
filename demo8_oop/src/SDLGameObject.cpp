@@ -52,7 +52,7 @@ void AnimationClip::handleAnimation()
     {
         m_animTimer -= m_delayFrame;
         if (m_currentAction == UnitAction::MOVING) {
-            m_currentFrame = (m_currentFrame >= m_numFrames-1) ? 0xff : m_currentFrame;
+            m_currentFrame = (m_currentFrame >= m_numFrames-2) ? 0xff : m_currentFrame;
             m_currentFrame += 1;
             m_currentFrame = (m_currentFrame == 0xff) ? m_numFrames-1 : m_currentFrame;
         } else {

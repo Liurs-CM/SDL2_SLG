@@ -111,6 +111,7 @@ void PlayState::handleExecutionPhase()
     if(m_execData.m_animTimer-- == 0){
         m_execData.finished = true;
     }
+    // for all obj->animal_done: m_execData.finished = true;
 }
 
 void PlayState::resetInputData() {

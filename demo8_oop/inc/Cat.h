@@ -13,6 +13,7 @@ class Cat : public Enemy
         bool move();
     private:
         vec to_position;
+        bool movestart = true;
 };
 
 class CatCreator : public BaseCreator
