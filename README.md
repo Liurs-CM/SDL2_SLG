@@ -29,12 +29,22 @@ astar algo from llm
 
 # Development Plan
 ## demo8 OOP P0
-- [ ] demo8 OOP tilemap 2D grid design
+- [ ] 🧱demo8 OOP tilemap 2D grid design
     - [X] demo8 OOP tilemap 2D rect grid
     - [ ] demo8 OOP tilemap 2D isometric
-- [ ] demo8 OOP turn manager
-- [ ] demo8 OOP hunt scene: grass, berry bushes, fruit bushes
-- [ ] demo8 OOP hunter attack wild rabbit with spear theme
+- [ ] ⏲️demo8 OOP turn manager
+    - [X] demo8 OOP player turn manager
+        - [ ] demo8 OOP player astar range grid
+    - [ ] demo8 OOP enemy turn manager: speed, int grid
+    - [ ] demo8 OOP scene turn manager
+    - [ ] demo8 OOP obj move collision
+- [ ] 🕛demo8 OOP turn manager state
+    - [ ] state enum:
+        - [X] action state: wait input ctrl and idle anima;
+        - [ ] ai action, unit logic, and act anima;
+    - [ ] state input -- key menu
+- [ ] 🖼️demo8 OOP hunt scene: grass, berry bushes, fruit bushes
+- [ ] 🤺demo8 OOP hunter attack wild rabbit with spear theme
     - [X] demo8 OOP wild rabbit sprite, perception, move algo -- tmp use cat
     - [X] demo8 OOP hunter sprite
     - [X] demo8 OOP spear sprite -- tmp use bullet
@@ -44,6 +54,7 @@ astar algo from llm
         - [X] demo8 OOP unit HP
         - [ ] demo8 OOP hunter spear attack melee, range 4
         - [ ] demo8 OOP hunter spear attack throw, range 16 (var Strength) 
+- [ ] 🚅demo8 OOP rm sdlgameobj vel, only for bullet
 
 ## demo9 EnTT P1
 - [ ] demo9 EnTT simple arch

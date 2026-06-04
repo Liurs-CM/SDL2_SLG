@@ -29,13 +29,21 @@ add_executable(${PROJECT_NAME})
 target_sources(${PROJECT_NAME} PRIVATE
     src/main.cpp
 )
-
-# 2. C++20 模块文件 (必须使用 FILE_SET CXX_MODULES)
+# 2. 先展开通配符（CMake 不允许在 target_sources 中直接写 *）
+file(GLOB CORE_MODULES   CONFIGURE_DEPENDS "src/core/*.cppm")
+file(GLOB ECS_COMP_MODS  CONFIGURE_DEPENDS "src/ecs/components/*.cppm")
+file(GLOB ECS_SYS_SRCS   CONFIGURE_DEPENDS "src/ecs/systems/*.cppm")
+file(GLOB UTILS_MODULES  CONFIGURE_DEPENDS "src/utils/*.cppm")
+# 3. 注册 C++20 模块接口单元（必须放入 FILE_SET）
 target_sources(${PROJECT_NAME} PRIVATE
     FILE_SET CXX_MODULES TYPE CXX_MODULES FILES
-    src/core/Game.cppm
-    src/core/RenderContext.cppm
-    src/core/InputHandler.cppm
+    ${CORE_MODULES}
+    ${ECS_COMP_MODS}
+    ${UTILS_MODULES}
+)
+# 4. 注册普通实现文件（不放入 FILE_SET）
+target_sources(${PROJECT_NAME} PRIVATE
+    ${ECS_SYS_SRCS}
 )
 
 # === 输出目录 ===
