@@ -25,25 +25,18 @@ pkg_check_modules(ZLIB REQUIRED IMPORTED_TARGET zlib)
 add_executable(${PROJECT_NAME})
 
 # === 源文件声明 (C++20 模块最佳实践：弃用 GLOB，显式声明) ===
-# 1. 传统 .cpp 源文件
+# 1. 注册 C++20 模块接口单元（必须放入 FILE_SET）
+target_sources(${PROJECT_NAME} PRIVATE
+    FILE_SET CXX_MODULES FILES
+    src/ecs/entt_wrapper.cppm
+    src/ecs/systems/InputSystem.cppm
+    src/core/InputHandler.cppm
+    src/core/RenderContext.cppm
+    src/core/Game.cppm
+)
+# 2. 传统 .cpp 源文件
 target_sources(${PROJECT_NAME} PRIVATE
     src/main.cpp
-)
-# 2. 先展开通配符（CMake 不允许在 target_sources 中直接写 *）
-file(GLOB CORE_MODULES   CONFIGURE_DEPENDS "src/core/*.cppm")
-file(GLOB ECS_COMP_MODS  CONFIGURE_DEPENDS "src/ecs/components/*.cppm")
-file(GLOB ECS_SYS_SRCS   CONFIGURE_DEPENDS "src/ecs/systems/*.cppm")
-file(GLOB UTILS_MODULES  CONFIGURE_DEPENDS "src/utils/*.cppm")
-# 3. 注册 C++20 模块接口单元（必须放入 FILE_SET）
-target_sources(${PROJECT_NAME} PRIVATE
-    FILE_SET CXX_MODULES TYPE CXX_MODULES FILES
-    ${CORE_MODULES}
-    ${ECS_COMP_MODS}
-    ${UTILS_MODULES}
-)
-# 4. 注册普通实现文件（不放入 FILE_SET）
-target_sources(${PROJECT_NAME} PRIVATE
-    ${ECS_SYS_SRCS}
 )
 
 # === 输出目录 ===
@@ -62,7 +55,7 @@ target_compile_options(${PROJECT_NAME} PRIVATE
 
 # === 包含目录 ===
 target_include_directories(${PROJECT_NAME} PRIVATE
-    ${CMAKE_SOURCE_DIR}/third_party
+    ${CMAKE_SOURCE_DIR}/3rd/entt/single_include
     # PkgConfig IMPORTED_TARGET 已自动处理 SDL/Zlib 的 include，无需手动添加
 )
 

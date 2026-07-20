@@ -3,11 +3,20 @@ import core.game;
 
 int main(int, char**) {
     core::Game game;
-    if (!game.init("SDL2 C++20 MVP", 800, 600)) {
+    std::cout << "game initing...\n";
+    if(game.init("SDL2 Tiled World", SCR_X, SCR_Y, SCR_W, SCR_H, false)) {
+        while(game.running()) {
+            game.handleEvents();
+            game.update();
+            game.render();
+            game.syncFPS();
+        }
+    }
+    else {
         std::cerr << "初始化失败\n";
         return -1;
     }
-    game.run();
-    game.shutdown();
+    std::cout << "game closing...\n";
+    game.clean();
     return 0;
 }
