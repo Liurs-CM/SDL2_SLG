@@ -247,9 +247,11 @@ void MapParserSystem::parseObjectLayer(tinyxml2::XMLElement* elem, entt::registr
             reg.emplace<SpriteComponent>(entityObj, textureID, width, height, numFrames, callbackID, animSpeed);
         }
         if (type == "Player") {
-            reg.emplace<PlayerTag>(entityObj);
             reg.emplace<InputState>(entityObj);
             reg.emplace<Sources>(entityObj);
+            reg.emplace<Inventory>(entityObj);
+            reg.ctx().emplace<PlayerRef>(PlayerRef{entityObj});
+            reg.ctx().insert_or_assign<PlayerRef>(PlayerRef{entityObj});
             std::cout << "[INFO] Created Player entity at (" << x << ", " << y << ")\n";
         }
     }

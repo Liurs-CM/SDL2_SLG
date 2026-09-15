@@ -1,7 +1,6 @@
 #include "core/Game.h"
 #include "core/InputHandler.h"
 #include "core/GameConfig.h"
-#include "core/Factories.hpp"
 
 Game* Game::s_pInstance = 0;
 
@@ -51,10 +50,7 @@ bool Game::init(const char* title, vec pos, vec size, bool fullscreen)
     m_mapParserSystem.parseLevel(registry,"assets/map3.tmx");
     m_mapGenSystem.generate(registry, 1234567890);
     m_mapParserSystem.precomputeTileUVs(registry);
-    makeObj(registry, {9, 8}, "blocks_item", objID::Cat, 2, 1, 1, 2);
-    makeObj(registry, {8, 8}, "blocks_item", objID::Coin, 2, 1, 1, 2);
-    makeObj(registry, {7, 8}, "blocks_item", objID::Chest+1, 2, 1, 1, 2);
-    makeObj(registry, {6, 8}, "blocks_item", objID::Chest, 2, 1, 1, 2);
+    m_bootstrapSystem.init(registry);
     //TheSoundManager::Instance()->load("assets/phaser.wav", "shoot", SOUND_SFX);
     //TheSoundManager::Instance()->playMusic("music1", -1);
 	//m_pGameStateMachine = new GameStateMachine();
@@ -78,6 +74,9 @@ void Game::update()
     m_moveSystem.update(registry);
     m_cameraSystem.update(registry);
     m_destroySystem.flushDestroyedEntities(registry);
+    if(m_inputSystem.Acted()){
+        m_growthSystem.update(registry);
+    }
     //m_pGameStateMachine->update();
 } 
 

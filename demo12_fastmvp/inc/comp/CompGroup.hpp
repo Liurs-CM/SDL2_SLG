@@ -1,5 +1,4 @@
 #pragma once
-#include "core/GameConfig.h"
 #include "util/Vector2D.h"
 #include <entt/entt.hpp>
 #include <SDL.h>
@@ -11,6 +10,8 @@ template<typename T, typename Tag>
 struct Tagged : T {
     using Base = T;
     using T::T;
+    // 👇 新增：允许从基类值构造 Tagged
+    explicit constexpr Tagged(const T& base) : T{base} {}
     explicit constexpr operator T() const { return static_cast<const T&>(*this); }
 };
 //隐蔽的类型泄漏问题:
@@ -25,6 +26,13 @@ struct Tagged : T {
 //DEFINED_TAGGED_TYPE(Position, vec);
 struct _Position {};
 using Position = Tagged<vec, _Position>;
+
+struct _UIPosition {};
+using uiPosition = Tagged<vec, _UIPosition>;
+
+// 移动组件
+struct _InputState {};
+using InputState  = Tagged<vec, _InputState>;
 
 /// @brief 精灵渲染数据
 /// @note 仅存储渲染所需参数，纹理资源由 TextureManager 统一管理
@@ -49,10 +57,11 @@ struct ObjectComponent {
     //uint8_t height          = 0;        // 渲染区域高
 };
 
-
-/// @brief 玩家实体标记组件
-/// @note 空结构体，零内存占用，仅用于 EnTT 视图过滤
-struct PlayerTag {};
+/// @brief 玩家实体标记组件, 存储player entity
+struct PlayerRef { 
+    entt::entity id; 
+    constexpr operator entt::entity() const noexcept { return id; }
+};
 /// @note 定义一个标签组件，零内存占用，用于标记待销毁实体
 struct PendingDestroy {};
 //double moveDelay;
@@ -131,11 +140,8 @@ struct LayerName {
     std::string value;
 };
 
-// 移动组件
-struct InputState {
-    int dx;
-    int dy;
-};
+// 仅作为"本帧需要移动"的标记，无需任何数据
+struct WantsToMove {};
 
 // 输入控制组件, 用于标记可以接受输入的实体
 //struct InputControllable { };
@@ -150,6 +156,11 @@ struct ContainedIn {
     entt::entity container;
     uint8_t slotIndex; 
 };
+/// @brief 其它容器物品
+struct ContainedRef { 
+    entt::entity id; 
+    constexpr operator entt::entity() const noexcept { return id; }
+};
 
 /// @brief 玩家装备
 struct EquippedBy { 
@@ -159,7 +170,172 @@ struct EquippedBy {
 
 /// @brief 对象ID枚举
 enum objID {
-    Chest = 198,
-    Coin = 200,
-    Cat = 234,
+    Chest = 199,
+    ChestOpened = 200,
+    Coin = 201,
+    Bag = 203,
+    Key = 205,
+    Cheese = 208,
+    DoorClosed = 209,
+    DoorOpend = 210,
+    TreeApple = 217,
+    Cat = 235,
+    Goblin = 236,
+    Rabbit = 237,
+    Sword = 238,
+    Sheep  = 239,
+    Cow  = 240,
+    Wolf  = 241,
+    Human  = 242,
 };
+
+enum class GoblinState : uint8_t {
+    Init,
+    WantFood,
+};
+//Eating,     // 新增：吃奶酪的过渡状态
+//Done        // 替代 ALIVE_DEAD，延迟销毁
+
+struct GoblinAI {
+    GoblinState state{GoblinState::Init};
+};
+
+/// @brief UI ID枚举
+enum uiID {
+    Box = 397,
+    CornerLU = 398,
+    CornerU = 399,
+    CornerL = 416,
+    BoxCur = 415,
+};
+
+// 物品栏组件（用于玩家）
+struct Inventory {
+    static constexpr int MAX_SLOTS = 4;
+    std::array<entt::entity, MAX_SLOTS> slots;
+    std::array<entt::entity, MAX_SLOTS> slotBoxs;
+    int gold{0};
+    size_t selectedSlot{0};
+    Inventory() { slots.fill(entt::null); }
+    [[nodiscard]] bool isFull() const noexcept {
+        return std::all_of(slots.begin(), slots.end(), 
+                [](entt::entity e) { return e != entt::null; });
+    }
+    [[nodiscard]] int getFreeSlot() const noexcept {
+        for (int i = 0; i < MAX_SLOTS; ++i) {
+            if (slots[i] == entt::null) return i;
+        }
+        return 255;
+    }
+    [[nodiscard]] bool hasItem(entt::entity item) const noexcept {
+        return std::find(slots.begin(), slots.end(), item) != slots.end();
+    }
+    [[nodiscard]] bool hasItem(entt::registry& reg, objID id) const noexcept {
+        return std::any_of(slots.begin(), slots.end(), [&reg, id](entt::entity ent) {
+                // try_get 自动跳过空槽位(entt::null)和缺失组件的实体
+                const auto* obj = reg.try_get<ObjectComponent>(ent);
+                return obj && obj->firstTileID == id;
+                });
+    }
+    [[nodiscard]] entt::entity getItem(entt::registry& reg, objID id) const noexcept {
+        auto it = std::find_if(slots.begin(), slots.end(), [&reg, id](entt::entity ent) {
+                // try_get 自动跳过空槽位(entt::null)和缺失组件的实体
+                const auto* obj = reg.try_get<ObjectComponent>(ent);
+                return obj && obj->firstTileID == id;
+                });
+        return (it != slots.end()) ? *it : entt::null;
+    }
+    [[nodiscard]] size_t findSlotIndex(entt::registry& reg, objID id) const noexcept {
+        for (size_t i = 0; i < slots.size(); ++i) {
+            if (const auto* obj = reg.try_get<ObjectComponent>(slots[i]); obj && obj->firstTileID == id) {
+                return i; // 直接返回索引
+            }
+        }
+        return static_cast<size_t>(-1); // 或 std::nullopt
+    }
+    [[nodiscard]] entt::entity getCurrentSlotBox() const noexcept {
+        //if (slotBoxs[selectedSlot] == entt::null) return entt::null;
+        return slotBoxs[selectedSlot];
+    }
+    void cycleSlot(int direction) noexcept {
+        constexpr int N = static_cast<int>(MAX_SLOTS);
+        selectedSlot = static_cast<size_t>( ((static_cast<int>(selectedSlot) + direction) % N + N) % N);
+    }
+};
+
+template <typename Tag, typename T = int>
+struct Stat {
+    static_assert(std::is_arithmetic_v<T>, "Stat<T> requires arithmetic type");
+    T max{};   // 上限值
+    T cur{};   // 当前值
+               // ── 构造 ──
+    constexpr Stat() noexcept = default;
+    constexpr Stat(T maximum, T current = T{0}) noexcept
+        : max{normalize_max(maximum)}, cur{clamp_to_range(current, normalize_max(maximum))} {}
+    // ── 比率查询 ──
+    [[nodiscard]] constexpr float ratio() const noexcept {
+        return (max != T{0}) ? static_cast<float>(cur) / static_cast<float>(max) : 0.f;
+    }
+    [[nodiscard]] constexpr bool is_full()  const noexcept { return cur >= max && max > T{0}; }
+    [[nodiscard]] constexpr bool is_empty() const noexcept { return cur <= T{0}; }
+    [[nodiscard]] constexpr bool is_alive() const noexcept { return cur > T{0}; }
+    // ── 修改（安全钳制） ──
+    constexpr void set(T value) noexcept { cur = clamp_to_range(value, max); }
+    constexpr void modify(T delta) noexcept { 
+        if constexpr (std::is_floating_point_v<T>) {
+            set(cur + delta);
+        } else {
+            // 整数版：避免直接 cur + delta 溢出
+            if (delta >= T{0}) {
+                const T room = max - cur;
+                cur = (delta > room) ? max : static_cast<T>(cur + delta);
+            } else {
+                const T down = cur - T{0};
+                const T step = static_cast<T>(-delta);
+                cur = (step > down) ? T{0} : static_cast<T>(cur - step);
+            }
+        }
+    }
+    constexpr void set_max(T new_max, bool fill = false) noexcept {
+        max = normalize_max(new_max); // 防止 max=0
+        cur = fill ? max : std::min(cur, max);
+    }
+    [[nodiscard]] constexpr T remaining() const noexcept { return max - cur; }
+    // ── 比较 ──
+    [[nodiscard]] constexpr bool operator==(const Stat&) const noexcept = default;
+private:
+    static constexpr T normalize_max(T m) noexcept {
+        return (m > T{0}) ? m : T{0};
+    }
+    static constexpr T clamp_to_range(T value, T upper) noexcept {
+        if (value < T{0}) return T{0};
+        if (value > upper) return upper;
+        return value;
+    }
+};
+
+//struct HP {
+//    uint8_t max;
+//    uint8_t cur;
+//};
+//struct Age_ {}; // 生长速度 上限 掉落价值 恢复能力
+//struct Age : Stat<Age_, uint8_t> {using Stat::Stat; };
+//struct HP_ {};
+//struct HP : Stat<HP_, uint8_t> {using Stat::Stat; };
+//enum Mass {
+//    Dead,
+//    ExThin,
+//    Thin,
+//    Normal,
+//    Fat,
+//    Strong,
+//};
+//struct MassBuf_ {};
+//struct MassBuf : Stat<MassBuf_, uint8_t> {using Stat::Stat; };
+struct Mass_ {};
+struct Mass : Stat<Mass_, uint8_t> {using Stat::Stat; };
+struct Satiety_ {};
+struct Satiety : Stat<Satiety_, uint8_t> {using Stat::Stat; };
+struct AP_ {};
+struct AP : Stat<AP_, uint8_t> {using Stat::Stat; };
+

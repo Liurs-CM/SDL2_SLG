@@ -1,3 +1,4 @@
+#pragma once
 #include "util/Font.hpp"
 #include "util/Color.hpp"
 #include "util/Vector2D.h"

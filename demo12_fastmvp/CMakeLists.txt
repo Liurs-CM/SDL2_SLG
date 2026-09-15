@@ -46,6 +46,12 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     -Werror=return-type
     -Werror=uninitialized
     -g
+
+    # 添加这些来帮助定位问题
+    #-fno-limit-debug-info           # 显示更多模板信息
+    #-ftemplate-backtrace-limit=0    # 完整模板调用栈
+    #-fdiagnostics-show-template-tree # 以树形显示模板
+    #-fdiagnostics-absolute-paths    # 显示绝对路径
 )
 
 # === 链接库 ===

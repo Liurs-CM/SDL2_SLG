@@ -4,6 +4,8 @@
 #include "core/TextureManager.hpp"
 #include "comp/CompGroup.hpp"
 #include "sys/UIMsgSystem.hpp"
+#include "sys/UIHudSystem.hpp"
+#include "util/Vector2D.h"
 #include "entt/entt.hpp"
 #include <SDL2/SDL_render.h>
 #include <iostream>
@@ -28,6 +30,7 @@ class RenderSystem {
             renderTileMap();
             renderObjs();
             renderSprites();
+            renderUIs();
             renderHud();
         };
         void renderTileMap() {
@@ -135,40 +138,21 @@ class RenderSystem {
         }
 
         void renderObjs() {
-            const int grid_offsetX = RenderContext::getGridOffset().x;
-            const int grid_offsetY = RenderContext::getGridOffset().y;
-            auto view_tc = m_registry->view<TilesetComponent>();
-            for (auto [tilesetEntity, tc] : view_tc.each()) { 
-                if (tc.name != "blocks_item") { continue; }
-                auto view = m_registry->view<const ObjectComponent, const Position>();
-                SDL_Texture* tex = TheTextureManager::Instance()->getTexture(tc.name);
-                if (!tex) { std::cout << tc.name << " texture not exist...\n"; continue; }
-                //std::cout << view.size() << "\n";
-                for (auto [entity, obj, Pos] : view.each()) {
-                    if (obj.tilename != tc.name) { continue; }
-                    uint32_t tileID = obj.firstTileID + obj.curFrame - tc.firstGid;
-                    //std::cout << "render obj:" << tc.name << " " << tileID << " " << (tileID % tc.numColumns) << " " << (tileID / tc.numColumns) << "\n";
-                    SDL_Rect srcRect = {
-                        static_cast<int>(tc.margin + (tileID % tc.numColumns) * (tc.tileWidth + tc.spacing)),
-                        static_cast<int>(tc.margin + (tileID / tc.numColumns) * (tc.tileHeight + tc.spacing)),
-                        static_cast<uint8_t>(tc.tileWidth),
-                        static_cast<uint8_t>(tc.tileHeight)
-                    };
-                    SDL_Rect dstRect = {
-                        static_cast<int>((Pos.x - grid_offsetX) * CELL_SIZE),
-                        static_cast<int>((Pos.y - grid_offsetY) * CELL_SIZE),
-                        static_cast<uint8_t>(tc.tileWidth),
-                        static_cast<uint8_t>(tc.tileHeight)
-                    };
-                    SDL_RenderCopy(m_renderer, tex, &srcRect, &dstRect);
-                }
-            }
+            const auto offset = RenderContext::getGridOffset();
+            renderUtils(offset, "blocks_item", m_registry->view<const ObjectComponent, const Position>());
         }
 
         void renderHud() {
             UIMsgSystem::Instance().render();
             UIMsgSystem::Instance().doneMsg();
+            UIHudSystem::Instance().render(m_registry);
         }
+
+        void renderUIs() {
+            renderUtils({0, 0}, "blocks_ui", m_registry->view<const ObjectComponent, const uiPosition>());
+            renderUtils({0, 0}, "blocks_item", m_registry->view<const ObjectComponent, const ContainedIn>());
+        }
+
         // 渲染生命条
         void renderHealthBars() {
             //auto view = m_registry.view<const Health, const Transform>();
@@ -204,13 +188,62 @@ class RenderSystem {
         // 顶点缓存
         std::vector<CachedTileBatch> m_cachedBatches;
         void checkViewportChange() {
-            const int currentGridX = RenderContext::getGridOffset().x;
-            const int currentGridY = RenderContext::getGridOffset().y;
-
+            const auto offset = RenderContext::getGridOffset();
+            const int currentGridX = offset.x;
+            const int currentGridY = offset.y;
             if (currentGridX != m_lastGridX || currentGridY != m_lastGridY) {
                 m_viewportChanged = true;
                 m_lastGridX = currentGridX;
                 m_lastGridY = currentGridY;
+            }
+        }
+
+        [[nodiscard]] inline Position toScreen(const Position& p, Position camOffset) noexcept {
+            return Position{p - camOffset};
+        }
+        [[nodiscard]] inline Position toScreen(const ContainedIn& c, Position) noexcept {
+            constexpr Position first_box = {8, 15};
+            return Position{first_box + c.slotIndex * vec::unit_x};
+        }
+        [[nodiscard]] inline Position toScreen(const uiPosition& uip, Position) noexcept {
+            constexpr Position first_box = {0, 16};
+            return Position{first_box + uip};
+        }
+
+        void renderUtils(Position gridOffset, std::string texture_name, auto&& view) {
+            auto view_tc = m_registry->view<TilesetComponent>();
+            const TilesetComponent* tc = nullptr;
+            for (auto [tilesetEntity, targetTc] : view_tc.each()) { 
+                if (targetTc.name == texture_name) { tc = &targetTc; break; }
+            }
+            if(!tc) return;
+            SDL_Texture* tex = TheTextureManager::Instance()->getTexture(texture_name);
+            if (!tex) { std::cout << texture_name << " texture not exist...\n"; return; }
+            //auto view = m_registry->view<const ObjectComponent>();
+            //std::cout << view.size() << "\n";
+            for (auto [entity, obj, compPos] : view.each()) {
+                if (obj.tilename != texture_name) continue;
+                //auto posOpt = position_extractor(entity, *m_registry);
+                const Position Pos = toScreen(compPos, gridOffset);
+                uint32_t tileID = obj.firstTileID + obj.curFrame - tc->firstGid;
+                if(tileID >= tc->tilecount) continue; 
+                //std::cout << "render obj:" << tc->name << " " << tileID << " " << (tileID % tc->numColumns) << " " << (tileID / tc->numColumns) << "\n";
+                // 构建源矩形
+                const int col = tileID % tc->numColumns;
+                const int row = tileID / tc->numColumns;
+                SDL_Rect srcRect = {
+                    static_cast<int>(tc->margin + col * (tc->tileWidth + tc->spacing)),
+                    static_cast<int>(tc->margin + row * (tc->tileHeight + tc->spacing)),
+                    static_cast<uint16_t>(tc->tileWidth),
+                    static_cast<uint16_t>(tc->tileHeight)
+                };
+                SDL_Rect dstRect = {
+                    static_cast<int>(Pos.x * CELL_SIZE),
+                    static_cast<int>(Pos.y * CELL_SIZE),
+                    static_cast<uint16_t>(tc->tileWidth),
+                    static_cast<uint16_t>(tc->tileHeight)
+                };
+                SDL_RenderCopy(m_renderer, tex, &srcRect, &dstRect);
             }
         }
 };

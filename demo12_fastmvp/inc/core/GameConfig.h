@@ -13,7 +13,7 @@ constexpr uint16_t  MAP_HEIGHT      = 256;
 // UI size
 constexpr uint16_t  UI_MAP_W        = 640; //720; 1280; 640
 constexpr uint16_t  UI_MAP_H        = 480; //640; 1280; 480
-constexpr uint16_t  UI_LOG_X        = 0;
+constexpr uint16_t  UI_LOG_X        = 10;
 constexpr uint16_t  UI_LOG_Y        = UI_MAP_H;
 constexpr uint16_t  UI_LOG_W        = SCR_W;
 constexpr uint16_t  UI_LOG_H        = SCR_H - UI_MAP_H;

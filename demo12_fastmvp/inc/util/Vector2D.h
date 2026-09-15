@@ -149,19 +149,23 @@ struct vec2d {
         return {dx, dy};
     }
 
-    [[nodiscard]] constexpr Direction getVecDir() noexcept {
-        switch(this->sign().x + 3*this->sign().y + 4) {
-            case(0 + 3*0): return Direction::UP;
-            case(1 + 3*0): return Direction::UP;
-            case(2 + 3*0): return Direction::UP;
-            case(0 + 3*1): return Direction::LEFT;
-            case(1 + 3*1): return Direction::DOWN;
-            case(2 + 3*1): return Direction::RIGHT;
-            case(0 + 3*2): return Direction::DOWN;
-            case(1 + 3*2): return Direction::DOWN;
-            case(2 + 3*2): return Direction::DOWN;
-            default: return Direction::DOWN;
-        }
+    static constexpr Direction DIR_MAP[] = {
+        Direction::UP,    // ( -1, -1)
+        Direction::UP,    // (  0, -1)
+        Direction::UP,    // (  1, -1)
+        Direction::LEFT,  // ( -1,  0)
+        Direction::DOWN,  // (  0,  0) - 零向量
+        Direction::RIGHT, // (  1,  0)
+        Direction::DOWN,  // ( -1,  1)
+        Direction::DOWN,  // (  0,  1)
+        Direction::DOWN   // (  1,  1)
+    };
+
+    [[nodiscard]] constexpr Direction getVecDir() const noexcept {
+        const auto s = sign();
+        // 将二维方向映射到一维索引
+        const int idx = (s.x + 1) + 3 * (s.y + 1);  // 映射到 0-8
+        return DIR_MAP[idx];
     }
 };
 

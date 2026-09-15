@@ -3,10 +3,12 @@
 #include "sys/RenderSystem.hpp"
 #include "sys/MapParserSystem.hpp"
 #include "sys/MapGeneratorSystem.hpp"
+#include "sys/SceneBootstrapSystem.hpp"
 #include "sys/InputSystem.hpp"
 #include "sys/MovePlayerSystem.hpp"
 #include "sys/CameraSystem.hpp"
 #include "sys/DestroySystem.hpp"
+#include "sys/GrowthSystem.hpp"
 #include "util/Vector2D.h"
 #include "entt/entt.hpp"
 #include <SDL.h>
@@ -36,21 +38,23 @@ class Game
     private:
         Game();
         ~Game();
-        SDL_Window*         m_pWindow;
-        SDL_Renderer*       m_pRenderer;
-        bool                m_bRunning;
-        Uint32              frameStart;
-        Uint32              frameTime;
-        static Game*        s_pInstance;
-        entt::registry      registry;
-        RenderContext       m_renderContext;
-        RenderSystem        m_renderSystem;
-        MapParserSystem     m_mapParserSystem;
-        MapGeneratorSystem  m_mapGenSystem;
-        InputSystem         m_inputSystem;
-        MovePlayerSystem    m_moveSystem;
-        CameraSystem        m_cameraSystem;
-        DestroySystem       m_destroySystem;
+        SDL_Window*             m_pWindow;
+        SDL_Renderer*           m_pRenderer;
+        bool                    m_bRunning;
+        Uint32                  frameStart;
+        Uint32                  frameTime;
+        static Game*            s_pInstance;
+        entt::registry          registry;
+        RenderContext           m_renderContext;
+        RenderSystem            m_renderSystem;
+        MapParserSystem         m_mapParserSystem;
+        MapGeneratorSystem      m_mapGenSystem;
+        SceneBootstrapSystem    m_bootstrapSystem;
+        InputSystem             m_inputSystem;
+        MovePlayerSystem        m_moveSystem;
+        CameraSystem            m_cameraSystem;
+        DestroySystem           m_destroySystem;
+        GrowthSystem            m_growthSystem;
 };
 
 typedef Game TheGame;
